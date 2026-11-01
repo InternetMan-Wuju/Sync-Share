@@ -1,0 +1,10 @@
+{
+  "pid": 725889,
+  "started_unix": 1791833469.1749032,
+  "completed": true,
+  "phase": "completed",
+  "updated_unix": 1791841786.22954,
+  "base_phase": "stopping_owned_container",
+  "container": "cyt-auto-chunk-auto-8192",
+  "script": "publish_final_report.py"
+}

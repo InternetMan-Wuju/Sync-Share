@@ -1,0 +1,307 @@
+{
+ "started_unix": 1791865913.242246,
+ "completed": true,
+ "comparisons": [
+  {
+   "name": "sanity_chat_0",
+   "baseline_AL": 3.0,
+   "baseline_P1_P2_P3": [
+    1.0,
+    0.75,
+    0.25
+   ],
+   "baseline_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/sanity_chat/result.json",
+   "baseline_index": 0,
+   "route": 1,
+   "output_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/review_20261013/target_only/sanity_chat_0.json",
+   "input_sha256": "cff9434543e9f1552b9032094bbab023b66f81f05970527c81941ab350174a28",
+   "completion_tokens": 12,
+   "same_output_ids": true,
+   "first_difference": null,
+   "output_shape": {
+    "tokens": 12,
+    "distinct_ids": 12,
+    "top5_ids": [
+     [
+      109377,
+      1
+     ],
+     [
+      6313,
+      1
+     ],
+     [
+      118295,
+      1
+     ],
+     [
+      103810,
+      1
+     ],
+     [
+      98406,
+      1
+     ]
+    ],
+    "top1_fraction": 0.08333333333333333,
+    "tail256_distinct_ids": 12,
+    "periodic_suffix": null,
+    "scope": "Exact periodic suffix >=64 tokens and >=8 repetitions; not semantic quality."
+   },
+   "finish_reason": {
+    "type": "stop",
+    "matched": 154827
+   },
+   "actual_dp_rank": 1,
+   "eos_positions": [
+    11
+   ]
+  },
+  {
+   "name": "sanity_chat_1",
+   "baseline_AL": 2.0,
+   "baseline_P1_P2_P3": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "baseline_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/sanity_chat/result.json",
+   "baseline_index": 1,
+   "route": 0,
+   "output_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/review_20261013/target_only/sanity_chat_1.json",
+   "input_sha256": "7fa4e676325e1d312038daece5b389a73277b9cc526d44c3c48cb8070d85f184",
+   "completion_tokens": 2,
+   "same_output_ids": true,
+   "first_difference": null,
+   "output_shape": {
+    "tokens": 2,
+    "distinct_ids": 2,
+    "top5_ids": [
+     [
+      17,
+      1
+     ],
+     [
+      154827,
+      1
+     ]
+    ],
+    "top1_fraction": 0.5,
+    "tail256_distinct_ids": 2,
+    "periodic_suffix": null,
+    "scope": "Exact periodic suffix >=64 tokens and >=8 repetitions; not semantic quality."
+   },
+   "finish_reason": {
+    "type": "stop",
+    "matched": 154827
+   },
+   "actual_dp_rank": 0,
+   "eos_positions": [
+    1
+   ]
+  },
+  {
+   "name": "native_exact_1k256_0",
+   "baseline_AL": 3.0476190476190474,
+   "baseline_P1_P2_P3": [
+    0.7857142857142857,
+    0.6904761904761905,
+    0.5952380952380952
+   ],
+   "baseline_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/native_exact_1k256/result.json",
+   "baseline_index": 0,
+   "route": 1,
+   "output_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/review_20261013/target_only/native_exact_1k256_0.json",
+   "input_sha256": "e73595a7842a5854b0bb1dcff9a8acc025a23aacc4cc238eb564493f7f63fd24",
+   "completion_tokens": 256,
+   "same_output_ids": true,
+   "first_difference": null,
+   "output_shape": {
+    "tokens": 256,
+    "distinct_ids": 31,
+    "top5_ids": [
+     [
+      279,
+      47
+     ],
+     [
+      1655,
+      21
+     ],
+     [
+      835,
+      20
+     ],
+     [
+      315,
+      20
+     ],
+     [
+      11,
+      19
+     ]
+    ],
+    "top1_fraction": 0.18359375,
+    "tail256_distinct_ids": 31,
+    "periodic_suffix": null,
+    "scope": "Exact periodic suffix >=64 tokens and >=8 repetitions; not semantic quality."
+   },
+   "finish_reason": {
+    "type": "length",
+    "length": 256
+   },
+   "actual_dp_rank": 1,
+   "eos_positions": [
+    0
+   ]
+  },
+  {
+   "name": "native_exact_1k256_1",
+   "baseline_AL": 3.0843373493975905,
+   "baseline_P1_P2_P3": [
+    0.891566265060241,
+    0.6746987951807228,
+    0.5060240963855421
+   ],
+   "baseline_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/native_exact_1k256/result.json",
+   "baseline_index": 1,
+   "route": 0,
+   "output_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/review_20261013/target_only/native_exact_1k256_1.json",
+   "input_sha256": "fc22de95bcf3921fdc1919212de1c66093a47cc0e0e5d71f91c22dede76a5b1a",
+   "completion_tokens": 256,
+   "same_output_ids": true,
+   "first_difference": null,
+   "output_shape": {
+    "tokens": 256,
+    "distinct_ids": 106,
+    "top5_ids": [
+     [
+      264,
+      11
+     ],
+     [
+      498,
+      10
+     ],
+     [
+      198,
+      8
+     ],
+     [
+      11,
+      8
+     ],
+     [
+      13,
+      7
+     ]
+    ],
+    "top1_fraction": 0.04296875,
+    "tail256_distinct_ids": 106,
+    "periodic_suffix": null,
+    "scope": "Exact periodic suffix >=64 tokens and >=8 repetitions; not semantic quality."
+   },
+   "finish_reason": {
+    "type": "length",
+    "length": 256
+   },
+   "actual_dp_rank": 0,
+   "eos_positions": [
+    170
+   ]
+  },
+  {
+   "name": "native_longinput_1k1024_0",
+   "baseline_AL": 3.9689922480620154,
+   "baseline_P1_P2_P3": [
+    0.9883720930232558,
+    0.9883720930232558,
+    0.9883720930232558
+   ],
+   "baseline_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/native_longinput_1k1024/result.json",
+   "baseline_index": 0,
+   "route": 1,
+   "output_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/review_20261013/target_only/native_longinput_1k1024_0.json",
+   "input_sha256": "99ed8960831da4954521e73b493a6a79240a5dd0e9c9c673f1fadb689ce063a3",
+   "completion_tokens": 1024,
+   "same_output_ids": true,
+   "first_difference": null,
+   "output_shape": {
+    "tokens": 1024,
+    "distinct_ids": 3,
+    "top5_ids": [
+     [
+      197,
+      512
+     ],
+     [
+      2,
+      511
+     ],
+     [
+      198,
+      1
+     ]
+    ],
+    "top1_fraction": 0.5,
+    "tail256_distinct_ids": 2,
+    "periodic_suffix": {
+     "period": 2,
+     "start": 1,
+     "tokens": 1023,
+     "fraction": 0.9990234375
+    },
+    "scope": "Exact periodic suffix >=64 tokens and >=8 repetitions; not semantic quality."
+   },
+   "finish_reason": {
+    "type": "length",
+    "length": 1024
+   },
+   "actual_dp_rank": 1,
+   "eos_positions": []
+  },
+  {
+   "name": "cycle_fixed_prefix32_window128",
+   "baseline_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/native_longinput_1k1024/result.json",
+   "baseline_index": 0,
+   "route": 1,
+   "comparison_scope": "Expected continuation of saved cycle, not a newly measured MTP acceptance rate.",
+   "output_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/review_20261013/target_only/cycle_fixed_prefix32_window128.json",
+   "input_sha256": "2fda90dd94f2ab91bd9da7640899a6e931f5cc03741c2559d3e7b4405ddb2dba",
+   "completion_tokens": 128,
+   "same_output_ids": true,
+   "first_difference": null,
+   "output_shape": {
+    "tokens": 128,
+    "distinct_ids": 2,
+    "top5_ids": [
+     [
+      2,
+      64
+     ],
+     [
+      197,
+      64
+     ]
+    ],
+    "top1_fraction": 0.5,
+    "tail256_distinct_ids": 2,
+    "periodic_suffix": {
+     "period": 2,
+     "start": 0,
+     "tokens": 128,
+     "fraction": 1.0
+    },
+    "scope": "Exact periodic suffix >=64 tokens and >=8 repetitions; not semantic quality."
+   },
+   "finish_reason": {
+    "type": "length",
+    "length": 128
+   },
+   "actual_dp_rank": 1,
+   "eos_positions": []
+  }
+ ],
+ "scope": "Fixed inputs and DP routes, target-only generation; no speed claim or formal OFF workload grid.",
+ "ended_unix": 1791866513.9305844
+}

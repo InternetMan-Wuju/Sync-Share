@@ -1,0 +1,9 @@
+run,group,workload,wall_s,throughput_tok_s,reported_rebalance_duration_sum_s,reported_rebalance_fraction_of_wall,caution
+A0_agentx_20261012_044134,A0,agentX,945.9632998369634,90.92953184846054,0,0.0,timed rebalance scope; not proven server-wide pause overlap
+A0_random_20261012_060410,A0,random,908.0698639918119,43.97899499102869,0,0.0,timed rebalance scope; not proven server-wide pause overlap
+A_agentx_20261012_050236,A,agentX,914.0088421199471,89.62714169153463,0,0.0,timed rebalance scope; not proven server-wide pause overlap
+A_random_20261012_062417,A,random,901.9818619010039,43.14055708170188,0,0.0,timed rebalance scope; not proven server-wide pause overlap
+B_agentx_20261012_052314,B,agentX,946.8360752738081,86.51972832394478,50.39,0.05321934949027804,timed rebalance scope; not proven server-wide pause overlap
+B_random_20261012_064400,B,random,904.9134038160555,41.30339968706833,48.75,0.05387255818558917,timed rebalance scope; not proven server-wide pause overlap
+C_agentx_20261012_054412,C,agentX,929.3978134440258,88.14309525480043,61.08,0.06571997385453136,timed rebalance scope; not proven server-wide pause overlap
+C_random_20261012_071801,C,random,903.6504379576072,43.06089873419114,60.46,0.06690640258709901,timed rebalance scope; not proven server-wide pause overlap

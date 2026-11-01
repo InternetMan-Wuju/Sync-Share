@@ -1,0 +1,39 @@
+{
+  "23": {
+    "health_http": 200,
+    "chunked_prefill_size": 8192,
+    "speculative_algorithm": null,
+    "deepep_mode": "normal",
+    "tp_size": 16,
+    "ep_size": 16,
+    "nnodes": 1,
+    "disable_cuda_graph": true,
+    "container_id": "97ad0904ce705ce676bd2b5572160c4bd35587e18be573349d5f821ac4b58b56",
+    "started_at_utc": "2026-09-27T07:51:08.762456849Z",
+    "restart_count": 0,
+    "npu_die_count": 16,
+    "hbm_used_mib_min_max": [
+      61797,
+      62105
+    ]
+  },
+  "25": {
+    "health_http": 200,
+    "chunked_prefill_size": 8192,
+    "speculative_algorithm": null,
+    "deepep_mode": "normal",
+    "tp_size": 16,
+    "ep_size": 16,
+    "nnodes": 1,
+    "disable_cuda_graph": true,
+    "container_id": "55738f529008caea05a63c17151d327cb7eaad49741b9fda5e9863300d250808",
+    "started_at_utc": "2026-09-27T13:58:03.438255119Z",
+    "restart_count": 0,
+    "npu_die_count": 16,
+    "hbm_used_mib_min_max": [
+      61781,
+      62097
+    ]
+  },
+  "captured_at": "2026-09-27T22:07:27.777234+08:00"
+}

@@ -1,0 +1,9 @@
+{
+  "model": "/model",
+  "block_size": 33554432,
+  "file_count": 2,
+  "elapsed_s": 14.336046986049041,
+  "digest_drift_files": 1,
+  "streamed_nonfinite": 0,
+  "streamed_abs_gt_1e10": 0
+}

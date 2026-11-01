@@ -1,0 +1,1428 @@
+--- current/buffer.py
++++ candidate/buffer.py
+@@ -15,7 +15,7 @@
+     get_low_latency_strategy,
+     get_normal_strategy,
+ )
+-from .utils import EventOverlap, log_parameters
++from .utils import EventOverlap, _resolve_normal_quant_mode, log_parameters
+ 
+ 
+ class FuseMode(IntEnum):
+@@ -301,7 +301,9 @@
+         async_finish: bool = False,
+         allocate_on_comm_stream: bool = False,
+         dispatch_wait_recv_cost_stats: Optional[torch.Tensor] = None,
+-        quant_mode: Optional[str] = None,
++        use_fp8: bool = False,
++        use_mxfp4: bool = False,
++        use_mxfp8: bool = False,
+     ) -> Tuple[
+         Union[Tuple[torch.Tensor, torch.Tensor], torch.Tensor],
+         Optional[torch.Tensor],
+@@ -317,13 +319,9 @@
+             index should be visible via RDMA.
+ 
+         Arguments:
+-            x: input tokens. Supports two formats:
+-                - `torch.Tensor` with `torch.bfloat16`, shaped `[num_tokens, hidden]`. Quantization is controlled by
+-                  the `DEEP_NORMAL_MODE_USE_INT8_QUANT` environment variable (set to `1` for INT8 quantization, **deprecated**).
+-                - Tuple of two `torch.Tensor`: for MXFP8 quantization, the first element is shaped `[num_tokens, hidden]`
+-                  with `torch.float8_e4m3fn` (pre-quantized data), the second is shaped `[num_tokens, hidden // 32]`
+-                  with `torch.float8_e8m0fnu` (per-block E8M0 scales). On NPU, this triggers MXFP8 per-block quantization
+-                  (quant_mode=3) inside the dispatch kernel.
++            x: input tokens, ``torch.Tensor`` with ``torch.bfloat16``, shaped ``[num_tokens, hidden]``.
++                The dtype of ``x`` is no longer used for quantization-mode detection; use
++                the ``use_fp8`` / ``use_mxfp4`` / ``use_mxfp8`` bool flags instead.
+             handle: an optional communication handle, if set, the CPU will reuse the layout information to save some time.
+             num_tokens_per_rank: `[num_ranks]` with `torch.int`, the number of tokens to be sent to each rank.
+             num_tokens_per_rdma_rank: `[num_rdma_ranks]` with `torch.int`, the number of tokens to be sent to each RDMA
+@@ -342,15 +340,26 @@
+             allocate_on_comm_stream: control whether all the allocated tensors' ownership to be on the communication stream.
+             dispatch_wait_recv_cost_stats: `[num_ranks]` with `torch.int`, record the time it takes for the dispatch phase
+                 to receive all tokens from each slave rank in the current rank.
++            use_fp8: enable FP8-family quantization. On A5 → ``pertoken_fp8_e4m3``;
++                on A2/A3 → ``int8``.
++            use_mxfp4: enable MXFP4 per-block quantization → ``mx_fp4_e2m1`` (A5 only).
++                Raises ``NotImplementedError`` on A2/A3.
++            use_mxfp8: enable MXFP8 per-block quantization → ``mx_fp8_e4m3`` (A5 only).
++                Raises ``NotImplementedError`` on A2/A3.
+ 
+         Returns:
+             recv_x: received tokens. The format depends on quantization mode:
+                 - BF16 (no quantization): a `torch.Tensor` shaped `[received_token_count, hidden]` with `torch.bfloat16`.
+-                - INT8 (`DEEP_NORMAL_MODE_USE_INT8_QUANT=1`, **deprecated**): a tuple, first element shaped `[received_token_count, hidden]`
++                - INT8: a tuple, first element shaped `[received_token_count, hidden]`
+                   with `torch.int8`, second element shaped `[received_token_count]` with `torch.float32` (per-token scales).
+-                - MXFP8 (tuple input with `float8_e4m3fn` + `float8_e8m0fnu`, A5/C310 only): a tuple, first element shaped
+-                  `[received_token_count, hidden]` with `torch.float8_e4m3fn`, second element shaped
++                - PerToken FP8 (A5): a tuple, first element shaped `[received_token_count, hidden]`
++                  with `torch.float8_e4m3fn`, second element shaped `[received_token_count]` with `torch.float32`.
++                - MXFP8 (A5): a tuple, first element shaped `[received_token_count, hidden]`
++                  with `torch.float8_e4m3fn`, second element shaped
+                   `[received_token_count, hidden // 32]` with `torch.float8_e8m0fnu` (per-block E8M0 scales).
++                - MXFP4 (A5): a tuple, first element shaped `[received_token_count, hidden / 2]`
++                  with `torch.float4_e2m1fn_x2`, second element shaped
++                  `[received_token_count, hidden // 32]` with `torch.float8_e8m0fnu`.
+             recv_topk_idx: received expert indices.
+             recv_topk_weights: received expert weights.
+             num_recv_tokens_per_expert_list: Python list shaped `[num_local_experts]`, the received token count by
+@@ -361,6 +370,9 @@
+         """
+         # Default config
+         config = self.get_dispatch_config(self.group_size) if config is None else config
++
++        # Resolve quant_mode from bool flags + device architecture
++        quant_mode = _resolve_normal_quant_mode(use_fp8, use_mxfp4, use_mxfp8)
+ 
+         # Delegate to normal strategy
+         return self.normal_strategy.dispatch(
+
+--- current/strategies/normal_strategy.py
++++ candidate/strategies/normal_strategy.py
+@@ -3,7 +3,6 @@
+ All normal mode strategy implementations are in this file.
+ """
+ 
+-import os
+ from typing import Callable, List, Optional, Tuple, Union
+ 
+ import torch
+@@ -115,6 +114,7 @@
+                 previous_event,
+                 async_finish,
+                 allocate_on_comm_stream,
++                quant_mode,
+             )
+ 
+         return self._intranode_dispatch(
+@@ -160,50 +160,22 @@
+         Tuple,
+         EventOverlap,
+     ]:
+-        # Determine quant type from quant_mode
+-        if quant_mode is None:
+-            if isinstance(x, torch.Tensor):
+-                # BF16 no quant
+-                data = x
+-                x_scales = None
+-                quant_type = "bf16"
+-                use_quant = False
+-            elif isinstance(x, tuple) and len(x) == 2:
+-                data, quant_type_tensor = x
+-                if quant_type_tensor.dtype == torch.float8_e4m3fn:
+-                    quant_type = "mx_fp8_e4m3"
+-                    use_quant = True
+-                elif quant_type_tensor.dtype == torch.float8_e5m2:
+-                    quant_type = "mx_fp8_e5m2"
+-                    use_quant = True
+-                elif quant_type_tensor.dtype == torch.int8:
+-                    quant_type = "int8"
+-                    use_quant = True
+-                elif quant_type_tensor.dtype == torch.float4_e2m1fn_x2:
+-                    quant_type = "mx_fp4_e2m1"
+-                    use_quant = True
+-                else:
+-                    raise TypeError(
+-                        f"Unsupported quantized dtype: {quant_type_tensor.dtype}"
+-                    )
+-                x_scales = None
+-            else:
+-                raise TypeError(f"Unsupported x type: {type(x)}")
+-
+-            if not use_quant:
+-                use_quant = os.getenv("DEEP_NORMAL_MODE_USE_INT8_QUANT") == "1"
+-                if use_quant:
+-                    quant_type = "int8"
++        # Resolve quant parameters from the (already-resolved) quant_mode.
++        # The Buffer layer resolves quant_mode from bool flags + device architecture,
++        # so we no longer inspect x[1].dtype for quantization type detection.
++        data = x[0] if isinstance(x, tuple) else x
++        x_scales = None
++        if quant_mode is None or quant_mode == "bf16":
++            quant_type = "bf16"
++            use_quant = False
+         else:
+-            # New API: explicit quant_mode
+             if quant_mode not in VALID_QUANT_MODES:
+                 raise ValueError(
+-                    f"Invalid quant_mode: {quant_mode}. Valid options: {VALID_QUANT_MODES}"
++                    f"Invalid quant_mode: {quant_mode}. "
++                    f"Valid options: {VALID_QUANT_MODES}"
+                 )
+-            data = x
+-            x_scales = None
+             quant_type = quant_mode
+-            use_quant = quant_mode != "bf16"
++            use_quant = True
+ 
+         if handle is not None:
+             raise NotImplementedError(
+@@ -285,6 +257,7 @@
+         previous_event: Optional[EventOverlap],
+         async_finish: bool,
+         allocate_on_comm_stream: bool,
++        quant_mode: Optional[str] = None,
+     ) -> Tuple[
+         Union[Tuple[torch.Tensor, torch.Tensor], torch.Tensor],
+         Optional[torch.Tensor],
+@@ -294,7 +267,14 @@
+         EventOverlap,
+     ]:
+         x, x_scales = x if isinstance(x, tuple) else (x, None)
+-        use_quant = os.getenv("DEEP_NORMAL_MODE_USE_INT8_QUANT") == "1"
++
++        # Internode dispatch only supports BF16 and INT8 quantization.
++        if quant_mode is not None and quant_mode not in ("bf16", "int8"):
++            raise NotImplementedError(
++                f"quant_mode '{quant_mode}' is not supported by internode dispatch; "
++                f"only 'bf16' and 'int8' are supported."
++            )
++        use_quant = quant_mode == "int8"
+ 
+         if handle is not None:
+             raise NotImplementedError(
+@@ -467,6 +447,8 @@
+     Internode and intranode use the same implementation.
+     """
+ 
++    _SUPPORTED_QUANT_MODES = frozenset({"bf16", "int8"})
++
+     def __init__(self, runtime, group: dist.ProcessGroup):
+         super().__init__(group)
+         self.runtime = runtime
+@@ -610,14 +592,9 @@
+         num_experts = layout["num_experts"]
+         topk_idx_int = topk_idx.to(torch.int32)
+ 
+-        # Determine quant type from quant_mode
+-        VALID_QUANT_MODES = {
+-            "bf16",
+-            "int8",
+-        }
+         if quant_mode is None:
+             quant_mode = "bf16"
+-        if quant_mode not in VALID_QUANT_MODES:
++        if quant_mode not in self._SUPPORTED_QUANT_MODES:
+             raise NotImplementedError(
+                 f"quant_mode '{quant_mode}' is not supported by the alltoall strategy. "
+                 f"Only 'bf16' and 'int8' are supported; use the default strategy for "
+@@ -626,9 +603,6 @@
+         hidden_shape = x.shape
+ 
+         use_quant = 1 if quant_mode == "int8" else -1
+-        is_quant_env = os.getenv("DEEP_NORMAL_MODE_USE_INT8_QUANT")
+-        if is_quant_env is not None and quant_mode is None:
+-            use_quant = 1 if is_quant_env == "1" else -1
+ 
+         (permutated_tokens, reversed_local_mapping, _, dynamic_scale) = (
+             torch_npu.npu_moe_init_routing_v2(
+
+--- current/utils.py
++++ candidate/utils.py
+@@ -7,6 +7,8 @@
+ import torch
+ import torch_npu
+ from deep_ep_cpp import Config, EventHandle
++
++from .device_info import DEVICE_VERSION_TABLE, QUANT_MODE_TABLE, get_device_version
+ 
+ 
+ class EventOverlap:
+@@ -111,3 +113,46 @@
+         return wrapper
+ 
+     return log_parameters_decorator
++
++
++def _resolve_normal_quant_mode(
++    use_fp8: bool,
++    use_mxfp4: bool,
++    use_mxfp8: bool,
++) -> Optional[str]:
++    """Resolve the effective ``quant_mode`` for normal dispatch.
++
++    Looks up ``QUANT_MODE_TABLE[(param_type, version_code)]`` for the first
++    active bool flag.  ``None`` in the table means the combination is not
++    supported on that hardware.
++
++    Priority:
++    1. ``use_mxfp4`` / ``use_mxfp8`` / ``use_fp8`` bool flags (table lookup).
++    2. ``DEEP_NORMAL_MODE_USE_INT8_QUANT=1`` env var (deprecated fallback).
++    3. ``None`` (BF16, no quantization).
++    """
++    try:
++        version_code = get_device_version()
++    except Exception:
++        version_code = None
++
++    for param_type, flag in (
++        ("use_mxfp4", use_mxfp4),
++        ("use_mxfp8", use_mxfp8),
++        ("use_fp8", use_fp8),
++    ):
++        if not flag:
++            continue
++        quant_mode = QUANT_MODE_TABLE.get((param_type, version_code))
++        if quant_mode is not None:
++            return quant_mode
++        raise NotImplementedError(
++            f"{param_type} is not supported on device version {version_code} "
++            f"({DEVICE_VERSION_TABLE.get(version_code, 'unknown')})."
++        )
++
++    # Deprecated env-var fallback for backward compatibility
++    if os.getenv("DEEP_NORMAL_MODE_USE_INT8_QUANT") == "1":
++        return "int8"
++
++    return None
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_combine_normal.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_combine_normal.h
+@@ -11,7 +11,6 @@
+ constexpr uint32_t RANK_ID_OFFSET_IN_SRC_INFO = 0U;
+ constexpr uint32_t TOKEN_IDX_OFFSET_IN_SRC_INFO = 1U;
+ constexpr uint32_t TOPK_IDX_OFFSET_IN_SRC_INFO = 2U;
+-constexpr uint64_t COMBINE_STATE_WIN_OFFSET = 4UL * 1024UL * 1024UL;
+ constexpr uint64_t MAGIC_WIN_OFFSET = 975UL * 1024UL;
+ constexpr uint32_t TOKEN_SRC_INFO_LEN = 3U;
+ constexpr uint32_t UB_32_ALIGN = 32U;
+@@ -71,7 +70,11 @@
+ 
+     __aicore__ GM_ADDR GetBufferAddrByRankId(const int32_t rankId)
+     {
+-        return GetStateAddrByRankId(rankId) + COMBINE_STATE_WIN_OFFSET;
++        uint64_t dataOffset = Moe::A3WindowLayout::kNormalCombineStateSize;
++        if (isHybridDeployment_) {
++            dataOffset = Moe::A3WindowLayout::kDataOffset - Moe::A3WindowLayout::kNotifyDispatchSize;
++        }
++        return GetStateAddrByRankId(rankId) + dataOffset;
+     }
+ 
+     __aicore__ inline void SplitCoreCal(uint32_t totalNum, uint32_t &perCoreNum, uint32_t &startIdx, uint32_t &endIdx)
+@@ -112,6 +115,7 @@
+     uint32_t sendCostStatsBufSize_{0};
+ 
+     bool isEnableDiagnose_{false};
++    bool isHybridDeployment_{false};
+ 
+     TPipe *tpipe_{nullptr};
+     TQue<QuePosition::VECIN, 1> weightedSumQueue_;
+@@ -184,6 +188,7 @@
+     epWorldSize_ = tilingData->camMoeCombineNormalInfo.epWorldSize;
+     epRankId_ = tilingData->camMoeCombineNormalInfo.epRankId;
+     isEnableDiagnose_ = tilingData->camMoeCombineNormalInfo.isEnableDiagnose;
++    isHybridDeployment_ = tilingData->camMoeCombineNormalInfo.isHybridDeployment;
+ }
+ 
+ template <TemplateMC2TypeClass>
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_combine_normal.py
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_combine_normal.py
+@@ -269,7 +269,7 @@
+     else:
+         options.append("-DDETERMINISTIC_MODE=0")
+     custom_compile_options = {},
+-    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/__w/sgl-kernel-npu/sgl-kernel-npu/csrc/deepep/ops/third_party/catlass/include']},
++    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/work/sgln_fix/csrc/deepep/ops/third_party/catlass/include']},
+     soc_version = get_soc_spec("SOC_VERSION")
+     soc_short = get_soc_spec("SHORT_SOC_VERSION").lower()
+     custom_compile_options_soc = get_shortsoc_compile_option(custom_compile_options[0], soc_short)
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_combine_normal_multi_round.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_combine_normal_multi_round.h
+@@ -11,7 +11,7 @@
+ constexpr uint32_t RANK_ID_OFFSET_IN_SRC_INFO = 0U;
+ constexpr uint32_t TOKEN_IDX_OFFSET_IN_SRC_INFO = 1U;
+ constexpr uint32_t TOPK_IDX_OFFSET_IN_SRC_INFO = 2U;
+-constexpr uint64_t STATE_WIN_SIZE = 4UL * 1024UL * 1024UL;
++constexpr uint64_t STATE_WIN_SIZE = Moe::A3WindowLayout::kNormalCombineStateSize;
+ constexpr uint64_t STATE_WIN_SIZE_HALF = STATE_WIN_SIZE / 2;
+ #ifdef __DAV_C310__
+ constexpr uint64_t MAGIC_WIN_OFFSET = 1100UL * 1024UL;
+@@ -81,7 +81,12 @@
+ 
+     __aicore__ GM_ADDR GetBufferAddrByRankId(const int32_t rankId)
+     {
+-        return GetStateAddrByRankId(rankId) + STATE_WIN_SIZE + roundMagic_ * combineDataBuffSize_;
++        uint64_t dataOffset = STATE_WIN_SIZE + roundMagic_ * combineDataBuffSize_;
++        if (isHybridDeployment_) {
++            dataOffset += Moe::A3WindowLayout::kLlSelectorMetadataSize + Moe::A3WindowLayout::kLlStateSize +
++                          Moe::A3WindowLayout::kLlSelectorMetadataSize + Moe::A3WindowLayout::kLlStateSize;
++        }
++        return GetStateAddrByRankId(rankId) + dataOffset;
+     }
+ 
+     __aicore__ inline GM_ADDR GetRoundStateAddrByRankId(const int32_t rankId)
+@@ -152,6 +157,7 @@
+     uint32_t combineDataBuffSize_{0};
+ 
+     bool isEnableDiagnose_{false};
++    bool isHybridDeployment_{false};
+ 
+     TPipe *tpipe_{nullptr};
+     TQue<QuePosition::VECIN, 1> weightedSumQueue_;
+@@ -236,6 +242,7 @@
+     epWorldSize_ = tilingData->camMoeCombineNormalInfo.epWorldSize;
+     epRankId_ = tilingData->camMoeCombineNormalInfo.epRankId;
+     isEnableDiagnose_ = tilingData->camMoeCombineNormalInfo.isEnableDiagnose;
++    isHybridDeployment_ = tilingData->camMoeCombineNormalInfo.isHybridDeployment;
+     realMaxBs_ = tilingData->camMoeCombineNormalInfo.realMaxBs;
+     maxRound_ = tilingData->camMoeCombineNormalInfo.maxRound;
+     perRoundTokens_ = tilingData->camMoeCombineNormalInfo.perRoundTokens;
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_combine_normal_tiling.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_combine_normal_tiling.h
+@@ -24,6 +24,7 @@
+     float armAvgFactor;
+     float epsilon;
+     bool isEnableDiagnose;
++    bool isHybridDeployment;
+ };
+ struct CamMoeCombineNormalTilingData {
+     Mc2InitTiling mc2InitTiling;
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_dispatch_normal.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_dispatch_normal.h
+@@ -19,7 +19,6 @@
+ constexpr uint64_t STATE_WIN_OFFSET = 950UL * 1024UL;
+ constexpr uint64_t WIN_ADDR_ALIGN = 512UL;
+ constexpr uint32_t EXPAND_IDX_INFO = 3U;
+-constexpr uint64_t COMBINE_STATE_WIN_OFFSET = 4UL * 1024UL * 1024UL;
+ constexpr int64_t CYCLE_TO_TIME = 50;  // cycle num is converted into a fixed base unit of time, set at 50
+ constexpr uint64_t ROUND_STATE_OFFSET = Moe::BASE_ROUND_STATE_OFFSET;
+ constexpr uint32_t FLOAT_NUM_PER_ALIGN = 8U;
+@@ -67,12 +66,13 @@
+     __aicore__ inline GM_ADDR GetWindAddrByRankId(uint8_t ctxIdx, const int32_t rankId)
+     {
+         uint32_t curRankId = ((ctxIdx == COMM_EP_IDX) ? epRankId : tpRankId);
++        uint64_t dataOffset =
++            isHybridDeployment ? Moe::A3WindowLayout::kDataOffset : Moe::A3WindowLayout::kLegacyNormalDataOffset;
+         if (curRankId == rankId) {
+-            return (GM_ADDR)(winContext_[ctxIdx]->localWindowsIn) + winDataSizeOffset + COMBINE_STATE_WIN_OFFSET +
+-                   Moe::NOTIFY_DISPATCH_BUFF_OFFSET;
++            return (GM_ADDR)(winContext_[ctxIdx]->localWindowsIn) + winDataSizeOffset + dataOffset;
+         }
+         return (GM_ADDR)(((HcclRankRelationResV2 *)(winContext_[ctxIdx]->remoteRes[rankId].nextDevicePtr))->windowsIn) +
+-               winDataSizeOffset + COMBINE_STATE_WIN_OFFSET + Moe::NOTIFY_DISPATCH_BUFF_OFFSET;
++               winDataSizeOffset + dataOffset;
+     }
+ 
+     __aicore__ inline GM_ADDR GetWindStateAddrByRankId(uint8_t ctxIdx, const int32_t rankId)
+@@ -167,6 +167,7 @@
+     uint32_t moeExpertNum{0};
+     uint32_t moeExpertNumPerRank{0};
+     bool isEnableDiagnose{false};
++    bool isHybridDeployment{false};
+ 
+     uint32_t hUBAlignSize{0};
+     uint32_t hOutGMAlignSize{0};
+@@ -229,6 +230,7 @@
+     moeExpertNum = tilingData->camMoeDispatchNormalInfo.moeExpertNum;
+     moeExpertNumPerRank = moeExpertNum / epRankSize;
+     isEnableDiagnose = tilingData->camMoeDispatchNormalInfo.isEnableDiagnose;
++    isHybridDeployment = tilingData->camMoeDispatchNormalInfo.isHybridDeployment;
+ 
+     xGT.SetGlobalBuffer((__gm__ XType *)x);
+     expertIdsGT.SetGlobalBuffer((__gm__ int32_t *)expertIds);
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_dispatch_normal.py
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_dispatch_normal.py
+@@ -281,7 +281,7 @@
+     else:
+         options.append("-DDETERMINISTIC_MODE=0")
+     custom_compile_options = {},
+-    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/__w/sgl-kernel-npu/sgl-kernel-npu/csrc/deepep/ops/third_party/catlass/include']},
++    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/work/sgln_fix/csrc/deepep/ops/third_party/catlass/include']},
+     soc_version = get_soc_spec("SOC_VERSION")
+     soc_short = get_soc_spec("SHORT_SOC_VERSION").lower()
+     custom_compile_options_soc = get_shortsoc_compile_option(custom_compile_options[0], soc_short)
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_dispatch_normal_tiling.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/cam_moe_dispatch_normal_tiling.h
+@@ -18,9 +18,9 @@
+     uint32_t aivNum;        // aivNum
+     bool isQuant;           // whether quant or not
+     bool isEnableDiagnose;  // whether enable diagnose or not
+-    bool reserved2;         // reserved
+-    bool reserved3;         // reserved
+-    uint64_t totalUbSize;   // epWorldSize
++    bool isHybridDeployment;
++    bool reserved3;        // reserved
++    uint64_t totalUbSize;  // epWorldSize
+     uint64_t totalWinSize;
+ };
+ 
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/comm_args.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/comm_args.h
+@@ -1,6 +1,8 @@
+ #ifndef COMM_ARGS_H
+ #define COMM_ARGS_H
+ #include <cstdint>
++
++#include "window_layout.h"
+ 
+ #define FORCE_INLINE_AICORE __attribute__((always_inline)) inline __aicore__
+ #include "kernel_operator.h"
+@@ -8,7 +10,7 @@
+ namespace Moe {
+ constexpr int CAM_MAX_RANK_SIZE = 384;  // Maximum number of NPU cards supported by the communication library
+ 
+-constexpr uint64_t NOTIFY_DISPATCH_BUFF_OFFSET = 102UL * 1024UL * 1024UL;
++constexpr uint64_t NOTIFY_DISPATCH_BUFF_OFFSET = A3WindowLayout::kNotifyDispatchSize;
+ constexpr int64_t IPC_BUFF_MAX_SIZE = 100 * 1024 * 1024;
+ constexpr int64_t IPC_DATA_OFFSET = 2 * 1024 * 1024;  // First 2MB as flag, then 100MB as data storage
+ constexpr int64_t PING_PONG_SIZE = 2;
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine.h
+@@ -168,7 +168,7 @@
+ 
+     int64_t activeNum = 0;
+     int64_t expertCapacity = 0;
+-    int64_t expertNum = expertPerRank * EP;
++    int64_t expertNum = static_cast<int64_t>(expertPerRank) * static_cast<int64_t>(EP);
+     int64_t dropPadMode = 0;
+     int64_t expertTokensCountOrCumsumFlag = 2;
+     bool expertTokensBeforeCapacityFlag = false;
+@@ -239,7 +239,7 @@
+     GemmCoord problemShape{static_cast<uint32_t>(m), static_cast<uint32_t>(n), static_cast<uint32_t>(k)};
+ 
+     uint32_t epilogueCoreNum = aivNum / 2;
+-    uint32_t epilogueGranularity = expertPerRank - 1;
++    uint32_t epilogueGranularity = (expertPerRank > 0) ? (expertPerRank - 1) : 0;
+ 
+     typename MatmulKernel::Params params{problemShape,
+                                          static_cast<uint32_t>(EP),
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine.py
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine.py
+@@ -245,7 +245,7 @@
+     else:
+         options.append("-DDETERMINISTIC_MODE=0")
+     custom_compile_options = {},
+-    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/__w/sgl-kernel-npu/sgl-kernel-npu/csrc/deepep/ops/third_party/catlass/include']},
++    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/work/sgln_fix/csrc/deepep/ops/third_party/catlass/include']},
+     soc_version = get_soc_spec("SOC_VERSION")
+     soc_short = get_soc_spec("SHORT_SOC_VERSION").lower()
+     custom_compile_options_soc = get_shortsoc_compile_option(custom_compile_options[0], soc_short)
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel.hpp
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel.hpp
+@@ -684,7 +684,7 @@
+         __gm__ float *flagPtr = workspaceInfo.ptrSoftFlagBase;
+         AscendC::GlobalTensor<float> flagGM;
+         flagGM.SetGlobalBuffer(flagPtr);
+-        int32_t flagBufferSize = max(4, params.EP) * FLAGSTRIDE;
++        int64_t flagBufferSize = static_cast<int64_t>(max(4, params.EP)) * static_cast<int64_t>(FLAGSTRIDE);
+         AscendC::LocalTensor<float> dstValueBuffer = resource.ubBuf.template GetBufferByByte<float>(flagBufferSize);
+         AscendC::LocalTensor<float> sharedTmpBuffer =
+             resource.ubBuf.template GetBufferByByte<float>((flagBufferSize + 64));
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_fullload_dynamic_quant.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_fullload_dynamic_quant.h
+@@ -182,7 +182,9 @@
+         int32_t curExpertId = expandedExpertIdxLocal.GetValue(i);
+         tokenCount++;
+         while (lastExpertId < curExpertId) {
+-            expertTokensCount.SetValue(lastExpertId, tokenCount - 1);
++            if (lastExpertId >= 0 && lastExpertId < this->expertNum) {
++                expertTokensCount.SetValue(lastExpertId, tokenCount - 1);
++            }
+             if (this->expertTokensCountOrCumsumFlag == EXERPT_TOKENS_COUNT) {
+                 tokenCount = 1;
+             }
+@@ -190,11 +192,15 @@
+         }
+     }
+ #ifndef __CCE_KT_TEST__
+-    expertTokensCount.SetValue(lastExpertId, tokenCount);
++    if (lastExpertId >= 0 && lastExpertId < this->expertNum) {
++        expertTokensCount.SetValue(lastExpertId, tokenCount);
++    }
+     if (this->expertTokensCountOrCumsumFlag == EXERPT_TOKENS_CUMSUM) {
+         lastExpertId++;
+         while (lastExpertId < this->expertNum) {
+-            expertTokensCount.SetValue(lastExpertId, tokenCount);
++            if (lastExpertId >= 0) {
++                expertTokensCount.SetValue(lastExpertId, tokenCount);
++            }
+             lastExpertId++;
+         }
+     }
+@@ -294,7 +300,7 @@
+         while (curRowsStart <= curRowsEnd && curRowsStart / this->k_ == row) {
+             int32_t outIndex = expandedRowIdx.GetValue(curRowsStart);
+             curRowsStart++;
+-            if (outIndex == -1 || (this->dropPadMode == DROPLESS_MODE && outIndex >= this->activateRows_)) {
++            if (!(0 <= outIndex && outIndex < this->activateRows_)) {
+                 continue;
+             }
+             DataCopyPad(expandedXGm_[outIndex * this->cols_scale_], outLocal, intriParams);
+@@ -304,6 +310,9 @@
+         inputXOutQueue.FreeTensor(outLocal);
+     }
+     expandedRowIdxCopyOutQueue_.FreeTensor(expandedRowIdx);
++    if (smoothType == 1) {
++        smoothInQueue.FreeTensor(smoothLocal);
++    }
+ }
+ 
+ template <typename T>
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_fullload_quant.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_fullload_quant.h
+@@ -107,9 +107,10 @@
+     for (int64_t i = startXRow; i <= endXRow; i++) {
+         for (; k < this->perCoreRows && curRowsStart / this->k == i; curRowsStart++, k++) {
+             int32_t outIndex = expandedRowIdx.GetValue(curRowsStart);
+-            if (outIndex < this->activateRows) {
+-                DataCopyPad(expandedXGm[outIndex * this->cols], outLocal[(i - startXRow) * inFactor], intriParams);
++            if (!(0 <= outIndex && outIndex < this->activateRows)) {
++                continue;
+             }
++            DataCopyPad(expandedXGm[outIndex * this->cols], outLocal[(i - startXRow) * inFactor], intriParams);
+         }
+     }
+     expandedRowIdxCopyOutQueue.FreeTensor(expandedRowIdx);
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_fullload_quant_base.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_fullload_quant_base.h
+@@ -177,18 +177,24 @@
+         int32_t curExpertId = expandedExpertIdx.GetValue(i);
+         tokenCount++;
+         while (lastExpertId < curExpertId) {
+-            expertTokensCount.SetValue(lastExpertId, tokenCount - 1);
++            if (lastExpertId >= 0 && lastExpertId < this->expertNum) {
++                expertTokensCount.SetValue(lastExpertId, tokenCount - 1);
++            }
+             if (this->expertTokensCountOrCumsumFlag == EXERPT_TOKENS_COUNT) {
+                 tokenCount = 1;
+             }
+             lastExpertId++;
+         }
+     }
+-    expertTokensCount.SetValue(lastExpertId, tokenCount);
++    if (lastExpertId >= 0 && lastExpertId < this->expertNum) {
++        expertTokensCount.SetValue(lastExpertId, tokenCount);
++    }
+     if (this->expertTokensCountOrCumsumFlag == EXERPT_TOKENS_CUMSUM) {
+         lastExpertId++;
+         while (lastExpertId < this->expertNum) {
+-            expertTokensCount.SetValue(lastExpertId, tokenCount);
++            if (lastExpertId >= 0) {
++                expertTokensCount.SetValue(lastExpertId, tokenCount);
++            }
+             lastExpertId++;
+         }
+     }
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_gather_dynamic_quant.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_gather_dynamic_quant.h
+@@ -188,9 +188,6 @@
+             int32_t outIndex = indicesLocal.GetValue(curLoopRow);
+             curLoopRow++;
+             initialRow++;
+-            if (outIndex == -1 || (this->dropPadMode == DROPLESS_MODE && outIndex >= this->activateRows)) {
+-                continue;
+-            }
+             if (!(0 <= outIndex && outIndex < activateRows)) {
+                 continue;
+             }
+@@ -201,6 +198,9 @@
+         inputXOutQueue.FreeTensor(outLocal);
+     }
+     expandRowIdxInQueue.FreeTensor(indicesLocal);
++    if (smoothType == 1) {
++        smoothInQueue.FreeTensor(smoothLocal);
++    }
+ }
+ 
+ template <typename T>
+@@ -352,6 +352,9 @@
+         }
+         int32_t srcIdx = indicesLocal.GetValue(i);
+         int32_t expertIdx = indicesLocal.GetValue(currentLoopRowsAlign + i);
++        if (srcIdx < 0 || srcIdx >= this->totalLength) {
++            continue;
++        }
+ 
+         LocalTensor<float> inLocal = inputXInQueue.AllocTensor<float>();
+         LocalTensor<float> tempLocal = calcQueue.AllocTensor<float>();
+@@ -429,9 +432,6 @@
+             int32_t outIndex = indicesLocal.GetValue(curLoopRow);
+             curLoopRow++;
+             initialRow++;
+-            if (outIndex == -1 || (this->dropPadMode == DROPLESS_MODE && outIndex >= this->activateRows)) {
+-                continue;
+-            }
+             if (!(0 <= outIndex && outIndex < activateRows)) {
+                 continue;
+             }
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_gather_out.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_gather_out.h
+@@ -99,7 +99,7 @@
+                 int32_t outIndex = indicesLocal.GetValue(curLoopRow);
+                 curLoopRow++;
+                 initialRow++;
+-                if (outIndex == -1 || (this->dropPadMode == DROPLESS_MODE && outIndex >= this->activateRows)) {
++                if (!(0 <= outIndex && outIndex < this->activateRows)) {
+                     continue;
+                 }
+                 outOffset = outIndex * cols + colsLoop * this->perLoopCols;
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_gather_quant.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_gather_quant.h
+@@ -153,7 +153,7 @@
+                 int32_t outIndex = indicesLocal.GetValue(curLoopRow);
+                 curLoopRow++;
+                 initialRow++;
+-                if (outIndex == -1 || (this->dropPadMode == DROPLESS_MODE && outIndex >= this->activateRows)) {
++                if (!(0 <= outIndex && outIndex < this->activateRows)) {
+                     continue;
+                 }
+                 outOffset = outIndex * cols + colsLoop * this->perLoopCols;
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_init_routing_fullload.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_init_routing_fullload.h
+@@ -173,18 +173,24 @@
+         int32_t curExpertId = expandedExpertIdx.GetValue(i);
+         tokenCount++;
+         while (lastExpertId < curExpertId) {
+-            expertTokensCount.SetValue(lastExpertId, tokenCount - 1);
++            if (lastExpertId >= 0 && lastExpertId < this->expertNum) {
++                expertTokensCount.SetValue(lastExpertId, tokenCount - 1);
++            }
+             if (this->expertTokensCountOrCumsumFlag == EXERPT_TOKENS_COUNT) {
+                 tokenCount = 1;
+             }
+             lastExpertId++;
+         }
+     }
+-    expertTokensCount.SetValue(lastExpertId, tokenCount);
++    if (lastExpertId >= 0 && lastExpertId < this->expertNum) {
++        expertTokensCount.SetValue(lastExpertId, tokenCount);
++    }
+     if (this->expertTokensCountOrCumsumFlag == EXERPT_TOKENS_CUMSUM) {
+         lastExpertId++;
+         while (lastExpertId < this->expertNum) {
+-            expertTokensCount.SetValue(lastExpertId, tokenCount);
++            if (lastExpertId >= 0) {
++                expertTokensCount.SetValue(lastExpertId, tokenCount);
++            }
+             lastExpertId++;
+         }
+     }
+@@ -220,7 +226,7 @@
+     for (int64_t i = startXRow; i <= endXRow; i++) {
+         for (; k < this->perCoreRows_ && curRowsStart / this->k_ == i; curRowsStart++, k++) {
+             int32_t outIndex = expandedRowIdx.GetValue(curRowsStart);
+-            if (outIndex < this->activateRows_) {
++            if (0 <= outIndex && outIndex < this->activateRows_) {
+                 DataCopyPad(expandedXGm_[outIndex * this->cols_], xLocal[(i - startXRow) * inFactor], intriParams);
+             }
+         }
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_src_to_dst_and_gather.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_src_to_dst_and_gather.h
+@@ -219,6 +219,9 @@
+     }
+     for (int64_t idx = 0; idx < currentLoopRows; idx++) {
+         int32_t expertIdx = inLocal[length].GetValue(idx);
++        if (!(0 <= expertIdx && expertIdx < this->expertNum)) {
++            continue;
++        }
+         SetWaitFlag<HardEvent::S_MTE3>(HardEvent::S_MTE3);
+         int32_t index = 0;
+         while (this->lastExpertId < expertIdx) {
+@@ -234,6 +237,9 @@
+ 
+         if (this->tokenCount < this->expertCapacity) {
+             int32_t outOffset = inLocal.GetValue(idx);
++            if (!(0 <= outOffset && outOffset < this->totalLength)) {
++                continue;
++            }
+             index = expertIdx * this->expertCapacity + this->tokenCount;
+             outLocal.SetValue(0, index);
+             SetWaitFlag<HardEvent::S_MTE3>(HardEvent::S_MTE3);
+@@ -382,6 +388,9 @@
+     }
+     for (int64_t idx = 0; idx < currentLoopRows; idx++) {
+         int32_t expertIdx = inLocal[length].GetValue(idx);
++        if (!(0 <= expertIdx && expertIdx < this->expertNum)) {
++            continue;
++        }
+         SetWaitFlag<HardEvent::S_MTE3>(HardEvent::S_MTE3);
+         int32_t index = 0;
+         while (this->lastExpertId < expertIdx) {
+@@ -407,6 +416,9 @@
+ 
+         if (this->tokenCount < this->expertCapacity) {
+             int32_t outOffset = inLocal.GetValue(idx);
++            if (!(0 <= outOffset && outOffset < this->totalLength)) {
++                continue;
++            }
+             index = expertIdx * this->expertCapacity + this->tokenCount;
+             outLocal.SetValue(0, index);
+             SetWaitFlag<HardEvent::S_MTE3>(HardEvent::S_MTE3);
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_src_to_dst_op.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_src_to_dst_op.h
+@@ -88,9 +88,11 @@
+     DataCopyParams intriParams;
+     intriParams.blockCount = 1;
+     intriParams.blockLen = sizeof(int32_t);
+-    uint32_t outOffset;
+     for (int64_t idx = 0; idx < currentLoopRows; idx++) {
+-        outOffset = inLocal.GetValue(idx);
++        int32_t outOffset = inLocal.GetValue(idx);
++        if (!(0 <= outOffset && outOffset < this->totalLength)) {
++            continue;
++        }
+         DataCopyPad(expandSrcToDstRowGm[outOffset], outLocal[idx * INT32_ONE_BLOCK_NUM], intriParams);
+     }
+ 
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_src_to_dst_with_capacity.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/moe_init_routing_quant_v2/moe_v2_src_to_dst_with_capacity.h
+@@ -115,6 +115,9 @@
+     }
+     for (int64_t idx = 0; idx < currentLoopRows; idx++) {
+         int32_t expertIdx = inLocal[length].GetValue(idx);
++        if (!(0 <= expertIdx && expertIdx < this->expertNum)) {
++            continue;
++        }
+         SetWaitFlag<HardEvent::S_MTE3>(HardEvent::S_MTE3);
+         int32_t index = 0;
+         while (this->lastExpertId < expertIdx) {
+@@ -146,6 +149,9 @@
+ 
+         if (this->tokenCount < this->expertCapacity) {
+             int32_t outOffset = inLocal.GetValue(idx);
++            if (!(0 <= outOffset && outOffset < this->totalLength)) {
++                continue;
++            }
+             index = expertIdx * this->expertCapacity + this->tokenCount;
+             outLocal.SetValue(0, index);
+             SetWaitFlag<HardEvent::S_MTE3>(HardEvent::S_MTE3);
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/utils/block_epilogue_pertoken_swiglu.hpp
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/utils/block_epilogue_pertoken_swiglu.hpp
+@@ -219,6 +219,9 @@
+ 
+             // TODO: compare the efficiency of the two calculation methods
+             ElementPerTokenScale GMubDequantScale = ubReduceMax.GetValue(0);
++            if (GMubDequantScale == 0.f) {
++                GMubDequantScale = 1.f;
++            }
+             AscendC::SetFlag<AscendC::HardEvent::S_V>(0);
+ 
+             auto ubPerTokenScaleOutputOffset = loopIdx - loopStartIdx;
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/utils/moe_distribute_base.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_ffn_combine_kernel/utils/moe_distribute_base.h
+@@ -373,8 +373,11 @@
+ {
+     __gm__ uint8_t *start =
+         (__gm__ uint8_t *)((uint64_t)sourceAddr / AscendC::CACHE_LINE_SIZE * AscendC::CACHE_LINE_SIZE);
++    if (length == 0) {
++        return;
++    }
+     __gm__ uint8_t *end =
+-        (__gm__ uint8_t *)(((uint64_t)sourceAddr + length) / AscendC::CACHE_LINE_SIZE * AscendC::CACHE_LINE_SIZE);
++        (__gm__ uint8_t *)(((uint64_t)sourceAddr + length - 1) / AscendC::CACHE_LINE_SIZE * AscendC::CACHE_LINE_SIZE);
+     AscendC::GlobalTensor<uint8_t> global;
+     global.SetGlobalBuffer(start);
+     for (uint32_t i = 0; i <= end - start; i += AscendC::CACHE_LINE_SIZE) {
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_layout.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_layout.h
+@@ -57,21 +57,23 @@
+         if (coreIdx_ < restNum) {
+             ++tempTokens_;
+         }
+-        topkIdx32AlignIntLen_ = Ceil(tempTokens_ * numTopk_ * sizeof(int64_t), UB_32_ALIGN) * UB_32_ALIGN;
++        topkIdx32AlignIntLen_ =
++            Ceil(static_cast<uint64_t>(tempTokens_) * numTopk_ * sizeof(int64_t), UB_32_ALIGN) * UB_32_ALIGN;
+         numTokensPerRank32AlignIntLen_ = Ceil(numRanks_ * sizeof(T), UB_32_ALIGN) * UB_32_ALIGN;
+         numTokensPerExpert32AlignIntLen_ = Ceil(numExperts_ * sizeof(T), UB_32_ALIGN) * UB_32_ALIGN;
+-        isTokenInRank32AlignIntLen_ = Ceil(tempTokens_ * numRanks_ * sizeof(T), UB_32_ALIGN) * UB_32_ALIGN;
++        isTokenInRank32AlignIntLen_ =
++            Ceil(static_cast<uint64_t>(tempTokens_) * numRanks_ * sizeof(T), UB_32_ALIGN) * UB_32_ALIGN;
+ 
+         if (coreIdx_ < restNum) {
+-            topkIdxOffset_ = coreIdx_ * tempTokens_ * numTopk_ * sizeof(int64_t);
+-            sendIdxOffset_ = coreIdx_ * tempTokens_ * numTopk_ * sizeof(T);
+-            isTokenOffset_ = coreIdx_ * tempTokens_ * numRanks_ * sizeof(T);
+-            tokenIdxOffset_ = coreIdx_ * tempTokens_ * sizeof(T);
++            topkIdxOffset_ = static_cast<int64_t>(coreIdx_) * tempTokens_ * numTopk_ * sizeof(int64_t);
++            sendIdxOffset_ = static_cast<int64_t>(coreIdx_) * tempTokens_ * numTopk_ * sizeof(T);
++            isTokenOffset_ = static_cast<int64_t>(coreIdx_) * tempTokens_ * numRanks_ * sizeof(T);
++            tokenIdxOffset_ = static_cast<int64_t>(coreIdx_) * tempTokens_ * sizeof(T);
+         } else {
+-            topkIdxOffset_ = (restNum + coreIdx_ * tempTokens_) * numTopk_ * sizeof(int64_t);
+-            sendIdxOffset_ = (restNum + coreIdx_ * tempTokens_) * numTopk_ * sizeof(T);
+-            isTokenOffset_ = (restNum + coreIdx_ * tempTokens_) * numRanks_ * sizeof(T);
+-            tokenIdxOffset_ = (restNum + coreIdx_ * tempTokens_) * sizeof(T);
++            topkIdxOffset_ = (restNum + static_cast<int64_t>(coreIdx_) * tempTokens_) * numTopk_ * sizeof(int64_t);
++            sendIdxOffset_ = (restNum + static_cast<int64_t>(coreIdx_) * tempTokens_) * numTopk_ * sizeof(T);
++            isTokenOffset_ = (restNum + static_cast<int64_t>(coreIdx_) * tempTokens_) * numRanks_ * sizeof(T);
++            tokenIdxOffset_ = (restNum + static_cast<int64_t>(coreIdx_) * tempTokens_) * sizeof(T);
+         }
+ 
+         tempExpertGM_.SetGlobalBuffer((__gm__ T *)notifySendData);
+@@ -105,19 +107,22 @@
+                 if (coreIdx_ < restNum) {
+                     tempTokens_++;
+                 }
+-                topkIdx32AlignIntLen_ = Ceil(tempTokens_ * numTopk_ * sizeof(int64_t), UB_32_ALIGN) * UB_32_ALIGN;
+-                isTokenInRank32AlignIntLen_ = Ceil(tempTokens_ * numRanks_ * sizeof(T), UB_32_ALIGN) * UB_32_ALIGN;
++                topkIdx32AlignIntLen_ =
++                    Ceil(static_cast<uint64_t>(tempTokens_) * numTopk_ * sizeof(int64_t), UB_32_ALIGN) * UB_32_ALIGN;
++                isTokenInRank32AlignIntLen_ =
++                    Ceil(static_cast<uint64_t>(tempTokens_) * numRanks_ * sizeof(T), UB_32_ALIGN) * UB_32_ALIGN;
+ 
+                 if (coreIdx_ < restNum) {
+-                    topkIdxOffset_ = coreIdx_ * tempTokens_ * numTopk_ * sizeof(int64_t);
+-                    sendIdxOffset_ = coreIdx_ * tempTokens_ * numTopk_ * sizeof(T);
+-                    isTokenOffset_ = coreIdx_ * tempTokens_ * numRanks_ * sizeof(T);
+-                    tokenIdxOffset_ = coreIdx_ * tempTokens_ * sizeof(T);
++                    topkIdxOffset_ = static_cast<int64_t>(coreIdx_) * tempTokens_ * numTopk_ * sizeof(int64_t);
++                    sendIdxOffset_ = static_cast<int64_t>(coreIdx_) * tempTokens_ * numTopk_ * sizeof(T);
++                    isTokenOffset_ = static_cast<int64_t>(coreIdx_) * tempTokens_ * numRanks_ * sizeof(T);
++                    tokenIdxOffset_ = static_cast<int64_t>(coreIdx_) * tempTokens_ * sizeof(T);
+                 } else {
+-                    topkIdxOffset_ = (restNum + coreIdx_ * tempTokens_) * numTopk_ * sizeof(int64_t);
+-                    sendIdxOffset_ = (restNum + coreIdx_ * tempTokens_) * numTopk_ * sizeof(T);
+-                    isTokenOffset_ = (restNum + coreIdx_ * tempTokens_) * numRanks_ * sizeof(T);
+-                    tokenIdxOffset_ = (restNum + coreIdx_ * tempTokens_) * sizeof(T);
++                    topkIdxOffset_ =
++                        (restNum + static_cast<int64_t>(coreIdx_) * tempTokens_) * numTopk_ * sizeof(int64_t);
++                    sendIdxOffset_ = (restNum + static_cast<int64_t>(coreIdx_) * tempTokens_) * numTopk_ * sizeof(T);
++                    isTokenOffset_ = (restNum + static_cast<int64_t>(coreIdx_) * tempTokens_) * numRanks_ * sizeof(T);
++                    tokenIdxOffset_ = (restNum + static_cast<int64_t>(coreIdx_) * tempTokens_) * sizeof(T);
+                 }
+             }
+ 
+@@ -129,8 +134,8 @@
+                 continue;
+             }
+ 
+-            int64_t round_topkIdx_offset = r * perRoundTokens_ * numTopk_ * sizeof(int64_t);
+-            int64_t round_sendIdx_offset = r * perRoundTokens_ * numTopk_ * sizeof(T);
++            int64_t round_topkIdx_offset = static_cast<int64_t>(r) * perRoundTokens_ * numTopk_ * sizeof(int64_t);
++            int64_t round_sendIdx_offset = static_cast<int64_t>(r) * perRoundTokens_ * numTopk_ * sizeof(T);
+ 
+             sendTokenIdxSmallGM_.SetGlobalBuffer(
+                 (__gm__ T *)(sendTokenIdxSmall_ + round_sendIdx_offset + sendIdxOffset_));
+@@ -138,7 +143,8 @@
+             numTokensPerExpertGM_.SetGlobalBuffer((__gm__ T *)(numTokensPerExpert_ + numExperts_ * r * sizeof(T)));
+             // tokens * rank;
+             isTokenInRankGM_.SetGlobalBuffer(
+-                (__gm__ T *)(isTokenInRank_ + r * perRoundTokens_ * numRanks_ * sizeof(T) + isTokenOffset_));
++                (__gm__ T *)(isTokenInRank_ + static_cast<int64_t>(r) * perRoundTokens_ * numRanks_ * sizeof(T) +
++                             isTokenOffset_));
+ 
+             const DataCopyExtParams dataCopyParams{1U, topkIdx32AlignIntLen_, 0U, 0U, 0U};
+             const DataCopyPadExtParams<int64_t> padParams{false, 0U, 0U, 0U};
+@@ -152,7 +158,8 @@
+             SyncFunc<AscendC::HardEvent::V_S>();
+             SyncFunc<AscendC::HardEvent::V_MTE3>();
+             const DataCopyExtParams clearGmParams{1U, numTokensPerExpert32AlignIntLen_, 0U, 0U, 0U};
+-            DataCopyPad(tempExpertGM_[coreIdx_ * numExperts_], numTokensPerExpertTensor, clearGmParams);
++            DataCopyPad(tempExpertGM_[static_cast<int64_t>(coreIdx_) * numExperts_], numTokensPerExpertTensor,
++                        clearGmParams);
+             PipeBarrier<PIPE_MTE3>();
+             SyncAll<true>();
+ 
+@@ -184,7 +191,8 @@
+             AscendC::SetAtomicAdd<T>();
+             const DataCopyExtParams tempExpertDataCopyParams{1U, numTokensPerExpert32AlignIntLen_, 0U, 0U, 0U};
+             for (int i = coreIdx_ + 1; i < aivNum_; ++i) {
+-                DataCopyPad(tempExpertGM_[i * numExperts_], numTokensPerExpertTensor, tempExpertDataCopyParams);
++                DataCopyPad(tempExpertGM_[static_cast<int64_t>(i) * numExperts_], numTokensPerExpertTensor,
++                            tempExpertDataCopyParams);
+             }
+             sendSize = numRanks_ * sizeof(T);
+             const DataCopyExtParams numTokensPerRankDataCopyParams{1U, sendSize, 0U, 0U, 0U};
+@@ -197,8 +205,8 @@
+             SyncAll<true>();
+             SyncFunc<AscendC::HardEvent::MTE3_MTE2>();
+             const DataCopyPadExtParams<T> tempPadParams{false, 0U, 0U, 0U};
+-            DataCopyPad(numTokensPerExpertTensor, tempExpertGM_[coreIdx_ * numExperts_], tempExpertDataCopyParams,
+-                        tempPadParams);
++            DataCopyPad(numTokensPerExpertTensor, tempExpertGM_[static_cast<int64_t>(coreIdx_) * numExperts_],
++                        tempExpertDataCopyParams, tempPadParams);
+             SyncFunc<AscendC::HardEvent::MTE2_S>();
+             for (int i = 0; i < tempTokens_; ++i) {
+                 for (int j = 0; j < numTopk_; ++j) {
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_layout.py
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/dispatch_layout.py
+@@ -251,7 +251,7 @@
+     else:
+         options.append("-DDETERMINISTIC_MODE=0")
+     custom_compile_options = {},
+-    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/__w/sgl-kernel-npu/sgl-kernel-npu/csrc/deepep/ops/third_party/catlass/include']},
++    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/work/sgln_fix/csrc/deepep/ops/third_party/catlass/include']},
+     soc_version = get_soc_spec("SOC_VERSION")
+     soc_short = get_soc_spec("SHORT_SOC_VERSION").lower()
+     custom_compile_options_soc = get_shortsoc_compile_option(custom_compile_options[0], soc_short)
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/fused_deep_moe.py
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/fused_deep_moe.py
+@@ -257,7 +257,7 @@
+     else:
+         options.append("-DDETERMINISTIC_MODE=0")
+     custom_compile_options = {},
+-    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/__w/sgl-kernel-npu/sgl-kernel-npu/csrc/deepep/ops/third_party/catlass/include']},
++    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/work/sgln_fix/csrc/deepep/ops/third_party/catlass/include']},
+     soc_version = get_soc_spec("SOC_VERSION")
+     soc_short = get_soc_spec("SHORT_SOC_VERSION").lower()
+     custom_compile_options_soc = get_shortsoc_compile_option(custom_compile_options[0], soc_short)
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_base.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_base.h
+@@ -392,8 +392,11 @@
+ {
+     __gm__ uint8_t *start =
+         (__gm__ uint8_t *)((uint64_t)sourceAddr / AscendC::CACHE_LINE_SIZE * AscendC::CACHE_LINE_SIZE);
++    if (length == 0) {
++        return;
++    }
+     __gm__ uint8_t *end =
+-        (__gm__ uint8_t *)(((uint64_t)sourceAddr + length) / AscendC::CACHE_LINE_SIZE * AscendC::CACHE_LINE_SIZE);
++        (__gm__ uint8_t *)(((uint64_t)sourceAddr + length - 1) / AscendC::CACHE_LINE_SIZE * AscendC::CACHE_LINE_SIZE);
+     AscendC::GlobalTensor<uint8_t> global;
+     global.SetGlobalBuffer(start);
+     for (uint32_t i = 0; i <= end - start; i += AscendC::CACHE_LINE_SIZE) {
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_combine_v2.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_combine_v2.h
+@@ -7,19 +7,18 @@
+ #include "moe_distribute_v2_base.h"
+ #include "moe_distribute_combine_v2_tiling.h"
+ #include "check_winsize.h"
++#include "window_layout.h"
+ namespace MoeDistributeCombineV2Impl {
+ using namespace MoeDistributeV2Base;
+-constexpr uint8_t BUFFER_NUM = 2;                       // 多buf
+-constexpr uint32_t STATE_OFFSET = 32U;                  // 状态空间偏移地址
+-constexpr uint32_t STATE_SIZE = 1024UL * 1024UL;        // 1M
+-constexpr uint32_t COMBINE_STATE_OFFSET = 64U * 1024U;  // 本卡状态空间偏移地址，前面的地址给dispatch用
++constexpr uint8_t BUFFER_NUM = 2;                 // 多buf
++constexpr uint32_t STATE_OFFSET = 32U;            // 状态空间偏移地址
++constexpr uint32_t STATE_SIZE = 1024UL * 1024UL;  // 1M
+ constexpr uint8_t EP_DOMAIN = 0;
+ constexpr uint8_t TP_DOMAIN = 1;
+ constexpr uint32_t FLOAT_PER_UB_ALIGN = 8U;
+ constexpr uint64_t WIN_STATE_OFFSET = 500UL * 1024UL;
+ constexpr uint64_t STATE_WIN_OFFSET = 975UL * 1024UL;  // 预留48*512内存
+ constexpr uint64_t STATE_HCCL_OFFSET = 32UL;
+-constexpr uint64_t STATE_CHECK_OFFSET = 1000UL * 1024UL;
+ constexpr uint64_t TIMEOUT_DETECTION_THRESHOLD = 50000UL;
+ constexpr uint64_t CYCLES_PER_US = 50UL;
+ constexpr uint64_t TIMEOUT_DETECTION_TX_UNITS = 8UL;
+@@ -89,20 +88,43 @@
+     __aicore__ inline void WaitDispatch(uint32_t tokenIndex);
+     __aicore__ GM_ADDR GetWinAddrByRankId(const int32_t rankId, const uint8_t domain)
+     {
++        uint64_t dataOffset = isHybridDeployment_ ? Moe::A3WindowLayout::kDataOffset : 0UL;
+         if (domain == EP_DOMAIN) {
+-            return GetBaseWindAddrByRankId(epWinContext_, rankId, epRankIdOriginal_) + winDataSizeOffset_;
+-        } else {
+-            return GetBaseWindAddrByRankId(tpWinContext_, rankId, tpRankId_) + winDataSizeOffset_;
+-        }
++            return GetBaseWindAddrByRankId(epWinContext_, rankId, epRankIdOriginal_) + winDataSizeOffset_ + dataOffset;
++        }
++        return GetBaseWindAddrByRankId(tpWinContext_, rankId, tpRankId_) + winDataSizeOffset_ + dataOffset;
+     }
+ 
+     __aicore__ GM_ADDR GetWinStateAddrByRankId(const int32_t rankId, const uint8_t domain)
+     {
++        if (!isHybridDeployment_) {
++            if (domain == EP_DOMAIN) {
++                return GetBaseWindStateAddrByRankId(epWinContext_, rankId, epRankIdOriginal_) +
++                       Moe::A3WindowLayout::kLegacyV2CombineStateOffset +
++                       dataState_ * Moe::A3WindowLayout::kLegacyV2StateHalfSize;
++            }
++            return GetBaseWindStateAddrByRankId(tpWinContext_, rankId, tpRankId_) +
++                   Moe::A3WindowLayout::kLegacyV2CombineStateOffset +
++                   dataState_ * Moe::A3WindowLayout::kLegacyV2StateHalfSize;
++        }
+         if (domain == EP_DOMAIN) {
+-            return GetBaseWindStateAddrByRankId(epWinContext_, rankId, epRankIdOriginal_) + winStatusOffset_;
++            return GetBaseWindAddrByRankId(epWinContext_, rankId, epRankIdOriginal_) +
++                   dataState_ * (totalWinSize_ / 2UL) + Moe::A3WindowLayout::kLlCombineStateOffset;
+         } else {
+-            return GetBaseWindStateAddrByRankId(tpWinContext_, rankId, tpRankId_) + winStatusOffset_;
+-        }
++            return GetBaseWindAddrByRankId(tpWinContext_, rankId, tpRankId_) + dataState_ * (totalWinSize_ / 2UL) +
++                   Moe::A3WindowLayout::kLlCombineStateOffset;
++        }
++    }
++
++    __aicore__ inline uint64_t GetTimeoutProbeOffset()
++    {
++        return isHybridDeployment_ ? Moe::A3WindowLayout::kLlStateTimeoutOffset
++                                   : Moe::A3WindowLayout::kLegacyLlStateTimeoutOffset;
++    }
++
++    __aicore__ inline uint64_t GetDataWindowSize()
++    {
++        return isHybridDeployment_ ? totalWinSize_ / 2UL - Moe::A3WindowLayout::kDataOffset : totalWinSize_ / 2UL;
+     }
+ 
+     __aicore__ inline uint32_t MIN(uint32_t x, uint32_t y)
+@@ -179,7 +201,6 @@
+     uint32_t stateOffset_{0};
+     uint64_t activeMaskBsCnt_{0};
+     uint64_t winDataSizeOffset_{0};
+-    uint64_t winStatusOffset_{0};
+     uint64_t totalWinSize_{0};
+     uint32_t selfSendCnt_{0};
+     uint32_t tpRemoteSendCnt_{0};
+@@ -224,6 +245,7 @@
+     bool isInputExpertMaskFlag_ = false;
+     bool hasSharedExpertX_ = false;
+     bool hasElasticInfoFlag_ = false;
++    bool isHybridDeployment_ = false;
+     bool isScalingDownFlag_ = false;
+     bool isShareExpertRankFlag_ = false;
+     bool enableSpecialExpert_ = false;
+@@ -359,6 +381,7 @@
+     ubSize_ = tilingData->moeDistributeCombineV2Info.totalUbSize;
+     globalBS_ = tilingData->moeDistributeCombineV2Info.globalBs;
+     hasElasticInfoFlag_ = tilingData->moeDistributeCombineV2Info.hasElasticInfo;
++    isHybridDeployment_ = tilingData->moeDistributeCombineV2Info.isHybridDeployment;
+     epWorldSizeOriginal_ = tilingData->moeDistributeCombineV2Info.epWorldSize;
+     epRankId_ = tilingData->moeDistributeCombineV2Info.epRankId;
+     epRankIdOriginal_ = tilingData->moeDistributeCombineV2Info.epRankId;
+@@ -385,9 +408,11 @@
+     uint32_t sharedExpertRankNum = tilingData->moeDistributeCombineV2Info.sharedExpertRankNum;
+     auto contextGM0 = AscendC::GetHcclContext<HCCL_GROUP_ID_0>();
+     epWinContext_ = (__gm__ HcclOpParam *)contextGM0;
+-    statusDataSpaceGm_ = GetStatusDataSpaceGm(epWinContext_);
+-    selfDataStatusGMTensor_.SetGlobalBuffer(
+-        (__gm__ uint32_t *)(statusDataSpaceGm_ + STATE_WIN_OFFSET + coreIdx_ * WIN_ADDR_ALIGN));
++    statusDataSpaceGm_ =
++        isHybridDeployment_ ? GetBaseWindAddrByRankId(epWinContext_, epRankIdOriginal_, epRankIdOriginal_) +
++                                  Moe::A3WindowLayout::kLlCombineSelectorOffset
++                            : GetStatusDataSpaceGm(epWinContext_) + Moe::A3WindowLayout::kLegacyV2CombineSelectorOffset;
++    selfDataStatusGMTensor_.SetGlobalBuffer((__gm__ uint32_t *)(statusDataSpaceGm_ + coreIdx_ * WIN_ADDR_ALIGN));
+     TBuf<> dataStateBuf;
+     tpipe_->InitBuffer(dataStateBuf, UB_ALIGN);
+     dataState_ = InitWinState(selfDataStatusGMTensor_, epWinContext_, epRankIdOriginal_, moeExpertNum_,
+@@ -454,12 +479,12 @@
+     // 当前win区划分为前后两半区，连续两次dispatch，切换半区
+     winDataSizeOffset_ =
+         static_cast<uint64_t>(dataState_) * (tilingData->moeDistributeCombineV2Info.totalWinSize / 2UL);
+-    winStatusOffset_ = COMBINE_STATE_OFFSET + dataState_ * WIN_STATE_OFFSET;  // 前面的预留给dispatch使用
+     epWindowGM_ = GetWinAddrByRankId(epRankIdOriginal_, EP_DOMAIN);
+ #if defined(ASCENDC_OOM) && ASCENDC_OOM == 1
+     for (int tempepRankId = 0; tempepRankId < epWorldSize_; tempepRankId++) {
+-        OOMCheckAddrRange<XType>((__gm__ XType *)(GetWinAddrByRankId(tempepRankId, EP_DOMAIN)), totalWinSize_);
+-        OOMCheckAddrRange<float>((__gm__ float *)(GetWinStateAddrByRankId(tempepRankId, EP_DOMAIN)), STATE_SIZE);
++        OOMCheckAddrRange<XType>((__gm__ XType *)(GetWinAddrByRankId(tempepRankId, EP_DOMAIN)), GetDataWindowSize());
++        OOMCheckAddrRange<float>((__gm__ float *)(GetWinStateAddrByRankId(tempepRankId, EP_DOMAIN)),
++                                 Moe::A3WindowLayout::kLlStateSize);
+     }
+ #endif
+     if (isShareExpertRankFlag_) {
+@@ -481,9 +506,10 @@
+         tpWindowGM_ = GetWinAddrByRankId(tpRankId_, TP_DOMAIN);
+ #if defined(ASCENDC_OOM) && ASCENDC_OOM == 1
+         for (int temptpRankId = 0; temptpRankId < tpWorldSize_; temptpRankId++) {
+-            OOMCheckAddrRange<XType>((__gm__ XType *)(GetWinAddrByRankId(temptpRankId, TP_DOMAIN)), totalWinSize_);
++            OOMCheckAddrRange<XType>((__gm__ XType *)(GetWinAddrByRankId(temptpRankId, TP_DOMAIN)),
++                                     GetDataWindowSize());
+             OOMCheckAddrRange<int32_t>((__gm__ int32_t *)(GetWinStateAddrByRankId(temptpRankId, TP_DOMAIN)),
+-                                       STATE_SIZE);
++                                       Moe::A3WindowLayout::kLlStateSize);
+         }
+ #endif
+         tpStateOffsetOnWin_ = tpRankId_ * WIN_ADDR_ALIGN;
+@@ -992,7 +1018,7 @@
+                     toRankId = index;
+                 }
+                 GM_ADDR timeoutCheckGM =
+-                    (__gm__ uint8_t *)(GetWinStateAddrByRankId(toRankId, EP_DOMAIN) + STATE_CHECK_OFFSET);
++                    (__gm__ uint8_t *)(GetWinStateAddrByRankId(toRankId, EP_DOMAIN) + GetTimeoutProbeOffset());
+                 timeoutCheckGMTensor.SetGlobalBuffer((__gm__ float *)(timeoutCheckGM));
+                 DataCopy<float>(timeoutCheckGMTensor, stateTensor, TIMEOUT_DETECTION_TX_UNITS);
+             }
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_combine_v2_ccu.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_combine_v2_ccu.h
+@@ -431,12 +431,12 @@
+             for (int i = 0; i < localExpertNum_; ++i) {
+                 idx = i * epWorldSize_ + epRankId_;
+                 count = idx > 0 ? (inputCountLT_(idx) - inputCountLT_(idx - 1)) : inputCountLT_(idx);
+-                localDataSize += count * perTokenSize_;
++                localDataSize += static_cast<uint64_t>(count) * perTokenSize_;
+             }
+         } else {
+             idx = epRankId_;
+             count = idx > 0 ? (inputCountLT_(idx) - inputCountLT_(idx - 1)) : inputCountLT_(idx);
+-            localDataSize += count * perTokenSize_;
++            localDataSize += static_cast<uint64_t>(count) * perTokenSize_;
+         }
+ 
+         hcclHandleId_ = hccl_.AlltoAllvWrite<true>(sendBufGM_, sendOffsetGM_, sendSizeGM_, recvOffset_, localDataSize);
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_combine_v2_tiling.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_combine_v2_tiling.h
+@@ -27,6 +27,7 @@
+     bool isExpertMask;      // input active mask 2dims or not
+     bool hasSharedExpertX;  // input shared expert x or not
+     bool hasElasticInfo;    // has elasticinfo or not
++    bool isHybridDeployment;
+     uint64_t totalUbSize;
+     uint64_t totalWinSize;
+     float armAvgFactor;
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_dispatch_v2.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_dispatch_v2.h
+@@ -7,6 +7,7 @@
+ #include "moe_distribute_v2_base.h"
+ #include "moe_distribute_dispatch_v2_tiling.h"
+ #include "check_winsize.h"
++#include "comm_args.h"
+ 
+ namespace MoeDistributeDispatchV2Impl {
+ constexpr uint8_t BUFFER_NUM = 2;  // 多buf
+@@ -20,7 +21,6 @@
+ constexpr uint64_t WIN_STATE_OFFSET = 500UL * 1024UL;
+ constexpr uint64_t STATE_WIN_OFFSET = 950UL * 1024UL;
+ constexpr uint64_t STATE_HCCL_OFFSET = 32UL;
+-constexpr uint64_t STATE_CHECK_OFFSET = 1000UL * 1024UL;
+ constexpr uint64_t TIMEOUT_DETECTION_THRESHOLD = 50000UL;
+ constexpr uint64_t CYCLES_PER_US = 50UL;
+ constexpr uint64_t TIMEOUT_DETECTION_TX_UNITS = 8UL;
+@@ -90,14 +90,31 @@
+                                          LocalTensor<float> &statusSumOutTensor);
+     __aicore__ inline GM_ADDR GetWindAddrByRankId(uint8_t ctxIdx, const int32_t rankId)
+     {
+-        uint32_t curRankId = ((ctxIdx == COMM_EP_IDX) ? epRankIdOriginal_ : tpRankId_);
+-        return GetBaseWindAddrByRankId(winContext_[ctxIdx], rankId, curRankId) + winDataSizeOffset_;
++        uint32_t curRankId = ctxIdx == COMM_EP_IDX ? epRankIdOriginal_ : tpRankId_;
++        uint64_t dataOffset = isHybridDeployment_ ? Moe::A3WindowLayout::kDataOffset : 0UL;
++        return GetBaseWindAddrByRankId(winContext_[ctxIdx], rankId, curRankId) + winDataSizeOffset_ + dataOffset;
+     }
+ 
+     __aicore__ inline GM_ADDR GetWindStateAddrByRankId(uint8_t ctxIdx, const int32_t rankId)
+     {
+         uint32_t curRankId = ctxIdx == COMM_EP_IDX ? epRankIdOriginal_ : tpRankId_;
+-        return GetBaseWindStateAddrByRankId(winContext_[ctxIdx], rankId, curRankId) + dataState_ * WIN_STATE_OFFSET;
++        if (!isHybridDeployment_) {
++            return GetBaseWindStateAddrByRankId(winContext_[ctxIdx], rankId, curRankId) +
++                   dataState_ * Moe::A3WindowLayout::kLegacyV2StateHalfSize;
++        }
++        return GetBaseWindAddrByRankId(winContext_[ctxIdx], rankId, curRankId) + dataState_ * (totalWinSize_ / 2UL) +
++               Moe::A3WindowLayout::kLlDispatchStateOffset;
++    }
++
++    __aicore__ inline uint64_t GetTimeoutProbeOffset()
++    {
++        return isHybridDeployment_ ? Moe::A3WindowLayout::kLlStateTimeoutOffset
++                                   : Moe::A3WindowLayout::kLegacyLlStateTimeoutOffset;
++    }
++
++    __aicore__ inline uint64_t GetDataWindowSize()
++    {
++        return isHybridDeployment_ ? totalWinSize_ / 2UL - Moe::A3WindowLayout::kDataOffset : totalWinSize_ / 2UL;
+     }
+ 
+     __aicore__ inline uint32_t MIN(uint32_t x, uint32_t y)
+@@ -231,6 +248,7 @@
+     bool isTokenMaskFlag_ = false;
+     bool isExpertMaskFlag_ = false;
+     bool hasElasticInfoFlag_ = false;
++    bool isHybridDeployment_ = false;
+     bool isScalingDownFlag_ = false;
+     bool isShareExpertRankFlag_ = false;
+     float sumTarget_;
+@@ -309,9 +327,13 @@
+     sharedExpertRankNum_ = tilingData->moeDistributeDispatchV2Info.sharedExpertRankNum;
+     moeExpertNum_ = tilingData->moeDistributeDispatchV2Info.moeExpertNum;
+     globalBS_ = tilingData->moeDistributeDispatchV2Info.globalBs;
+-    statusDataSpaceGm_ = GetStatusDataSpaceGm(winContext_[0]);
+-    selfDataStatusGMTensor_.SetGlobalBuffer(
+-        (__gm__ uint32_t *)(statusDataSpaceGm_ + STATE_WIN_OFFSET + aivId_ * WIN_ADDR_ALIGN));
++    isHybridDeployment_ = tilingData->moeDistributeDispatchV2Info.isHybridDeployment;
++    statusDataSpaceGm_ =
++        isHybridDeployment_
++            ? GetBaseWindAddrByRankId(winContext_[COMM_EP_IDX], epRankIdOriginal_, epRankIdOriginal_) +
++                  Moe::A3WindowLayout::kLlDispatchSelectorOffset
++            : GetStatusDataSpaceGm(winContext_[COMM_EP_IDX]) + Moe::A3WindowLayout::kLegacyV2DispatchSelectorOffset;
++    selfDataStatusGMTensor_.SetGlobalBuffer((__gm__ uint32_t *)(statusDataSpaceGm_ + aivId_ * WIN_ADDR_ALIGN));
+     TBuf<> dataStateBuf;
+     tpipe_->InitBuffer(dataStateBuf, UB_ALIGN);
+     dataState_ = InitWinState(selfDataStatusGMTensor_, winContext_[0], epRankIdOriginal_, moeExpertNum_,
+@@ -399,8 +421,9 @@
+ #if defined(ASCENDC_OOM) && ASCENDC_OOM == 1
+     for (int tempepRankId = 0; tempepRankId < epWorldSize_; tempepRankId++) {
+         OOMCheckAddrRange<ExpandXOutType>((__gm__ ExpandXOutType *)(GetWindAddrByRankId(COMM_EP_IDX, tempepRankId)),
+-                                          totalWinSize_);
+-        OOMCheckAddrRange<float>((__gm__ float *)(GetWindStateAddrByRankId(COMM_EP_IDX, tempepRankId)), STATE_SIZE);
++                                          GetDataWindowSize());
++        OOMCheckAddrRange<float>((__gm__ float *)(GetWindStateAddrByRankId(COMM_EP_IDX, tempepRankId)),
++                                 Moe::A3WindowLayout::kLlStateSize);
+     }
+ #endif
+     sumTarget_ = static_cast<float>(1.0);
+@@ -418,15 +441,15 @@
+     GlobalTensor<ExpandXOutType> winDouble;
+     winDouble.SetL2CacheHint(CacheMode::CACHE_MODE_DISABLE);
+     winDouble.SetGlobalBuffer((__gm__ ExpandXOutType *)(windowGM_));
+-    OOMCheckAddrRange<ExpandXOutType>((__gm__ ExpandXOutType *)(winDouble.GetPhyAddr()), totalWinSize_);
++    OOMCheckAddrRange<ExpandXOutType>((__gm__ ExpandXOutType *)(winDouble.GetPhyAddr()), GetDataWindowSize());
+ #endif
+     if constexpr (IsNeedAllgather) {
+ #if defined(ASCENDC_OOM) && ASCENDC_OOM == 1
+         for (int temptpRankId = 0; temptpRankId < tpWorldSize_; temptpRankId++) {
+             OOMCheckAddrRange<ExpandXOutType>((__gm__ ExpandXOutType *)(GetWindAddrByRankId(COMM_TP_IDX, temptpRankId)),
+-                                              totalWinSize_);
++                                              GetDataWindowSize());
+             OOMCheckAddrRange<int32_t>((__gm__ int32_t *)(GetWindStateAddrByRankId(COMM_TP_IDX, temptpRankId)),
+-                                       STATE_SIZE);
++                                       Moe::A3WindowLayout::kLlStateSize);
+         }
+ #endif
+         tpLocalWindowGM_ = GetWindAddrByRankId(COMM_TP_IDX, tpRankId_);
+@@ -1109,7 +1132,7 @@
+             toRankId = index % epWorldSize_;
+         }
+         GM_ADDR timeoutCheckGM =
+-            (__gm__ uint8_t *)(GetWindStateAddrByRankId(COMM_EP_IDX, toRankId) + STATE_CHECK_OFFSET);
++            (__gm__ uint8_t *)(GetWindStateAddrByRankId(COMM_EP_IDX, toRankId) + GetTimeoutProbeOffset());
+         timeoutCheckGMTensor.SetGlobalBuffer((__gm__ float *)(timeoutCheckGM));
+         DataCopy<float>(timeoutCheckGMTensor, statusFp32Tensor_, TIMEOUT_DETECTION_TX_UNITS);
+     }
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_dispatch_v2_a5.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_dispatch_v2_a5.h
+@@ -470,7 +470,7 @@
+     }
+     totalExpertNum_ = sharedExpertRankNum_ + moeExpertNum_;
+     uint32_t statusBufCntAlign = Ceil(Ceil(totalExpertNum_, aivNum_), 8) * 8;  // 8 = UB_ALIGN / sizeof(int32_t)
+-    uint32_t statusBufSize = statusBufCntAlign * UB_ALIGN;
++    uint32_t statusBufSize = recvWinBlockNum_ * UB_ALIGN;
+     tpipe_->InitBuffer(statusBuf_, statusBufSize);
+     totalUsedUB_ += statusBufSize;
+     statusTensor_ = statusBuf_.Get<int32_t>();  // 保存发送数据量及flag，同时用于计算windows中的偏移
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_dispatch_v2_ccu.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_dispatch_v2_ccu.h
+@@ -117,7 +117,7 @@
+     uint32_t perTokenOutSize_;
+     uint32_t perTokenMergeSize_;
+     uint32_t perTokenCommSize_;
+-    uint32_t perRankDataSize_;
++    uint64_t perRankDataSize_;
+     uint32_t expertTokenNumsType_;
+     uint32_t scaleOutBytes_;
+     uint32_t shareRankRcvTokenCnt_;
+@@ -254,7 +254,9 @@
+     pipe_->InitBuffer(workspaceBuf, histoSize);
+     expertCumSumLT_ = workspaceBuf.Get<uint16_t>();
+ 
+-    pipe_->InitBuffer(workspaceBuf, sortNum_ * sizeof(int32_t));
++    uint32_t rankPerAivNum = Ceil<uint32_t, uint32_t>(epWorldSize_, aivNum_);
++    uint32_t indexLtElem = (sortNum_ > rankPerAivNum) ? sortNum_ : rankPerAivNum;
++    pipe_->InitBuffer(workspaceBuf, indexLtElem * sizeof(int32_t));
+     indexLT_ = workspaceBuf.Get<int32_t>();
+ 
+     pipe_->InitBuffer(tempBuf_, sortNum_ * sizeof(int32_t) * DUAL_DATA);
+@@ -317,7 +319,7 @@
+     }
+ 
+     perTokenCommSize_ = Align512<uint32_t>(perTokenMergeSize_);
+-    perRankDataSize_ = COUNT_OFFSET + perTokenCommSize_ * axisMaxBs_ * localExpertNum_;
++    perRankDataSize_ = COUNT_OFFSET + static_cast<uint64_t>(perTokenCommSize_) * axisMaxBs_ * localExpertNum_;
+ 
+     if constexpr (QuantMode > UNQUANT) {
+         pipe_->InitBuffer(tokenInQue_, BUFFER_NUM, perTokenInSize_);
+@@ -589,7 +591,8 @@
+     GlobalTensor<uint32_t> sendCntGT;
+     sendCntGT.SetGlobalBuffer((__gm__ uint32_t *)(sendBufGM_ + startRank * perRankDataSize_));
+     uint32_t cntSize = sizeof(uint32_t);
+-    DataCopyExtParams cntParams = {static_cast<uint16_t>(rankPerAiv), cntSize, 0, perRankDataSize_ - cntSize, 0};
++    DataCopyExtParams cntParams = {static_cast<uint16_t>(rankPerAiv), cntSize, 0,
++                                   static_cast<int64_t>(perRankDataSize_ - cntSize), 0};
+     DataCopyPad(sendCntGT, cntLT, cntParams);
+ }
+ 
+@@ -732,7 +735,7 @@
+     sendCntGT.SetGlobalBuffer((__gm__ uint32_t *)(sendBufGM_ + (startRank + sharedExpertRankNum_) * perRankDataSize_));
+     uint32_t cpSize2 = sizeof(uint32_t) * localExpertNum_;
+     DataCopyExtParams cntParams = {static_cast<uint16_t>(rankPerAiv), cpSize2, rankCntSize - cpSize2,
+-                                   perRankDataSize_ - cpSize2, 0};
++                                   static_cast<int64_t>(perRankDataSize_ - cpSize2), 0};
+     DataCopyPad(sendCntGT, cntLT, cntParams);
+ }
+ 
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_dispatch_v2_tiling.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_distribute_dispatch_v2_tiling.h
+@@ -19,8 +19,8 @@
+     bool isTokenMask;              // input active mask 1dims or not
+     bool isExpertMask;             // input active mask 2dims or not
+     bool hasElasticInfo;           // has elasticinfo or not
+-    bool reserved3;                // reserved
+-    uint64_t totalUbSize;          // epWorldSize
++    bool isHybridDeployment;
++    uint64_t totalUbSize;  // epWorldSize
+     uint64_t totalWinSize;
+     uint32_t expertTokenNumsType;  // expert token nums type, support 0: cumsum mode, 1: count mode
+     int32_t zeroComputeExpertNum;  // sum of zero、copy and const expert nums
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_low_latency_combine_v2.py
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_low_latency_combine_v2.py
+@@ -317,7 +317,7 @@
+     else:
+         options.append("-DDETERMINISTIC_MODE=0")
+     custom_compile_options = {},
+-    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/__w/sgl-kernel-npu/sgl-kernel-npu/csrc/deepep/ops/third_party/catlass/include']},
++    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/work/sgln_fix/csrc/deepep/ops/third_party/catlass/include']},
+     soc_version = get_soc_spec("SOC_VERSION")
+     soc_short = get_soc_spec("SHORT_SOC_VERSION").lower()
+     custom_compile_options_soc = get_shortsoc_compile_option(custom_compile_options[0], soc_short)
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_low_latency_dispatch_v2.py
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/moe_low_latency_dispatch_v2.py
+@@ -311,7 +311,7 @@
+     else:
+         options.append("-DDETERMINISTIC_MODE=0")
+     custom_compile_options = {},
+-    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/__w/sgl-kernel-npu/sgl-kernel-npu/csrc/deepep/ops/third_party/catlass/include']},
++    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/work/sgln_fix/csrc/deepep/ops/third_party/catlass/include']},
+     soc_version = get_soc_spec("SOC_VERSION")
+     soc_short = get_soc_spec("SHORT_SOC_VERSION").lower()
+     custom_compile_options_soc = get_shortsoc_compile_option(custom_compile_options[0], soc_short)
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/notify_dispatch.h
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/notify_dispatch.h
+@@ -696,7 +696,7 @@
+ 
+         pipe.InitBuffer(tmpBuf_, Ceil(numRanks * numLocalExperts * sizeof(int32_t), UB_ALIGN_SIZE) * UB_ALIGN_SIZE);
+         LocalTensor<int32_t> expSrcTotalTensor = tmpBuf_.Get<int32_t>();
+-        Duplicate<int32_t>(expSrcTotalTensor, 0, numExperts);
++        Duplicate<int32_t>(expSrcTotalTensor, 0, numRanks * numLocalExperts);
+         SyncFunc<AscendC::HardEvent::V_S>();
+ 
+         for (uint32_t rStart = 0; rStart < round; rStart += batchRounds) {
+
+--- current/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/notify_dispatch.py
++++ candidate/vendors/hwcomputing/op_impl/ai_core/tbe/hwcomputing_impl/dynamic/notify_dispatch.py
+@@ -263,7 +263,7 @@
+     else:
+         options.append("-DDETERMINISTIC_MODE=0")
+     custom_compile_options = {},
+-    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/__w/sgl-kernel-npu/sgl-kernel-npu/csrc/deepep/ops/third_party/catlass/include']},
++    custom_all_compile_options = {'__ALLSOC__': ['-DASCENDC_DUMP=0', '--cce-auto-sync=off', '-I/work/sgln_fix/csrc/deepep/ops/third_party/catlass/include']},
+     soc_version = get_soc_spec("SOC_VERSION")
+     soc_short = get_soc_spec("SHORT_SOC_VERSION").lower()
+     custom_compile_options_soc = get_shortsoc_compile_option(custom_compile_options[0], soc_short)

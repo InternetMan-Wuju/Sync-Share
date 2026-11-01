@@ -1,0 +1,32 @@
+{
+  "pid": 3214604,
+  "phase": "completed",
+  "completed": true,
+  "started_unix": 1791840277.6441765,
+  "updated_unix": 1791841772.1476011,
+  "container": "cyt-auto-mtp-v19-dp2-no-multistream",
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "/home/chengyetai/workspace/current_exp/autonomous_20261012/scripts/service.py",
+    "start",
+    "--name",
+    "cyt-auto-mtp-v19-dp2-no-multistream",
+    "--repaired",
+    "--slim-draft",
+    "--dp",
+    "2",
+    "--dp-attention",
+    "--context",
+    "180000",
+    "--mrr",
+    "8",
+    "--diagnostics",
+    "--env",
+    "SGLANG_ENABLE_OVERLAP_PLAN_STREAM=0",
+    "--env",
+    "SGLANG_NPU_USE_MULTI_STREAM=0"
+  ],
+  "child_pid": 3551034,
+  "result": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream"
+}

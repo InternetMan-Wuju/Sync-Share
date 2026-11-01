@@ -1,0 +1,38 @@
+**进程都还在，可以放心切换。**
+
+## 当前状态（刚查）
+```
+tmux 会话:  q1pos  ✅ 活着（还有 0/codex23/vscode-tunnel 是别的）
+进程:       run_posrate_rerun.sh + quick_accept_test.py 都在跑
+容器:       q1-mtp-23  Up 15 分钟，health=200
+正在跑:     w2 (32k/1k) —— w1 已完成
+```
+
+**w1(8k/1k) 的 per-position 已经出来了**（这是你要的那个指标）：
+```
+AL = 2.901   接受率 = 0.634   P1/P2/P3 = 0.886 / 0.576 / 0.441
+（对照文档参考值 0.498/0.345/0.267 → 我们第 1 位高很多，第 2/3 位也偏高）
+```
+
+## 切换 Codex API 会不会影响？
+**不会**。这些是**机器上的 tmux 会话 + docker 容器**，跟 Codex 的会话/API 完全无关：
+- 切 API 后它们**继续跑**（我们已经踩过教训：`nohup` 会被会话回收杀掉，所以特意用了 tmux ✓）
+- 如果还是**同一条会话**（只换模型）：上下文保留，我回来直接接着看
+- 如果开**新对话**：那边没有本对话历史，让它先读这几个文件即可：
+  - `current_exp/Q1MTPExp/跑通验证_三件事_20261012.md`（结论+偏差）
+  - `current_exp/Q1MTPExp/results/posrate/summary.md`（**per-position 结果**）
+  - `current_exp/Q1MTPExp/results/scenarios/summary.md`（4 场景总表）
+  - `current_exp/Q1MTPExp/快速对比_random_vs_real_20261012.md`（数据集对比）
+
+## 你自己随时可以这样查（不用等我）
+```bash
+cd ~/workspace/current_exp/Q1MTPExp
+cat results/posrate/summary.md          # w1/w2/w3 的 AL + P1/P2/P3
+cat results/scenarios/summary.md        # 4 场景总表（含 w4 的 P1/P2/P3=0.747/0.538/0.340）
+tmux ls | grep q1pos                    # 还在不在
+tmux attach -t q1pos                    # 看实时输出（Ctrl-b d 退出，别 Ctrl-C！）
+curl -s localhost:30080/health          # 服务状态
+```
+⚠️ 唯一要注意：**不要 `tmux kill-session`、不要 `docker rm -f q1-mtp-23`**，其他随便动。
+
+预测 w2/w3 补跑完约 **18:30**（w2 已开始）；跑完会自动停服务。你切换 API 时它照跑，我回来接着汇报。

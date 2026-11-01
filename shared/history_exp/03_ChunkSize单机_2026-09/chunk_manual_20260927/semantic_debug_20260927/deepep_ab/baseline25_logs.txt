@@ -1,0 +1,120 @@
+[2026-09-27 07:54:53 TP10 EP10] get env DEEP_NORMAL_MODE_USE_INT8_QUANT = 1
+[2026-09-27 07:54:53 TP8 EP8] get env DEEP_NORMAL_MODE_USE_INT8_QUANT = 1
+[2026-09-27 07:54:53 TP9 EP9] get env DEEP_NORMAL_MODE_USE_INT8_QUANT = 1
+[2026-09-27 07:54:53 TP11 EP11] get env DEEP_NORMAL_MODE_USE_INT8_QUANT = 1
+[2026-09-27 07:54:53 TP12 EP12] get env DEEP_NORMAL_MODE_USE_INT8_QUANT = 1
+[2026-09-27 07:54:53 TP0 EP0] get env DEEP_NORMAL_MODE_USE_INT8_QUANT = 1
+[2026-09-27 07:54:53 TP3 EP3] get env DEEP_NORMAL_MODE_USE_INT8_QUANT = 1
+[2026-09-27 07:54:53 TP1 EP1] get env DEEP_NORMAL_MODE_USE_INT8_QUANT = 1
+[2026-09-27 07:55:01 TP0 EP0] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP2 EP2] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP1 EP1] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP6 EP6] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP3 EP3] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP8 EP8] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP11 EP11] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP10 EP10] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP15 EP15] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP12 EP12] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP9 EP9] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP7 EP7] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP4 EP4] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP5 EP5] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP13 EP13] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:01 TP14 EP14] multimem all-gather disabled (SymmetricMemory does not support device type cuda)
+[2026-09-27 07:55:07 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.01, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 1.49
+[2026-09-27 07:55:08 TP0 EP0] Prefill batch, #new-seq: 3, #new-token: 384, #cached-token: 0, token usage: 0.01, #running-req: 1, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 755.90
+[2026-09-27 07:55:11] Registering tokenizer ipc_name='ipc:///tmp/tmpdo2s2hwl' in SocketMapping...
+[2026-09-27 07:55:11] Registering tokenizer ipc_name='ipc:///tmp/tmpmuemljdr' in SocketMapping...
+[2026-09-27 07:55:11] INFO:     127.0.0.1:65422 - "POST /generate HTTP/1.1" 200 OK
+[2026-09-27 07:55:11] INFO:     127.0.0.1:65356 - "POST /generate HTTP/1.1" 200 OK
+[2026-09-27 07:55:11] INFO:     127.0.0.1:65382 - "POST /generate HTTP/1.1" 200 OK
+[2026-09-27 07:55:11] INFO:     127.0.0.1:65404 - "POST /generate HTTP/1.1" 200 OK
+[2026-09-27 07:55:11 TP6 EP6] Freezing GC in Scheduler process. gen0: 55->0, gen1: 3014->0, gen2: 1104109->0
+[2026-09-27 07:55:11 TP3 EP3] Freezing GC in Scheduler process. gen0: 55->0, gen1: 3014->0, gen2: 1104107->0
+[2026-09-27 07:55:11] INFO:     127.0.0.1:45144 - "POST /freeze_gc HTTP/1.1" 200 OK
+[2026-09-27 07:55:11 TP10 EP10] Freezing GC in Scheduler process. gen0: 55->0, gen1: 3014->0, gen2: 1104100->0
+[2026-09-27 07:55:11 TP12 EP12] Freezing GC in Scheduler process. gen0: 55->0, gen1: 3014->0, gen2: 1104086->0
+[2026-09-27 07:55:11 TP14 EP14] Freezing GC in Scheduler process. gen0: 55->0, gen1: 3014->0, gen2: 1104086->0
+[2026-09-27 07:55:11] INFO:     127.0.0.1:45120 - "POST /freeze_gc HTTP/1.1" 200 OK
+[2026-09-27 07:55:11] INFO:     The server is fired up and ready to roll!
+[2026-09-27 07:55:11] INFO:     127.0.0.1:45134 - "POST /freeze_gc HTTP/1.1" 200 OK
+[2026-09-27 07:55:11] INFO:     The server is fired up and ready to roll!
+[2026-09-27 07:55:11 TP0 EP0] Freezing GC in Scheduler process. gen0: 52->0, gen1: 3464->0, gen2: 1103420->0
+[2026-09-27 07:55:11 TP7 EP7] Freezing GC in Scheduler process. gen0: 52->0, gen1: 3016->0, gen2: 1104106->0
+[2026-09-27 07:55:11 TP2 EP2] Freezing GC in Scheduler process. gen0: 52->0, gen1: 3016->0, gen2: 1104090->0
+[2026-09-27 07:55:11 TP9 EP9] Freezing GC in Scheduler process. gen0: 55->0, gen1: 3014->0, gen2: 1104121->0
+[2026-09-27 07:55:11 TP15 EP15] Freezing GC in Scheduler process. gen0: 55->0, gen1: 3014->0, gen2: 1104086->0
+[2026-09-27 07:55:11 TP1 EP1] Freezing GC in Scheduler process. gen0: 52->0, gen1: 3016->0, gen2: 1104106->0
+[2026-09-27 07:55:11 TP4 EP4] Freezing GC in Scheduler process. gen0: 52->0, gen1: 3016->0, gen2: 1104121->0
+[2026-09-27 07:55:11 TP8 EP8] Freezing GC in Scheduler process. gen0: 52->0, gen1: 3016->0, gen2: 1104106->0
+[2026-09-27 07:55:11 TP11 EP11] Freezing GC in Scheduler process. gen0: 55->0, gen1: 3014->0, gen2: 1104085->0
+[2026-09-27 07:55:11 TP8 EP8] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP8 EP8] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP2 EP2] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP10 EP10] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP4 EP4] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP6 EP6] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP8 EP8] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP12 EP12] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP14 EP14] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP10 EP10] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP2 EP2] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP6 EP6] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP4 EP4] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP10 EP10] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP2 EP2] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP12 EP12] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP14 EP14] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP4 EP4] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP6 EP6] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP12 EP12] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP14 EP14] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP5 EP5] Freezing GC in Scheduler process. gen0: 52->0, gen1: 3016->0, gen2: 1104107->0
+[2026-09-27 07:55:11 TP0 EP0] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP9 EP9] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP11 EP11] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP3 EP3] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP7 EP7] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP0 EP0] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP11 EP11] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP9 EP9] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP7 EP7] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP11 EP11] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP15 EP15] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP9 EP9] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP3 EP3] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP0 EP0] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP7 EP7] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP3 EP3] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP15 EP15] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP15 EP15] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP13 EP13] Freezing GC in Scheduler process. gen0: 52->0, gen1: 3016->0, gen2: 1104085->0
+[2026-09-27 07:55:11 TP1 EP1] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP5 EP5] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP1 EP1] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP1 EP1] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP5 EP5] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP13 EP13] Freezing GC in Scheduler process. gen0: 6->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP5 EP5] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP13 EP13] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11 TP13 EP13] Freezing GC in Scheduler process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11] Freezing GC in Detokenizer Manager process. gen0: 526->0, gen1: 1394->0, gen2: 677346->0
+[2026-09-27 07:55:11] Freezing GC in Detokenizer Manager process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11] Freezing GC in Detokenizer Manager process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11] Freezing GC in Detokenizer Manager process. gen0: 1->0, gen1: 0->0, gen2: 0->0
+[2026-09-27 07:55:11] INFO:     127.0.0.1:45156 - "POST /freeze_gc HTTP/1.1" 200 OK
+[2026-09-27 07:55:11] INFO:     The server is fired up and ready to roll!
+[2026-09-27 07:55:11] INFO:     The server is fired up and ready to roll!
+[2026-09-27 07:55:36 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 4.46
+[2026-09-27 07:57:24 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 1.19
+[2026-09-27 07:57:25] INFO:     127.0.0.1:33942 - "GET /health HTTP/1.1" 200 OK
+[2026-09-27 08:00:03 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.80
+[2026-09-27 08:00:03] INFO:     127.0.0.1:57482 - "GET /health HTTP/1.1" 200 OK
+[2026-09-27 11:12:36 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.01
+[2026-09-27 11:12:36] INFO:     127.0.0.1:63274 - "GET /health HTTP/1.1" 200 OK
+[2026-09-27 11:13:47 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 1.81
+[2026-09-27 11:13:48] INFO:     127.0.0.1:43682 - "GET /health HTTP/1.1" 200 OK
+[2026-09-27 11:13:48] INFO:     127.0.0.1:43684 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-27 12:06:46 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 128, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.04
+[2026-09-27 12:06:53] INFO:     10.120.72.23:2514 - "POST /v1/chat/completions HTTP/1.1" 200 OK

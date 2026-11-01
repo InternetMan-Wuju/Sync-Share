@@ -1,0 +1,16 @@
+--- original/eagle_worker_common.py
++++ ordered_diagnostic/eagle_worker_common.py
+@@ -146,12 +146,7 @@
+             )
+     else:
+         batch.input_ids = predict
+-    maybe_detect_oob(
+-        batch.input_ids,
+-        0,
+-        batch.model_config.vocab_size,
+-        "v2 prepare_for_draft_extend input_ids",
+-    )
++    # Diagnostic moved to the compute stream after the existing plan join.
+     # init_new requires both list or both Tensor;
+     # gpu_only emits device tensors to skip H2D.
+     if gpu_only:

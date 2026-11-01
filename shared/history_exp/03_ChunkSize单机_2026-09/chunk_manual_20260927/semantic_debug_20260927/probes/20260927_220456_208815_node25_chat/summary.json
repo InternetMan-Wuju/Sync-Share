@@ -1,0 +1,11 @@
+{
+  "status": 200,
+  "e2e_s": 11.194687532028183,
+  "text": {
+    "role": "assistant",
+    "content": "!!!!!!!!!!!!!!!!",
+    "reasoning_content": null,
+    "tool_calls": null
+  },
+  "record": "/home/chengyetai/workspace/current_exp/chunk_manual_20260927/semantic_debug_20260927/probes/20260927_220456_208815_node25_chat"
+}

@@ -1,0 +1,220 @@
+###################### OpenHands Configuration Example ######################
+#
+# All settings have default values, so you only need to uncomment and
+# modify what you want to change
+# The fields within each section are sorted in alphabetical order.
+#
+##############################################################################
+
+#################################### Core ####################################
+# General core configurations
+##############################################################################
+[core]
+# API keys and configuration for core services
+
+# Debugging enabled
+debug = true
+
+# Path to store trajectories, can be a folder or a file
+# If it's a folder, the session id will be used as the file name
+save_trajectory_path = "<your-path>"
+
+# Runtime environment
+runtime = "docker"
+
+#################################### LLM #####################################
+# Configuration for LLM models (group name starts with 'llm')
+# use 'llm' for the default LLM config
+##############################################################################
+[llm]
+
+# API key to use (For Headless / CLI only -  In Web this is overridden by Session Init)
+api_key = ""
+
+# API base URL (For Headless / CLI only -  In Web this is overridden by Session Init)
+base_url = ""
+
+# Reasoning effort for OpenAI o-series models (low, medium, high, or not set)
+reasoning_effort = "low"
+
+# Custom LLM provider
+custom_llm_provider = "openai"
+
+# Model to use. (For Headless / CLI only -  In Web this is overridden by Session Init)
+model = "qwen3-coder-480b-a35b-instruct"
+
+# Temperature for the API
+temperature = 0.7
+
+# Timeout for the API
+timeout = 300
+
+# Top p for the API
+top_p = 0.8
+top_k = 20
+
+# Whether to use native tool calling if supported by the model. Can be true, false, or None by default, which chooses the model's default behavior based on the evaluation.
+# ATTENTION: Based on evaluation, enabling native function calling may lead to worse results
+# in some scenarios. Use with caution and consider testing with your specific use case.
+# https://github.com/All-Hands-AI/OpenHands/pull/4711
+native_tool_calling = true
+
+[llm.vllm_qwen3_coder_480B]
+model = "qwen_3_coder"
+api_key = ""
+base_url = ""
+custom_llm_provider = "nebius"
+temperature = 0.7
+top_p = 0.8
+top_k = 20
+# repetition_penalty=1.05 was used by default by our deployed vllm inference engine, it can't be overriden on OpenHands side
+native_tool_calling = true
+
+[llm.vllm_qwen3_coder_30B]
+model = "qwen_3_coder"
+api_key = ""
+base_url = ""
+custom_llm_provider = "nebius"
+temperature = 0.7
+top_p = 0.8
+top_k = 20
+# repetition_penalty=1.05 was used by default by our deployed vllm inference engine, it can't be overriden on OpenHands side
+native_tool_calling = true
+
+# Used for base Qwen3-235B-A22B-Instruct-2507
+[llm.nebius_qwen3_235B_instruct]
+model = "Qwen/Qwen3-235B-A22B-Instruct-2507"
+api_key = ""
+base_url = "https://api.studio.nebius.com/v1/"
+custom_llm_provider = "nebius"
+temperature = 0.7
+top_p = 0.8
+top_k = 20
+native_tool_calling = true
+
+# Used for the fine-tuned version of Qwen3-235B-A22B-Instruct-2507
+[llm.vllm_qwen3_235B_instruct]
+model = "qwen_3_instruct_2507"
+api_key = ""
+base_url = ""
+custom_llm_provider = "nebius"
+temperature = 0.7
+top_p = 0.8
+top_k = 20
+native_tool_calling = true
+
+# Used for base and fine-tuned versions of Qwen3-30B-A3B-Instruct-2507
+[llm.vllm_qwen3_30B_instruct]
+model = "qwen_3_instruct_2507"
+api_key = ""
+base_url = ""
+custom_llm_provider = "nebius"
+temperature = 0.7
+top_p = 0.8
+top_k = 20
+native_tool_calling = true
+
+[llm.nebius_glm_air]
+model = "zai-org/GLM-4.5-Air"
+api_key = ""
+base_url = "https://api.studio.nebius.com/v1/"
+custom_llm_provider = "nebius"
+temperature = 0.6
+top_p = 1.0
+top_k = None
+native_tool_calling = true
+
+[llm.nebius_glm]
+model = "zai-org/GLM-4.5"
+api_key = ""
+base_url = "https://api.studio.nebius.com/v1/"
+custom_llm_provider = "nebius"
+temperature = 0.6
+top_p = 1.0
+top_k = None
+native_tool_calling = true
+
+#################################### Agent ###################################
+# Configuration for agents (group name starts with 'agent')
+# Use 'agent' for the default agent config
+# otherwise, group name must be `agent.<agent_name>` (case-sensitive), e.g.
+# agent.CodeActAgent
+##############################################################################
+[agent]
+
+# Whether the browsing tool is enabled
+# Note: when this is set to true, enable_browser in the core config must also be true
+enable_browsing = true
+
+# Whether the LLM draft editor is enabled
+enable_llm_editor = false
+
+# Whether the standard editor tool (str_replace_editor) is enabled
+# Only has an effect if enable_llm_editor is False
+enable_editor = true
+
+# Whether the IPython tool is enabled
+enable_jupyter = false
+
+# Whether the command tool is enabled
+enable_cmd = true
+
+# Whether the think tool is enabled
+enable_think = true
+
+# Whether the finish tool is enabled
+enable_finish = true
+
+# Whether history should be truncated to continue the session when hitting LLM context
+# length limit
+enable_history_truncation = false
+
+# Whether the condensation request tool is enabled
+enable_condensation_request = false
+
+[agent.CodeActAgent]
+# Whether history should be truncated to continue the session when hitting LLM context
+# length limit
+enable_history_truncation = false
+
+[agent.RepoExplorerAgent]
+# Example: use a cheaper model for RepoExplorerAgent to reduce cost, especially
+# useful when an agent doesn't demand high quality but uses a lot of tokens
+llm_config = 'gpt3'
+
+[agent.CustomAgent]
+# Example: use a custom agent from a different package
+# This will be automatically be registered as a new agent named "CustomAgent"
+# classpath = "my_package.my_module.MyCustomAgent"
+
+#################################### Sandbox ###################################
+# Configuration for the sandbox
+##############################################################################
+[sandbox]
+
+#################################### Condenser #################################
+# Condensers control how conversation history is managed and compressed when
+# the context grows too large. Each agent uses one condenser configuration.
+##############################################################################
+[condenser]
+# The type of condenser to use. Available options:
+# - "noop": No condensing, keeps full history (default)
+# - "observation_masking": Keeps full event structure but masks older observations
+# - "recent": Keeps only recent events and discards older ones
+# - "llm": Uses an LLM to summarize conversation history
+# - "amortized": Intelligently forgets older events while preserving important context
+# - "llm_attention": Uses an LLM to prioritize most relevant context
+
+# NoOp Condenser - No additional settings needed
+type = "noop"
+
+#################################### Eval ####################################
+# Configuration for the evaluation, please refer to the specific evaluation
+# plugin for the available options
+##############################################################################
+
+
+########################### Kubernetes #######################################
+# Kubernetes configuration when using the Kubernetes runtime
+##############################################################################
+[kubernetes]

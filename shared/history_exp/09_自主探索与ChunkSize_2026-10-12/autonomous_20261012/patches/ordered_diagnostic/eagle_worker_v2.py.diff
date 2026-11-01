@@ -1,0 +1,17 @@
+--- original/eagle_worker_v2.py
++++ ordered_diagnostic/eagle_worker_v2.py
+@@ -950,6 +950,14 @@
+                 self.plan_stream
+             )
+ 
++        # Probe on the producer/compute stream after the existing plan join.
++        # The plan stream does not wait for the predict int64 cast and must not
++        # launch a value-reading diagnostic before the producer has completed.
++        maybe_detect_oob(
++            forward_batch.input_ids, 0, batch.model_config.vocab_size,
++            "v2 draft_extend input_ids after compute/plan join",
++        )
++
+         # Run draft extend batch in the main compute stream
+         can_run_decode_cuda_graph = (
+             self.cuda_graph_runner_for_draft_extend

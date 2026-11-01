@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-09-27T19:13:45+08:00",
+  "node": 25,
+  "health": "http=200 elapsed_s=2.001928",
+  "metrics_status": "http=200",
+  "boot_time": "2026-09-07 10:14:12",
+  "container": "state=running started_at=2026-09-27T07:51:09.150160669Z restart_count=0 oom_killed=false image_id=sha256:30b20a3c29e8699be3323472deb3259d67ad6c53771824c2950a68902ac9251d",
+  "server_args": {
+    "tp_size": 16,
+    "ep_size": 16,
+    "nnodes": 1,
+    "chunked_prefill_size": 8192,
+    "enable_mixed_chunk": false,
+    "speculative_algorithm": null,
+    "disable_cuda_graph": true,
+    "mem_fraction_static": 0.88,
+    "max_running_requests": 4
+  },
+  "kv_capacity": 63616,
+  "npu_die_count": 16,
+  "hbm_used_mib_min": 61781,
+  "hbm_used_mib_max": 62098,
+  "rank0_activity_metrics": [
+    "sglang:num_running_reqs{engine_type=\"unified\",model_name=\"glm-5.2\",moe_ep_rank=\"0\",pp_rank=\"0\",tp_rank=\"0\"} 0.0",
+    "sglang:num_queue_reqs{engine_type=\"unified\",model_name=\"glm-5.2\",moe_ep_rank=\"0\",pp_rank=\"0\",tp_rank=\"0\"} 0.0"
+  ]
+}

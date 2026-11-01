@@ -1,0 +1,16 @@
+{
+  "http_status": 200,
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 21,
+    "total_tokens": 85,
+    "completion_tokens": 64,
+    "prompt_tokens_details": null,
+    "reasoning_tokens": 0
+  },
+  "first_content_s": 2.984069449827075,
+  "e2e_s": 33.352303894935176,
+  "error": null,
+  "nonempty_reply": true,
+  "purpose": "人工检查自然语言回复；不计入性能实验"
+}

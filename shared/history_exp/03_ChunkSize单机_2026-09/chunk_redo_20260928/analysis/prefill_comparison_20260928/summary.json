@@ -1,0 +1,93 @@
+{
+  "source_run": "/home/chengyetai/workspace/current_exp/chunk_redo_20260928/results/20260928_043035",
+  "checks": {
+    "status": "PASS",
+    "raw_requests_checked": 8,
+    "itl_intervals_checked": 2392,
+    "output_events_per_request": 300,
+    "http200_and_complete_all": true,
+    "same_input_sha256_all_pairs": true,
+    "all_stage_sums_match_e2e": true,
+    "matches_archived_request_metrics": true,
+    "matches_archived_interference": true,
+    "output_ids_equal_pairs": [
+      "B"
+    ]
+  },
+  "quantile_method": "nearest_rank",
+  "speed_mean_method": "arithmetic_mean_of_per_request_rates",
+  "groups": {
+    "8192": {
+      "means": {
+        "queue_s": 0.0006535649299621582,
+        "prefill_s": 5.646313428878784,
+        "residual_s": 0.32919834069125375,
+        "after_first_s": 147.22864930575,
+        "ttft_s": 5.9761653345,
+        "tpot_ms": 492.40350938377924,
+        "e2e_s": 153.20481464025,
+        "prefill_speed_tok_s": 2334.9803828317945,
+        "decode_speed_tok_s": 2.032611224854251
+      },
+      "latency": {
+        "ttft_s": {
+          "n": 4,
+          "mean": 5.9761653345,
+          "p95": 6.096144849,
+          "p99": 6.096144849
+        },
+        "tpot_ms": {
+          "n": 4,
+          "mean": 492.40350938377924,
+          "p95": 505.9750826488294,
+          "p99": 505.9750826488294
+        }
+      },
+      "pooled_itl": {
+        "n": 1196,
+        "mean_ms": 492.4001779272575,
+        "p50_ms": 465.004976,
+        "p95_ms": 516.798776,
+        "p99_ms": 582.508955,
+        "max_ms": 3170.474823
+      },
+      "prefill_ratio_of_sums_tok_s": 2334.9748762739177
+    },
+    "1024": {
+      "means": {
+        "queue_s": 0.00229489803314209,
+        "prefill_s": 9.758376657962799,
+        "residual_s": 0.349302191004059,
+        "after_first_s": 154.98776344925,
+        "ttft_s": 10.109973747,
+        "tpot_ms": 518.3537239105351,
+        "e2e_s": 165.09773719625,
+        "prefill_speed_tok_s": 1351.6830885409802,
+        "decode_speed_tok_s": 1.9351345189762763
+      },
+      "latency": {
+        "ttft_s": {
+          "n": 4,
+          "mean": 10.109973747,
+          "p95": 10.264881014,
+          "p99": 10.264881014
+        },
+        "tpot_ms": {
+          "n": 4,
+          "mean": 518.3537239105351,
+          "p95": 544.260689270903,
+          "p99": 544.260689270903
+        }
+      },
+      "pooled_itl": {
+        "n": 1196,
+        "mean_ms": 518.3510244866221,
+        "p50_ms": 472.268874,
+        "p95_ms": 532.022018,
+        "p99_ms": 593.606944,
+        "max_ms": 9620.039373
+      },
+      "prefill_ratio_of_sums_tok_s": 1351.0443859780617
+    }
+  }
+}

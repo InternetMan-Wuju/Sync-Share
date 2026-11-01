@@ -1,0 +1,17 @@
+{
+  "http_status": 200,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 21,
+    "total_tokens": 28,
+    "completion_tokens": 7,
+    "prompt_tokens_details": null,
+    "reasoning_tokens": 0
+  },
+  "first_content_s": 2.915005926042795,
+  "e2e_s": 5.788091449066997,
+  "error": null,
+  "nonempty_reply": true,
+  "semantic_check": "pending_manual_review",
+  "purpose": "人工检查自然语言回复；不计入性能实验"
+}

@@ -1,0 +1,196 @@
+{
+  "updated": "2026-10-13T13:35:18",
+  "scope": "Only results created under autonomous_20261012; no historical result read or counted.",
+  "requirements": "/home/chengyetai/workspace/current_exp/docs/AboutModels.md",
+  "requirements_sha256": "49b8d4b7289c6b78629abfb0ffd1add933a44dad0bed118b4f31ef74760813f7",
+  "workloads": [
+    {
+      "name": "w1_8k_1k",
+      "label": "8K / 1K",
+      "input_tokens": 8192,
+      "output_tokens": 1024,
+      "request_multiplier": 2,
+      "target_cache_ratio": null,
+      "on_results": [
+        {
+          "run": "publisher_v19",
+          "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/w1_8k_1k/result.json",
+          "mode": "ON",
+          "concurrency": 4,
+          "requests": 8,
+          "cache_hit_ratio": 0.0,
+          "AL": 2.990872581234027,
+          "P1_P2_P3": [
+            0.809784592917123,
+            0.6480467323840818,
+            0.5315808689302666
+          ],
+          "output_tok_s": 23.493847671612976,
+          "TTFT_s": 9.424419291550294,
+          "TPOT_ms": 140.11957690470012,
+          "E2E_s": 152.76729302108288,
+          "server_config": {
+            "version": "0.5.19",
+            "tp_size": 16,
+            "ep_size": 16,
+            "dp_size": 1,
+            "enable_dp_attention": false,
+            "enable_dp_lm_head": false,
+            "deepep_mode": "normal",
+            "disable_cuda_graph": true,
+            "context_length": 131072,
+            "max_running_requests": 8,
+            "chunked_prefill_size": 16384
+          }
+        }
+      ],
+      "off_results": []
+    },
+    {
+      "name": "w2_32k_1k",
+      "label": "32K / 1K",
+      "input_tokens": 32768,
+      "output_tokens": 1024,
+      "request_multiplier": 1,
+      "target_cache_ratio": null,
+      "on_results": [
+        {
+          "run": "publisher_v19",
+          "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/w2_32k_1k/result.json",
+          "mode": "ON",
+          "concurrency": 1,
+          "requests": 1,
+          "cache_hit_ratio": 0.0,
+          "AL": 2.598984771573604,
+          "P1_P2_P3": [
+            0.7969543147208121,
+            0.5126903553299492,
+            0.2868020304568528
+          ],
+          "output_tok_s": 5.748198916956631,
+          "TTFT_s": 22.46850813087076,
+          "TPOT_ms": 152.1656490208714,
+          "E2E_s": 178.13435339415446,
+          "server_config": {
+            "version": "0.5.19",
+            "tp_size": 16,
+            "ep_size": 16,
+            "dp_size": 1,
+            "enable_dp_attention": false,
+            "enable_dp_lm_head": false,
+            "deepep_mode": "normal",
+            "disable_cuda_graph": true,
+            "context_length": 131072,
+            "max_running_requests": 8,
+            "chunked_prefill_size": 16384
+          }
+        }
+      ],
+      "off_results": []
+    },
+    {
+      "name": "w3_1k_32k",
+      "label": "1K / 32K",
+      "input_tokens": 1024,
+      "output_tokens": 32768,
+      "request_multiplier": 1,
+      "target_cache_ratio": null,
+      "on_results": [],
+      "off_results": []
+    },
+    {
+      "name": "w4_prefix32k_300",
+      "label": "32K / 300，缓存60%",
+      "input_tokens": 32768,
+      "output_tokens": 300,
+      "request_multiplier": 2,
+      "target_cache_ratio": 0.6,
+      "on_results": [
+        {
+          "run": "publisher_v19",
+          "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/w4_prefix32k_300/result.json",
+          "mode": "ON",
+          "concurrency": 1,
+          "requests": 2,
+          "cache_hit_ratio": 0.59765625,
+          "AL": 2.6666666666666665,
+          "P1_P2_P3": [
+            0.7422222222222222,
+            0.56,
+            0.36
+          ],
+          "output_tok_s": 5.946126016070863,
+          "TTFT_s": 5.074670045636594,
+          "TPOT_ms": 151.73783316744186,
+          "E2E_s": 50.44451815052889,
+          "server_config": {
+            "version": "0.5.19",
+            "tp_size": 16,
+            "ep_size": 16,
+            "dp_size": 1,
+            "enable_dp_attention": false,
+            "enable_dp_lm_head": false,
+            "deepep_mode": "normal",
+            "disable_cuda_graph": true,
+            "context_length": 131072,
+            "max_running_requests": 8,
+            "chunked_prefill_size": 16384
+          }
+        }
+      ],
+      "off_results": []
+    }
+  ],
+  "on_workload_shapes_covered": 3,
+  "off_performance_workloads_covered": 0,
+  "all_four_on_complete": false,
+  "all_four_on_off_complete": false,
+  "target_only_diagnostic_status": {
+    "pid": 2939653,
+    "started_unix": 1791865023.0813453,
+    "completed": true,
+    "container": "cyt-auto-review-target-only-20261013",
+    "phase": "completed",
+    "updated_unix": 1791866552.063034,
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "/home/chengyetai/workspace/current_exp/autonomous_20261012/scripts/service.py",
+      "start",
+      "--name",
+      "cyt-auto-review-target-only-20261013",
+      "--repaired",
+      "--slim-draft",
+      "--mtp",
+      "off",
+      "--dp",
+      "2",
+      "--dp-attention",
+      "--context",
+      "180000",
+      "--mrr",
+      "8",
+      "--diagnostics",
+      "--env",
+      "SGLANG_ENABLE_OVERLAP_PLAN_STREAM=0",
+      "--env",
+      "SGLANG_NPU_USE_MULTI_STREAM=0"
+    ],
+    "case": "cycle_fixed_prefix32_window128",
+    "case_index": 5,
+    "cases": 6,
+    "progress": {
+      "state": "finished",
+      "output_tokens": 128,
+      "elapsed_s": 48.4,
+      "target_output_tokens": 128,
+      "last_event_unix": 1791866513.9290886,
+      "AL": null,
+      "P1_P2_P3": null,
+      "error": null
+    },
+    "results": "/home/chengyetai/workspace/current_exp/autonomous_20261012/review_20261013/target_only/summary.json",
+    "stopped": true
+  },
+  "cache_tolerance": "60% checked within one percentage point; actual measured ratio retained."
+}

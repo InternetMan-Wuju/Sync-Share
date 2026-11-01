@@ -1,17 +1,61 @@
 # Share：本地代理与远程高级模型协作仓库
 
-这个仓库用于在本地代理和远程高级模型之间同步**代码、文档、补丁、小型结构化结果和交接说明**。
-大型权重、原始日志、数据集和运行结果不要提交到 Git。
+本仓库用于在本地环境与远程高级模型之间同步：
 
-## 目录约定
+- 实验总结、结论和分析文档
+- 关键实验代码、启动脚本、补丁与配置
+- 小型汇总表、重要图表和交接说明
 
-- `shared/`：双方共同维护的代码、配置、文档和可复现实验脚本。
-- `handoff/`：阶段交接说明、待办、问题定位和下一步计划。
-- 仓库根目录的 Git 历史：双方按普通分支/提交方式同步。
+大型权重、原始日志、数据集和原始运行结果不提交到 Git。
 
-## 建议工作流
+## 当前内容
 
-本地或远程每次开始工作前：
+### `shared/history_exp/`
+
+`history_exp` 的远端精选镜像，包含 01–09 全部实验批次的 Markdown 文档、关键脚本/补丁、汇总表与主要图表。
+
+- 总索引：[`shared/history_exp/README.md`](shared/history_exp/README.md)
+- 收录范围和文件统计：[`shared/history_exp/MANIFEST.md`](shared/history_exp/MANIFEST.md)
+- 文件完整性校验：[`shared/history_exp/SHA256SUMS`](shared/history_exp/SHA256SUMS)
+
+截至 2026-11-02：
+
+- 本地完整归档：22,708 个文件，约 17.6GiB
+- Git 精选镜像：652 个文件，约 14.9MiB
+- 未同步内容仍保存在本地 `/data_lib/cyt/workspace/history_exp/`
+
+### `shared/current_exp/`
+
+当前实验状态和远端同步约定。活跃实验的原始数据保留在本地，阶段性成果按同样规则精选到 Git。
+
+### `handoff/`
+
+本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。
+
+## 更新历史实验镜像
+
+历史归档变化后，在仓库根目录执行：
+
+```bash
+python3 tools/sync_history_snapshot.py
+git add shared/history_exp
+git commit -m "Update history_exp snapshot"
+git push
+```
+
+脚本会重新生成精选镜像、`MANIFEST.md` 和 `SHA256SUMS`。
+
+## 收录规则
+
+- 包含全部 `.md` 文档。
+- 包含实验脚本、分析脚本、shell 启动脚本、补丁和配置。
+- 包含小型 summary/report/index/status/coverage/汇总/指标/结果类 JSON、CSV。
+- 包含顶层 `tables/`、`figs/`、`figures/` 和分析目录中的关键图表。
+- 排除 `results/` 原始结果、`logs/`、`metrics/`、`datasets/`、`weights/`、`.pt`、`.safetensors`、大型 manifest、缓存和上游源码完整快照。
+
+## Git 工作流
+
+开始工作前：
 
 ```bash
 git pull --rebase
@@ -25,22 +69,4 @@ git commit -m "描述本次改动"
 git push
 ```
 
-不要提交：
-
-- `*.safetensors`、模型权重和其他 GB 级二进制文件
-- 原始实验日志、数据集、运行输出
-- SSH 私钥、token、密码、内部凭证
-- 大型临时缓存和虚拟环境
-
-大文件仍放在 workspace 或 `/data_lib`，Git 仓库只保存路径说明、索引和复现所需的小文件。
-
-## 远程仓库
-
-当前尚未配置 `origin`。获得远程仓库地址后执行：
-
-```bash
-git remote add origin <remote-url>
-git push -u origin main
-```
-
-远程高级模型使用同一 remote 克隆后，即可通过 `pull` / `commit` / `push` 与本地协作。
+不要提交 SSH 私钥、token、密码、模型权重或 GB 级数据。

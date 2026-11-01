@@ -1,0 +1,9 @@
+run,group,load,requests_ok,recv_to_fwd_s,queue_s,prefill_forward_s,first_send_s,decode_s,prefill_tok_s,decode_tok_s
+A0_agentX,A0,agentX,168,5.997,1.4869,11.95,0.0021,27.05,1519.0,19.1
+A0_random,A0,random,624,1.16,0.0004,7.27,0.0023,3.16,1146.0,20.3
+A_agentX,A,agentX,160,6.505,1.6411,12.09,0.0022,27.06,1506.0,19.1
+A_random,A,random,608,1.218,0.0005,7.43,0.002,3.16,1120.0,20.3
+B_agentX,B,agentX,160,6.202,1.4012,11.86,0.0018,29.23,1541.0,18.7
+B_random,B,random,584,1.236,0.0004,7.31,0.0023,3.8,1138.0,20.1
+C_agentX,C,agentX,160,5.108,1.0446,10.54,0.002,30.77,1739.0,17.7
+C_random,C,random,608,1.232,0.0004,6.59,0.0021,4.02,1288.0,19.4

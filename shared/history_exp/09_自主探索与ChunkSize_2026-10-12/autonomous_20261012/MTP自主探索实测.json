@@ -1,0 +1,1760 @@
+{
+  "rows": [
+    {
+      "run": "mtp-v16-auto-cap64-mem87-hccl650",
+      "group": "native_default_text_roundtrip_256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem87-hccl650/native_default_text_roundtrip_256/result.json",
+      "AL": 3.065868263473054,
+      "rate": 0.6946107784431138,
+      "positions": [
+        0.8383233532934131,
+        0.6826347305389222,
+        0.562874251497006
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem87-hccl650",
+      "group": "native_exact_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem87-hccl650/native_exact_1k256/result.json",
+      "AL": 2.797814207650273,
+      "rate": 0.6010928961748634,
+      "positions": [
+        0.8469945355191257,
+        0.73224043715847,
+        0.22404371584699453
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem87-hccl650",
+      "group": "native_exact_eos_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem87-hccl650/native_exact_eos_1k256/result.json",
+      "AL": 3.657142857142857,
+      "rate": 0.8952380952380953,
+      "positions": [
+        0.9142857142857143,
+        0.8857142857142857,
+        0.8857142857142857
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem87-hccl650",
+      "group": "native_longinput_1k1024",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem87-hccl650/native_longinput_1k1024/result.json",
+      "AL": 3.9689922480620154,
+      "rate": 0.9883720930232558,
+      "positions": [
+        0.9883720930232558,
+        0.9883720930232558,
+        0.9883720930232558
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem87-hccl650",
+      "group": "native_random_body_chatframed_256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem87-hccl650/native_random_body_chatframed_256/result.json",
+      "AL": 2.543859649122807,
+      "rate": 0.5146198830409356,
+      "positions": [
+        0.7777777777777778,
+        0.5029239766081871,
+        0.2631578947368421
+      ],
+      "accepted_stat_requests": 3,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem87-hccl650",
+      "group": "sanity_chat",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem87-hccl650/sanity_chat/result.json",
+      "AL": 2.8,
+      "rate": 0.6,
+      "positions": [
+        1.0,
+        0.6,
+        0.2
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem87-hccl650_business",
+      "group": "sharegpt_chat_complete",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem87-hccl650_business/sharegpt_chat_complete/result.json",
+      "AL": 2.7165242165242165,
+      "rate": 0.5712250712250713,
+      "positions": [
+        0.7834757834757835,
+        0.5527065527065527,
+        0.37749287749287747
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem87-hccl650_business",
+      "group": "sharegpt_chat_eos",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem87-hccl650_business/sharegpt_chat_eos/result.json",
+      "AL": 2.615581098339719,
+      "rate": 0.5389527458492975,
+      "positions": [
+        0.7752234993614304,
+        0.5146871008939975,
+        0.3269476372924649
+      ],
+      "accepted_stat_requests": 8,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem87-hccl650_business",
+      "group": "sharegpt_chat_forced",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem87-hccl650_business/sharegpt_chat_forced/result.json",
+      "AL": 2.5956907477820024,
+      "rate": 0.5314744402196874,
+      "positions": [
+        0.7642585551330798,
+        0.5095057034220533,
+        0.320659062103929
+      ],
+      "accepted_stat_requests": 8,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem90-hccl650",
+      "group": "native_default_text_roundtrip_256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem90-hccl650/native_default_text_roundtrip_256/result.json",
+      "AL": 2.708994708994709,
+      "rate": 0.5696649029982364,
+      "positions": [
+        0.8465608465608465,
+        0.6984126984126984,
+        0.164021164021164
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 2
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem90-hccl650",
+      "group": "native_exact_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem90-hccl650/native_exact_1k256/result.json",
+      "AL": 2.8131868131868134,
+      "rate": 0.6043956043956044,
+      "positions": [
+        0.7912087912087912,
+        0.5659340659340659,
+        0.45604395604395603
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem90-hccl650",
+      "group": "native_exact_eos_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem90-hccl650/native_exact_eos_1k256/result.json",
+      "AL": 3.506849315068493,
+      "rate": 0.8310502283105022,
+      "positions": [
+        0.958904109589041,
+        0.8082191780821918,
+        0.726027397260274
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem90-hccl650",
+      "group": "native_longinput_1k1024",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem90-hccl650/native_longinput_1k1024/result.json",
+      "AL": 3.893536121673004,
+      "rate": 0.9645120405576679,
+      "positions": [
+        0.9695817490494296,
+        0.9619771863117871,
+        0.9619771863117871
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem90-hccl650",
+      "group": "native_random_body_chatframed_256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem90-hccl650/native_random_body_chatframed_256/result.json",
+      "AL": 2.6598360655737703,
+      "rate": 0.5532786885245902,
+      "positions": [
+        0.8442622950819673,
+        0.5327868852459017,
+        0.2827868852459016
+      ],
+      "accepted_stat_requests": 3,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem90-hccl650",
+      "group": "sanity_chat",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem90-hccl650/sanity_chat/result.json",
+      "AL": 2.8,
+      "rate": 0.6666666666666666,
+      "positions": [
+        1.0,
+        0.6,
+        0.4
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem90-hccl650_business",
+      "group": "sharegpt_chat_complete",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem90-hccl650_business/sharegpt_chat_complete/result.json",
+      "AL": 2.835680751173709,
+      "rate": 0.6118935837245696,
+      "positions": [
+        0.8012519561815337,
+        0.6040688575899843,
+        0.4303599374021909
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem90-hccl650_business",
+      "group": "sharegpt_chat_eos",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem90-hccl650_business/sharegpt_chat_eos/result.json",
+      "AL": 2.6736292428198434,
+      "rate": 0.5587467362924282,
+      "positions": [
+        0.793733681462141,
+        0.5313315926892951,
+        0.35117493472584854
+      ],
+      "accepted_stat_requests": 8,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v16-auto-cap64-mem90-hccl650_business",
+      "group": "sharegpt_chat_forced",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem90-hccl650_business/sharegpt_chat_forced/result.json",
+      "AL": 2.6391752577319587,
+      "rate": 0.5468213058419243,
+      "positions": [
+        0.770618556701031,
+        0.5399484536082474,
+        0.32989690721649484
+      ],
+      "accepted_stat_requests": 8,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-no-multistream",
+      "group": "framing_pair_chat_eos256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/framing_pair_chat_eos256/result.json",
+      "AL": 3.4074074074074074,
+      "rate": 0.8024691358024691,
+      "positions": [
+        0.9629629629629629,
+        0.8888888888888888,
+        0.5555555555555556
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-no-multistream",
+      "group": "framing_pair_raw_eos256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/framing_pair_raw_eos256/result.json",
+      "AL": 3.878787878787879,
+      "rate": 0.9545454545454546,
+      "positions": [
+        0.9545454545454546,
+        0.9545454545454546,
+        0.9545454545454546
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v19-dp2-no-multistream",
+      "group": "native_default_text_roundtrip_256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/native_default_text_roundtrip_256/result.json",
+      "AL": 2.473429951690821,
+      "rate": 0.4927536231884058,
+      "positions": [
+        0.7053140096618358,
+        0.45893719806763283,
+        0.3140096618357488
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v19-dp2-no-multistream",
+      "group": "native_exact_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/native_exact_1k256/result.json",
+      "AL": 3.065868263473054,
+      "rate": 0.6906187624750499,
+      "positions": [
+        0.8383233532934131,
+        0.6826347305389222,
+        0.5508982035928144
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-no-multistream",
+      "group": "native_exact_eos_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/native_exact_eos_1k256/result.json",
+      "AL": 2.80327868852459,
+      "rate": 0.6010928961748634,
+      "positions": [
+        0.8688524590163934,
+        0.5737704918032787,
+        0.36065573770491804
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-no-multistream",
+      "group": "native_longinput_1k1024",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/native_longinput_1k1024/result.json",
+      "AL": 3.9689922480620154,
+      "rate": 0.9883720930232558,
+      "positions": [
+        0.9883720930232558,
+        0.9883720930232558,
+        0.9883720930232558
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v19-dp2-no-multistream",
+      "group": "native_random_body_chatframed_256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/native_random_body_chatframed_256/result.json",
+      "AL": 2.8508771929824563,
+      "rate": 0.6169590643274854,
+      "positions": [
+        0.868421052631579,
+        0.631578947368421,
+        0.3508771929824561
+      ],
+      "accepted_stat_requests": 3,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-no-multistream",
+      "group": "sanity_chat",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/sanity_chat/result.json",
+      "AL": 2.8,
+      "rate": 0.6,
+      "positions": [
+        1.0,
+        0.6,
+        0.2
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-no-plan-lp-safe",
+      "group": "native_default_text_roundtrip_256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/native_default_text_roundtrip_256/result.json",
+      "AL": 2.473429951690821,
+      "rate": 0.4927536231884058,
+      "positions": [
+        0.7053140096618358,
+        0.45893719806763283,
+        0.3140096618357488
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v19-dp2-no-plan-lp-safe",
+      "group": "native_exact_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/native_exact_1k256/result.json",
+      "AL": 3.065868263473054,
+      "rate": 0.6906187624750499,
+      "positions": [
+        0.8383233532934131,
+        0.6826347305389222,
+        0.5508982035928144
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-no-plan-lp-safe",
+      "group": "native_exact_eos_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/native_exact_eos_1k256/result.json",
+      "AL": 2.80327868852459,
+      "rate": 0.6010928961748634,
+      "positions": [
+        0.8688524590163934,
+        0.5737704918032787,
+        0.36065573770491804
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-no-plan-lp-safe",
+      "group": "native_longinput_1k1024",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/native_longinput_1k1024/result.json",
+      "AL": 3.9689922480620154,
+      "rate": 0.9883720930232558,
+      "positions": [
+        0.9883720930232558,
+        0.9883720930232558,
+        0.9883720930232558
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v19-dp2-no-plan-lp-safe",
+      "group": "native_random_body_chatframed_256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/native_random_body_chatframed_256/result.json",
+      "AL": 2.8508771929824563,
+      "rate": 0.6169590643274854,
+      "positions": [
+        0.868421052631579,
+        0.631578947368421,
+        0.3508771929824561
+      ],
+      "accepted_stat_requests": 3,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-no-plan-lp-safe",
+      "group": "sanity_chat",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/sanity_chat/result.json",
+      "AL": 2.8,
+      "rate": 0.6,
+      "positions": [
+        1.0,
+        0.6,
+        0.2
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-no-plan-lp-safe_business",
+      "group": "sharegpt_chat_complete",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe_business/sharegpt_chat_complete/result.json",
+      "AL": 2.5930388219544844,
+      "rate": 0.5305667112896029,
+      "positions": [
+        0.7550200803212851,
+        0.5153949129852744,
+        0.321285140562249
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-no-plan-lp-safe_business",
+      "group": "sharegpt_chat_eos",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe_business/sharegpt_chat_eos/result.json",
+      "AL": 2.5761006289308175,
+      "rate": 0.5245283018867924,
+      "positions": [
+        0.7559748427672957,
+        0.5006289308176101,
+        0.3169811320754717
+      ],
+      "accepted_stat_requests": 8,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-no-plan-lp-safe_business",
+      "group": "sharegpt_chat_forced",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe_business/sharegpt_chat_forced/result.json",
+      "AL": 2.585858585858586,
+      "rate": 0.5290404040404041,
+      "positions": [
+        0.7651515151515151,
+        0.49873737373737376,
+        0.32323232323232326
+      ],
+      "accepted_stat_requests": 8,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-normal",
+      "group": "native_exact_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-normal/native_exact_1k256/result.json",
+      "AL": 3.065868263473054,
+      "rate": 0.6906187624750499,
+      "positions": [
+        0.8383233532934131,
+        0.6826347305389222,
+        0.5508982035928144
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-normal",
+      "group": "sanity_chat",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-normal/sanity_chat/result.json",
+      "AL": 2.8,
+      "rate": 0.6,
+      "positions": [
+        1.0,
+        0.6,
+        0.2
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-ordered-probe",
+      "group": "native_default_text_roundtrip_256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-ordered-probe/native_default_text_roundtrip_256/result.json",
+      "AL": 2.473429951690821,
+      "rate": 0.4927536231884058,
+      "positions": [
+        0.7053140096618358,
+        0.45893719806763283,
+        0.3140096618357488
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v19-dp2-ordered-probe",
+      "group": "native_exact_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-ordered-probe/native_exact_1k256/result.json",
+      "AL": 3.065868263473054,
+      "rate": 0.6906187624750499,
+      "positions": [
+        0.8383233532934131,
+        0.6826347305389222,
+        0.5508982035928144
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-ordered-probe",
+      "group": "native_exact_eos_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-ordered-probe/native_exact_eos_1k256/result.json",
+      "AL": 2.80327868852459,
+      "rate": 0.6010928961748634,
+      "positions": [
+        0.8688524590163934,
+        0.5737704918032787,
+        0.36065573770491804
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-ordered-probe",
+      "group": "native_longinput_1k1024",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-ordered-probe/native_longinput_1k1024/result.json",
+      "AL": 3.9689922480620154,
+      "rate": 0.9883720930232558,
+      "positions": [
+        0.9883720930232558,
+        0.9883720930232558,
+        0.9883720930232558
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 1
+    },
+    {
+      "run": "mtp-v19-dp2-ordered-probe",
+      "group": "native_random_body_chatframed_256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-ordered-probe/native_random_body_chatframed_256/result.json",
+      "AL": 2.8508771929824563,
+      "rate": 0.6169590643274854,
+      "positions": [
+        0.868421052631579,
+        0.631578947368421,
+        0.3508771929824561
+      ],
+      "accepted_stat_requests": 3,
+      "periodic_requests": 0
+    },
+    {
+      "run": "mtp-v19-dp2-ordered-probe",
+      "group": "sanity_chat",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-ordered-probe/sanity_chat/result.json",
+      "AL": 2.8,
+      "rate": 0.6,
+      "positions": [
+        1.0,
+        0.6,
+        0.2
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "publisher_v19",
+      "group": "native_exact_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/native_exact_1k256/result.json",
+      "AL": 2.9941520467836256,
+      "rate": 0.6666666666666666,
+      "positions": [
+        0.8362573099415205,
+        0.672514619883041,
+        0.49122807017543857
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 1
+    },
+    {
+      "run": "publisher_v19",
+      "group": "native_exact_eos_1k256",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/native_exact_eos_1k256/result.json",
+      "AL": 3.6056338028169015,
+      "rate": 0.8732394366197183,
+      "positions": [
+        0.8873239436619719,
+        0.8732394366197183,
+        0.8591549295774648
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 1
+    },
+    {
+      "run": "publisher_v19",
+      "group": "native_longinput_1k1024",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/native_longinput_1k1024/result.json",
+      "AL": 3.9689922480620154,
+      "rate": 0.9883720930232558,
+      "positions": [
+        0.9883720930232558,
+        0.9883720930232558,
+        0.9883720930232558
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 1
+    },
+    {
+      "run": "publisher_v19",
+      "group": "sanity_chat",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/sanity_chat/result.json",
+      "AL": 2.8,
+      "rate": 0.6,
+      "positions": [
+        1.0,
+        0.6,
+        0.2
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "publisher_v19",
+      "group": "w1_8k_1k",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/w1_8k_1k/result.json",
+      "AL": 2.990872581234027,
+      "rate": 0.6631373980771571,
+      "positions": [
+        0.809784592917123,
+        0.6480467323840818,
+        0.5315808689302666
+      ],
+      "accepted_stat_requests": 8,
+      "periodic_requests": 5
+    },
+    {
+      "run": "publisher_v19",
+      "group": "w2_32k_1k",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/w2_32k_1k/result.json",
+      "AL": 2.598984771573604,
+      "rate": 0.5321489001692047,
+      "positions": [
+        0.7969543147208121,
+        0.5126903553299492,
+        0.2868020304568528
+      ],
+      "accepted_stat_requests": 1,
+      "periodic_requests": 0
+    },
+    {
+      "run": "publisher_v19",
+      "group": "w4_prefix32k_300",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/w4_prefix32k_300/result.json",
+      "AL": 2.6666666666666665,
+      "rate": 0.554074074074074,
+      "positions": [
+        0.7422222222222222,
+        0.56,
+        0.36
+      ],
+      "accepted_stat_requests": 2,
+      "periodic_requests": 0
+    },
+    {
+      "run": "publisher_v19_business",
+      "group": "sharegpt_chat_eos",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19_business/sharegpt_chat_eos/result.json",
+      "AL": 2.608917197452229,
+      "rate": 0.5371549893842887,
+      "positions": [
+        0.7707006369426752,
+        0.5210191082802548,
+        0.3197452229299363
+      ],
+      "accepted_stat_requests": 8,
+      "periodic_requests": 0
+    },
+    {
+      "run": "publisher_v19_business",
+      "group": "sharegpt_chat_forced",
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19_business/sharegpt_chat_forced/result.json",
+      "AL": 2.608917197452229,
+      "rate": 0.5371549893842887,
+      "positions": [
+        0.7707006369426752,
+        0.5210191082802548,
+        0.3197452229299363
+      ],
+      "accepted_stat_requests": 8,
+      "periodic_requests": 0
+    }
+  ],
+  "invalid_groups": [
+    {
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-normal/native_exact_eos_1k256/result.json",
+      "validation": [
+        {
+          "index": 0,
+          "checks": {
+            "no_error": true,
+            "stream_done": true,
+            "input_length": true,
+            "output_count": true
+          },
+          "failures": []
+        },
+        {
+          "index": 1,
+          "checks": {
+            "no_error": true,
+            "stream_done": false,
+            "input_length": true,
+            "output_count": true
+          },
+          "failures": [
+            "stream_done"
+          ]
+        }
+      ],
+      "reason": "incomplete or failed request; not an acceptance result"
+    }
+  ],
+  "weight_comparisons": [
+    {
+      "group": "w1_8k_1k",
+      "before": {
+        "AL": 2.526056120875732,
+        "rate": 0.5089937300853119,
+        "positions": [
+          0.6170212765957447,
+          0.4927536231884058,
+          0.41720629047178537
+        ],
+        "accepted_stat_requests": 8,
+        "periodic_requests": 6
+      },
+      "after": {
+        "AL": 2.990872581234027,
+        "rate": 0.6631373980771571,
+        "positions": [
+          0.809784592917123,
+          0.6480467323840818,
+          0.5315808689302666
+        ],
+        "accepted_stat_requests": 8,
+        "periodic_requests": 5
+      },
+      "before_source": "/data_lib/cyt/q1mtp/native_full_20261012_190926/w1_8k_1k/result.json",
+      "after_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/w1_8k_1k/result.json",
+      "paired_outputs": [
+        {
+          "index": 0,
+          "first_output_difference": 1,
+          "same_input_sha256": true,
+          "before_input_sha256": "e807cdc6c0ff991b18185c21bd3b7b015ba1a5a3b1d45c69cef331d654b9959a",
+          "after_input_sha256": "e807cdc6c0ff991b18185c21bd3b7b015ba1a5a3b1d45c69cef331d654b9959a",
+          "same_output_ids": false,
+          "before_distinct": 14,
+          "after_distinct": 13,
+          "before_periodic_suffix": {
+            "period": 13,
+            "start": 2,
+            "tokens": 1022,
+            "fraction": 0.998046875
+          },
+          "after_periodic_suffix": {
+            "period": 9,
+            "start": 111,
+            "tokens": 913,
+            "fraction": 0.8916015625
+          }
+        },
+        {
+          "index": 1,
+          "first_output_difference": 1,
+          "same_input_sha256": true,
+          "before_input_sha256": "1d7f4a16d6f58f4ab4a9ba64851c38455372b0b945194d1671f0e05f2debcd87",
+          "after_input_sha256": "1d7f4a16d6f58f4ab4a9ba64851c38455372b0b945194d1671f0e05f2debcd87",
+          "same_output_ids": false,
+          "before_distinct": 6,
+          "after_distinct": 496,
+          "before_periodic_suffix": {
+            "period": 2,
+            "start": 5,
+            "tokens": 1019,
+            "fraction": 0.9951171875
+          },
+          "after_periodic_suffix": null
+        },
+        {
+          "index": 2,
+          "first_output_difference": 0,
+          "same_input_sha256": true,
+          "before_input_sha256": "b98a0c8a0bce442c4b21d918d3c6ac6bc51db0f1e5a3c9957647446114ff4f31",
+          "after_input_sha256": "b98a0c8a0bce442c4b21d918d3c6ac6bc51db0f1e5a3c9957647446114ff4f31",
+          "same_output_ids": false,
+          "before_distinct": 439,
+          "after_distinct": 457,
+          "before_periodic_suffix": null,
+          "after_periodic_suffix": null
+        },
+        {
+          "index": 3,
+          "first_output_difference": 2,
+          "same_input_sha256": true,
+          "before_input_sha256": "d15720a21b567bfc1404bec6412195d707dc1cdd4a0aa3e93bf969a000edeab4",
+          "after_input_sha256": "d15720a21b567bfc1404bec6412195d707dc1cdd4a0aa3e93bf969a000edeab4",
+          "same_output_ids": false,
+          "before_distinct": 15,
+          "after_distinct": 7,
+          "before_periodic_suffix": {
+            "period": 3,
+            "start": 15,
+            "tokens": 1009,
+            "fraction": 0.9853515625
+          },
+          "after_periodic_suffix": {
+            "period": 2,
+            "start": 5,
+            "tokens": 1019,
+            "fraction": 0.9951171875
+          }
+        },
+        {
+          "index": 4,
+          "first_output_difference": 1,
+          "same_input_sha256": true,
+          "before_input_sha256": "fcc5ace0cf6414443ca81cf6480ccf6f5063dee8978355affe8c236da8b800b8",
+          "after_input_sha256": "fcc5ace0cf6414443ca81cf6480ccf6f5063dee8978355affe8c236da8b800b8",
+          "same_output_ids": false,
+          "before_distinct": 7,
+          "after_distinct": 415,
+          "before_periodic_suffix": {
+            "period": 2,
+            "start": 8,
+            "tokens": 1016,
+            "fraction": 0.9921875
+          },
+          "after_periodic_suffix": {
+            "period": 2,
+            "start": 682,
+            "tokens": 342,
+            "fraction": 0.333984375
+          }
+        },
+        {
+          "index": 5,
+          "first_output_difference": 0,
+          "same_input_sha256": true,
+          "before_input_sha256": "e7affb912dc4d21b27197f09de282e9193fb80e35673ace1382477aadeb35eab",
+          "after_input_sha256": "e7affb912dc4d21b27197f09de282e9193fb80e35673ace1382477aadeb35eab",
+          "same_output_ids": false,
+          "before_distinct": 1,
+          "after_distinct": 231,
+          "before_periodic_suffix": {
+            "period": 1,
+            "start": 0,
+            "tokens": 1024,
+            "fraction": 1.0
+          },
+          "after_periodic_suffix": null
+        },
+        {
+          "index": 6,
+          "first_output_difference": 2,
+          "same_input_sha256": true,
+          "before_input_sha256": "e978fa17d6e12ba8752e48280473fb8352994f41d4cb6f879ecc122f1627f97b",
+          "after_input_sha256": "e978fa17d6e12ba8752e48280473fb8352994f41d4cb6f879ecc122f1627f97b",
+          "same_output_ids": false,
+          "before_distinct": 248,
+          "after_distinct": 2,
+          "before_periodic_suffix": null,
+          "after_periodic_suffix": {
+            "period": 3,
+            "start": 0,
+            "tokens": 1024,
+            "fraction": 1.0
+          }
+        },
+        {
+          "index": 7,
+          "first_output_difference": 0,
+          "same_input_sha256": true,
+          "before_input_sha256": "5026b6901aee5183f99e09c9f44c376775020ab15f56c09ae2b37e41caed109d",
+          "after_input_sha256": "5026b6901aee5183f99e09c9f44c376775020ab15f56c09ae2b37e41caed109d",
+          "same_output_ids": false,
+          "before_distinct": 1,
+          "after_distinct": 116,
+          "before_periodic_suffix": {
+            "period": 1,
+            "start": 0,
+            "tokens": 1024,
+            "fraction": 1.0
+          },
+          "after_periodic_suffix": {
+            "period": 1,
+            "start": 362,
+            "tokens": 662,
+            "fraction": 0.646484375
+          }
+        }
+      ]
+    },
+    {
+      "group": "w2_32k_1k",
+      "before": {
+        "AL": 2.9008498583569406,
+        "rate": 0.6336166194523135,
+        "positions": [
+          0.8356940509915014,
+          0.6288951841359773,
+          0.43626062322946174
+        ],
+        "accepted_stat_requests": 1,
+        "periodic_requests": 0
+      },
+      "after": {
+        "AL": 2.598984771573604,
+        "rate": 0.5321489001692047,
+        "positions": [
+          0.7969543147208121,
+          0.5126903553299492,
+          0.2868020304568528
+        ],
+        "accepted_stat_requests": 1,
+        "periodic_requests": 0
+      },
+      "before_source": "/data_lib/cyt/q1mtp/native_full_20261012_190926/w2_32k_1k/result.json",
+      "after_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/w2_32k_1k/result.json",
+      "paired_outputs": [
+        {
+          "index": 0,
+          "first_output_difference": 0,
+          "same_input_sha256": true,
+          "before_input_sha256": "b264fde0152cb74b7db67f091a22dffce00e3f342a2093a198a84b11b925371c",
+          "after_input_sha256": "b264fde0152cb74b7db67f091a22dffce00e3f342a2093a198a84b11b925371c",
+          "same_output_ids": false,
+          "before_distinct": 252,
+          "after_distinct": 409,
+          "before_periodic_suffix": null,
+          "after_periodic_suffix": null
+        }
+      ]
+    },
+    {
+      "group": "w4_prefix32k_300",
+      "before": {
+        "AL": 2.803738317757009,
+        "rate": 0.6043613707165109,
+        "positions": [
+          0.7242990654205608,
+          0.5887850467289719,
+          0.5
+        ],
+        "accepted_stat_requests": 2,
+        "periodic_requests": 0
+      },
+      "after": {
+        "AL": 2.6666666666666665,
+        "rate": 0.554074074074074,
+        "positions": [
+          0.7422222222222222,
+          0.56,
+          0.36
+        ],
+        "accepted_stat_requests": 2,
+        "periodic_requests": 0
+      },
+      "before_source": "/data_lib/cyt/q1mtp/native_full_20261012_190926/w4_prefix32k_300/result.json",
+      "after_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/w4_prefix32k_300/result.json",
+      "paired_outputs": [
+        {
+          "index": 0,
+          "first_output_difference": 0,
+          "same_input_sha256": true,
+          "before_input_sha256": "4d73e8224667ce573fcfe5b3a2c8b1020aa8ba3ca4a5b657f6e4fc6dd7f302e9",
+          "after_input_sha256": "4d73e8224667ce573fcfe5b3a2c8b1020aa8ba3ca4a5b657f6e4fc6dd7f302e9",
+          "same_output_ids": false,
+          "before_distinct": 64,
+          "after_distinct": 208,
+          "before_periodic_suffix": null,
+          "after_periodic_suffix": null
+        },
+        {
+          "index": 1,
+          "first_output_difference": 3,
+          "same_input_sha256": true,
+          "before_input_sha256": "f408155326550c7bc4ab36f4ac9bf15f123db298069c69b4de8987a7d94441da",
+          "after_input_sha256": "f408155326550c7bc4ab36f4ac9bf15f123db298069c69b4de8987a7d94441da",
+          "same_output_ids": false,
+          "before_distinct": 89,
+          "after_distinct": 70,
+          "before_periodic_suffix": null,
+          "after_periodic_suffix": null
+        }
+      ]
+    },
+    {
+      "group": "native_exact_1k256",
+      "before": {
+        "AL": 2.8764044943820224,
+        "rate": 0.6217228464419475,
+        "positions": [
+          0.8258426966292135,
+          0.6179775280898876,
+          0.42134831460674155
+        ],
+        "accepted_stat_requests": 2,
+        "periodic_requests": 0
+      },
+      "after": {
+        "AL": 2.9941520467836256,
+        "rate": 0.6666666666666666,
+        "positions": [
+          0.8362573099415205,
+          0.672514619883041,
+          0.49122807017543857
+        ],
+        "accepted_stat_requests": 2,
+        "periodic_requests": 1
+      },
+      "before_source": "/home/chengyetai/workspace/current_exp/Q1MTPExp/results/native_randomids_20261012_1844/native_exact_ids.json",
+      "after_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/native_exact_1k256/result.json",
+      "paired_outputs": [
+        {
+          "index": 0,
+          "first_output_difference": 6,
+          "same_input_sha256": null,
+          "before_input_sha256": null,
+          "after_input_sha256": "e73595a7842a5854b0bb1dcff9a8acc025a23aacc4cc238eb564493f7f63fd24",
+          "same_output_ids": false,
+          "before_distinct": 35,
+          "after_distinct": 109,
+          "before_periodic_suffix": null,
+          "after_periodic_suffix": null
+        },
+        {
+          "index": 1,
+          "first_output_difference": 0,
+          "same_input_sha256": null,
+          "before_input_sha256": null,
+          "after_input_sha256": "fc22de95bcf3921fdc1919212de1c66093a47cc0e0e5d71f91c22dede76a5b1a",
+          "same_output_ids": false,
+          "before_distinct": 163,
+          "after_distinct": 7,
+          "before_periodic_suffix": null,
+          "after_periodic_suffix": {
+            "period": 8,
+            "start": 0,
+            "tokens": 256,
+            "fraction": 1.0
+          }
+        }
+      ]
+    }
+  ],
+  "state": {
+    "runner_pid": 3685089,
+    "started_unix": 1791816362.8382232,
+    "completed": true,
+    "phase": "planned_grid_completed",
+    "runs": [
+      {
+        "tag": "publisher_v19",
+        "container": "cyt-auto-mtp-publisher-v19-slim",
+        "healthy": true,
+        "suite_rc": 0,
+        "suite_status": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/publisher_v19/status.json",
+        "trajectory_rc": 1
+      },
+      {
+        "tag": "mtp-default-v16",
+        "container": "cyt-auto-mtp-default-v16",
+        "flags": [
+          "--image",
+          "quay.io/ascend/sglang:cann9.0.0-a3-v0.5.16",
+          "--loader-v0516",
+          "--dp",
+          "2",
+          "--dp-attention",
+          "--context",
+          "180000",
+          "--mrr",
+          "64",
+          "--mem",
+          "0.90",
+          "--deepep",
+          "auto",
+          "--fusion",
+          "--graph"
+        ],
+        "started_unix": 1791816640.6793263,
+        "launch_rc": 0,
+        "healthy": false,
+        "failure": "container exited before health"
+      },
+      {
+        "tag": "mtp-default-v16-graph-off",
+        "container": "cyt-auto-mtp-default-v16-graph-off",
+        "flags": [
+          "--image",
+          "quay.io/ascend/sglang:cann9.0.0-a3-v0.5.16",
+          "--loader-v0516",
+          "--dp",
+          "2",
+          "--dp-attention",
+          "--context",
+          "180000",
+          "--mrr",
+          "64",
+          "--mem",
+          "0.90",
+          "--deepep",
+          "auto",
+          "--fusion"
+        ],
+        "started_unix": 1791817557.8373036,
+        "launch_rc": 0,
+        "healthy": false,
+        "failure": "container exited before health"
+      },
+      {
+        "tag": "mtp-default-v16-hccl1000",
+        "container": "cyt-auto-mtp-default-v16-hccl1000",
+        "flags": [
+          "--image",
+          "quay.io/ascend/sglang:cann9.0.0-a3-v0.5.16",
+          "--loader-v0516",
+          "--dp",
+          "2",
+          "--dp-attention",
+          "--context",
+          "180000",
+          "--mrr",
+          "64",
+          "--mem",
+          "0.90",
+          "--deepep",
+          "auto",
+          "--fusion",
+          "--graph",
+          "--env",
+          "HCCL_BUFFSIZE=1000"
+        ],
+        "started_unix": 1791818767.1683295,
+        "launch_rc": 0,
+        "healthy": false,
+        "failure": "container exited before health"
+      },
+      {
+        "tag": "mtp-v16-auto-cap64",
+        "container": "cyt-auto-mtp-v16-auto-cap64",
+        "flags": [
+          "--image",
+          "quay.io/ascend/sglang:cann9.0.0-a3-v0.5.16",
+          "--loader-v0516",
+          "--dp",
+          "2",
+          "--dp-attention",
+          "--context",
+          "180000",
+          "--mrr",
+          "64",
+          "--mem",
+          "0.90",
+          "--deepep",
+          "auto",
+          "--fusion",
+          "--mrr",
+          "8",
+          "--dispatch-tokens",
+          "64",
+          "--graph",
+          "--graph-bs",
+          "1 2 4 8",
+          "--graph-max-bs",
+          "8",
+          "--env",
+          "HCCL_BUFFSIZE=1536",
+          "--env",
+          "HCCL_OP_EXPANSION_MODE=AIV"
+        ],
+        "started_unix": 1791819545.8046005,
+        "launch_rc": 0,
+        "healthy": false,
+        "failure": "container exited before health"
+      },
+      {
+        "tag": "mtp-v16-auto-cap64-mem84",
+        "container": "cyt-auto-mtp-v16-auto-cap64-mem84",
+        "flags": [
+          "--image",
+          "quay.io/ascend/sglang:cann9.0.0-a3-v0.5.16",
+          "--loader-v0516",
+          "--dp",
+          "2",
+          "--dp-attention",
+          "--context",
+          "180000",
+          "--mrr",
+          "64",
+          "--mem",
+          "0.90",
+          "--deepep",
+          "auto",
+          "--fusion",
+          "--mrr",
+          "8",
+          "--dispatch-tokens",
+          "64",
+          "--graph",
+          "--graph-bs",
+          "1 2 4 8",
+          "--graph-max-bs",
+          "8",
+          "--env",
+          "HCCL_BUFFSIZE=1536",
+          "--env",
+          "HCCL_OP_EXPANSION_MODE=AIV",
+          "--mem",
+          "0.84"
+        ],
+        "started_unix": 1791820385.9802995,
+        "launch_rc": 0,
+        "healthy": false,
+        "failure": "scheduler crashed while HTTP router remained alive"
+      },
+      {
+        "tag": "mtp-v19-dp2-normal",
+        "container": "cyt-auto-mtp-v19-dp2-normal",
+        "flags": [
+          "--dp",
+          "2",
+          "--dp-attention",
+          "--context",
+          "180000",
+          "--mrr",
+          "8",
+          "--diagnostics"
+        ],
+        "started_unix": 1791821240.7704637,
+        "launch_rc": 0,
+        "healthy": true,
+        "suite_rc": 1,
+        "suite_status": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-normal/status.json"
+      },
+      {
+        "tag": "mtp-v16-auto-cap64-mem87-hccl650",
+        "container": "cyt-auto-mtp-v16-auto-cap64-mem87-hccl650",
+        "flags": [
+          "--image",
+          "quay.io/ascend/sglang:cann9.0.0-a3-v0.5.16",
+          "--loader-v0516",
+          "--dp",
+          "2",
+          "--dp-attention",
+          "--context",
+          "180000",
+          "--mrr",
+          "64",
+          "--mem",
+          "0.90",
+          "--deepep",
+          "auto",
+          "--fusion",
+          "--mrr",
+          "8",
+          "--dispatch-tokens",
+          "64",
+          "--mem",
+          "0.87",
+          "--graph",
+          "--graph-bs",
+          "1 2 4 8",
+          "--graph-max-bs",
+          "8",
+          "--env",
+          "HCCL_OP_EXPANSION_MODE=AIV"
+        ],
+        "started_unix": 1791822490.9358635,
+        "launch_rc": 0,
+        "healthy": true,
+        "suite_rc": 0,
+        "suite_status": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem87-hccl650/status.json",
+        "business_rc": 0
+      },
+      {
+        "tag": "mtp-v16-auto-cap64-mem90-hccl650",
+        "container": "cyt-auto-mtp-v16-auto-cap64-mem90-hccl650",
+        "flags": [
+          "--image",
+          "quay.io/ascend/sglang:cann9.0.0-a3-v0.5.16",
+          "--loader-v0516",
+          "--dp",
+          "2",
+          "--dp-attention",
+          "--context",
+          "180000",
+          "--mrr",
+          "64",
+          "--mem",
+          "0.90",
+          "--deepep",
+          "auto",
+          "--fusion",
+          "--mrr",
+          "8",
+          "--dispatch-tokens",
+          "64",
+          "--mem",
+          "0.87",
+          "--graph",
+          "--graph-bs",
+          "1 2 4 8",
+          "--graph-max-bs",
+          "8",
+          "--env",
+          "HCCL_OP_EXPANSION_MODE=AIV",
+          "--mem",
+          "0.90"
+        ],
+        "started_unix": 1791823598.6848674,
+        "launch_rc": 0,
+        "healthy": true,
+        "suite_rc": 0,
+        "suite_status": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem90-hccl650/status.json",
+        "business_rc": 0
+      },
+      {
+        "tag": "mtp-v19-dp2-ordered-probe",
+        "container": "cyt-auto-mtp-v19-dp2-ordered-probe",
+        "flags": [
+          "--dp",
+          "2",
+          "--dp-attention",
+          "--context",
+          "180000",
+          "--mrr",
+          "8",
+          "--diagnostics",
+          "--ordered-diagnostic"
+        ],
+        "started_unix": 1791824689.3553858,
+        "launch_rc": 0,
+        "healthy": true,
+        "suite_rc": 0,
+        "suite_status": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-ordered-probe/status.json",
+        "business_rc": 1
+      },
+      {
+        "tag": "mtp-v19-dp2-no-plan",
+        "container": "cyt-auto-mtp-v19-dp2-no-plan",
+        "flags": [
+          "--dp",
+          "2",
+          "--dp-attention",
+          "--context",
+          "180000",
+          "--mrr",
+          "8",
+          "--diagnostics",
+          "--env",
+          "SGLANG_ENABLE_OVERLAP_PLAN_STREAM=0"
+        ],
+        "started_unix": 1791825974.609905,
+        "launch_rc": 0,
+        "healthy": false,
+        "failure": "stopped during loading before requests: avoid proven fused input-logprob compiler crash; safe scoring restart"
+      },
+      {
+        "tag": "mtp-v19-dp2-no-plan-lp-safe",
+        "container": "cyt-auto-mtp-v19-dp2-no-plan-lp-safe",
+        "flags": [
+          "--dp",
+          "2",
+          "--dp-attention",
+          "--context",
+          "180000",
+          "--mrr",
+          "8",
+          "--diagnostics",
+          "--env",
+          "SGLANG_ENABLE_OVERLAP_PLAN_STREAM=0"
+        ],
+        "started_unix": 1791826297.793396,
+        "launch_rc": 0,
+        "healthy": true,
+        "suite_rc": 0,
+        "suite_status": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/status.json",
+        "business_rc": 0
+      },
+      {
+        "tag": "chunk-auto-16384",
+        "container": "cyt-auto-chunk-auto-16384",
+        "flags": [
+          "--mtp",
+          "off",
+          "--deepep",
+          "auto",
+          "--graph",
+          "--mrr",
+          "16",
+          "--graph-bs",
+          "1 2 4 8",
+          "--graph-max-bs",
+          "8",
+          "--dispatch-tokens",
+          "64",
+          "--env",
+          "HCCL_BUFFSIZE=1536",
+          "--env",
+          "HCCL_OP_EXPANSION_MODE=AIV"
+        ],
+        "started_unix": 1791828184.3300083,
+        "launch_rc": 0,
+        "healthy": false,
+        "failure": "Graph capture_bs empty: TP16 alignment filters bs1/2/4/8 for one token/request"
+      },
+      {
+        "tag": "chunk-normal-16384",
+        "container": "cyt-auto-chunk-normal-16384",
+        "flags": [
+          "--mtp",
+          "off",
+          "--deepep",
+          "normal",
+          "--mrr",
+          "16"
+        ],
+        "started_unix": 1791828990.773958,
+        "launch_rc": 0,
+        "healthy": false,
+        "failure": "stopped during loading before inference: first repair Graph batch alignment"
+      },
+      {
+        "tag": "chunk-auto-aligned-16384",
+        "container": "cyt-auto-chunk-auto-aligned-16384",
+        "flags": [
+          "--mtp",
+          "off",
+          "--deepep",
+          "auto",
+          "--graph",
+          "--mrr",
+          "16",
+          "--graph-bs",
+          "1 2 4 8 16",
+          "--graph-max-bs",
+          "16",
+          "--dispatch-tokens",
+          "64",
+          "--env",
+          "HCCL_BUFFSIZE=1536",
+          "--env",
+          "HCCL_OP_EXPANSION_MODE=AIV"
+        ],
+        "started_unix": 1791829145.8245845,
+        "launch_rc": 0,
+        "healthy": false,
+        "failure": "Aligned bs16 Graph: aclnnMoeLowLatencyDispatchV2 HCCL allocation3222274048 bytes failed at HCCL1536"
+      },
+      {
+        "tag": "chunk-normal-aligned-16384",
+        "container": "cyt-auto-chunk-normal-aligned-16384",
+        "flags": [
+          "--mtp",
+          "off",
+          "--deepep",
+          "normal",
+          "--mrr",
+          "16"
+        ],
+        "started_unix": 1791829942.190375,
+        "launch_rc": 0,
+        "healthy": false,
+        "failure": "stopped during loading before inference: single-variable HCCL650 Graph retry"
+      },
+      {
+        "tag": "chunk-auto-hccl650-16384",
+        "container": "cyt-auto-chunk-auto-hccl650-16384",
+        "flags": [
+          "--mtp",
+          "off",
+          "--deepep",
+          "auto",
+          "--graph",
+          "--mrr",
+          "16",
+          "--graph-bs",
+          "1 2 4 8 16",
+          "--graph-max-bs",
+          "16",
+          "--dispatch-tokens",
+          "64",
+          "--env",
+          "HCCL_BUFFSIZE=650",
+          "--env",
+          "HCCL_OP_EXPANSION_MODE=AIV"
+        ],
+        "started_unix": 1791830107.6627495,
+        "launch_rc": 0,
+        "healthy": true,
+        "sanity_rc": 0,
+        "cells": [
+          {
+            "name": "w1_8k_1k_chunk16384_c2",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk16384_c2/result.json"
+          },
+          {
+            "name": "w1_8k_1k_chunk16384_c4",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk16384_c4/result.json"
+          },
+          {
+            "name": "w2_32k_1k_chunk16384_c1",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w2_32k_1k_chunk16384_c1/result.json"
+          },
+          {
+            "name": "w4_prefix32k_300_chunk16384_c1",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk16384_c1/result.json"
+          },
+          {
+            "name": "w4_prefix32k_300_chunk16384_c2",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk16384_c2/result.json"
+          }
+        ]
+      },
+      {
+        "tag": "chunk-auto-1024",
+        "container": "cyt-auto-chunk-auto-1024",
+        "flags": [
+          "--mtp",
+          "off",
+          "--deepep",
+          "auto",
+          "--graph",
+          "--mrr",
+          "16",
+          "--graph-bs",
+          "1 2 4 8 16",
+          "--graph-max-bs",
+          "16",
+          "--dispatch-tokens",
+          "64",
+          "--env",
+          "HCCL_BUFFSIZE=650",
+          "--env",
+          "HCCL_OP_EXPANSION_MODE=AIV",
+          "--chunk",
+          "1024"
+        ],
+        "started_unix": 1791831919.2126708,
+        "launch_rc": 0,
+        "healthy": true,
+        "cells": [
+          {
+            "name": "w1_8k_1k_chunk1024_c2",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk1024_c2/result.json"
+          },
+          {
+            "name": "w1_8k_1k_chunk1024_c4",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk1024_c4/result.json"
+          },
+          {
+            "name": "w2_32k_1k_chunk1024_c1",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w2_32k_1k_chunk1024_c1/result.json"
+          },
+          {
+            "name": "w4_prefix32k_300_chunk1024_c1",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk1024_c1/result.json"
+          },
+          {
+            "name": "w4_prefix32k_300_chunk1024_c2",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk1024_c2/result.json"
+          }
+        ]
+      },
+      {
+        "tag": "chunk-auto-4096",
+        "container": "cyt-auto-chunk-auto-4096",
+        "flags": [
+          "--mtp",
+          "off",
+          "--deepep",
+          "auto",
+          "--graph",
+          "--mrr",
+          "16",
+          "--graph-bs",
+          "1 2 4 8 16",
+          "--graph-max-bs",
+          "16",
+          "--dispatch-tokens",
+          "64",
+          "--env",
+          "HCCL_BUFFSIZE=650",
+          "--env",
+          "HCCL_OP_EXPANSION_MODE=AIV",
+          "--chunk",
+          "4096"
+        ],
+        "started_unix": 1791833280.9922385,
+        "launch_rc": 0,
+        "healthy": true,
+        "cells": [
+          {
+            "name": "w1_8k_1k_chunk4096_c2",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk4096_c2/result.json"
+          },
+          {
+            "name": "w1_8k_1k_chunk4096_c4",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk4096_c4/result.json"
+          },
+          {
+            "name": "w2_32k_1k_chunk4096_c1",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w2_32k_1k_chunk4096_c1/result.json"
+          },
+          {
+            "name": "w4_prefix32k_300_chunk4096_c1",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk4096_c1/result.json"
+          },
+          {
+            "name": "w4_prefix32k_300_chunk4096_c2",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk4096_c2/result.json"
+          }
+        ]
+      },
+      {
+        "tag": "chunk-auto-8192",
+        "container": "cyt-auto-chunk-auto-8192",
+        "flags": [
+          "--mtp",
+          "off",
+          "--deepep",
+          "auto",
+          "--graph",
+          "--mrr",
+          "16",
+          "--graph-bs",
+          "1 2 4 8 16",
+          "--graph-max-bs",
+          "16",
+          "--dispatch-tokens",
+          "64",
+          "--env",
+          "HCCL_BUFFSIZE=650",
+          "--env",
+          "HCCL_OP_EXPANSION_MODE=AIV",
+          "--chunk",
+          "8192"
+        ],
+        "started_unix": 1791834660.64805,
+        "launch_rc": 0,
+        "healthy": true,
+        "cells": [
+          {
+            "name": "w1_8k_1k_chunk8192_c2",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk8192_c2/result.json"
+          },
+          {
+            "name": "w1_8k_1k_chunk8192_c4",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk8192_c4/result.json"
+          },
+          {
+            "name": "w2_32k_1k_chunk8192_c1",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w2_32k_1k_chunk8192_c1/result.json"
+          },
+          {
+            "name": "w4_prefix32k_300_chunk8192_c1",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk8192_c1/result.json"
+          },
+          {
+            "name": "w4_prefix32k_300_chunk8192_c2",
+            "rc": 0,
+            "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk8192_c2/result.json"
+          }
+        ]
+      }
+    ],
+    "updated_unix": 1791836029.8189983,
+    "container": "cyt-auto-chunk-auto-8192",
+    "primary_stage": "completed",
+    "primary_group": "w4_prefix32k_300",
+    "command_started": 1791835898.5347908,
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "/home/chengyetai/workspace/current_exp/autonomous_20261012/scripts/chunk_collect.py",
+      "--dataset",
+      "/home/chengyetai/workspace/current_exp/Qchunksize/datasets/native_20261012/w4_prefix32k_300.json",
+      "--out",
+      "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk8192_c2",
+      "--concurrency",
+      "2",
+      "--chunk",
+      "8192"
+    ],
+    "command_log": "/home/chengyetai/workspace/current_exp/autonomous_20261012/logs/w4_prefix32k_300_chunk8192_c2.log",
+    "resumed_unix": 1791830106.6959975,
+    "cell": "w4_prefix32k_300_chunk8192_c2",
+    "rc": 0
+  }
+}

@@ -1,0 +1,2937 @@
+{
+  "runs": [
+    {
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/summary.json",
+      "completed": true,
+      "points": [
+        {
+          "group": "native_exact_1k256",
+          "index": 0,
+          "position": 6,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 6,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 6923,
+              "bulk_prefill_token": 1414,
+              "token": 1414,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -1.2330783605575562,
+                    1414,
+                    null
+                  ],
+                  [
+                    -1.6080783605575562,
+                    6923,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/native_exact_1k256_0.mismatch6.dpNone.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 6,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 6923,
+              "bulk_prefill_token": 1414,
+              "token": 1414,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -1.2389463186264038,
+                    1414,
+                    null
+                  ],
+                  [
+                    -2.1139464378356934,
+                    6923,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/native_exact_1k256_0.mismatch6.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "native_exact_1k256",
+          "index": 0,
+          "position": 13,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 13,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 1196,
+              "bulk_prefill_token": 1467,
+              "token": 1196,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -1.4289196729660034,
+                    1196,
+                    null
+                  ],
+                  [
+                    -1.6789196729660034,
+                    1467,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/native_exact_1k256_0.mismatch13.dpNone.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 13,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 1196,
+              "bulk_prefill_token": 1467,
+              "token": 1196,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -1.2529683113098145,
+                    1196,
+                    null
+                  ],
+                  [
+                    -1.5029683113098145,
+                    9929,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/native_exact_1k256_0.mismatch13.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "native_exact_1k256",
+          "index": 1,
+          "position": 2,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 2,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 322,
+              "bulk_prefill_token": 532,
+              "token": 532,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.8690719604492188,
+                    532,
+                    null
+                  ],
+                  [
+                    -3.9940719604492188,
+                    322,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/native_exact_1k256_1.mismatch2.dpNone.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 2,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 322,
+              "bulk_prefill_token": 532,
+              "token": 532,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.7347493171691895,
+                    532,
+                    null
+                  ],
+                  [
+                    -4.1097493171691895,
+                    322,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/native_exact_1k256_1.mismatch2.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 0,
+          "position": 56,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 0,
+              "position": 56,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 45191,
+              "bulk_prefill_token": 12084,
+              "token": 45191,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.06306764483451843,
+                    45191,
+                    null
+                  ],
+                  [
+                    -3.313067674636841,
+                    12084,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_0.mismatch56.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 0,
+              "position": 56,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 45191,
+              "bulk_prefill_token": 12084,
+              "token": 45191,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.6214779019355774,
+                    45191,
+                    null
+                  ],
+                  [
+                    -0.8714779019355774,
+                    12084,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_0.mismatch56.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 0,
+          "position": 99,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 0,
+              "position": 99,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 2551,
+              "bulk_prefill_token": 4796,
+              "token": 4796,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.1192600354552269,
+                    4796,
+                    null
+                  ],
+                  [
+                    -2.74426007270813,
+                    2551,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_0.mismatch99.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 0,
+              "position": 99,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 2551,
+              "bulk_prefill_token": 4796,
+              "token": 2551,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.719812273979187,
+                    2551,
+                    null
+                  ],
+                  [
+                    -0.719812273979187,
+                    4796,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_0.mismatch99.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 1,
+          "position": 0,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 1,
+              "position": 0,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 3862,
+              "bulk_prefill_token": 8419,
+              "token": 3862,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.9129686951637268,
+                    3862,
+                    null
+                  ],
+                  [
+                    -1.537968635559082,
+                    2610,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_1.mismatch0.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 1,
+              "position": 0,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 3862,
+              "bulk_prefill_token": 8419,
+              "token": 3862,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -1.1074328422546387,
+                    3862,
+                    null
+                  ],
+                  [
+                    -1.2324328422546387,
+                    2610,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_1.mismatch0.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 1,
+          "position": 21,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 1,
+              "position": 21,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 28697,
+              "bulk_prefill_token": 1565,
+              "token": 1565,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.04297216236591339,
+                    1565,
+                    null
+                  ],
+                  [
+                    -4.292972087860107,
+                    20146,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_1.mismatch21.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 1,
+              "position": 21,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 28697,
+              "bulk_prefill_token": 1565,
+              "token": 1565,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.17162245512008667,
+                    1565,
+                    null
+                  ],
+                  [
+                    -2.1716225147247314,
+                    28697,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_1.mismatch21.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 2,
+          "position": 2,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 2,
+              "position": 2,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 61769,
+              "bulk_prefill_token": 20259,
+              "token": 20259,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.5325113534927368,
+                    20259,
+                    null
+                  ],
+                  [
+                    -1.9075113534927368,
+                    61769,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_2.mismatch2.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 2,
+              "position": 2,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 61769,
+              "bulk_prefill_token": 20259,
+              "token": 20259,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.6305133104324341,
+                    20259,
+                    null
+                  ],
+                  [
+                    -1.755513310432434,
+                    61769,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_2.mismatch2.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 3,
+          "position": 12,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 3,
+              "position": 12,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 3705,
+              "bulk_prefill_token": 3484,
+              "token": 5046,
+              "matches_saved": false,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.3443828225135803,
+                    5046,
+                    null
+                  ],
+                  [
+                    -1.7193827629089355,
+                    3705,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_3.mismatch12.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 3,
+              "position": 12,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 3705,
+              "bulk_prefill_token": 3484,
+              "token": 5046,
+              "matches_saved": false,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.573283314704895,
+                    5046,
+                    null
+                  ],
+                  [
+                    -1.698283314704895,
+                    3705,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_3.mismatch12.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 3,
+          "position": 51,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 3,
+              "position": 51,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 3170,
+              "bulk_prefill_token": 1128,
+              "token": 1128,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.011050100438296795,
+                    1128,
+                    null
+                  ],
+                  [
+                    -4.511050224304199,
+                    3170,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_3.mismatch51.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 3,
+              "position": 51,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 3170,
+              "bulk_prefill_token": 1128,
+              "token": 1128,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.20141518115997314,
+                    1128,
+                    null
+                  ],
+                  [
+                    -1.7014151811599731,
+                    3170,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_3.mismatch51.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 4,
+          "position": 18,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 4,
+              "position": 18,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 34714,
+              "bulk_prefill_token": 40566,
+              "token": 40566,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.7173585295677185,
+                    40566,
+                    null
+                  ],
+                  [
+                    -1.7173585891723633,
+                    29255,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_4.mismatch18.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 4,
+              "position": 18,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 34714,
+              "bulk_prefill_token": 40566,
+              "token": 40566,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.5934478044509888,
+                    40566,
+                    null
+                  ],
+                  [
+                    -1.2184478044509888,
+                    34714,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_4.mismatch18.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 4,
+          "position": 56,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 4,
+              "position": 56,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 1265,
+              "bulk_prefill_token": 17148,
+              "token": 17148,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.09667616337537766,
+                    17148,
+                    null
+                  ],
+                  [
+                    -2.9716761112213135,
+                    686,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_4.mismatch56.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 4,
+              "position": 56,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 1265,
+              "bulk_prefill_token": 17148,
+              "token": 17148,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.07887135446071625,
+                    17148,
+                    null
+                  ],
+                  [
+                    -3.953871250152588,
+                    686,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_4.mismatch56.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 5,
+          "position": 13,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 5,
+              "position": 13,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 537,
+              "bulk_prefill_token": 30309,
+              "token": 30309,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.4366040527820587,
+                    30309,
+                    null
+                  ],
+                  [
+                    -1.8116040229797363,
+                    537,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_5.mismatch13.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 5,
+              "position": 13,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 537,
+              "bulk_prefill_token": 30309,
+              "token": 537,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.6395729780197144,
+                    537,
+                    null
+                  ],
+                  [
+                    -1.1395729780197144,
+                    30309,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_5.mismatch13.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 5,
+          "position": 38,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 5,
+              "position": 38,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 323,
+              "bulk_prefill_token": 11,
+              "token": 11,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.14269720017910004,
+                    11,
+                    null
+                  ],
+                  [
+                    -2.0176970958709717,
+                    323,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_5.mismatch38.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 5,
+              "position": 38,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 323,
+              "bulk_prefill_token": 11,
+              "token": 11,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.38690218329429626,
+                    11,
+                    null
+                  ],
+                  [
+                    -1.1369022130966187,
+                    323,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_5.mismatch38.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 6,
+          "position": 12,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 6,
+              "position": 12,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 320,
+              "bulk_prefill_token": 374,
+              "token": 320,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.20151400566101074,
+                    320,
+                    null
+                  ],
+                  [
+                    -1.7015140056610107,
+                    374,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_6.mismatch12.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 6,
+              "position": 12,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 320,
+              "bulk_prefill_token": 374,
+              "token": 374,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.3488846719264984,
+                    374,
+                    null
+                  ],
+                  [
+                    -1.2238847017288208,
+                    320,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_6.mismatch12.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 6,
+          "position": 35,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 6,
+              "position": 35,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 83538,
+              "bulk_prefill_token": 34,
+              "token": 83538,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.581723153591156,
+                    83538,
+                    null
+                  ],
+                  [
+                    -1.3317232131958008,
+                    34,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_6.mismatch35.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 6,
+              "position": 35,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 83538,
+              "bulk_prefill_token": 34,
+              "token": 34,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.5726845860481262,
+                    34,
+                    null
+                  ],
+                  [
+                    -1.4476845264434814,
+                    10152,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_6.mismatch35.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 7,
+          "position": 2,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 7,
+              "position": 2,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 374,
+              "bulk_prefill_token": 7951,
+              "token": 7951,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.3482133448123932,
+                    7951,
+                    null
+                  ],
+                  [
+                    -1.8482133150100708,
+                    374,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_7.mismatch2.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 7,
+              "position": 2,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 374,
+              "bulk_prefill_token": 7951,
+              "token": 7951,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.4613151252269745,
+                    7951,
+                    null
+                  ],
+                  [
+                    -1.4613151550292969,
+                    374,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_7.mismatch2.dpNone.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "sharegpt_chat_eos",
+          "index": 7,
+          "position": 81,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 7,
+              "position": 81,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 323,
+              "bulk_prefill_token": 11,
+              "token": 11,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.24949733912944794,
+                    11,
+                    null
+                  ],
+                  [
+                    -1.9994972944259644,
+                    323,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_7.mismatch81.dpNone.trial1.response.json"
+            },
+            {
+              "group": "sharegpt_chat_eos",
+              "index": 7,
+              "position": 81,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 323,
+              "bulk_prefill_token": 11,
+              "token": 323,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": null,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.040574390441179276,
+                    323,
+                    null
+                  ],
+                  [
+                    -3.540574312210083,
+                    11,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/chunk_auto_sanity/target_prefill_audit/sharegpt_chat_eos_7.mismatch81.dpNone.trial2.response.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v16-auto-cap64-mem90-hccl650/target_prefill_audit/summary.json",
+      "completed": true,
+      "points": [
+        {
+          "group": "native_exact_1k256",
+          "index": 0,
+          "position": 8,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 8,
+              "trial": 1,
+              "saved_token": 6672,
+              "bulk_prefill_token": 2213,
+              "token": 2213,
+              "matches_saved": false,
+              "matches_bulk": true
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 8,
+              "trial": 2,
+              "saved_token": 6672,
+              "bulk_prefill_token": 2213,
+              "token": 2213,
+              "matches_saved": false,
+              "matches_bulk": true
+            }
+          ]
+        },
+        {
+          "group": "native_exact_1k256",
+          "index": 0,
+          "position": 55,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 55,
+              "trial": 1,
+              "saved_token": 330,
+              "bulk_prefill_token": 279,
+              "token": 220,
+              "matches_saved": false,
+              "matches_bulk": false
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 55,
+              "trial": 2,
+              "saved_token": 330,
+              "bulk_prefill_token": 279,
+              "token": 279,
+              "matches_saved": false,
+              "matches_bulk": true
+            }
+          ]
+        },
+        {
+          "group": "native_exact_1k256",
+          "index": 1,
+          "position": 2,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 2,
+              "trial": 1,
+              "saved_token": 532,
+              "bulk_prefill_token": 3,
+              "token": 532,
+              "matches_saved": true,
+              "matches_bulk": false
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 2,
+              "trial": 2,
+              "saved_token": 532,
+              "bulk_prefill_token": 3,
+              "token": 322,
+              "matches_saved": false,
+              "matches_bulk": false
+            }
+          ]
+        },
+        {
+          "group": "native_exact_1k256",
+          "index": 1,
+          "position": 45,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 45,
+              "trial": 1,
+              "saved_token": 264,
+              "bulk_prefill_token": 21763,
+              "token": 264,
+              "matches_saved": true,
+              "matches_bulk": false
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 45,
+              "trial": 2,
+              "saved_token": 264,
+              "bulk_prefill_token": 21763,
+              "token": 264,
+              "matches_saved": true,
+              "matches_bulk": false
+            }
+          ]
+        },
+        {
+          "group": "native_longinput_1k1024",
+          "index": 0,
+          "position": 4,
+          "routes": {},
+          "stable_dp_comparison_valid": false,
+          "stable_dp_predictions_differ": null,
+          "probes": [
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 1,
+              "saved_token": 197,
+              "bulk_prefill_token": 2,
+              "token": 2,
+              "matches_saved": false,
+              "matches_bulk": true
+            },
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 2,
+              "saved_token": 197,
+              "bulk_prefill_token": 2,
+              "token": 197,
+              "matches_saved": true,
+              "matches_bulk": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/summary.json",
+      "completed": true,
+      "points": [
+        {
+          "group": "native_exact_1k256",
+          "index": 0,
+          "position": 1,
+          "routes": {
+            "0": {
+              "tokens": [
+                154827,
+                154827
+              ],
+              "stable": true,
+              "route_honored": true
+            },
+            "1": {
+              "tokens": [
+                154827,
+                154827
+              ],
+              "stable": true,
+              "route_honored": true
+            }
+          },
+          "stable_dp_comparison_valid": true,
+          "stable_dp_predictions_differ": false,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 1,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 518,
+              "bulk_prefill_token": 154827,
+              "token": 154827,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -2.5548956394195557,
+                    154827,
+                    null
+                  ],
+                  [
+                    -4.554895401000977,
+                    242,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_0.mismatch1.dpNone.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 1,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 518,
+              "bulk_prefill_token": 154827,
+              "token": 154827,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -4.0960774421691895,
+                    154827,
+                    null
+                  ],
+                  [
+                    -4.5335774421691895,
+                    29687,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_0.mismatch1.dpNone.trial2.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 1,
+              "trial": 1,
+              "routed_dp_rank": 0,
+              "saved_token": 518,
+              "bulk_prefill_token": 154827,
+              "token": 154827,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -2.5548956394195557,
+                    154827,
+                    null
+                  ],
+                  [
+                    -4.554895401000977,
+                    242,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_0.mismatch1.dp0.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 1,
+              "trial": 2,
+              "routed_dp_rank": 0,
+              "saved_token": 518,
+              "bulk_prefill_token": 154827,
+              "token": 154827,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -2.5548956394195557,
+                    154827,
+                    null
+                  ],
+                  [
+                    -4.554895401000977,
+                    242,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_0.mismatch1.dp0.trial2.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 1,
+              "trial": 1,
+              "routed_dp_rank": 1,
+              "saved_token": 518,
+              "bulk_prefill_token": 154827,
+              "token": 154827,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -4.0960774421691895,
+                    154827,
+                    null
+                  ],
+                  [
+                    -4.5335774421691895,
+                    29687,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_0.mismatch1.dp1.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 1,
+              "trial": 2,
+              "routed_dp_rank": 1,
+              "saved_token": 518,
+              "bulk_prefill_token": 154827,
+              "token": 154827,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -4.0960774421691895,
+                    154827,
+                    null
+                  ],
+                  [
+                    -4.5335774421691895,
+                    29687,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_0.mismatch1.dp1.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "native_exact_1k256",
+          "index": 1,
+          "position": 6,
+          "routes": {
+            "0": {
+              "tokens": [
+                14364,
+                14364
+              ],
+              "stable": true,
+              "route_honored": true
+            },
+            "1": {
+              "tokens": [
+                154850,
+                154850
+              ],
+              "stable": true,
+              "route_honored": true
+            }
+          },
+          "stable_dp_comparison_valid": true,
+          "stable_dp_predictions_differ": true,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 6,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 154850,
+              "bulk_prefill_token": 13865,
+              "token": 14364,
+              "matches_saved": false,
+              "matches_bulk": false,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -4.283380508422852,
+                    14364,
+                    null
+                  ],
+                  [
+                    -4.345880508422852,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_1.mismatch6.dpNone.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 6,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 154850,
+              "bulk_prefill_token": 13865,
+              "token": 154850,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.7185962200164795,
+                    154850,
+                    null
+                  ],
+                  [
+                    -3.8435962200164795,
+                    4782,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_1.mismatch6.dpNone.trial2.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 6,
+              "trial": 1,
+              "routed_dp_rank": 0,
+              "saved_token": 154850,
+              "bulk_prefill_token": 13865,
+              "token": 14364,
+              "matches_saved": false,
+              "matches_bulk": false,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -4.283380508422852,
+                    14364,
+                    null
+                  ],
+                  [
+                    -4.345880508422852,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_1.mismatch6.dp0.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 6,
+              "trial": 2,
+              "routed_dp_rank": 0,
+              "saved_token": 154850,
+              "bulk_prefill_token": 13865,
+              "token": 14364,
+              "matches_saved": false,
+              "matches_bulk": false,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -4.283380508422852,
+                    14364,
+                    null
+                  ],
+                  [
+                    -4.345880508422852,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_1.mismatch6.dp0.trial2.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 6,
+              "trial": 1,
+              "routed_dp_rank": 1,
+              "saved_token": 154850,
+              "bulk_prefill_token": 13865,
+              "token": 154850,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.7185962200164795,
+                    154850,
+                    null
+                  ],
+                  [
+                    -3.8435962200164795,
+                    4782,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_1.mismatch6.dp1.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 6,
+              "trial": 2,
+              "routed_dp_rank": 1,
+              "saved_token": 154850,
+              "bulk_prefill_token": 13865,
+              "token": 154850,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.7185962200164795,
+                    154850,
+                    null
+                  ],
+                  [
+                    -3.8435962200164795,
+                    4782,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_1.mismatch6.dp1.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "native_exact_1k256",
+          "index": 1,
+          "position": 124,
+          "routes": {
+            "0": {
+              "tokens": [
+                498,
+                498
+              ],
+              "stable": true,
+              "route_honored": true
+            },
+            "1": {
+              "tokens": [
+                498,
+                498
+              ],
+              "stable": true,
+              "route_honored": true
+            }
+          },
+          "stable_dp_comparison_valid": true,
+          "stable_dp_predictions_differ": false,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 124,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 358,
+              "bulk_prefill_token": 498,
+              "token": 498,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.5262867212295532,
+                    498,
+                    null
+                  ],
+                  [
+                    -0.9012867212295532,
+                    358,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_1.mismatch124.dpNone.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 124,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 358,
+              "bulk_prefill_token": 498,
+              "token": 498,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.16192997992038727,
+                    498,
+                    null
+                  ],
+                  [
+                    -1.911929965019226,
+                    358,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_1.mismatch124.dpNone.trial2.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 124,
+              "trial": 1,
+              "routed_dp_rank": 0,
+              "saved_token": 358,
+              "bulk_prefill_token": 498,
+              "token": 498,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.5262867212295532,
+                    498,
+                    null
+                  ],
+                  [
+                    -0.9012867212295532,
+                    358,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_1.mismatch124.dp0.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 124,
+              "trial": 2,
+              "routed_dp_rank": 0,
+              "saved_token": 358,
+              "bulk_prefill_token": 498,
+              "token": 498,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.5262867212295532,
+                    498,
+                    null
+                  ],
+                  [
+                    -0.9012867212295532,
+                    358,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_1.mismatch124.dp0.trial2.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 124,
+              "trial": 1,
+              "routed_dp_rank": 1,
+              "saved_token": 358,
+              "bulk_prefill_token": 498,
+              "token": 498,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.16192997992038727,
+                    498,
+                    null
+                  ],
+                  [
+                    -1.911929965019226,
+                    358,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_1.mismatch124.dp1.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 124,
+              "trial": 2,
+              "routed_dp_rank": 1,
+              "saved_token": 358,
+              "bulk_prefill_token": 498,
+              "token": 498,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.16192997992038727,
+                    498,
+                    null
+                  ],
+                  [
+                    -1.911929965019226,
+                    358,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_exact_1k256_1.mismatch124.dp1.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "native_longinput_1k1024",
+          "index": 0,
+          "position": 4,
+          "routes": {
+            "0": {
+              "tokens": [
+                2,
+                2
+              ],
+              "stable": true,
+              "route_honored": true
+            },
+            "1": {
+              "tokens": [
+                2,
+                2
+              ],
+              "stable": true,
+              "route_honored": true
+            }
+          },
+          "stable_dp_comparison_valid": true,
+          "stable_dp_predictions_differ": false,
+          "probes": [
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 2,
+              "bulk_prefill_token": 197,
+              "token": 2,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.450029134750366,
+                    2,
+                    null
+                  ],
+                  [
+                    -3.887529134750366,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_longinput_1k1024_0.mismatch4.dpNone.trial1.response.json"
+            },
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 2,
+              "bulk_prefill_token": 197,
+              "token": 2,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.2046053409576416,
+                    2,
+                    null
+                  ],
+                  [
+                    -4.2671051025390625,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_longinput_1k1024_0.mismatch4.dpNone.trial2.response.json"
+            },
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 1,
+              "routed_dp_rank": 0,
+              "saved_token": 2,
+              "bulk_prefill_token": 197,
+              "token": 2,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.450029134750366,
+                    2,
+                    null
+                  ],
+                  [
+                    -3.887529134750366,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_longinput_1k1024_0.mismatch4.dp0.trial1.response.json"
+            },
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 2,
+              "routed_dp_rank": 0,
+              "saved_token": 2,
+              "bulk_prefill_token": 197,
+              "token": 2,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.450029134750366,
+                    2,
+                    null
+                  ],
+                  [
+                    -3.887529134750366,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_longinput_1k1024_0.mismatch4.dp0.trial2.response.json"
+            },
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 1,
+              "routed_dp_rank": 1,
+              "saved_token": 2,
+              "bulk_prefill_token": 197,
+              "token": 2,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.2046053409576416,
+                    2,
+                    null
+                  ],
+                  [
+                    -4.2671051025390625,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_longinput_1k1024_0.mismatch4.dp1.trial1.response.json"
+            },
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 2,
+              "routed_dp_rank": 1,
+              "saved_token": 2,
+              "bulk_prefill_token": 197,
+              "token": 2,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.2046053409576416,
+                    2,
+                    null
+                  ],
+                  [
+                    -4.2671051025390625,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-multistream/target_prefill_audit/native_longinput_1k1024_0.mismatch4.dp1.trial2.response.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/summary.json",
+      "completed": true,
+      "points": [
+        {
+          "group": "native_exact_1k256",
+          "index": 0,
+          "position": 1,
+          "routes": {
+            "0": {
+              "tokens": [
+                154827,
+                154827
+              ],
+              "stable": true,
+              "route_honored": true
+            },
+            "1": {
+              "tokens": [
+                154827,
+                154827
+              ],
+              "stable": true,
+              "route_honored": true
+            }
+          },
+          "stable_dp_comparison_valid": true,
+          "stable_dp_predictions_differ": false,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 1,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 518,
+              "bulk_prefill_token": 154827,
+              "token": 154827,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -2.5548956394195557,
+                    154827,
+                    null
+                  ],
+                  [
+                    -4.554895401000977,
+                    242,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_0.mismatch1.dpNone.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 1,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 518,
+              "bulk_prefill_token": 154827,
+              "token": 154827,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -4.0960774421691895,
+                    154827,
+                    null
+                  ],
+                  [
+                    -4.5335774421691895,
+                    29687,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_0.mismatch1.dpNone.trial2.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 1,
+              "trial": 1,
+              "routed_dp_rank": 0,
+              "saved_token": 518,
+              "bulk_prefill_token": 154827,
+              "token": 154827,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -2.5548956394195557,
+                    154827,
+                    null
+                  ],
+                  [
+                    -4.554895401000977,
+                    242,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_0.mismatch1.dp0.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 1,
+              "trial": 2,
+              "routed_dp_rank": 0,
+              "saved_token": 518,
+              "bulk_prefill_token": 154827,
+              "token": 154827,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -2.5548956394195557,
+                    154827,
+                    null
+                  ],
+                  [
+                    -4.554895401000977,
+                    242,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_0.mismatch1.dp0.trial2.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 1,
+              "trial": 1,
+              "routed_dp_rank": 1,
+              "saved_token": 518,
+              "bulk_prefill_token": 154827,
+              "token": 154827,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -4.0960774421691895,
+                    154827,
+                    null
+                  ],
+                  [
+                    -4.5335774421691895,
+                    29687,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_0.mismatch1.dp1.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 0,
+              "position": 1,
+              "trial": 2,
+              "routed_dp_rank": 1,
+              "saved_token": 518,
+              "bulk_prefill_token": 154827,
+              "token": 154827,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -4.0960774421691895,
+                    154827,
+                    null
+                  ],
+                  [
+                    -4.5335774421691895,
+                    29687,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_0.mismatch1.dp1.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "native_exact_1k256",
+          "index": 1,
+          "position": 6,
+          "routes": {
+            "0": {
+              "tokens": [
+                14364,
+                14364
+              ],
+              "stable": true,
+              "route_honored": true
+            },
+            "1": {
+              "tokens": [
+                154850,
+                154850
+              ],
+              "stable": true,
+              "route_honored": true
+            }
+          },
+          "stable_dp_comparison_valid": true,
+          "stable_dp_predictions_differ": true,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 6,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 154850,
+              "bulk_prefill_token": 13865,
+              "token": 14364,
+              "matches_saved": false,
+              "matches_bulk": false,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -4.283380508422852,
+                    14364,
+                    null
+                  ],
+                  [
+                    -4.345880508422852,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_1.mismatch6.dpNone.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 6,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 154850,
+              "bulk_prefill_token": 13865,
+              "token": 154850,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.7185962200164795,
+                    154850,
+                    null
+                  ],
+                  [
+                    -3.8435962200164795,
+                    4782,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_1.mismatch6.dpNone.trial2.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 6,
+              "trial": 1,
+              "routed_dp_rank": 0,
+              "saved_token": 154850,
+              "bulk_prefill_token": 13865,
+              "token": 14364,
+              "matches_saved": false,
+              "matches_bulk": false,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -4.283380508422852,
+                    14364,
+                    null
+                  ],
+                  [
+                    -4.345880508422852,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_1.mismatch6.dp0.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 6,
+              "trial": 2,
+              "routed_dp_rank": 0,
+              "saved_token": 154850,
+              "bulk_prefill_token": 13865,
+              "token": 14364,
+              "matches_saved": false,
+              "matches_bulk": false,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -4.283380508422852,
+                    14364,
+                    null
+                  ],
+                  [
+                    -4.345880508422852,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_1.mismatch6.dp0.trial2.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 6,
+              "trial": 1,
+              "routed_dp_rank": 1,
+              "saved_token": 154850,
+              "bulk_prefill_token": 13865,
+              "token": 154850,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.7185962200164795,
+                    154850,
+                    null
+                  ],
+                  [
+                    -3.8435962200164795,
+                    4782,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_1.mismatch6.dp1.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 6,
+              "trial": 2,
+              "routed_dp_rank": 1,
+              "saved_token": 154850,
+              "bulk_prefill_token": 13865,
+              "token": 154850,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.7185962200164795,
+                    154850,
+                    null
+                  ],
+                  [
+                    -3.8435962200164795,
+                    4782,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_1.mismatch6.dp1.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "native_exact_1k256",
+          "index": 1,
+          "position": 124,
+          "routes": {
+            "0": {
+              "tokens": [
+                498,
+                498
+              ],
+              "stable": true,
+              "route_honored": true
+            },
+            "1": {
+              "tokens": [
+                498,
+                498
+              ],
+              "stable": true,
+              "route_honored": true
+            }
+          },
+          "stable_dp_comparison_valid": true,
+          "stable_dp_predictions_differ": false,
+          "probes": [
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 124,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 358,
+              "bulk_prefill_token": 498,
+              "token": 498,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.5262867212295532,
+                    498,
+                    null
+                  ],
+                  [
+                    -0.9012867212295532,
+                    358,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_1.mismatch124.dpNone.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 124,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 358,
+              "bulk_prefill_token": 498,
+              "token": 498,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.16192997992038727,
+                    498,
+                    null
+                  ],
+                  [
+                    -1.911929965019226,
+                    358,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_1.mismatch124.dpNone.trial2.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 124,
+              "trial": 1,
+              "routed_dp_rank": 0,
+              "saved_token": 358,
+              "bulk_prefill_token": 498,
+              "token": 498,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.5262867212295532,
+                    498,
+                    null
+                  ],
+                  [
+                    -0.9012867212295532,
+                    358,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_1.mismatch124.dp0.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 124,
+              "trial": 2,
+              "routed_dp_rank": 0,
+              "saved_token": 358,
+              "bulk_prefill_token": 498,
+              "token": 498,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.5262867212295532,
+                    498,
+                    null
+                  ],
+                  [
+                    -0.9012867212295532,
+                    358,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_1.mismatch124.dp0.trial2.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 124,
+              "trial": 1,
+              "routed_dp_rank": 1,
+              "saved_token": 358,
+              "bulk_prefill_token": 498,
+              "token": 498,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.16192997992038727,
+                    498,
+                    null
+                  ],
+                  [
+                    -1.911929965019226,
+                    358,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_1.mismatch124.dp1.trial1.response.json"
+            },
+            {
+              "group": "native_exact_1k256",
+              "index": 1,
+              "position": 124,
+              "trial": 2,
+              "routed_dp_rank": 1,
+              "saved_token": 358,
+              "bulk_prefill_token": 498,
+              "token": 498,
+              "matches_saved": false,
+              "matches_bulk": true,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -0.16192997992038727,
+                    498,
+                    null
+                  ],
+                  [
+                    -1.911929965019226,
+                    358,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_exact_1k256_1.mismatch124.dp1.trial2.response.json"
+            }
+          ]
+        },
+        {
+          "group": "native_longinput_1k1024",
+          "index": 0,
+          "position": 4,
+          "routes": {
+            "0": {
+              "tokens": [
+                2,
+                2
+              ],
+              "stable": true,
+              "route_honored": true
+            },
+            "1": {
+              "tokens": [
+                2,
+                2
+              ],
+              "stable": true,
+              "route_honored": true
+            }
+          },
+          "stable_dp_comparison_valid": true,
+          "stable_dp_predictions_differ": false,
+          "probes": [
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 1,
+              "routed_dp_rank": null,
+              "saved_token": 2,
+              "bulk_prefill_token": 197,
+              "token": 2,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.450029134750366,
+                    2,
+                    null
+                  ],
+                  [
+                    -3.887529134750366,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_longinput_1k1024_0.mismatch4.dpNone.trial1.response.json"
+            },
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 2,
+              "routed_dp_rank": null,
+              "saved_token": 2,
+              "bulk_prefill_token": 197,
+              "token": 2,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.2046053409576416,
+                    2,
+                    null
+                  ],
+                  [
+                    -4.2671051025390625,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_longinput_1k1024_0.mismatch4.dpNone.trial2.response.json"
+            },
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 1,
+              "routed_dp_rank": 0,
+              "saved_token": 2,
+              "bulk_prefill_token": 197,
+              "token": 2,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.450029134750366,
+                    2,
+                    null
+                  ],
+                  [
+                    -3.887529134750366,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_longinput_1k1024_0.mismatch4.dp0.trial1.response.json"
+            },
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 2,
+              "routed_dp_rank": 0,
+              "saved_token": 2,
+              "bulk_prefill_token": 197,
+              "token": 2,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 0,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.450029134750366,
+                    2,
+                    null
+                  ],
+                  [
+                    -3.887529134750366,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_longinput_1k1024_0.mismatch4.dp0.trial2.response.json"
+            },
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 1,
+              "routed_dp_rank": 1,
+              "saved_token": 2,
+              "bulk_prefill_token": 197,
+              "token": 2,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.2046053409576416,
+                    2,
+                    null
+                  ],
+                  [
+                    -4.2671051025390625,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_longinput_1k1024_0.mismatch4.dp1.trial1.response.json"
+            },
+            {
+              "group": "native_longinput_1k1024",
+              "index": 0,
+              "position": 4,
+              "trial": 2,
+              "routed_dp_rank": 1,
+              "saved_token": 2,
+              "bulk_prefill_token": 197,
+              "token": 2,
+              "matches_saved": true,
+              "matches_bulk": false,
+              "actual_dp_rank": 1,
+              "output_top_logprobs": [
+                [
+                  [
+                    -3.2046053409576416,
+                    2,
+                    null
+                  ],
+                  [
+                    -4.2671051025390625,
+                    197,
+                    null
+                  ]
+                ]
+              ],
+              "response_source": "/home/chengyetai/workspace/current_exp/autonomous_20261012/results/mtp-v19-dp2-no-plan-lp-safe/target_prefill_audit/native_longinput_1k1024_0.mismatch4.dp1.trial2.response.json"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Diagnostic positions were selected at bulk-prefill mismatches. This is not a random acceptance sample or full-model accuracy test. Stable differing DP predictions establish a route-associated difference, not its kernel cause."
+}

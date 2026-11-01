@@ -1,0 +1,4 @@
+idx,kind,span_s,steps_pre,steps_dec,tokens_pre,tokens_dec,nonzero_layers,rank_maxmean_pre,rank_maxmean_dec,rank_maxmean_tot_asrec,rank_maxmean_tot_corrected,pd_top8_overlap
+0,eplb_rebalance,417.8,31,1927,1218969600,73996800,75,1.77,1.797,1.717,1.763,0.145
+1,eplb_rebalance,275.8,30,1969,1179648000,75609600,75,1.043,1.525,1.016,1.038,0.147
+2,manual_final,133.9,15,968,589824000,37171200,75,1.032,1.46,1.015,1.03,0.145

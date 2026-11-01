@@ -1,0 +1,160 @@
+{
+  "pid": 1676715,
+  "phase": "completed",
+  "completed": true,
+  "started_unix": 1791836051.134408,
+  "runs": [
+    {
+      "cell": "w1_8k_1k_chunk4096_c2_repeat2",
+      "container": "cyt-auto-chunk-repeat-4096",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk4096_c2_repeat2/result.json"
+    },
+    {
+      "cell": "w1_8k_1k_chunk4096_c4_repeat2",
+      "container": "cyt-auto-chunk-repeat-4096",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk4096_c4_repeat2/result.json"
+    },
+    {
+      "cell": "w2_32k_1k_chunk4096_c1_repeat2",
+      "container": "cyt-auto-chunk-repeat-4096",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w2_32k_1k_chunk4096_c1_repeat2/result.json"
+    },
+    {
+      "cell": "w4_prefix32k_300_chunk4096_c2_repeat2",
+      "container": "cyt-auto-chunk-repeat-4096",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk4096_c2_repeat2/result.json"
+    },
+    {
+      "cell": "w1_8k_1k_chunk8192_c2_repeat2",
+      "container": "cyt-auto-chunk-repeat-8192",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk8192_c2_repeat2/result.json"
+    },
+    {
+      "cell": "w1_8k_1k_chunk8192_c4_repeat2",
+      "container": "cyt-auto-chunk-repeat-8192",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk8192_c4_repeat2/result.json"
+    },
+    {
+      "cell": "w2_32k_1k_chunk8192_c1_repeat2",
+      "container": "cyt-auto-chunk-repeat-8192",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w2_32k_1k_chunk8192_c1_repeat2/result.json"
+    },
+    {
+      "cell": "w4_prefix32k_300_chunk8192_c1_repeat2",
+      "container": "cyt-auto-chunk-repeat-8192",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk8192_c1_repeat2/result.json"
+    },
+    {
+      "cell": "w4_prefix32k_300_chunk8192_c2_repeat2",
+      "container": "cyt-auto-chunk-repeat-8192",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk8192_c2_repeat2/result.json"
+    },
+    {
+      "cell": "w1_8k_1k_chunk16384_c2_repeat2",
+      "container": "cyt-auto-chunk-repeat-16384",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk16384_c2_repeat2/result.json"
+    },
+    {
+      "cell": "w1_8k_1k_chunk16384_c4_repeat2",
+      "container": "cyt-auto-chunk-repeat-16384",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w1_8k_1k_chunk16384_c4_repeat2/result.json"
+    },
+    {
+      "cell": "w2_32k_1k_chunk16384_c1_repeat2",
+      "container": "cyt-auto-chunk-repeat-16384",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w2_32k_1k_chunk16384_c1_repeat2/result.json"
+    },
+    {
+      "cell": "w4_prefix32k_300_chunk16384_c1_repeat2",
+      "container": "cyt-auto-chunk-repeat-16384",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk16384_c1_repeat2/result.json"
+    },
+    {
+      "cell": "w4_prefix32k_300_chunk16384_c2_repeat2",
+      "container": "cyt-auto-chunk-repeat-16384",
+      "result": "/home/chengyetai/workspace/current_exp/Qchunksize/results/autonomous_20261012/w4_prefix32k_300_chunk16384_c2_repeat2/result.json"
+    }
+  ],
+  "updated_unix": 1791840277.5809584,
+  "plan": {
+    "16384": [
+      [
+        "w1_8k_1k",
+        2,
+        8192
+      ],
+      [
+        "w1_8k_1k",
+        4,
+        8192
+      ],
+      [
+        "w2_32k_1k",
+        1,
+        8192
+      ],
+      [
+        "w4_prefix32k_300",
+        1,
+        8192
+      ],
+      [
+        "w4_prefix32k_300",
+        2,
+        8192
+      ]
+    ],
+    "8192": [
+      [
+        "w1_8k_1k",
+        2,
+        8192
+      ],
+      [
+        "w1_8k_1k",
+        4,
+        8192
+      ],
+      [
+        "w2_32k_1k",
+        1,
+        8192
+      ],
+      [
+        "w4_prefix32k_300",
+        1,
+        8192
+      ],
+      [
+        "w4_prefix32k_300",
+        2,
+        8192
+      ]
+    ],
+    "4096": [
+      [
+        "w1_8k_1k",
+        2,
+        8192
+      ],
+      [
+        "w1_8k_1k",
+        4,
+        8192
+      ],
+      [
+        "w2_32k_1k",
+        1,
+        8192
+      ],
+      [
+        "w4_prefix32k_300",
+        2,
+        8192
+      ]
+    ]
+  },
+  "container": "cyt-auto-chunk-repeat-16384",
+  "cell": "w4_prefix32k_300_chunk16384_c2_repeat2",
+  "child_pid": 3137878
+}

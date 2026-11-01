@@ -1,0 +1,362 @@
+{
+  "checked_at": "2026-10-13T12:44:46",
+  "node": "npu1-23",
+  "containers": [
+    {
+      "name": "cyt-auto-review-target-only-20261013",
+      "id": "bacb87e5b7351267c10a8bc80794ae10f9a490975292dac4d02982689619a038",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-13T04:42:31.807401448Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-v19-dp2-no-multistream",
+      "id": "1e27ae2e28afd8ccbb4b2859c8ead1f6c918a819745acc79720b58b35c640d61",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T21:49:31.886039934Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-chunk-repeat-16384",
+      "id": "db8098e41f025b47d7b7c22695223b9708829c6ba3f279ca12edd666f2b5060d",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T21:24:21.505134124Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-chunk-repeat-8192",
+      "id": "26e2520e3fe1cb7963ab7f73142154cbf8bd0c289f5ec8bb22bd03a3a9ce3ac7",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T20:57:15.162493146Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-chunk-repeat-4096",
+      "id": "a67c7c47e48644a8ae287bb4d1033c2a4875c5da77617a3c3ad363329fbaed10",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T20:35:09.505043384Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-chunk-auto-8192",
+      "id": "18f7f530401488a050b52183f5fd351fdabf36558fa990719fabeca9d674ab06",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T20:13:33.840839948Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-chunk-auto-4096",
+      "id": "a91230ad02ec7666ed32710c55e056ccc35025590ddfcd7a5965ce7e670b14bd",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T19:50:42.865760125Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-chunk-auto-1024",
+      "id": "3a1d80b554ba7d2be6d470017fea6c037533941d256edbf07c560f9b96a0c6b4",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T19:27:40.931724068Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-chunk-auto-hccl650-16384",
+      "id": "02c9acdeaed21d0f242c995b815d9b841071be0a7c4688e596fd472c74914c75",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T19:04:58.230829656Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-chunk-normal-aligned-16384",
+      "id": "0d90e8928255d92f9d6ae736677b6ba97d3bdf7badd9a7d6ace0903c14a5783f",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T18:34:28.389412976Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-chunk-auto-aligned-16384",
+      "id": "d756f0a5ef638bd04edef6ff587f0730f755d9dfa6ec1576fbcb68c6a67ca53a",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T18:32:05.278668137Z",
+      "exit_code": 1,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-chunk-normal-16384",
+      "id": "9e2261ce597f584ea8257aa1e372d8631010578fcf3b161c931c79f2b129dfa7",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T18:18:18.291972712Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-chunk-auto-16384",
+      "id": "75069946920b86aeb06654b073edcf8930abf799f8dadb643d4da3b63394e5c4",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T18:16:07.884701752Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-v19-dp2-no-plan-lp-safe",
+      "id": "0b305b21c6b3c91ac85cd5fd34271a1b6f25551643f82efbb2e42a93f7cc6ab9",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T18:02:45.785837798Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-v19-dp2-no-plan",
+      "id": "050d58cff5654ccea693532043baaf5a6baf466f50602c92ff9965bf498b1f87",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T17:31:08.320653498Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-v19-dp2-ordered-probe",
+      "id": "b8601de6738748ef075fbaf3ef776637909a7690d3ee69874911c0f28c35f64c",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T17:25:57.398740205Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-v16-auto-cap64-mem90-hccl650",
+      "id": "9b5fc04efa0c5fe3899dd08a3786c7850a8c6a87512b3241e44603cb2be46ecf",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T17:04:32.075885939Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-v16-auto-cap64-mem87-hccl650",
+      "id": "a6c9d81bf6c262030f9e292e8d3f63f1cac14a0d0d3b414d717e4fbf044a0196",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T16:46:19.407476072Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-v19-dp2-normal",
+      "id": "3f8c8af62893e0eab27d152b93f4b01a84b9e3d9feba5a82cd0e9f3c097576a7",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T16:27:54.141694263Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-v16-auto-cap64-mem84",
+      "id": "aea5482a9026de981492db971f995d9ef9a668ced785aa32d8e978090e0f5458",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T16:07:03.759094729Z",
+      "exit_code": 1,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-v16-auto-cap64",
+      "id": "2ceee9b7ddb274571ff5e90addc25404f16e1c77b45afe07fc542a59589419d9",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T15:52:48.670061909Z",
+      "exit_code": 139,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-default-v16-hccl1000",
+      "id": "d1b95851938e18c855bbc61189a8b6512c1bf9f0b8c751d94a77485c9b173573",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T15:38:47.824434268Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-default-v16-graph-off",
+      "id": "b5fedc853a321311cc4ca8e42d6d6dd93b139add22d8f6bcc2dacae4e7baf238",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T15:25:45.684022285Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-default-v16",
+      "id": "2cf872e948e5b052af670ce39717be4fc211e4bab2e0de7a3aeb93a79b925241",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T15:05:37.863879266Z",
+      "exit_code": 1,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-publisher-v19-slim",
+      "id": "ed81541b785c85f81439497ecf6be5cfa6efcd5e43730938f900f26470ef1cbd",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T14:50:21.773446626Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-publisher-v19",
+      "id": "ea6696b97f547ebd85f5325737792169d40c29142fac884d57e07148c5d71741",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T14:12:57.073254184Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    },
+    {
+      "name": "cyt-auto-mtp-restored-v19",
+      "id": "63ec84101b8cd5f38e09f78b15b810d1b1c7e5fd6b815bd694d6eba6878bac46",
+      "running": false,
+      "pid": 0,
+      "status": "exited",
+      "finished_at": "2026-10-12T13:42:21.58673369Z",
+      "exit_code": 137,
+      "labels": {
+        "owner": "chengyetai",
+        "experiment": "autonomous_mtp_chunk"
+      }
+    }
+  ],
+  "owned_running_containers": [],
+  "owned_containers_all_stopped": true,
+  "npu_reports_no_running_processes_on_all_8_devices": true,
+  "npu_observation": "/home/chengyetai/workspace/current_exp/autonomous_20261012/review_20261013/node23_release_npu_smi.txt",
+  "verification_scope": "Read-only inspection. No container removed and no other user process stopped."
+}
