@@ -1,0 +1,26 @@
+# Model weights and large binaries
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.onnx
+*.npy
+*.npz
+*.h5
+
+# Runtime data and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.cache/
+.venv/
+venv/
+build/
+dist/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+*.swp
