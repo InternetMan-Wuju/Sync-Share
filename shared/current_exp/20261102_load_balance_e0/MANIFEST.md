@@ -52,3 +52,14 @@ E1 原始运行日志和路由张量仍保留在本地实验目录。
 - `scripts/profile_one.py`
 
 64MB 级 kernel_details、operator_details 和 17GB 原始 trace 保留在本地或已清理，不提交 Git。
+
+## E3 追加
+
+已同步：
+
+- `RESULTS_E3.md`
+- `evidence/E3_EVIDENCE.json`
+- `evidence/e3/cap16_concurrency16.json`
+- `evidence/e3/cap32_manifest.txt`、`cap32_bench_5rep.json`、`cap32_service_probe.json`
+- `evidence/e3/cap16_manifest.txt`、`cap16_bench_5rep.json`、`cap16_service_probe.json`
+- `evidence/e3/alltoall_manifest.txt`、`alltoall_bench_5rep.json`、`alltoall_service_probe.json`

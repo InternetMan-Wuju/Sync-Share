@@ -53,13 +53,15 @@ start() {
   for i in $(seq 0 $((TP-1))); do devs+=(--device "/dev/davinci$i"); done
   devs+=(--device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc)
 
+  local deep_use_env=""
+  if [ -n "$DEEP_USE_MODE" ]; then deep_use_env="export DEEP_USE_MODE=$DEEP_USE_MODE"; fi
   local launch="set -eo pipefail
     exec > >(tee /exp-logs/server.log) 2>&1
     unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY ASCEND_LAUNCH_BLOCKING
     source /usr/local/Ascend/ascend-toolkit/set_env.sh
     source /usr/local/Ascend/nnal/atb/set_env.sh
     export PYTHONDONTWRITEBYTECODE=1 SGLANG_SET_CPU_AFFINITY=1
-    if [ -n "$DEEP_USE_MODE" ]; then export DEEP_USE_MODE=$DEEP_USE_MODE; fi
+    $deep_use_env
     export GLOO_SOCKET_IFNAME=$NET_IFNAME HCCL_SOCKET_IFNAME=$NET_IFNAME
     export HCCL_IF_IP=\$(hostname -I | awk '{print \$1}')
     export SGLANG_HOST_IP=\$HCCL_IF_IP

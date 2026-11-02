@@ -1,0 +1,288 @@
+{
+  "runs": {
+    "cap64_e0": {
+      "prefill_8k_1": {
+        "requests": 3,
+        "success": 3,
+        "ttft_s": {
+          "mean": 2.5719993114471436,
+          "p50": 2.572835683822632,
+          "p95": 2.5729665756225586
+        },
+        "e2e_latency_s": {
+          "mean": 2.573976842686534,
+          "p50": 2.5748209570301697,
+          "p95": 2.574935905926395
+        },
+        "output_tokens_per_s": 0.3829336336039319
+      },
+      "decode_128_256": {
+        "requests": 3,
+        "success": 3,
+        "ttft_s": {
+          "mean": 0.4312489827473958,
+          "p50": 0.4377403259277344,
+          "p95": 0.4422419309616089
+        },
+        "tpot_s": {
+          "mean": 0.04801136340970308,
+          "p50": 0.04800116221110026,
+          "p95": 0.048032075564066565
+        },
+        "e2e_latency_s": {
+          "mean": 12.674146607634611,
+          "p50": 12.678036627010442,
+          "p95": 12.690421170578338
+        },
+        "output_tokens_per_s": 20.146894239961423
+      },
+      "mixed_1024_64_c4": {
+        "requests": 12,
+        "success": 12,
+        "ttft_s": {
+          "mean": 1.0731910665829976,
+          "p50": 0.9787459373474121,
+          "p95": 1.2713578939437866
+        },
+        "tpot_s": {
+          "mean": 0.050696911319853766,
+          "p50": 0.0506803554201883,
+          "p95": 0.05092938135540674
+        },
+        "e2e_latency_s": {
+          "mean": 4.267096507673462,
+          "p50": 4.180406044004485,
+          "p95": 4.449977869802387
+        },
+        "output_tokens_per_s": 59.50144222250057
+      }
+    },
+    "cap32": {
+      "prefill_8k_1": {
+        "requests": 5,
+        "success": 5,
+        "ttft_s": {
+          "mean": 2.5959468364715574,
+          "p50": 2.596012592315674,
+          "p95": 2.5998656272888185
+        },
+        "e2e_latency_s": {
+          "mean": 2.597807865194045,
+          "p50": 2.597819898976013,
+          "p95": 2.6018261883873492
+        },
+        "output_tokens_per_s": 0.3786191753878471
+      },
+      "decode_128_256": {
+        "requests": 5,
+        "success": 5,
+        "ttft_s": {
+          "mean": 0.4487902164459229,
+          "p50": 0.44633007049560547,
+          "p95": 0.45940241813659666
+        },
+        "tpot_s": {
+          "mean": 0.047461993834551644,
+          "p50": 0.04748496541789934,
+          "p95": 0.047495963900697
+        },
+        "e2e_latency_s": {
+          "mean": 12.55159866278991,
+          "p50": 12.554467501933686,
+          "p95": 12.57032782076858
+        },
+        "output_tokens_per_s": 20.33348379310624
+      },
+      "mixed_1024_64_c4": {
+        "requests": 20,
+        "success": 20,
+        "ttft_s": {
+          "mean": 1.0337571144104003,
+          "p50": 0.9788548946380615,
+          "p95": 1.2551899313926698
+        },
+        "tpot_s": {
+          "mean": 0.05063791539933946,
+          "p50": 0.050637292483496285,
+          "p95": 0.050818856746431385
+        },
+        "e2e_latency_s": {
+          "mean": 4.223945751338033,
+          "p50": 4.171280312992167,
+          "p95": 4.45054562012665
+        },
+        "output_tokens_per_s": 60.004676348824866
+      }
+    },
+    "cap16": {
+      "prefill_8k_1": {
+        "requests": 5,
+        "success": 5,
+        "ttft_s": {
+          "mean": 2.5981016635894774,
+          "p50": 2.5948147773742676,
+          "p95": 2.611513376235962
+        },
+        "e2e_latency_s": {
+          "mean": 2.599880845006555,
+          "p50": 2.5965199599741027,
+          "p95": 2.6134068448329346
+        },
+        "output_tokens_per_s": 0.37833007359240384
+      },
+      "decode_128_256": {
+        "requests": 5,
+        "success": 5,
+        "ttft_s": {
+          "mean": 0.4495577812194824,
+          "p50": 0.44951486587524414,
+          "p95": 0.4556162357330322
+        },
+        "tpot_s": {
+          "mean": 0.04752988553514668,
+          "p50": 0.04752988254322725,
+          "p95": 0.04756143308153339
+        },
+        "e2e_latency_s": {
+          "mean": 12.569678627373651,
+          "p50": 12.567865200922824,
+          "p95": 12.577029473963194
+        },
+        "output_tokens_per_s": 20.304147573562993
+      },
+      "mixed_1024_64_c4": {
+        "requests": 20,
+        "success": 20,
+        "ttft_s": {
+          "mean": 0.9738087058067322,
+          "p50": 0.974136471748352,
+          "p95": 0.9807497978210449
+        },
+        "tpot_s": {
+          "mean": 0.050514530378674705,
+          "p50": 0.05060531979515439,
+          "p95": 0.050836898977794344
+        },
+        "e2e_latency_s": {
+          "mean": 4.156224101950647,
+          "p50": 4.153293886047322,
+          "p95": 4.176755678100744
+        },
+        "output_tokens_per_s": 60.98861598131678
+      }
+    },
+    "alltoall": {
+      "prefill_8k_1": {
+        "requests": 5,
+        "success": 5,
+        "ttft_s": {
+          "mean": 2.604014253616333,
+          "p50": 2.601935863494873,
+          "p95": 2.6107990741729736
+        },
+        "e2e_latency_s": {
+          "mean": 2.6058767621871084,
+          "p50": 2.603744362015277,
+          "p95": 2.612722640996799
+        },
+        "output_tokens_per_s": 0.35492844453737016
+      },
+      "decode_128_256": {
+        "requests": 5,
+        "success": 5,
+        "ttft_s": {
+          "mean": 0.5358004093170166,
+          "p50": 0.5364797115325928,
+          "p95": 0.5541309356689453
+        },
+        "tpot_s": {
+          "mean": 0.25701159477233887,
+          "p50": 0.2570153096142937,
+          "p95": 0.2570599054822735
+        },
+        "e2e_latency_s": {
+          "mean": 66.07375705181622,
+          "p50": 66.07218976097647,
+          "p95": 66.09412696280052
+        },
+        "output_tokens_per_s": 3.862404764387717
+      },
+      "mixed_1024_64_c4": {
+        "requests": 20,
+        "success": 20,
+        "ttft_s": {
+          "mean": 1.1127148270606995,
+          "p50": 1.0163145065307617,
+          "p95": 1.4928588151931763
+        },
+        "tpot_s": {
+          "mean": 0.25919400131891646,
+          "p50": 0.25920055404541986,
+          "p95": 0.25934002834653097
+        },
+        "e2e_latency_s": {
+          "mean": 17.441936914256075,
+          "p50": 17.347865725983866,
+          "p95": 17.830631501902825
+        },
+        "output_tokens_per_s": 14.503559432239468
+      }
+    }
+  },
+  "cap16_concurrency16": {
+    "success": 16,
+    "requests": 16
+  },
+  "ops_failure": {
+    "run_id": "e3_default_vs_ops_ops_20261102_103447",
+    "mode": "DEEP_USE_MODE=ops",
+    "status": "failed during first real workload",
+    "probe_before_failure": "health and basic probe passed",
+    "error_code": "507011",
+    "error_summary": "rtDeviceSynchronizeWithTimeout execution failed; model stream execute failed",
+    "sample_errors": [
+      "RuntimeError: synchronize:../torch_npu/csrc/core/npu/NPUEvent.cpp:212 NPU function error: aclrtSynchronizeEvent(event_), error code is 507011",
+      "[Error]: Model execution failed. ",
+      "       wait event to be complete failed, runtime result = 507011[FUNC:ReportCallError][FILE:log_inner.cpp][LINE:148]",
+      "RuntimeError: synchronize:../torch_npu/csrc/core/npu/NPUEvent.cpp:212 NPU function error: aclrtSynchronizeEvent(event_), error code is 507011",
+      "[Error]: Model execution failed. ",
+      "       wait event to be complete failed, runtime result = 507011[FUNC:ReportCallError][FILE:log_inner.cpp][LINE:148]",
+      "RuntimeError: synchronize:../torch_npu/csrc/core/npu/NPUEvent.cpp:212 NPU function error: aclrtSynchronizeEvent(event_), error code is 507011",
+      "[Error]: Model execution failed. ",
+      "       wait event to be complete failed, runtime result = 507011[FUNC:ReportCallError][FILE:log_inner.cpp][LINE:148]",
+      "RuntimeError: synchronize:../torch_npu/csrc/core/npu/NPUEvent.cpp:212 NPU function error: aclrtSynchronizeEvent(event_), error code is 507011",
+      "[Error]: Model execution failed. ",
+      "       wait event to be complete failed, runtime result = 507011[FUNC:ReportCallError][FILE:log_inner.cpp][LINE:148]",
+      "RuntimeError: synchronize:../torch_npu/csrc/core/npu/NPUEvent.cpp:212 NPU function error: aclrtSynchronizeEvent(event_), error code is 507011",
+      "[Error]: Model execution failed. ",
+      "       wait event to be complete failed, runtime result = 507011[FUNC:ReportCallError][FILE:log_inner.cpp][LINE:148]",
+      "RuntimeError: synchronize:../torch_npu/csrc/core/npu/NPUEvent.cpp:212 NPU function error: aclrtSynchronizeEvent(event_), error code is 507011",
+      "[Error]: Model execution failed. ",
+      "       wait event to be complete failed, runtime result = 507011[FUNC:ReportCallError][FILE:log_inner.cpp][LINE:148]",
+      "RuntimeError: synchronize:../torch_npu/csrc/core/npu/NPUEvent.cpp:212 NPU function error: aclrtSynchronizeEvent(event_), error code is 507011",
+      "[Error]: Model execution failed. "
+    ],
+    "manifest": [
+      "run_id=e3_default_vs_ops_ops_20261102_103447",
+      "started_at=2026-11-02T10:34:47+08:00",
+      "host=npu1-23",
+      "image=quay.io/ascend/sglang:v0.5.18-cann9.0.0-a3",
+      "model=/data_lib/data/models/glm-q",
+      "tp=16 ep=16 dp=1",
+      "port=30080 mem=0.88 ctx=131072 max_prefill=32768 mrr=16 chunk=16384",
+      "cache_root=/data_lib/cyt/sglang-cache-e0",
+      "deep_use_mode=ops",
+      "hccl_buf=650 dispatch_tokens=64 recd_buf=128 graph_max_bs=16 graph_bs=1 2 4 8 16 net_ifname=tap0",
+      "weight_manifest_sha256=7870fe31cb26405e7b28e67023c9ce0d413e0506f40fc7704710e38b40b2abc5"
+    ],
+    "decision": "ops low-latency strategy is not usable with this model/graph configuration; retain default DeepEP path"
+  },
+  "conclusion": {
+    "default_low_latency_capacity": "64",
+    "recommended_capacity": 16,
+    "capacity_reason": "matching max-running-requests=16 removes padding; measured small decode/mixed improvement and passes concurrency 16 stress",
+    "ops": "unusable due error 507011",
+    "alltoall": "runnable but 5.4x slower decode and 4.2x lower mixed throughput",
+    "eplb_replication": "stopped by E1 negative gate"
+  }
+}
