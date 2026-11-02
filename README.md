@@ -43,6 +43,7 @@
 
 本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。
 
+- [Online与大EP Decode结果复核（2026-11-03）](handoff/2026-11-03_online_decode_review.md)：125423a的局部证据、确定的复用问题，以及两项主任务尚缺的验证。
 - [3小时 Online 与 Decode EP 执行卡（2026-11-03）](handoff/2026-11-03_glm52_3h_online_decode.md)：本轮服务器执行入口，复用S0–S4/P2，只补online开销账本和decode六格分析，180分钟硬截止。
 
 - [GLM-5.2 / 昇腾 910C 负载均衡实验方案（2026-11-02）](handoff/2026-11-02_glm52_ascend_load_balance_plan.md)：前置核验、单层复制对照、共享缓冲、decode 通信优化及未决问题。
