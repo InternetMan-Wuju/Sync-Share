@@ -32,6 +32,7 @@
 - [单机负载均衡 E1（2026-11-02，负结果）](shared/current_exp/20261102_load_balance_e0/RESULTS_E1.md)：layer 49 与 49/36/54 top-2 预装副本未改善端到端，停止在线复制方向。
 - [关键路径 Profile / E3（2026-11-02）](shared/current_exp/20261102_load_balance_e0/RESULTS_PROFILE.md)：prefill 由 DSA attention 主导；decode MoE LL 通信占比约 15.5%；`DEEP_USE_MODE=ops` 不可用。
 - [E3 通信策略与容量（2026-11-02，完成）](shared/current_exp/20261102_load_balance_e0/RESULTS_E3.md)：default fused low-latency 最佳；capacity 16 略优；alltoall 严重退化。
+- [单机实验总体总结](shared/current_exp/20261102_load_balance_e0/RESULTS_OVERALL.md)：E0/E1/Profile/E3 的最终结论与后续方向。
 
 ### `handoff/`
 

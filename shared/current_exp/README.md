@@ -2,6 +2,8 @@
 
 当前实验状态和远端同步入口。
 
+- 总体总结：[`20261102_load_balance_e0/RESULTS_OVERALL.md`](20261102_load_balance_e0/RESULTS_OVERALL.md)
+
 ## 20261102_load_balance_e0
 
 - E0：**PASS**。健康基线、权重审计、两组路由采集、三轮性能基线。
