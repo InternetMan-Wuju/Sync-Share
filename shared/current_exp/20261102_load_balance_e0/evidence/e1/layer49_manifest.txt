@@ -1,0 +1,14 @@
+run_id=e1_layer49_top2_20261102_094457
+mode=layer49_top2
+mapping=/home/chengyetai/workspace/current_exp/20261102_load_balance_e0/mappings/e1_layer49_top2.json
+mapping_sha256=421ea1b546739a9e964e745288f8eb453d52c0d3aa9675118d9942c3eb5faba7
+extra_experts=16 dispatch_algorithm=dynamic
+started_at=2026-11-02T09:44:57+08:00
+host=npu1-23
+image=quay.io/ascend/sglang:v0.5.18-cann9.0.0-a3
+model=/data_lib/data/models/glm-q
+tp=16 ep=16 dp=1
+port=30080 mem=0.86 ctx=131072 max_prefill=32768 mrr=16 chunk=16384
+cache_root=/data_lib/cyt/sglang-cache-e0
+hccl_buf=650 dispatch_tokens=64 recd_buf=128 graph_max_bs=16 graph_bs=1 2 4 8 16 net_ifname=tap0
+weight_manifest_sha256=7870fe31cb26405e7b28e67023c9ce0d413e0506f40fc7704710e38b40b2abc5

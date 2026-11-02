@@ -20,3 +20,20 @@
 - `evidence/env_probe.json`：运行时版本与环境
 - `evidence/weight_audit_summary.json`：权重审计摘要
 - `evidence/server.log`：最终稳定运行的完整服务日志
+
+## E1 追加
+
+已同步：
+
+- `RESULTS_E1.md`
+- `mappings/e1_adapter.json`
+- `mappings/e1_layer49_top2.json`
+- `mappings/e1_layers49_36_54_top2.json`
+- `scripts/serve_e1.sh`
+- `evidence/E1_EVIDENCE.json`
+- `evidence/e1_dynamic_dispatch_probe.json`
+- `evidence/e1/*_manifest.txt`
+- `evidence/e1/*_bench*.json`
+- `evidence/e1/*_service_probe.json`
+
+E1 原始运行日志和路由张量仍保留在本地实验目录。
