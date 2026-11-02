@@ -121,12 +121,16 @@ start() {
     -v "$logdir:/exp-logs" \
     -v "$CACHE_ROOT:/root/.cache/sglang" \
     --entrypoint bash "$IMG" -lc "$launch" >/dev/null
-  echo "started run_id=$run_id name=$NAME endpoint=http://127.0.0.1:$PORT log=$logdir/server.log"
+  echo "started run_id=$run_id name=$NAME endpoint=container://127.0.0.1:$PORT log=$logdir/server.log"
 }
 
 status() {
   docker_cmd ps -a --filter "name=$NAME" --format '{{.Names}} {{.Status}} {{.Image}}'
-  curl -sS -o /dev/null -w 'health_http=%{http_code}\n' --max-time 20 "http://127.0.0.1:$PORT/health" || true
+  if docker_cmd inspect "$NAME" >/dev/null 2>&1; then
+    docker_cmd exec "$NAME" curl -sS -o /dev/null -w 'health_http=%{http_code}\n' --max-time 20 "http://127.0.0.1:$PORT/health" || true
+  else
+    echo 'health_http=container-not-running'
+  fi
   npu-smi info | grep '/ 65536' | head -n 16 || true
 }
 
