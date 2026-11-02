@@ -54,7 +54,7 @@
 1. decode 侧 MoE low-latency dispatch/combine 确实占关键路径约 15.5%，但现有 default fused op 已明显优于替代实现。
 2. 可行的低风险调优是把 `SGLANG_DEEPEP_NUM_MAX_DISPATCH_TOKENS_PER_RANK` 从 64 改为 16（与 max-running-requests / graph batch 对齐）。
 3. 当前收益约 1–2.5%，属于小优化；仍需要更长压测和真实 SLO 验证才能作为生产默认。
-4. 专家复制/E2/E4 被 E1 负结果门控关闭；E5 完整验收没有候选策略可验收。
+4. 旧 E1 落点负结果不能单独关闭 E2/E4；后续单卡 S0–S3 已给出需多卡验证的修正布局与配额候选。E5 仍没有可验收候选。
 5. 后续真正值得投入的是 prefill 的 DSA SparseFlashAttention/LightningIndexer，以及 decode 的调度和 fused op 内部实现，而不是继续扩大专家副本。
 
 ## 5. 证据

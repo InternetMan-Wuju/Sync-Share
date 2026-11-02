@@ -1,0 +1,191 @@
+{
+  "stage": "single_npu_evidence_index",
+  "status": "COMPLETE",
+  "scope": "S0-S4 and P2 on one Ascend NPU; no full-model or multi-rank performance claim",
+  "image": {
+    "id": "sha256:26a020117564da514f33c4e72353d07020bc4bfe176f4e61858b4abeac6d3e9b",
+    "digest": "quay.io/ascend/sglang@sha256:f492ff6a50b779db301bb5a8f80e33c98981c5076bd0feb6225b63d7971c6385"
+  },
+  "device": {
+    "count": 1,
+    "name": "Ascend910_9382"
+  },
+  "software": {
+    "torch": "2.10.0+cpu",
+    "torch_npu": "2.10.0",
+    "CANN": "9.0.0"
+  },
+  "weight_manifest_sha256": "7870fe31cb26405e7b28e67023c9ce0d413e0506f40fc7704710e38b40b2abc5",
+  "model_file_sha256": {
+    "config.json": "817f5fb39ca5d4c4b5648de89ca00deaea7537d8c2f130172a459252a05c1073",
+    "quant_model_description.json": "3386f968cd7049fe95f896c1a1aeacaa5c1c0659ac2ed9a42cd783cc48ef29ba",
+    "quant_model_weights.safetensors.index.json": "dfa97fa50b5e675ff6cea6ddeae3110795b6b7e971e6dc9cf565a4005fcb079c"
+  },
+  "artifacts": [
+    {
+      "path": "RESULTS_S0.md",
+      "bytes": 2793,
+      "sha256": "3d9932c3013d316fa90d8d99e066550bd6250416e996ba441dfeda4de4428983"
+    },
+    {
+      "path": "RESULTS_S1.md",
+      "bytes": 2891,
+      "sha256": "e686bc620fb66f6f83b4e41118b1adfa91d9b5fa259e8e2504d22c647af4337d"
+    },
+    {
+      "path": "RESULTS_S2.md",
+      "bytes": 2996,
+      "sha256": "1e5abd90905f2c6cb891fc299565365bbb76f8f8b6f036a188afac5d20dada6b"
+    },
+    {
+      "path": "RESULTS_S3.md",
+      "bytes": 3077,
+      "sha256": "c524d1676d09f494fbddd28c6e184f8010fd9aaa8526afac587eefcc026cfe0a"
+    },
+    {
+      "path": "RESULTS_S4.md",
+      "bytes": 2217,
+      "sha256": "49443a1f0013da5bebf5941f9e3f33cfaf798c89a0e16ec5531d3205b5765cd0"
+    },
+    {
+      "path": "RESULTS_P2.md",
+      "bytes": 2873,
+      "sha256": "61da56569e2cdb6f9f273fc6b5530e55813f10f50d6bb5476c399aa79de1257f"
+    },
+    {
+      "path": "RESULTS_OVERALL.md",
+      "bytes": 8347,
+      "sha256": "ac1a514bbd4c6ba508caa49caf0f7e9063221797e22019588d8637d24a8283e9"
+    },
+    {
+      "path": "results/S0_MAPPING_AUDIT.json",
+      "bytes": 2586,
+      "sha256": "2ae8e8fa6d5c197f49040f775a01ed8929ec04ee771a89380825cb70ce40a20a"
+    },
+    {
+      "path": "results/S0_EVIDENCE.json",
+      "bytes": 4017,
+      "sha256": "ae8804599b6c4c75a024cc0c90de7dc7f393b1fa4e3a296c9cf3c35f8058671d"
+    },
+    {
+      "path": "results/s0_layer49_expert_loads.csv",
+      "bytes": 2523,
+      "sha256": "ea35d9a0021c0e9d6def9e2d4d0e6d5c70447e99396ac4a57f62247d4eb62dcd"
+    },
+    {
+      "path": "results/S1_EXPERT_STATE.json",
+      "bytes": 26179,
+      "sha256": "66ffca5da69528546e71131cac086ade9d6ee2675bc1cddf30ac622127632868"
+    },
+    {
+      "path": "results/S1_NUMERICS.json",
+      "bytes": 85631,
+      "sha256": "cba8b4c87fb197ddbecedab05b20d2054934e8a78e5256fb6a3110f20d56dd8e"
+    },
+    {
+      "path": "results/S2_LOCAL_COST.json",
+      "bytes": 106578,
+      "sha256": "3d8d43f002f09b4a129a74370ee4aebbc1dc9dcc9dd167cf84e7f6bb50a08c70"
+    },
+    {
+      "path": "results/S2_LOCAL_COST.csv",
+      "bytes": 5886,
+      "sha256": "8ed1057e79ba8c8b07045f3ac34ef8f3c20f872ec1aa7eb56276e5d51b8f82c1"
+    },
+    {
+      "path": "results/S3_COST_CALIBRATION.json",
+      "bytes": 61740,
+      "sha256": "a0622393c99d6d3df8e84fc295f7ce9a16849762f434f851736d9c932f5392e3"
+    },
+    {
+      "path": "results/S3_PLANS.json",
+      "bytes": 84422,
+      "sha256": "5f0fdbb68acc2de4cdf723abb32b09fab5e1b4c78a03c1c913aab5a956cb260d"
+    },
+    {
+      "path": "results/S3_REPLAY.json",
+      "bytes": 57909,
+      "sha256": "23804650fb3747ac7bc0f17277559984c6b3c9a47dfa0ba18bc238ae61a3d921"
+    },
+    {
+      "path": "results/S3_ALLOCATION.json",
+      "bytes": 11300,
+      "sha256": "d92fce04ae583357a895ac623b95ab37a3e7dcaeb513c521a9632ab579c19ec3"
+    },
+    {
+      "path": "results/S3_ALLOCATION.csv",
+      "bytes": 2480,
+      "sha256": "2d990217d6dc68296be235a7ffe0be1ee7de02e56af67909917613e51a03e938"
+    },
+    {
+      "path": "results/S4_LOCAL_CANDIDATES.json",
+      "bytes": 11491,
+      "sha256": "2a8a9d5aaf0378f564b6469baf7da956ed61f10a1e4d4de6593b5973a2da2169"
+    },
+    {
+      "path": "results/P2_LOCAL_CHECKS.json",
+      "bytes": 11296,
+      "sha256": "a346eca9e70337fac14a75d4606d900c448e0f4d012bce0d5e3f8019f4606ed3"
+    },
+    {
+      "path": "scripts/s0_mapping_audit.py",
+      "bytes": 5461,
+      "sha256": "cf93988270e98d063f5683dd49aefdcb234eeff1fca37d7600eeeec881b728a3"
+    },
+    {
+      "path": "scripts/s1_expert_state.py",
+      "bytes": 10002,
+      "sha256": "1b9e1747eba57139f4a5b84461ff08ac361df09871e4ac6f20a41e2474c38cef"
+    },
+    {
+      "path": "scripts/s1_npu_numerics.py",
+      "bytes": 25043,
+      "sha256": "4133462ade0c3e2bd49e12003869ee4cc35bf6a1877959eeceb8903bbfe919f0"
+    },
+    {
+      "path": "scripts/s2_local_cost.py",
+      "bytes": 23414,
+      "sha256": "b6d32916133bb38b32ed989fd5e4bc8e4b944ffee1983fc7a847604cbb4efb56"
+    },
+    {
+      "path": "scripts/s3_analyze.py",
+      "bytes": 3103,
+      "sha256": "5ac9e9c7a4f9dff60decb2be52b31011249dfaa3a731cbf4cfcb0d8554376e2b"
+    },
+    {
+      "path": "scripts/s3_cost_calibration.py",
+      "bytes": 6538,
+      "sha256": "4f775eb048e70d71748b8795fc89a889cf60d7cb7285c2998503016b979263fd"
+    },
+    {
+      "path": "scripts/s3_plan.py",
+      "bytes": 15156,
+      "sha256": "b04c4b31821e1c964f24fd59b7f5f7a2a257986e81ba8ab15058040f48be437b"
+    },
+    {
+      "path": "scripts/s3_replay_affected.py",
+      "bytes": 7466,
+      "sha256": "6ff5224389520016950a0bd7bb1211bb7a55554a63e3d45d9426da9516eb851b"
+    },
+    {
+      "path": "scripts/s4_local_candidates.py",
+      "bytes": 13261,
+      "sha256": "a9e8c631c49c03bec621d9cf749ab4d1625bfff3676c96430ef04309ad1f10c8"
+    },
+    {
+      "path": "scripts/p2_local_checks.py",
+      "bytes": 12965,
+      "sha256": "09d6617b74be26fac7bf0f05c3ce263c7950e2eaef4679b38735e735303d679c"
+    },
+    {
+      "path": "scripts/build_single_npu_manifest.py",
+      "bytes": 3078,
+      "sha256": "6127c10caa60bb7a55c94c59d9fa65584d41cceb911316799f4ca93e9b6aceb4"
+    }
+  ],
+  "local_raw_only": [
+    "logs/s1_state_*/weight_audit/",
+    "all container logs and profiler traces",
+    "model weights and tensor shards"
+  ]
+}

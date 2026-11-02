@@ -1,0 +1,988 @@
+{
+  "stage": "S1",
+  "kind": "cpu_audited_expert_state",
+  "status": "PASS",
+  "scope": {
+    "layer": 49,
+    "experts": [
+      40,
+      43,
+      60
+    ],
+    "logical_source_copies_per_tensor": 1,
+    "runtime_replica_storage": "not present in checkpoint; NPU copy test is separate"
+  },
+  "environment": {
+    "python": "3.9.9",
+    "torch": "2.8.0+cpu",
+    "model": "/data_lib/data/models/glm-q",
+    "manifest": "/data_lib/cyt/workspace/history_exp/09_自主探索与ChunkSize_2026-10-12/autonomous_20261012/weights/publisher/manifest.json",
+    "manifest_sha256": "7870fe31cb26405e7b28e67023c9ce0d413e0506f40fc7704710e38b40b2abc5",
+    "manifest_expected_sha256": "7870fe31cb26405e7b28e67023c9ce0d413e0506f40fc7704710e38b40b2abc5",
+    "reference_id": "Eco-Tech_GLM-5.2-w8a8_publisher_SHA256_20261012",
+    "weight_loader_environment": {
+      "PYTHONPATH": "/home/chengyetai/workspace/history_exp/09_自主探索与ChunkSize_2026-10-12/autonomous_20261012/weights/loader:",
+      "SGLANG_READONLY_WEIGHT_MANIFEST": "/home/chengyetai/workspace/history_exp/09_自主探索与ChunkSize_2026-10-12/autonomous_20261012/weights/publisher/manifest.json",
+      "SGLANG_READONLY_WEIGHT_BASE": "/data_lib/data/models/glm-q",
+      "SGLANG_READONLY_WEIGHT_AUDIT_DIR": "/data_lib/cyt/workspace/current_exp/20261102_load_balance_e0/logs/s1_state_20261103_041056/weight_audit"
+    }
+  },
+  "completeness": {
+    "expected_tensor_count": 27,
+    "found_tensor_count": 27,
+    "missing": [],
+    "unexpected": [],
+    "quantization_types": [
+      "W8A8_DYNAMIC"
+    ]
+  },
+  "source_audit": {
+    "audit_dir": "/data_lib/cyt/workspace/current_exp/20261102_load_balance_e0/logs/s1_state_20261103_041056/weight_audit",
+    "audit_files": [
+      "/data_lib/cyt/workspace/current_exp/20261102_load_balance_e0/logs/s1_state_20261103_041056/weight_audit/weight_source_4076248.jsonl"
+    ]
+  },
+  "experts": {
+    "40": {
+      "tensor_count": 9,
+      "expected_tensor_count": 9,
+      "storage_bytes": 37830656,
+      "all_tensors_contiguous": true,
+      "all_source_copy_counts_one": true,
+      "all_offsets_zero": true,
+      "gate_weight_sha256": "4a3de582908d9e6e434ddccabc30c05dac7e2f7443b5ba61398391855f9c5ea2",
+      "copy_policy": {
+        "source_data_ptr": 187651023910144,
+        "clone_data_ptr": 187651124573952,
+        "alias_data_ptr": 187651023910144,
+        "clone_has_distinct_storage": true,
+        "alias_shares_storage": true,
+        "clone_mutation_isolated": true,
+        "alias_mutation_visible": true,
+        "source_restored_exactly": true
+      }
+    },
+    "43": {
+      "tensor_count": 9,
+      "expected_tensor_count": 9,
+      "storage_bytes": 37830656,
+      "all_tensors_contiguous": true,
+      "all_source_copy_counts_one": true,
+      "all_offsets_zero": true,
+      "gate_weight_sha256": "9175f40e53b9cbbbc4879516b649b428ba1ee2eace6efe0f009d7c6253ccbfea",
+      "copy_policy": {
+        "source_data_ptr": 187651061659072,
+        "clone_data_ptr": 187651137156992,
+        "alias_data_ptr": 187651061659072,
+        "clone_has_distinct_storage": true,
+        "alias_shares_storage": true,
+        "clone_mutation_isolated": true,
+        "alias_mutation_visible": true,
+        "source_restored_exactly": true
+      }
+    },
+    "60": {
+      "tensor_count": 9,
+      "expected_tensor_count": 9,
+      "storage_bytes": 37830656,
+      "all_tensors_contiguous": true,
+      "all_source_copy_counts_one": true,
+      "all_offsets_zero": true,
+      "gate_weight_sha256": "13e3c11cc794938faa4e44dee6051b4ca198cf53df2cf30729386d3bbd2b3aff",
+      "copy_policy": {
+        "source_data_ptr": 187651099408000,
+        "clone_data_ptr": 187651124573952,
+        "alias_data_ptr": 187651099408000,
+        "clone_has_distinct_storage": true,
+        "alias_shares_storage": true,
+        "clone_mutation_isolated": true,
+        "alias_mutation_visible": true,
+        "source_restored_exactly": true
+      }
+    }
+  },
+  "tensors": [
+    {
+      "key": "model.layers.49.mlp.experts.40.down_proj.weight",
+      "layer": 49,
+      "expert": 40,
+      "tensor": "down_proj.weight",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        3728473632,
+        3741056544
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        6144,
+        2048
+      ],
+      "dtype": "int8",
+      "stride": [
+        2048,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 12582912,
+      "sha256": "d3b8c84c7888f976191d37f065f56877be0778a8d43bc6f816eb38ae41898e45",
+      "stats": {
+        "finite_count": 12582912,
+        "nonfinite_count": 0,
+        "zero_count": 144621,
+        "min": -128,
+        "max": 127
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.40.down_proj.weight_offset",
+      "layer": 49,
+      "expert": 40,
+      "tensor": "down_proj.weight_offset",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        8060928,
+        8085504
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        6144,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 24576,
+      "sha256": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3",
+      "stats": {
+        "finite_count": 6144,
+        "nonfinite_count": 0,
+        "zero_count": 6144,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.40.down_proj.weight_scale",
+      "layer": 49,
+      "expert": 40,
+      "tensor": "down_proj.weight_scale",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        8085504,
+        8110080
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        6144,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 24576,
+      "sha256": "19882fe79d18e8d29e1a72c8895ad2e2faaf1be84511061fc3fcf594b8711eaa",
+      "stats": {
+        "finite_count": 6144,
+        "nonfinite_count": 0,
+        "zero_count": 0,
+        "min": 0.000362396240234375,
+        "max": 0.000667572021484375,
+        "mean": 0.00046458250532547635
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.40.gate_proj.weight",
+      "layer": 49,
+      "expert": 40,
+      "tensor": "gate_proj.weight",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        3741056544,
+        3753639456
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        6144
+      ],
+      "dtype": "int8",
+      "stride": [
+        6144,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 12582912,
+      "sha256": "4a3de582908d9e6e434ddccabc30c05dac7e2f7443b5ba61398391855f9c5ea2",
+      "stats": {
+        "finite_count": 12582912,
+        "nonfinite_count": 0,
+        "zero_count": 154299,
+        "min": -128,
+        "max": 127
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.40.gate_proj.weight_offset",
+      "layer": 49,
+      "expert": 40,
+      "tensor": "gate_proj.weight_offset",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        8110080,
+        8118272
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 8192,
+      "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "stats": {
+        "finite_count": 2048,
+        "nonfinite_count": 0,
+        "zero_count": 2048,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.40.gate_proj.weight_scale",
+      "layer": 49,
+      "expert": 40,
+      "tensor": "gate_proj.weight_scale",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        8118272,
+        8126464
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 8192,
+      "sha256": "c7c7d34e9e15687a130f6a5c74b5b20f4d9977775cdced019361dd084cff92f5",
+      "stats": {
+        "finite_count": 2048,
+        "nonfinite_count": 0,
+        "zero_count": 0,
+        "min": 0.00013637542724609375,
+        "max": 0.0003261566162109375,
+        "mean": 0.00017802929505705833
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.40.up_proj.weight",
+      "layer": 49,
+      "expert": 40,
+      "tensor": "up_proj.weight",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        3753639456,
+        3766222368
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        6144
+      ],
+      "dtype": "int8",
+      "stride": [
+        6144,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 12582912,
+      "sha256": "47ccefc542f3147d63bb5fafc807e178549621a0c1dd3d63d40009d19a966269",
+      "stats": {
+        "finite_count": 12582912,
+        "nonfinite_count": 0,
+        "zero_count": 155118,
+        "min": -128,
+        "max": 127
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.40.up_proj.weight_offset",
+      "layer": 49,
+      "expert": 40,
+      "tensor": "up_proj.weight_offset",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        8126464,
+        8134656
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 8192,
+      "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "stats": {
+        "finite_count": 2048,
+        "nonfinite_count": 0,
+        "zero_count": 2048,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.40.up_proj.weight_scale",
+      "layer": 49,
+      "expert": 40,
+      "tensor": "up_proj.weight_scale",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        8134656,
+        8142848
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 8192,
+      "sha256": "1f9744a808a4fb985d61bedbd4bb93e85bfe7a041dcdccacf5b5ea7bf8f6d95f",
+      "stats": {
+        "finite_count": 2048,
+        "nonfinite_count": 0,
+        "zero_count": 0,
+        "min": 0.00013828277587890625,
+        "max": 0.00024127960205078125,
+        "mean": 0.00017360365018248558
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.43.down_proj.weight",
+      "layer": 49,
+      "expert": 43,
+      "tensor": "down_proj.weight",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        3841719840,
+        3854302752
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        6144,
+        2048
+      ],
+      "dtype": "int8",
+      "stride": [
+        2048,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 12582912,
+      "sha256": "a567c2897e89e7163768c003f45e35cbd05cb7ac4c739f720d5003a30bbbb054",
+      "stats": {
+        "finite_count": 12582912,
+        "nonfinite_count": 0,
+        "zero_count": 145376,
+        "min": -128,
+        "max": 127
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.43.down_proj.weight_offset",
+      "layer": 49,
+      "expert": 43,
+      "tensor": "down_proj.weight_offset",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        8306688,
+        8331264
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        6144,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 24576,
+      "sha256": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3",
+      "stats": {
+        "finite_count": 6144,
+        "nonfinite_count": 0,
+        "zero_count": 6144,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.43.down_proj.weight_scale",
+      "layer": 49,
+      "expert": 43,
+      "tensor": "down_proj.weight_scale",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        8331264,
+        8355840
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        6144,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 24576,
+      "sha256": "a8c05d872c8a2fb0cfbc60fd2601d4c3a858cdecc221cff33ec86de58a4691d4",
+      "stats": {
+        "finite_count": 6144,
+        "nonfinite_count": 0,
+        "zero_count": 0,
+        "min": 0.0003566741943359375,
+        "max": 0.000690460205078125,
+        "mean": 0.0004671306038896243
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.43.gate_proj.weight",
+      "layer": 49,
+      "expert": 43,
+      "tensor": "gate_proj.weight",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        3854302752,
+        3866885664
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        6144
+      ],
+      "dtype": "int8",
+      "stride": [
+        6144,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 12582912,
+      "sha256": "9175f40e53b9cbbbc4879516b649b428ba1ee2eace6efe0f009d7c6253ccbfea",
+      "stats": {
+        "finite_count": 12582912,
+        "nonfinite_count": 0,
+        "zero_count": 154238,
+        "min": -128,
+        "max": 127
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.43.gate_proj.weight_offset",
+      "layer": 49,
+      "expert": 43,
+      "tensor": "gate_proj.weight_offset",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        8355840,
+        8364032
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 8192,
+      "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "stats": {
+        "finite_count": 2048,
+        "nonfinite_count": 0,
+        "zero_count": 2048,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.43.gate_proj.weight_scale",
+      "layer": 49,
+      "expert": 43,
+      "tensor": "gate_proj.weight_scale",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        8364032,
+        8372224
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 8192,
+      "sha256": "bf2451483fe9c3ea4d0c1f94f2b8538b4c78f1a03374f47441956112ce478881",
+      "stats": {
+        "finite_count": 2048,
+        "nonfinite_count": 0,
+        "zero_count": 0,
+        "min": 0.0001373291015625,
+        "max": 0.0003108978271484375,
+        "mean": 0.0001734304241836071
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.43.up_proj.weight",
+      "layer": 49,
+      "expert": 43,
+      "tensor": "up_proj.weight",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        3866885664,
+        3879468576
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        6144
+      ],
+      "dtype": "int8",
+      "stride": [
+        6144,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 12582912,
+      "sha256": "362031e49e401d212b38942616031a4b5a925f4711a9d63556dba5b5f38b5d2e",
+      "stats": {
+        "finite_count": 12582912,
+        "nonfinite_count": 0,
+        "zero_count": 154808,
+        "min": -128,
+        "max": 127
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.43.up_proj.weight_offset",
+      "layer": 49,
+      "expert": 43,
+      "tensor": "up_proj.weight_offset",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        8372224,
+        8380416
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 8192,
+      "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "stats": {
+        "finite_count": 2048,
+        "nonfinite_count": 0,
+        "zero_count": 2048,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.43.up_proj.weight_scale",
+      "layer": 49,
+      "expert": 43,
+      "tensor": "up_proj.weight_scale",
+      "source_shard": "quant_model_weights-00107-of-00181.safetensors",
+      "source_data_offsets": [
+        8380416,
+        8388608
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 8192,
+      "sha256": "e98ca135a307857d66fb390ae900404073ec2990e7a1691709fcd563637cd779",
+      "stats": {
+        "finite_count": 2048,
+        "nonfinite_count": 0,
+        "zero_count": 0,
+        "min": 0.00014209747314453125,
+        "max": 0.0002498626708984375,
+        "mean": 0.0001730998046696186
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.60.down_proj.weight",
+      "layer": 49,
+      "expert": 60,
+      "tensor": "down_proj.weight",
+      "source_shard": "quant_model_weights-00108-of-00181.safetensors",
+      "source_data_offsets": [
+        2777513984,
+        2790096896
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        6144,
+        2048
+      ],
+      "dtype": "int8",
+      "stride": [
+        2048,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 12582912,
+      "sha256": "2aeca68dc951c3f03ebdb1ecc54d98b4ea5b58ed58807b0d6013cea31b32236d",
+      "stats": {
+        "finite_count": 12582912,
+        "nonfinite_count": 0,
+        "zero_count": 142730,
+        "min": -128,
+        "max": 127
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.60.down_proj.weight_offset",
+      "layer": 49,
+      "expert": 60,
+      "tensor": "down_proj.weight_offset",
+      "source_shard": "quant_model_weights-00108-of-00181.safetensors",
+      "source_data_offsets": [
+        5996544,
+        6021120
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        6144,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 24576,
+      "sha256": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3",
+      "stats": {
+        "finite_count": 6144,
+        "nonfinite_count": 0,
+        "zero_count": 6144,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.60.down_proj.weight_scale",
+      "layer": 49,
+      "expert": 60,
+      "tensor": "down_proj.weight_scale",
+      "source_shard": "quant_model_weights-00108-of-00181.safetensors",
+      "source_data_offsets": [
+        6021120,
+        6045696
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        6144,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 24576,
+      "sha256": "e16a45ec9c106b66cdcfa22116a06de5590743bf98416972c0a287c422bcd0d4",
+      "stats": {
+        "finite_count": 6144,
+        "nonfinite_count": 0,
+        "zero_count": 0,
+        "min": 0.0003643035888671875,
+        "max": 0.000705718994140625,
+        "mean": 0.00047111231833696365
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.60.gate_proj.weight",
+      "layer": 49,
+      "expert": 60,
+      "tensor": "gate_proj.weight",
+      "source_shard": "quant_model_weights-00108-of-00181.safetensors",
+      "source_data_offsets": [
+        2790096896,
+        2802679808
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        6144
+      ],
+      "dtype": "int8",
+      "stride": [
+        6144,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 12582912,
+      "sha256": "13e3c11cc794938faa4e44dee6051b4ca198cf53df2cf30729386d3bbd2b3aff",
+      "stats": {
+        "finite_count": 12582912,
+        "nonfinite_count": 0,
+        "zero_count": 154238,
+        "min": -128,
+        "max": 127
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.60.gate_proj.weight_offset",
+      "layer": 49,
+      "expert": 60,
+      "tensor": "gate_proj.weight_offset",
+      "source_shard": "quant_model_weights-00108-of-00181.safetensors",
+      "source_data_offsets": [
+        6045696,
+        6053888
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 8192,
+      "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "stats": {
+        "finite_count": 2048,
+        "nonfinite_count": 0,
+        "zero_count": 2048,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.60.gate_proj.weight_scale",
+      "layer": 49,
+      "expert": 60,
+      "tensor": "gate_proj.weight_scale",
+      "source_shard": "quant_model_weights-00108-of-00181.safetensors",
+      "source_data_offsets": [
+        6053888,
+        6062080
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 8192,
+      "sha256": "88b84a05de8661e7d9fe3cba30b0a594266fadf62830d629d872f142a46e1040",
+      "stats": {
+        "finite_count": 2048,
+        "nonfinite_count": 0,
+        "zero_count": 0,
+        "min": 0.00014019012451171875,
+        "max": 0.0002384185791015625,
+        "mean": 0.0001740320585668087
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.60.up_proj.weight",
+      "layer": 49,
+      "expert": 60,
+      "tensor": "up_proj.weight",
+      "source_shard": "quant_model_weights-00108-of-00181.safetensors",
+      "source_data_offsets": [
+        2802679808,
+        2815262720
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        6144
+      ],
+      "dtype": "int8",
+      "stride": [
+        6144,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 12582912,
+      "sha256": "15db9c5d10c6dd7d098b09d4f6182652aab71bc2b57eb996284fd0ef7df3535c",
+      "stats": {
+        "finite_count": 12582912,
+        "nonfinite_count": 0,
+        "zero_count": 155592,
+        "min": -128,
+        "max": 127
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.60.up_proj.weight_offset",
+      "layer": 49,
+      "expert": 60,
+      "tensor": "up_proj.weight_offset",
+      "source_shard": "quant_model_weights-00108-of-00181.safetensors",
+      "source_data_offsets": [
+        6062080,
+        6070272
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 8192,
+      "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+      "stats": {
+        "finite_count": 2048,
+        "nonfinite_count": 0,
+        "zero_count": 2048,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    {
+      "key": "model.layers.49.mlp.experts.60.up_proj.weight_scale",
+      "layer": 49,
+      "expert": 60,
+      "tensor": "up_proj.weight_scale",
+      "source_shard": "quant_model_weights-00108-of-00181.safetensors",
+      "source_data_offsets": [
+        6070272,
+        6078464
+      ],
+      "quantization": "W8A8_DYNAMIC",
+      "shape": [
+        2048,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "contiguous": true,
+      "storage_offset": 0,
+      "storage_bytes": 8192,
+      "sha256": "7c47c2e5029b2a9d308d7845891dd932f7f815b55e69d425173f76c821bc3880",
+      "stats": {
+        "finite_count": 2048,
+        "nonfinite_count": 0,
+        "zero_count": 0,
+        "min": 0.00014209747314453125,
+        "max": 0.0002384185791015625,
+        "mean": 0.00017405813559889793
+      }
+    }
+  ]
+}

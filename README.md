@@ -28,17 +28,23 @@
 
 当前实验状态和远端同步约定。活跃实验的原始数据保留在本地，阶段性成果按同样规则精选到 Git。
 
-- [单机负载均衡 E0（2026-11-02，PASS）](shared/current_exp/20261102_load_balance_e0/RESULTS_E0.md)：健康基线、权重审计、两组路由采集和三轮基线性能。
-- [单机负载均衡 E1（2026-11-02，负结果）](shared/current_exp/20261102_load_balance_e0/RESULTS_E1.md)：layer 49 与 49/36/54 top-2 预装副本未改善端到端，停止在线复制方向。
-- [关键路径 Profile / E3（2026-11-02）](shared/current_exp/20261102_load_balance_e0/RESULTS_PROFILE.md)：prefill 由 DSA attention 主导；decode MoE LL 通信占比约 15.5%；`DEEP_USE_MODE=ops` 不可用。
-- [E3 通信策略与容量（2026-11-02，完成）](shared/current_exp/20261102_load_balance_e0/RESULTS_E3.md)：default fused low-latency 最佳；capacity 16 略优；alltoall 严重退化。
-- [单机实验总体总结](shared/current_exp/20261102_load_balance_e0/RESULTS_OVERALL.md)：E0/E1/Profile/E3 的最终结论与后续方向。
+- [实验总体总结](shared/current_exp/20261102_load_balance_e0/RESULTS_OVERALL.md)：E0/E1/Profile/E3 与单卡 S0–S4/P2 的统一结论。
+- [E0 健康基线](shared/current_exp/20261102_load_balance_e0/RESULTS_E0.md)：权重审计、路由守恒和性能基线。
+- [E1 原始负结果](shared/current_exp/20261102_load_balance_e0/RESULTS_E1.md)：保留原始数据；S0 已纠正实际副本落点为 rank15。
+- [S0 映射纠错](shared/current_exp/20261102_load_balance_e0/RESULTS_S0.md)：272 槽 slot→rank、修正映射与任务守恒。
+- [S1 量化与副本正确性](shared/current_exp/20261102_load_balance_e0/RESULTS_S1.md)：27 张量、36/36 分流、A/A、top-8 合并。
+- [S2 局部成本曲线](shared/current_exp/20261102_load_balance_e0/RESULTS_S2.md)：小 M 固定开销、活跃专家数量和局部链时间。
+- [S3 配额与回放](shared/current_exp/20261102_load_balance_e0/RESULTS_S3.md)：时间感知配额在单卡局部回放中降低 45–48%，待多卡验证。
+- [S4 局部候选](shared/current_exp/20261102_load_balance_e0/RESULTS_S4.md)：两个候选均未过 5% 门槛；通道独立重量化破坏 scale 边界。
+- [P2 共享专家与单槽](shared/current_exp/20261102_load_balance_e0/RESULTS_P2.md)：shared expert 成本、部分双 stream 重叠和单槽生命周期。
+- [Profile](shared/current_exp/20261102_load_balance_e0/RESULTS_PROFILE.md) / [E3](shared/current_exp/20261102_load_balance_e0/RESULTS_E3.md)：DSA attention 主导 prefill；default low-latency + capacity 16 已验证。
 
 ### `handoff/`
 
 本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。
 
-- [GLM-5.2 / 昇腾 910C 负载均衡实验方案（2026-11-02）](handoff/2026-11-02_glm52_ascend_load_balance_plan.md)：前置核验、单层复制对照、共享缓冲、decode 通信优化及未决问题；E0 已完成；E1 已完成并得到负结果，转入关键路径 profile。
+- [GLM-5.2 / 昇腾 910C 负载均衡实验方案（2026-11-02）](handoff/2026-11-02_glm52_ascend_load_balance_plan.md)：前置核验、单层复制对照、共享缓冲、decode 通信优化及未决问题。
+- [单卡补测完成与多卡后续（2026-11-03）](handoff/2026-11-03_single_npu_results_and_next.md)：S0–S4/P2 结果、证据边界和恢复多卡后的 M0–M3 顺序。
 
 ## 更新历史实验镜像
 

@@ -63,3 +63,29 @@ E1 原始运行日志和路由张量仍保留在本地实验目录。
 - `evidence/e3/cap32_manifest.txt`、`cap32_bench_5rep.json`、`cap32_service_probe.json`
 - `evidence/e3/cap16_manifest.txt`、`cap16_bench_5rep.json`、`cap16_service_probe.json`
 - `evidence/e3/alltoall_manifest.txt`、`alltoall_bench_5rep.json`、`alltoall_service_probe.json`
+
+## S0–S4 / P2 追加（2026-11-03）
+
+已同步：
+
+- `RESULTS_S0.md`：272 槽映射纠错、修正映射、任务守恒
+- `RESULTS_S1.md`：27 张量量化状态、副本独立性、36 个分流用例、A/A、top-8 合并
+- `RESULTS_S2.md`：单卡局部链 shape 曲线、活跃专家成本、重复/轮换权重
+- `RESULTS_S3.md`：成本模型、固定副本预算配额、精确 affected-rank 回放
+- `RESULTS_S4.md`：热点单独 GMM、token 行分组、通道二分片数值反例
+- `RESULTS_P2.md`：shared expert 成本/重叠、单槽生命周期
+- `mappings_s0_corrected/*.json`
+- `scripts/s0_mapping_audit.py` 至 `scripts/p2_local_checks.py`
+- `scripts/build_single_npu_manifest.py`
+- `evidence/s0_s4_p2/*.json`、`*.csv`
+- `evidence/s0_s4_p2/SINGLE_NPU_MANIFEST.json`：镜像、模型输入、脚本和结果哈希索引
+
+本地保留、不上传：
+
+- 完整日志与权重读取审计：`/home/chengyetai/workspace/current_exp/20261102_load_balance_e0/logs/`
+- 原始权重、模型分片、profiler trace
+- 单卡实验中的临时容器和 NPU cache
+
+## 重要解释修正
+
+旧 E1 的 slot 256/257 属于 rank15。`RESULTS_E1.md` 保留原始负结果，但不得继续用“rank0/1”解释该实验。修正布局与 S3 配额结果见 `RESULTS_S0.md`、`RESULTS_S3.md`。

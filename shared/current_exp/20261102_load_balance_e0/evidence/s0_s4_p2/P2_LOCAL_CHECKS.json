@@ -1,0 +1,354 @@
+{
+  "stage": "P2",
+  "status": "COMPLETE",
+  "kind": "shared_expert_overlap_and_slot_lifecycle",
+  "environment": {
+    "hostname": "npu1-23",
+    "torch": "2.10.0+cpu",
+    "torch_npu": "2.10.0",
+    "device_count": 1,
+    "device_name": "Ascend910_9382"
+  },
+  "shared_expert": {
+    "exists": true,
+    "checkpoint_layer49_tensor_count": 9,
+    "complete_weight_bytes": 37769216,
+    "runtime_code_note": "With DeepEP the GLM4 MoE Lite source sets shared experts to tp_rank=0,tp_size=1; full runtime residency was not launched in this check.",
+    "shared_vs_routed": [
+      {
+        "rows": 1,
+        "shared_timing": {
+          "repeats_per_block": 72,
+          "device_ms_samples": [
+            0.2363127867380778,
+            0.23187443945142958,
+            0.23148388332790798,
+            0.23071776496039498,
+            0.2304149998558892
+          ],
+          "host_ms_samples": [
+            0.23868273678494412,
+            0.23351102653476927,
+            0.23321366623147494,
+            0.23257198659444434,
+            0.2324190686017068
+          ],
+          "device_ms_median": 0.23148388332790798,
+          "host_ms_median": 0.23321366623147494,
+          "device_ms_p05": 0.2304149998558892,
+          "device_ms_p95": 0.2363127867380778,
+          "host_ms_p05": 0.2324190686017068,
+          "host_ms_p95": 0.23868273678494412
+        },
+        "routed_timing": {
+          "repeats_per_block": 242,
+          "device_ms_samples": [
+            0.22271586646718428,
+            0.2157604122950026,
+            0.2161864446214408,
+            0.21720678156072443,
+            0.21872421138542741
+          ],
+          "host_ms_samples": [
+            0.2232478967144285,
+            0.21634408280499712,
+            0.21676441331293958,
+            0.2177646696328932,
+            0.21931521925490258
+          ],
+          "device_ms_median": 0.21720678156072443,
+          "host_ms_median": 0.2177646696328932,
+          "device_ms_p05": 0.2157604122950026,
+          "device_ms_p95": 0.22271586646718428,
+          "host_ms_p05": 0.21634408280499712,
+          "host_ms_p95": 0.2232478967144285
+        },
+        "shared_to_routed_time_ratio": 1.065730460460748
+      },
+      {
+        "rows": 128,
+        "shared_timing": {
+          "repeats_per_block": 185,
+          "device_ms_samples": [
+            0.21826411066828547,
+            0.21849330180400126,
+            0.21747481887404982,
+            0.21615404696077914,
+            0.20979556521853884
+          ],
+          "host_ms_samples": [
+            0.21883619483560324,
+            0.219019762290692,
+            0.21816197329679052,
+            0.21695893484394294,
+            0.21037617824166208
+          ],
+          "device_ms_median": 0.21747481887404982,
+          "host_ms_median": 0.21816197329679052,
+          "device_ms_p05": 0.20979556521853884,
+          "device_ms_p95": 0.21849330180400126,
+          "host_ms_p05": 0.21037617824166208,
+          "host_ms_p95": 0.219019762290692
+        },
+        "routed_timing": {
+          "repeats_per_block": 273,
+          "device_ms_samples": [
+            0.19555077185997596,
+            0.2010013175098014,
+            0.19712132324665893,
+            0.19359296582120677,
+            0.19263069795601534
+          ],
+          "host_ms_samples": [
+            0.19593083132535982,
+            0.20136867757313526,
+            0.1974460803613667,
+            0.19390019417600535,
+            0.19351165185617658
+          ],
+          "device_ms_median": 0.19555077185997596,
+          "host_ms_median": 0.19593083132535982,
+          "device_ms_p05": 0.19263069795601534,
+          "device_ms_p95": 0.2010013175098014,
+          "host_ms_p05": 0.19351165185617658,
+          "host_ms_p95": 0.20136867757313526
+        },
+        "shared_to_routed_time_ratio": 1.1121143465993197
+      },
+      {
+        "rows": 1024,
+        "shared_timing": {
+          "repeats_per_block": 222,
+          "device_ms_samples": [
+            0.3200270163046347,
+            0.3201228992359058,
+            0.3209907256805145,
+            0.3206148577166033,
+            0.3203783808527766
+          ],
+          "host_ms_samples": [
+            0.3204297611011645,
+            0.3205306213433007,
+            0.3215055356876136,
+            0.32105895497643194,
+            0.32255833817494883
+          ],
+          "device_ms_median": 0.3203783808527766,
+          "host_ms_median": 0.32105895497643194,
+          "device_ms_p05": 0.3200270163046347,
+          "device_ms_p95": 0.3209907256805145,
+          "host_ms_p05": 0.3204297611011645,
+          "host_ms_p95": 0.32255833817494883
+        },
+        "routed_timing": {
+          "repeats_per_block": 218,
+          "device_ms_samples": [
+            0.32331963635365896,
+            0.32298597283319597,
+            0.3226417401515016,
+            0.3234795386638116,
+            0.323415423751971
+          ],
+          "host_ms_samples": [
+            0.3237448714955479,
+            0.3233778070436295,
+            0.32305528480269086,
+            0.3239078577522428,
+            0.32380345403515826
+          ],
+          "device_ms_median": 0.32331963635365896,
+          "host_ms_median": 0.3237448714955479,
+          "device_ms_p05": 0.3226417401515016,
+          "device_ms_p95": 0.3234795386638116,
+          "host_ms_p05": 0.32305528480269086,
+          "host_ms_p95": 0.3239078577522428
+        },
+        "shared_to_routed_time_ratio": 0.9909029481349994
+      },
+      {
+        "rows": 4096,
+        "shared_timing": {
+          "repeats_per_block": 79,
+          "device_ms_samples": [
+            1.1033372516873516,
+            1.1024985011619857,
+            1.1030509079558939,
+            1.1030655872972706,
+            1.1037952085084553
+          ],
+          "host_ms_samples": [
+            1.104488292461426,
+            1.103716519295792,
+            1.1044243671872382,
+            1.1043089244491127,
+            1.1049081642133525
+          ],
+          "device_ms_median": 1.1030655872972706,
+          "host_ms_median": 1.1044243671872382,
+          "device_ms_p05": 1.1024985011619857,
+          "device_ms_p95": 1.1037952085084553,
+          "host_ms_p05": 1.103716519295792,
+          "host_ms_p95": 1.1049081642133525
+        },
+        "routed_timing": {
+          "repeats_per_block": 83,
+          "device_ms_samples": [
+            1.1042705673769295,
+            1.1047578375023532,
+            1.1043375773602222,
+            1.1033050353268543,
+            1.1044004509247929
+          ],
+          "host_ms_samples": [
+            1.1052424705261925,
+            1.106055614718023,
+            1.1054801920159574,
+            1.104384277812598,
+            1.1056506745405046
+          ],
+          "device_ms_median": 1.1043375773602222,
+          "host_ms_median": 1.1054801920159574,
+          "device_ms_p05": 1.1033050353268543,
+          "device_ms_p95": 1.1047578375023532,
+          "host_ms_p05": 1.104384277812598,
+          "host_ms_p95": 1.106055614718023
+        },
+        "shared_to_routed_time_ratio": 0.9988481872852755
+      }
+    ],
+    "dual_stream_overlap": [
+      {
+        "rows": 1024,
+        "shared_ms": 0.3203783808527766,
+        "routed_ms": 0.32331963635365896,
+        "sequential_sum_ms": 0.6436980172064355,
+        "concurrent_dual_stream": {
+          "device_ms_samples": [
+            0.8132399916648865,
+            0.8540199995040894,
+            0.8443400263786316,
+            0.8479800224304199,
+            0.8545399904251099
+          ],
+          "host_ms_samples": [
+            0.9037270210683346,
+            0.9424190502613783,
+            0.9357180679216981,
+            0.9388880571350455,
+            0.9395679226145148
+          ],
+          "device_ms_median": 0.8479800224304199,
+          "host_ms_median": 0.9388880571350455
+        },
+        "measured_overlap_saving_vs_sequential": -0.31735689681093215,
+        "ideal_overlap_max_ms": 0.32331963635365896,
+        "ideal_overlap_saving": 0.49771534522224636
+      },
+      {
+        "rows": 4096,
+        "shared_ms": 1.1030655872972706,
+        "routed_ms": 1.1043375773602222,
+        "sequential_sum_ms": 2.2074031646574928,
+        "concurrent_dual_stream": {
+          "device_ms_samples": [
+            1.7781599760055542,
+            1.8407599925994873,
+            1.7915600538253784,
+            1.8317400217056274,
+            1.8254200220108032
+          ],
+          "host_ms_samples": [
+            1.8687959527596831,
+            1.9275160739198327,
+            1.8768060253933072,
+            1.9204469863325357,
+            1.9077660981565714
+          ],
+          "device_ms_median": 1.8254200220108032,
+          "host_ms_median": 1.9077660981565714
+        },
+        "measured_overlap_saving_vs_sequential": 0.17304638715871334,
+        "ideal_overlap_max_ms": 1.1043375773602222,
+        "ideal_overlap_saving": 0.4997118808916927
+      }
+    ],
+    "prefill_note": "NPU prefill can run shared experts on a separate stream; decode does not enable this dual-stream branch."
+  },
+  "slot_lifecycle": {
+    "status": "PASS",
+    "versions": [
+      1,
+      2
+    ],
+    "layer49_shared_after_copy": {
+      "bitwise_equal": true,
+      "max_abs_error": 0.0,
+      "nrmse": 0.0,
+      "nonfinite_count": 0
+    },
+    "layer48_expert0_after_reuse": {
+      "bitwise_equal": true,
+      "max_abs_error": 0.0,
+      "nrmse": 0.0,
+      "nonfinite_count": 0
+    },
+    "version_monotonic": true
+  },
+  "slot_copy_cost": {
+    "bytes_per_state": 37769216,
+    "npu_to_npu_copy": {
+      "device_ms_samples": [
+        0.10347999632358551,
+        0.10964000225067139,
+        0.11714000254869461,
+        0.11946000158786774,
+        0.12042000144720078
+      ],
+      "host_ms_samples": [
+        0.20434206817299128,
+        0.2029020106419921,
+        0.2007409930229187,
+        0.2133710077032447,
+        0.20228198263794184
+      ],
+      "device_ms_median": 0.11714000254869461,
+      "host_ms_median": 0.2029020106419921
+    },
+    "h2d_copy": {
+      "status": "measured",
+      "timing": {
+        "device_ms_samples": [
+          1.950700044631958,
+          1.8057600259780884,
+          1.6715600490570068,
+          1.6905399560928345,
+          1.8320399522781372
+        ],
+        "host_ms_samples": [
+          2.058248035609722,
+          1.8932759994640946,
+          1.7541850684210658,
+          1.7760749906301498,
+          1.9133659079670906
+        ],
+        "device_ms_median": 1.8057600259780884,
+        "host_ms_median": 1.8932759994640946
+      }
+    },
+    "pointer_switch_host_ms_median": 0.0003,
+    "pointer_switch_is_not_weight_transport": true
+  },
+  "memory": {
+    "free_bytes_before": 65382633472,
+    "free_bytes_after": 64051507200,
+    "total_hbm_bytes": 65787658240,
+    "peak_allocated_bytes": 449030656,
+    "peak_reserved_bytes": 1302331392
+  },
+  "scope_limits": [
+    "Single-NPU local chains only; no full-model graph, service trace or HCCL.",
+    "Dual-stream overlap uses two local streams and representative resident experts, not the full layer.",
+    "The slot copy is local; it does not measure cross-rank expert transfer.",
+    "No claim is made that shared-expert work can be removed from a hot rank without additional memory or synchronization."
+  ]
+}

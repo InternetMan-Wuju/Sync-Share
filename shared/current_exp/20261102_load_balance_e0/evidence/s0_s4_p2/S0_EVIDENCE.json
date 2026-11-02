@@ -1,0 +1,251 @@
+{
+  "ep_size": 16,
+  "slots_per_rank": 17,
+  "old_mapping": {
+    "expert43_slots": [
+      43,
+      256
+    ],
+    "expert40_slots": [
+      40,
+      257
+    ],
+    "expert43_ranks": [
+      2,
+      15
+    ],
+    "expert40_ranks": [
+      2,
+      15
+    ],
+    "rank_slot_counts": [
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
+    "layer49_rank_load_cal": [
+      616,
+      1267,
+      6269,
+      2366,
+      2981,
+      1134,
+      1492,
+      1448,
+      788,
+      1109,
+      1976,
+      2588,
+      1080,
+      1404,
+      747,
+      5508
+    ],
+    "layer49_max_over_mean_cal": 3.060568150611784,
+    "layer49_rank_load_hold": [
+      572,
+      1016,
+      6239,
+      2360,
+      3843,
+      1367,
+      1114,
+      1641,
+      1011,
+      1086,
+      1585,
+      2819,
+      923,
+      1094,
+      668,
+      5436
+    ],
+    "layer49_max_over_mean_hold": 3.0458290108012447,
+    "all_layers_cover_256_logicals": true,
+    "slots_per_rank": [
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17
+    ]
+  },
+  "corrected_mapping": {
+    "expert43_slots": [
+      16,
+      45
+    ],
+    "expert40_slots": [
+      33,
+      42
+    ],
+    "expert43_ranks": [
+      0,
+      2
+    ],
+    "expert40_ranks": [
+      1,
+      2
+    ],
+    "rank_slot_counts": [
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
+    "layer49_rank_load_cal": [
+      2646,
+      3182,
+      6119,
+      1302,
+      3227,
+      1910,
+      1411,
+      1378,
+      1303,
+      985,
+      1785,
+      1492,
+      2743,
+      1394,
+      1108,
+      778
+    ],
+    "layer49_max_over_mean_cal": 2.988248939352318,
+    "layer49_rank_load_hold": [
+      2603,
+      2914,
+      6310,
+      1017,
+      3918,
+      2338,
+      893,
+      1855,
+      1503,
+      981,
+      1759,
+      1417,
+      2369,
+      1470,
+      706,
+      709
+    ],
+    "layer49_max_over_mean_hold": 3.0816189487821255,
+    "all_layers_cover_256_logicals": true,
+    "slots_per_rank": [
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17
+    ]
+  },
+  "traces": {
+    "000000_1793579172.815737.pt": {
+      "prefill_total": 2457600,
+      "decode_total": 614400,
+      "prefill_conserved": true
+    },
+    "000001_1793579178.2768657.pt": {
+      "prefill_total": 2457600,
+      "decode_total": 614400,
+      "prefill_conserved": true
+    }
+  },
+  "traps": {
+    "baseline": {
+      "total": 2457600,
+      "ok": true
+    },
+    "duplicate_task": {
+      "total": 2457601,
+      "ok": false
+    },
+    "missing_task": {
+      "total": 2457599,
+      "ok": false
+    },
+    "wrong_expert": {
+      "total": 2457600,
+      "ok": false
+    }
+  },
+  "runtime_dump_check": {
+    "path": "/home/chengyetai/workspace/current_exp/20261102_load_balance_e0/logs/e1_layer49_top2_20261102_094457/eplb_windows/000000_1793584868.956869.pt",
+    "pmap_shape": [
+      78,
+      272
+    ],
+    "matches_old_mapping_json": true,
+    "layer49_expert43_slots": [
+      43,
+      256
+    ],
+    "layer49_expert40_slots": [
+      40,
+      257
+    ],
+    "slot_256_rank": 15,
+    "slot_257_rank": 15
+  },
+  "s0_result": {
+    "old_mapping_legal_but_replicas_on_rank15": true,
+    "runtime_dump_matches_old_mapping": true,
+    "old_e1_tested_replicas_on_rank15_not_rank0_1": true,
+    "corrected_mapping_replicas_on_rank0_1": true,
+    "prefill_count_conserved": true,
+    "traps_caught": {
+      "duplicate_task": true,
+      "missing_task": true,
+      "wrong_expert": true
+    },
+    "limited_conclusion": "Only count-level correctness was available; token-level multiplicity remains unverified without full task records."
+  }
+}

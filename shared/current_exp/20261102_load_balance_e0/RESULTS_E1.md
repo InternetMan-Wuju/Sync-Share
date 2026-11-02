@@ -1,6 +1,8 @@
 # E1 单层/多层热专家复制结果（2026-11-02）
 
-状态：**负结果，停止 C/D 在线复制方向**。
+状态：**历史原始记录；副本落点解释已由 S0 校正**。
+
+> 2026-11-03 修订：按 272 槽 / 16 rank = 17 slots/rank，slot 256、257 实际属于 rank15，不是 rank0/1。本文保留原始测量数字，但不能再按“rank0/1”解释该实验。修正映射与离线结果见 `RESULTS_S0.md`、`RESULTS_S3.md`。
 
 ## 1. 实验目的
 
@@ -21,15 +23,23 @@
 
 每轮都先做同 shape 未计时预热。
 
-## 3. Rank 负载代理
+## 3. 原报告中的 Rank 负载代理（解释已校正）
 
 layer 49 prefill 原始 rank max/mean = **4.951**。
 
-把 expert 43、40 各复制到 rank 0、1，并按约 50/50 分流后，离线工作量代理降到：
+原报告以为 expert 43、40 被复制到 rank 0、1。S0 复核表明 slot 256/257 属于 **rank15**。因此旧 mapping 的真实离线结果应写作：
 
 ```text
-rank max/mean = 2.988
-改进 = 39.6%
+旧 272 映射（副本均落 rank15）:
+calibration rank max/mean = 3.061
+holdout rank max/mean = 3.046
+```
+
+修正后把副本放到 rank0/1 的布局：
+
+```text
+calibration = 2.988
+holdout = 3.082
 ```
 
 dynamic dispatch 自检确认：
@@ -59,14 +69,14 @@ expert 0  -> slot 0: 4096（无副本）
 
 ## 5. 结论
 
-1. **层内 rank 负载下降不等于端到端变快。** layer 49 的负载代理改善 39.6%，但 TTFT 不变。
+1. **层内 rank 负载下降不等于端到端变快。** 旧布局实际把两份副本都放在 rank15，端到端 TTFT 仍无明显变化。
 2. 原因是单层热点只占完整 75 层路径的一部分，而跨层累计后的 rank max/mean 本来只有约 1.21；层的局部热点没有成为端到端关键路径。
 3. dynamic dispatch 和额外槽本身有少量开销，在收益不足时会体现为 decode/mixed 退化。
-4. 按 E1 停止条件，不再为 layer 49/36/54 实现 C/D 在线规划与真实搬运。
+4. 旧落点配置没有显示收益；该负结果不能关闭修正落点或时间感知配额路线。
 
-## 6. 下一步
+## 6. 当时确定的下一步（已由后续工作替代）
 
-改为做关键路径 profile：
+先做关键路径 profile：
 
 - 分阶段记录 prefill/decode 的设备时间线；
 - 定位最晚完成的 rank、GEMM、dispatch/combine 和等待区间；
