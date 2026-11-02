@@ -39,6 +39,14 @@
 - [P2 共享专家与单槽](shared/current_exp/20261102_load_balance_e0/RESULTS_P2.md)：shared expert 成本、部分双 stream 重叠和单槽生命周期。
 - [Profile](shared/current_exp/20261102_load_balance_e0/RESULTS_PROFILE.md) / [E3](shared/current_exp/20261102_load_balance_e0/RESULTS_E3.md)：DSA attention 主导 prefill；default low-latency + capacity 16 已验证。
 
+### `shared/current_exp/20261103_3h_online_decode/`
+
+单卡 3 小时 Online / Decode 补测（run `20261103_051202`）：
+
+- [RESULTS](shared/current_exp/20261103_3h_online_decode/20261103_051202/RESULTS.md)：online 配额与本地状态开销、decode EP16/32/64 × batch1/8 六格。
+- [INPUTS_PLANS](shared/current_exp/20261103_3h_online_decode/20261103_051202/INPUTS_PLANS.json)：完整 16/8/4 槽向量、配额和输入身份。
+- [TIMINGS](shared/current_exp/20261103_3h_online_decode/20261103_051202/TIMINGS.csv)：正式计时块原始记录。
+
 ### `handoff/`
 
 本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。

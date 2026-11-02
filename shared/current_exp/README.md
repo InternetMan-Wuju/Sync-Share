@@ -5,6 +5,14 @@
 - 总体总结：[`20261102_load_balance_e0/RESULTS_OVERALL.md`](20261102_load_balance_e0/RESULTS_OVERALL.md)
 - 单卡复现说明：[`20261102_load_balance_e0/README_LOCAL.md`](20261102_load_balance_e0/README_LOCAL.md)
 
+## 20261103_3h_online_decode
+
+- run：`20261103_051202`，单张 Ascend NPU，eager 局部专家链代理。
+- Online：960/64 → 512/512 的本地计算代理下降 21.0%；planner 1.03 µs，本地 state copy 0.06145 ms，format prep 0.10950 ms。
+- Decode：batch1 无正计算收益；batch8 的 EP32/64 有约 0.040–0.041 ms/层（15.3%–15.6%）通信回本预算。
+- 真实 dump 契约已核验，但缺 token top8/router weight，故六格使用固定种子人工路由。
+- 入口：[`20261103_3h_online_decode/RESULTS.md`](20261103_3h_online_decode/20261103_051202/RESULTS.md)
+
 ## 20261102_load_balance_e0
 
 ### 16 卡服务实验

@@ -1,0 +1,114 @@
+{
+  "run_id": "20261103_051202",
+  "start_time": "2026-11-03T05:12:02+08:00",
+  "deadline": "2026-11-03T08:12:02+08:00",
+  "package_prepared_at": "2026-11-03T05:32:26+08:00",
+  "host": "npu1-23",
+  "device": {
+    "count": 1,
+    "name": "Ascend910_9382",
+    "binding": "only /dev/davinci0"
+  },
+  "software": {
+    "torch": "2.10.0+cpu",
+    "torch_npu": "2.10.0",
+    "CANN": "9.0.0",
+    "image_id": "sha256:26a020117564da514f33c4e72353d07020bc4bfe176f4e61858b4abeac6d3e9b",
+    "image_digest": "quay.io/ascend/sglang@sha256:f492ff6a50b779db301bb5a8f80e33c98981c5076bd0feb6225b63d7971c6385"
+  },
+  "base_git_commit": "3eeb16b",
+  "weight_manifest_sha256": "7870fe31cb26405e7b28e67023c9ce0d413e0506f40fc7704710e38b40b2abc5",
+  "input_identity": {
+    "online": "fixed 960/64 and 512/512 mechanisms; artificial hidden",
+    "decode": "fixed seed 20261103 artificial top8; real trace audit batch16 only"
+  },
+  "correctness": {
+    "cpu_conservation": true,
+    "online_bridge": true,
+    "online_split_bitwise": true,
+    "copy_bitwise": true,
+    "decode_permutation_validated": true
+  },
+  "timing_protocol": {
+    "warmup_calls": 20,
+    "formal_blocks": 5,
+    "min_calls_per_block": 20,
+    "min_block_ms": 100,
+    "block_floor_verified": true,
+    "online_copy_format_floor_verified": true,
+    "planner_samples": 15,
+    "planner_iterations_per_sample": 20000
+  },
+  "artifacts": [
+    {
+      "path": "CPU_AUDIT.json",
+      "bytes": 6647,
+      "sha256": "c836d11c16df657905289f7e21d5854f83d97856a8201860b3961d119bf17729"
+    },
+    {
+      "path": "ONLINE_RESULT.json",
+      "bytes": 13898,
+      "sha256": "8ce043b792960c305e16e8ac477ae0df4bbc95332b166d71f6c2de206a18f321"
+    },
+    {
+      "path": "DECODE_RESULT.json",
+      "bytes": 400060,
+      "sha256": "82e91d1d7a60a65d9632e12ff7890feb25e9f7b02704371a8b6c7c39da0f4321"
+    },
+    {
+      "path": "INPUTS_PLANS.json",
+      "bytes": 394076,
+      "sha256": "5d7510274da6caa843ed9d77da8504288cb6b26d04377c0ebe2aaeb1b9332e12"
+    },
+    {
+      "path": "TIMINGS.csv",
+      "bytes": 35704,
+      "sha256": "1b2d0969e0b6ce52e162cb4d1e35628a42bc3812159493848db94f44db2e7d4d"
+    },
+    {
+      "path": "cpu_audit.py",
+      "bytes": 7327,
+      "sha256": "705b7fc5b8d1be8f09ef512152102cb997f2c3ab281fb4ad24ee95c153a88fa9"
+    },
+    {
+      "path": "online_npu.py",
+      "bytes": 13865,
+      "sha256": "56a7c41cef4814f89b1dfd56ba91416abc184ab11eb8c436282e62a7ff17258a"
+    },
+    {
+      "path": "decode_npu.py",
+      "bytes": 11326,
+      "sha256": "9fd6accc2ccaaf7d145ab5cbcb4fec046f8de546157852c7aef9df34547fdcc0"
+    },
+    {
+      "path": "package_results.py",
+      "bytes": 6259,
+      "sha256": "a3947e7ff9081d805e6db3d17ded804206287f1dc333c7ba7887dfc32a6ee56e"
+    },
+    {
+      "path": "RESULTS.md",
+      "bytes": 6223,
+      "sha256": "dfe087277500f2b7179160422c54c7c211713de0c7a7b7f3b442f14a8978d745"
+    },
+    {
+      "path": "CORRECTIONS.md",
+      "bytes": 2343,
+      "sha256": "25b05982e9af89ae3ab8029fa887714ae050136c6723244890dc78a4a6ce1669"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "bytes": 1064,
+      "sha256": "a97c486f3376fa5ca77e4c448fae60571e4564e1062c0d594d795cb056eaa46e"
+    },
+    {
+      "path": "CLOCK.txt",
+      "bytes": 67,
+      "sha256": "18078faf3ef318cedda96b7f101b91d1350c82eb55cef48d64c8e61e53013599"
+    }
+  ],
+  "raw_local_only": [
+    "/home/chengyetai/workspace/current_exp/20261102_load_balance_e0/logs/20261102_081322/eplb_windows/000000_1793579172.815737.pt",
+    "/home/chengyetai/workspace/current_exp/20261103_3h_online_decode/weight_audit/",
+    "/home/chengyetai/workspace/current_exp/20261103_3h_online_decode/*.stdout"
+  ]
+}
