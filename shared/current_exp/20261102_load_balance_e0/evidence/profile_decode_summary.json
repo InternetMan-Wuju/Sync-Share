@@ -1,0 +1,1209 @@
+{
+  "rank_count": 16,
+  "step_total_us": {
+    "median": 2434604.5,
+    "mean": 2434407.828125,
+    "min": 2433208.75,
+    "max": 2435068.5
+  },
+  "top_ops": [
+    {
+      "op": "QuantBatchMatmulV3",
+      "rank_count": 16,
+      "median_us": 343855.019,
+      "mean_us": 352697.13,
+      "max_us": 391511.56,
+      "min_us": 329019.998
+    },
+    {
+      "op": "GroupedMatmul",
+      "rank_count": 16,
+      "median_us": 238778.4115,
+      "mean_us": 234661.5336875,
+      "max_us": 252042.4,
+      "min_us": 191401.24
+    },
+    {
+      "op": "MoeLowLatencyCombineV2",
+      "rank_count": 16,
+      "median_us": 195438.1635,
+      "mean_us": 198857.2793125,
+      "max_us": 239190.5,
+      "min_us": 181414.039
+    },
+    {
+      "op": "MoeLowLatencyDispatchV2",
+      "rank_count": 16,
+      "median_us": 182824.192,
+      "mean_us": 183282.8214375,
+      "max_us": 190949.674,
+      "min_us": 175040.82
+    },
+    {
+      "op": "NotifyDispatch",
+      "rank_count": 16,
+      "median_us": 88238.253,
+      "mean_us": 83463.8353125,
+      "max_us": 98693.02,
+      "min_us": 37923.098
+    },
+    {
+      "op": "AscendQuantV2",
+      "rank_count": 16,
+      "median_us": 80456.269,
+      "mean_us": 80912.4811875,
+      "max_us": 84878.255,
+      "min_us": 79098.578
+    },
+    {
+      "op": "CamMoeCombineNormal",
+      "rank_count": 16,
+      "median_us": 72153.5385,
+      "mean_us": 72833.551625,
+      "max_us": 79240.66,
+      "min_us": 65055.64
+    },
+    {
+      "op": "SparseFlashAttention",
+      "rank_count": 16,
+      "median_us": 70586.862,
+      "mean_us": 71148.359875,
+      "max_us": 76632.925,
+      "min_us": 67920.6
+    },
+    {
+      "op": "ScatterNdUpdate",
+      "rank_count": 16,
+      "median_us": 62935.5965,
+      "mean_us": 62829.883375,
+      "max_us": 63739.058,
+      "min_us": 61490.711
+    },
+    {
+      "op": "Cast",
+      "rank_count": 16,
+      "median_us": 51519.559,
+      "mean_us": 51423.1988125,
+      "max_us": 54300.847,
+      "min_us": 49077.4
+    },
+    {
+      "op": "Transpose",
+      "rank_count": 16,
+      "median_us": 44944.8905,
+      "mean_us": 44694.4938125,
+      "max_us": 48797.9,
+      "min_us": 41547.789
+    },
+    {
+      "op": "Index",
+      "rank_count": 16,
+      "median_us": 44258.9545,
+      "mean_us": 44521.664,
+      "max_us": 50865.778,
+      "min_us": 42230.482
+    },
+    {
+      "op": "MatMulV2",
+      "rank_count": 16,
+      "median_us": 40158.890499999994,
+      "mean_us": 40126.1571875,
+      "max_us": 41101.757,
+      "min_us": 39292.623
+    },
+    {
+      "op": "_swiglu_quant_kernel_0",
+      "rank_count": 16,
+      "median_us": 25223.912,
+      "mean_us": 25185.54875,
+      "max_us": 29861.46,
+      "min_us": 22317.743
+    },
+    {
+      "op": "BatchMatMulV2",
+      "rank_count": 16,
+      "median_us": 23199.2745,
+      "mean_us": 23493.2541875,
+      "max_us": 24947.059,
+      "min_us": 22917.8
+    },
+    {
+      "op": "DynamicQuant",
+      "rank_count": 16,
+      "median_us": 21340.375,
+      "mean_us": 21635.5174375,
+      "max_us": 26705.44,
+      "min_us": 19237.943
+    },
+    {
+      "op": "add_rmsnorm_bias_kernel_1",
+      "rank_count": 16,
+      "median_us": 18334.2065,
+      "mean_us": 18337.974875,
+      "max_us": 18406.723,
+      "min_us": 18288.573
+    },
+    {
+      "op": "batch_matmul_transpose_0",
+      "rank_count": 16,
+      "median_us": 17920.28,
+      "mean_us": 17912.355375,
+      "max_us": 18239.727,
+      "min_us": 17565.58
+    },
+    {
+      "op": "MatMulV3",
+      "rank_count": 16,
+      "median_us": 15726.7045,
+      "mean_us": 15812.145125,
+      "max_us": 16903.896,
+      "min_us": 15105.381
+    },
+    {
+      "op": "LightningIndexer",
+      "rank_count": 16,
+      "median_us": 15387.004,
+      "mean_us": 15613.9085625,
+      "max_us": 18033.06,
+      "min_us": 14533.14
+    },
+    {
+      "op": "fused_split_qk_norm_kernel_0",
+      "rank_count": 16,
+      "median_us": 13705.338,
+      "mean_us": 14131.76225,
+      "max_us": 15289.624,
+      "min_us": 13461.387
+    },
+    {
+      "op": "Add",
+      "rank_count": 16,
+      "median_us": 13494.1665,
+      "mean_us": 13716.965625,
+      "max_us": 15908.274,
+      "min_us": 12373.22
+    },
+    {
+      "op": "ConcatD",
+      "rank_count": 16,
+      "median_us": 13452.3235,
+      "mean_us": 13516.5894375,
+      "max_us": 16194.891,
+      "min_us": 11456.88
+    },
+    {
+      "op": "CamMoeDispatchNormal",
+      "rank_count": 16,
+      "median_us": 12480.113000000001,
+      "mean_us": 12352.72225,
+      "max_us": 13884.757,
+      "min_us": 10278.805
+    },
+    {
+      "op": "SwiGlu",
+      "rank_count": 16,
+      "median_us": 12161.311000000002,
+      "mean_us": 12191.564125,
+      "max_us": 12893.936,
+      "min_us": 11569.653
+    },
+    {
+      "op": "fused_rope_qk_mqa_kernel_opt_0",
+      "rank_count": 16,
+      "median_us": 11028.97,
+      "mean_us": 10993.786937500001,
+      "max_us": 12928.395,
+      "min_us": 10185.701
+    },
+    {
+      "op": "AsStrided",
+      "rank_count": 16,
+      "median_us": 9683.425,
+      "mean_us": 9685.6158125,
+      "max_us": 9739.7,
+      "min_us": 9627.89
+    },
+    {
+      "op": "MoeGatingTopK",
+      "rank_count": 16,
+      "median_us": 9014.021,
+      "mean_us": 9025.2245,
+      "max_us": 9135.278,
+      "min_us": 8925.24
+    },
+    {
+      "op": "LayerNormV3",
+      "rank_count": 16,
+      "median_us": 7158.371499999999,
+      "mean_us": 7146.8725,
+      "max_us": 7564.489,
+      "min_us": 6534.02
+    },
+    {
+      "op": "Mul",
+      "rank_count": 16,
+      "median_us": 6381.8945,
+      "mean_us": 6440.931375,
+      "max_us": 6797.377,
+      "min_us": 6291.99
+    }
+  ],
+  "categories_us": {
+    "attention_us": 88493.541,
+    "moe_us": 711789.6795,
+    "collective_us": 597.55,
+    "other_us": 1633723.7294999997
+  },
+  "category_fraction_of_median_step": {
+    "attention_us": 0.03634822041937407,
+    "moe_us": 0.2923635767123572,
+    "collective_us": 0.0002454402758230341,
+    "other_us": 0.6710427625924456
+  },
+  "per_rank": [
+    {
+      "rank_dir": "npu1-23_590_20261102023219780_ascend_pt",
+      "step_total_us": 2435058.0,
+      "computing_us": 1608864.1329999543,
+      "communication_not_overlapped_us": 296309.2389999994,
+      "communication_us": 296668.0589999995,
+      "overlapped_us": 358.8200000000652,
+      "free_us": 529884.6000003853,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          360996.033
+        ],
+        [
+          "GroupedMatmul",
+          237551.725
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          200644.447
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          183911.395
+        ],
+        [
+          "AscendQuantV2",
+          80497.552
+        ],
+        [
+          "NotifyDispatch",
+          72365.705
+        ],
+        [
+          "SparseFlashAttention",
+          70520.171
+        ],
+        [
+          "CamMoeCombineNormal",
+          65055.64
+        ],
+        [
+          "ScatterNdUpdate",
+          63179.219
+        ],
+        [
+          "Cast",
+          50415.52
+        ],
+        [
+          "Index",
+          42495.705
+        ],
+        [
+          "Transpose",
+          41547.789
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_591_20261102023219781_ascend_pt",
+      "step_total_us": 2434812.0,
+      "computing_us": 1643450.9339999259,
+      "communication_not_overlapped_us": 309826.6000000015,
+      "communication_us": 310125.14200000145,
+      "overlapped_us": 298.5419999999576,
+      "free_us": 481534.4330003385,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          332997.591
+        ],
+        [
+          "GroupedMatmul",
+          219555.108
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          216064.66
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          179434.387
+        ],
+        [
+          "NotifyDispatch",
+          96597.19
+        ],
+        [
+          "AscendQuantV2",
+          82584.69
+        ],
+        [
+          "SparseFlashAttention",
+          71379.667
+        ],
+        [
+          "CamMoeCombineNormal",
+          70596.711
+        ],
+        [
+          "ScatterNdUpdate",
+          62929.439
+        ],
+        [
+          "Cast",
+          53607.748
+        ],
+        [
+          "Transpose",
+          47430.268
+        ],
+        [
+          "Index",
+          44811.578
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_592_20261102023219781_ascend_pt",
+      "step_total_us": 2435068.5,
+      "computing_us": 1651087.7999999279,
+      "communication_not_overlapped_us": 315964.8200000005,
+      "communication_us": 316326.3800000005,
+      "overlapped_us": 361.5600000000559,
+      "free_us": 468016.14000028203,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          337793.82
+        ],
+        [
+          "GroupedMatmul",
+          225997.88
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          202643.96
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          185015.78
+        ],
+        [
+          "NotifyDispatch",
+          98693.02
+        ],
+        [
+          "AscendQuantV2",
+          83576.42
+        ],
+        [
+          "CamMoeCombineNormal",
+          78268.82
+        ],
+        [
+          "SparseFlashAttention",
+          73543.76
+        ],
+        [
+          "ScatterNdUpdate",
+          63411.0
+        ],
+        [
+          "Cast",
+          51714.48
+        ],
+        [
+          "Index",
+          46634.96
+        ],
+        [
+          "Transpose",
+          43470.8
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_593_20261102023219781_ascend_pt",
+      "step_total_us": 2434655.0,
+      "computing_us": 1638366.6399999377,
+      "communication_not_overlapped_us": 330533.0599999997,
+      "communication_us": 330894.23999999976,
+      "overlapped_us": 361.1800000000512,
+      "free_us": 465755.4600002695,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          386756.72
+        ],
+        [
+          "GroupedMatmul",
+          224915.48
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          204950.92
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          190631.12
+        ],
+        [
+          "NotifyDispatch",
+          98242.56
+        ],
+        [
+          "AscendQuantV2",
+          80101.98
+        ],
+        [
+          "CamMoeCombineNormal",
+          79240.66
+        ],
+        [
+          "SparseFlashAttention",
+          69999.72
+        ],
+        [
+          "ScatterNdUpdate",
+          62902.94
+        ],
+        [
+          "Cast",
+          50801.0
+        ],
+        [
+          "Index",
+          42700.76
+        ],
+        [
+          "Transpose",
+          42659.0
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_594_20261102023219781_ascend_pt",
+      "step_total_us": 2434835.25,
+      "computing_us": 1573508.6199999563,
+      "communication_not_overlapped_us": 268413.32299999904,
+      "communication_us": 268876.22799999896,
+      "overlapped_us": 462.9049999999115,
+      "free_us": 592913.4050004589,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          329019.998
+        ],
+        [
+          "GroupedMatmul",
+          237333.438
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          194702.33
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          175040.82
+        ],
+        [
+          "AscendQuantV2",
+          79252.579
+        ],
+        [
+          "SparseFlashAttention",
+          68731.033
+        ],
+        [
+          "CamMoeCombineNormal",
+          68620.612
+        ],
+        [
+          "ScatterNdUpdate",
+          61490.711
+        ],
+        [
+          "Cast",
+          52210.941
+        ],
+        [
+          "Index",
+          50865.778
+        ],
+        [
+          "Transpose",
+          45143.504
+        ],
+        [
+          "MatMulV2",
+          39292.623
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_595_20261102023219781_ascend_pt",
+      "step_total_us": 2434648.5,
+      "computing_us": 1625226.2609999608,
+      "communication_not_overlapped_us": 282792.0480000006,
+      "communication_us": 283280.65100000054,
+      "overlapped_us": 488.6029999999446,
+      "free_us": 526630.276000397,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          343703.586
+        ],
+        [
+          "GroupedMatmul",
+          243024.337
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          187503.565
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          182578.49
+        ],
+        [
+          "AscendQuantV2",
+          80392.248
+        ],
+        [
+          "NotifyDispatch",
+          78525.569
+        ],
+        [
+          "SparseFlashAttention",
+          73920.833
+        ],
+        [
+          "CamMoeCombineNormal",
+          68344.766
+        ],
+        [
+          "ScatterNdUpdate",
+          62989.876
+        ],
+        [
+          "Cast",
+          54300.847
+        ],
+        [
+          "Index",
+          45380.502
+        ],
+        [
+          "Transpose",
+          44131.283
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_596_20261102023219781_ascend_pt",
+      "step_total_us": 2434237.25,
+      "computing_us": 1625503.9829999015,
+      "communication_not_overlapped_us": 292017.71500000026,
+      "communication_us": 292437.55600000016,
+      "overlapped_us": 419.8409999998985,
+      "free_us": 516715.7190004039,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          363850.591
+        ],
+        [
+          "GroupedMatmul",
+          242034.679
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          190949.674
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          181414.039
+        ],
+        [
+          "NotifyDispatch",
+          83019.299
+        ],
+        [
+          "AscendQuantV2",
+          80298.162
+        ],
+        [
+          "CamMoeCombineNormal",
+          74770.134
+        ],
+        [
+          "SparseFlashAttention",
+          69628.81
+        ],
+        [
+          "ScatterNdUpdate",
+          62823.632
+        ],
+        [
+          "Cast",
+          50087.706
+        ],
+        [
+          "Transpose",
+          43271.087
+        ],
+        [
+          "Index",
+          43090.0
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_597_20261102023219781_ascend_pt",
+      "step_total_us": 2434353.5,
+      "computing_us": 1647685.2459999265,
+      "communication_not_overlapped_us": 292920.39499999967,
+      "communication_us": 293347.85799999966,
+      "overlapped_us": 427.4629999999888,
+      "free_us": 493747.79700034217,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          344006.452
+        ],
+        [
+          "GroupedMatmul",
+          241464.242
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          192408.243
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          185658.907
+        ],
+        [
+          "NotifyDispatch",
+          91829.035
+        ],
+        [
+          "AscendQuantV2",
+          84878.255
+        ],
+        [
+          "SparseFlashAttention",
+          76632.925
+        ],
+        [
+          "CamMoeCombineNormal",
+          76122.362
+        ],
+        [
+          "ScatterNdUpdate",
+          63718.282
+        ],
+        [
+          "Cast",
+          50402.507
+        ],
+        [
+          "Transpose",
+          46191.858
+        ],
+        [
+          "Index",
+          43706.331
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_598_20261102023219780_ascend_pt",
+      "step_total_us": 2435054.25,
+      "computing_us": 1631256.747999974,
+      "communication_not_overlapped_us": 313498.84500000044,
+      "communication_us": 313960.26900000067,
+      "overlapped_us": 461.4240000002319,
+      "free_us": 490298.779000367,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          333854.88
+        ],
+        [
+          "GroupedMatmul",
+          242716.139
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          196173.997
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          180207.739
+        ],
+        [
+          "NotifyDispatch",
+          88669.592
+        ],
+        [
+          "AscendQuantV2",
+          80722.989
+        ],
+        [
+          "CamMoeCombineNormal",
+          71312.805
+        ],
+        [
+          "SparseFlashAttention",
+          70653.553
+        ],
+        [
+          "ScatterNdUpdate",
+          62517.934
+        ],
+        [
+          "Cast",
+          52410.089
+        ],
+        [
+          "Transpose",
+          44896.401
+        ],
+        [
+          "Index",
+          42230.482
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_599_20261102023219781_ascend_pt",
+      "step_total_us": 2434560.5,
+      "computing_us": 1623855.8899999715,
+      "communication_not_overlapped_us": 304535.8130000003,
+      "communication_us": 304900.7740000005,
+      "overlapped_us": 364.96100000018487,
+      "free_us": 506168.8390003706,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          336198.016
+        ],
+        [
+          "GroupedMatmul",
+          243863.991
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          187590.67
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          182628.608
+        ],
+        [
+          "NotifyDispatch",
+          88019.379
+        ],
+        [
+          "AscendQuantV2",
+          79098.578
+        ],
+        [
+          "CamMoeCombineNormal",
+          72982.459
+        ],
+        [
+          "SparseFlashAttention",
+          70700.81
+        ],
+        [
+          "ScatterNdUpdate",
+          61577.51
+        ],
+        [
+          "Cast",
+          51640.699
+        ],
+        [
+          "Index",
+          45772.068
+        ],
+        [
+          "Transpose",
+          45121.204
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_600_20261102023219781_ascend_pt",
+      "step_total_us": 2434448.25,
+      "computing_us": 1628961.299999938,
+      "communication_not_overlapped_us": 305622.9599999996,
+      "communication_us": 306125.6399999999,
+      "overlapped_us": 502.68000000028405,
+      "free_us": 499864.12000033987,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          340721.8
+        ],
+        [
+          "GroupedMatmul",
+          252042.4
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          184409.1
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          182211.34
+        ],
+        [
+          "NotifyDispatch",
+          90530.5
+        ],
+        [
+          "AscendQuantV2",
+          80640.36
+        ],
+        [
+          "CamMoeCombineNormal",
+          71512.46
+        ],
+        [
+          "SparseFlashAttention",
+          67920.6
+        ],
+        [
+          "ScatterNdUpdate",
+          63148.94
+        ],
+        [
+          "Cast",
+          52170.78
+        ],
+        [
+          "Transpose",
+          48797.9
+        ],
+        [
+          "Index",
+          43041.08
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_601_20261102023219781_ascend_pt",
+      "step_total_us": 2434708.5,
+      "computing_us": 1637928.7339999122,
+      "communication_not_overlapped_us": 300763.58,
+      "communication_us": 301215.8630000001,
+      "overlapped_us": 452.2830000001122,
+      "free_us": 496016.23200035526,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          382414.637
+        ],
+        [
+          "GroupedMatmul",
+          232434.846
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          204679.586
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          181642.704
+        ],
+        [
+          "NotifyDispatch",
+          85652.172
+        ],
+        [
+          "AscendQuantV2",
+          81571.224
+        ],
+        [
+          "CamMoeCombineNormal",
+          75713.613
+        ],
+        [
+          "SparseFlashAttention",
+          74346.465
+        ],
+        [
+          "ScatterNdUpdate",
+          62941.754
+        ],
+        [
+          "Cast",
+          49690.466
+        ],
+        [
+          "Index",
+          45102.778
+        ],
+        [
+          "Transpose",
+          44960.979
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_602_20261102023219781_ascend_pt",
+      "step_total_us": 2433570.25,
+      "computing_us": 1644273.3270000562,
+      "communication_not_overlapped_us": 310636.252,
+      "communication_us": 311237.7319999998,
+      "overlapped_us": 601.4799999998068,
+      "free_us": 478660.62700035813,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          369867.694
+        ],
+        [
+          "GroupedMatmul",
+          245520.486
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          192441.281
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          183681.502
+        ],
+        [
+          "NotifyDispatch",
+          97278.971
+        ],
+        [
+          "AscendQuantV2",
+          79904.183
+        ],
+        [
+          "CamMoeCombineNormal",
+          77041.84
+        ],
+        [
+          "SparseFlashAttention",
+          73119.981
+        ],
+        [
+          "ScatterNdUpdate",
+          62694.116
+        ],
+        [
+          "Cast",
+          50960.822
+        ],
+        [
+          "Index",
+          42654.178
+        ],
+        [
+          "Transpose",
+          42091.534
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_603_20261102023219781_ascend_pt",
+      "step_total_us": 2433208.75,
+      "computing_us": 1624923.3539999304,
+      "communication_not_overlapped_us": 294863.92300000065,
+      "communication_us": 295509.5310000009,
+      "overlapped_us": 645.6080000002403,
+      "free_us": 513421.47900039103,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          334559.788
+        ],
+        [
+          "GroupedMatmul",
+          234723.45
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          202260.065
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          178213.641
+        ],
+        [
+          "NotifyDispatch",
+          88457.127
+        ],
+        [
+          "AscendQuantV2",
+          80414.986
+        ],
+        [
+          "CamMoeCombineNormal",
+          71914.197
+        ],
+        [
+          "SparseFlashAttention",
+          68649.231
+        ],
+        [
+          "ScatterNdUpdate",
+          63144.343
+        ],
+        [
+          "Cast",
+          51398.419
+        ],
+        [
+          "Index",
+          45770.139
+        ],
+        [
+          "Transpose",
+          44928.802
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_604_20261102023219780_ascend_pt",
+      "step_total_us": 2433654.0,
+      "computing_us": 1599767.5259999575,
+      "communication_not_overlapped_us": 274708.4739999993,
+      "communication_us": 275151.59599999915,
+      "overlapped_us": 443.1219999998575,
+      "free_us": 559178.0040004303,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          354900.914
+        ],
+        [
+          "GroupedMatmul",
+          240005.098
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          194639.106
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          183019.776
+        ],
+        [
+          "AscendQuantV2",
+          80921.233
+        ],
+        [
+          "CamMoeCombineNormal",
+          71446.867
+        ],
+        [
+          "SparseFlashAttention",
+          69124.239
+        ],
+        [
+          "ScatterNdUpdate",
+          63739.058
+        ],
+        [
+          "NotifyDispatch",
+          57409.708
+        ],
+        [
+          "Cast",
+          51881.757
+        ],
+        [
+          "Transpose",
+          45475.792
+        ],
+        [
+          "Index",
+          45050.685
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_605_20261102023219781_ascend_pt",
+      "step_total_us": 2433652.75,
+      "computing_us": 1617585.1399999352,
+      "communication_not_overlapped_us": 304188.69999999925,
+      "communication_us": 304667.9399999995,
+      "overlapped_us": 479.2400000002235,
+      "free_us": 511879.00000036065,
+      "top_ops": [
+        [
+          "QuantBatchMatmulV3",
+          391511.56
+        ],
+        [
+          "MoeLowLatencyCombineV2",
+          239190.5
+        ],
+        [
+          "GroupedMatmul",
+          191401.24
+        ],
+        [
+          "MoeLowLatencyDispatchV2",
+          187699.26
+        ],
+        [
+          "NotifyDispatch",
+          82208.44
+        ],
+        [
+          "AscendQuantV2",
+          79744.26
+        ],
+        [
+          "CamMoeCombineNormal",
+          72392.88
+        ],
+        [
+          "SparseFlashAttention",
+          69501.96
+        ],
+        [
+          "ScatterNdUpdate",
+          62069.38
+        ],
+        [
+          "Cast",
+          49077.4
+        ],
+        [
+          "Transpose",
+          44993.7
+        ],
+        [
+          "Index",
+          43039.6
+        ]
+      ]
+    }
+  ]
+}

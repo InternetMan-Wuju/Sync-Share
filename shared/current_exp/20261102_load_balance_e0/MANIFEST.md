@@ -37,3 +37,18 @@
 - `evidence/e1/*_service_probe.json`
 
 E1 原始运行日志和路由张量仍保留在本地实验目录。
+
+## Profile / E3 追加
+
+已同步：
+
+- `RESULTS_PROFILE.md`
+- `evidence/profile_summary.json`
+- `evidence/profile_decode_summary.json`
+- `evidence/e3_ops_failure.json`
+- `evidence/profile/prefill_rank0/`（op/API/step/communication 统计）
+- `evidence/profile/decode_rank0/`（op/API/step/communication 统计）
+- `scripts/analyze_profile.py`
+- `scripts/profile_one.py`
+
+64MB 级 kernel_details、operator_details 和 17GB 原始 trace 保留在本地或已清理，不提交 Git。

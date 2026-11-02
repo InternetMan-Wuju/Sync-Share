@@ -1,0 +1,1209 @@
+{
+  "rank_count": 16,
+  "step_total_us": {
+    "median": 2654077.25,
+    "mean": 2653986.921875,
+    "min": 2653140.75,
+    "max": 2654415.75
+  },
+  "top_ops": [
+    {
+      "op": "SparseFlashAttention",
+      "rank_count": 16,
+      "median_us": 1594315.5550000002,
+      "mean_us": 1594479.7069375,
+      "max_us": 1596303.793,
+      "min_us": 1593144.68
+    },
+    {
+      "op": "CamMoeCombineNormal",
+      "rank_count": 16,
+      "median_us": 229850.83049999998,
+      "mean_us": 229778.2891875,
+      "max_us": 265670.04,
+      "min_us": 214746.71
+    },
+    {
+      "op": "QuantBatchMatmulV3",
+      "rank_count": 16,
+      "median_us": 104053.2495,
+      "mean_us": 104208.12362500001,
+      "max_us": 105825.172,
+      "min_us": 103185.9
+    },
+    {
+      "op": "LightningIndexer",
+      "rank_count": 16,
+      "median_us": 81654.5715,
+      "mean_us": 81642.97225,
+      "max_us": 81699.372,
+      "min_us": 81553.149
+    },
+    {
+      "op": "GroupedMatmul",
+      "rank_count": 16,
+      "median_us": 74743.834,
+      "mean_us": 74145.52925,
+      "max_us": 79674.05,
+      "min_us": 60446.7
+    },
+    {
+      "op": "fused_rope_qk_mqa_kernel_opt",
+      "rank_count": 16,
+      "median_us": 59828.316,
+      "mean_us": 59806.00025,
+      "max_us": 60595.331,
+      "min_us": 59078.54
+    },
+    {
+      "op": "CamMoeDispatchNormal",
+      "rank_count": 16,
+      "median_us": 57704.195,
+      "mean_us": 56939.27425,
+      "max_us": 65743.734,
+      "min_us": 45886.8
+    },
+    {
+      "op": "fused_split_qk_norm_kernel",
+      "rank_count": 16,
+      "median_us": 47078.53,
+      "mean_us": 47279.053375,
+      "max_us": 48545.2,
+      "min_us": 46221.684
+    },
+    {
+      "op": "reduce_scatterAicpuKernel",
+      "rank_count": 16,
+      "median_us": 34677.4825,
+      "mean_us": 34753.1684375,
+      "max_us": 35768.394,
+      "min_us": 33937.118
+    },
+    {
+      "op": "allgatherAicpuKernel",
+      "rank_count": 16,
+      "median_us": 27559.756500000003,
+      "mean_us": 27555.787625,
+      "max_us": 28428.148,
+      "min_us": 26804.74
+    },
+    {
+      "op": "AscendQuantV2",
+      "rank_count": 16,
+      "median_us": 26396.885000000002,
+      "mean_us": 26372.312625,
+      "max_us": 26516.03,
+      "min_us": 26168.941
+    },
+    {
+      "op": "MatMulV2",
+      "rank_count": 16,
+      "median_us": 23427.418,
+      "mean_us": 23387.30325,
+      "max_us": 23551.26,
+      "min_us": 23085.261
+    },
+    {
+      "op": "Cast",
+      "rank_count": 16,
+      "median_us": 22938.902000000002,
+      "mean_us": 22953.3458125,
+      "max_us": 23328.865,
+      "min_us": 22629.633
+    },
+    {
+      "op": "_swiglu_quant_kernel",
+      "rank_count": 16,
+      "median_us": 19202.112,
+      "mean_us": 18747.0815625,
+      "max_us": 21505.27,
+      "min_us": 12920.92
+    },
+    {
+      "op": "ScatterNdUpdate",
+      "rank_count": 16,
+      "median_us": 17875.69,
+      "mean_us": 17869.2601875,
+      "max_us": 18015.32,
+      "min_us": 17697.672
+    },
+    {
+      "op": "Transpose",
+      "rank_count": 16,
+      "median_us": 10841.687,
+      "mean_us": 10822.4339375,
+      "max_us": 11576.931,
+      "min_us": 10159.374
+    },
+    {
+      "op": "DynamicQuant",
+      "rank_count": 16,
+      "median_us": 9942.9795,
+      "mean_us": 9857.5506875,
+      "max_us": 10565.17,
+      "min_us": 8666.56
+    },
+    {
+      "op": "add_rmsnorm_bias_kernel",
+      "rank_count": 16,
+      "median_us": 8312.2335,
+      "mean_us": 8249.073375,
+      "max_us": 8500.331,
+      "min_us": 8040.841
+    },
+    {
+      "op": "NotifyDispatch",
+      "rank_count": 16,
+      "median_us": 7199.414000000001,
+      "mean_us": 7198.350875,
+      "max_us": 7635.672,
+      "min_us": 6795.356
+    },
+    {
+      "op": "Index",
+      "rank_count": 16,
+      "median_us": 7198.642,
+      "mean_us": 7208.3235625,
+      "max_us": 7393.2,
+      "min_us": 7085.76
+    },
+    {
+      "op": "Cumsum",
+      "rank_count": 16,
+      "median_us": 6491.215,
+      "mean_us": 6585.7388125,
+      "max_us": 7293.526,
+      "min_us": 6018.039
+    },
+    {
+      "op": "allreduceAicpuKernel",
+      "rank_count": 16,
+      "median_us": 6375.967500000001,
+      "mean_us": 6362.3644375,
+      "max_us": 6613.112,
+      "min_us": 6061.161
+    },
+    {
+      "op": "MoeLowLatencyCombineV2",
+      "rank_count": 16,
+      "median_us": 6061.651,
+      "mean_us": 6178.5854375,
+      "max_us": 7441.32,
+      "min_us": 5620.58
+    },
+    {
+      "op": "BatchMatMulV2",
+      "rank_count": 16,
+      "median_us": 5853.7575,
+      "mean_us": 5856.3945,
+      "max_us": 5889.36,
+      "min_us": 5825.777
+    },
+    {
+      "op": "MoeLowLatencyDispatchV2",
+      "rank_count": 16,
+      "median_us": 5751.493,
+      "mean_us": 5755.751625,
+      "max_us": 6024.28,
+      "min_us": 5503.89
+    },
+    {
+      "op": "DispatchLayout",
+      "rank_count": 16,
+      "median_us": 4488.9349999999995,
+      "mean_us": 4491.5225625,
+      "max_us": 4789.276,
+      "min_us": 4336.167
+    },
+    {
+      "op": "MoeGatingTopK",
+      "rank_count": 16,
+      "median_us": 3090.4105,
+      "mean_us": 3101.36925,
+      "max_us": 3270.925,
+      "min_us": 3007.7
+    },
+    {
+      "op": "Add",
+      "rank_count": 16,
+      "median_us": 1922.54,
+      "mean_us": 1934.26325,
+      "max_us": 2001.36,
+      "min_us": 1849.836
+    },
+    {
+      "op": "SwiGlu",
+      "rank_count": 16,
+      "median_us": 1848.2165,
+      "mean_us": 1849.6921875,
+      "max_us": 2049.838,
+      "min_us": 1624.192
+    },
+    {
+      "op": "AsStrided",
+      "rank_count": 16,
+      "median_us": 1819.5285,
+      "mean_us": 1814.934625,
+      "max_us": 1839.097,
+      "min_us": 1787.64
+    }
+  ],
+  "categories_us": {
+    "attention_us": 1782876.9725000004,
+    "moe_us": 381691.349,
+    "collective_us": 68633.307,
+    "other_us": 420875.62149999966
+  },
+  "category_fraction_of_median_step": {
+    "attention_us": 0.6717502184610491,
+    "moe_us": 0.14381320249815638,
+    "collective_us": 0.025859573981880143,
+    "other_us": 0.15857700505891442
+  },
+  "per_rank": [
+    {
+      "rank_dir": "npu1-23_590_20261102023105685_ascend_pt",
+      "step_total_us": 2654415.75,
+      "computing_us": 2388044.517999999,
+      "communication_not_overlapped_us": 120626.97500000003,
+      "communication_us": 120628.49500000002,
+      "overlapped_us": 1.5199999999895226,
+      "free_us": 145744.24199999284,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1594008.768
+        ],
+        [
+          "CamMoeCombineNormal",
+          218855.053
+        ],
+        [
+          "QuantBatchMatmulV3",
+          104999.676
+        ],
+        [
+          "LightningIndexer",
+          81644.191
+        ],
+        [
+          "GroupedMatmul",
+          74229.384
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          59769.895
+        ],
+        [
+          "CamMoeDispatchNormal",
+          57558.55
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          46786.114
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          33937.118
+        ],
+        [
+          "allgatherAicpuKernel",
+          27173.942
+        ],
+        [
+          "AscendQuantV2",
+          26352.468
+        ],
+        [
+          "MatMulV2",
+          23428.669
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_591_20261102023105685_ascend_pt",
+      "step_total_us": 2654156.5,
+      "computing_us": 2405717.913000026,
+      "communication_not_overlapped_us": 119944.33999999997,
+      "communication_us": 120037.30099999996,
+      "overlapped_us": 92.96099999999569,
+      "free_us": 128494.37700000011,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1595414.497
+        ],
+        [
+          "CamMoeCombineNormal",
+          233990.395
+        ],
+        [
+          "QuantBatchMatmulV3",
+          103185.9
+        ],
+        [
+          "LightningIndexer",
+          81556.769
+        ],
+        [
+          "GroupedMatmul",
+          74389.406
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          59101.721
+        ],
+        [
+          "CamMoeDispatchNormal",
+          56334.106
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          48056.441
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          35392.947
+        ],
+        [
+          "allgatherAicpuKernel",
+          27640.472
+        ],
+        [
+          "AscendQuantV2",
+          26168.941
+        ],
+        [
+          "MatMulV2",
+          23450.07
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_592_20261102023105685_ascend_pt",
+      "step_total_us": 2653890.0,
+      "computing_us": 2393914.7000000216,
+      "communication_not_overlapped_us": 118245.68000000008,
+      "communication_us": 118249.22000000009,
+      "overlapped_us": 3.540000000008149,
+      "free_us": 141729.69999999215,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1593144.68
+        ],
+        [
+          "CamMoeCombineNormal",
+          219531.22
+        ],
+        [
+          "QuantBatchMatmulV3",
+          103598.96
+        ],
+        [
+          "LightningIndexer",
+          81665.74
+        ],
+        [
+          "GroupedMatmul",
+          76319.44
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          60427.48
+        ],
+        [
+          "CamMoeDispatchNormal",
+          57849.84
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          48545.2
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          34854.0
+        ],
+        [
+          "allgatherAicpuKernel",
+          27919.7
+        ],
+        [
+          "AscendQuantV2",
+          26401.72
+        ],
+        [
+          "MatMulV2",
+          23194.52
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_593_20261102023105685_ascend_pt",
+      "step_total_us": 2654314.5,
+      "computing_us": 2396797.7600000207,
+      "communication_not_overlapped_us": 121405.04000000007,
+      "communication_us": 121426.96000000008,
+      "overlapped_us": 21.920000000012806,
+      "free_us": 136111.53999999518,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1593837.32
+        ],
+        [
+          "CamMoeCombineNormal",
+          232617.82
+        ],
+        [
+          "QuantBatchMatmulV3",
+          105323.62
+        ],
+        [
+          "LightningIndexer",
+          81589.8
+        ],
+        [
+          "GroupedMatmul",
+          72013.96
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          60079.4
+        ],
+        [
+          "CamMoeDispatchNormal",
+          55449.94
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          47125.26
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          35180.04
+        ],
+        [
+          "allgatherAicpuKernel",
+          27333.78
+        ],
+        [
+          "AscendQuantV2",
+          26312.76
+        ],
+        [
+          "MatMulV2",
+          23253.42
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_594_20261102023105685_ascend_pt",
+      "step_total_us": 2654102.0,
+      "computing_us": 2397239.7180000446,
+      "communication_not_overlapped_us": 118029.52299999997,
+      "communication_us": 118061.64299999997,
+      "overlapped_us": 32.11999999999534,
+      "free_us": 138832.64799999297,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1594581.34
+        ],
+        [
+          "CamMoeCombineNormal",
+          236319.622
+        ],
+        [
+          "QuantBatchMatmulV3",
+          103681.913
+        ],
+        [
+          "LightningIndexer",
+          81697.952
+        ],
+        [
+          "GroupedMatmul",
+          71977.698
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          59949.998
+        ],
+        [
+          "CamMoeDispatchNormal",
+          50731.833
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          48518.689
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          34410.528
+        ],
+        [
+          "allgatherAicpuKernel",
+          27994.759
+        ],
+        [
+          "AscendQuantV2",
+          26210.842
+        ],
+        [
+          "MatMulV2",
+          23473.49
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_595_20261102023105685_ascend_pt",
+      "step_total_us": 2654110.5,
+      "computing_us": 2407278.6889999975,
+      "communication_not_overlapped_us": 117098.4609999999,
+      "communication_us": 117182.24099999989,
+      "overlapped_us": 83.77999999999884,
+      "free_us": 129733.23900000042,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1596303.793
+        ],
+        [
+          "CamMoeCombineNormal",
+          229256.421
+        ],
+        [
+          "QuantBatchMatmulV3",
+          104381.228
+        ],
+        [
+          "LightningIndexer",
+          81680.432
+        ],
+        [
+          "GroupedMatmul",
+          76541.051
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          60595.331
+        ],
+        [
+          "CamMoeDispatchNormal",
+          59103.062
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          47225.463
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          35768.394
+        ],
+        [
+          "allgatherAicpuKernel",
+          28428.148
+        ],
+        [
+          "AscendQuantV2",
+          26392.05
+        ],
+        [
+          "MatMulV2",
+          23276.766
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_596_20261102023105685_ascend_pt",
+      "step_total_us": 2653140.75,
+      "computing_us": 2400205.280000015,
+      "communication_not_overlapped_us": 121150.27799999993,
+      "communication_us": 121166.01799999992,
+      "overlapped_us": 15.739999999990687,
+      "free_us": 131784.99099999995,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1595115.971
+        ],
+        [
+          "CamMoeCombineNormal",
+          228402.104
+        ],
+        [
+          "QuantBatchMatmulV3",
+          104142.959
+        ],
+        [
+          "LightningIndexer",
+          81636.851
+        ],
+        [
+          "GroupedMatmul",
+          75098.262
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          59557.41
+        ],
+        [
+          "CamMoeDispatchNormal",
+          58214.603
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          47031.8
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          34685.652
+        ],
+        [
+          "allgatherAicpuKernel",
+          27740.154
+        ],
+        [
+          "AscendQuantV2",
+          26472.69
+        ],
+        [
+          "MatMulV2",
+          23401.127
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_597_20261102023105685_ascend_pt",
+      "step_total_us": 2654025.0,
+      "computing_us": 2400512.1550000184,
+      "communication_not_overlapped_us": 121192.36099999995,
+      "communication_us": 121206.68099999994,
+      "overlapped_us": 14.319999999992433,
+      "free_us": 132320.37199999948,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1595309.175
+        ],
+        [
+          "CamMoeCombineNormal",
+          215262.081
+        ],
+        [
+          "QuantBatchMatmulV3",
+          103559.171
+        ],
+        [
+          "LightningIndexer",
+          81664.952
+        ],
+        [
+          "GroupedMatmul",
+          79674.05
+        ],
+        [
+          "CamMoeDispatchNormal",
+          65743.734
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          59520.35
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          46221.684
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          35119.062
+        ],
+        [
+          "allgatherAicpuKernel",
+          27666.853
+        ],
+        [
+          "AscendQuantV2",
+          26445.188
+        ],
+        [
+          "MatMulV2",
+          23440.989
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_598_20261102023105685_ascend_pt",
+      "step_total_us": 2653992.75,
+      "computing_us": 2401866.644000015,
+      "communication_not_overlapped_us": 118592.71800000001,
+      "communication_us": 118629.538,
+      "overlapped_us": 36.81999999999243,
+      "free_us": 133533.5449999985,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1593910.047
+        ],
+        [
+          "CamMoeCombineNormal",
+          235494.905
+        ],
+        [
+          "QuantBatchMatmulV3",
+          103278.104
+        ],
+        [
+          "LightningIndexer",
+          81631.091
+        ],
+        [
+          "GroupedMatmul",
+          72404.226
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          60574.11
+        ],
+        [
+          "CamMoeDispatchNormal",
+          55644.272
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          48284.944
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          34414.627
+        ],
+        [
+          "allgatherAicpuKernel",
+          27382.767
+        ],
+        [
+          "AscendQuantV2",
+          26513.471
+        ],
+        [
+          "Cast",
+          23328.865
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_599_20261102023105685_ascend_pt",
+      "step_total_us": 2653969.0,
+      "computing_us": 2397542.7790000346,
+      "communication_not_overlapped_us": 121180.77400000008,
+      "communication_us": 121196.45400000009,
+      "overlapped_us": 15.680000000007567,
+      "free_us": 135245.57299999555,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1594245.993
+        ],
+        [
+          "CamMoeCombineNormal",
+          244956.914
+        ],
+        [
+          "QuantBatchMatmulV3",
+          103616.45
+        ],
+        [
+          "LightningIndexer",
+          81619.01
+        ],
+        [
+          "GroupedMatmul",
+          68935.837
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          59682.052
+        ],
+        [
+          "CamMoeDispatchNormal",
+          49242.803
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          46900.757
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          35511.629
+        ],
+        [
+          "allgatherAicpuKernel",
+          27647.432
+        ],
+        [
+          "AscendQuantV2",
+          26201.045
+        ],
+        [
+          "MatMulV2",
+          23469.408
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_600_20261102023105685_ascend_pt",
+      "step_total_us": 2654074.75,
+      "computing_us": 2401508.4400000256,
+      "communication_not_overlapped_us": 122640.90000000004,
+      "communication_us": 122643.84000000004,
+      "overlapped_us": 2.9400000000023283,
+      "free_us": 129925.36000000288,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1594093.78
+        ],
+        [
+          "CamMoeCombineNormal",
+          230445.24
+        ],
+        [
+          "QuantBatchMatmulV3",
+          103963.54
+        ],
+        [
+          "LightningIndexer",
+          81626.88
+        ],
+        [
+          "GroupedMatmul",
+          75399.82
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          59078.54
+        ],
+        [
+          "CamMoeDispatchNormal",
+          58343.06
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          47654.64
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          34079.24
+        ],
+        [
+          "allgatherAicpuKernel",
+          26804.74
+        ],
+        [
+          "AscendQuantV2",
+          26451.72
+        ],
+        [
+          "MatMulV2",
+          23463.76
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_601_20261102023105685_ascend_pt",
+      "step_total_us": 2654109.75,
+      "computing_us": 2398455.312000009,
+      "communication_not_overlapped_us": 120754.387,
+      "communication_us": 120771.027,
+      "overlapped_us": 16.639999999999418,
+      "free_us": 134900.0099999955,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1594825.625
+        ],
+        [
+          "CamMoeCombineNormal",
+          214746.71
+        ],
+        [
+          "QuantBatchMatmulV3",
+          105825.172
+        ],
+        [
+          "LightningIndexer",
+          81699.372
+        ],
+        [
+          "GroupedMatmul",
+          79415.607
+        ],
+        [
+          "CamMoeDispatchNormal",
+          62738.513
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          59886.737
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          46847.296
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          34469.808
+        ],
+        [
+          "allgatherAicpuKernel",
+          27196.723
+        ],
+        [
+          "AscendQuantV2",
+          26516.03
+        ],
+        [
+          "MatMulV2",
+          23426.167
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_602_20261102023105685_ascend_pt",
+      "step_total_us": 2653623.5,
+      "computing_us": 2397330.906000029,
+      "communication_not_overlapped_us": 121161.28099999997,
+      "communication_us": 121212.51599999997,
+      "overlapped_us": 51.23500000000058,
+      "free_us": 135131.10099999738,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1595022.292
+        ],
+        [
+          "CamMoeCombineNormal",
+          217517.064
+        ],
+        [
+          "QuantBatchMatmulV3",
+          104681.974
+        ],
+        [
+          "LightningIndexer",
+          81669.995
+        ],
+        [
+          "GroupedMatmul",
+          78721.714
+        ],
+        [
+          "CamMoeDispatchNormal",
+          62848.068
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          60034.021
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          46863.126
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          34302.408
+        ],
+        [
+          "allgatherAicpuKernel",
+          27479.041
+        ],
+        [
+          "AscendQuantV2",
+          26433.585
+        ],
+        [
+          "MatMulV2",
+          23353.626
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_603_20261102023105685_ascend_pt",
+      "step_total_us": 2654079.75,
+      "computing_us": 2397427.219000008,
+      "communication_not_overlapped_us": 122226.70599999992,
+      "communication_us": 122330.62799999992,
+      "overlapped_us": 103.92200000000594,
+      "free_us": 134425.92399999654,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1594385.117
+        ],
+        [
+          "CamMoeCombineNormal",
+          220068.037
+        ],
+        [
+          "QuantBatchMatmulV3",
+          103415.867
+        ],
+        [
+          "LightningIndexer",
+          81668.152
+        ],
+        [
+          "GroupedMatmul",
+          77770.554
+        ],
+        [
+          "CamMoeDispatchNormal",
+          60340.986
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          59985.678
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          46428.648
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          34669.313
+        ],
+        [
+          "allgatherAicpuKernel",
+          27425.648
+        ],
+        [
+          "AscendQuantV2",
+          26409.787
+        ],
+        [
+          "MatMulV2",
+          23523.031
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_604_20261102023105685_ascend_pt",
+      "step_total_us": 2654121.5,
+      "computing_us": 2398116.0840000156,
+      "communication_not_overlapped_us": 121699.8890000002,
+      "communication_us": 121717.12900000019,
+      "overlapped_us": 17.239999999990687,
+      "free_us": 134305.51599999648,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1594204.533
+        ],
+        [
+          "CamMoeCombineNormal",
+          233319.001
+        ],
+        [
+          "QuantBatchMatmulV3",
+          104407.364
+        ],
+        [
+          "LightningIndexer",
+          81553.149
+        ],
+        [
+          "GroupedMatmul",
+          72990.759
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          59083.201
+        ],
+        [
+          "CamMoeDispatchNormal",
+          54998.218
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          47649.812
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          34520.289
+        ],
+        [
+          "allgatherAicpuKernel",
+          27211.283
+        ],
+        [
+          "AscendQuantV2",
+          26350.025
+        ],
+        [
+          "MatMulV2",
+          23405.288
+        ]
+      ]
+    },
+    {
+      "rank_dir": "npu1-23_605_20261102023105685_ascend_pt",
+      "step_total_us": 2653664.75,
+      "computing_us": 2402704.2000000277,
+      "communication_not_overlapped_us": 122136.92000000007,
+      "communication_us": 122145.52000000006,
+      "overlapped_us": 8.599999999991269,
+      "free_us": 128823.50000000249,
+      "top_ops": [
+        [
+          "SparseFlashAttention",
+          1593272.38
+        ],
+        [
+          "CamMoeCombineNormal",
+          265670.04
+        ],
+        [
+          "QuantBatchMatmulV3",
+          105268.08
+        ],
+        [
+          "LightningIndexer",
+          81683.22
+        ],
+        [
+          "GroupedMatmul",
+          60446.7
+        ],
+        [
+          "fused_rope_qk_mqa_kernel_opt",
+          59570.08
+        ],
+        [
+          "fused_split_qk_norm_kernel",
+          46324.98
+        ],
+        [
+          "CamMoeDispatchNormal",
+          45886.8
+        ],
+        [
+          "reduce_scatterAicpuKernel",
+          34735.64
+        ],
+        [
+          "allgatherAicpuKernel",
+          27847.16
+        ],
+        [
+          "AscendQuantV2",
+          26324.68
+        ],
+        [
+          "MatMulV2",
+          23551.26
+        ]
+      ]
+    }
+  ]
+}

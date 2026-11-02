@@ -30,6 +30,7 @@
 
 - [单机负载均衡 E0（2026-11-02，PASS）](shared/current_exp/20261102_load_balance_e0/RESULTS_E0.md)：健康基线、权重审计、两组路由采集和三轮基线性能。
 - [单机负载均衡 E1（2026-11-02，负结果）](shared/current_exp/20261102_load_balance_e0/RESULTS_E1.md)：layer 49 与 49/36/54 top-2 预装副本未改善端到端，停止在线复制方向。
+- [关键路径 Profile / E3（2026-11-02）](shared/current_exp/20261102_load_balance_e0/RESULTS_PROFILE.md)：prefill 由 DSA attention 主导；decode MoE LL 通信占比约 15.5%；`DEEP_USE_MODE=ops` 不可用。
 
 ### `handoff/`
 

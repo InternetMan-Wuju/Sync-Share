@@ -22,6 +22,7 @@ NET_IFNAME="${NET_IFNAME:-tap0}"
 DISPATCH_TOKENS="${DISPATCH_TOKENS:-64}"
 RECD_BUF="${RECD_BUF:-128}"
 CACHE_ROOT="${CACHE_ROOT:-/data_lib/cyt/sglang-cache-e0}"
+DEEP_USE_MODE="${DEEP_USE_MODE:-}"
 GRAPH_MAX_BS="${GRAPH_MAX_BS:-16}"
 GRAPH_BS="${GRAPH_BS:-1 2 4 8 16}"
 MANIFEST_SHA="${MANIFEST_SHA:-7870fe31cb26405e7b28e67023c9ce0d413e0506f40fc7704710e38b40b2abc5}"
@@ -58,6 +59,7 @@ start() {
     source /usr/local/Ascend/ascend-toolkit/set_env.sh
     source /usr/local/Ascend/nnal/atb/set_env.sh
     export PYTHONDONTWRITEBYTECODE=1 SGLANG_SET_CPU_AFFINITY=1
+    if [ -n "$DEEP_USE_MODE" ]; then export DEEP_USE_MODE=$DEEP_USE_MODE; fi
     export GLOO_SOCKET_IFNAME=$NET_IFNAME HCCL_SOCKET_IFNAME=$NET_IFNAME
     export HCCL_IF_IP=\$(hostname -I | awk '{print \$1}')
     export SGLANG_HOST_IP=\$HCCL_IF_IP
@@ -101,6 +103,7 @@ start() {
     printf 'tp=%s ep=%s dp=%s\n' "$TP" "$EP" "$DP"
     printf 'port=%s mem=%s ctx=%s max_prefill=%s mrr=%s chunk=%s\n' "$PORT" "$MEM" "$CTX" "$MAXPREF" "$MRR" "$CHUNK"
     printf 'cache_root=%s\n' "$CACHE_ROOT"
+    printf 'deep_use_mode=%s\n' "$DEEP_USE_MODE"
     printf 'hccl_buf=%s dispatch_tokens=%s recd_buf=%s graph_max_bs=%s graph_bs=%s net_ifname=%s\n' "$HCCL_BUF" "$DISPATCH_TOKENS" "$RECD_BUF" "$GRAPH_MAX_BS" "$GRAPH_BS" "$NET_IFNAME"
     printf 'weight_manifest_sha256=%s\n' "$MANIFEST_SHA"
   } > "$logdir/manifest.txt"
