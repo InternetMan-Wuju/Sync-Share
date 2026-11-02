@@ -1,0 +1,102 @@
+{
+  "at": "2026-11-02T00:29:33.445895+00:00",
+  "hostname": "npu1-23",
+  "python": "3.11.15 (main, May 13 2026, 09:39:24) [GCC 11.4.0]",
+  "platform": "Linux-5.10.0-216.0.0.115.oe2203sp4.aarch64-aarch64-with-glibc2.35",
+  "cwd": "/workspace",
+  "env": {
+    "ASCEND_HOME_PATH": "/usr/local/Ascend/cann-9.0.0",
+    "GLOO_SOCKET_IFNAME": null,
+    "HCCL_SOCKET_IFNAME": null,
+    "HCCL_BUFFSIZE": null,
+    "HCCL_OP_EXPANSION_MODE": null,
+    "PYTHONPATH": "/usr/local/Ascend/cann-9.0.0/python/site-packages:/usr/local/Ascend/cann-9.0.0/opp/built-in/op_impl/ai_core/tbe:/usr/local/Ascend/ascend-toolkit/latest/python/site-packages:/usr/local/Ascend/ascend-toolkit/latest/opp/built-in/op_impl/ai_core/tbe:",
+    "SGLANG_READONLY_WEIGHT_MANIFEST": null,
+    "SGLANG_READONLY_WEIGHT_MANIFEST_SHA256": null,
+    "SGLANG_READONLY_WEIGHT_BASE": null,
+    "SGLANG_READONLY_WEIGHT_AUDIT_DIR": null
+  },
+  "modules": {
+    "torch": {
+      "ok": true,
+      "version": "2.10.0+cpu",
+      "file": "/usr/local/python3.11.15/lib/python3.11/site-packages/torch/__init__.py"
+    },
+    "torch_npu": {
+      "ok": true,
+      "version": "2.10.0",
+      "file": "/usr/local/python3.11.15/lib/python3.11/site-packages/torch_npu/__init__.py"
+    },
+    "sglang": {
+      "ok": true,
+      "version": "0.5.18",
+      "file": "/sgl-workspace/sglang/python/sglang/__init__.py"
+    },
+    "deep_ep": {
+      "ok": true,
+      "version": null,
+      "file": "/usr/local/python3.11.15/lib/python3.11/site-packages/deep_ep/__init__.py"
+    },
+    "safetensors": {
+      "ok": true,
+      "version": "0.8.0",
+      "file": "/usr/local/python3.11.15/lib/python3.11/site-packages/safetensors/__init__.py"
+    },
+    "transformers": {
+      "ok": true,
+      "version": "5.12.1",
+      "file": "/usr/local/python3.11.15/lib/python3.11/site-packages/transformers/__init__.py"
+    }
+  },
+  "npu": {
+    "available": true,
+    "count": 16,
+    "error": null
+  },
+  "devices": [
+    "core",
+    "davinci0",
+    "davinci1",
+    "davinci10",
+    "davinci11",
+    "davinci12",
+    "davinci13",
+    "davinci14",
+    "davinci15",
+    "davinci2",
+    "davinci3",
+    "davinci4",
+    "davinci5",
+    "davinci6",
+    "davinci7",
+    "davinci8",
+    "davinci9",
+    "davinci_manager",
+    "devmm_svm",
+    "fd",
+    "full",
+    "hisi_hdc",
+    "mqueue",
+    "null",
+    "ptmx",
+    "pts",
+    "random",
+    "shm",
+    "stderr",
+    "stdin",
+    "stdout",
+    "tty",
+    "urandom",
+    "zero"
+  ],
+  "network_interfaces": [
+    "bonding_masters",
+    "docker0",
+    "lo",
+    "tap0"
+  ],
+  "deepep_module_spec": {
+    "origin": "/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py",
+    "search_locations": null
+  }
+}

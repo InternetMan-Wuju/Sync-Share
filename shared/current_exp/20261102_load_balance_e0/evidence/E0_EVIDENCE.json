@@ -1,0 +1,613 @@
+{
+  "run_id": "20261102_081322",
+  "generated_at": "2026-11-02T00:29:41.232069+00:00",
+  "host": "npu1-23",
+  "image": "sha256:26a020117564da514f33c4e72353d07020bc4bfe176f4e61858b4abeac6d3e9b [quay.io/ascend/sglang@sha256:f492ff6a50b779db301bb5a8f80e33c98981c5076bd0feb6225b63d7971c6385]",
+  "config": [
+    "run_id=20261102_081322",
+    "started_at=2026-11-02T08:13:22+08:00",
+    "host=npu1-23",
+    "image=quay.io/ascend/sglang:v0.5.18-cann9.0.0-a3",
+    "model=/data_lib/data/models/glm-q",
+    "tp=16 ep=16 dp=1",
+    "port=30080 mem=0.88 ctx=131072 max_prefill=32768 mrr=16 chunk=16384",
+    "cache_root=/data_lib/cyt/sglang-cache-e0",
+    "hccl_buf=650 dispatch_tokens=64 recd_buf=128 graph_max_bs=16 graph_bs=1 2 4 8 16 net_ifname=tap0",
+    "weight_manifest_sha256=7870fe31cb26405e7b28e67023c9ce0d413e0506f40fc7704710e38b40b2abc5"
+  ],
+  "environment": {
+    "at": "2026-11-02T00:29:33.445895+00:00",
+    "hostname": "npu1-23",
+    "python": "3.11.15 (main, May 13 2026, 09:39:24) [GCC 11.4.0]",
+    "platform": "Linux-5.10.0-216.0.0.115.oe2203sp4.aarch64-aarch64-with-glibc2.35",
+    "cwd": "/workspace",
+    "env": {
+      "ASCEND_HOME_PATH": "/usr/local/Ascend/cann-9.0.0",
+      "GLOO_SOCKET_IFNAME": null,
+      "HCCL_SOCKET_IFNAME": null,
+      "HCCL_BUFFSIZE": null,
+      "HCCL_OP_EXPANSION_MODE": null,
+      "PYTHONPATH": "/usr/local/Ascend/cann-9.0.0/python/site-packages:/usr/local/Ascend/cann-9.0.0/opp/built-in/op_impl/ai_core/tbe:/usr/local/Ascend/ascend-toolkit/latest/python/site-packages:/usr/local/Ascend/ascend-toolkit/latest/opp/built-in/op_impl/ai_core/tbe:",
+      "SGLANG_READONLY_WEIGHT_MANIFEST": null,
+      "SGLANG_READONLY_WEIGHT_MANIFEST_SHA256": null,
+      "SGLANG_READONLY_WEIGHT_BASE": null,
+      "SGLANG_READONLY_WEIGHT_AUDIT_DIR": null
+    },
+    "modules": {
+      "torch": {
+        "ok": true,
+        "version": "2.10.0+cpu",
+        "file": "/usr/local/python3.11.15/lib/python3.11/site-packages/torch/__init__.py"
+      },
+      "torch_npu": {
+        "ok": true,
+        "version": "2.10.0",
+        "file": "/usr/local/python3.11.15/lib/python3.11/site-packages/torch_npu/__init__.py"
+      },
+      "sglang": {
+        "ok": true,
+        "version": "0.5.18",
+        "file": "/sgl-workspace/sglang/python/sglang/__init__.py"
+      },
+      "deep_ep": {
+        "ok": true,
+        "version": null,
+        "file": "/usr/local/python3.11.15/lib/python3.11/site-packages/deep_ep/__init__.py"
+      },
+      "safetensors": {
+        "ok": true,
+        "version": "0.8.0",
+        "file": "/usr/local/python3.11.15/lib/python3.11/site-packages/safetensors/__init__.py"
+      },
+      "transformers": {
+        "ok": true,
+        "version": "5.12.1",
+        "file": "/usr/local/python3.11.15/lib/python3.11/site-packages/transformers/__init__.py"
+      }
+    },
+    "npu": {
+      "available": true,
+      "count": 16,
+      "error": null
+    },
+    "devices": [
+      "core",
+      "davinci0",
+      "davinci1",
+      "davinci10",
+      "davinci11",
+      "davinci12",
+      "davinci13",
+      "davinci14",
+      "davinci15",
+      "davinci2",
+      "davinci3",
+      "davinci4",
+      "davinci5",
+      "davinci6",
+      "davinci7",
+      "davinci8",
+      "davinci9",
+      "davinci_manager",
+      "devmm_svm",
+      "fd",
+      "full",
+      "hisi_hdc",
+      "mqueue",
+      "null",
+      "ptmx",
+      "pts",
+      "random",
+      "shm",
+      "stderr",
+      "stdin",
+      "stdout",
+      "tty",
+      "urandom",
+      "zero"
+    ],
+    "network_interfaces": [
+      "bonding_masters",
+      "docker0",
+      "lo",
+      "tap0"
+    ],
+    "deepep_module_spec": {
+      "origin": "/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py",
+      "search_locations": null
+    }
+  },
+  "service_probe": {
+    "health": true,
+    "chat": [
+      {
+        "name": "arithmetic",
+        "status": 200,
+        "elapsed_s": 0.4917609530966729,
+        "content": "2"
+      },
+      {
+        "name": "fixed_list",
+        "status": 200,
+        "elapsed_s": 2.337668711086735,
+        "content": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20"
+      }
+    ],
+    "fixed_generate": {
+      "status": 200,
+      "elapsed_s": 1.8735224179690704
+    },
+    "server_info": {
+      "tp_size": 16,
+      "dp_size": 1,
+      "ep_size": 16,
+      "context_length": 131072,
+      "chunked_prefill_size": 16384,
+      "max_prefill_tokens": 32768,
+      "max_running_requests": 16,
+      "mem_fraction_static": 0.88,
+      "max_total_num_tokens": 63232,
+      "cuda_graph_config": {
+        "decode": {
+          "backend": "full",
+          "max_bs": 16,
+          "bs": [
+            1,
+            2,
+            4,
+            8,
+            16
+          ],
+          "tc_compiler": "eager",
+          "full_prefill_max_req": null,
+          "full_prefill_prefix_chunk_tokens": null
+        },
+        "prefill": {
+          "backend": "disabled",
+          "max_bs": 2048,
+          "bs": [
+            4,
+            8,
+            12,
+            16,
+            20,
+            24,
+            28,
+            32,
+            48,
+            64,
+            80,
+            96,
+            112,
+            128,
+            144,
+            160,
+            176,
+            192,
+            208,
+            224,
+            240,
+            256,
+            288,
+            320,
+            352,
+            384,
+            416,
+            448,
+            480,
+            512,
+            576,
+            640,
+            704,
+            768,
+            832,
+            896,
+            960,
+            1024,
+            1280,
+            1536,
+            1792,
+            2048
+          ],
+          "tc_compiler": "eager",
+          "full_prefill_max_req": null,
+          "full_prefill_prefix_chunk_tokens": null
+        }
+      },
+      "enable_eplb": false,
+      "expert_distribution_recorder_mode": "stat",
+      "expert_distribution_recorder_buffer_size": 128
+    }
+  },
+  "weight_audit": {
+    "audit_files": 16,
+    "records": 2912,
+    "errors": 0,
+    "verified_blocks": 369488,
+    "fallback_blocks": 0,
+    "original_drift_blocks": 0,
+    "requested_bytes_aggregate": 12381670434432,
+    "unique_files": 182,
+    "processes": [
+      590,
+      591,
+      592,
+      593,
+      594,
+      595,
+      596,
+      597,
+      598,
+      599,
+      600,
+      601,
+      602,
+      603,
+      604,
+      605
+    ]
+  },
+  "route": {
+    "calibration": {
+      "prefill_aggregate_max_over_mean": 1.2149674479166668,
+      "decode_aggregate_max_over_mean": 1.1740625,
+      "prefill_conserved": true,
+      "prefill_tasks": 2457600,
+      "decode_tasks_observed": 614400,
+      "top_prefill_layers": [
+        {
+          "layer": 49,
+          "rank_max": 10140,
+          "max_over_mean": 4.951171875,
+          "rank_cv": 1.0680497329246195
+        },
+        {
+          "layer": 36,
+          "rank_max": 8074,
+          "max_over_mean": 3.9423828125,
+          "rank_cv": 0.9548154286332614
+        },
+        {
+          "layer": 29,
+          "rank_max": 7899,
+          "max_over_mean": 3.85693359375,
+          "rank_cv": 0.8404432596630714
+        },
+        {
+          "layer": 54,
+          "rank_max": 7773,
+          "max_over_mean": 3.79541015625,
+          "rank_cv": 0.8789213730252737
+        },
+        {
+          "layer": 51,
+          "rank_max": 7456,
+          "max_over_mean": 3.640625,
+          "rank_cv": 0.8220386871540927
+        },
+        {
+          "layer": 38,
+          "rank_max": 7249,
+          "max_over_mean": 3.53955078125,
+          "rank_cv": 0.7830869441059954
+        },
+        {
+          "layer": 17,
+          "rank_max": 6911,
+          "max_over_mean": 3.37451171875,
+          "rank_cv": 0.7363386482276054
+        },
+        {
+          "layer": 33,
+          "rank_max": 6864,
+          "max_over_mean": 3.3515625,
+          "rank_cv": 0.738991794067011
+        },
+        {
+          "layer": 41,
+          "rank_max": 6808,
+          "max_over_mean": 3.32421875,
+          "rank_cv": 0.7619530146385668
+        },
+        {
+          "layer": 65,
+          "rank_max": 6574,
+          "max_over_mean": 3.2099609375,
+          "rank_cv": 0.7805577644548426
+        }
+      ],
+      "top_decode_layers": [
+        {
+          "layer": 12,
+          "rank_max": 2478,
+          "max_over_mean": 4.83984375,
+          "rank_cv": 1.1125734454996037
+        },
+        {
+          "layer": 20,
+          "rank_max": 2368,
+          "max_over_mean": 4.625,
+          "rank_cv": 1.1092686132004679
+        },
+        {
+          "layer": 10,
+          "rank_max": 2329,
+          "max_over_mean": 4.548828125,
+          "rank_cv": 1.0369523498858748
+        },
+        {
+          "layer": 74,
+          "rank_max": 2300,
+          "max_over_mean": 4.4921875,
+          "rank_cv": 1.1398553211024873
+        },
+        {
+          "layer": 15,
+          "rank_max": 2287,
+          "max_over_mean": 4.466796875,
+          "rank_cv": 1.103231910085282
+        },
+        {
+          "layer": 61,
+          "rank_max": 2256,
+          "max_over_mean": 4.40625,
+          "rank_cv": 1.279710356306777
+        },
+        {
+          "layer": 17,
+          "rank_max": 2188,
+          "max_over_mean": 4.2734375,
+          "rank_cv": 1.2100433001376472
+        },
+        {
+          "layer": 31,
+          "rank_max": 2076,
+          "max_over_mean": 4.0546875,
+          "rank_cv": 1.030127174155736
+        },
+        {
+          "layer": 16,
+          "rank_max": 2053,
+          "max_over_mean": 4.009765625,
+          "rank_cv": 1.1643053863896184
+        },
+        {
+          "layer": 32,
+          "rank_max": 2050,
+          "max_over_mean": 4.00390625,
+          "rank_cv": 0.9943588407055852
+        }
+      ]
+    },
+    "holdout": {
+      "prefill_aggregate_max_over_mean": 1.2483138020833333,
+      "decode_aggregate_max_over_mean": 1.1843229166666667,
+      "prefill_conserved": true,
+      "prefill_tasks": 2457600,
+      "decode_tasks_observed": 614400,
+      "top_prefill_layers": [
+        {
+          "layer": 49,
+          "rank_max": 10329,
+          "max_over_mean": 5.04345703125,
+          "rank_cv": 1.1186163241691192
+        },
+        {
+          "layer": 15,
+          "rank_max": 8368,
+          "max_over_mean": 4.0859375,
+          "rank_cv": 0.9555716146523072
+        },
+        {
+          "layer": 54,
+          "rank_max": 8303,
+          "max_over_mean": 4.05419921875,
+          "rank_cv": 0.9298814202666602
+        },
+        {
+          "layer": 36,
+          "rank_max": 8280,
+          "max_over_mean": 4.04296875,
+          "rank_cv": 0.9826745832555464
+        },
+        {
+          "layer": 65,
+          "rank_max": 8265,
+          "max_over_mean": 4.03564453125,
+          "rank_cv": 0.9837034750555653
+        },
+        {
+          "layer": 29,
+          "rank_max": 8061,
+          "max_over_mean": 3.93603515625,
+          "rank_cv": 0.8992337885973679
+        },
+        {
+          "layer": 51,
+          "rank_max": 7717,
+          "max_over_mean": 3.76806640625,
+          "rank_cv": 0.8851107667312725
+        },
+        {
+          "layer": 70,
+          "rank_max": 7088,
+          "max_over_mean": 3.4609375,
+          "rank_cv": 0.8508970828059342
+        },
+        {
+          "layer": 41,
+          "rank_max": 7052,
+          "max_over_mean": 3.443359375,
+          "rank_cv": 0.8103903745751806
+        },
+        {
+          "layer": 74,
+          "rank_max": 7049,
+          "max_over_mean": 3.44189453125,
+          "rank_cv": 0.854808604919971
+        }
+      ],
+      "top_decode_layers": [
+        {
+          "layer": 12,
+          "rank_max": 2476,
+          "max_over_mean": 4.8359375,
+          "rank_cv": 1.1123752052520415
+        },
+        {
+          "layer": 20,
+          "rank_max": 2382,
+          "max_over_mean": 4.65234375,
+          "rank_cv": 1.1155366237481135
+        },
+        {
+          "layer": 10,
+          "rank_max": 2350,
+          "max_over_mean": 4.58984375,
+          "rank_cv": 1.0397384853949934
+        },
+        {
+          "layer": 74,
+          "rank_max": 2339,
+          "max_over_mean": 4.568359375,
+          "rank_cv": 1.1529845444238078
+        },
+        {
+          "layer": 61,
+          "rank_max": 2331,
+          "max_over_mean": 4.552734375,
+          "rank_cv": 1.297316326746043
+        },
+        {
+          "layer": 15,
+          "rank_max": 2272,
+          "max_over_mean": 4.4375,
+          "rank_cv": 1.1039390089353753
+        },
+        {
+          "layer": 17,
+          "rank_max": 2197,
+          "max_over_mean": 4.291015625,
+          "rank_cv": 1.2096978518083257
+        },
+        {
+          "layer": 31,
+          "rank_max": 2099,
+          "max_over_mean": 4.099609375,
+          "rank_cv": 1.034556549827635
+        },
+        {
+          "layer": 16,
+          "rank_max": 2040,
+          "max_over_mean": 3.984375,
+          "rank_cv": 1.158234825794031
+        },
+        {
+          "layer": 9,
+          "rank_max": 2033,
+          "max_over_mean": 3.970703125,
+          "rank_cv": 1.051607735781767
+        }
+      ]
+    }
+  },
+  "baseline": {
+    "prefill_8k_1": {
+      "requests": 3,
+      "success": 3,
+      "ttft_s": {
+        "mean": 2.5719993114471436,
+        "p50": 2.572835683822632,
+        "p95": 2.5729665756225586,
+        "min": 2.570181131362915,
+        "max": 2.572981119155884
+      },
+      "e2e_latency_s": {
+        "mean": 2.573976842686534,
+        "p50": 2.5748209570301697,
+        "p95": 2.574935905926395,
+        "min": 2.5721608930034563,
+        "max": 2.574948678025976
+      },
+      "client_elapsed_s": {
+        "mean": 2.5770350083475932,
+        "p50": 2.577993117040023,
+        "p95": 2.578042194864247,
+        "min": 2.575064260046929,
+        "max": 2.5780476479558274
+      },
+      "output_tokens_per_s": 0.3829336336039319
+    },
+    "decode_128_256": {
+      "requests": 3,
+      "success": 3,
+      "ttft_s": {
+        "mean": 0.4312489827473958,
+        "p50": 0.4377403259277344,
+        "p95": 0.4422419309616089,
+        "min": 0.41326451301574707,
+        "max": 0.44274210929870605
+      },
+      "tpot_s": {
+        "mean": 0.04801136340970308,
+        "p50": 0.04800116221110026,
+        "p95": 0.048032075564066565,
+        "min": 0.047997417636946135,
+        "max": 0.048035510381062824
+      },
+      "e2e_latency_s": {
+        "mean": 12.674146607634611,
+        "p50": 12.678036627010442,
+        "p95": 12.690421170578338,
+        "min": 12.65260596491862,
+        "max": 12.691797230974771
+      },
+      "client_elapsed_s": {
+        "mean": 12.676587548378544,
+        "p50": 12.680435587069951,
+        "p95": 12.692897720553447,
+        "min": 12.65504465601407,
+        "max": 12.694282402051613
+      },
+      "output_tokens_per_s": 20.146894239961423
+    },
+    "mixed_1024_64_c4": {
+      "requests": 12,
+      "success": 12,
+      "ttft_s": {
+        "mean": 1.0731910665829976,
+        "p50": 0.9787459373474121,
+        "p95": 1.2713578939437866,
+        "min": 0.9720733165740967,
+        "max": 1.2715506553649902
+      },
+      "tpot_s": {
+        "mean": 0.050696911319853766,
+        "p50": 0.0506803554201883,
+        "p95": 0.05092938135540674,
+        "min": 0.050417582194010414,
+        "max": 0.050934651541331456
+      },
+      "e2e_latency_s": {
+        "mean": 4.267096507673462,
+        "p50": 4.180406044004485,
+        "p95": 4.449977869802387,
+        "min": 4.17147515702527,
+        "max": 4.45013159699738
+      },
+      "client_elapsed_s": {
+        "mean": 4.271748365650031,
+        "p50": 4.184710243949667,
+        "p95": 4.454526944633107,
+        "min": 4.175468686968088,
+        "max": 4.454884586040862
+      },
+      "output_tokens_per_s": 59.50144222250057
+    }
+  },
+  "limitations": [
+    "decode task counts are not treated as absolute token counts because the recorder path duplicates decode contributions",
+    "synthetic fixed-token inputs only; no production SLO trace yet",
+    "rootless container service is reachable inside the container; host port forwarding is not configured"
+  ]
+}

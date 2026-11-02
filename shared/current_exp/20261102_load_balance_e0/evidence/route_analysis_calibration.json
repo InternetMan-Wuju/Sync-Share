@@ -1,0 +1,2299 @@
+{
+  "dump": "/home/chengyetai/workspace/current_exp/20261102_load_balance_e0/logs/20261102_081322/eplb_windows/000000_1793579172.815737.pt",
+  "window_kind": "manual_final",
+  "num_layers": 78,
+  "num_logical_experts": 256,
+  "num_physical_experts": 256,
+  "ep_size": 16,
+  "n_steps_by_phase": {
+    "prefill": 4,
+    "decode": 64,
+    "other": 0
+  },
+  "phases": {
+    "prefill": {
+      "phase": "prefill",
+      "steps": 4,
+      "observed_task_count": 2457600,
+      "moe_layer_count": 75,
+      "aggregate_rank_load": [
+        151907,
+        155141,
+        168471,
+        141773,
+        137789,
+        170504,
+        138331,
+        173766,
+        161533,
+        130809,
+        137602,
+        151809,
+        186619,
+        159098,
+        149154,
+        143294
+      ],
+      "aggregate_max_over_mean": 1.2149674479166668,
+      "top_layers_by_absolute_rank_max": [
+        {
+          "layer": 49,
+          "total_tasks": 32768,
+          "rank_max": 10140,
+          "max_over_mean": 4.951171875,
+          "rank_cv": 1.0680497329246195,
+          "rank_load": [
+            615,
+            1193,
+            10140,
+            1302,
+            3227,
+            1910,
+            1412,
+            1378,
+            1304,
+            985,
+            1785,
+            1492,
+            2744,
+            1395,
+            1108,
+            778
+          ],
+          "top_experts": [
+            {
+              "expert": 43,
+              "count": 4062
+            },
+            {
+              "expert": 40,
+              "count": 3978
+            },
+            {
+              "expert": 192,
+              "count": 1321
+            },
+            {
+              "expert": 67,
+              "count": 1014
+            },
+            {
+              "expert": 82,
+              "count": 841
+            },
+            {
+              "expert": 172,
+              "count": 818
+            },
+            {
+              "expert": 112,
+              "count": 594
+            },
+            {
+              "expert": 79,
+              "count": 561
+            },
+            {
+              "expert": 36,
+              "count": 520
+            },
+            {
+              "expert": 41,
+              "count": 482
+            }
+          ]
+        },
+        {
+          "layer": 36,
+          "total_tasks": 32768,
+          "rank_max": 8074,
+          "max_over_mean": 3.9423828125,
+          "rank_cv": 0.9548154286332614,
+          "rank_load": [
+            1090,
+            729,
+            859,
+            726,
+            822,
+            3573,
+            1219,
+            1780,
+            655,
+            2621,
+            1103,
+            8074,
+            4787,
+            797,
+            3020,
+            913
+          ],
+          "top_experts": [
+            {
+              "expert": 178,
+              "count": 3765
+            },
+            {
+              "expert": 82,
+              "count": 2837
+            },
+            {
+              "expert": 184,
+              "count": 2514
+            },
+            {
+              "expert": 235,
+              "count": 2334
+            },
+            {
+              "expert": 200,
+              "count": 1888
+            },
+            {
+              "expert": 203,
+              "count": 1861
+            },
+            {
+              "expert": 144,
+              "count": 1404
+            },
+            {
+              "expert": 121,
+              "count": 1081
+            },
+            {
+              "expert": 179,
+              "count": 958
+            },
+            {
+              "expert": 171,
+              "count": 579
+            }
+          ]
+        },
+        {
+          "layer": 29,
+          "total_tasks": 32768,
+          "rank_max": 7899,
+          "max_over_mean": 3.85693359375,
+          "rank_cv": 0.8404432596630714,
+          "rank_load": [
+            1891,
+            2751,
+            872,
+            1430,
+            935,
+            1821,
+            1610,
+            7899,
+            1032,
+            834,
+            1777,
+            2041,
+            4202,
+            1033,
+            1535,
+            1105
+          ],
+          "top_experts": [
+            {
+              "expert": 127,
+              "count": 4074
+            },
+            {
+              "expert": 203,
+              "count": 2845
+            },
+            {
+              "expert": 115,
+              "count": 1931
+            },
+            {
+              "expert": 26,
+              "count": 993
+            },
+            {
+              "expert": 190,
+              "count": 944
+            },
+            {
+              "expert": 170,
+              "count": 853
+            },
+            {
+              "expert": 5,
+              "count": 690
+            },
+            {
+              "expert": 105,
+              "count": 550
+            },
+            {
+              "expert": 93,
+              "count": 536
+            },
+            {
+              "expert": 192,
+              "count": 535
+            }
+          ]
+        },
+        {
+          "layer": 54,
+          "total_tasks": 32768,
+          "rank_max": 7773,
+          "max_over_mean": 3.79541015625,
+          "rank_cv": 0.8789213730252737,
+          "rank_load": [
+            1094,
+            1482,
+            1568,
+            1126,
+            2834,
+            883,
+            833,
+            4077,
+            1141,
+            1407,
+            1027,
+            4030,
+            7773,
+            1279,
+            1664,
+            550
+          ],
+          "top_experts": [
+            {
+              "expert": 205,
+              "count": 4020
+            },
+            {
+              "expert": 126,
+              "count": 3378
+            },
+            {
+              "expert": 176,
+              "count": 2984
+            },
+            {
+              "expert": 194,
+              "count": 2449
+            },
+            {
+              "expert": 71,
+              "count": 1304
+            },
+            {
+              "expert": 9,
+              "count": 704
+            },
+            {
+              "expert": 44,
+              "count": 607
+            },
+            {
+              "expert": 67,
+              "count": 561
+            },
+            {
+              "expert": 28,
+              "count": 479
+            },
+            {
+              "expert": 47,
+              "count": 445
+            }
+          ]
+        },
+        {
+          "layer": 51,
+          "total_tasks": 32768,
+          "rank_max": 7456,
+          "max_over_mean": 3.640625,
+          "rank_cv": 0.8220386871540927,
+          "rank_load": [
+            2057,
+            1700,
+            2315,
+            332,
+            2082,
+            1016,
+            789,
+            1344,
+            4375,
+            1893,
+            680,
+            1510,
+            7456,
+            1674,
+            2754,
+            791
+          ],
+          "top_experts": [
+            {
+              "expert": 131,
+              "count": 3524
+            },
+            {
+              "expert": 196,
+              "count": 3392
+            },
+            {
+              "expert": 204,
+              "count": 3313
+            },
+            {
+              "expert": 229,
+              "count": 1202
+            },
+            {
+              "expert": 4,
+              "count": 1041
+            },
+            {
+              "expert": 209,
+              "count": 751
+            },
+            {
+              "expert": 227,
+              "count": 728
+            },
+            {
+              "expert": 19,
+              "count": 720
+            },
+            {
+              "expert": 149,
+              "count": 710
+            },
+            {
+              "expert": 212,
+              "count": 645
+            }
+          ]
+        },
+        {
+          "layer": 38,
+          "total_tasks": 32768,
+          "rank_max": 7249,
+          "max_over_mean": 3.53955078125,
+          "rank_cv": 0.7830869441059954,
+          "rank_load": [
+            1150,
+            1575,
+            2203,
+            1683,
+            1944,
+            7249,
+            1816,
+            818,
+            1774,
+            4008,
+            813,
+            1018,
+            3442,
+            891,
+            983,
+            1401
+          ],
+          "top_experts": [
+            {
+              "expert": 83,
+              "count": 3143
+            },
+            {
+              "expert": 85,
+              "count": 2976
+            },
+            {
+              "expert": 200,
+              "count": 1596
+            },
+            {
+              "expert": 148,
+              "count": 1215
+            },
+            {
+              "expert": 39,
+              "count": 1199
+            },
+            {
+              "expert": 159,
+              "count": 833
+            },
+            {
+              "expert": 104,
+              "count": 721
+            },
+            {
+              "expert": 23,
+              "count": 666
+            },
+            {
+              "expert": 71,
+              "count": 632
+            },
+            {
+              "expert": 51,
+              "count": 608
+            }
+          ]
+        },
+        {
+          "layer": 17,
+          "total_tasks": 32768,
+          "rank_max": 6911,
+          "max_over_mean": 3.37451171875,
+          "rank_cv": 0.7363386482276054,
+          "rank_load": [
+            1071,
+            1789,
+            1443,
+            1328,
+            1912,
+            729,
+            1211,
+            2868,
+            6911,
+            2173,
+            415,
+            1811,
+            1477,
+            1857,
+            1623,
+            4150
+          ],
+          "top_experts": [
+            {
+              "expert": 137,
+              "count": 4046
+            },
+            {
+              "expert": 246,
+              "count": 3226
+            },
+            {
+              "expert": 128,
+              "count": 1861
+            },
+            {
+              "expert": 152,
+              "count": 1192
+            },
+            {
+              "expert": 180,
+              "count": 1088
+            },
+            {
+              "expert": 115,
+              "count": 1019
+            },
+            {
+              "expert": 75,
+              "count": 962
+            },
+            {
+              "expert": 39,
+              "count": 865
+            },
+            {
+              "expert": 229,
+              "count": 816
+            },
+            {
+              "expert": 30,
+              "count": 812
+            }
+          ]
+        },
+        {
+          "layer": 33,
+          "total_tasks": 32768,
+          "rank_max": 6864,
+          "max_over_mean": 3.3515625,
+          "rank_cv": 0.738991794067011,
+          "rank_load": [
+            1434,
+            1610,
+            2561,
+            3383,
+            760,
+            1404,
+            1401,
+            1270,
+            3820,
+            580,
+            2091,
+            777,
+            6864,
+            1253,
+            1946,
+            1614
+          ],
+          "top_experts": [
+            {
+              "expert": 192,
+              "count": 3981
+            },
+            {
+              "expert": 134,
+              "count": 3062
+            },
+            {
+              "expert": 207,
+              "count": 2322
+            },
+            {
+              "expert": 58,
+              "count": 1863
+            },
+            {
+              "expert": 37,
+              "count": 923
+            },
+            {
+              "expert": 232,
+              "count": 734
+            },
+            {
+              "expert": 175,
+              "count": 664
+            },
+            {
+              "expert": 125,
+              "count": 610
+            },
+            {
+              "expert": 41,
+              "count": 510
+            },
+            {
+              "expert": 7,
+              "count": 457
+            }
+          ]
+        },
+        {
+          "layer": 41,
+          "total_tasks": 32768,
+          "rank_max": 6808,
+          "max_over_mean": 3.32421875,
+          "rank_cv": 0.7619530146385668,
+          "rank_load": [
+            5081,
+            1134,
+            6808,
+            865,
+            1167,
+            1885,
+            1493,
+            1123,
+            2055,
+            1991,
+            920,
+            1336,
+            2003,
+            1290,
+            1345,
+            2272
+          ],
+          "top_experts": [
+            {
+              "expert": 46,
+              "count": 4085
+            },
+            {
+              "expert": 11,
+              "count": 3404
+            },
+            {
+              "expert": 196,
+              "count": 1598
+            },
+            {
+              "expert": 38,
+              "count": 1103
+            },
+            {
+              "expert": 134,
+              "count": 984
+            },
+            {
+              "expert": 39,
+              "count": 756
+            },
+            {
+              "expert": 8,
+              "count": 623
+            },
+            {
+              "expert": 247,
+              "count": 583
+            },
+            {
+              "expert": 122,
+              "count": 530
+            },
+            {
+              "expert": 143,
+              "count": 468
+            }
+          ]
+        },
+        {
+          "layer": 65,
+          "total_tasks": 32768,
+          "rank_max": 6574,
+          "max_over_mean": 3.2099609375,
+          "rank_cv": 0.7805577644548426,
+          "rank_load": [
+            1266,
+            3737,
+            6574,
+            1348,
+            558,
+            1940,
+            1232,
+            3995,
+            1186,
+            724,
+            953,
+            894,
+            1113,
+            2738,
+            971,
+            3539
+          ],
+          "top_experts": [
+            {
+              "expert": 32,
+              "count": 3913
+            },
+            {
+              "expert": 120,
+              "count": 2991
+            },
+            {
+              "expert": 255,
+              "count": 2368
+            },
+            {
+              "expert": 28,
+              "count": 1513
+            },
+            {
+              "expert": 19,
+              "count": 1486
+            },
+            {
+              "expert": 210,
+              "count": 1392
+            },
+            {
+              "expert": 45,
+              "count": 906
+            },
+            {
+              "expert": 82,
+              "count": 735
+            },
+            {
+              "expert": 46,
+              "count": 640
+            },
+            {
+              "expert": 59,
+              "count": 639
+            }
+          ]
+        },
+        {
+          "layer": 77,
+          "total_tasks": 32768,
+          "rank_max": 6537,
+          "max_over_mean": 3.19189453125,
+          "rank_cv": 0.9223370121718331,
+          "rank_load": [
+            824,
+            4321,
+            3522,
+            3395,
+            381,
+            5158,
+            1077,
+            1522,
+            451,
+            1596,
+            6537,
+            386,
+            580,
+            589,
+            370,
+            2059
+          ],
+          "top_experts": [
+            {
+              "expert": 170,
+              "count": 3864
+            },
+            {
+              "expert": 90,
+              "count": 3778
+            },
+            {
+              "expert": 36,
+              "count": 2724
+            },
+            {
+              "expert": 24,
+              "count": 2310
+            },
+            {
+              "expert": 163,
+              "count": 2060
+            },
+            {
+              "expert": 247,
+              "count": 1412
+            },
+            {
+              "expert": 29,
+              "count": 1380
+            },
+            {
+              "expert": 60,
+              "count": 1368
+            },
+            {
+              "expert": 53,
+              "count": 1002
+            },
+            {
+              "expert": 121,
+              "count": 851
+            }
+          ]
+        },
+        {
+          "layer": 21,
+          "total_tasks": 32768,
+          "rank_max": 6528,
+          "max_over_mean": 3.1875,
+          "rank_cv": 0.7747702242564822,
+          "rank_load": [
+            6528,
+            871,
+            689,
+            1209,
+            2468,
+            2735,
+            1269,
+            1775,
+            3658,
+            653,
+            674,
+            381,
+            914,
+            4086,
+            2508,
+            2350
+          ],
+          "top_experts": [
+            {
+              "expert": 216,
+              "count": 3937
+            },
+            {
+              "expert": 12,
+              "count": 3370
+            },
+            {
+              "expert": 136,
+              "count": 3038
+            },
+            {
+              "expert": 14,
+              "count": 2515
+            },
+            {
+              "expert": 95,
+              "count": 1822
+            },
+            {
+              "expert": 244,
+              "count": 1019
+            },
+            {
+              "expert": 78,
+              "count": 950
+            },
+            {
+              "expert": 120,
+              "count": 789
+            },
+            {
+              "expert": 248,
+              "count": 723
+            },
+            {
+              "expert": 226,
+              "count": 697
+            }
+          ]
+        },
+        {
+          "layer": 31,
+          "total_tasks": 32768,
+          "rank_max": 6248,
+          "max_over_mean": 3.05078125,
+          "rank_cv": 0.8529495177552675,
+          "rank_load": [
+            1274,
+            638,
+            2404,
+            953,
+            1002,
+            1100,
+            5334,
+            611,
+            2053,
+            961,
+            6248,
+            1050,
+            4945,
+            807,
+            1530,
+            1858
+          ],
+          "top_experts": [
+            {
+              "expert": 193,
+              "count": 4087
+            },
+            {
+              "expert": 170,
+              "count": 4001
+            },
+            {
+              "expert": 110,
+              "count": 3667
+            },
+            {
+              "expert": 166,
+              "count": 1706
+            },
+            {
+              "expert": 40,
+              "count": 1636
+            },
+            {
+              "expert": 242,
+              "count": 1246
+            },
+            {
+              "expert": 139,
+              "count": 1158
+            },
+            {
+              "expert": 102,
+              "count": 855
+            },
+            {
+              "expert": 237,
+              "count": 808
+            },
+            {
+              "expert": 49,
+              "count": 429
+            }
+          ]
+        },
+        {
+          "layer": 74,
+          "total_tasks": 32768,
+          "rank_max": 6160,
+          "max_over_mean": 3.0078125,
+          "rank_cv": 0.6474236985396469,
+          "rank_load": [
+            6160,
+            2208,
+            2689,
+            1032,
+            1759,
+            2541,
+            1892,
+            865,
+            1408,
+            887,
+            997,
+            1246,
+            3550,
+            666,
+            2307,
+            2561
+          ],
+          "top_experts": [
+            {
+              "expert": 10,
+              "count": 3226
+            },
+            {
+              "expert": 198,
+              "count": 2953
+            },
+            {
+              "expert": 240,
+              "count": 2065
+            },
+            {
+              "expert": 86,
+              "count": 1508
+            },
+            {
+              "expert": 35,
+              "count": 1137
+            },
+            {
+              "expert": 1,
+              "count": 1111
+            },
+            {
+              "expert": 228,
+              "count": 939
+            },
+            {
+              "expert": 28,
+              "count": 848
+            },
+            {
+              "expert": 41,
+              "count": 836
+            },
+            {
+              "expert": 14,
+              "count": 834
+            }
+          ]
+        },
+        {
+          "layer": 42,
+          "total_tasks": 32768,
+          "rank_max": 5929,
+          "max_over_mean": 2.89501953125,
+          "rank_cv": 0.648193842138768,
+          "rank_load": [
+            1529,
+            2032,
+            1332,
+            832,
+            1079,
+            1356,
+            1229,
+            1703,
+            2309,
+            1584,
+            1142,
+            2351,
+            4753,
+            5929,
+            1933,
+            1675
+          ],
+          "top_experts": [
+            {
+              "expert": 222,
+              "count": 4087
+            },
+            {
+              "expert": 207,
+              "count": 1718
+            },
+            {
+              "expert": 138,
+              "count": 1522
+            },
+            {
+              "expert": 200,
+              "count": 1264
+            },
+            {
+              "expert": 211,
+              "count": 755
+            },
+            {
+              "expert": 206,
+              "count": 731
+            },
+            {
+              "expert": 120,
+              "count": 650
+            },
+            {
+              "expert": 146,
+              "count": 639
+            },
+            {
+              "expert": 184,
+              "count": 556
+            },
+            {
+              "expert": 214,
+              "count": 509
+            }
+          ]
+        }
+      ],
+      "top_layers_by_imbalance_ratio": [
+        {
+          "layer": 49,
+          "total_tasks": 32768,
+          "rank_max": 10140,
+          "max_over_mean": 4.951171875,
+          "rank_cv": 1.0680497329246195
+        },
+        {
+          "layer": 36,
+          "total_tasks": 32768,
+          "rank_max": 8074,
+          "max_over_mean": 3.9423828125,
+          "rank_cv": 0.9548154286332614
+        },
+        {
+          "layer": 29,
+          "total_tasks": 32768,
+          "rank_max": 7899,
+          "max_over_mean": 3.85693359375,
+          "rank_cv": 0.8404432596630714
+        },
+        {
+          "layer": 54,
+          "total_tasks": 32768,
+          "rank_max": 7773,
+          "max_over_mean": 3.79541015625,
+          "rank_cv": 0.8789213730252737
+        },
+        {
+          "layer": 51,
+          "total_tasks": 32768,
+          "rank_max": 7456,
+          "max_over_mean": 3.640625,
+          "rank_cv": 0.8220386871540927
+        },
+        {
+          "layer": 38,
+          "total_tasks": 32768,
+          "rank_max": 7249,
+          "max_over_mean": 3.53955078125,
+          "rank_cv": 0.7830869441059954
+        },
+        {
+          "layer": 17,
+          "total_tasks": 32768,
+          "rank_max": 6911,
+          "max_over_mean": 3.37451171875,
+          "rank_cv": 0.7363386482276054
+        },
+        {
+          "layer": 33,
+          "total_tasks": 32768,
+          "rank_max": 6864,
+          "max_over_mean": 3.3515625,
+          "rank_cv": 0.738991794067011
+        },
+        {
+          "layer": 41,
+          "total_tasks": 32768,
+          "rank_max": 6808,
+          "max_over_mean": 3.32421875,
+          "rank_cv": 0.7619530146385668
+        },
+        {
+          "layer": 65,
+          "total_tasks": 32768,
+          "rank_max": 6574,
+          "max_over_mean": 3.2099609375,
+          "rank_cv": 0.7805577644548426
+        },
+        {
+          "layer": 77,
+          "total_tasks": 32768,
+          "rank_max": 6537,
+          "max_over_mean": 3.19189453125,
+          "rank_cv": 0.9223370121718331
+        },
+        {
+          "layer": 21,
+          "total_tasks": 32768,
+          "rank_max": 6528,
+          "max_over_mean": 3.1875,
+          "rank_cv": 0.7747702242564822
+        },
+        {
+          "layer": 31,
+          "total_tasks": 32768,
+          "rank_max": 6248,
+          "max_over_mean": 3.05078125,
+          "rank_cv": 0.8529495177552675
+        },
+        {
+          "layer": 74,
+          "total_tasks": 32768,
+          "rank_max": 6160,
+          "max_over_mean": 3.0078125,
+          "rank_cv": 0.6474236985396469
+        },
+        {
+          "layer": 42,
+          "total_tasks": 32768,
+          "rank_max": 5929,
+          "max_over_mean": 2.89501953125,
+          "rank_cv": 0.648193842138768
+        }
+      ]
+    },
+    "decode": {
+      "phase": "decode",
+      "steps": 64,
+      "observed_task_count": 614400,
+      "moe_layer_count": 75,
+      "aggregate_rank_load": [
+        44139,
+        34491,
+        37356,
+        30797,
+        37205,
+        38273,
+        38129,
+        36317,
+        37142,
+        38170,
+        44862,
+        38352,
+        45084,
+        32892,
+        39780,
+        41411
+      ],
+      "aggregate_max_over_mean": 1.1740625,
+      "top_layers_by_absolute_rank_max": [
+        {
+          "layer": 12,
+          "total_tasks": 8192,
+          "rank_max": 2478,
+          "max_over_mean": 4.83984375,
+          "rank_cv": 1.1125734454996037,
+          "rank_load": [
+            788,
+            7,
+            406,
+            413,
+            465,
+            236,
+            422,
+            39,
+            799,
+            552,
+            779,
+            246,
+            31,
+            472,
+            59,
+            2478
+          ],
+          "top_experts": [
+            {
+              "expert": 250,
+              "count": 960
+            },
+            {
+              "expert": 252,
+              "count": 773
+            },
+            {
+              "expert": 9,
+              "count": 768
+            },
+            {
+              "expert": 175,
+              "count": 768
+            },
+            {
+              "expert": 129,
+              "count": 763
+            },
+            {
+              "expert": 251,
+              "count": 722
+            },
+            {
+              "expert": 152,
+              "count": 525
+            },
+            {
+              "expert": 217,
+              "count": 345
+            },
+            {
+              "expert": 70,
+              "count": 265
+            },
+            {
+              "expert": 186,
+              "count": 223
+            }
+          ]
+        },
+        {
+          "layer": 20,
+          "total_tasks": 8192,
+          "rank_max": 2368,
+          "max_over_mean": 4.625,
+          "rank_cv": 1.1092686132004679,
+          "rank_load": [
+            12,
+            576,
+            335,
+            690,
+            111,
+            2368,
+            238,
+            25,
+            622,
+            110,
+            776,
+            1153,
+            229,
+            508,
+            321,
+            118
+          ],
+          "top_experts": [
+            {
+              "expert": 185,
+              "count": 785
+            },
+            {
+              "expert": 82,
+              "count": 770
+            },
+            {
+              "expert": 94,
+              "count": 768
+            },
+            {
+              "expert": 89,
+              "count": 767
+            },
+            {
+              "expert": 20,
+              "count": 509
+            },
+            {
+              "expert": 62,
+              "count": 399
+            },
+            {
+              "expert": 136,
+              "count": 382
+            },
+            {
+              "expert": 180,
+              "count": 350
+            },
+            {
+              "expert": 40,
+              "count": 297
+            },
+            {
+              "expert": 208,
+              "count": 202
+            }
+          ]
+        },
+        {
+          "layer": 10,
+          "total_tasks": 8192,
+          "rank_max": 2329,
+          "max_over_mean": 4.548828125,
+          "rank_cv": 1.0369523498858748,
+          "rank_load": [
+            413,
+            792,
+            196,
+            795,
+            195,
+            785,
+            2329,
+            650,
+            549,
+            215,
+            411,
+            212,
+            243,
+            333,
+            16,
+            58
+          ],
+          "top_experts": [
+            {
+              "expert": 97,
+              "count": 773
+            },
+            {
+              "expert": 48,
+              "count": 768
+            },
+            {
+              "expert": 21,
+              "count": 766
+            },
+            {
+              "expert": 105,
+              "count": 757
+            },
+            {
+              "expert": 93,
+              "count": 749
+            },
+            {
+              "expert": 113,
+              "count": 623
+            },
+            {
+              "expert": 136,
+              "count": 529
+            },
+            {
+              "expert": 96,
+              "count": 388
+            },
+            {
+              "expert": 219,
+              "count": 270
+            },
+            {
+              "expert": 204,
+              "count": 221
+            }
+          ]
+        },
+        {
+          "layer": 74,
+          "total_tasks": 8192,
+          "rank_max": 2300,
+          "max_over_mean": 4.4921875,
+          "rank_cv": 1.1398553211024873,
+          "rank_load": [
+            239,
+            825,
+            80,
+            755,
+            330,
+            175,
+            101,
+            1359,
+            842,
+            113,
+            237,
+            47,
+            284,
+            87,
+            2300,
+            418
+          ],
+          "top_experts": [
+            {
+              "expert": 118,
+              "count": 937
+            },
+            {
+              "expert": 239,
+              "count": 775
+            },
+            {
+              "expert": 52,
+              "count": 708
+            },
+            {
+              "expert": 24,
+              "count": 661
+            },
+            {
+              "expert": 224,
+              "count": 609
+            },
+            {
+              "expert": 229,
+              "count": 514
+            },
+            {
+              "expert": 132,
+              "count": 443
+            },
+            {
+              "expert": 240,
+              "count": 332
+            },
+            {
+              "expert": 206,
+              "count": 236
+            },
+            {
+              "expert": 235,
+              "count": 235
+            }
+          ]
+        },
+        {
+          "layer": 15,
+          "total_tasks": 8192,
+          "rank_max": 2287,
+          "max_over_mean": 4.466796875,
+          "rank_cv": 1.103231910085282,
+          "rank_load": [
+            2287,
+            697,
+            116,
+            213,
+            39,
+            183,
+            103,
+            922,
+            56,
+            1117,
+            26,
+            367,
+            780,
+            237,
+            642,
+            407
+          ],
+          "top_experts": [
+            {
+              "expert": 9,
+              "count": 960
+            },
+            {
+              "expert": 198,
+              "count": 770
+            },
+            {
+              "expert": 159,
+              "count": 769
+            },
+            {
+              "expert": 8,
+              "count": 768
+            },
+            {
+              "expert": 114,
+              "count": 687
+            },
+            {
+              "expert": 24,
+              "count": 648
+            },
+            {
+              "expert": 237,
+              "count": 626
+            },
+            {
+              "expert": 247,
+              "count": 335
+            },
+            {
+              "expert": 4,
+              "count": 309
+            },
+            {
+              "expert": 188,
+              "count": 242
+            }
+          ]
+        },
+        {
+          "layer": 61,
+          "total_tasks": 8192,
+          "rank_max": 2256,
+          "max_over_mean": 4.40625,
+          "rank_cv": 1.279710356306777,
+          "rank_load": [
+            58,
+            238,
+            910,
+            12,
+            89,
+            33,
+            47,
+            370,
+            1034,
+            1823,
+            408,
+            51,
+            201,
+            90,
+            572,
+            2256
+          ],
+          "top_experts": [
+            {
+              "expert": 147,
+              "count": 774
+            },
+            {
+              "expert": 148,
+              "count": 774
+            },
+            {
+              "expert": 241,
+              "count": 761
+            },
+            {
+              "expert": 39,
+              "count": 706
+            },
+            {
+              "expert": 239,
+              "count": 548
+            },
+            {
+              "expert": 248,
+              "count": 536
+            },
+            {
+              "expert": 141,
+              "count": 513
+            },
+            {
+              "expert": 168,
+              "count": 400
+            },
+            {
+              "expert": 251,
+              "count": 302
+            },
+            {
+              "expert": 132,
+              "count": 287
+            }
+          ]
+        },
+        {
+          "layer": 17,
+          "total_tasks": 8192,
+          "rank_max": 2188,
+          "max_over_mean": 4.2734375,
+          "rank_cv": 1.2100433001376472,
+          "rank_load": [
+            2188,
+            70,
+            993,
+            44,
+            23,
+            1034,
+            11,
+            1527,
+            505,
+            221,
+            38,
+            35,
+            38,
+            774,
+            409,
+            282
+          ],
+          "top_experts": [
+            {
+              "expert": 115,
+              "count": 960
+            },
+            {
+              "expert": 42,
+              "count": 772
+            },
+            {
+              "expert": 90,
+              "count": 763
+            },
+            {
+              "expert": 216,
+              "count": 762
+            },
+            {
+              "expert": 13,
+              "count": 660
+            },
+            {
+              "expert": 4,
+              "count": 655
+            },
+            {
+              "expert": 7,
+              "count": 558
+            },
+            {
+              "expert": 119,
+              "count": 555
+            },
+            {
+              "expert": 232,
+              "count": 298
+            },
+            {
+              "expert": 250,
+              "count": 225
+            }
+          ]
+        },
+        {
+          "layer": 31,
+          "total_tasks": 8192,
+          "rank_max": 2076,
+          "max_over_mean": 4.0546875,
+          "rank_cv": 1.030127174155736,
+          "rank_load": [
+            146,
+            368,
+            19,
+            646,
+            56,
+            1308,
+            111,
+            330,
+            132,
+            762,
+            2076,
+            424,
+            832,
+            124,
+            239,
+            619
+          ],
+          "top_experts": [
+            {
+              "expert": 174,
+              "count": 905
+            },
+            {
+              "expert": 170,
+              "count": 805
+            },
+            {
+              "expert": 92,
+              "count": 770
+            },
+            {
+              "expert": 252,
+              "count": 582
+            },
+            {
+              "expert": 61,
+              "count": 511
+            },
+            {
+              "expert": 25,
+              "count": 351
+            },
+            {
+              "expert": 152,
+              "count": 336
+            },
+            {
+              "expert": 179,
+              "count": 218
+            },
+            {
+              "expert": 83,
+              "count": 211
+            },
+            {
+              "expert": 206,
+              "count": 194
+            }
+          ]
+        },
+        {
+          "layer": 16,
+          "total_tasks": 8192,
+          "rank_max": 2053,
+          "max_over_mean": 4.009765625,
+          "rank_cv": 1.1643053863896184,
+          "rank_load": [
+            56,
+            789,
+            25,
+            209,
+            24,
+            241,
+            982,
+            36,
+            1425,
+            2053,
+            307,
+            248,
+            48,
+            236,
+            1296,
+            217
+          ],
+          "top_experts": [
+            {
+              "expert": 108,
+              "count": 968
+            },
+            {
+              "expert": 135,
+              "count": 768
+            },
+            {
+              "expert": 239,
+              "count": 766
+            },
+            {
+              "expert": 152,
+              "count": 758
+            },
+            {
+              "expert": 131,
+              "count": 631
+            },
+            {
+              "expert": 22,
+              "count": 535
+            },
+            {
+              "expert": 158,
+              "count": 535
+            },
+            {
+              "expert": 156,
+              "count": 333
+            },
+            {
+              "expert": 235,
+              "count": 330
+            },
+            {
+              "expert": 16,
+              "count": 230
+            }
+          ]
+        },
+        {
+          "layer": 32,
+          "total_tasks": 8192,
+          "rank_max": 2050,
+          "max_over_mean": 4.00390625,
+          "rank_cv": 0.9943588407055852,
+          "rank_load": [
+            844,
+            1291,
+            402,
+            519,
+            92,
+            2050,
+            91,
+            419,
+            229,
+            49,
+            604,
+            724,
+            224,
+            223,
+            218,
+            213
+          ],
+          "top_experts": [
+            {
+              "expert": 20,
+              "count": 958
+            },
+            {
+              "expert": 187,
+              "count": 700
+            },
+            {
+              "expert": 85,
+              "count": 692
+            },
+            {
+              "expert": 83,
+              "count": 420
+            },
+            {
+              "expert": 10,
+              "count": 392
+            },
+            {
+              "expert": 58,
+              "count": 390
+            },
+            {
+              "expert": 94,
+              "count": 367
+            },
+            {
+              "expert": 162,
+              "count": 319
+            },
+            {
+              "expert": 0,
+              "count": 206
+            },
+            {
+              "expert": 2,
+              "count": 197
+            }
+          ]
+        },
+        {
+          "layer": 9,
+          "total_tasks": 8192,
+          "rank_max": 2014,
+          "max_over_mean": 3.93359375,
+          "rank_cv": 1.047415067375039,
+          "rank_load": [
+            2014,
+            32,
+            207,
+            563,
+            1190,
+            17,
+            28,
+            19,
+            50,
+            237,
+            590,
+            809,
+            739,
+            54,
+            846,
+            797
+          ],
+          "top_experts": [
+            {
+              "expert": 2,
+              "count": 777
+            },
+            {
+              "expert": 13,
+              "count": 773
+            },
+            {
+              "expert": 255,
+              "count": 770
+            },
+            {
+              "expert": 69,
+              "count": 770
+            },
+            {
+              "expert": 187,
+              "count": 769
+            },
+            {
+              "expert": 228,
+              "count": 768
+            },
+            {
+              "expert": 205,
+              "count": 725
+            },
+            {
+              "expert": 165,
+              "count": 434
+            },
+            {
+              "expert": 60,
+              "count": 346
+            },
+            {
+              "expert": 15,
+              "count": 215
+            }
+          ]
+        },
+        {
+          "layer": 3,
+          "total_tasks": 8192,
+          "rank_max": 1959,
+          "max_over_mean": 3.826171875,
+          "rank_cv": 1.2232188919823945,
+          "rank_load": [
+            1599,
+            45,
+            968,
+            24,
+            798,
+            48,
+            25,
+            16,
+            49,
+            221,
+            1194,
+            219,
+            26,
+            16,
+            985,
+            1959
+          ],
+          "top_experts": [
+            {
+              "expert": 242,
+              "count": 967
+            },
+            {
+              "expert": 41,
+              "count": 957
+            },
+            {
+              "expert": 78,
+              "count": 773
+            },
+            {
+              "expert": 11,
+              "count": 773
+            },
+            {
+              "expert": 250,
+              "count": 772
+            },
+            {
+              "expert": 236,
+              "count": 770
+            },
+            {
+              "expert": 175,
+              "count": 768
+            },
+            {
+              "expert": 3,
+              "count": 766
+            },
+            {
+              "expert": 163,
+              "count": 209
+            },
+            {
+              "expert": 233,
+              "count": 199
+            }
+          ]
+        },
+        {
+          "layer": 11,
+          "total_tasks": 8192,
+          "rank_max": 1949,
+          "max_over_mean": 3.806640625,
+          "rank_cv": 1.0699633843404857,
+          "rank_load": [
+            790,
+            227,
+            21,
+            64,
+            755,
+            196,
+            25,
+            45,
+            27,
+            1008,
+            1949,
+            670,
+            217,
+            19,
+            992,
+            1187
+          ],
+          "top_experts": [
+            {
+              "expert": 235,
+              "count": 962
+            },
+            {
+              "expert": 251,
+              "count": 960
+            },
+            {
+              "expert": 158,
+              "count": 960
+            },
+            {
+              "expert": 169,
+              "count": 774
+            },
+            {
+              "expert": 14,
+              "count": 770
+            },
+            {
+              "expert": 162,
+              "count": 768
+            },
+            {
+              "expert": 72,
+              "count": 733
+            },
+            {
+              "expert": 180,
+              "count": 333
+            },
+            {
+              "expert": 177,
+              "count": 316
+            },
+            {
+              "expert": 31,
+              "count": 201
+            }
+          ]
+        },
+        {
+          "layer": 27,
+          "total_tasks": 8192,
+          "rank_max": 1944,
+          "max_over_mean": 3.796875,
+          "rank_cv": 0.954990000647478,
+          "rank_load": [
+            1081,
+            632,
+            23,
+            74,
+            464,
+            300,
+            682,
+            345,
+            12,
+            1944,
+            810,
+            247,
+            919,
+            237,
+            24,
+            398
+          ],
+          "top_experts": [
+            {
+              "expert": 156,
+              "count": 773
+            },
+            {
+              "expert": 173,
+              "count": 769
+            },
+            {
+              "expert": 148,
+              "count": 719
+            },
+            {
+              "expert": 4,
+              "count": 519
+            },
+            {
+              "expert": 207,
+              "count": 463
+            },
+            {
+              "expert": 66,
+              "count": 399
+            },
+            {
+              "expert": 206,
+              "count": 387
+            },
+            {
+              "expert": 247,
+              "count": 383
+            },
+            {
+              "expert": 1,
+              "count": 318
+            },
+            {
+              "expert": 25,
+              "count": 315
+            }
+          ]
+        },
+        {
+          "layer": 22,
+          "total_tasks": 8192,
+          "rank_max": 1928,
+          "max_over_mean": 3.765625,
+          "rank_cv": 1.0969096729851902,
+          "rank_load": [
+            862,
+            115,
+            414,
+            19,
+            744,
+            28,
+            15,
+            26,
+            271,
+            980,
+            962,
+            297,
+            1409,
+            73,
+            49,
+            1928
+          ],
+          "top_experts": [
+            {
+              "expert": 154,
+              "count": 777
+            },
+            {
+              "expert": 244,
+              "count": 771
+            },
+            {
+              "expert": 248,
+              "count": 763
+            },
+            {
+              "expert": 192,
+              "count": 758
+            },
+            {
+              "expert": 79,
+              "count": 725
+            },
+            {
+              "expert": 164,
+              "count": 725
+            },
+            {
+              "expert": 15,
+              "count": 637
+            },
+            {
+              "expert": 198,
+              "count": 434
+            },
+            {
+              "expert": 144,
+              "count": 197
+            },
+            {
+              "expert": 47,
+              "count": 193
+            }
+          ]
+        }
+      ],
+      "top_layers_by_imbalance_ratio": [
+        {
+          "layer": 12,
+          "total_tasks": 8192,
+          "rank_max": 2478,
+          "max_over_mean": 4.83984375,
+          "rank_cv": 1.1125734454996037
+        },
+        {
+          "layer": 20,
+          "total_tasks": 8192,
+          "rank_max": 2368,
+          "max_over_mean": 4.625,
+          "rank_cv": 1.1092686132004679
+        },
+        {
+          "layer": 10,
+          "total_tasks": 8192,
+          "rank_max": 2329,
+          "max_over_mean": 4.548828125,
+          "rank_cv": 1.0369523498858748
+        },
+        {
+          "layer": 74,
+          "total_tasks": 8192,
+          "rank_max": 2300,
+          "max_over_mean": 4.4921875,
+          "rank_cv": 1.1398553211024873
+        },
+        {
+          "layer": 15,
+          "total_tasks": 8192,
+          "rank_max": 2287,
+          "max_over_mean": 4.466796875,
+          "rank_cv": 1.103231910085282
+        },
+        {
+          "layer": 61,
+          "total_tasks": 8192,
+          "rank_max": 2256,
+          "max_over_mean": 4.40625,
+          "rank_cv": 1.279710356306777
+        },
+        {
+          "layer": 17,
+          "total_tasks": 8192,
+          "rank_max": 2188,
+          "max_over_mean": 4.2734375,
+          "rank_cv": 1.2100433001376472
+        },
+        {
+          "layer": 31,
+          "total_tasks": 8192,
+          "rank_max": 2076,
+          "max_over_mean": 4.0546875,
+          "rank_cv": 1.030127174155736
+        },
+        {
+          "layer": 16,
+          "total_tasks": 8192,
+          "rank_max": 2053,
+          "max_over_mean": 4.009765625,
+          "rank_cv": 1.1643053863896184
+        },
+        {
+          "layer": 32,
+          "total_tasks": 8192,
+          "rank_max": 2050,
+          "max_over_mean": 4.00390625,
+          "rank_cv": 0.9943588407055852
+        },
+        {
+          "layer": 9,
+          "total_tasks": 8192,
+          "rank_max": 2014,
+          "max_over_mean": 3.93359375,
+          "rank_cv": 1.047415067375039
+        },
+        {
+          "layer": 3,
+          "total_tasks": 8192,
+          "rank_max": 1959,
+          "max_over_mean": 3.826171875,
+          "rank_cv": 1.2232188919823945
+        },
+        {
+          "layer": 11,
+          "total_tasks": 8192,
+          "rank_max": 1949,
+          "max_over_mean": 3.806640625,
+          "rank_cv": 1.0699633843404857
+        },
+        {
+          "layer": 27,
+          "total_tasks": 8192,
+          "rank_max": 1944,
+          "max_over_mean": 3.796875,
+          "rank_cv": 0.954990000647478
+        },
+        {
+          "layer": 22,
+          "total_tasks": 8192,
+          "rank_max": 1928,
+          "max_over_mean": 3.765625,
+          "rank_cv": 1.0969096729851902
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "decode count is reported as-is and is not treated as a conserved token count; the historical recorder path can duplicate decode tasks across parallelism."
+  ],
+  "expected_prefill_tasks": 2457600,
+  "prefill_conservation_ok": true,
+  "decode_observed_task_count": 614400
+}
