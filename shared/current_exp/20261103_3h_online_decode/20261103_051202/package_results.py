@@ -47,7 +47,7 @@ def main():
    'cpu_corrections':cpu}
  (ROOT/'INPUTS_PLANS.json').write_text(json.dumps(plans,ensure_ascii=False,indent=2)+'\n')
  artifacts=[]
- for p in [ROOT/'CPU_AUDIT.json',ROOT/'ONLINE_RESULT.json',ROOT/'DECODE_RESULT.json',ROOT/'INPUTS_PLANS.json',ROOT/'TIMINGS.csv']+[ROOT/f for f in ['cpu_audit.py','online_npu.py','decode_npu.py','package_results.py','RESULTS.md','CORRECTIONS.md','REPRODUCE.md','CLOCK.txt']]:
+ for p in [ROOT/'CPU_AUDIT.json',ROOT/'ONLINE_RESULT.json',ROOT/'DECODE_RESULT.json',ROOT/'INPUTS_PLANS.json',ROOT/'TIMINGS.csv']+[ROOT/f for f in ['cpu_audit.py','online_npu.py','decode_npu.py','package_results.py','RESULTS.md','REPORT_FOR_REVIEW.md','CORRECTIONS.md','REPRODUCE.md','CLOCK.txt']]:
   if p.exists(): artifacts.append({'path':str(p.relative_to(ROOT)),'bytes':p.stat().st_size,'sha256':sha(p)})
  manifest={'run_id':RUN_ID,'start_time':START,'deadline':DEADLINE,'package_prepared_at':NOW,
    'host':platform.node(),'device':{'count':1,'name':'Ascend910_9382','binding':'only /dev/davinci0'},

@@ -2,7 +2,7 @@
   "run_id": "20261103_051202",
   "start_time": "2026-11-03T05:12:02+08:00",
   "deadline": "2026-11-03T08:12:02+08:00",
-  "package_prepared_at": "2026-11-03T05:32:26+08:00",
+  "package_prepared_at": "2026-11-03T06:02:03+08:00",
   "host": "npu1-23",
   "device": {
     "count": 1,
@@ -58,7 +58,7 @@
     {
       "path": "INPUTS_PLANS.json",
       "bytes": 394076,
-      "sha256": "5d7510274da6caa843ed9d77da8504288cb6b26d04377c0ebe2aaeb1b9332e12"
+      "sha256": "6455e24d97f0e67d07974b2045945502a7c4ea0e3b585549265f1f7592128a30"
     },
     {
       "path": "TIMINGS.csv",
@@ -82,13 +82,18 @@
     },
     {
       "path": "package_results.py",
-      "bytes": 6259,
-      "sha256": "a3947e7ff9081d805e6db3d17ded804206287f1dc333c7ba7887dfc32a6ee56e"
+      "bytes": 6282,
+      "sha256": "029d59783d0e51bc84383effb8cea5fdd4fd97331657caa76be8641082b611c5"
     },
     {
       "path": "RESULTS.md",
       "bytes": 6223,
       "sha256": "dfe087277500f2b7179160422c54c7c211713de0c7a7b7f3b442f14a8978d745"
+    },
+    {
+      "path": "REPORT_FOR_REVIEW.md",
+      "bytes": 10121,
+      "sha256": "0f53bb53824f76194bae93b5bf5d2216bd924335cc7484228b37df4122c394b2"
     },
     {
       "path": "CORRECTIONS.md",

@@ -1,7 +1,7 @@
 {
   "start": "2026-11-03T05:12:02+08:00",
   "deadline": "2026-11-03T08:12:02+08:00",
-  "package_prepared_at": "2026-11-03T05:32:26+08:00",
+  "package_prepared_at": "2026-11-03T06:02:03+08:00",
   "weight_manifest_sha256": "7870fe31cb26405e7b28e67023c9ce0d413e0506f40fc7704710e38b40b2abc5",
   "online": {
     "method": "UltraEP-style current-count -> copy decision -> integer quota; two experts/two ranks, one temp slot per rank",

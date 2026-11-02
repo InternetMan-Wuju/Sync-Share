@@ -43,6 +43,7 @@
 
 单卡 3 小时 Online / Decode 补测（run `20261103_051202`）：
 
+- [审阅报告](shared/current_exp/20261103_3h_online_decode/20261103_051202/REPORT_FOR_REVIEW.md)：面向本地 AI 的完整证据分级、结果、边界和审阅检查点。
 - [RESULTS](shared/current_exp/20261103_3h_online_decode/20261103_051202/RESULTS.md)：online 配额与本地状态开销、decode EP16/32/64 × batch1/8 六格。
 - [INPUTS_PLANS](shared/current_exp/20261103_3h_online_decode/20261103_051202/INPUTS_PLANS.json)：完整 16/8/4 槽向量、配额和输入身份。
 - [TIMINGS](shared/current_exp/20261103_3h_online_decode/20261103_051202/TIMINGS.csv)：正式计时块原始记录。
