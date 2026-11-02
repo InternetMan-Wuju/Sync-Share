@@ -4,8 +4,8 @@
 
 ## 当前执行入口
 
-- [Online与大EP Decode结果复核（2026-11-03）](2026-11-03_online_decode_review.md)：整合125423a，区分聚合回放收益和在线开销；记录计数、配额对照、数值桥接与计时修正。
-- [3小时 Online 与 Decode EP 验证执行卡（2026-11-03）](2026-11-03_glm52_3h_online_decode.md)：复用最新单卡脚本，只补两个online case与decode六格；155分钟停止采样，180分钟交付并结束。
+- [Online与大EP Decode结果复核（2026-11-03）](2026-11-03_online_decode_review.md)：最新b7ec624的独立复核与会议报告；21.5%计算空间、净收益不确定性、人工六格和真实直方图补充方向。
+- [3小时 Online 与 Decode EP 验证执行卡（2026-11-03）](2026-11-03_glm52_3h_online_decode.md)：已结束轮次的原执行要求；当前状态见结果复核，不自动续跑。
 - [已有单卡结果与后续边界](2026-11-03_single_npu_results_and_next.md)：S0–S4/P2复用入口，不作为本轮新采样。
 
 建议每个交接文件包含：

@@ -43,6 +43,7 @@
 
 单卡 3 小时 Online / Decode 补测（run `20261103_051202`）：
 
+- [本地独立复核与会议报告](handoff/2026-11-03_online_decode_review.md)：复算b7ec624，解释21.5%计算空间、净收益不确定性和人工decode六格的适用边界。
 - [审阅报告](shared/current_exp/20261103_3h_online_decode/20261103_051202/REPORT_FOR_REVIEW.md)：面向本地 AI 的完整证据分级、结果、边界和审阅检查点。
 - [RESULTS](shared/current_exp/20261103_3h_online_decode/20261103_051202/RESULTS.md)：online 配额与本地状态开销、decode EP16/32/64 × batch1/8 六格。
 - [INPUTS_PLANS](shared/current_exp/20261103_3h_online_decode/20261103_051202/INPUTS_PLANS.json)：完整 16/8/4 槽向量、配额和输入身份。
@@ -52,8 +53,8 @@
 
 本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。
 
-- [Online与大EP Decode结果复核（2026-11-03）](handoff/2026-11-03_online_decode_review.md)：125423a的局部证据、确定的复用问题，以及两项主任务尚缺的验证。
-- [3小时 Online 与 Decode EP 执行卡（2026-11-03）](handoff/2026-11-03_glm52_3h_online_decode.md)：本轮服务器执行入口，复用S0–S4/P2，只补online开销账本和decode六格分析，180分钟硬截止。
+- [Online与大EP Decode结果复核（2026-11-03）](handoff/2026-11-03_online_decode_review.md)：最新b7ec624的证据复核、会议结论及最小补齐顺序。
+- [3小时 Online 与 Decode EP 执行卡（2026-11-03）](handoff/2026-11-03_glm52_3h_online_decode.md)：已结束轮次的原执行要求；当前状态见结果复核，不自动续跑。
 
 - [GLM-5.2 / 昇腾 910C 负载均衡实验方案（2026-11-02）](handoff/2026-11-02_glm52_ascend_load_balance_plan.md)：前置核验、单层复制对照、共享缓冲、decode 通信优化及未决问题。
 - [单卡补测完成与多卡后续（2026-11-03）](handoff/2026-11-03_single_npu_results_and_next.md)：S0–S4/P2 结果、证据边界和恢复多卡后的 M0–M3 顺序。
