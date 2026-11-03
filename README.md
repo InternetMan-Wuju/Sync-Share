@@ -53,6 +53,7 @@
 
 本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。
 
+- [昇腾910C Prefill专家复制与精确配额实现方案（2026-11-03）](handoff/2026-11-03_ascend_prefill_copy_aware_implementation.md)：当前实现入口；实际SGLang接线、完整量化状态复制、显存与通信约束、分阶段验收和服务器AI提示词。首轮只实现与CPU验证，不自动启动NPU实验。
 - [Online与大EP Decode结果复核（2026-11-03）](handoff/2026-11-03_online_decode_review.md)：最新b7ec624的证据复核、会议结论及最小补齐顺序。
 - [3小时 Online 与 Decode EP 执行卡（2026-11-03）](handoff/2026-11-03_glm52_3h_online_decode.md)：已结束轮次的原执行要求；当前状态见结果复核，不自动续跑。
 
