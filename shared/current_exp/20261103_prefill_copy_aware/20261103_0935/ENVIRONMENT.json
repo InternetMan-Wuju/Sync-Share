@@ -1,0 +1,49 @@
+{
+  "run_id": "20261103_0935",
+  "created_at": "2026-11-03T09:45:57+08:00",
+  "host": "npu1-23",
+  "mode": "M0 code + CPU tests only",
+  "npu_experiment_started": false,
+  "model_service_restarted": false,
+  "image": {
+    "name": "quay.io/ascend/sglang:v0.5.18-cann9.0.0-a3",
+    "id": "sha256:26a020117564da514f33c4e72353d07020bc4bfe176f4e61858b4abeac6d3e9b",
+    "digest": "quay.io/ascend/sglang@sha256:f492ff6a50b779db301bb5a8f80e33c98981c5076bd0feb6225b63d7971c6385"
+  },
+  "software": {
+    "sglang": "0.5.18",
+    "torch": "2.10.0+cpu",
+    "torch_npu": "2.10.0",
+    "sgl_kernel_npu": "2026.6.1",
+    "CANN": "9.0.0"
+  },
+  "actual_model_class": "sglang.srt.models.glm4_moe.GlmMoeDsaForCausalLM",
+  "actual_hook_file": "sglang/srt/hardware_backend/npu/moe/topk.py::fused_topk_npu",
+  "source_hashes": {
+    "base_topk.py": "f82f25bb343892b7b8b1eb833a4e6ca376a510ac74a3a935e0a1997dbd072f75",
+    "patched_topk.py": "c72f32855cd5e6d0195a2942c21c14326a414ec2f702ae118bc94b431fc72c5a",
+    "new_controller.py": "1798bb45f530d38e0141d50cb6a2c9d95d732d422e126e3ad53840b633fce19b",
+    "glm4_moe.py": "da66fe6314fa84e7401900cf7e7a05d7dced72b39477595c3a67fda735e24256",
+    "expert_location_dispatch.py": "c7f6b68fb9c6262ab781de8c31514580f36046732ecf75868e3fdc0c6a9e11b0",
+    "deepep.py": "201827c6ffb2289392b9e1b36908ca524009c864d07e19388603f435efd76d2d",
+    "modelslim.py": "c981304e11d625b0d58d2f24c1be576aadecf011603213cd0e92ae164de854cd",
+    "fused_moe_layer.py": "dcb2620e96f23e1004e1439914a807e74293d3c1080db929f9aa542e742e5f05"
+  },
+  "device": {
+    "accessed": false,
+    "visible_count": "not checked in M0",
+    "reason": "user prohibited NPU experiment in this round"
+  },
+  "extra_slot_scope": "not allocated or tested; full-layer vs layer-local remains unknown",
+  "known_missing": [
+    "HCCL transport",
+    "NZ/ND state preparation",
+    "full quantized state manifest",
+    "EP-wide count exchange",
+    "real dispatch/combine",
+    "production graph integration",
+    "HBM peak",
+    "SLO"
+  ],
+  "patch_sha256": "74ba2a6a3592f9c4e114de29690d3b2b94a5ba9ef153bc7a2bc5b6a6ccf03561"
+}

@@ -1,0 +1,48 @@
+{
+  "evidence_type": "synthetic_cpu_plan",
+  "cost_model": "test-only linear 1us/task",
+  "examples": [
+    {
+      "step_id": 1,
+      "layer_id": 49,
+      "epoch": 1,
+      "action": "route",
+      "logical_expert": 0,
+      "weight_source_rank": 0,
+      "primary_compute_rank": 0,
+      "destination_rank": 1,
+      "destination_local_slot": 16,
+      "q_global": 448,
+      "q_by_source": [
+        448
+      ],
+      "copy_required": true,
+      "layout_version": "cpu-example",
+      "weight_version": 3,
+      "estimated_gain_us": 437.0,
+      "reason": "gain_above_threshold",
+      "primary_physical_id": 0,
+      "destination_physical_id": 33
+    },
+    {
+      "step_id": 1,
+      "layer_id": 49,
+      "epoch": 1,
+      "action": "noop",
+      "logical_expert": 0,
+      "weight_source_rank": 0,
+      "primary_compute_rank": 0,
+      "destination_rank": 1,
+      "destination_local_slot": 16,
+      "q_global": 0,
+      "q_by_source": [],
+      "copy_required": false,
+      "layout_version": "cpu-example",
+      "weight_version": 3,
+      "estimated_gain_us": null,
+      "reason": "below_threshold",
+      "primary_physical_id": 0,
+      "destination_physical_id": 33
+    }
+  ]
+}

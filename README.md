@@ -56,6 +56,14 @@
 - [RESULTS](shared/current_exp/20261103_complex_moe_sim/RESULTS.md)：EP16/32/64、online 临时复制 K 扫描、远端复制回本线。
 - [全量输出](shared/current_exp/20261103_complex_moe_sim/SIMULATION_RESULT.json) / [清单](shared/current_exp/20261103_complex_moe_sim/MANIFEST.json)
 
+### `shared/current_exp/20261103_prefill_copy_aware/`
+
+Prefill 当前路由复制与精确配额 M0：
+
+- [实现与源码接入点](shared/current_exp/20261103_prefill_copy_aware/20261103_0935/IMPLEMENTATION.md)
+- [验证记录](shared/current_exp/20261103_prefill_copy_aware/20261103_0935/VALIDATION.md)
+- [默认 off 补丁](shared/current_exp/20261103_prefill_copy_aware/20261103_0935/patches/prefill_copy_aware_m0.patch)
+
 ### `handoff/`
 
 本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。

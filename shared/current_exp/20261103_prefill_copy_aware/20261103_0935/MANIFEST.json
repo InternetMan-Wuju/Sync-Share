@@ -1,0 +1,140 @@
+{
+  "run_id": "20261103_0935",
+  "kind": "M0 prefill copy-aware code and CPU validation",
+  "status": "M0_CODE_AND_CPU_COMPLETE_HARDWARE_NOT_RUN",
+  "created_at": "2026-11-03T09:45:57+08:00",
+  "host": "npu1-23",
+  "base_git_commit": "187245f",
+  "image": {
+    "name": "quay.io/ascend/sglang:v0.5.18-cann9.0.0-a3",
+    "id": "sha256:26a020117564da514f33c4e72353d07020bc4bfe176f4e61858b4abeac6d3e9b",
+    "digest": "quay.io/ascend/sglang@sha256:f492ff6a50b779db301bb5a8f80e33c98981c5076bd0feb6225b63d7971c6385"
+  },
+  "source_identity": {
+    "base_topk.py": "f82f25bb343892b7b8b1eb833a4e6ca376a510ac74a3a935e0a1997dbd072f75",
+    "patched_topk.py": "c72f32855cd5e6d0195a2942c21c14326a414ec2f702ae118bc94b431fc72c5a",
+    "new_controller.py": "1798bb45f530d38e0141d50cb6a2c9d95d732d422e126e3ad53840b633fce19b",
+    "glm4_moe.py": "da66fe6314fa84e7401900cf7e7a05d7dced72b39477595c3a67fda735e24256",
+    "expert_location_dispatch.py": "c7f6b68fb9c6262ab781de8c31514580f36046732ecf75868e3fdc0c6a9e11b0",
+    "deepep.py": "201827c6ffb2289392b9e1b36908ca524009c864d07e19388603f435efd76d2d",
+    "modelslim.py": "c981304e11d625b0d58d2f24c1be576aadecf011603213cd0e92ae164de854cd",
+    "fused_moe_layer.py": "dcb2620e96f23e1004e1439914a807e74293d3c1080db929f9aa542e742e5f05"
+  },
+  "patch_sha256": "74ba2a6a3592f9c4e114de29690d3b2b94a5ba9ef153bc7a2bc5b6a6ccf03561",
+  "npu_experiment_started": false,
+  "model_service_restarted": false,
+  "artifacts": [
+    {
+      "path": "README.md",
+      "bytes": 525,
+      "sha256": "6cc3d846f21d9deba96a03b8462e7389dad9e753002c2e8cbc758ebd5e8c016d"
+    },
+    {
+      "path": "IMPLEMENTATION.md",
+      "bytes": 5461,
+      "sha256": "81373cd8e870963f267578e8b2ab680c34abed2a538a99632f638b669a34190d"
+    },
+    {
+      "path": "ENVIRONMENT.json",
+      "bytes": 2105,
+      "sha256": "2e9813a85702c0aa7afd927bdc15b20c8e3850239f20facd2f63aa946fd57cfc"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 3299,
+      "sha256": "7d1cc173849203e15e232e9d3f30c3cc1c238fee875972da9ca6d56fc38b71f0"
+    },
+    {
+      "path": "APPLY.md",
+      "bytes": 1352,
+      "sha256": "4e42ddb508b4492fc9ca73d8441c933f30f4e1436f126b06543cdb84de3c25b1"
+    },
+    {
+      "path": "PLAN_EXAMPLES.json",
+      "bytes": 1198,
+      "sha256": "6e25a778c7b10e37fcf1dabddb15e755358286bd27c5705f1abf7d2b0798c911"
+    },
+    {
+      "path": "patches/prefill_copy_aware_m0.patch",
+      "bytes": 27697,
+      "sha256": "74ba2a6a3592f9c4e114de29690d3b2b94a5ba9ef153bc7a2bc5b6a6ccf03561"
+    },
+    {
+      "path": "tests/test_cpu_logic.py",
+      "bytes": 12537,
+      "sha256": "748af03155b5e912cfbc0a5a2b75c4552cd472aecaf96f11ce190ac4f7cfb8ae"
+    },
+    {
+      "path": "tests/test_patch_integration.py",
+      "bytes": 1231,
+      "sha256": "eca602116c0952fffa94ca8b6c4d4e983fb0fff783b96069102f4eeee0a2ad5e"
+    },
+    {
+      "path": "tests/emit_plan_examples.py",
+      "bytes": 1448,
+      "sha256": "6b5abe69648226cab50f359157094e1beb90684812ead70db41d4f359333e1f3"
+    },
+    {
+      "path": "tests/npu_validate_prefill_copy_aware.py",
+      "bytes": 3982,
+      "sha256": "21f16052b816c58df958a7ac44e144571bd9b2e8c7912e5be339d989f6234f73"
+    },
+    {
+      "path": "tests/run_cpu_tests.sh",
+      "bytes": 355,
+      "sha256": "8498ef51c07a72bd493158be48179488555017c16d9882696ba33be8ca3be677"
+    },
+    {
+      "path": "artifacts/cpu_tests.log",
+      "bytes": 1326,
+      "sha256": "357e122f057e77ad7e78407a8cede1022c8d22f7ef4d256ec5d024af6d91e7ce"
+    },
+    {
+      "path": "artifacts/patch_apply.log",
+      "bytes": 110,
+      "sha256": "08496d2e90b59eb93885a8bd926baa3aca43e46d2d1b767613b348fc33eb1e1e"
+    },
+    {
+      "path": "artifacts/npu_entry_dry_run.json",
+      "bytes": 125,
+      "sha256": "e0a49da0f036e974cbc1debde9d75ccdcfd620c6cb6cdfde95f106c3dab630ea"
+    },
+    {
+      "path": "artifacts/plan_examples.stdout",
+      "bytes": 1198,
+      "sha256": "6e25a778c7b10e37fcf1dabddb15e755358286bd27c5705f1abf7d2b0798c911"
+    },
+    {
+      "path": "base/topk.py",
+      "bytes": 5087,
+      "sha256": "f82f25bb343892b7b8b1eb833a4e6ca376a510ac74a3a935e0a1997dbd072f75"
+    },
+    {
+      "path": "base/topk.py.sha256",
+      "bytes": 160,
+      "sha256": "9321eb14f90c236385c66c26db5949829ca9b7d26018d9fb97c2d34851775f95"
+    },
+    {
+      "path": "patched_tree/sglang/srt/eplb/prefill_copy_aware.py",
+      "bytes": 25306,
+      "sha256": "1798bb45f530d38e0141d50cb6a2c9d95d732d422e126e3ad53840b633fce19b"
+    },
+    {
+      "path": "patched_tree/sglang/srt/hardware_backend/npu/moe/topk.py",
+      "bytes": 5759,
+      "sha256": "c72f32855cd5e6d0195a2942c21c14326a414ec2f702ae118bc94b431fc72c5a"
+    }
+  ],
+  "hardware_status": "NOT_RUN",
+  "cpu_status": "PASS",
+  "known_missing": [
+    "HCCL transport",
+    "NZ/ND state preparation",
+    "full quantized state manifest",
+    "EP-wide count exchange",
+    "real dispatch/combine",
+    "production graph integration",
+    "HBM peak",
+    "SLO"
+  ]
+}

@@ -42,3 +42,10 @@
 - online prefill K=1 在零 dispatch 成本下的远端复制回本线约 53.5 µs/专家；dispatch=0.1 µs/task 后中位数为负。
 - decode 的远端复制回本线仅约 1.5–4.3 µs/专家。
 - 入口：[`20261103_complex_moe_sim/RESULTS.md`](20261103_complex_moe_sim/RESULTS.md)
+
+## 20261103_prefill_copy_aware
+
+- M0：针对实际镜像 `v0.5.18-cann9.0.0-a3` 的 `fused_topk_npu` 制作默认 `off` 补丁。
+- CPU：12 个逻辑测试 + 3 个补丁集成测试通过；patch apply/dry-run 通过。
+- NPU/HCCL/生产 graph：**未运行、未验证**。
+- 入口：[`20261103_prefill_copy_aware/20261103_0935/IMPLEMENTATION.md`](20261103_prefill_copy_aware/20261103_0935/IMPLEMENTATION.md)

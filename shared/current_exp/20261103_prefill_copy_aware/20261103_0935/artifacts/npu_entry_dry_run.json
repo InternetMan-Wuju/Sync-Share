@@ -1,0 +1,6 @@
+{
+  "status": "READY_NOT_RUN",
+  "reason": "--execute not supplied",
+  "device_touched": false,
+  "service_started": false
+}
