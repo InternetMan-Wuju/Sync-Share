@@ -34,3 +34,11 @@
 关键数字：S3 时间感知配额在 layer49 单卡局部回放中把 rank-local 最大时间降低 45.1%（calibration）/47.8%（holdout）；这不是端到端收益，仍必须做多卡 M1 与 HCCL 验证。
 
 - 证据与清单：[`20261102_load_balance_e0/MANIFEST.md`](20261102_load_balance_e0/MANIFEST.md)
+
+## 20261103_complex_moe_sim
+
+- 真实 dump 的 75 个 MoE layer 多层模拟，EP16/32/64，以及 EP16 online 临时副本的 K=1/2/4/8/16 扫描。
+- prefill EP16/32/64 的 MoE-only 计算代理为 48.67/34.02/27.20 ms/step；decode 为 19.99/18.31/17.67 ms/step。
+- online prefill K=1 在零 dispatch 成本下的远端复制回本线约 53.5 µs/专家；dispatch=0.1 µs/task 后中位数为负。
+- decode 的远端复制回本线仅约 1.5–4.3 µs/专家。
+- 入口：[`20261103_complex_moe_sim/RESULTS.md`](20261103_complex_moe_sim/RESULTS.md)

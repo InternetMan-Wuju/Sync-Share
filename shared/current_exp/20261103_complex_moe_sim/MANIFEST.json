@@ -1,0 +1,53 @@
+{
+  "run": "20261103_complex_moe_sim",
+  "created_at": "2026-11-03T09:33:54+08:00",
+  "host": "npu1-23",
+  "kind": "CPU trace-driven multi-layer simulation",
+  "routing_trace": {
+    "path": "/home/chengyetai/workspace/current_exp/20261102_load_balance_e0/logs/20261102_081322/eplb_windows/000000_1793579172.815737.pt",
+    "sha256": "55f4b71e1624cf7ec81b12fd8540ac2f8796ccade1e7a6020851167b53e426da"
+  },
+  "cost_curve_source": {
+    "path": "shared/current_exp/20261102_load_balance_e0/evidence/s0_s4_p2/S2_LOCAL_COST.json",
+    "sha256": "3d8d43f002f09b4a129a74370ee4aebbc1dc9dcc9dd167cf84e7f6bb50a08c70"
+  },
+  "artifacts": [
+    {
+      "path": "RESULTS.md",
+      "bytes": 4256,
+      "sha256": "b363ecd896411cf75eb1e4d1dd5c17bbbc733388cffad4070e78447132c92ad6"
+    },
+    {
+      "path": "simulate.py",
+      "bytes": 8896,
+      "sha256": "f07e1a52da653d7c90504bf5a3dd872fcf842c742d1e1fb57c90d4b4b68feaf8"
+    },
+    {
+      "path": "SIMULATION_RESULT.json",
+      "bytes": 739678,
+      "sha256": "2c606f3eeb7992473ce7e9c73444be5a0381f5c08799cb2dbc0cdc1528c57f5e"
+    },
+    {
+      "path": "SUMMARY.csv",
+      "bytes": 1502,
+      "sha256": "4d58817329099c8f574518788ecce57eac76e2a993986c0ded55cdbe61e125d0"
+    },
+    {
+      "path": "simulate.stdout",
+      "bytes": 10716,
+      "sha256": "b7727418639a9949d81ce2512bf021d62e1fa3ef8126fa08436247613a943764"
+    },
+    {
+      "path": "README.md",
+      "bytes": 376,
+      "sha256": "3ca1eb48a54513d96c9bf8f20661618dc2ca8d34cbad30fd5ffe626f4c6f916c"
+    }
+  ],
+  "evidence_levels": {
+    "routing": "real trace",
+    "local_time": "NPU-measured curve",
+    "network": "parameter sweep, unmeasured",
+    "dispatch": "parameter sweep, unmeasured",
+    "production": "not modeled"
+  }
+}
