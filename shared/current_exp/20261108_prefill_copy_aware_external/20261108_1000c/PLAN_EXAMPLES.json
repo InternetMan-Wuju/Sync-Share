@@ -49,5 +49,39 @@
     "max_abs": 0.0,
     "nrmse": 0.0,
     "nonfinite": 0
+  },
+  "positive_local_plan": {
+    "step_id": 1,
+    "layer_id": 49,
+    "epoch": 1,
+    "action": "route",
+    "logical_expert": 0,
+    "weight_source_rank": 0,
+    "primary_compute_rank": 0,
+    "destination_rank": 1,
+    "destination_local_slot": 16,
+    "q_global": 2016,
+    "q_by_source": [
+      2016
+    ],
+    "copy_required": true,
+    "layout_version": "positive-local",
+    "weight_version": 3,
+    "estimated_gain_us": 1873.1818047899922,
+    "reason": "gain_above_threshold",
+    "primary_physical_id": 0,
+    "destination_physical_id": 33
+  },
+  "positive_local_ledger": {
+    "old_max_ms": 1.1155094419206892,
+    "new_max_ms": 0.5643200303949237,
+    "compute_saving_ms": 0.5511894115257655,
+    "planner_ms": 0.01628081583712446,
+    "copy_ms": 0.1265373793728833,
+    "net_after_planner_and_local_copy_ms": 0.4083712163157577,
+    "copy_bytes": 37810176,
+    "plan_state_copy_calls": 1,
+    "transport_calls_total": 5097,
+    "scope": "single NPU local compute + local full-state copy; no HCCL"
   }
 }

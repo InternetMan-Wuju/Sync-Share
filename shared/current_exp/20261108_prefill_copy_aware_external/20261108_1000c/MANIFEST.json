@@ -1,45 +1,111 @@
 {
   "run_id": "20261108_1000c",
   "kind": "external M0 prefill copy-aware runtime plugin",
-  "status": "M0_EXTERNAL_CPU_PASS_NPU_SMOKE_PASS_FULL_LOCAL_EXPERT_PASS_CROSS_RANK_NOT_TESTED",
+  "status": "M0_EXTERNAL_CPU_PASS_NPU_SMOKE_PASS_FULL_LOCAL_EXPERT_PASS_LOCAL_POSITIVE_TEST_ONLY_CROSS_RANK_NOT_TESTED",
   "created_at": "2026-11-08T10:08:07+08:00",
+  "updated_at": "2026-11-08T19:46:41+08:00",
   "host": "npu1-23",
-  "base_git_commit": "7ef4f36",
+  "base_git_commit": "fa6c643",
   "source_files_modified": false,
   "npu_smoke_status": "NPU_PASS_TEST_ONLY",
   "npu_full_local_status": "NPU_FULL_LOCAL_PASS_TEST_ONLY",
+  "npu_positive_local_status": "LOCAL_POSITIVE_TEST_ONLY",
+  "npu_positive_local_case": "4096/64 -> 2080/2080",
+  "npu_positive_local_ledger": {
+    "old_max_ms": 1.1155094419206892,
+    "new_max_ms": 0.5643200303949237,
+    "compute_saving_ms": 0.5511894115257655,
+    "planner_ms": 0.01628081583712446,
+    "copy_ms": 0.1265373793728833,
+    "net_after_planner_and_local_copy_ms": 0.4083712163157577,
+    "copy_bytes": 37810176,
+    "plan_state_copy_calls": 1,
+    "transport_calls_total": 5097,
+    "all_blocks_ge_100ms": true,
+    "copied_state": true
+  },
   "service_started": false,
   "full_model_loaded": false,
   "artifacts": [
     {
-      "path": "README.md",
-      "bytes": 481,
-      "sha256": "96b06dde83e8250104cd9d247f90f8e49e04fc6b34f8b36e1c6aede509708f1c"
-    },
-    {
-      "path": "IMPLEMENTATION.md",
-      "bytes": 4629,
-      "sha256": "c31726a2d5985fc47f292d22c6a5ae09583c85b5bc1adaf7ebbec70235f31b44"
-    },
-    {
-      "path": "VALIDATION.md",
-      "bytes": 1871,
-      "sha256": "edd3e7a66d9595fa3d3df11782bce989934247612e1b5c7343720f142e2e425e"
+      "path": ".gitignore",
+      "bytes": 24,
+      "sha256": "18cedcad7dd898ff1cca99ccbbb407163cdd7a6bbf77b4cd0bf5e5e70f34960d"
     },
     {
       "path": "APPLY.md",
-      "bytes": 621,
-      "sha256": "30e366e3d763562a5e0d66290089744f23226d85c891144ee8e2588e5a570245"
+      "bytes": 945,
+      "sha256": "29fcc7f030db8db3265f7a076152dfaec858e0fd0e85f26831119c645c85e304"
     },
     {
       "path": "ENVIRONMENT.json",
-      "bytes": 1263,
-      "sha256": "20fbeea975e44abdcf39bf3c1f2054680c81d7a5531f4912e13db48e81791737"
+      "bytes": 1937,
+      "sha256": "5659d1c92cd702b130b46eeccbb79527a73a01be223644b1c1cfcf0743f57ae3"
+    },
+    {
+      "path": "IMPLEMENTATION.md",
+      "bytes": 5583,
+      "sha256": "b0d8f06a9363e4bbf4c897bf6d9b2b9dcfbddeb360bf01d784d7321e345671c7"
     },
     {
       "path": "PLAN_EXAMPLES.json",
-      "bytes": 1206,
-      "sha256": "bc993c0c898daf64d3a4866d8364c179c21b1c1e9163e51ca944ee624bc7d566"
+      "bytes": 2221,
+      "sha256": "ba9a762d6de28b50e6406583059d9bcd0704ebe1942629ea5a103e4f8162d76b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 951,
+      "sha256": "2d9032fb4e8cf738df513376bea8ca0b49fc17babbe4f5d4773a09380ab6b1ea"
+    },
+    {
+      "path": "RESULTS.md",
+      "bytes": 3066,
+      "sha256": "e6eace5a1c7ca8b6647ec45ea09d98854b8be7bc9007e3534cb3c1770bcc69b9"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 2880,
+      "sha256": "42c48b8767a7efe1bb7628aaa5229cd9bdc81c2734e64395499caa9f076a9cc7"
+    },
+    {
+      "path": "artifacts/cpu_tests.log",
+      "bytes": 1325,
+      "sha256": "9bf9602d37247972ab128de79c64980200ce81d22ce270a4f124052d8707d3c8"
+    },
+    {
+      "path": "artifacts/full_local_smoke.json",
+      "bytes": 1512,
+      "sha256": "83aa1ea658d9722167d0919a26ad5751e1041ce367bb91d59115038421772721"
+    },
+    {
+      "path": "artifacts/full_local_smoke_v5.stdout",
+      "bytes": 2381,
+      "sha256": "488180d9d0202997347391d162183a0f0402f13791d22e1e382947610a2246aa"
+    },
+    {
+      "path": "artifacts/npu_smoke.json",
+      "bytes": 1463,
+      "sha256": "912b88d75f3ed8a91d3d95a4387f2182c854242fbdd3831010d1a9665679b829"
+    },
+    {
+      "path": "artifacts/npu_smoke_saved.stdout",
+      "bytes": 1463,
+      "sha256": "912b88d75f3ed8a91d3d95a4387f2182c854242fbdd3831010d1a9665679b829"
+    },
+    {
+      "path": "artifacts/positive_case.json",
+      "bytes": 7614,
+      "sha256": "ba1121c7f68cbd327fb45f3622d92e573b0a1579c614830856b97d6f0c04045b"
+    },
+    {
+      "path": "artifacts/positive_case.stdout",
+      "bytes": 8661,
+      "sha256": "c9c2f675aeb431891f400b118ed0b173bde32c8408669f3bc18894eccfd44820"
+    },
+    {
+      "path": "evidence/topk_base.py",
+      "bytes": 5087,
+      "sha256": "f82f25bb343892b7b8b1eb833a4e6ca376a510ac74a3a935e0a1997dbd072f75"
     },
     {
       "path": "m0_external/__init__.py",
@@ -50,6 +116,11 @@
       "path": "m0_external/controller.py",
       "bytes": 25433,
       "sha256": "eee73800950565c757af0a9541e074a9d31a9eb0482473b8065348cafedd8887"
+    },
+    {
+      "path": "m0_external/full_local_smoke.py",
+      "bytes": 6903,
+      "sha256": "67664a3825d00854a13420d38bb502dbe32733947b2a7d4d08603b26879da79b"
     },
     {
       "path": "m0_external/install.py",
@@ -67,9 +138,24 @@
       "sha256": "ed14a258dea18d44604603df618725156c36de71b72d2014881312d018b67d7f"
     },
     {
-      "path": "m0_external/full_local_smoke.py",
+      "path": "m0_external/positive_case.py",
+      "bytes": 10808,
+      "sha256": "8ebfa17c9f5a47d52fff60b56c6acfc6b55fb33b488cad9dd0322362eed2345a"
+    },
+    {
+      "path": "tests/npu_full_local.py",
       "bytes": 6903,
       "sha256": "67664a3825d00854a13420d38bb502dbe32733947b2a7d4d08603b26879da79b"
+    },
+    {
+      "path": "tests/npu_positive_case.py",
+      "bytes": 174,
+      "sha256": "c25500a923ffa55374455e19db952a5ac6d2ea3f800186b46beb927ab5ff6404"
+    },
+    {
+      "path": "tests/npu_validate_external.py",
+      "bytes": 4761,
+      "sha256": "ed14a258dea18d44604603df618725156c36de71b72d2014881312d018b67d7f"
     },
     {
       "path": "tests/test_cpu_logic.py",
@@ -80,51 +166,12 @@
       "path": "tests/test_external_install.py",
       "bytes": 1132,
       "sha256": "bca9c73950920d18003afbb82b7445919015c805dd5ab77e50a4dfefb9252ac3"
-    },
-    {
-      "path": "tests/npu_validate_external.py",
-      "bytes": 4761,
-      "sha256": "ed14a258dea18d44604603df618725156c36de71b72d2014881312d018b67d7f"
-    },
-    {
-      "path": "tests/npu_full_local.py",
-      "bytes": 6903,
-      "sha256": "67664a3825d00854a13420d38bb502dbe32733947b2a7d4d08603b26879da79b"
-    },
-    {
-      "path": "artifacts/cpu_tests.log",
-      "bytes": 1197,
-      "sha256": "e16d2aa03241d2041cb8caf83493a10a6a1985e997388a365f5133573f2dd3b1"
-    },
-    {
-      "path": "artifacts/npu_smoke.json",
-      "bytes": 1463,
-      "sha256": "912b88d75f3ed8a91d3d95a4387f2182c854242fbdd3831010d1a9665679b829"
-    },
-    {
-      "path": "artifacts/npu_smoke_saved.stdout",
-      "bytes": 1463,
-      "sha256": "912b88d75f3ed8a91d3d95a4387f2182c854242fbdd3831010d1a9665679b829"
-    },
-    {
-      "path": "artifacts/full_local_smoke.json",
-      "bytes": 1512,
-      "sha256": "83aa1ea658d9722167d0919a26ad5751e1041ce367bb91d59115038421772721"
-    },
-    {
-      "path": "artifacts/full_local_smoke_v5.stdout",
-      "bytes": 2381,
-      "sha256": "488180d9d0202997347391d162183a0f0402f13791d22e1e382947610a2246aa"
-    },
-    {
-      "path": "evidence/topk_base.py",
-      "bytes": 5087,
-      "sha256": "f82f25bb343892b7b8b1eb833a4e6ca376a510ac74a3a935e0a1997dbd072f75"
     }
   ],
   "known_missing": [
-    "HCCL/P2P",
-    "cross-rank commit protocol",
+    "same-host dual-NPU HCCL/P2P and remote full-state copy",
+    "cross-rank commit protocol and parallel contention",
+    "dispatch/combine incremental cost",
     "full top-8 all-expert computation",
     "full model graph",
     "extra-slot HBM",

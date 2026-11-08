@@ -9,7 +9,19 @@
   "device": {
     "name": "Ascend910_9382",
     "count": 1,
-    "binding": "/dev/davinci0"
+    "binding": "/dev/davinci0",
+    "bindings": [
+      "/dev/davinci0",
+      "/dev/davinci_manager",
+      "/dev/devmm_svm",
+      "/dev/hisi_hdc"
+    ],
+    "driver_mounts": [
+      "/usr/local/Ascend/driver",
+      "/usr/local/dcmi",
+      "/usr/local/bin/npu-smi"
+    ],
+    "visible_devices": "0"
   },
   "image": {
     "name": "quay.io/ascend/sglang:v0.5.18-cann9.0.0-a3",
@@ -40,5 +52,12 @@
     "full model graph",
     "extra-slot HBM",
     "service SLO"
-  ]
+  ],
+  "npu_positive_case": "LOCAL_POSITIVE_TEST_ONLY",
+  "npu_positive_case_scope": "single NPU; virtual ranks sequential; local full-state copy; no HCCL",
+  "npu_positive_case_net_ms": 0.4083712163157577,
+  "npu_positive_case_compute_saving_ms": 0.5511894115257655,
+  "npu_positive_case_planner_ms": 0.016281,
+  "npu_positive_case_copy_ms": 0.1265373793728833,
+  "npu_positive_case_copy_bytes": 37810176
 }

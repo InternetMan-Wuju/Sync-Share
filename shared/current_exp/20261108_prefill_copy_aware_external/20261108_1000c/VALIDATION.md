@@ -71,3 +71,33 @@ python3 -m m0_external.full_local_smoke
 输出：`artifacts/full_local_smoke.json`、`artifacts/full_local_smoke_v5.stdout`。
 
 这仍是 test-only 本地路径，不是完整模型或跨卡验证。
+
+## 5. 单 NPU 正收益本地代理
+
+命令：
+
+```bash
+python -m m0_external.positive_case
+```
+
+固定输入：`4096/64 -> 2080/2080`，迁移配额 `q_global=2016`。
+设备：`Ascend910_9382`，单张 NPU，虚拟 rank 顺序执行。
+
+| 项目 | 结果 |
+|---|---:|
+| old max 计算代理 | `1.115509 ms` |
+| new max 计算代理 | `0.564320 ms` |
+| 计算节省 | `0.551189 ms` |
+| planner | `0.016281 ms` |
+| 本地完整 state copy | `0.126537 ms` |
+| 扣除后净值 | **`+0.408371 ms`** |
+| copy bytes | `37,810,176 B` |
+| 状态 | `LOCAL_POSITIVE_TEST_ONLY` |
+
+正确性：Plan 实际迁出 2016；w13/down/scales 与源逐位一致；offset 全零；
+所有正式块 `>=100 ms`。原始输出和结构化结果分别是
+`artifacts/positive_case.stdout` 与 `artifacts/positive_case.json`。
+
+该结果证明本地计算收益足以覆盖 planner 和本地 state copy；不证明跨卡
+HCCL/P2P、dispatch/combine、并行争用或生产服务收益。后续同机双 NPU 验证
+不需要多机。

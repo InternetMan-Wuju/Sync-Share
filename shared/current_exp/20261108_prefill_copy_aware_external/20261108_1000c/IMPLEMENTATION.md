@@ -122,3 +122,21 @@ active 只允许测试 runtime 显式注册；当前仅适配 layer49、Prefill 
 | transport 调用 | 1 |
 
 该结果证明“顶层路由→Plan→真实本地状态复制→真实量化专家链→原权重贡献恢复”的外部本地路径；仍未证明完整模型、跨卡 HCCL、完整 dispatch/combine 或服务 SLO。
+
+## 8. 单 NPU 正收益本地代理（本轮新增）
+
+`m0_external/positive_case.py` 复用同一 `Planner`、真实 e43/e40 W8A8 状态和
+完整本地专家链，对固定输入 `4096/64` 做分流：
+
+- 热点专家迁出 `q_global=2016`；
+- 新布局 `2080/2080`；
+- 目的槽预置错误 e40 哨兵，复制后与源 e43 的 w13/down/scales 逐位一致；
+- 单卡顺序测 old/new 两 rank 的完整专家链，使用两侧最大耗时作为并行计算代理。
+
+结果见 [RESULTS.md](RESULTS.md)。扣掉 `0.016281 ms` planner 和 `0.126537 ms`
+本地完整 state copy 后，计算代理仍节省 `0.408371 ms`，状态为
+`LOCAL_POSITIVE_TEST_ONLY`。
+
+边界：state copy 是同 NPU 独立 buffer 的 device copy，不是 HCCL/P2P；没有
+测试跨卡复制、全局计数交换、dispatch/combine 增量、并行争用、完整模型或服务
+SLO。下一步应是同一台机器两张 NPU 上的独立 rank 验证，而不是多机。

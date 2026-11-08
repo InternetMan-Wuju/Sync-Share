@@ -1,0 +1,275 @@
+{
+  "status": "LOCAL_POSITIVE_TEST_ONLY",
+  "device_name": "Ascend910_9382",
+  "case": "4096/64 -> 2080/2080",
+  "plan": {
+    "step_id": 1,
+    "layer_id": 49,
+    "epoch": 1,
+    "action": "route",
+    "logical_expert": 0,
+    "weight_source_rank": 0,
+    "primary_compute_rank": 0,
+    "destination_rank": 1,
+    "destination_local_slot": 16,
+    "q_global": 2016,
+    "q_by_source": [
+      2016
+    ],
+    "copy_required": true,
+    "layout_version": "positive-local",
+    "weight_version": 3,
+    "estimated_gain_us": 1873.1818047899922,
+    "reason": "gain_above_threshold",
+    "primary_physical_id": 0,
+    "destination_physical_id": 33
+  },
+  "old": {
+    "r0": {
+      "median_ms": 1.1155094419206892,
+      "min_ms": 1.1152730669294084,
+      "max_ms": 1.1161817141941615,
+      "blocks": [
+        {
+          "calls": 224,
+          "total_ms": 249.83395385742188,
+          "ms_per_call": 1.1153301511492049,
+          "host_ms_per_call": 1.1159136109719319
+        },
+        {
+          "calls": 224,
+          "total_ms": 249.87411499023438,
+          "ms_per_call": 1.1155094419206892,
+          "host_ms_per_call": 1.1161195496762437
+        },
+        {
+          "calls": 224,
+          "total_ms": 249.92868041992188,
+          "ms_per_call": 1.1157530375889368,
+          "host_ms_per_call": 1.1163491071783938
+        },
+        {
+          "calls": 224,
+          "total_ms": 249.8211669921875,
+          "ms_per_call": 1.1152730669294084,
+          "host_ms_per_call": 1.116321112411762
+        },
+        {
+          "calls": 224,
+          "total_ms": 250.0247039794922,
+          "ms_per_call": 1.1161817141941615,
+          "host_ms_per_call": 1.1175603171328217
+        }
+      ],
+      "all_ge_100ms": true
+    },
+    "r1": {
+      "median_ms": 0.19764052287186726,
+      "min_ms": 0.1971569816664894,
+      "max_ms": 0.19885276567817914,
+      "blocks": [
+        {
+          "calls": 808,
+          "total_ms": 160.67303466796875,
+          "ms_per_call": 0.19885276567817914,
+          "host_ms_per_call": 0.19902113097775173
+        },
+        {
+          "calls": 808,
+          "total_ms": 159.85865783691406,
+          "ms_per_call": 0.1978448735605372,
+          "host_ms_per_call": 0.19798398140061757
+        },
+        {
+          "calls": 808,
+          "total_ms": 159.4066162109375,
+          "ms_per_call": 0.1972854161026454,
+          "host_ms_per_call": 0.19740030062292693
+        },
+        {
+          "calls": 808,
+          "total_ms": 159.69354248046875,
+          "ms_per_call": 0.19764052287186726,
+          "host_ms_per_call": 0.19776719676487442
+        },
+        {
+          "calls": 808,
+          "total_ms": 159.30284118652344,
+          "ms_per_call": 0.1971569816664894,
+          "host_ms_per_call": 0.1972789627195585
+        }
+      ],
+      "all_ge_100ms": true
+    }
+  },
+  "new": {
+    "r0": {
+      "median_ms": 0.5502605393978394,
+      "min_ms": 0.550157303599913,
+      "max_ms": 0.5504658426873369,
+      "blocks": [
+        {
+          "calls": 431,
+          "total_ms": 237.2032012939453,
+          "ms_per_call": 0.5503554554383882,
+          "host_ms_per_call": 0.5505918627799318
+        },
+        {
+          "calls": 431,
+          "total_ms": 237.16229248046875,
+          "ms_per_call": 0.5502605393978394,
+          "host_ms_per_call": 0.5505251322209559
+        },
+        {
+          "calls": 431,
+          "total_ms": 237.1177978515625,
+          "ms_per_call": 0.550157303599913,
+          "host_ms_per_call": 0.5504874990099129
+        },
+        {
+          "calls": 431,
+          "total_ms": 237.2507781982422,
+          "ms_per_call": 0.5504658426873369,
+          "host_ms_per_call": 0.5508453435028996
+        },
+        {
+          "calls": 431,
+          "total_ms": 237.14500427246094,
+          "ms_per_call": 0.5502204275463131,
+          "host_ms_per_call": 0.5505205382724787
+        }
+      ],
+      "all_ge_100ms": true
+    },
+    "r1": {
+      "median_ms": 0.5643200303949237,
+      "min_ms": 0.5641354647549716,
+      "max_ms": 0.5643650401722301,
+      "blocks": [
+        {
+          "calls": 418,
+          "total_ms": 235.89735412597656,
+          "ms_per_call": 0.5643477371434846,
+          "host_ms_per_call": 0.5645751485235668
+        },
+        {
+          "calls": 418,
+          "total_ms": 235.9045867919922,
+          "ms_per_call": 0.5643650401722301,
+          "host_ms_per_call": 0.5646251007228306
+        },
+        {
+          "calls": 418,
+          "total_ms": 235.88577270507812,
+          "ms_per_call": 0.5643200303949237,
+          "host_ms_per_call": 0.5646204597062685
+        },
+        {
+          "calls": 418,
+          "total_ms": 235.80862426757812,
+          "ms_per_call": 0.5641354647549716,
+          "host_ms_per_call": 0.5643953609338217
+        },
+        {
+          "calls": 418,
+          "total_ms": 235.82020568847656,
+          "ms_per_call": 0.5641631715035325,
+          "host_ms_per_call": 0.5644572276007117
+        }
+      ],
+      "all_ge_100ms": true
+    }
+  },
+  "old_max_ms": 1.1155094419206892,
+  "new_max_ms": 0.5643200303949237,
+  "compute_saving_ms": 0.5511894115257655,
+  "planner_ms": 0.01628081583712446,
+  "copy_ms": 0.1265373793728833,
+  "copy": {
+    "median_ms": 0.1265373793728833,
+    "min_ms": 0.11879818921018703,
+    "max_ms": 0.13760404539812962,
+    "blocks": [
+      {
+        "calls": 1015,
+        "total_ms": 128.43544006347656,
+        "ms_per_call": 0.1265373793728833,
+        "host_ms_per_call": 0.12674270463841303
+      },
+      {
+        "calls": 1015,
+        "total_ms": 120.58016204833984,
+        "ms_per_call": 0.11879818921018703,
+        "host_ms_per_call": 0.11900791145971255
+      },
+      {
+        "calls": 1015,
+        "total_ms": 125.82492065429688,
+        "ms_per_call": 0.12396543906827279,
+        "host_ms_per_call": 0.12415497852810498
+      },
+      {
+        "calls": 1015,
+        "total_ms": 139.66810607910156,
+        "ms_per_call": 0.13760404539812962,
+        "host_ms_per_call": 0.13776063859426035
+      },
+      {
+        "calls": 1015,
+        "total_ms": 137.82730102539062,
+        "ms_per_call": 0.13579044435999077,
+        "host_ms_per_call": 0.13596017046698503
+      }
+    ],
+    "all_ge_100ms": true
+  },
+  "planner": {
+    "median_ms": 0.01628081583712446,
+    "min_ms": 0.01626395688281726,
+    "max_ms": 0.016357734656364146,
+    "blocks": [
+      {
+        "calls": 13805,
+        "total_ms": 225.81852693110704,
+        "ms_per_call": 0.016357734656364146
+      },
+      {
+        "calls": 13782,
+        "total_ms": 224.82300898991525,
+        "ms_per_call": 0.01631279995573322
+      },
+      {
+        "calls": 14758,
+        "total_ms": 240.22046709433198,
+        "ms_per_call": 0.01627730499351755
+      },
+      {
+        "calls": 14750,
+        "total_ms": 239.8933640215546,
+        "ms_per_call": 0.01626395688281726
+      },
+      {
+        "calls": 14873,
+        "total_ms": 242.1445739455521,
+        "ms_per_call": 0.01628081583712446
+      }
+    ],
+    "all_ge_100ms": true
+  },
+  "net_after_planner_and_local_copy_ms": 0.4083712163157577,
+  "plan_state_copy_calls": 1,
+  "transport_calls_total": 5097,
+  "copy_bytes": 37810176,
+  "state": {
+    "copied_w13": true,
+    "copied_down": true,
+    "copied_w13_scale": true,
+    "copied_down_scale": true,
+    "offsets_zero": true
+  },
+  "all_blocks_ge_100ms": true,
+  "measurement_range": "expert-chain call + local full-state copy; excludes routing/dispatch/combine/HCCL",
+  "service_started": false,
+  "full_model_loaded": false,
+  "scope": "single NPU local compute + local full-state copy; no HCCL"
+}

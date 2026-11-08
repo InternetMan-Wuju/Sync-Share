@@ -1,3 +1,4 @@
+$ PYTHONDONTWRITEBYTECODE=1 python3 tests/test_cpu_logic.py
 test_active_plan_drives_copy_and_physical_ids (__main__.Tests) ... ok
 test_default_off_and_shadow_do_not_remap (__main__.Tests) ... ok
 test_empty_and_no_gain_do_not_route (__main__.Tests) ... ok
@@ -12,9 +13,11 @@ test_slot_lifecycle_and_epoch (__main__.Tests) ... ok
 test_unsupported_layer_returns_original (__main__.Tests) ... ok
 
 ----------------------------------------------------------------------
-Ran 12 tests in 0.020s
+Ran 12 tests in 0.019s
 
 OK
+
+$ PYTHONDONTWRITEBYTECODE=1 python3 tests/test_external_install.py
 test_default_off_is_fast_passthrough (__main__.ExternalInstall) ... ok
 test_launcher_installs_before_runpy (__main__.ExternalInstall) ... ok
 test_no_source_copy_or_write (__main__.ExternalInstall) ... ok
