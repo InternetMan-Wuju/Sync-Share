@@ -1,0 +1,20 @@
+{
+  "status": "NPU_PASS_TEST_ONLY",
+  "device": "0",
+  "device_name": "Ascend910_9382",
+  "checks": {
+    "off": {"shape": [512, 2], "destination_count": 0, "finite": true},
+    "shadow": {
+      "shape": [512, 2], "same_as_off": true, "transport_calls": 0,
+      "plan": {"step_id": 1, "layer_id": 49, "epoch": 1, "action": "route", "logical_expert": 0, "weight_source_rank": 0, "primary_compute_rank": 0, "destination_rank": 1, "destination_local_slot": 16, "q_global": 448, "q_by_source": [448], "copy_required": false, "layout_version": "npu-smoke", "weight_version": 3, "estimated_gain_us": 437.0, "reason": "shadow_plan", "primary_physical_id": 0, "destination_physical_id": 33}
+    },
+    "active": {
+      "shape": [512, 2], "destination_count": 448, "transport_calls": 1,
+      "plan": {"step_id": 2, "layer_id": 49, "epoch": 1, "action": "route", "logical_expert": 0, "weight_source_rank": 0, "primary_compute_rank": 0, "destination_rank": 1, "destination_local_slot": 16, "q_global": 448, "q_by_source": [448], "copy_required": true, "layout_version": "npu-smoke", "weight_version": 3, "estimated_gain_us": 437.0, "reason": "gain_above_threshold", "primary_physical_id": 0, "destination_physical_id": 33},
+      "event_ms": 113.15776062011719, "finite": true, "slot_validated": true
+    }
+  },
+  "service_started": false,
+  "full_model_loaded": false,
+  "scope": "external topk hook + fixed test plan on one NPU; no HCCL/full quant state/full model"
+}

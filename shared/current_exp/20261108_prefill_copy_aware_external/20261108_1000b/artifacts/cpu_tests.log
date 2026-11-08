@@ -1,0 +1,25 @@
+test_active_plan_drives_copy_and_physical_ids (__main__.Tests) ... ok
+test_default_off_and_shadow_do_not_remap (__main__.Tests) ... ok
+test_empty_and_no_gain_do_not_route (__main__.Tests) ... ok
+test_invalid_padding_shared_and_empty_conservation (__main__.Tests) ... ok
+test_multi_source_quota_prefix (__main__.Tests) ... ok
+test_noop_is_consistent_across_multiple_rank_controllers (__main__.Tests) ... ok
+test_planner_cold_cached_unknown_and_no_gain (__main__.Tests) ... ok
+test_remap_preserves_logic_and_weights (__main__.Tests) ... ok
+test_shadow_with_runtime_plans_without_copy (__main__.Tests) ... ok
+test_slot_failure_never_publishes_partial_state (__main__.Tests) ... ok
+test_slot_lifecycle_and_epoch (__main__.Tests) ... ok
+test_unsupported_layer_returns_original (__main__.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.021s
+
+OK
+test_default_off_is_fast_passthrough (__main__.ExternalInstall) ... ok
+test_launcher_installs_before_runpy (__main__.ExternalInstall) ... ok
+test_no_source_copy_or_write (__main__.ExternalInstall) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

@@ -64,6 +64,14 @@ Prefill 当前路由复制与精确配额 M0：
 - [验证记录](shared/current_exp/20261103_prefill_copy_aware/20261103_0935/VALIDATION.md)
 - [默认 off 补丁](shared/current_exp/20261103_prefill_copy_aware/20261103_0935/patches/prefill_copy_aware_m0.patch)
 
+### `shared/current_exp/20261108_prefill_copy_aware_external/`
+
+外挂式 Prefill copy-aware M0：
+
+- [实现说明](shared/current_exp/20261108_prefill_copy_aware_external/20261108_1000b/IMPLEMENTATION.md)
+- [NPU smoke 结果](shared/current_exp/20261108_prefill_copy_aware_external/20261108_1000b/artifacts/npu_smoke.json)
+- [验证记录](shared/current_exp/20261108_prefill_copy_aware_external/20261108_1000b/VALIDATION.md)
+
 ### `handoff/`
 
 本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。

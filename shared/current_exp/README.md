@@ -49,3 +49,9 @@
 - CPU：12 个逻辑测试 + 3 个补丁集成测试通过；patch apply/dry-run 通过。
 - NPU/HCCL/生产 graph：**未运行、未验证**。
 - 入口：[`20261103_prefill_copy_aware/20261103_0935/IMPLEMENTATION.md`](20261103_prefill_copy_aware/20261103_0935/IMPLEMENTATION.md)
+
+## 20261108_prefill_copy_aware_external
+
+- 外挂式 Prefill copy-aware M0，不修改服务器源码。
+- CPU 12+3 测试通过；单 NPU `NPU_PASS_TEST_ONLY`。
+- 入口：[`20261108_prefill_copy_aware_external/20261108_1000b/IMPLEMENTATION.md`](20261108_prefill_copy_aware_external/20261108_1000b/IMPLEMENTATION.md)
