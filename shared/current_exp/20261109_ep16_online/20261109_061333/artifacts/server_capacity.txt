@@ -1,0 +1,49 @@
+[2026-11-08 22:49:59 TP15 EP15] Load weight end. elapsed=713.34 s, type=GlmMoeDsaForCausalLM, avail mem=10.38 GB, mem usage=50.67 GB.
+[2026-11-08 22:49:59 TP2 EP2] Load weight end. elapsed=713.30 s, type=GlmMoeDsaForCausalLM, avail mem=10.13 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:07 TP0 EP0] Load weight end. elapsed=720.97 s, type=GlmMoeDsaForCausalLM, avail mem=10.08 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:08 TP14 EP14] Load weight end. elapsed=722.13 s, type=GlmMoeDsaForCausalLM, avail mem=10.13 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:10 TP3 EP3] Load weight end. elapsed=724.02 s, type=GlmMoeDsaForCausalLM, avail mem=10.38 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:16 TP10 EP10] Load weight end. elapsed=730.10 s, type=GlmMoeDsaForCausalLM, avail mem=10.14 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:18 TP1 EP1] Load weight end. elapsed=731.66 s, type=GlmMoeDsaForCausalLM, avail mem=10.37 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:20 TP12 EP12] Load weight end. elapsed=733.79 s, type=GlmMoeDsaForCausalLM, avail mem=10.14 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:22 TP7 EP7] Load weight end. elapsed=736.28 s, type=GlmMoeDsaForCausalLM, avail mem=10.38 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:23 TP6 EP6] Load weight end. elapsed=736.99 s, type=GlmMoeDsaForCausalLM, avail mem=10.13 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:24 TP11 EP11] Load weight end. elapsed=737.88 s, type=GlmMoeDsaForCausalLM, avail mem=10.37 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:26 TP8 EP8] Load weight end. elapsed=740.05 s, type=GlmMoeDsaForCausalLM, avail mem=10.13 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:27 TP13 EP13] Load weight end. elapsed=740.81 s, type=GlmMoeDsaForCausalLM, avail mem=10.36 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:32 TP9 EP9] Load weight end. elapsed=745.98 s, type=GlmMoeDsaForCausalLM, avail mem=10.37 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:32 TP4 EP4] Load weight end. elapsed=746.05 s, type=GlmMoeDsaForCausalLM, avail mem=10.14 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:43 TP5 EP5] Load weight end. elapsed=757.22 s, type=GlmMoeDsaForCausalLM, avail mem=10.36 GB, mem usage=50.67 GB.
+[2026-11-08 22:50:55 TP15 EP15] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP1 EP1] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP0 EP0] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP11 EP11] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP10 EP10] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP14 EP14] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP8 EP8] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP9 EP9] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP7 EP7] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP5 EP5] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP13 EP13] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP2 EP2] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP4 EP4] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP6 EP6] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP3 EP3] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP15 EP15] Memory pool end. avail mem=9.11 GB
+[2026-11-08 22:50:55 TP1 EP1] Memory pool end. avail mem=9.10 GB
+[2026-11-08 22:50:55 TP11 EP11] Memory pool end. avail mem=9.10 GB
+[2026-11-08 22:50:55 TP8 EP8] Memory pool end. avail mem=8.86 GB
+[2026-11-08 22:50:55 TP10 EP10] Memory pool end. avail mem=8.87 GB
+[2026-11-08 22:50:55 TP14 EP14] Memory pool end. avail mem=8.86 GB
+[2026-11-08 22:50:55 TP9 EP9] Memory pool end. avail mem=9.11 GB
+[2026-11-08 22:50:55 TP0 EP0] Memory pool end. avail mem=8.81 GB
+[2026-11-08 22:50:55 TP2 EP2] Memory pool end. avail mem=8.86 GB
+[2026-11-08 22:50:55 TP5 EP5] Memory pool end. avail mem=9.09 GB
+[2026-11-08 22:50:55 TP6 EP6] Memory pool end. avail mem=8.86 GB
+[2026-11-08 22:50:55 TP4 EP4] Memory pool end. avail mem=8.87 GB
+[2026-11-08 22:50:55 TP13 EP13] Memory pool end. avail mem=9.09 GB
+[2026-11-08 22:50:55 TP7 EP7] Memory pool end. avail mem=9.11 GB
+[2026-11-08 22:50:55 TP12 EP12] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 12288, KV size: 1.27 GB
+[2026-11-08 22:50:55 TP3 EP3] Memory pool end. avail mem=9.11 GB
+[2026-11-08 22:50:55 TP12 EP12] Memory pool end. avail mem=8.87 GB
+[2026-11-08 22:50:55 TP0 EP0] max_total_num_tokens=12288, chunked_prefill_size=8192, max_prefill_tokens=8192, max_running_requests=1, context_len=16384, available_gpu_mem=8.80 GB

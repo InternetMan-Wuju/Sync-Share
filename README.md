@@ -73,6 +73,15 @@ Prefill 当前路由复制与精确配额 M0：
 - [验证记录](shared/current_exp/20261108_prefill_copy_aware_external/20261108_1000c/VALIDATION.md)
 - [完整本地专家链结果](shared/current_exp/20261108_prefill_copy_aware_external/20261108_1000c/artifacts/full_local_smoke.json)
 
+### `shared/current_exp/20261109_ep16_online/`
+
+23节点16个NPU设备的整机验证，固定8192输入 / 32输出；外挂接入layer49，使用真实机内HCCL通信：
+
+- [结果与breakdown](shared/current_exp/20261109_ep16_online/20261109_061333/RESULTS.md)：区分完整请求、同输入并行子链、冷复制与已就绪副本；输入为AgentX块身份驱动的合成token。
+- [外挂实现与边界](shared/current_exp/20261109_ep16_online/20261109_061333/IMPLEMENTATION.md)
+- [16设备正确性证据](shared/current_exp/20261109_ep16_online/20261109_061333/VALIDATION.json)
+- [计时记录](shared/current_exp/20261109_ep16_online/20261109_061333/TIMINGS.csv)
+
 ### `handoff/`
 
 本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。

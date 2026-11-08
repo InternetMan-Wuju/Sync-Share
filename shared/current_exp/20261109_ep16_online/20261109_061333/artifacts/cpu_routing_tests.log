@@ -1,0 +1,7 @@
+test_invalid_and_reserved_not_expert_zero (__main__.Routing.test_invalid_and_reserved_not_expert_zero) ... ok
+test_multisource_branch_identity_and_integer_quota (__main__.Routing.test_multisource_branch_identity_and_integer_quota) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.214s
+
+OK

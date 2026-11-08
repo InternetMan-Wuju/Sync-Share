@@ -1,0 +1,170 @@
+{
+  "started_at": "2026-11-09T06:13:33+08:00",
+  "sampling_finished_at": "2026-11-09T07:20:11.449507+08:00",
+  "packaged_at": "2026-11-09T07:28:57.758264+08:00",
+  "elapsed_minutes_to_packaging": 75.41,
+  "host": "npu1-23",
+  "devices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "base_commit": "d5a8396bd417828c08882baff8172c69cbc457a7",
+  "status": "COMPLETE_SINGLE_NODE_EXPERIMENT_WITH_LIMITATIONS",
+  "scope": "TP16 EP16 DP1; full GLM model; target routed layer49;8192 input /32 output; no cross-node work",
+  "input_identity": "AgentX length/hash-block driven deterministic synthetic token materialization, NOT original AgentX prompt",
+  "source_files_modified": false,
+  "modes": "off/shadow/test_only active_cold/active_warm; real native dispatch/runner/combine",
+  "production_ready": false,
+  "e2e_acceleration_demonstrated": false,
+  "generation_reproducibility": "UNRESOLVED: off itself has5/5/4 different sequences across5 repetitions",
+  "correctness": {
+    "cpu_tests_passed": 6,
+    "whole_input_cases": 3,
+    "ranks_per_case": 16,
+    "max_abs": 0.0,
+    "max_nrmse": 0.0,
+    "partial_quota_npu_case": {
+      "request": "validate_partial_4081",
+      "forced_test_only": true,
+      "copied_bytes": 37810176,
+      "global_tasks": 65536,
+      "expert": 43,
+      "original_expert_tasks": 8162,
+      "q": 4081,
+      "remaining_on_source": 4081,
+      "quota_by_source": [
+        505,
+        511,
+        512,
+        510,
+        510,
+        511,
+        511,
+        509,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_abs": 0.0,
+      "max_nrmse": 0.0,
+      "all16_state_bytes_equal": true
+    },
+    "state_copy_bytes": 37810176,
+    "expected_global_rows": 8192,
+    "expected_global_valid_branches": 65536
+  },
+  "timing": {
+    "whole_requests_formal": 60,
+    "all_client_records": 131,
+    "replay_concurrent_group_blocks": 60,
+    "rank_block_records": 960,
+    "warmup_calls_per_mode_per_input": 20,
+    "min_rank_block_ms": 122.132145,
+    "max_rank_block_ms": 138.961624,
+    "repetitions": [
+      11,
+      14,
+      15,
+      18
+    ],
+    "primary_scope": "steady repeated routed-expert subchain wall time, max concurrent rank block mean",
+    "profile_scope": "5 separate diagnostics per mode; event/rank maxima are not additive; not independently100ms component benchmarks",
+    "production_p95_measured": false
+  },
+  "memory": {
+    "extra_slots": "1/rank at all75 MoE layers, not layer-local",
+    "estimated_extra_expert_bytes_per_rank": 2835763200,
+    "measured_hbm_delta_vs_no_slots": null,
+    "packed_state_buffer_bytes_per_rank": 37810176,
+    "kv_tokens": 12288,
+    "max_memory_allocated_bytes": 56464904704
+  },
+  "implementation_revisions": [
+    {
+      "kind": "implementation",
+      "revision": 1,
+      "sha256": "db44462d98df06dfbc433a35e246d0658a6c8dddbf9b7cdf57a7de88957ebe43",
+      "rank": 0,
+      "layer": 49,
+      "seq": 1
+    },
+    {
+      "kind": "implementation",
+      "revision": 2,
+      "sha256": "0eb7929781fadc99e6a2a611f55f175bf31a727822fe579af0f734ec42aeb9db",
+      "rank": 0,
+      "layer": 49,
+      "seq": 12
+    },
+    {
+      "kind": "implementation",
+      "revision": 3,
+      "sha256": "afd3c5b58dcfdda3b476882bbec2d2dffbcdd3e63b5a836dad02426402c68133",
+      "rank": 0,
+      "layer": 49,
+      "seq": 133
+    }
+  ],
+  "sampling_source_sha256": "0eb7929781fadc99e6a2a611f55f175bf31a727822fe579af0f734ec42aeb9db",
+  "final_code_sha256": {
+    "artifacts/measured_experiment_v2.py": "0eb7929781fadc99e6a2a611f55f175bf31a727822fe579af0f734ec42aeb9db",
+    "layout.json": "ce716be5714a32b9fa4d25ef40008f935227432ddef6d6c3e8d965eb406cbcc2",
+    "plugin/experiment.py": "afd3c5b58dcfdda3b476882bbec2d2dffbcdd3e63b5a836dad02426402c68133",
+    "plugin/planner.py": "a16ffb2c73843ed75027ce00867d4a435571d0ab07fadb406dd2483a6f2bfabf",
+    "plugin/runtime.py": "8a113648fb40b95e4dc4dae0db2aa0c09f370d34c3b695d059d74483af6aea81",
+    "plugin/sitecustomize.py": "590a16b0a66eec7413591e29a5e4970a6815ca3b111c1437bfd4f4adb483845e",
+    "scripts/analyze.py": "e19e6d301dcf0926b9c94095a8c82fcc170f71f67a7aabff3bdc3d05bf2d312a",
+    "scripts/client.py": "782781c2eb174f9b7bb67a8dc33eeb70b1ee6aede7a400acfdf07664e02a97a4",
+    "scripts/environment.py": "1ef5e922f2aa3d97d8b635771da54b382cac93a8c9b2787a27aeb7ca62db0624",
+    "scripts/launch.sh": "0a84374d4f902bf09f0f4cfe840ec0c135b7d9ca5ff314a08c5bbf750e225d02",
+    "scripts/prepare_inputs.py": "5cd3189aa82262c364d68fe99c0a69876b678cd10cdcb598b300f80fe320671d",
+    "scripts/server.sh": "203476a4f1e4ae577862455932dc25a569731a146e1d6476e9c7a279c7ce39c9",
+    "scripts/smoke.py": "232a3a8ae0d634817d34ef9d64431d6c335b4e545c2176ae60d8aa3f2a861182",
+    "scripts/suite.py": "09edd5f988f8553738db8adb4f9f3c913bd573b2749f2e4364d47b0d0b806241",
+    "scripts/write_manifest.py": "541479c5b76e221aa93a8182a619ab58b4d59ed93abd67938bfefbb5ab66f61f",
+    "scripts/write_report.py": "09875af6b12f5ee0958931b8b7d8d6d1d2ec19fd771467347798fa9bf168c18b",
+    "tests/test_planner.py": "9faa8f5ed6ebbd1f5751b0dca2961147d8b811645eb1a7a162977d68bba3df93",
+    "tests/test_routing.py": "50428ea14546c7201e484b1f20859ffe6f1d335301294af2e3bfeddbccca0732"
+  },
+  "evidence_sha256": {
+    "INPUTS.json": "b8d841b30b23ede298ca7f015462b208d112940bf8c15850b24dc4d4ffe43812",
+    "INPUTS_PLANS.json": "96c4efb2e21cf75dfaf908e8568e779696d6949b3f168702cc54b2fd6dca4723",
+    "TIMINGS.csv": "3d56afe969c699ae45231fd6b81ef5843741f97f09b97e192534d67dae68841b",
+    "SUMMARY.json": "68459d23f4a7cafd1ddeb6317232c03f6b95d6a145b6e5a36edb171f3efb08f8",
+    "VALIDATION.json": "3423c7cea4c94c87887c2b98baecb5ecdc0f76987ef7531a6acd2ee58bb0c7db",
+    "ENVIRONMENT.json": "16c948abbd12f78c7eff081ac30a0c40b70c2a1a21b20d3974579532d969122d",
+    "RESULTS.md": "a1bf6be2237b9739f9f59ad4e14e979645d950bde1910732a4cbba784986dcd7",
+    "artifacts/rank_records.jsonl.gz": "6ac90db51b4b1cd488468ce083a3d225a2c205a1ef535da249f447a390cd227c"
+  },
+  "cleanup": {
+    "model_container_stopped": true,
+    "all_npu_devices_released": true,
+    "evidence": "artifacts/npu_released.txt"
+  },
+  "not_completed": [
+    "production cost-aware gate and graph validation",
+    "full-generation determinism/root cause",
+    "layer-local spare storage",
+    "representative original AgentX text workload",
+    "whole-service acceleration or SLO certification"
+  ]
+}

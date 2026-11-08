@@ -1,0 +1,9 @@
+test_empty_uniform (__main__.Tests) ... ok
+test_expert_specific_prefix (__main__.Tests) ... ok
+test_hot (__main__.Tests) ... ok
+test_random_conservation_and_independent_bound (__main__.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.323s
+
+OK
