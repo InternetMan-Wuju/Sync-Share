@@ -1,0 +1,1 @@
+{"at": "2026-11-08T01:53:10.270718+00:00", "pid": 1426, "file": "quant_model_weights-00107-of-00181.safetensors", "tensor_reads": 18, "requested_bytes": 75661312, "verified_blocks": 5, "fallback_blocks": 0, "original_drift_blocks": 0, "block_count": 128, "error": null}

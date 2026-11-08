@@ -1,29 +1,30 @@
 {
-  "run_id": "20261108_1000b",
+  "run_id": "20261108_1000c",
   "kind": "external M0 prefill copy-aware runtime plugin",
-  "status": "M0_EXTERNAL_CODE_CPU_PASS_NPU_SMOKE_PASS_HARDWARE_CHAIN_NOT_COMPLETE",
-  "created_at": "2026-11-08T09:09:48+08:00",
+  "status": "M0_EXTERNAL_CPU_PASS_NPU_SMOKE_PASS_FULL_LOCAL_EXPERT_PASS_CROSS_RANK_NOT_TESTED",
+  "created_at": "2026-11-08T10:08:07+08:00",
   "host": "npu1-23",
   "base_git_commit": "7ef4f36",
   "source_files_modified": false,
   "npu_smoke_status": "NPU_PASS_TEST_ONLY",
+  "npu_full_local_status": "NPU_FULL_LOCAL_PASS_TEST_ONLY",
   "service_started": false,
   "full_model_loaded": false,
   "artifacts": [
     {
       "path": "README.md",
-      "bytes": 416,
-      "sha256": "22aba401364bba110db09f2edc721c1c229444cc808e7034faa65c964774b6a6"
+      "bytes": 481,
+      "sha256": "96b06dde83e8250104cd9d247f90f8e49e04fc6b34f8b36e1c6aede509708f1c"
     },
     {
       "path": "IMPLEMENTATION.md",
-      "bytes": 3614,
-      "sha256": "163d5ef53d2d2691642905670f8833333d02a82ed478ecac159427572b502632"
+      "bytes": 4629,
+      "sha256": "c31726a2d5985fc47f292d22c6a5ae09583c85b5bc1adaf7ebbec70235f31b44"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 1295,
-      "sha256": "0c50b5216bb5d51f7454d5ff4e7009625a6f432b5123df90158caa4b1c7ecf5f"
+      "bytes": 1871,
+      "sha256": "edd3e7a66d9595fa3d3df11782bce989934247612e1b5c7343720f142e2e425e"
     },
     {
       "path": "APPLY.md",
@@ -32,13 +33,13 @@
     },
     {
       "path": "ENVIRONMENT.json",
-      "bytes": 1269,
-      "sha256": "bc33a94476af6ccb98cfc06098d752614da7e0c2d94afc38751a95a35ec1d7d4"
+      "bytes": 1263,
+      "sha256": "20fbeea975e44abdcf39bf3c1f2054680c81d7a5531f4912e13db48e81791737"
     },
     {
       "path": "PLAN_EXAMPLES.json",
-      "bytes": 1150,
-      "sha256": "70ce79924eaebe177ff61c14526b0e859a0aae5024dfb687d9fb3e9aac7896b9"
+      "bytes": 1206,
+      "sha256": "bc993c0c898daf64d3a4866d8364c179c21b1c1e9163e51ca944ee624bc7d566"
     },
     {
       "path": "m0_external/__init__.py",
@@ -66,6 +67,11 @@
       "sha256": "ed14a258dea18d44604603df618725156c36de71b72d2014881312d018b67d7f"
     },
     {
+      "path": "m0_external/full_local_smoke.py",
+      "bytes": 6903,
+      "sha256": "67664a3825d00854a13420d38bb502dbe32733947b2a7d4d08603b26879da79b"
+    },
+    {
       "path": "tests/test_cpu_logic.py",
       "bytes": 12512,
       "sha256": "1cae46ca104e2f61a39ff0d8aa1c45bd5032b4d6594ea8cb163d647db074a327"
@@ -81,9 +87,14 @@
       "sha256": "ed14a258dea18d44604603df618725156c36de71b72d2014881312d018b67d7f"
     },
     {
+      "path": "tests/npu_full_local.py",
+      "bytes": 6903,
+      "sha256": "67664a3825d00854a13420d38bb502dbe32733947b2a7d4d08603b26879da79b"
+    },
+    {
       "path": "artifacts/cpu_tests.log",
       "bytes": 1197,
-      "sha256": "8dcedb4d97ac6632e549c586e7c06e459fa7c304fdd1f2396c843a80fd1cc774"
+      "sha256": "e16d2aa03241d2041cb8caf83493a10a6a1985e997388a365f5133573f2dd3b1"
     },
     {
       "path": "artifacts/npu_smoke.json",
@@ -96,19 +107,27 @@
       "sha256": "912b88d75f3ed8a91d3d95a4387f2182c854242fbdd3831010d1a9665679b829"
     },
     {
+      "path": "artifacts/full_local_smoke.json",
+      "bytes": 1512,
+      "sha256": "83aa1ea658d9722167d0919a26ad5751e1041ce367bb91d59115038421772721"
+    },
+    {
+      "path": "artifacts/full_local_smoke_v5.stdout",
+      "bytes": 2381,
+      "sha256": "488180d9d0202997347391d162183a0f0402f13791d22e1e382947610a2246aa"
+    },
+    {
       "path": "evidence/topk_base.py",
       "bytes": 5087,
       "sha256": "f82f25bb343892b7b8b1eb833a4e6ca376a510ac74a3a935e0a1997dbd072f75"
     }
   ],
   "known_missing": [
-    "full quantized expert-state copy",
-    "NZ/ND staging and restore",
     "HCCL/P2P",
-    "EP-wide count exchange",
-    "DeepEP dispatch/combine",
-    "production graph",
+    "cross-rank commit protocol",
+    "full top-8 all-expert computation",
+    "full model graph",
     "extra-slot HBM",
-    "full-model accuracy/SLO"
+    "service SLO"
   ]
 }

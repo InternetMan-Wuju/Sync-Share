@@ -12,7 +12,7 @@ test_slot_lifecycle_and_epoch (__main__.Tests) ... ok
 test_unsupported_layer_returns_original (__main__.Tests) ... ok
 
 ----------------------------------------------------------------------
-Ran 12 tests in 0.021s
+Ran 12 tests in 0.020s
 
 OK
 test_default_off_is_fast_passthrough (__main__.ExternalInstall) ... ok

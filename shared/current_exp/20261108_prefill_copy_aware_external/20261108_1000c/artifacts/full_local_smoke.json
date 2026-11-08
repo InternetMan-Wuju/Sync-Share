@@ -1,0 +1,69 @@
+{
+  "status": "NPU_FULL_LOCAL_PASS_TEST_ONLY",
+  "device_name": "Ascend910_9382",
+  "topk": "top8",
+  "tokens": 512,
+  "off_e0_count": 512,
+  "active_primary_e0": 256,
+  "active_destination_e0": 256,
+  "plan": {
+    "step_id": 1,
+    "layer_id": 49,
+    "epoch": 1,
+    "action": "route",
+    "logical_expert": 0,
+    "weight_source_rank": 0,
+    "primary_compute_rank": 0,
+    "destination_rank": 1,
+    "destination_local_slot": 16,
+    "q_global": 256,
+    "q_by_source": [
+      256
+    ],
+    "copy_required": true,
+    "layout_version": "full-local",
+    "weight_version": 3,
+    "estimated_gain_us": 245.0,
+    "reason": "gain_above_threshold",
+    "primary_physical_id": 0,
+    "destination_physical_id": 33
+  },
+  "transport_calls": 1,
+  "copy_bytes": 37810176,
+  "numeric": {
+    "bitwise": true,
+    "max_abs": 0.0,
+    "nrmse": 0.0,
+    "nonfinite": 0
+  },
+  "state": {
+    "w13": {
+      "bitwise": true,
+      "max_abs": 0.0,
+      "nrmse": 0.0,
+      "nonfinite": 0
+    },
+    "down": {
+      "bitwise": true,
+      "max_abs": 0.0,
+      "nrmse": 0.0,
+      "nonfinite": 0
+    },
+    "w13_scale": {
+      "bitwise": true,
+      "max_abs": 0.0,
+      "nrmse": 0.0,
+      "nonfinite": 0
+    },
+    "down_scale": {
+      "bitwise": true,
+      "max_abs": 0.0,
+      "nrmse": 0.0,
+      "nonfinite": 0
+    },
+    "offsets_zero": true
+  },
+  "service_started": false,
+  "full_model_loaded": false,
+  "scope": "external topk hook + real e43 state copy + full local e43 W8A8 chain; no HCCL/full model"
+}

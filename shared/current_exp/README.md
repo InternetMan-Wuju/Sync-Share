@@ -53,5 +53,5 @@
 ## 20261108_prefill_copy_aware_external
 
 - 外挂式 Prefill copy-aware M0，不修改服务器源码。
-- CPU 12+3 测试通过；单 NPU `NPU_PASS_TEST_ONLY`。
-- 入口：[`20261108_prefill_copy_aware_external/20261108_1000b/IMPLEMENTATION.md`](20261108_prefill_copy_aware_external/20261108_1000b/IMPLEMENTATION.md)
+- CPU 12+3 测试通过；单 NPU top-k/Plan smoke 与真实 e43 完整本地专家链均 PASS。
+- 入口：[`20261108_prefill_copy_aware_external/20261108_1000c/IMPLEMENTATION.md`](20261108_prefill_copy_aware_external/20261108_1000c/IMPLEMENTATION.md)

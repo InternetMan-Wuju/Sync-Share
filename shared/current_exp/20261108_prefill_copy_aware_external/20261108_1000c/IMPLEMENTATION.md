@@ -94,3 +94,31 @@ active 只允许测试 runtime 显式注册；当前仅适配 layer49、Prefill 
 - 完整模型精度、TTFT、TPOT、吞吐和 SLO。
 
 不能把本次 smoke 写成完整 M1/M2 或生产加速通过。
+
+
+## 7. 完整本地应用链（本轮新增）
+
+`m0_external/full_local_smoke.py` 已在同一单 NPU 上运行：
+
+- 通过 publisher 恢复层加载真实 e43/e40 权重；
+- 外部 top-k wrapper 生成 top-8 路由；
+- Plan 产生 q=256；
+- 将 e43 的完整运行态复制到 rank1 独立临时槽；
+- 使用真实 W8A8 本地 e43 链处理分流后的两个 token 集合；
+- 与原 top-k 权重对应贡献比较。
+
+结果：
+
+| 项目 | 值 |
+|---|---|
+| status | `NPU_FULL_LOCAL_PASS_TEST_ONLY` |
+| top-k | 8 |
+| tokens | 512 |
+| e0 off / active primary / active destination | 512 / 256 / 256 |
+| Plan q | 256 |
+| copy bytes | 37,810,176 |
+| copy/权重/scale/offset 状态一致 | 全部逐位一致 |
+| e43 加权贡献对比 | 逐位一致，NRMSE 0 |
+| transport 调用 | 1 |
+
+该结果证明“顶层路由→Plan→真实本地状态复制→真实量化专家链→原权重贡献恢复”的外部本地路径；仍未证明完整模型、跨卡 HCCL、完整 dispatch/combine 或服务 SLO。

@@ -1,29 +1,6 @@
 {
   "evidence_type": "NPU_TEST_ONLY",
-  "off_destination_count": 0,
-  "shadow_plan": {
-    "step_id": 1,
-    "layer_id": 49,
-    "epoch": 1,
-    "action": "route",
-    "logical_expert": 0,
-    "weight_source_rank": 0,
-    "primary_compute_rank": 0,
-    "destination_rank": 1,
-    "destination_local_slot": 16,
-    "q_global": 448,
-    "q_by_source": [
-      448
-    ],
-    "copy_required": false,
-    "layout_version": "npu-smoke",
-    "weight_version": 3,
-    "estimated_gain_us": 437.0,
-    "reason": "shadow_plan",
-    "primary_physical_id": 0,
-    "destination_physical_id": 33
-  },
-  "active_plan": {
+  "smoke_plan": {
     "step_id": 2,
     "layer_id": 49,
     "epoch": 1,
@@ -45,5 +22,32 @@
     "primary_physical_id": 0,
     "destination_physical_id": 33
   },
-  "active_destination_count": 448
+  "full_local_plan": {
+    "step_id": 1,
+    "layer_id": 49,
+    "epoch": 1,
+    "action": "route",
+    "logical_expert": 0,
+    "weight_source_rank": 0,
+    "primary_compute_rank": 0,
+    "destination_rank": 1,
+    "destination_local_slot": 16,
+    "q_global": 256,
+    "q_by_source": [
+      256
+    ],
+    "copy_required": true,
+    "layout_version": "full-local",
+    "weight_version": 3,
+    "estimated_gain_us": 245.0,
+    "reason": "gain_above_threshold",
+    "primary_physical_id": 0,
+    "destination_physical_id": 33
+  },
+  "full_local_numeric": {
+    "bitwise": true,
+    "max_abs": 0.0,
+    "nrmse": 0.0,
+    "nonfinite": 0
+  }
 }

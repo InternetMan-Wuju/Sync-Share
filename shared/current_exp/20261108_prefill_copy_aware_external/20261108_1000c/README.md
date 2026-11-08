@@ -9,4 +9,4 @@
 - [测试](tests/)
 - [NPU smoke 结果](artifacts/npu_smoke.json)
 
-状态：**CPU PASS；单 NPU test-only smoke PASS；完整量化状态/HCCL/生产 graph 未完成。**
+状态：**CPU PASS；单 NPU top-k/Plan smoke PASS；单 NPU 真实 e43 完整状态复制与本地专家链 PASS；跨卡 HCCL/完整模型/生产 graph 未完成。**

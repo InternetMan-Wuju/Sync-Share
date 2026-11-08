@@ -68,9 +68,10 @@ Prefill 当前路由复制与精确配额 M0：
 
 外挂式 Prefill copy-aware M0：
 
-- [实现说明](shared/current_exp/20261108_prefill_copy_aware_external/20261108_1000b/IMPLEMENTATION.md)
-- [NPU smoke 结果](shared/current_exp/20261108_prefill_copy_aware_external/20261108_1000b/artifacts/npu_smoke.json)
-- [验证记录](shared/current_exp/20261108_prefill_copy_aware_external/20261108_1000b/VALIDATION.md)
+- [实现说明](shared/current_exp/20261108_prefill_copy_aware_external/20261108_1000c/IMPLEMENTATION.md)
+- [NPU smoke 结果](shared/current_exp/20261108_prefill_copy_aware_external/20261108_1000c/artifacts/npu_smoke.json)
+- [验证记录](shared/current_exp/20261108_prefill_copy_aware_external/20261108_1000c/VALIDATION.md)
+- [完整本地专家链结果](shared/current_exp/20261108_prefill_copy_aware_external/20261108_1000c/artifacts/full_local_smoke.json)
 
 ### `handoff/`
 

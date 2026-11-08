@@ -1,6 +1,6 @@
 {
-  "run_id": "20261108_1000b",
-  "created_at": "2026-11-08T09:09:48+08:00",
+  "run_id": "20261108_1000c",
+  "created_at": "2026-11-08T10:08:07+08:00",
   "host": "npu1-23",
   "mode": "external runtime plugin",
   "source_files_modified": false,
@@ -24,17 +24,21 @@
     "CANN": "9.0.0"
   },
   "base_topk_sha256": "f82f25bb343892b7b8b1eb833a4e6ca376a510ac74a3a935e0a1997dbd072f75",
-  "actual_hook": "runtime wrapper around fused_topk_npu and topk_ids_logical_to_physical",
   "npu_smoke": "NPU_PASS_TEST_ONLY",
-  "npu_smoke_event_ms_single": 113.15776062011719,
+  "npu_full_local": "NPU_FULL_LOCAL_PASS_TEST_ONLY",
+  "npu_full_local_copy_bytes": 37810176,
+  "npu_full_local_numeric": {
+    "bitwise": true,
+    "max_abs": 0.0,
+    "nrmse": 0.0,
+    "nonfinite": 0
+  },
   "known_missing": [
-    "full quantized expert-state copy",
-    "NZ/ND staging and restore",
     "HCCL/P2P",
-    "EP-wide count exchange",
-    "DeepEP dispatch/combine",
-    "production graph",
+    "cross-rank commit protocol",
+    "full top-8 all-expert computation",
+    "full model graph",
     "extra-slot HBM",
-    "full-model accuracy/SLO"
+    "service SLO"
   ]
 }
