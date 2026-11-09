@@ -1,0 +1,40 @@
+{
+  "source": "/data_lib/ustc/dqt/inferencex-container/cache/huggingface/datasets/semianalysisai___cc-traces-weka-062126-256k/default/0.0.0/8fecd2fc56694469f758f0afbbb6335ad3043740/cc-traces-weka-062126-256k-train-00000-of-00002.arrow",
+  "dataset": "semianalysisai/cc-traces-weka-062126-256k",
+  "revision": "8fecd2fc56694469f758f0afbbb6335ad3043740",
+  "identity": "AgentX length/hash-block driven synthetic token materialization; NOT original AgentX text",
+  "seed_rule": "SHA256(cyt-ep16-20261109:trace_id:block_id), Python Random randrange(1000,150000), 64 IDs/block",
+  "prefix_cache": false,
+  "cases": [
+    {
+      "case_id": 0,
+      "trace_id": "002001296e8a8c38ad9d7cc436d691afc602",
+      "request_index": 1,
+      "original_input_tokens": 63744,
+      "original_output_tokens": 395,
+      "input_tokens": 8192,
+      "output_tokens": 32,
+      "input_sha256": "ba709b5826f45e588625bcef9cd08306c93fb0af56ffbe8b306173217e91d370"
+    },
+    {
+      "case_id": 1,
+      "trace_id": "006c98de37d819e95b0840e25426bb7ca99d",
+      "request_index": 1,
+      "original_input_tokens": 64640,
+      "original_output_tokens": 65,
+      "input_tokens": 8192,
+      "output_tokens": 32,
+      "input_sha256": "c7b11e2a3b83d1fdc3ee1d5f3601607063473142a8db57cbbaa1f911c723aba1"
+    },
+    {
+      "case_id": 2,
+      "trace_id": "00ca01c4aaeccee751ae6285beb54dea262f",
+      "request_index": 1,
+      "original_input_tokens": 64128,
+      "original_output_tokens": 250,
+      "input_tokens": 8192,
+      "output_tokens": 32,
+      "input_sha256": "43990dde2324d9fc12416a9745e73270fb9150ef1308d0ec2b3ebf730db6ec96"
+    }
+  ]
+}

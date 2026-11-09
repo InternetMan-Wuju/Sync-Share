@@ -1,0 +1,13 @@
+OSError: [Errno 24] Too many open files: '/usr/local/Ascend/cann-9.0.0/python/site-packages/tbe/tvm/rpc/__init__.py'
+ImportError: /usr/local/python3.11.15/lib/python3.11/site-packages/scipy/linalg/_cythonized_array_utils.cpython-311-aarch64-linux-gnu.so: cannot open shared object file: Too many open files
+OSError: [Errno 24] Too many open files: '/usr/local/python3.11.15/lib/python3.11/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py'
+OSError: [Errno 24] Too many open files: '/usr/local/python3.11.15/lib/python3.11/site-packages/scipy/linalg/decomp_schur.py'
+OSError: [Errno 24] Too many open files: '/usr/local/python3.11.15/lib/python3.11/site-packages/scipy/linalg/basic.py'
+OSError: [Errno 24] Too many open files: '/usr/local/Ascend/cann-9.0.0/python/site-packages/tbe/tvm/relay/op/annotation/__init__.py'
+OSError: [Errno 24] Too many open files: '/usr/local/Ascend/cann-9.0.0/python/site-packages/tbe/tvm/relay/op/annotation/__init__.py'
+OSError: [Errno 24] Too many open files: '/usr/local/python3.11.15/lib/python3.11/site-packages/scipy/linalg/_decomp.py'
+[PID: 491] 2026-11-09-00:21:18.954.686 File_Operation_Error_Open(E21001): Failed to open file /usr/local/Ascend/cann-9.0.0/lib64/plugin/opskernel/fusion_rules/ai_core/built_in_graph_rules.json.
+Fix: isolated container nofile limit explicitly raised to65535. No installed package modified.
+Explicit65535 limit did not resolve CANN compiler subprocess failure. Next isolated attempt preinitializes ACL before weight shard loading and uses TE_PARALLEL_COMPILER=1.
+Third server passed8K/16K validation and timing;32K native replay failed aclnnCamMoeDispatchNormal tiling. Exact cause unresolved; saved full log local/server_failed_large_dispatch.log. Larger follow-up uses identical1024-local-row chunks in every arm, marked chunked layer replay.
+Fourth launch failed during parallel early ACL initialization (TVM platform init). Last bounded retry serializes per-rank compiler startup via CPU group; no hot-path change.

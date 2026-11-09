@@ -1,0 +1,18 @@
+{
+  "config": {
+    "mode": "decision_train",
+    "test_only": true,
+    "case": 0,
+    "request": "dev_case0",
+    "scales": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "implementation_revision": 10
+  },
+  "elapsed_s": 94.76979228504933,
+  "response": null,
+  "scope": "experiment request; NOT E2E performance sample"
+}

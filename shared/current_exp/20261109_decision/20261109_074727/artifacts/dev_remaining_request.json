@@ -1,0 +1,76 @@
+{
+  "config": {
+    "mode": "decision_train",
+    "test_only": true,
+    "case": 0,
+    "request": "dev_remaining",
+    "scales": [
+      4,
+      8
+    ],
+    "implementation_revision": 10
+  },
+  "elapsed_s": 33.226151974871755,
+  "response": {
+    "text": "\n    }\n}</think>\u6211\u6ce8\u610f\u5230\u60a8\u53d1\u9001\u7684\u5185\u5bb9\u4f3c\u4e4e\u662f\u4e00\u6bb5\u6df7\u5408\u4e86\u591a\u79cd\u8bed\u8a00\u3001\u4ee3\u7801\u7247\u6bb5\u548c\u968f\u673a\u8bcd\u6c47\u7684\u6587\u672c\uff0c\u6ca1\u6709\u5f62\u6210\u5b8c\u6574\u3001\u6709",
+    "output_ids": [
+      198,
+      262,
+      456,
+      92,
+      154827,
+      154842,
+      98326,
+      108285,
+      99526,
+      105174,
+      102344,
+      101033,
+      99112,
+      98847,
+      101969,
+      98321,
+      101123,
+      100132,
+      5373,
+      103461,
+      109254,
+      98327,
+      104073,
+      105892,
+      98314,
+      103231,
+      3837,
+      98572,
+      99487,
+      101583,
+      5373,
+      98318
+    ],
+    "meta_info": {
+      "id": "37de7ac45d344b7a993f7edb971c6a6d",
+      "finish_reason": {
+        "type": "length",
+        "length": 32
+      },
+      "prompt_tokens": 8192,
+      "weight_version": "default",
+      "num_retractions": 0,
+      "forward_entry_time": 1794190244.0366533,
+      "prefill_finished_time": 1794190267.4579601,
+      "queue_time": 0.0003275871276855469,
+      "reasoning_tokens": 0,
+      "completion_tokens": 32,
+      "cached_tokens": 0,
+      "cached_tokens_details": null,
+      "dp_rank": null,
+      "e2e_latency": 33.21897024405189,
+      "request_received_ts": 1794190244.0328643,
+      "api_server_dispatch_finish_ts": 1794190244.0335047,
+      "response_sent_to_client_ts": 1794190267.4602666,
+      "request_finished_ts": 1794190277.2518346,
+      "decode_throughput": 3.1657470912685897
+    }
+  },
+  "scope": "experiment request; NOT E2E performance sample"
+}

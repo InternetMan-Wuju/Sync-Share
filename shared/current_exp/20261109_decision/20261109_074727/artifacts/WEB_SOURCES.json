@@ -1,0 +1,36 @@
+[
+  {
+    "url": "https://arxiv.org/html/2606.04101v3",
+    "status": 200,
+    "sha256": "25ad270e57a516ff516d710b045f4924a3c87518cd950f43e56525de933b31b1",
+    "text_chars": 87246,
+    "filename": "source0.txt"
+  },
+  {
+    "url": "https://arxiv.org/html/2608.13057v2",
+    "status": 200,
+    "sha256": "05d6573a01fd568efe31fc10c147e1023dc2bd3f867cae98a54f69f83ec84136",
+    "text_chars": 102998,
+    "filename": "source1.txt"
+  },
+  {
+    "url": "https://export.arxiv.org/api/query?search_query=ti:Lina+AND+all:mixture&max_results=3",
+    "status": 200,
+    "sha256": "3020f4ca54bad7de9e9120ebfa915aa534b2b64423cab299a3f5a28845e101f0",
+    "text_chars": 1743,
+    "filename": "source2.txt"
+  },
+  {
+    "url": "https://export.arxiv.org/api/query?search_query=all:expert+AND+all:replication+AND+all:prefill&max_results=6",
+    "status": 200,
+    "sha256": "3e8a5cccf7cead7b9ac9bb34d015747be799dcd9bf8efcbf4ef3c9fd3a7f7f49",
+    "text_chars": 5823,
+    "filename": "source3.txt"
+  },
+  {
+    "url": "https://arxiv.org/html/2610.00671v1",
+    "status": 200,
+    "sha256": "372b7e8330c744205766b9131491a5a79fb0e6791ca6d74778f8556122943b6c",
+    "text_chars": 57883
+  }
+]

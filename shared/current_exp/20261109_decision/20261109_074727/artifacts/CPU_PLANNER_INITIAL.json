@@ -1,0 +1,32 @@
+[
+  {
+    "block": 0,
+    "calls": 300,
+    "block_ms": 133.78413,
+    "us_per_call": 445.94710000000003
+  },
+  {
+    "block": 1,
+    "calls": 300,
+    "block_ms": 120.787897,
+    "us_per_call": 402.62632333333335
+  },
+  {
+    "block": 2,
+    "calls": 300,
+    "block_ms": 116.533477,
+    "us_per_call": 388.44492333333335
+  },
+  {
+    "block": 3,
+    "calls": 300,
+    "block_ms": 110.442348,
+    "us_per_call": 368.14116
+  },
+  {
+    "block": 4,
+    "calls": 300,
+    "block_ms": 110.056586,
+    "us_per_call": 366.85528666666664
+  }
+]

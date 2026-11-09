@@ -1,0 +1,8 @@
+{
+  "started_at": "2026-11-09T07:47:27+08:00",
+  "stop_by": "2026-11-09T10:47:27+08:00",
+  "host": "npu1-23",
+  "prior_run": "shared/current_exp/20261109_ep16_online/20261109_061333",
+  "base_commit": "dc339c7",
+  "scope": "current-batch decision; CPU simulation before 16-device single-node NPU validation; no future prediction"
+}

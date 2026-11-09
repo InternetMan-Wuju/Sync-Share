@@ -1,0 +1,12 @@
+{
+  "rank_checks": 272,
+  "case_actions": 17,
+  "max_abs": 0.0,
+  "max_nrmse": 0.0,
+  "all_state_bytes_equal": true,
+  "scope": "independent-clone native same-hidden/topk reference, not independent FP-model certification",
+  "cpu_test_log": "artifacts/CPU_TESTS.txt",
+  "per_expert_and_total_recovery_checked": true,
+  "all_measured_source_snapshots_available": true,
+  "heldout_model_sha_consistent": true
+}

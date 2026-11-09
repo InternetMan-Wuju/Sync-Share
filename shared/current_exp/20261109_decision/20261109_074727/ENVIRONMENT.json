@@ -1,0 +1,27 @@
+{
+  "observed_at": "2026-11-09T09:17:39.926735+08:00",
+  "host": "npu1-23",
+  "devices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "cross_node": false,
+  "prior_environment_source": "../../20261109_ep16_online/20261109_061333/ENVIRONMENT.json",
+  "sampling_command": "python3 scripts/run_study.py",
+  "scope": "full model load; live-layer replay; same primary/temporary-slot layout across modes",
+  "image": "sha256:26a020117564da514f33c4e72353d07020bc4bfe176f4e61858b4abeac6d3e9b"
+}

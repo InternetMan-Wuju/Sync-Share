@@ -1,0 +1,11 @@
+test_fail_closed (__main__.DecisionTests) ... ok
+test_independent_integer_exhaustion (__main__.DecisionTests) ... ok
+test_noop_cost_and_uniform (__main__.DecisionTests) ... ok
+test_precheck_and_compute_bound (__main__.DecisionTests) ... ok
+test_unknown_copy_pair (__main__.DecisionTests) ... ok
+test_untouched_bottleneck (__main__.DecisionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.353s
+
+OK
