@@ -9,7 +9,7 @@ with gzip.open(ROOT/'artifacts/rank_records.jsonl.gz','wt') as out:
 blocks=[r for r in records if r['kind']=='decision_block']
 with (ROOT/'TIMINGS.csv').open('w') as out:
     cols=['request','split','case','scale','global_rows','scope','mode','block','rank','calls','block_ms','min_rank_block_ms','max_rank_block_ms']
-    w=csv.DictWriter(out,cols,extrasaction='ignore');w.writeheader();w.writerows(blocks)
+    w=csv.DictWriter(out,cols,extrasaction='ignore',lineterminator='\n');w.writeheader();w.writerows(blocks)
 groups=collections.defaultdict(list)
 for r in blocks:groups[(r['request'],r['scale'],r['mode'],r['block'])].append(r)
 points=collections.defaultdict(dict)
