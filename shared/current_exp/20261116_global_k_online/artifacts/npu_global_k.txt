@@ -1,0 +1,23 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+{
+  "status": "PASS",
+  "K": 3,
+  "slot_bytes": 37810176,
+  "committed_bytes": 113430528,
+  "per_rank_capacity": {
+    "2": 2,
+    "5": 1
+  },
+  "per_rank_allocated_bytes": {
+    "2": 75620352,
+    "5": 37810176
+  },
+  "active_bytes_after_release": 0,
+  "cached_free_bytes_after_release": 113430528,
+  "local_reuses": {
+    "2": 8,
+    "5": 0
+  }
+}

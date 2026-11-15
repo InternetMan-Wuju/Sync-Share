@@ -1,0 +1,21 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+{
+  "bank/3d": {
+    "ok": false,
+    "error": "npu_grouped_matmul:../third_party/op-plugin/op_plugin/ops/opapi/GroupedMatmulKernelNpuOpApi.cpp:339 NPU function error: call aclnnGroupedMatmulV5 failed, error code is 161002"
+  },
+  "bank/list": {
+    "ok": false,
+    "error": "npu_grouped_matmul:../third_party/op-plugin/op_plugin/ops/opapi/GroupedMatmulKernelNpuOpApi.cpp:339 NPU function error: call aclnnGroupedMatmulV5 failed, error code is 161002"
+  },
+  "multi/3d": {
+    "ok": false,
+    "error": "npu_grouped_matmul:../third_party/op-plugin/op_plugin/ops/opapi/GroupedMatmulKernelNpuOpApi.cpp:339 NPU function error: call aclnnGroupedMatmulV5 failed, error code is 161002"
+  },
+  "multi/list": {
+    "ok": false,
+    "error": "npu_grouped_matmul:../third_party/op-plugin/op_plugin/ops/opapi/GroupedMatmulKernelNpuOpApi.cpp:339 NPU function error: call aclnnGroupedMatmulV5 failed, error code is 161002"
+  }
+}

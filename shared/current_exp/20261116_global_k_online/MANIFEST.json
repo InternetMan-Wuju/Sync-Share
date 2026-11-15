@@ -1,0 +1,17 @@
+{
+  "started_at": "2026-11-16T06:56:22+08:00",
+  "host": "npu1-19",
+  "devices": 16,
+  "probe_image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "model": "/data_lib/data/models/glm-q",
+  "quantization": "ModelSlim W8A8",
+  "K_tests": [1, 3, 5],
+  "slot_bytes_reference": 37810176,
+  "cpu_tests": "5 PASS",
+  "npu_global_k": "PASS",
+  "npu_multirank": "PASS world_size=16 K=3 owners=[2,5,7]",
+  "npu_w8a8_external_slot": "PASS max_abs_diff=0.0",
+  "full_model_external_dispatch": "NOT_IMPLEMENTED",
+  "ttft_comparison": "NOT_MEASURED",
+  "status": "MINIMAL_PROTOTYPE_WITH_REAL_NPU_PROBES; FULL_MODEL_INTEGRATION_NOT_DONE"
+}
