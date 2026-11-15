@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-16T03:43:57+08:00",
+  "experiment": "20261116_slot_pool",
+  "host": "npu1-19",
+  "device": "davinci0",
+  "container_image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "slot_bytes": 37810176,
+  "capacity_tested": 2,
+  "allocated_bytes": 75620352,
+  "cpu_tests": 4,
+  "npu_pool_test": "PASS",
+  "npu_expert_state_test": "PASS",
+  "logical_layers_tested": 75,
+  "status": "CORRECTNESS_PROTOTYPE; FULL_MODEL_DISPATCH_INTEGRATION_NOT_DONE"
+}

@@ -1,0 +1,16 @@
+NPU_TEST_START 0 2 37810176 8
+{
+  "device": 0,
+  "capacity": 2,
+  "slot_bytes": 37810176,
+  "allocated_bytes": 75620352,
+  "cycles": 8,
+  "acquisitions": 10,
+  "releases": 10,
+  "reuses": 8,
+  "max_concurrent_leases": 2,
+  "distinct_layers_seen": 10,
+  "free": 2,
+  "elapsed_s": 0.07364718290045857,
+  "status": "PASS"
+}

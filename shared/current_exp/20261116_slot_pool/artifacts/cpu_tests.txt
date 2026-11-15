@@ -1,0 +1,9 @@
+test_concurrent_acquire_never_conflicts (__main__.SlotPoolTests) ... ok
+test_cross_layer_lifecycle_and_fixed_allocation (__main__.SlotPoolTests) ... ok
+test_nonblocking_exhaustion_and_abort_notification (__main__.SlotPoolTests) ... ok
+test_stale_lease_and_ready_gate (__main__.SlotPoolTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.176s
+
+OK
