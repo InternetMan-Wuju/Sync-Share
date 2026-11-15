@@ -1,0 +1,46 @@
+{
+  "url": "http://127.0.0.1:18000",
+  "prompt": "prompts/prompt_8k.txt",
+  "prompt_tokens_hint": 8176,
+  "rows": [
+    {
+      "ttft_s": 2.6416693199425936,
+      "ttfb_s": 2.64161519985646,
+      "total_s": 13.57717229379341,
+      "prompt_sha256": "85370921bcd6ce6c7cf146802ceb5bfe9dffde971ef3f4098eade85df6e49425",
+      "input_chars": 29983,
+      "output_chars": 52,
+      "output_tail": "1. **分析请求：**\n    *   输入：一个长提示词，包含多个不同的任务/问题（总结杰夫·沃克的",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 0
+    },
+    {
+      "ttft_s": 2.6211093980818987,
+      "ttfb_s": 2.6210541976615787,
+      "total_s": 13.68865406466648,
+      "prompt_sha256": "85370921bcd6ce6c7cf146802ceb5bfe9dffde971ef3f4098eade85df6e49425",
+      "input_chars": 29983,
+      "output_chars": 52,
+      "output_tail": "1. **分析请求：**\n    *   输入：一个包含多个提示词和回复的庞大提示词，涉及各种主题（杰夫",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 1
+    },
+    {
+      "ttft_s": 2.6045551700517535,
+      "ttfb_s": 2.604501809924841,
+      "total_s": 12.630003900732845,
+      "prompt_sha256": "85370921bcd6ce6c7cf146802ceb5bfe9dffde971ef3f4098eade85df6e49425",
+      "input_chars": 29983,
+      "output_chars": 51,
+      "output_tail": "1. **分析请求：**\n    *   输入：一个长提示词，包含多个不相关的任务（总结杰夫·沃克的《",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 2
+    }
+  ]
+}

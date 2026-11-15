@@ -1,0 +1,201 @@
+{
+  "target_tokens": 3072,
+  "actual_tokens": 3055,
+  "file": "/home/chengyetai/workspace/Share/shared/current_exp/20261116_compare_eplb/prompts/prompt_3k.txt",
+  "sha256": "5b9658aa5a0ae71426ef9ae3e638d9993b0226eb545e44c68f8f43dea4017ffc",
+  "source": "/data_lib/wzc/data/sharegpt.json",
+  "human_only": true,
+  "references": [
+    {
+      "conversation_id": "QWJhYvA_0",
+      "chars": 190,
+      "tokens_used": 34
+    },
+    {
+      "conversation_id": "QWJhYvA_0",
+      "chars": 188,
+      "tokens_used": 36
+    },
+    {
+      "conversation_id": "QWJhYvA_0",
+      "chars": 87,
+      "tokens_used": 18
+    },
+    {
+      "conversation_id": "QWJhYvA_0",
+      "chars": 177,
+      "tokens_used": 33
+    },
+    {
+      "conversation_id": "A5AbcES_0",
+      "chars": 191,
+      "tokens_used": 62
+    },
+    {
+      "conversation_id": "hRPPgZT_0",
+      "chars": 350,
+      "tokens_used": 91
+    },
+    {
+      "conversation_id": "hRPPgZT_0",
+      "chars": 661,
+      "tokens_used": 158
+    },
+    {
+      "conversation_id": "IWkMGRK_0",
+      "chars": 1060,
+      "tokens_used": 270
+    },
+    {
+      "conversation_id": "DhelrJT_0",
+      "chars": 1430,
+      "tokens_used": 326
+    },
+    {
+      "conversation_id": "DhelrJT_0",
+      "chars": 1418,
+      "tokens_used": 337
+    },
+    {
+      "conversation_id": "VY7cMKG_0",
+      "chars": 87,
+      "tokens_used": 16
+    },
+    {
+      "conversation_id": "H1aZlSE_0",
+      "chars": 236,
+      "tokens_used": 50
+    },
+    {
+      "conversation_id": "wNBG8Gp_0",
+      "chars": 149,
+      "tokens_used": 30
+    },
+    {
+      "conversation_id": "wNBG8Gp_15",
+      "chars": 87,
+      "tokens_used": 23
+    },
+    {
+      "conversation_id": "wNBG8Gp_15",
+      "chars": 115,
+      "tokens_used": 24
+    },
+    {
+      "conversation_id": "wNBG8Gp_23",
+      "chars": 133,
+      "tokens_used": 33
+    },
+    {
+      "conversation_id": "wNBG8Gp_23",
+      "chars": 119,
+      "tokens_used": 26
+    },
+    {
+      "conversation_id": "wNBG8Gp_23",
+      "chars": 86,
+      "tokens_used": 19
+    },
+    {
+      "conversation_id": "wNBG8Gp_33",
+      "chars": 280,
+      "tokens_used": 62
+    },
+    {
+      "conversation_id": "wNBG8Gp_33",
+      "chars": 358,
+      "tokens_used": 67
+    },
+    {
+      "conversation_id": "wNBG8Gp_33",
+      "chars": 280,
+      "tokens_used": 61
+    },
+    {
+      "conversation_id": "wNBG8Gp_51",
+      "chars": 107,
+      "tokens_used": 20
+    },
+    {
+      "conversation_id": "wNBG8Gp_65",
+      "chars": 399,
+      "tokens_used": 100
+    },
+    {
+      "conversation_id": "wNBG8Gp_65",
+      "chars": 452,
+      "tokens_used": 114
+    },
+    {
+      "conversation_id": "wNBG8Gp_65",
+      "chars": 165,
+      "tokens_used": 46
+    },
+    {
+      "conversation_id": "wNBG8Gp_65",
+      "chars": 242,
+      "tokens_used": 65
+    },
+    {
+      "conversation_id": "wNBG8Gp_65",
+      "chars": 255,
+      "tokens_used": 69
+    },
+    {
+      "conversation_id": "eL3wWKe_0",
+      "chars": 228,
+      "tokens_used": 47
+    },
+    {
+      "conversation_id": "88iCu0j_0",
+      "chars": 895,
+      "tokens_used": 150
+    },
+    {
+      "conversation_id": "88iCu0j_0",
+      "chars": 86,
+      "tokens_used": 15
+    },
+    {
+      "conversation_id": "88iCu0j_0",
+      "chars": 99,
+      "tokens_used": 20
+    },
+    {
+      "conversation_id": "88iCu0j_11",
+      "chars": 274,
+      "tokens_used": 47
+    },
+    {
+      "conversation_id": "idMLILF_0",
+      "chars": 95,
+      "tokens_used": 19
+    },
+    {
+      "conversation_id": "idMLILF_0",
+      "chars": 120,
+      "tokens_used": 23
+    },
+    {
+      "conversation_id": "idMLILF_0",
+      "chars": 86,
+      "tokens_used": 19
+    },
+    {
+      "conversation_id": "idMLILF_14",
+      "chars": 1419,
+      "tokens_used": 340
+    },
+    {
+      "conversation_id": "J410gdS_0",
+      "chars": 315,
+      "tokens_used": 70
+    },
+    {
+      "conversation_id": "J410gdS_2",
+      "chars": 6378,
+      "tokens_used": 101
+    }
+  ],
+  "instruction": "\n\n请基于以上上下文，用中文简要说明这段内容主要在讨论什么，并给出一个结论。"
+}

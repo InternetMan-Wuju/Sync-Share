@@ -1,0 +1,46 @@
+{
+  "url": "http://127.0.0.1:18000",
+  "prompt": "prompts/prompt_3k.txt",
+  "prompt_tokens_hint": 3055,
+  "rows": [
+    {
+      "ttft_s": 1.2005833960138261,
+      "ttfb_s": 1.2005366352386773,
+      "total_s": 11.236085738055408,
+      "prompt_sha256": "5b9658aa5a0ae71426ef9ae3e638d9993b0226eb545e44c68f8f43dea4017ffc",
+      "input_chars": 13353,
+      "output_chars": 55,
+      "output_tail": "1. **分析请求：**\n    *   输入：一个包含多个不同提示词和回复的长提示词（看起来像是一个多轮对话",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 0
+    },
+    {
+      "ttft_s": 1.1968553010374308,
+      "ttfb_s": 1.1968070310540497,
+      "total_s": 11.246485328301787,
+      "prompt_sha256": "5b9658aa5a0ae71426ef9ae3e638d9993b0226eb545e44c68f8f43dea4017ffc",
+      "input_chars": 13353,
+      "output_chars": 53,
+      "output_tail": "1. **分析请求：**\n    *   输入：一个包含多个不同提示词和回复的长提示词，涉及各种主题（杰夫",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 1
+    },
+    {
+      "ttft_s": 1.1364849470555782,
+      "ttfb_s": 1.1364401360042393,
+      "total_s": 11.373444297350943,
+      "prompt_sha256": "5b9658aa5a0ae71426ef9ae3e638d9993b0226eb545e44c68f8f43dea4017ffc",
+      "input_chars": 13353,
+      "output_chars": 55,
+      "output_tail": "1. **分析请求：**\n    *   输入：一个包含多个不同提示词和回复的长提示词（看起来像是一个多轮对话",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 2
+    }
+  ]
+}

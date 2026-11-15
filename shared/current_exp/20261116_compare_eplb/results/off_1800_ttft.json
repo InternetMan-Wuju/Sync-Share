@@ -1,0 +1,46 @@
+{
+  "url": "http://127.0.0.1:18000",
+  "prompt": "prompts/prompt_1800.txt",
+  "prompt_tokens_hint": 1780,
+  "rows": [
+    {
+      "ttft_s": 0.7895762990228832,
+      "ttfb_s": 0.7895134696736932,
+      "total_s": 10.991974622011185,
+      "prompt_sha256": "e7a5195e2e72bb1ed6ac683914600c390d5f3e467145eeb338b67899fe61c197",
+      "input_chars": 7655,
+      "output_chars": 54,
+      "output_tail": "1. **分析请求：**\n    *   输入：一系列不相关的提示词/问题和回答，涵盖多个主题（杰夫·沃克的",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 0
+    },
+    {
+      "ttft_s": 0.8203195738606155,
+      "ttfb_s": 0.8202694240026176,
+      "total_s": 10.854898279998451,
+      "prompt_sha256": "e7a5195e2e72bb1ed6ac683914600c390d5f3e467145eeb338b67899fe61c197",
+      "input_chars": 7655,
+      "output_chars": 50,
+      "output_tail": "1.  **分析请求：**\n    *   输入：一系列不连贯的提示词/问题，涵盖多个主题（杰夫·沃",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 1
+    },
+    {
+      "ttft_s": 0.7718101930804551,
+      "ttfb_s": 0.771769642829895,
+      "total_s": 10.724741374142468,
+      "prompt_sha256": "e7a5195e2e72bb1ed6ac683914600c390d5f3e467145eeb338b67899fe61c197",
+      "input_chars": 7655,
+      "output_chars": 64,
+      "output_tail": "1. **分析请求：**\n    *   输入：一系列不相关的提示词/问题，涵盖营销（Jeff Walker、Brendon B",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 2
+    }
+  ]
+}

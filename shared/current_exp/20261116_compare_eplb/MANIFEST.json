@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-11-16T05:57:16+08:00",
+  "host": "npu1-19",
+  "devices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "image": "quay.io/ascend/sglang:v0.5.18-cann9.0.0-a3",
+  "model": "/data_lib/data/models/glm-q",
+  "precision": "W8A8",
+  "parallel": "TP16/EP16/DP1",
+  "prompt_tokens": 8176,
+  "output_limit": 32,
+  "ttft_units": "seconds, first non-empty streamed content token",
+  "ttft_runs": {
+    "off": 2.6021846598014235,
+    "eplb0_no_rearrange": 2.6072974372655153,
+    "eplb16_no_rearrange": 2.6431858092546463,
+    "ours_no_copy": 2.6211093980818987
+  },
+  "forced_rearrangement": {
+    "status": "FAIL_OOM",
+    "start": "2026-11-15 21:23:57",
+    "first_oom": "2026-11-15 21:24:01.659",
+    "rebalance_end": null,
+    "requested_temp_mib": [
+      194,
+      386
+    ]
+  },
+  "status": "PARTIAL_RESULT; EPLB_FORCED_REARRANGE_OOM; FULL_TTFT_AFTER_REARRANGE_NOT_MEASURED"
+}

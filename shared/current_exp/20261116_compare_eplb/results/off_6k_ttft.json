@@ -1,0 +1,46 @@
+{
+  "url": "http://127.0.0.1:18000",
+  "prompt": "prompts/prompt_6k.txt",
+  "prompt_tokens_hint": 6128,
+  "rows": [
+    {
+      "ttft_s": 2.023407841101289,
+      "ttfb_s": 2.0233676810748875,
+      "total_s": 12.104392813052982,
+      "prompt_sha256": "9d8e01f2e95fc95571ddbc36ed563713ed72d5867b774338233f87000ef01001",
+      "input_chars": 24111,
+      "output_chars": 58,
+      "output_tail": "1. **分析请求：**\n    *   **输入上下文：** 一段冗长且多样化的文本，包含多个不相关的提示词和回复",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 0
+    },
+    {
+      "ttft_s": 2.021118611097336,
+      "ttfb_s": 2.0210764999501407,
+      "total_s": 11.850450702942908,
+      "prompt_sha256": "9d8e01f2e95fc95571ddbc36ed563713ed72d5867b774338233f87000ef01001",
+      "input_chars": 24111,
+      "output_chars": 77,
+      "output_tail": "1. **分析请求：**\n    *   输入：一个长提示词，包含多个不相关的部分（Jeff Walker的Product Launch Formula、",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 1
+    },
+    {
+      "ttft_s": 2.0037966100499034,
+      "ttfb_s": 2.0037588798440993,
+      "total_s": 12.625138722825795,
+      "prompt_sha256": "9d8e01f2e95fc95571ddbc36ed563713ed72d5867b774338233f87000ef01001",
+      "input_chars": 24111,
+      "output_chars": 57,
+      "output_tail": "1. **分析请求：**\n    *   **输入上下文：** 一段冗长且多样的文本，包含多个不相关的提示词和回复",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 2
+    }
+  ]
+}
