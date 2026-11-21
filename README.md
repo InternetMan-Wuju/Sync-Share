@@ -10,7 +10,8 @@
 
 ## 当前内容
 
-- [全组固定 K 槽：真实 GLM 单层闭环执行交接（2026-11-22）](handoff/2026-11-22_global_k_real_layer_execution.md)：当前执行入口；真实专家与两卡 K=1 完整成本验证、跨层复用、门槛和筛选合法性，基于 6c81480 审阅。
+- [全组固定 K 槽：安全修正与完整成本补测（2026-11-22）](handoff/2026-11-22_global_k_correctness_cost_rework.md)：当前执行入口；基于 57f0e30 审阅，修复槽隔离和失败回收、统一两卡完整计时、补齐搜索 oracle 与跨层反复复用。
+- [真实专家与两卡 K=1 上轮报告](shared/current_exp/20261122_global_k_real_layer/REPORT_FOR_REVIEW.md)：真实状态和手工分流已有进展；槽安全与计时存在待修问题，性能数字须按当前交接补测。
 - [全组固定 K 槽原型完整报告](shared/current_exp/20261116_global_k_online/FULL_REPORT_FOR_REVIEW.md)：固定 owner 槽、小尺寸 W8A8 和 16-rank 1KB 传输已验证，真实 GLM external-slot dispatch 与 global-K TTFT 尚未完成。
 - [当前批次复制决策：论文调研、CPU模拟与23节点16卡实测](shared/current_exp/20261109_decision/20261109_074727/RESULTS.md)：64K分块层回放每次冷复制仍净省约19%；8K避免负优化，32K门槛偏保守；未证明整机请求加速。
 
@@ -90,7 +91,8 @@ Prefill 当前路由复制与精确配额 M0：
 
 本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。
 
-- [全组固定 K 槽：真实 GLM 单层闭环执行交接（2026-11-22）](handoff/2026-11-22_global_k_real_layer_execution.md)：当前实现入口；真实单层 K=1 闭环优先，算法验证并行，包含代码缺口、阶段验收和结果交付要求。
+- [全组固定 K 槽：安全修正与完整成本补测（2026-11-22）](handoff/2026-11-22_global_k_correctness_cost_rework.md)：当前实现入口；逐项修复 57f0e30 的安全、计时与候选漏解，补齐可复算证据后推进真实单层接线。
+- [上一轮真实 GLM 单层闭环交接](handoff/2026-11-22_global_k_real_layer_execution.md)：历史任务背景与固定 K 合同，执行顺序以当前交接为准。
 - [昇腾910C Prefill专家复制与精确配额实现方案（2026-11-03）](handoff/2026-11-03_ascend_prefill_copy_aware_implementation.md)：历史实现方案；实际SGLang接线、完整量化状态复制、显存与通信约束可参考，执行范围以最新交接为准。
 - [Online与大EP Decode结果复核（2026-11-03）](handoff/2026-11-03_online_decode_review.md)：最新b7ec624的证据复核、会议结论及最小补齐顺序。
 - [3小时 Online 与 Decode EP 执行卡（2026-11-03）](handoff/2026-11-03_glm52_3h_online_decode.md)：已结束轮次的原执行要求；当前状态见结果复核，不自动续跑。

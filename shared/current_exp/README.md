@@ -5,6 +5,12 @@
 - 总体总结：[`20261102_load_balance_e0/RESULTS_OVERALL.md`](20261102_load_balance_e0/RESULTS_OVERALL.md)
 - 单卡复现说明：[`20261102_load_balance_e0/README_LOCAL.md`](20261102_load_balance_e0/README_LOCAL.md)
 
+## 全组固定 K 槽（2026-11-22）
+
+- 当前执行方案：[安全修正与完整成本补测](../../handoff/2026-11-22_global_k_correctness_cost_rework.md)，审阅基线 `57f0e30`。
+- 上轮报告：[`20261122_global_k_real_layer/REPORT_FOR_REVIEW.md`](20261122_global_k_real_layer/REPORT_FOR_REVIEW.md)。真实状态装槽与手工分流已有证据；槽隔离、失败回收、计时和搜索验证待修，旧局部时间不作为完整成本结论。
+- 下一轮产物建议使用 `20261122_global_k_rework/`，保留上轮原始记录。
+
 ## 20261103_3h_online_decode
 
 - run：`20261103_051202`，单张 Ascend NPU，eager 局部专家链代理。
