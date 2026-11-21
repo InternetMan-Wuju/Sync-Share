@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-11-22T04:31:19+08:00",
+  "base_commit_required": "4133859",
+  "hosts": {
+    "npu1-23": "16 Ascend910C",
+    "npu1-25": "16 Ascend910C"
+  },
+  "tested_host": "npu1-23",
+  "tested_devices": "davinci0 and davinci1",
+  "probe_image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "model": "/data_lib/data/models/glm-q",
+  "quantization": "ModelSlim W8A8",
+  "actual_layer": "49 and 50",
+  "actual_expert": "43",
+  "slot_bytes": 37810176,
+  "status": "REAL_EXPERT_CHAIN_AND_TWO_RANK_K1_VALIDATED; FULL_MODEL_DISPATCH_NOT_DONE",
+  "full_model_loaded": false,
+  "ttft_measured": false
+}

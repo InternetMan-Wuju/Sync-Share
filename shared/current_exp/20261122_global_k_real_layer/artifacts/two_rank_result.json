@@ -1,0 +1,8 @@
+{
+  "rank": 0,
+  "role": "source",
+  "state_bytes": 37810176,
+  "cold_send_ms": 394.1121930256486,
+  "cold_total_ms": 610.183164011687,
+  "cold_diff": 0.0
+}

@@ -1,0 +1,63 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+/runexp/scripts/real_expert_chain_probe.py:110: UserWarning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:340.)
+  split=torch.empty_like(baseline); split.index_copy_(0,main_idx,main_out); split.index_copy_(0,ext_idx,ext_out)
+{
+  "status": "PASS",
+  "layer": 49,
+  "expert": 43,
+  "input": "synthetic bfloat16 [6,6144]",
+  "actual_model_state": true,
+  "w8a8": true,
+  "slot_bytes": 37810176,
+  "committed_bytes": 37810176,
+  "state_bytes_equal_all": {
+    "w13": true,
+    "w2": true,
+    "s13": true,
+    "s2": true,
+    "o13": true,
+    "o2": true
+  },
+  "per_rank_capacity": {
+    "1": 1
+  },
+  "external_vs_bank_max_abs": 0.0,
+  "split_vs_bank_max_abs": 0.0,
+  "layer50_external_vs_bank_max_abs": 0.0,
+  "layer50_state_bytes_equal_all": {
+    "w13": true,
+    "w2": true,
+    "s13": true,
+    "s2": true,
+    "o13": true,
+    "o2": true
+  },
+  "layer50_copy_ms": 1.327881938777864,
+  "cross_layer_slot_reused": true,
+  "copy_ms": 1.554882968775928,
+  "timings_ms": {
+    "baseline": {
+      "n": 10,
+      "median_ms": 0.35521307587623596,
+      "min_ms": 0.323173007927835,
+      "max_ms": 0.4205940058454871
+    },
+    "external": {
+      "n": 10,
+      "median_ms": 0.3436529040336609,
+      "min_ms": 0.3250919980928302,
+      "max_ms": 0.4229840124025941
+    },
+    "split": {
+      "n": 10,
+      "median_ms": 0.7725160121917725,
+      "min_ms": 0.6370760966092348,
+      "max_ms": 1.1981510324403644
+    }
+  },
+  "memory_allocated": 113958400,
+  "memory_reserved": 148897792,
+  "max_memory_allocated": 133033472
+}

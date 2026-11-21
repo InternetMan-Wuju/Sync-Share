@@ -1,0 +1,11 @@
+test_beam_finds_pair (__main__.GlobalKTests) ... ok
+test_counterexample_requires_multi_action (__main__.GlobalKTests) ... ok
+test_cross_layer_reuse (__main__.GlobalKTests) ... ok
+test_existing_replica_no_copy (__main__.GlobalKTests) ... ok
+test_k_not_multiple_and_no_dummy_alloc (__main__.GlobalKTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.139s
+
+OK
+SLOT_IDENTITY_PASS ['sync', 'sync']

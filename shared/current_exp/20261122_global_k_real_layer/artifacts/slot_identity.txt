@@ -1,0 +1,1 @@
+SLOT_IDENTITY_PASS ['sync', 'sync']
