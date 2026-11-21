@@ -1,0 +1,1746 @@
+{
+  "summary": {
+    "samples": 10,
+    "bounded_runs": 200,
+    "invalid_states": 0,
+    "candidate_omissions": 8,
+    "pruning_omissions": 1,
+    "max_bounded_gap_vs_oracle": 15.0,
+    "planner_cpu_ms": {
+      "p50": 0.189436,
+      "p95": 8.189029,
+      "min": 0.079811,
+      "max": 8.25289
+    },
+    "cost_per_copy_toy_units": 2.0,
+    "note": "Toy integer scores only; not milliseconds, NPU times, or production costs."
+  },
+  "cases": [
+    {
+      "name": "q4_candidate_omission",
+      "layer": 49,
+      "counts": [
+        [
+          12
+        ],
+        [
+          4
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        }
+      ],
+      "baseline": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.15223599999999998,
+          "p95_ms": 0.146761,
+          "raw_ms": [
+            0.146761,
+            0.157711
+          ]
+        }
+      },
+      "complete_candidate_space": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.365078,
+          "p95_ms": 0.359173,
+          "raw_ms": [
+            0.359173,
+            0.370983
+          ]
+        }
+      },
+      "limited_exhaustive": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.122361,
+          "p95_ms": 0.123741,
+          "raw_ms": [
+            0.120961,
+            0.121711,
+            0.122361,
+            0.123741,
+            0.123981
+          ]
+        }
+      },
+      "bounded_search": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.19142199999999998,
+          "p95_ms": 0.222742,
+          "raw_ms": [
+            0.188481,
+            0.188992,
+            0.189082,
+            0.189301,
+            0.189571,
+            0.189572,
+            0.189581,
+            0.190292,
+            0.190662,
+            0.190942,
+            0.191902,
+            0.191921,
+            0.192802,
+            0.192991,
+            0.195432,
+            0.196392,
+            0.198052,
+            0.199731,
+            0.222742,
+            0.229092
+          ]
+        }
+      },
+      "missed_profit_vs_oracle": 1.75,
+      "candidate_omission": true,
+      "pruning_omission": false,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "multi_action_hot_pair",
+      "layer": 50,
+      "counts": [
+        [
+          40
+        ],
+        [
+          39
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 2,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        },
+        {
+          "owner": 3,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        }
+      ],
+      "baseline": {
+        "score": 40.25,
+        "rank_loads": [
+          40,
+          39,
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          20,
+          20,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 120.8124165,
+          "p95_ms": 120.517624,
+          "raw_ms": [
+            120.517624,
+            121.107209
+          ]
+        }
+      },
+      "complete_candidate_space": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          21,
+          20,
+          19
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 18,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 504.6309915,
+          "p95_ms": 502.141735,
+          "raw_ms": [
+            502.141735,
+            507.120248
+          ]
+        }
+      },
+      "limited_exhaustive": {
+        "score": 25.5,
+        "rank_loads": [
+          20,
+          20,
+          21,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 20,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 6.352444,
+          "p95_ms": 6.383984,
+          "raw_ms": [
+            6.349804,
+            6.349864,
+            6.352444,
+            6.383984,
+            6.500195
+          ]
+        }
+      },
+      "bounded_search": {
+        "score": 25.5,
+        "rank_loads": [
+          20,
+          20,
+          21,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 20,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 3.0160109999999998,
+          "p95_ms": 3.094466,
+          "raw_ms": [
+            2.999535,
+            3.005586,
+            3.005976,
+            3.007216,
+            3.008776,
+            3.009335,
+            3.010175,
+            3.010576,
+            3.013416,
+            3.015896,
+            3.016126,
+            3.019076,
+            3.026535,
+            3.031595,
+            3.032885,
+            3.039476,
+            3.041466,
+            3.041606,
+            3.094466,
+            3.111557
+          ]
+        }
+      },
+      "missed_profit_vs_oracle": 0.25,
+      "candidate_omission": true,
+      "pruning_omission": false,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "beam_pruning_pair",
+      "layer": 50,
+      "counts": [
+        [
+          40
+        ],
+        [
+          39
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 2,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        },
+        {
+          "owner": 3,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        }
+      ],
+      "baseline": {
+        "score": 40.25,
+        "rank_loads": [
+          40,
+          39,
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          20,
+          20,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 120.374978,
+          "p95_ms": 120.341553,
+          "raw_ms": [
+            120.341553,
+            120.408403
+          ]
+        }
+      },
+      "complete_candidate_space": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          21,
+          20,
+          19
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 18,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 503.92530050000005,
+          "p95_ms": 502.037885,
+          "raw_ms": [
+            502.037885,
+            505.812716
+          ]
+        }
+      },
+      "limited_exhaustive": {
+        "score": 25.5,
+        "rank_loads": [
+          20,
+          20,
+          21,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 20,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 6.357054,
+          "p95_ms": 6.364734,
+          "raw_ms": [
+            6.337054,
+            6.347284,
+            6.357054,
+            6.364734,
+            6.365074
+          ]
+        }
+      },
+      "bounded_search": {
+        "score": 40.25,
+        "rank_loads": [
+          40,
+          39,
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 1.5877835,
+          "p95_ms": 1.604293,
+          "raw_ms": [
+            1.583763,
+            1.584024,
+            1.584194,
+            1.585424,
+            1.585493,
+            1.585633,
+            1.586644,
+            1.586983,
+            1.586994,
+            1.587573,
+            1.587994,
+            1.589704,
+            1.590304,
+            1.592393,
+            1.595344,
+            1.595473,
+            1.597684,
+            1.599623,
+            1.604293,
+            1.617484
+          ]
+        }
+      },
+      "missed_profit_vs_oracle": 15.0,
+      "candidate_omission": true,
+      "pruning_omission": true,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "wrong_expert",
+      "layer": 49,
+      "counts": [
+        [
+          12
+        ],
+        [
+          4
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": 9,
+          "layer": 49,
+          "ready": true,
+          "busy": false
+        }
+      ],
+      "baseline": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.142036,
+          "p95_ms": 0.138211,
+          "raw_ms": [
+            0.138211,
+            0.145861
+          ]
+        }
+      },
+      "complete_candidate_space": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.3391875,
+          "p95_ms": 0.335432,
+          "raw_ms": [
+            0.335432,
+            0.342943
+          ]
+        }
+      },
+      "limited_exhaustive": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.115491,
+          "p95_ms": 0.116011,
+          "raw_ms": [
+            0.115371,
+            0.115491,
+            0.115491,
+            0.116011,
+            0.116871
+          ]
+        }
+      },
+      "bounded_search": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.17865599999999998,
+          "p95_ms": 0.188441,
+          "raw_ms": [
+            0.177602,
+            0.178151,
+            0.178192,
+            0.178211,
+            0.178392,
+            0.178432,
+            0.178462,
+            0.178522,
+            0.178592,
+            0.178651,
+            0.178661,
+            0.178861,
+            0.179001,
+            0.179162,
+            0.179221,
+            0.179322,
+            0.180461,
+            0.180482,
+            0.188441,
+            0.193132
+          ]
+        }
+      },
+      "missed_profit_vs_oracle": 1.75,
+      "candidate_omission": true,
+      "pruning_omission": false,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "busy_slot",
+      "layer": 49,
+      "counts": [
+        [
+          9
+        ],
+        [
+          8
+        ],
+        [
+          1
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 2,
+          "expert": 0,
+          "layer": 49,
+          "ready": true,
+          "busy": true
+        }
+      ],
+      "baseline": {
+        "score": 9.25,
+        "rank_loads": [
+          9,
+          8,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 9.25,
+        "rank_loads": [
+          9,
+          8,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.018485,
+          "p95_ms": 0.01782,
+          "raw_ms": [
+            0.01782,
+            0.01915
+          ]
+        }
+      },
+      "complete_candidate_space": {
+        "score": 9.25,
+        "rank_loads": [
+          9,
+          8,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.0560805,
+          "p95_ms": 0.055711,
+          "raw_ms": [
+            0.055711,
+            0.05645
+          ]
+        }
+      },
+      "limited_exhaustive": {
+        "score": 9.25,
+        "rank_loads": [
+          9,
+          8,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.05599,
+          "p95_ms": 0.05608,
+          "raw_ms": [
+            0.055451,
+            0.055491,
+            0.05599,
+            0.05608,
+            0.05626
+          ]
+        }
+      },
+      "bounded_search": {
+        "score": 9.25,
+        "rank_loads": [
+          9,
+          8,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.08056050000000001,
+          "p95_ms": 0.081361,
+          "raw_ms": [
+            0.079811,
+            0.08012,
+            0.080171,
+            0.080301,
+            0.080331,
+            0.080401,
+            0.080451,
+            0.08048,
+            0.080501,
+            0.08055,
+            0.080571,
+            0.080601,
+            0.080621,
+            0.08065,
+            0.08075,
+            0.080781,
+            0.08085,
+            0.080981,
+            0.081361,
+            0.08345
+          ]
+        }
+      },
+      "missed_profit_vs_oracle": 0.0,
+      "candidate_omission": false,
+      "pruning_omission": false,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "partial_rank_owners",
+      "layer": 49,
+      "counts": [
+        [
+          40
+        ],
+        [
+          39
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 2,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        },
+        {
+          "owner": 3,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        }
+      ],
+      "baseline": {
+        "score": 40.25,
+        "rank_loads": [
+          40,
+          39,
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          20,
+          20,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 124.9689315,
+          "p95_ms": 121.024138,
+          "raw_ms": [
+            121.024138,
+            128.913725
+          ]
+        }
+      },
+      "complete_candidate_space": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          21,
+          20,
+          19
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 18,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 511.4279845,
+          "p95_ms": 507.809004,
+          "raw_ms": [
+            507.809004,
+            515.046965
+          ]
+        }
+      },
+      "limited_exhaustive": {
+        "score": 25.5,
+        "rank_loads": [
+          20,
+          20,
+          21,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 20,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 6.349954,
+          "p95_ms": 6.359324,
+          "raw_ms": [
+            6.334724,
+            6.345814,
+            6.349954,
+            6.359324,
+            6.362154
+          ]
+        }
+      },
+      "bounded_search": {
+        "score": 25.5,
+        "rank_loads": [
+          20,
+          20,
+          21,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 20,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 8.189849500000001,
+          "p95_ms": 8.2188,
+          "raw_ms": [
+            8.16799,
+            8.1721,
+            8.172369,
+            8.17811,
+            8.178439,
+            8.18139,
+            8.18239,
+            8.18423,
+            8.188099,
+            8.189029,
+            8.19067,
+            8.19106,
+            8.192159,
+            8.19251,
+            8.199169,
+            8.201859,
+            8.20238,
+            8.211559,
+            8.2188,
+            8.25289
+          ]
+        }
+      },
+      "missed_profit_vs_oracle": 0.25,
+      "candidate_omission": true,
+      "pruning_omission": false,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "zero_profit",
+      "layer": 49,
+      "counts": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        }
+      ],
+      "baseline": {
+        "score": 1.25,
+        "rank_loads": [
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 1.25,
+        "rank_loads": [
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.03327,
+          "p95_ms": 0.03136,
+          "raw_ms": [
+            0.03136,
+            0.03518
+          ]
+        }
+      },
+      "complete_candidate_space": {
+        "score": 1.25,
+        "rank_loads": [
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.0708655,
+          "p95_ms": 0.066541,
+          "raw_ms": [
+            0.066541,
+            0.07519
+          ]
+        }
+      },
+      "limited_exhaustive": {
+        "score": 1.25,
+        "rank_loads": [
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.068851,
+          "p95_ms": 0.068871,
+          "raw_ms": [
+            0.068781,
+            0.0688,
+            0.068851,
+            0.068871,
+            0.07053
+          ]
+        }
+      },
+      "bounded_search": {
+        "score": 1.25,
+        "rank_loads": [
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.101596,
+          "p95_ms": 0.106811,
+          "raw_ms": [
+            0.100781,
+            0.10091,
+            0.100991,
+            0.101141,
+            0.101151,
+            0.101211,
+            0.10133,
+            0.101341,
+            0.101491,
+            0.101581,
+            0.101611,
+            0.101811,
+            0.102041,
+            0.102231,
+            0.10239,
+            0.102501,
+            0.102991,
+            0.103971,
+            0.106811,
+            0.246122
+          ]
+        }
+      },
+      "missed_profit_vs_oracle": 0.0,
+      "candidate_omission": false,
+      "pruning_omission": false,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "existing_replica",
+      "layer": 49,
+      "counts": [
+        [
+          40
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": 0,
+          "layer": 49,
+          "ready": true,
+          "busy": false
+        }
+      ],
+      "baseline": {
+        "score": 40.25,
+        "rank_loads": [
+          40,
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 21.25,
+        "rank_loads": [
+          21,
+          20,
+          1
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": false
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.485119,
+          "p95_ms": 0.483704,
+          "raw_ms": [
+            0.483704,
+            0.486534
+          ]
+        }
+      },
+      "complete_candidate_space": {
+        "score": 21.25,
+        "rank_loads": [
+          21,
+          20,
+          1
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": false
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 1.509263,
+          "p95_ms": 1.483733,
+          "raw_ms": [
+            1.483733,
+            1.534793
+          ]
+        }
+      },
+      "limited_exhaustive": {
+        "score": 21.5,
+        "rank_loads": [
+          20,
+          21,
+          1
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 20,
+            "copy": false
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.211062,
+          "p95_ms": 0.213621,
+          "raw_ms": [
+            0.201422,
+            0.201992,
+            0.211062,
+            0.213621,
+            0.243352
+          ]
+        }
+      },
+      "bounded_search": {
+        "score": 21.5,
+        "rank_loads": [
+          20,
+          21,
+          1
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 20,
+            "copy": false
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.32914299999999996,
+          "p95_ms": 0.340193,
+          "raw_ms": [
+            0.326443,
+            0.327312,
+            0.327353,
+            0.327432,
+            0.328443,
+            0.328463,
+            0.328672,
+            0.328813,
+            0.328853,
+            0.329123,
+            0.329163,
+            0.329183,
+            0.329942,
+            0.330493,
+            0.334703,
+            0.336513,
+            0.337243,
+            0.338023,
+            0.340193,
+            0.358263
+          ]
+        }
+      },
+      "missed_profit_vs_oracle": 0.25,
+      "candidate_omission": true,
+      "pruning_omission": false,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "same_expert_different_layer_49",
+      "layer": 49,
+      "counts": [
+        [
+          12
+        ],
+        [
+          4
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": 0,
+          "layer": 48,
+          "ready": true,
+          "busy": false
+        }
+      ],
+      "baseline": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.140021,
+          "p95_ms": 0.137101,
+          "raw_ms": [
+            0.137101,
+            0.142941
+          ]
+        }
+      },
+      "complete_candidate_space": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.344263,
+          "p95_ms": 0.338573,
+          "raw_ms": [
+            0.338573,
+            0.349953
+          ]
+        }
+      },
+      "limited_exhaustive": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.116871,
+          "p95_ms": 0.116891,
+          "raw_ms": [
+            0.115741,
+            0.116241,
+            0.116871,
+            0.116891,
+            0.117301
+          ]
+        }
+      },
+      "bounded_search": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.181426,
+          "p95_ms": 0.188352,
+          "raw_ms": [
+            0.179421,
+            0.179711,
+            0.179762,
+            0.179781,
+            0.179982,
+            0.180332,
+            0.180402,
+            0.180942,
+            0.181331,
+            0.181391,
+            0.181461,
+            0.181611,
+            0.181742,
+            0.181802,
+            0.182261,
+            0.182302,
+            0.182312,
+            0.183741,
+            0.188352,
+            0.199522
+          ]
+        }
+      },
+      "missed_profit_vs_oracle": 1.75,
+      "candidate_omission": true,
+      "pruning_omission": false,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "same_expert_different_layer_50",
+      "layer": 50,
+      "counts": [
+        [
+          12
+        ],
+        [
+          4
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": 0,
+          "layer": 49,
+          "ready": true,
+          "busy": false
+        }
+      ],
+      "baseline": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.139586,
+          "p95_ms": 0.136981,
+          "raw_ms": [
+            0.136981,
+            0.142191
+          ]
+        }
+      },
+      "complete_candidate_space": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.34747300000000003,
+          "p95_ms": 0.346053,
+          "raw_ms": [
+            0.346053,
+            0.348893
+          ]
+        }
+      },
+      "limited_exhaustive": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.117101,
+          "p95_ms": 0.117331,
+          "raw_ms": [
+            0.116601,
+            0.116711,
+            0.117101,
+            0.117331,
+            0.117431
+          ]
+        }
+      },
+      "bounded_search": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "median_ms": 0.1800565,
+          "p95_ms": 0.189172,
+          "raw_ms": [
+            0.178242,
+            0.179131,
+            0.179422,
+            0.179571,
+            0.179602,
+            0.179652,
+            0.179691,
+            0.179721,
+            0.179922,
+            0.180021,
+            0.180092,
+            0.180221,
+            0.180231,
+            0.180412,
+            0.180512,
+            0.181161,
+            0.181712,
+            0.182112,
+            0.189172,
+            0.190711
+          ]
+        }
+      },
+      "missed_profit_vs_oracle": 1.75,
+      "candidate_omission": true,
+      "pruning_omission": false,
+      "oracle_matches_complete_score": true
+    }
+  ]
+}

@@ -1,0 +1,2509 @@
+{
+  "rank": 0,
+  "role": "source",
+  "layer_id": 49,
+  "expert_id": 43,
+  "groups": 10,
+  "warmup_groups_per_load_case": 1,
+  "load_cases": [
+    {
+      "name": "interface_6",
+      "tokens": 6,
+      "main": 3,
+      "external": 3
+    },
+    {
+      "name": "prefill_subchain_512",
+      "tokens": 512,
+      "main": 256,
+      "external": 256
+    }
+  ],
+  "scope": "two-rank expert-child replay; not full layer/service",
+  "samples": [
+    {
+      "sample_id": "interface_6-g00-original",
+      "group": 0,
+      "mode": "original",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 1.0271390380859375,
+      "segments_ms": {
+        "main_compute": 0.3493829345703125,
+        "done_recv": 0.262241943359375
+      },
+      "control_send_ms": 0.2475220947265625,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75961344,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g00-cold",
+      "group": 0,
+      "mode": "cold",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 2.911875,
+      "segments_ms": {
+        "pack": 0.3857430419921875,
+        "weight_send": 0.4806539306640625,
+        "activation_prepare_send": 0.2324420166015625,
+        "main_compute": 0.3944630126953125,
+        "result_recv": 0.3263929443359375,
+        "refill": 0.1976119384765625,
+        "done_recv": 0.26333203125
+      },
+      "control_send_ms": 0.3372730712890625,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g00-existing",
+      "group": 0,
+      "mode": "existing",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 1.8763270263671874,
+      "segments_ms": {
+        "activation_prepare_send": 0.228781982421875,
+        "main_compute": 0.33435302734375,
+        "result_recv": 0.4247130126953125,
+        "refill": 0.18477099609375,
+        "done_recv": 0.2379320068359375
+      },
+      "control_send_ms": 0.23577197265625,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4588040771484375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g01-original",
+      "group": 1,
+      "mode": "original",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 0.996968017578125,
+      "segments_ms": {
+        "main_compute": 0.3660029296875,
+        "done_recv": 0.2471119384765625
+      },
+      "control_send_ms": 0.2318919677734375,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75961344,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g01-existing",
+      "group": 1,
+      "mode": "existing",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 1.717375,
+      "segments_ms": {
+        "activation_prepare_send": 0.2144320068359375,
+        "main_compute": 0.338552978515625,
+        "result_recv": 0.286001953125,
+        "refill": 0.1821419677734375,
+        "done_recv": 0.2367220458984375
+      },
+      "control_send_ms": 0.214822021484375,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4446439208984375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g01-cold",
+      "group": 1,
+      "mode": "cold",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 2.60129296875,
+      "segments_ms": {
+        "pack": 0.378343017578125,
+        "weight_send": 0.462944091796875,
+        "activation_prepare_send": 0.211001953125,
+        "main_compute": 0.3468629150390625,
+        "result_recv": 0.30529296875,
+        "refill": 0.177490966796875,
+        "done_recv": 0.23602197265625
+      },
+      "control_send_ms": 0.23331201171875,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g02-cold",
+      "group": 2,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 2.5857130126953125,
+      "segments_ms": {
+        "pack": 0.363364013671875,
+        "weight_send": 0.4674339599609375,
+        "activation_prepare_send": 0.2364219970703125,
+        "main_compute": 0.3456629638671875,
+        "result_recv": 0.28056298828125,
+        "refill": 0.1653309326171875,
+        "done_recv": 0.2412020263671875
+      },
+      "control_send_ms": 0.215751953125,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g02-original",
+      "group": 2,
+      "mode": "original",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 0.991458984375,
+      "segments_ms": {
+        "main_compute": 0.3624530029296875,
+        "done_recv": 0.238842041015625
+      },
+      "control_send_ms": 0.2185819091796875,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75961344,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g02-existing",
+      "group": 2,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 1.7430650634765625,
+      "segments_ms": {
+        "activation_prepare_send": 0.219112060546875,
+        "main_compute": 0.357093017578125,
+        "result_recv": 0.2752520751953125,
+        "refill": 0.179261962890625,
+        "done_recv": 0.24098193359375
+      },
+      "control_send_ms": 0.2394420166015625,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.443093017578125
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g03-cold",
+      "group": 3,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 2.5840030517578123,
+      "segments_ms": {
+        "pack": 0.35504296875,
+        "weight_send": 0.4722540283203125,
+        "activation_prepare_send": 0.229751953125,
+        "main_compute": 0.338613037109375,
+        "result_recv": 0.290012939453125,
+        "refill": 0.1616309814453125,
+        "done_recv": 0.24889208984375
+      },
+      "control_send_ms": 0.21598193359375,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g03-existing",
+      "group": 3,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 1.7780760498046875,
+      "segments_ms": {
+        "activation_prepare_send": 0.234001953125,
+        "main_compute": 0.33706201171875,
+        "result_recv": 0.2955919189453125,
+        "refill": 0.1885419921875,
+        "done_recv": 0.25833203125
+      },
+      "control_send_ms": 0.235572021484375,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4451629638671875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g03-original",
+      "group": 3,
+      "mode": "original",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 0.93468798828125,
+      "segments_ms": {
+        "main_compute": 0.3390928955078125,
+        "done_recv": 0.23106201171875
+      },
+      "control_send_ms": 0.216302001953125,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75961344,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g04-existing",
+      "group": 4,
+      "mode": "existing",
+      "order": [
+        "existing",
+        "original",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 1.7299849853515625,
+      "segments_ms": {
+        "activation_prepare_send": 0.2446920166015625,
+        "main_compute": 0.3560830078125,
+        "result_recv": 0.26418310546875,
+        "refill": 0.19048095703125,
+        "done_recv": 0.2370419921875
+      },
+      "control_send_ms": 0.2249420166015625,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4698739013671875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g04-original",
+      "group": 4,
+      "mode": "original",
+      "order": [
+        "existing",
+        "original",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 0.9406080322265625,
+      "segments_ms": {
+        "main_compute": 0.33452294921875,
+        "done_recv": 0.2380419921875
+      },
+      "control_send_ms": 0.221971923828125,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75961344,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g04-cold",
+      "group": 4,
+      "mode": "cold",
+      "order": [
+        "existing",
+        "original",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 2.639632080078125,
+      "segments_ms": {
+        "pack": 0.361653076171875,
+        "weight_send": 0.4662540283203125,
+        "activation_prepare_send": 0.252613037109375,
+        "main_compute": 0.3484630126953125,
+        "result_recv": 0.2861820068359375,
+        "refill": 0.16681103515625,
+        "done_recv": 0.2416119384765625
+      },
+      "control_send_ms": 0.2210020751953125,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g05-existing",
+      "group": 5,
+      "mode": "existing",
+      "order": [
+        "existing",
+        "cold",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 1.69275390625,
+      "segments_ms": {
+        "activation_prepare_send": 0.2119620361328125,
+        "main_compute": 0.33029296875,
+        "result_recv": 0.2817630615234375,
+        "refill": 0.1963719482421875,
+        "done_recv": 0.23848193359375
+      },
+      "control_send_ms": 0.220342041015625,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4376640625
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g05-cold",
+      "group": 5,
+      "mode": "cold",
+      "order": [
+        "existing",
+        "cold",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 2.576531982421875,
+      "segments_ms": {
+        "pack": 0.3364129638671875,
+        "weight_send": 0.4821038818359375,
+        "activation_prepare_send": 0.2259119873046875,
+        "main_compute": 0.3599029541015625,
+        "result_recv": 0.26852294921875,
+        "refill": 0.16598095703125,
+        "done_recv": 0.2247109375
+      },
+      "control_send_ms": 0.2437919921875,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g05-original",
+      "group": 5,
+      "mode": "original",
+      "order": [
+        "existing",
+        "cold",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 1.0362890625,
+      "segments_ms": {
+        "main_compute": 0.352822998046875,
+        "done_recv": 0.232322021484375
+      },
+      "control_send_ms": 0.27081201171875,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75961344,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g06-original",
+      "group": 6,
+      "mode": "original",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 0.97751806640625,
+      "segments_ms": {
+        "main_compute": 0.3236929931640625,
+        "done_recv": 0.236751953125
+      },
+      "control_send_ms": 0.2467919921875,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75961344,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g06-cold",
+      "group": 6,
+      "mode": "cold",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 2.598031982421875,
+      "segments_ms": {
+        "pack": 0.375153076171875,
+        "weight_send": 0.4902139892578125,
+        "activation_prepare_send": 0.2191719970703125,
+        "main_compute": 0.3472730712890625,
+        "result_recv": 0.274072021484375,
+        "refill": 0.192322021484375,
+        "done_recv": 0.2197119140625
+      },
+      "control_send_ms": 0.2249019775390625,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g06-existing",
+      "group": 6,
+      "mode": "existing",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 1.6914439697265624,
+      "segments_ms": {
+        "activation_prepare_send": 0.22552197265625,
+        "main_compute": 0.3640440673828125,
+        "result_recv": 0.265761962890625,
+        "refill": 0.18708203125,
+        "done_recv": 0.2319920654296875
+      },
+      "control_send_ms": 0.2088919677734375,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4559539794921875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g07-original",
+      "group": 7,
+      "mode": "original",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 0.9759290771484375,
+      "segments_ms": {
+        "main_compute": 0.3571329345703125,
+        "done_recv": 0.229001953125
+      },
+      "control_send_ms": 0.2128309326171875,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75961344,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g07-existing",
+      "group": 7,
+      "mode": "existing",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 1.6959849853515625,
+      "segments_ms": {
+        "activation_prepare_send": 0.2271519775390625,
+        "main_compute": 0.35827294921875,
+        "result_recv": 0.2345020751953125,
+        "refill": 0.1776610107421875,
+        "done_recv": 0.2544219970703125
+      },
+      "control_send_ms": 0.2320419921875,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4534840087890625
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g07-cold",
+      "group": 7,
+      "mode": "cold",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 2.542241943359375,
+      "segments_ms": {
+        "pack": 0.3753040771484375,
+        "weight_send": 0.4576739501953125,
+        "activation_prepare_send": 0.2178919677734375,
+        "main_compute": 0.3642030029296875,
+        "result_recv": 0.2672230224609375,
+        "refill": 0.169551025390625,
+        "done_recv": 0.226572021484375
+      },
+      "control_send_ms": 0.212781982421875,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g08-cold",
+      "group": 8,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 2.574302978515625,
+      "segments_ms": {
+        "pack": 0.34185302734375,
+        "weight_send": 0.47456396484375,
+        "activation_prepare_send": 0.22410205078125,
+        "main_compute": 0.356322998046875,
+        "result_recv": 0.26185302734375,
+        "refill": 0.17902099609375,
+        "done_recv": 0.227322021484375
+      },
+      "control_send_ms": 0.23808203125,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g08-original",
+      "group": 8,
+      "mode": "original",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 0.9463380126953125,
+      "segments_ms": {
+        "main_compute": 0.3496929931640625,
+        "done_recv": 0.2276619873046875
+      },
+      "control_send_ms": 0.2178109130859375,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75961344,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g08-existing",
+      "group": 8,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 1.7415550537109374,
+      "segments_ms": {
+        "activation_prepare_send": 0.22183203125,
+        "main_compute": 0.3487230224609375,
+        "result_recv": 0.2934730224609375,
+        "refill": 0.17881103515625,
+        "done_recv": 0.227221923828125
+      },
+      "control_send_ms": 0.212511962890625,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4444940185546875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g09-cold",
+      "group": 9,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 2.62479296875,
+      "segments_ms": {
+        "pack": 0.36004296875,
+        "weight_send": 0.5037239990234375,
+        "activation_prepare_send": 0.23483203125,
+        "main_compute": 0.340552978515625,
+        "result_recv": 0.2948719482421875,
+        "refill": 0.1761009521484375,
+        "done_recv": 0.255302001953125
+      },
+      "control_send_ms": 0.211592041015625,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g09-existing",
+      "group": 9,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 1.7387049560546874,
+      "segments_ms": {
+        "activation_prepare_send": 0.217382080078125,
+        "main_compute": 0.382593017578125,
+        "result_recv": 0.264572998046875,
+        "refill": 0.1741309814453125,
+        "done_recv": 0.227781005859375
+      },
+      "control_send_ms": 0.2253819580078125,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4494940185546875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75998720,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "interface_6-g09-original",
+      "group": 9,
+      "mode": "original",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "input_fingerprint": "833fe905a46becbcc56c2d96b90906ce1be893ab96b008e65b9e3791a59f21db",
+      "unified_ms": 0.989658935546875,
+      "segments_ms": {
+        "main_compute": 0.3356119384765625,
+        "done_recv": 0.242751953125
+      },
+      "control_send_ms": 0.2176319580078125,
+      "correctness_max_abs": 0.0,
+      "task_count": 6,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 75961344,
+        "reserved": 138412032,
+        "max_allocated": 94438912,
+        "max_reserved": 138412032,
+        "device_free": 64629673984,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g00-original",
+      "group": 0,
+      "mode": "original",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 1.027569091796875,
+      "segments_ms": {
+        "main_compute": 0.3857030029296875,
+        "done_recv": 0.2490321044921875
+      },
+      "control_send_ms": 0.2164820556640625,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 107087872,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g00-cold",
+      "group": 0,
+      "mode": "cold",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.908625,
+      "segments_ms": {
+        "pack": 0.3685130615234375,
+        "weight_send": 0.4575631103515625,
+        "activation_prepare_send": 0.2332919921875,
+        "main_compute": 0.3792529296875,
+        "result_recv": 0.34227294921875,
+        "refill": 0.3954840087890625,
+        "done_recv": 0.226241943359375
+      },
+      "control_send_ms": 0.2254920654296875,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 110234624,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g00-existing",
+      "group": 0,
+      "mode": "existing",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.055028076171875,
+      "segments_ms": {
+        "activation_prepare_send": 0.231251953125,
+        "main_compute": 0.3734129638671875,
+        "result_recv": 0.3412630615234375,
+        "refill": 0.3900531005859375,
+        "done_recv": 0.2390419921875
+      },
+      "control_send_ms": 0.240971923828125,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.45081396484375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 108138496,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g01-original",
+      "group": 1,
+      "mode": "original",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 1.03597900390625,
+      "segments_ms": {
+        "main_compute": 0.404364013671875,
+        "done_recv": 0.235652099609375
+      },
+      "control_send_ms": 0.22002197265625,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 106040832,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g01-existing",
+      "group": 1,
+      "mode": "existing",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.016927001953125,
+      "segments_ms": {
+        "activation_prepare_send": 0.24019189453125,
+        "main_compute": 0.350302978515625,
+        "result_recv": 0.33952294921875,
+        "refill": 0.3922530517578125,
+        "done_recv": 0.235322021484375
+      },
+      "control_send_ms": 0.221322021484375,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.436654052734375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 109187072,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g01-cold",
+      "group": 1,
+      "mode": "cold",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.8734449462890623,
+      "segments_ms": {
+        "pack": 0.3870130615234375,
+        "weight_send": 0.460924072265625,
+        "activation_prepare_send": 0.2370419921875,
+        "main_compute": 0.3810030517578125,
+        "result_recv": 0.32977294921875,
+        "refill": 0.35404296875,
+        "done_recv": 0.2263409423828125
+      },
+      "control_send_ms": 0.2192620849609375,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 109187072,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g02-cold",
+      "group": 2,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.891593994140625,
+      "segments_ms": {
+        "pack": 0.3601629638671875,
+        "weight_send": 0.4547139892578125,
+        "activation_prepare_send": 0.2679119873046875,
+        "main_compute": 0.3718428955078125,
+        "result_recv": 0.321383056640625,
+        "refill": 0.377032958984375,
+        "done_recv": 0.22158203125
+      },
+      "control_send_ms": 0.2154119873046875,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 108138496,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g02-original",
+      "group": 2,
+      "mode": "original",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 0.9736190185546875,
+      "segments_ms": {
+        "main_compute": 0.381302978515625,
+        "done_recv": 0.2210009765625
+      },
+      "control_send_ms": 0.2122509765625,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 106040832,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g02-existing",
+      "group": 2,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.0196671142578126,
+      "segments_ms": {
+        "activation_prepare_send": 0.236001953125,
+        "main_compute": 0.381623046875,
+        "result_recv": 0.322802978515625,
+        "refill": 0.37889404296875,
+        "done_recv": 0.247031982421875
+      },
+      "control_send_ms": 0.21383203125,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.455194091796875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 110234624,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g03-cold",
+      "group": 3,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.8447349853515624,
+      "segments_ms": {
+        "pack": 0.359613037109375,
+        "weight_send": 0.460283935546875,
+        "activation_prepare_send": 0.26233203125,
+        "main_compute": 0.353423095703125,
+        "result_recv": 0.3352430419921875,
+        "refill": 0.3674930419921875,
+        "done_recv": 0.219301025390625
+      },
+      "control_send_ms": 0.215031005859375,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 108138496,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g03-existing",
+      "group": 3,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 1.976876953125,
+      "segments_ms": {
+        "activation_prepare_send": 0.2291220703125,
+        "main_compute": 0.3735928955078125,
+        "result_recv": 0.3199429931640625,
+        "refill": 0.3799830322265625,
+        "done_recv": 0.222971923828125
+      },
+      "control_send_ms": 0.2077120361328125,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4594239501953125
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 109187072,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g03-original",
+      "group": 3,
+      "mode": "original",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 1.0186390380859376,
+      "segments_ms": {
+        "main_compute": 0.412283935546875,
+        "done_recv": 0.2306820068359375
+      },
+      "control_send_ms": 0.2096419677734375,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 106040832,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g04-existing",
+      "group": 4,
+      "mode": "existing",
+      "order": [
+        "existing",
+        "original",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.046156982421875,
+      "segments_ms": {
+        "activation_prepare_send": 0.2580718994140625,
+        "main_compute": 0.3769630126953125,
+        "result_recv": 0.3043330078125,
+        "refill": 0.4009739990234375,
+        "done_recv": 0.2646920166015625
+      },
+      "control_send_ms": 0.2181820068359375,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.47406396484375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 109187072,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g04-original",
+      "group": 4,
+      "mode": "original",
+      "order": [
+        "existing",
+        "original",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 0.9902779541015625,
+      "segments_ms": {
+        "main_compute": 0.3921240234375,
+        "done_recv": 0.2242220458984375
+      },
+      "control_send_ms": 0.2116619873046875,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 104992256,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g04-cold",
+      "group": 4,
+      "mode": "cold",
+      "order": [
+        "existing",
+        "original",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 3.1121170654296875,
+      "segments_ms": {
+        "pack": 0.3477130126953125,
+        "weight_send": 0.4783240966796875,
+        "activation_prepare_send": 0.2396019287109375,
+        "main_compute": 0.44031396484375,
+        "result_recv": 0.3420029296875,
+        "refill": 0.4554539794921875,
+        "done_recv": 0.2361619873046875
+      },
+      "control_send_ms": 0.2613829345703125,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 110234624,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g05-existing",
+      "group": 5,
+      "mode": "existing",
+      "order": [
+        "existing",
+        "cold",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 1.98314697265625,
+      "segments_ms": {
+        "activation_prepare_send": 0.2238919677734375,
+        "main_compute": 0.3547030029296875,
+        "result_recv": 0.3222330322265625,
+        "refill": 0.404583984375,
+        "done_recv": 0.22527197265625
+      },
+      "control_send_ms": 0.2102520751953125,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.44860400390625
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 110234624,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g05-cold",
+      "group": 5,
+      "mode": "cold",
+      "order": [
+        "existing",
+        "cold",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 3.1188170166015623,
+      "segments_ms": {
+        "pack": 0.3935830078125,
+        "weight_send": 0.47814404296875,
+        "activation_prepare_send": 0.2546119384765625,
+        "main_compute": 0.408573974609375,
+        "result_recv": 0.414782958984375,
+        "refill": 0.37823291015625,
+        "done_recv": 0.219781982421875
+      },
+      "control_send_ms": 0.26258203125,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 108138496,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g05-original",
+      "group": 5,
+      "mode": "original",
+      "order": [
+        "existing",
+        "cold",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 1.015178955078125,
+      "segments_ms": {
+        "main_compute": 0.404583984375,
+        "done_recv": 0.2283519287109375
+      },
+      "control_send_ms": 0.207791015625,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 106040832,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g06-original",
+      "group": 6,
+      "mode": "original",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 1.0160980224609375,
+      "segments_ms": {
+        "main_compute": 0.383032958984375,
+        "done_recv": 0.2314420166015625
+      },
+      "control_send_ms": 0.22248193359375,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 106040832,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g06-cold",
+      "group": 6,
+      "mode": "cold",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.851593994140625,
+      "segments_ms": {
+        "pack": 0.3635030517578125,
+        "weight_send": 0.4626640625,
+        "activation_prepare_send": 0.236552001953125,
+        "main_compute": 0.3811138916015625,
+        "result_recv": 0.3068919677734375,
+        "refill": 0.39535302734375,
+        "done_recv": 0.2361419677734375
+      },
+      "control_send_ms": 0.2082919921875,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 109187072,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g06-existing",
+      "group": 6,
+      "mode": "existing",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.0265369873046875,
+      "segments_ms": {
+        "activation_prepare_send": 0.250471923828125,
+        "main_compute": 0.3586129150390625,
+        "result_recv": 0.354843017578125,
+        "refill": 0.3815928955078125,
+        "done_recv": 0.2266920166015625
+      },
+      "control_send_ms": 0.20906201171875,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4628740234375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 109187072,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g07-original",
+      "group": 7,
+      "mode": "original",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 0.9981680908203125,
+      "segments_ms": {
+        "main_compute": 0.3758929443359375,
+        "done_recv": 0.2340220947265625
+      },
+      "control_send_ms": 0.2096920166015625,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 104992256,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g07-existing",
+      "group": 7,
+      "mode": "existing",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 1.96093701171875,
+      "segments_ms": {
+        "activation_prepare_send": 0.2221820068359375,
+        "main_compute": 0.386583984375,
+        "result_recv": 0.2701820068359375,
+        "refill": 0.400153076171875,
+        "done_recv": 0.2321920166015625
+      },
+      "control_send_ms": 0.212011962890625,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4537840576171875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 109187072,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g07-cold",
+      "group": 7,
+      "mode": "cold",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.8711239013671874,
+      "segments_ms": {
+        "pack": 0.358153076171875,
+        "weight_send": 0.45089404296875,
+        "activation_prepare_send": 0.24010205078125,
+        "main_compute": 0.374093017578125,
+        "result_recv": 0.3364219970703125,
+        "refill": 0.38010302734375,
+        "done_recv": 0.244052001953125
+      },
+      "control_send_ms": 0.2136719970703125,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 110234624,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g08-cold",
+      "group": 8,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.8528240966796874,
+      "segments_ms": {
+        "pack": 0.350322998046875,
+        "weight_send": 0.4704940185546875,
+        "activation_prepare_send": 0.2528929443359375,
+        "main_compute": 0.387613037109375,
+        "result_recv": 0.29902294921875,
+        "refill": 0.377282958984375,
+        "done_recv": 0.2213519287109375
+      },
+      "control_send_ms": 0.2281419677734375,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 108138496,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g08-original",
+      "group": 8,
+      "mode": "original",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 1.0053990478515624,
+      "segments_ms": {
+        "main_compute": 0.3789429931640625,
+        "done_recv": 0.2391719970703125
+      },
+      "control_send_ms": 0.2108319091796875,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 106040832,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g08-existing",
+      "group": 8,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.0293779296875,
+      "segments_ms": {
+        "activation_prepare_send": 0.2327120361328125,
+        "main_compute": 0.3861829833984375,
+        "result_recv": 0.3377730712890625,
+        "refill": 0.3965140380859375,
+        "done_recv": 0.2268419189453125
+      },
+      "control_send_ms": 0.2116109619140625,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.4472239990234375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 110234624,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g09-cold",
+      "group": 9,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 2.856364013671875,
+      "segments_ms": {
+        "pack": 0.3584530029296875,
+        "weight_send": 0.45606396484375,
+        "activation_prepare_send": 0.27302197265625,
+        "main_compute": 0.39210302734375,
+        "result_recv": 0.289962890625,
+        "refill": 0.378343017578125,
+        "done_recv": 0.2361820068359375
+      },
+      "control_send_ms": 0.2122120361328125,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 108138496,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g09-existing",
+      "group": 9,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 1.9993179931640626,
+      "segments_ms": {
+        "activation_prepare_send": 0.23777294921875,
+        "main_compute": 0.3654229736328125,
+        "result_recv": 0.3243729248046875,
+        "refill": 0.394012939453125,
+        "done_recv": 0.223041015625
+      },
+      "control_send_ms": 0.210501953125,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": {
+        "pack_and_send_ms": 0.482864013671875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 109187072,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g09-original",
+      "group": 9,
+      "mode": "original",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "input_fingerprint": "de27f1d312cb8caa4ac10d5fadc275ed3f5fc78268590c34b844ff60e501f914",
+      "unified_ms": 1.0234990234375,
+      "segments_ms": {
+        "main_compute": 0.373032958984375,
+        "done_recv": 0.2365419921875
+      },
+      "control_send_ms": 0.233501953125,
+      "correctness_max_abs": 0.0,
+      "task_count": 512,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 106040832,
+        "reserved": 184549376,
+        "max_allocated": 148976128,
+        "max_reserved": 184549376,
+        "device_free": 64583536640,
+        "device_total": 65787658240
+      }
+    }
+  ],
+  "source_preparation_ms": 3357.6225119628907,
+  "actual_state": {
+    "state_bytes": 37810176,
+    "slot_state_sha256": {
+      "w13": "910b08d3aecad0b82d6f55c61dfbcb59c8cbfe5ca912bf35cbff27b89c326b8f",
+      "w2": "862eecea31571a91b14dc175861e98b7510867de32a3249ac71155435132090e",
+      "s13": "bec1e0ee9161034eaf01b2354d99ace78cfa5ff6a1a219fc86980464f089e77b",
+      "s2": "74063193c572bbfd1f5dee3b29bbeaebf1697e3523811ac7d0a351ec5ba0da58",
+      "o13": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "o2": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3"
+    },
+    "bank_state_sha256": {
+      "w13": "63d4b413fa17df88d82b90d9619712dda1f6502eeaab2e415d747801a1c03178",
+      "w2": "a567c2897e89e7163768c003f45e35cbd05cb7ac4c739f720d5003a30bbbb054",
+      "s13": "7f29f15092fe636221d944b6672269291229c02a82fccbc6f228337c91622823",
+      "s2": "a8c05d872c8a2fb0cfbc60fd2601d4c3a858cdecc221cff33ec86de58a4691d4",
+      "o13": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "o2": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3"
+    },
+    "offset_stats": {
+      "o13": {
+        "all_zero": true,
+        "min": 0.0,
+        "max": 0.0,
+        "shape": [
+          1,
+          4096,
+          1
+        ],
+        "dtype": "torch.float32"
+      },
+      "o2": {
+        "all_zero": true,
+        "min": 0.0,
+        "max": 0.0,
+        "shape": [
+          1,
+          6144,
+          1
+        ],
+        "dtype": "torch.float32"
+      }
+    },
+    "layout": [
+      {
+        "name": "w13",
+        "offset": 0,
+        "bytes": 25165824,
+        "dtype": "torch.int8",
+        "shape": [
+          1,
+          6144,
+          4096
+        ]
+      },
+      {
+        "name": "w2",
+        "offset": 25165824,
+        "bytes": 12582912,
+        "dtype": "torch.int8",
+        "shape": [
+          1,
+          2048,
+          6144
+        ]
+      },
+      {
+        "name": "s13",
+        "offset": 37748736,
+        "bytes": 8192,
+        "dtype": "torch.bfloat16",
+        "shape": [
+          1,
+          4096
+        ]
+      },
+      {
+        "name": "s2",
+        "offset": 37756928,
+        "bytes": 12288,
+        "dtype": "torch.bfloat16",
+        "shape": [
+          1,
+          6144
+        ]
+      },
+      {
+        "name": "o13",
+        "offset": 37769216,
+        "bytes": 16384,
+        "dtype": "torch.float32",
+        "shape": [
+          1,
+          4096
+        ]
+      },
+      {
+        "name": "o2",
+        "offset": 37785600,
+        "bytes": 24576,
+        "dtype": "torch.float32",
+        "shape": [
+          1,
+          6144
+        ]
+      }
+    ]
+  },
+  "memory_initial": {
+    "allocated": 75623936,
+    "reserved": 138412032,
+    "max_allocated": 88175104,
+    "max_reserved": 138412032,
+    "device_free": 65221988352,
+    "device_total": 65787658240
+  },
+  "memory_final": {
+    "allocated": 106040832,
+    "reserved": 184549376,
+    "max_allocated": 148976128,
+    "max_reserved": 184549376,
+    "device_free": 64583536640,
+    "device_total": 65787658240
+  }
+}

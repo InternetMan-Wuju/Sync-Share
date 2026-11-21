@@ -1,0 +1,16 @@
+scope: two-rank expert-child replay; no full layer/TTFT claim
+samples=60 all_max_abs_zero=True
+mode	median_ms	p95_ms	min_ms	max_ms
+interface_6/cold	2.591872	2.639632	2.542242	2.911875
+interface_6/existing	1.734345	1.778076	1.691444	1.876327
+interface_6/original	0.983589	1.027139	0.934688	1.036289
+prefill_subchain_512/cold	2.872284	3.112117	2.844735	3.118817
+prefill_subchain_512/existing	2.018297	2.046157	1.960937	2.055028
+prefill_subchain_512/original	1.015638	1.027569	0.973619	1.035979
+paired_delta	median_ms	p95_ms	min_ms	max_ms
+interface_6/cold_minus_existing	0.883848	0.909647	0.805927	1.035548
+interface_6/original_minus_cold	-1.624239	-1.566313	-1.884736	-1.540243
+interface_6/original_minus_existing	-0.750326	-0.713926	-0.849188	-0.656465
+prefill_subchain_512/cold_minus_existing	0.862452	1.065960	0.823446	1.135670
+prefill_subchain_512/original_minus_cold	-1.860190	-1.832865	-2.121839	-1.826096
+prefill_subchain_512/original_minus_existing	-0.995693	-0.962769	-1.055879	-0.958238

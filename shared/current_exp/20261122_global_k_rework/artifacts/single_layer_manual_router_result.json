@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "scope": "actual layer49 router + actual W8A8 expert43 subchain; routed expert contribution only, not full layer/service output",
+  "layer_id": 49,
+  "logical_expert": 43,
+  "router": {
+    "gate_sha256": "b8fbcac1a3ae05f40e0daefdc81ae8116e5fe859d8b000d11b7793f7ed73c6b6",
+    "bias_sha256": "5fce54a03ef464dcbbe9c9aab63242c6338ca4f91870cee0d3d6e0377864f799",
+    "token_count": 64,
+    "top_k": 8,
+    "total_tasks": 512,
+    "expert43_tasks": 63,
+    "expert_task_histogram_max": 63,
+    "expert_task_histogram_argmax": 43,
+    "task_ids_sha256": "abb58917ec206127d233fa6107d60d2df4ec968e8d939c439135fb132310820a",
+    "task_weights_sha256": "8fcbd3ca7eef3134c06274f8142684c3734e2f3351623ed458ac105006830c2a",
+    "input_kind": "synthetic hidden biased along actual expert43 router row"
+  },
+  "routing_contract": {
+    "router_weight": "model.layers.49.mlp.gate.weight",
+    "correction_bias": "model.layers.49.mlp.gate.e_score_correction_bias",
+    "topk_function": "sglang.srt.layers.moe.topk.fused_topk_torch_native",
+    "scoring_func": "sigmoid",
+    "renormalize": true
+  },
+  "task_identity": {
+    "fields": [
+      "layer_id",
+      "token_position",
+      "topk_position",
+      "logical_expert",
+      "router_weight"
+    ],
+    "total_router_tasks": 512,
+    "logical_expert_tasks": 63,
+    "bank_tasks": 32,
+    "external_tasks": 31,
+    "task_count_conserved": true,
+    "all_tasks_for_same_logical_expert": true
+  },
+  "correctness": {
+    "state_fields_equal": {
+      "w13": true,
+      "w2": true,
+      "s13": true,
+      "s2": true,
+      "o13": true,
+      "o2": true
+    },
+    "expert_output_max_abs": 0.0,
+    "weighted_contribution_max_abs": 0.0
+  },
+  "offsets_loaded": {
+    "o13": {
+      "all_zero": true,
+      "min": 0.0,
+      "max": 0.0,
+      "shape": [
+        1,
+        4096,
+        1
+      ],
+      "dtype": "torch.float32"
+    },
+    "o2": {
+      "all_zero": true,
+      "min": 0.0,
+      "max": 0.0,
+      "shape": [
+        1,
+        6144,
+        1
+      ],
+      "dtype": "torch.float32"
+    }
+  },
+  "slot_state_sha256": {
+    "w13": "910b08d3aecad0b82d6f55c61dfbcb59c8cbfe5ca912bf35cbff27b89c326b8f",
+    "w2": "862eecea31571a91b14dc175861e98b7510867de32a3249ac71155435132090e",
+    "s13": "bec1e0ee9161034eaf01b2354d99ace78cfa5ff6a1a219fc86980464f089e77b",
+    "s2": "74063193c572bbfd1f5dee3b29bbeaebf1697e3523811ac7d0a351ec5ba0da58",
+    "o13": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+    "o2": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3"
+  },
+  "memory": {
+    "allocated": 90330112,
+    "reserved": 171966464,
+    "max_allocated": 109497344,
+    "max_reserved": 171966464,
+    "device_free": 65164324864,
+    "device_total": 65787658240
+  },
+  "final_pool_stats": {
+    "K": 1,
+    "slot_bytes": 37810176,
+    "committed_bytes": 37810176,
+    "per_rank_capacity": {
+      "1": 1
+    },
+    "per_rank_allocated_bytes": {
+      "1": 37810176
+    },
+    "active_bytes": 0,
+    "cached_free_bytes": 37810176,
+    "local": {
+      "1": {
+        "pool_id": "manual-router-external-slot-rank1:4a8f62f4754a",
+        "capacity": 1,
+        "slot_bytes": 37810176,
+        "allocated_bytes": 37810176,
+        "free": 1,
+        "reserved": 0,
+        "ready": 0,
+        "in_use": 0,
+        "acquisitions": 1,
+        "releases": 1,
+        "reuses": 0,
+        "max_concurrent_leases": 1,
+        "max_concurrent_uses": 1,
+        "distinct_layers_seen": 1,
+        "distinct_experts_seen": 1,
+        "backing_reallocations": 0,
+        "invariant_violations": 0
+      }
+    }
+  },
+  "not_done": [
+    "other 255 routed experts",
+    "shared expert",
+    "full top-k combine into one layer output",
+    "dispatch/combine framework integration"
+  ]
+}

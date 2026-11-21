@@ -1,0 +1,2214 @@
+{
+  "rank": 1,
+  "role": "destination",
+  "layer_id": 49,
+  "expert_id": 43,
+  "groups": 10,
+  "warmup_groups_per_load_case": 1,
+  "load_cases": [
+    {
+      "name": "interface_6",
+      "tokens": 6,
+      "main": 3,
+      "external": 3
+    },
+    {
+      "name": "prefill_subchain_512",
+      "tokens": 512,
+      "main": 256,
+      "external": 256
+    }
+  ],
+  "scope": "two-rank expert-child replay; not full layer/service",
+  "samples": [
+    {
+      "sample_id": "interface_6-g00-original",
+      "group": 0,
+      "mode": "original",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 1.0129989013671874,
+      "segments_ms": {
+        "control_recv": 0.2857130126953125,
+        "done_send": 0.7022459716796875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g00-cold",
+      "group": 0,
+      "mode": "cold",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 2.8822139892578127,
+      "segments_ms": {
+        "control_recv": 0.37906298828125,
+        "acquire_weight_recv_ready": 1.0208590087890625,
+        "activation_recv": 0.17448095703125,
+        "external_compute": 0.3511929931640625,
+        "result_send": 0.2236419677734375,
+        "release_and_done_send": 0.4676839599609375
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g00-existing",
+      "group": 0,
+      "mode": "existing",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 1.8679559326171875,
+      "segments_ms": {
+        "control_recv": 0.2731629638671875,
+        "activation_recv": 0.306822998046875,
+        "external_compute": 0.371072998046875,
+        "result_send": 0.217990966796875,
+        "release_and_done_send": 0.43698291015625
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.9048280029296875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g01-original",
+      "group": 1,
+      "mode": "original",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 0.9751680908203125,
+      "segments_ms": {
+        "control_recv": 0.25158203125,
+        "done_send": 0.6945159912109375
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g01-existing",
+      "group": 1,
+      "mode": "existing",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 1.710405029296875,
+      "segments_ms": {
+        "control_recv": 0.25852197265625,
+        "activation_recv": 0.2814520263671875,
+        "external_compute": 0.3149329833984375,
+        "result_send": 0.1906419677734375,
+        "release_and_done_send": 0.437964111328125
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.9135980224609375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g01-cold",
+      "group": 1,
+      "mode": "cold",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 2.5894320068359375,
+      "segments_ms": {
+        "control_recv": 0.26806298828125,
+        "acquire_weight_recv_ready": 0.9655780029296875,
+        "activation_recv": 0.1598919677734375,
+        "external_compute": 0.3204630126953125,
+        "result_send": 0.2054320068359375,
+        "release_and_done_send": 0.4300130615234375
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g02-cold",
+      "group": 2,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 2.572882080078125,
+      "segments_ms": {
+        "control_recv": 0.248882080078125,
+        "acquire_weight_recv_ready": 0.9760279541015625,
+        "activation_recv": 0.1873719482421875,
+        "external_compute": 0.3065030517578125,
+        "result_send": 0.1950321044921875,
+        "release_and_done_send": 0.418613037109375
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g02-original",
+      "group": 2,
+      "mode": "original",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 0.97505908203125,
+      "segments_ms": {
+        "control_recv": 0.2600030517578125,
+        "done_send": 0.6859959716796875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g02-existing",
+      "group": 2,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 1.7138150634765625,
+      "segments_ms": {
+        "control_recv": 0.263912109375,
+        "activation_recv": 0.28973193359375,
+        "external_compute": 0.314262939453125,
+        "result_send": 0.1994019775390625,
+        "release_and_done_send": 0.42775390625
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.886508056640625
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g03-cold",
+      "group": 3,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 2.5481220703125,
+      "segments_ms": {
+        "control_recv": 0.2482720947265625,
+        "acquire_weight_recv_ready": 0.9716580810546875,
+        "activation_recv": 0.1825020751953125,
+        "external_compute": 0.3110130615234375,
+        "result_send": 0.1966719970703125,
+        "release_and_done_send": 0.39802294921875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g03-existing",
+      "group": 3,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 1.756445068359375,
+      "segments_ms": {
+        "control_recv": 0.261052978515625,
+        "activation_recv": 0.31033203125,
+        "external_compute": 0.3074620361328125,
+        "result_send": 0.19527099609375,
+        "release_and_done_send": 0.459333984375
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.882447021484375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g03-original",
+      "group": 3,
+      "mode": "original",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 0.9170679931640625,
+      "segments_ms": {
+        "control_recv": 0.2543729248046875,
+        "done_send": 0.6342650146484375
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g04-existing",
+      "group": 4,
+      "mode": "existing",
+      "order": [
+        "existing",
+        "original",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 1.701074951171875,
+      "segments_ms": {
+        "control_recv": 0.258261962890625,
+        "activation_recv": 0.2866629638671875,
+        "external_compute": 0.3041529541015625,
+        "result_send": 0.2001820068359375,
+        "release_and_done_send": 0.4330040283203125
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.8898780517578125
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g04-original",
+      "group": 4,
+      "mode": "original",
+      "order": [
+        "existing",
+        "original",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 0.9088079833984375,
+      "segments_ms": {
+        "control_recv": 0.2582320556640625,
+        "done_send": 0.621916015625
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g04-cold",
+      "group": 4,
+      "mode": "cold",
+      "order": [
+        "existing",
+        "original",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 2.641531982421875,
+      "segments_ms": {
+        "control_recv": 0.2733819580078125,
+        "acquire_weight_recv_ready": 0.9950390625,
+        "activation_recv": 0.1969920654296875,
+        "external_compute": 0.3083819580078125,
+        "result_send": 0.2093909912109375,
+        "release_and_done_send": 0.4259229736328125
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g05-existing",
+      "group": 5,
+      "mode": "existing",
+      "order": [
+        "existing",
+        "cold",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 1.6497740478515626,
+      "segments_ms": {
+        "control_recv": 0.2461219482421875,
+        "activation_recv": 0.2529119873046875,
+        "external_compute": 0.3124630126953125,
+        "result_send": 0.188751953125,
+        "release_and_done_send": 0.4292740478515625
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.8757869873046875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g05-cold",
+      "group": 5,
+      "mode": "cold",
+      "order": [
+        "existing",
+        "cold",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 2.560971923828125,
+      "segments_ms": {
+        "control_recv": 0.28181298828125,
+        "acquire_weight_recv_ready": 0.956968017578125,
+        "activation_recv": 0.1671109619140625,
+        "external_compute": 0.314052978515625,
+        "result_send": 0.1941820068359375,
+        "release_and_done_send": 0.4054530029296875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g05-original",
+      "group": 5,
+      "mode": "original",
+      "order": [
+        "existing",
+        "cold",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 1.021319091796875,
+      "segments_ms": {
+        "control_recv": 0.2829630126953125,
+        "done_send": 0.7082059326171875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g06-original",
+      "group": 6,
+      "mode": "original",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 0.9608380126953125,
+      "segments_ms": {
+        "control_recv": 0.2748819580078125,
+        "done_send": 0.6605360107421875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g06-cold",
+      "group": 6,
+      "mode": "cold",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 2.5835419921875,
+      "segments_ms": {
+        "control_recv": 0.2434119873046875,
+        "acquire_weight_recv_ready": 1.0138289794921875,
+        "activation_recv": 0.1643709716796875,
+        "external_compute": 0.315843017578125,
+        "result_send": 0.1906220703125,
+        "release_and_done_send": 0.4206240234375
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g06-existing",
+      "group": 6,
+      "mode": "existing",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 1.67810400390625,
+      "segments_ms": {
+        "control_recv": 0.23358203125,
+        "activation_recv": 0.281382080078125,
+        "external_compute": 0.3082120361328125,
+        "result_send": 0.19935205078125,
+        "release_and_done_send": 0.4381240234375
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.8627569580078125
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g07-original",
+      "group": 7,
+      "mode": "original",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 0.95772802734375,
+      "segments_ms": {
+        "control_recv": 0.24214208984375,
+        "done_send": 0.686445068359375
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g07-existing",
+      "group": 7,
+      "mode": "existing",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 1.6652850341796874,
+      "segments_ms": {
+        "control_recv": 0.25356298828125,
+        "activation_recv": 0.2603919677734375,
+        "external_compute": 0.305822998046875,
+        "result_send": 0.1886019287109375,
+        "release_and_done_send": 0.4399439697265625
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.8877080078125
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g07-cold",
+      "group": 7,
+      "mode": "cold",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 2.5328809814453126,
+      "segments_ms": {
+        "control_recv": 0.2524620361328125,
+        "acquire_weight_recv_ready": 0.95193798828125,
+        "activation_recv": 0.163991943359375,
+        "external_compute": 0.3097230224609375,
+        "result_send": 0.2026419677734375,
+        "release_and_done_send": 0.414012939453125
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g08-cold",
+      "group": 8,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 2.5488719482421875,
+      "segments_ms": {
+        "control_recv": 0.249843017578125,
+        "acquire_weight_recv_ready": 0.9753779296875,
+        "activation_recv": 0.1733619384765625,
+        "external_compute": 0.31335302734375,
+        "result_send": 0.189511962890625,
+        "release_and_done_send": 0.4117030029296875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g08-original",
+      "group": 8,
+      "mode": "original",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 0.926597900390625,
+      "segments_ms": {
+        "control_recv": 0.255701904296875,
+        "done_send": 0.641094970703125
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g08-existing",
+      "group": 8,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 1.7221240234375,
+      "segments_ms": {
+        "control_recv": 0.2451719970703125,
+        "activation_recv": 0.3164930419921875,
+        "external_compute": 0.3169329833984375,
+        "result_send": 0.2009620361328125,
+        "release_and_done_send": 0.4236329345703125
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.8541868896484375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g09-cold",
+      "group": 9,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 2.59310205078125,
+      "segments_ms": {
+        "control_recv": 0.2426519775390625,
+        "acquire_weight_recv_ready": 0.9865789794921875,
+        "activation_recv": 0.187342041015625,
+        "external_compute": 0.306092041015625,
+        "result_send": 0.2027410888671875,
+        "release_and_done_send": 0.42848291015625
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g09-existing",
+      "group": 9,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 1.716343994140625,
+      "segments_ms": {
+        "control_recv": 0.25952197265625,
+        "activation_recv": 0.296822998046875,
+        "external_compute": 0.3220830078125,
+        "result_send": 0.1976219482421875,
+        "release_and_done_send": 0.4141429443359375
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.869237060546875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "interface_6-g09-original",
+      "group": 9,
+      "mode": "original",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "interface_6",
+      "tokens": 6,
+      "quota_main": 3,
+      "quota_external": 3,
+      "local_ms": 0.9864990234375,
+      "segments_ms": {
+        "control_recv": 0.26556298828125,
+        "done_send": 0.690916015625
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "memory": {
+        "allocated": 37888000,
+        "reserved": 60817408,
+        "max_allocated": 56864768,
+        "max_reserved": 60817408,
+        "device_free": 64979918848,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g00-original",
+      "group": 0,
+      "mode": "original",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 1.0137490234375,
+      "segments_ms": {
+        "control_recv": 0.260281982421875,
+        "done_send": 0.7263360595703126
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g00-cold",
+      "group": 0,
+      "mode": "cold",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 2.89585498046875,
+      "segments_ms": {
+        "control_recv": 0.2574320068359375,
+        "acquire_weight_recv_ready": 0.9880289306640625,
+        "activation_recv": 0.1785419921875,
+        "external_compute": 0.3612030029296875,
+        "result_send": 0.22706201171875,
+        "release_and_done_send": 0.634365966796875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g00-existing",
+      "group": 0,
+      "mode": "existing",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 2.0346280517578124,
+      "segments_ms": {
+        "control_recv": 0.2707830810546875,
+        "activation_recv": 0.310011962890625,
+        "external_compute": 0.3473729248046875,
+        "result_send": 0.230402099609375,
+        "release_and_done_send": 0.6460560302734375
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.88697802734375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g01-original",
+      "group": 1,
+      "mode": "original",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 1.0176090087890626,
+      "segments_ms": {
+        "control_recv": 0.2628619384765625,
+        "done_send": 0.7235760498046875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g01-existing",
+      "group": 1,
+      "mode": "existing",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 1.987757080078125,
+      "segments_ms": {
+        "control_recv": 0.240342041015625,
+        "activation_recv": 0.3007930908203125,
+        "external_compute": 0.3563629150390625,
+        "result_send": 0.216501953125,
+        "release_and_done_send": 0.6466160888671875
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.86893701171875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g01-cold",
+      "group": 1,
+      "mode": "cold",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 2.857583984375,
+      "segments_ms": {
+        "control_recv": 0.2570419921875,
+        "acquire_weight_recv_ready": 0.9895989990234375,
+        "activation_recv": 0.181092041015625,
+        "external_compute": 0.3568929443359375,
+        "result_send": 0.225822021484375,
+        "release_and_done_send": 0.5979549560546875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g02-cold",
+      "group": 2,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 2.8644439697265627,
+      "segments_ms": {
+        "control_recv": 0.2404119873046875,
+        "acquire_weight_recv_ready": 0.9990389404296875,
+        "activation_recv": 0.2111719970703125,
+        "external_compute": 0.345123046875,
+        "result_send": 0.2107020263671875,
+        "release_and_done_send": 0.6057550048828125
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g02-original",
+      "group": 2,
+      "mode": "original",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 0.95047802734375,
+      "segments_ms": {
+        "control_recv": 0.2523819580078125,
+        "done_send": 0.664205078125
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g02-existing",
+      "group": 2,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 1.99943701171875,
+      "segments_ms": {
+        "control_recv": 0.2441920166015625,
+        "activation_recv": 0.3117830810546875,
+        "external_compute": 0.3310731201171875,
+        "result_send": 0.2448319091796875,
+        "release_and_done_send": 0.6431759033203125
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.8735679931640625
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g03-cold",
+      "group": 3,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 2.824924072265625,
+      "segments_ms": {
+        "control_recv": 0.2466619873046875,
+        "acquire_weight_recv_ready": 0.9726080322265624,
+        "activation_recv": 0.2069320068359375,
+        "external_compute": 0.34877294921875,
+        "result_send": 0.2045419921875,
+        "release_and_done_send": 0.59735498046875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g03-existing",
+      "group": 3,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 1.96068701171875,
+      "segments_ms": {
+        "control_recv": 0.238843017578125,
+        "activation_recv": 0.3091419677734375,
+        "external_compute": 0.335883056640625,
+        "result_send": 0.2277919921875,
+        "release_and_done_send": 0.619945068359375
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.8660369873046875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g03-original",
+      "group": 3,
+      "mode": "original",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 1.000198974609375,
+      "segments_ms": {
+        "control_recv": 0.2514429931640625,
+        "done_send": 0.7157159423828126
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g04-existing",
+      "group": 4,
+      "mode": "existing",
+      "order": [
+        "existing",
+        "original",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 2.012596923828125,
+      "segments_ms": {
+        "control_recv": 0.253822021484375,
+        "activation_recv": 0.31406298828125,
+        "external_compute": 0.337052978515625,
+        "result_send": 0.2073919677734375,
+        "release_and_done_send": 0.6692159423828125
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.8973280029296875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g04-original",
+      "group": 4,
+      "mode": "original",
+      "order": [
+        "existing",
+        "original",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 0.967157958984375,
+      "segments_ms": {
+        "control_recv": 0.2476619873046875,
+        "done_send": 0.6885159912109375
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g04-cold",
+      "group": 4,
+      "mode": "cold",
+      "order": [
+        "existing",
+        "original",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 3.1021968994140625,
+      "segments_ms": {
+        "control_recv": 0.299762939453125,
+        "acquire_weight_recv_ready": 1.00835791015625,
+        "activation_recv": 0.1815909423828125,
+        "external_compute": 0.3885040283203125,
+        "result_send": 0.262382080078125,
+        "release_and_done_send": 0.7140260009765625
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g05-existing",
+      "group": 5,
+      "mode": "existing",
+      "order": [
+        "existing",
+        "cold",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 1.9627869873046875,
+      "segments_ms": {
+        "control_recv": 0.250991943359375,
+        "activation_recv": 0.298012939453125,
+        "external_compute": 0.3422830810546875,
+        "result_send": 0.20773193359375,
+        "release_and_done_send": 0.6380159912109375
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.8708480224609375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g05-cold",
+      "group": 5,
+      "mode": "cold",
+      "order": [
+        "existing",
+        "cold",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 3.0774259033203126,
+      "segments_ms": {
+        "control_recv": 0.2703218994140625,
+        "acquire_weight_recv_ready": 1.0563089599609374,
+        "activation_recv": 0.1976619873046875,
+        "external_compute": 0.392673095703125,
+        "result_send": 0.2243909912109375,
+        "release_and_done_send": 0.61560498046875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g05-original",
+      "group": 5,
+      "mode": "original",
+      "order": [
+        "existing",
+        "cold",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 0.99968896484375,
+      "segments_ms": {
+        "control_recv": 0.2491319580078125,
+        "done_send": 0.717256103515625
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g06-original",
+      "group": 6,
+      "mode": "original",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 0.9941280517578125,
+      "segments_ms": {
+        "control_recv": 0.245251953125,
+        "done_send": 0.7200460205078125
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g06-cold",
+      "group": 6,
+      "mode": "cold",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 2.83881396484375,
+      "segments_ms": {
+        "control_recv": 0.245781982421875,
+        "acquire_weight_recv_ready": 0.960137939453125,
+        "activation_recv": 0.17777099609375,
+        "external_compute": 0.337863037109375,
+        "result_send": 0.2218209228515625,
+        "release_and_done_send": 0.65022509765625
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g06-existing",
+      "group": 6,
+      "mode": "existing",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 2.007626953125,
+      "segments_ms": {
+        "control_recv": 0.2401119384765625,
+        "activation_recv": 0.3309630126953125,
+        "external_compute": 0.3589530029296875,
+        "result_send": 0.2255718994140625,
+        "release_and_done_send": 0.6241051025390625
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.8697669677734375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g07-original",
+      "group": 7,
+      "mode": "original",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 0.980887939453125,
+      "segments_ms": {
+        "control_recv": 0.2373719482421875,
+        "done_send": 0.7114759521484375
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g07-existing",
+      "group": 7,
+      "mode": "existing",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 1.9372969970703124,
+      "segments_ms": {
+        "control_recv": 0.246093017578125,
+        "activation_recv": 0.291822021484375,
+        "external_compute": 0.3252320556640625,
+        "result_send": 0.2092210693359375,
+        "release_and_done_send": 0.640864990234375
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.8850570068359375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g07-cold",
+      "group": 7,
+      "mode": "cold",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 2.8574739990234375,
+      "segments_ms": {
+        "control_recv": 0.2531719970703125,
+        "acquire_weight_recv_ready": 0.9497080078125,
+        "activation_recv": 0.1844320068359375,
+        "external_compute": 0.3535928955078125,
+        "result_send": 0.22456201171875,
+        "release_and_done_send": 0.64302490234375
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g08-cold",
+      "group": 8,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 2.828013916015625,
+      "segments_ms": {
+        "control_recv": 0.25873193359375,
+        "acquire_weight_recv_ready": 0.9664190673828125,
+        "activation_recv": 0.191342041015625,
+        "external_compute": 0.3370030517578125,
+        "result_send": 0.215842041015625,
+        "release_and_done_send": 0.60639501953125
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g08-original",
+      "group": 8,
+      "mode": "original",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 1.0020679931640626,
+      "segments_ms": {
+        "control_recv": 0.2584820556640625,
+        "done_send": 0.7107359619140625
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g08-existing",
+      "group": 8,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 2.015427978515625,
+      "segments_ms": {
+        "control_recv": 0.245031982421875,
+        "activation_recv": 0.311701904296875,
+        "external_compute": 0.34804296875,
+        "result_send": 0.2252620849609375,
+        "release_and_done_send": 0.6437159423828125
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.86251806640625
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g09-cold",
+      "group": 9,
+      "mode": "cold",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 2.82239404296875,
+      "segments_ms": {
+        "control_recv": 0.247072021484375,
+        "acquire_weight_recv_ready": 0.9544580078125,
+        "activation_recv": 0.212291015625,
+        "external_compute": 0.341153076171875,
+        "result_send": 0.2099520263671875,
+        "release_and_done_send": 0.6097850341796875
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g09-existing",
+      "group": 9,
+      "mode": "existing",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 1.98122705078125,
+      "segments_ms": {
+        "control_recv": 0.243863037109375,
+        "activation_recv": 0.3177430419921875,
+        "external_compute": 0.340423095703125,
+        "result_send": 0.219322021484375,
+        "release_and_done_send": 0.6329649658203125
+      },
+      "preinstall": {
+        "acquire_recv_ready_ms": 0.8990770263671874
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "sample_id": "prefill_subchain_512-g09-original",
+      "group": 9,
+      "mode": "original",
+      "order": [
+        "cold",
+        "existing",
+        "original"
+      ],
+      "load_case": "prefill_subchain_512",
+      "tokens": 512,
+      "quota_main": 256,
+      "quota_external": 256,
+      "local_ms": 1.0103780517578125,
+      "segments_ms": {
+        "control_recv": 0.2761920166015625,
+        "done_send": 0.7025059814453125
+      },
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "memory": {
+        "allocated": 44109824,
+        "reserved": 111149056,
+        "max_allocated": 82327552,
+        "max_reserved": 111149056,
+        "device_free": 64929587200,
+        "device_total": 65796046848
+      }
+    }
+  ],
+  "actual_state": {
+    "layout": [
+      {
+        "name": "w13",
+        "offset": 0,
+        "bytes": 25165824,
+        "dtype": "torch.int8",
+        "shape": [
+          1,
+          6144,
+          4096
+        ]
+      },
+      {
+        "name": "w2",
+        "offset": 25165824,
+        "bytes": 12582912,
+        "dtype": "torch.int8",
+        "shape": [
+          1,
+          2048,
+          6144
+        ]
+      },
+      {
+        "name": "s13",
+        "offset": 37748736,
+        "bytes": 8192,
+        "dtype": "torch.bfloat16",
+        "shape": [
+          1,
+          4096
+        ]
+      },
+      {
+        "name": "s2",
+        "offset": 37756928,
+        "bytes": 12288,
+        "dtype": "torch.bfloat16",
+        "shape": [
+          1,
+          6144
+        ]
+      },
+      {
+        "name": "o13",
+        "offset": 37769216,
+        "bytes": 16384,
+        "dtype": "torch.float32",
+        "shape": [
+          1,
+          4096
+        ]
+      },
+      {
+        "name": "o2",
+        "offset": 37785600,
+        "bytes": 24576,
+        "dtype": "torch.float32",
+        "shape": [
+          1,
+          6144
+        ]
+      }
+    ],
+    "state_bytes": 37810176,
+    "offset_stats": {
+      "o13": {
+        "all_zero": true,
+        "min": 0.0,
+        "max": 0.0,
+        "shape": [
+          1,
+          4096,
+          1
+        ],
+        "dtype": "torch.float32"
+      },
+      "o2": {
+        "all_zero": true,
+        "min": 0.0,
+        "max": 0.0,
+        "shape": [
+          1,
+          6144,
+          1
+        ],
+        "dtype": "torch.float32"
+      }
+    },
+    "slot_state_sha256": {
+      "w13": "910b08d3aecad0b82d6f55c61dfbcb59c8cbfe5ca912bf35cbff27b89c326b8f",
+      "w2": "862eecea31571a91b14dc175861e98b7510867de32a3249ac71155435132090e",
+      "s13": "bec1e0ee9161034eaf01b2354d99ace78cfa5ff6a1a219fc86980464f089e77b",
+      "s2": "74063193c572bbfd1f5dee3b29bbeaebf1697e3523811ac7d0a351ec5ba0da58",
+      "o13": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "o2": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3"
+    }
+  },
+  "memory_initial": {
+    "allocated": 37811200,
+    "reserved": 41943040,
+    "max_allocated": 37811200,
+    "max_reserved": 41943040,
+    "device_free": 65083744256,
+    "device_total": 65796046848
+  },
+  "memory_final": {
+    "allocated": 44109824,
+    "reserved": 111149056,
+    "max_allocated": 82327552,
+    "max_reserved": 111149056,
+    "device_free": 64929587200,
+    "device_total": 65796046848
+  },
+  "final_pool_stats": {
+    "K": 1,
+    "slot_bytes": 37810176,
+    "committed_bytes": 37810176,
+    "per_rank_capacity": {
+      "1": 1
+    },
+    "per_rank_allocated_bytes": {
+      "1": 37810176
+    },
+    "active_bytes": 0,
+    "cached_free_bytes": 37810176,
+    "local": {
+      "1": {
+        "pool_id": "rework-two-rank-dest-rank1:e0322787b3cc",
+        "capacity": 1,
+        "slot_bytes": 37810176,
+        "allocated_bytes": 37810176,
+        "free": 1,
+        "reserved": 0,
+        "ready": 0,
+        "in_use": 0,
+        "acquisitions": 44,
+        "releases": 44,
+        "reuses": 43,
+        "max_concurrent_leases": 1,
+        "max_concurrent_uses": 0,
+        "distinct_layers_seen": 1,
+        "distinct_experts_seen": 1,
+        "backing_reallocations": 0,
+        "invariant_violations": 0
+      }
+    }
+  }
+}
