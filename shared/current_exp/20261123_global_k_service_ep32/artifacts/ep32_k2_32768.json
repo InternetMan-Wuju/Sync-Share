@@ -1,0 +1,13 @@
+{
+  "input_file": "inputs/agentx_32768.json",
+  "input_tokens": 32768,
+  "input_sha256": "cd222160c6815f5ce8db984894f40d40880333dfed62139a23b4ffa0464fafe1",
+  "max_new_tokens": 2,
+  "ttft_s": null,
+  "total_s": 679.3176777189365,
+  "output_ids": [],
+  "output_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "text": "",
+  "meta_info": null,
+  "events": 0
+}

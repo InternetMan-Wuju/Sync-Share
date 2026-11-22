@@ -1,0 +1,16 @@
+{
+  "status": "PASS_WITH_RECORDED_PARTIAL_FAILURE",
+  "checks": {
+    "EP16_K0": "PASS",
+    "EP16_K1": "PASS",
+    "EP16_K2": "PASS_NUMERIC_TOLERANCE_TOKEN_DIFF",
+    "EP32_ALL_32_DIE": true,
+    "EP32_OFF_3_SIZES": true,
+    "EP32_EPLB_STATIC_3_SIZES": true,
+    "EP32_K2_8K_16K": true,
+    "EP32_K2_32K": "FAIL_HANG",
+    "EP32_ONLINE_REBALANCE": "FAIL_NO_END",
+    "COMM_ID_REPLICA_DISPATCH": "NOT_COMPLETE_LOCAL_BACKFILL"
+  },
+  "errors": []
+}

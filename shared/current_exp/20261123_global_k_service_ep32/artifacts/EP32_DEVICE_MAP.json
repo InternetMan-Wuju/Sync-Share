@@ -1,0 +1,410 @@
+{
+  "topology": "one EP32 group across two 16-die nodes",
+  "ranks": [
+    {
+      "rank": 0,
+      "node": 23,
+      "local_die": 0,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 0,
+        "msg": "Init torch distributed ends. elapsed=29.06 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 1,
+      "node": 23,
+      "local_die": 1,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 1,
+        "msg": "Init torch distributed ends. elapsed=28.69 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 2,
+      "node": 23,
+      "local_die": 2,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 2,
+        "msg": "Init torch distributed ends. elapsed=29.03 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 3,
+      "node": 23,
+      "local_die": 3,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 3,
+        "msg": "Init torch distributed ends. elapsed=29.46 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 4,
+      "node": 23,
+      "local_die": 4,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 4,
+        "msg": "Init torch distributed ends. elapsed=26.74 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 5,
+      "node": 23,
+      "local_die": 5,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 5,
+        "msg": "Init torch distributed ends. elapsed=26.04 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 6,
+      "node": 23,
+      "local_die": 6,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 6,
+        "msg": "Init torch distributed ends. elapsed=26.08 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 7,
+      "node": 23,
+      "local_die": 7,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 7,
+        "msg": "Init torch distributed ends. elapsed=26.88 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 8,
+      "node": 23,
+      "local_die": 8,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 8,
+        "msg": "Init torch distributed ends. elapsed=29.17 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 9,
+      "node": 23,
+      "local_die": 9,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 9,
+        "msg": "Init torch distributed ends. elapsed=29.15 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 10,
+      "node": 23,
+      "local_die": 10,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 10,
+        "msg": "Init torch distributed ends. elapsed=26.02 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 11,
+      "node": 23,
+      "local_die": 11,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 11,
+        "msg": "Init torch distributed ends. elapsed=26.50 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 12,
+      "node": 23,
+      "local_die": 12,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 12,
+        "msg": "Init torch distributed ends. elapsed=26.27 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 13,
+      "node": 23,
+      "local_die": 13,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 13,
+        "msg": "Init torch distributed ends. elapsed=25.27 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 14,
+      "node": 23,
+      "local_die": 14,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 14,
+        "msg": "Init torch distributed ends. elapsed=26.30 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 15,
+      "node": 23,
+      "local_die": 15,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 23,
+        "rank": 15,
+        "msg": "Init torch distributed ends. elapsed=28.45 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 16,
+      "node": 25,
+      "local_die": 0,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 16,
+        "msg": "Init torch distributed ends. elapsed=20.87 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 17,
+      "node": 25,
+      "local_die": 1,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 17,
+        "msg": "Init torch distributed ends. elapsed=20.99 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 18,
+      "node": 25,
+      "local_die": 2,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 18,
+        "msg": "Init torch distributed ends. elapsed=5.74 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 19,
+      "node": 25,
+      "local_die": 3,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 19,
+        "msg": "Init torch distributed ends. elapsed=5.74 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 20,
+      "node": 25,
+      "local_die": 4,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 20,
+        "msg": "Init torch distributed ends. elapsed=2.66 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 21,
+      "node": 25,
+      "local_die": 5,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 21,
+        "msg": "Init torch distributed ends. elapsed=2.58 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 22,
+      "node": 25,
+      "local_die": 6,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 22,
+        "msg": "Init torch distributed ends. elapsed=4.45 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 23,
+      "node": 25,
+      "local_die": 7,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 23,
+        "msg": "Init torch distributed ends. elapsed=4.45 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 24,
+      "node": 25,
+      "local_die": 8,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 24,
+        "msg": "Init torch distributed ends. elapsed=9.25 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 25,
+      "node": 25,
+      "local_die": 9,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 25,
+        "msg": "Init torch distributed ends. elapsed=9.26 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 26,
+      "node": 25,
+      "local_die": 10,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 26,
+        "msg": "Init torch distributed ends. elapsed=4.72 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 27,
+      "node": 25,
+      "local_die": 11,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 27,
+        "msg": "Init torch distributed ends. elapsed=4.73 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 28,
+      "node": 25,
+      "local_die": 12,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 28,
+        "msg": "Init torch distributed ends. elapsed=3.68 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 29,
+      "node": 25,
+      "local_die": 13,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 29,
+        "msg": "Init torch distributed ends. elapsed=3.62 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 30,
+      "node": 25,
+      "local_die": 14,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 30,
+        "msg": "Init torch distributed ends. elapsed=5.45 s, mem usage=0.01 GB"
+      }
+    },
+    {
+      "rank": 31,
+      "node": 25,
+      "local_die": 15,
+      "distributed_init_seen": true,
+      "init_evidence": {
+        "node": 25,
+        "rank": 31,
+        "msg": "Init torch distributed ends. elapsed=5.52 s, mem usage=0.01 GB"
+      }
+    }
+  ],
+  "all_32_init_seen": true,
+  "prefill_batch_lines": [
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 6, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.11"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 1, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.09"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 1, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.10"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.12, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 1067.65"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.12, #running-req: 0, #queue-req: 0, #pending-token: 8192, npu graph: False, input throughput (token/s): 2384.12"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.25, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 2778.26"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.12, #running-req: 0, #queue-req: 0, #pending-token: 24576, npu graph: False, input throughput (token/s): 2367.96"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.25, #running-req: 0, #queue-req: 0, #pending-token: 16384, npu graph: False, input throughput (token/s): 2820.54"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.38, #running-req: 0, #queue-req: 0, #pending-token: 8192, npu graph: False, input throughput (token/s): 2724.15"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.50, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 2612.12"
+    }
+  ]
+}

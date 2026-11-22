@@ -1,0 +1,176 @@
+{
+  "K": 2,
+  "definition": "owner-local fixed quota; moved task contribution is zeroed in original output and added from real slot",
+  "requests": {
+    "8192": {
+      "per_owner": {
+        "0": [
+          {
+            "seq": 11,
+            "layer": 49,
+            "tasks": 7,
+            "verify": {
+              "max_abs": 0.001953125,
+              "nrmse": 0.0005805892287753522,
+              "finite": true
+            }
+          },
+          {
+            "seq": 11,
+            "layer": 50,
+            "tasks": 2,
+            "verify": {
+              "max_abs": 0.0009765625,
+              "nrmse": 0.0004113763861823827,
+              "finite": true
+            }
+          }
+        ],
+        "1": [
+          {
+            "seq": 11,
+            "layer": 50,
+            "tasks": 8,
+            "verify": {
+              "max_abs": 0.0009765625,
+              "nrmse": 0.0005766217946074903,
+              "finite": true
+            }
+          }
+        ]
+      },
+      "replica_tasks_seen": 17,
+      "status": "PASS"
+    },
+    "16384": {
+      "per_owner": {
+        "0": [
+          {
+            "seq": 13,
+            "layer": 49,
+            "tasks": 7,
+            "verify": {
+              "max_abs": 0.001953125,
+              "nrmse": 0.0005805892287753522,
+              "finite": true
+            }
+          },
+          {
+            "seq": 13,
+            "layer": 50,
+            "tasks": 2,
+            "verify": {
+              "max_abs": 0.0009765625,
+              "nrmse": 0.0004113763861823827,
+              "finite": true
+            }
+          },
+          {
+            "seq": 14,
+            "layer": 49,
+            "tasks": 4,
+            "verify": {
+              "max_abs": 0.0009765625,
+              "nrmse": 0.0003996590676251799,
+              "finite": true
+            }
+          }
+        ],
+        "1": [
+          {
+            "seq": 13,
+            "layer": 50,
+            "tasks": 8,
+            "verify": {
+              "max_abs": 0.0009765625,
+              "nrmse": 0.0005766217946074903,
+              "finite": true
+            }
+          },
+          {
+            "seq": 14,
+            "layer": 50,
+            "tasks": 17,
+            "verify": {
+              "max_abs": 0.0009765625,
+              "nrmse": 0.000983922858722508,
+              "finite": true
+            }
+          }
+        ]
+      },
+      "replica_tasks_seen": 38,
+      "status": "PASS"
+    },
+    "32768": {
+      "per_owner": {
+        "0": [
+          {
+            "seq": 16,
+            "layer": 49,
+            "tasks": 7,
+            "verify": {
+              "max_abs": 0.001953125,
+              "nrmse": 0.0005805892287753522,
+              "finite": true
+            }
+          },
+          {
+            "seq": 16,
+            "layer": 50,
+            "tasks": 2,
+            "verify": {
+              "max_abs": 0.0009765625,
+              "nrmse": 0.0004113763861823827,
+              "finite": true
+            }
+          },
+          {
+            "seq": 17,
+            "layer": 49,
+            "tasks": 4,
+            "verify": {
+              "max_abs": 0.0009765625,
+              "nrmse": 0.0003996590676251799,
+              "finite": true
+            }
+          },
+          {
+            "seq": 18,
+            "layer": 49,
+            "tasks": 9,
+            "verify": {
+              "max_abs": 0.001953125,
+              "nrmse": 0.0006301537505351007,
+              "finite": true
+            }
+          }
+        ],
+        "1": [
+          {
+            "seq": 16,
+            "layer": 50,
+            "tasks": 8,
+            "verify": {
+              "max_abs": 0.0009765625,
+              "nrmse": 0.0005766217946074903,
+              "finite": true
+            }
+          },
+          {
+            "seq": 17,
+            "layer": 50,
+            "tasks": 17,
+            "verify": {
+              "max_abs": 0.0009765625,
+              "nrmse": 0.000983922858722508,
+              "finite": true
+            }
+          }
+        ]
+      },
+      "replica_tasks_seen": 47,
+      "status": "PARTIAL_THEN_HANG"
+    }
+  }
+}

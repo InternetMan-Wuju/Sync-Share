@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-11-23T05:34:55.635558+08:00",
+  "base_commit": "6893f7a",
+  "hosts": [
+    "npu1-23",
+    "npu1-25"
+  ],
+  "devices": 32,
+  "image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "model": "/data_lib/data/models/glm-q",
+  "model_config_sha256": "817f5fb39ca5d4c4b5648de89ca00deaea7537d8c2f130172a459252a05c1073",
+  "quant_index_sha256": "dfa97fa50b5e675ff6cea6ddeae3110795b6b7e971e6dc9cf565a4005fcb079c",
+  "production_format": "UNKNOWN_NO_ACTIVE_SERVICE"
+}

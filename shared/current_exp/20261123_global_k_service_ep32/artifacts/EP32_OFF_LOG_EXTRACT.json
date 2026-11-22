@@ -1,0 +1,532 @@
+[
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "Init torch distributed ends. elapsed=29.06 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 15,
+    "msg": "Init torch distributed ends. elapsed=28.45 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 11,
+    "msg": "Init torch distributed ends. elapsed=26.50 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 12,
+    "msg": "Init torch distributed ends. elapsed=26.27 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 7,
+    "msg": "Init torch distributed ends. elapsed=26.88 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 14,
+    "msg": "Init torch distributed ends. elapsed=26.30 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 13,
+    "msg": "Init torch distributed ends. elapsed=25.27 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 10,
+    "msg": "Init torch distributed ends. elapsed=26.02 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 1,
+    "msg": "Init torch distributed ends. elapsed=28.69 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 8,
+    "msg": "Init torch distributed ends. elapsed=29.17 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 9,
+    "msg": "Init torch distributed ends. elapsed=29.15 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 6,
+    "msg": "Init torch distributed ends. elapsed=26.08 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 3,
+    "msg": "Init torch distributed ends. elapsed=29.46 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 2,
+    "msg": "Init torch distributed ends. elapsed=29.03 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 5,
+    "msg": "Init torch distributed ends. elapsed=26.04 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 4,
+    "msg": "Init torch distributed ends. elapsed=26.74 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "Load weight end. elapsed=53.11 s, type=GlmMoeDsaForCausalLM, avail mem=34.49 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 5,
+    "msg": "Load weight end. elapsed=57.83 s, type=GlmMoeDsaForCausalLM, avail mem=34.79 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 13,
+    "msg": "Load weight end. elapsed=58.64 s, type=GlmMoeDsaForCausalLM, avail mem=34.80 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 3,
+    "msg": "Load weight end. elapsed=57.81 s, type=GlmMoeDsaForCausalLM, avail mem=34.80 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 6,
+    "msg": "Load weight end. elapsed=59.61 s, type=GlmMoeDsaForCausalLM, avail mem=34.55 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 7,
+    "msg": "Load weight end. elapsed=60.69 s, type=GlmMoeDsaForCausalLM, avail mem=34.80 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 9,
+    "msg": "Load weight end. elapsed=60.96 s, type=GlmMoeDsaForCausalLM, avail mem=34.78 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 8,
+    "msg": "Load weight end. elapsed=61.57 s, type=GlmMoeDsaForCausalLM, avail mem=34.56 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 11,
+    "msg": "Load weight end. elapsed=61.33 s, type=GlmMoeDsaForCausalLM, avail mem=34.80 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 10,
+    "msg": "Load weight end. elapsed=61.67 s, type=GlmMoeDsaForCausalLM, avail mem=34.55 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 1,
+    "msg": "Load weight end. elapsed=62.51 s, type=GlmMoeDsaForCausalLM, avail mem=34.80 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 4,
+    "msg": "Load weight end. elapsed=64.22 s, type=GlmMoeDsaForCausalLM, avail mem=34.56 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 2,
+    "msg": "Load weight end. elapsed=65.15 s, type=GlmMoeDsaForCausalLM, avail mem=34.55 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 15,
+    "msg": "Load weight end. elapsed=65.29 s, type=GlmMoeDsaForCausalLM, avail mem=34.79 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 14,
+    "msg": "Load weight end. elapsed=65.02 s, type=GlmMoeDsaForCausalLM, avail mem=34.56 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 12,
+    "msg": "Load weight end. elapsed=70.03 s, type=GlmMoeDsaForCausalLM, avail mem=34.55 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 23,
+    "rank": 7,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 13,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 4,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 5,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 1,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 3,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 2,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 12,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 15,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 14,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 6,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 11,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 10,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 9,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 8,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "Prefill batch, #new-seq: 1, #new-token: 6, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.11"
+  },
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "Prefill batch, #new-seq: 1, #new-token: 1, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.09"
+  },
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "Prefill batch, #new-seq: 1, #new-token: 1, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.10"
+  },
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.12, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 1067.65"
+  },
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.12, #running-req: 0, #queue-req: 0, #pending-token: 8192, npu graph: False, input throughput (token/s): 2384.12"
+  },
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.25, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 2778.26"
+  },
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.12, #running-req: 0, #queue-req: 0, #pending-token: 24576, npu graph: False, input throughput (token/s): 2367.96"
+  },
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.25, #running-req: 0, #queue-req: 0, #pending-token: 16384, npu graph: False, input throughput (token/s): 2820.54"
+  },
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.38, #running-req: 0, #queue-req: 0, #pending-token: 8192, npu graph: False, input throughput (token/s): 2724.15"
+  },
+  {
+    "node": 23,
+    "rank": 0,
+    "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.50, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 2612.12"
+  },
+  {
+    "node": 25,
+    "rank": 31,
+    "msg": "Init torch distributed ends. elapsed=5.52 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 29,
+    "msg": "Init torch distributed ends. elapsed=3.62 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 30,
+    "msg": "Init torch distributed ends. elapsed=5.45 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 24,
+    "msg": "Init torch distributed ends. elapsed=9.25 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 27,
+    "msg": "Init torch distributed ends. elapsed=4.73 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 28,
+    "msg": "Init torch distributed ends. elapsed=3.68 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 26,
+    "msg": "Init torch distributed ends. elapsed=4.72 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 23,
+    "msg": "Init torch distributed ends. elapsed=4.45 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 22,
+    "msg": "Init torch distributed ends. elapsed=4.45 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 20,
+    "msg": "Init torch distributed ends. elapsed=2.66 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 25,
+    "msg": "Init torch distributed ends. elapsed=9.26 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 19,
+    "msg": "Init torch distributed ends. elapsed=5.74 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 18,
+    "msg": "Init torch distributed ends. elapsed=5.74 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 17,
+    "msg": "Init torch distributed ends. elapsed=20.99 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 21,
+    "msg": "Init torch distributed ends. elapsed=2.58 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 16,
+    "msg": "Init torch distributed ends. elapsed=20.87 s, mem usage=0.01 GB"
+  },
+  {
+    "node": 25,
+    "rank": 18,
+    "msg": "Load weight end. elapsed=64.96 s, type=GlmMoeDsaForCausalLM, avail mem=34.55 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 20,
+    "msg": "Load weight end. elapsed=65.30 s, type=GlmMoeDsaForCausalLM, avail mem=34.54 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 16,
+    "msg": "Load weight end. elapsed=65.40 s, type=GlmMoeDsaForCausalLM, avail mem=34.48 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 19,
+    "msg": "Load weight end. elapsed=65.67 s, type=GlmMoeDsaForCausalLM, avail mem=34.78 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 31,
+    "msg": "Load weight end. elapsed=66.15 s, type=GlmMoeDsaForCausalLM, avail mem=34.79 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 27,
+    "msg": "Load weight end. elapsed=66.09 s, type=GlmMoeDsaForCausalLM, avail mem=34.78 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 21,
+    "msg": "Load weight end. elapsed=65.96 s, type=GlmMoeDsaForCausalLM, avail mem=34.79 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 26,
+    "msg": "Load weight end. elapsed=66.41 s, type=GlmMoeDsaForCausalLM, avail mem=34.56 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 28,
+    "msg": "Load weight end. elapsed=66.32 s, type=GlmMoeDsaForCausalLM, avail mem=34.56 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 23,
+    "msg": "Load weight end. elapsed=67.09 s, type=GlmMoeDsaForCausalLM, avail mem=34.78 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 29,
+    "msg": "Load weight end. elapsed=67.20 s, type=GlmMoeDsaForCausalLM, avail mem=34.78 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 24,
+    "msg": "Load weight end. elapsed=67.76 s, type=GlmMoeDsaForCausalLM, avail mem=34.54 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 17,
+    "msg": "Load weight end. elapsed=67.81 s, type=GlmMoeDsaForCausalLM, avail mem=34.79 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 25,
+    "msg": "Load weight end. elapsed=67.81 s, type=GlmMoeDsaForCausalLM, avail mem=34.79 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 30,
+    "msg": "Load weight end. elapsed=68.18 s, type=GlmMoeDsaForCausalLM, avail mem=34.54 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 22,
+    "msg": "Load weight end. elapsed=67.99 s, type=GlmMoeDsaForCausalLM, avail mem=34.55 GB, mem usage=26.27 GB."
+  },
+  {
+    "node": 25,
+    "rank": 30,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 24,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 23,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 22,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 21,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 20,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 18,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 19,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 31,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 26,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 25,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 27,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 17,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 16,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 29,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  },
+  {
+    "node": 25,
+    "rank": 28,
+    "msg": "KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+  }
+]

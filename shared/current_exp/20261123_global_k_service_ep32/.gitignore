@@ -1,0 +1,10 @@
+*.pyc
+__pycache__/
+logs/
+artifacts/ep32_off_logs/
+artifacts/ep32_k2_service/
+artifacts/ep32_eplb_observer/
+artifacts/ep32_eplb_observer_v3/
+inputs/agentx_8192.json
+inputs/agentx_16384.json
+inputs/agentx_32768.json

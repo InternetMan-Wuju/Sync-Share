@@ -1,0 +1,189 @@
+{
+  "K": 2,
+  "owners": [
+    0,
+    1
+  ],
+  "hot_experts": [
+    163,
+    133
+  ],
+  "slots": {
+    "0": {
+      "slot_count": 1,
+      "hot_expert": 163,
+      "source_rank": 20,
+      "storage_ptrs": [
+        20848135634944
+      ],
+      "generation_min": 1,
+      "generation_max": 11,
+      "install_layers": [
+        49,
+        50
+      ]
+    },
+    "1": {
+      "slot_count": 1,
+      "hot_expert": 133,
+      "source_rank": 16,
+      "storage_ptrs": [
+        20848135634944
+      ],
+      "generation_min": 1,
+      "generation_max": 11,
+      "install_layers": [
+        49,
+        50
+      ]
+    }
+  },
+  "calls": {
+    "0": [
+      {
+        "layer": 49,
+        "tasks": 7,
+        "verify": {
+          "max_abs": 0.001953125,
+          "nrmse": 0.0005805892287753522,
+          "finite": true
+        }
+      },
+      {
+        "layer": 50,
+        "tasks": 2,
+        "verify": {
+          "max_abs": 0.0009765625,
+          "nrmse": 0.0004113763861823827,
+          "finite": true
+        }
+      },
+      {
+        "layer": 49,
+        "tasks": 7,
+        "verify": {
+          "max_abs": 0.001953125,
+          "nrmse": 0.0005805892287753522,
+          "finite": true
+        }
+      },
+      {
+        "layer": 50,
+        "tasks": 2,
+        "verify": {
+          "max_abs": 0.0009765625,
+          "nrmse": 0.0004113763861823827,
+          "finite": true
+        }
+      },
+      {
+        "layer": 49,
+        "tasks": 4,
+        "verify": {
+          "max_abs": 0.0009765625,
+          "nrmse": 0.0003996590676251799,
+          "finite": true
+        }
+      },
+      {
+        "layer": 49,
+        "tasks": 7,
+        "verify": {
+          "max_abs": 0.001953125,
+          "nrmse": 0.0005805892287753522,
+          "finite": true
+        }
+      },
+      {
+        "layer": 50,
+        "tasks": 2,
+        "verify": {
+          "max_abs": 0.0009765625,
+          "nrmse": 0.0004113763861823827,
+          "finite": true
+        }
+      },
+      {
+        "layer": 49,
+        "tasks": 4,
+        "verify": {
+          "max_abs": 0.0009765625,
+          "nrmse": 0.0003996590676251799,
+          "finite": true
+        }
+      },
+      {
+        "layer": 49,
+        "tasks": 9,
+        "verify": {
+          "max_abs": 0.001953125,
+          "nrmse": 0.0006301537505351007,
+          "finite": true
+        }
+      }
+    ],
+    "1": [
+      {
+        "layer": 50,
+        "tasks": 8,
+        "verify": {
+          "max_abs": 0.0009765625,
+          "nrmse": 0.0005766217946074903,
+          "finite": true
+        }
+      },
+      {
+        "layer": 50,
+        "tasks": 8,
+        "verify": {
+          "max_abs": 0.0009765625,
+          "nrmse": 0.0005766217946074903,
+          "finite": true
+        }
+      },
+      {
+        "layer": 50,
+        "tasks": 17,
+        "verify": {
+          "max_abs": 0.0009765625,
+          "nrmse": 0.000983922858722508,
+          "finite": true
+        }
+      },
+      {
+        "layer": 50,
+        "tasks": 8,
+        "verify": {
+          "max_abs": 0.0009765625,
+          "nrmse": 0.0005766217946074903,
+          "finite": true
+        }
+      },
+      {
+        "layer": 50,
+        "tasks": 17,
+        "verify": {
+          "max_abs": 0.0009765625,
+          "nrmse": 0.000983922858722508,
+          "finite": true
+        }
+      }
+    ]
+  },
+  "cross_node_weight_sources": [
+    {
+      "owner": 0,
+      "source_rank": 20,
+      "source_node": 25
+    },
+    {
+      "owner": 1,
+      "source_rank": 16,
+      "source_node": 25
+    }
+  ],
+  "total_slots": 2,
+  "max_abs_error": 0.001953125,
+  "max_nrmse": 0.000983922858722508,
+  "actual_replica_tasks_observed": 102
+}

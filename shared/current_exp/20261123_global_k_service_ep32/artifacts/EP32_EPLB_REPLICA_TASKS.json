@@ -1,0 +1,200 @@
+{
+  "definition": "tasks dispatched to a physical expert whose logical expert has >1 replicas",
+  "total_physical_tasks": 65536,
+  "total_logical_tasks": 65536,
+  "replica_tasks": 5098,
+  "ranks": [
+    {
+      "rank": 0,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 183
+    },
+    {
+      "rank": 1,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 157
+    },
+    {
+      "rank": 2,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 134
+    },
+    {
+      "rank": 3,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 185
+    },
+    {
+      "rank": 4,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 181
+    },
+    {
+      "rank": 5,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 169
+    },
+    {
+      "rank": 6,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 198
+    },
+    {
+      "rank": 7,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 132
+    },
+    {
+      "rank": 8,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 157
+    },
+    {
+      "rank": 9,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 169
+    },
+    {
+      "rank": 10,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 130
+    },
+    {
+      "rank": 11,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 171
+    },
+    {
+      "rank": 12,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 147
+    },
+    {
+      "rank": 13,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 142
+    },
+    {
+      "rank": 14,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 158
+    },
+    {
+      "rank": 15,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 144
+    },
+    {
+      "rank": 16,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 155
+    },
+    {
+      "rank": 17,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 149
+    },
+    {
+      "rank": 18,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 161
+    },
+    {
+      "rank": 19,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 165
+    },
+    {
+      "rank": 20,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 157
+    },
+    {
+      "rank": 21,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 172
+    },
+    {
+      "rank": 22,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 174
+    },
+    {
+      "rank": 23,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 171
+    },
+    {
+      "rank": 24,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 147
+    },
+    {
+      "rank": 25,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 162
+    },
+    {
+      "rank": 26,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 151
+    },
+    {
+      "rank": 27,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 161
+    },
+    {
+      "rank": 28,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 155
+    },
+    {
+      "rank": 29,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 168
+    },
+    {
+      "rank": 30,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 133
+    },
+    {
+      "rank": 31,
+      "tasks": 2048,
+      "logical_tasks": 2048,
+      "replica_tasks": 160
+    }
+  ]
+}

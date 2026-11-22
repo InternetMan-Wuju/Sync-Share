@@ -1,0 +1,80 @@
+{
+  "device_topology": "single EP32 group, 32 dies: ranks 0-15 node23 local dies 0-15; ranks 16-31 node25 local dies 0-15",
+  "input": "AgentX-derived deterministic token materialization",
+  "matrix": {
+    "8192": {
+      "off": {
+        "status": "PASS",
+        "ttft_s": 4.962800321984105,
+        "total_s": 5.529053975944407,
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+      },
+      "eplb_static": {
+        "status": "PASS",
+        "ttft_s": 5.086091255070642,
+        "total_s": 5.6596506430068985,
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+      },
+      "k2": {
+        "status": "PASS",
+        "ttft_s": 6.36330101499334,
+        "total_s": 6.9222825900651515,
+        "output_ids_sha256": "5afe2c8613e2a23039d6668887412977bcdff9a016510b967d36ccee312401b6"
+      }
+    },
+    "16384": {
+      "off": {
+        "status": "PASS",
+        "ttft_s": 5.750803005998023,
+        "total_s": 6.3248619579244405,
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+      },
+      "eplb_static": {
+        "status": "PASS",
+        "ttft_s": 5.852084751939401,
+        "total_s": 6.416654907981865,
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+      },
+      "k2": {
+        "status": "PASS",
+        "ttft_s": 5.9518806339474395,
+        "total_s": 6.483713883906603,
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+      }
+    },
+    "32768": {
+      "off": {
+        "status": "PASS",
+        "ttft_s": 11.85833260603249,
+        "total_s": 12.41438629606273,
+        "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c"
+      },
+      "eplb_static": {
+        "status": "PASS",
+        "ttft_s": 12.092087642056867,
+        "total_s": 12.676264708978124,
+        "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c"
+      },
+      "k2": {
+        "status": "FAIL_HANG",
+        "ttft_s": null,
+        "total_s": 679.3176777189365,
+        "output_ids_sha256": null,
+        "reason": "visible prefill chunks completed but detokenizer heartbeat expired and no response was returned"
+      }
+    }
+  },
+  "eplb_static": {
+    "layout_physical_experts": 288,
+    "local_slots_per_rank": 9,
+    "redundancy": 32,
+    "layout_active": true,
+    "actual_replica_tasks_8192": 5098,
+    "total_tasks_8192": 65536
+  },
+  "online_rebalance": {
+    "status": "FAIL",
+    "error": "For a tensor of internal format, its storage_offset must be 0",
+    "rebalance_end": false
+  }
+}
