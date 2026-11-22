@@ -1,0 +1,71 @@
+{
+  "capacity_sizes": [
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192
+  ],
+  "middle_candidates": [
+    {
+      "n": 1024,
+      "source_full_ms": 0.456209,
+      "source_half_ms": 0.35791799999999996,
+      "target_half_ms": 0.36317299999999997,
+      "optimistic_half_saving_ms": 0.09303600000000001
+    },
+    {
+      "n": 2048,
+      "source_full_ms": 0.63222,
+      "source_half_ms": 0.456209,
+      "target_half_ms": 0.4382185,
+      "optimistic_half_saving_ms": 0.17601100000000003
+    },
+    {
+      "n": 4096,
+      "source_full_ms": 1.126379,
+      "source_half_ms": 0.63222,
+      "target_half_ms": 0.620216,
+      "optimistic_half_saving_ms": 0.494159
+    }
+  ],
+  "selected_middle_n": 4096,
+  "selection_rule": "n=512 and n=8192 always; middle maximizes source_full(n)-max(source(n/2),target(n/2)); ties choose smaller n",
+  "selected_n": [
+    512,
+    4096,
+    8192
+  ],
+  "selected_quotas": {
+    "512": [
+      128,
+      256,
+      384
+    ],
+    "4096": [
+      1024,
+      2048,
+      3072
+    ],
+    "8192": [
+      2048,
+      4096,
+      6144
+    ]
+  },
+  "curve_medians_ms": {
+    "source/256": 0.359338,
+    "source/512": 0.35791799999999996,
+    "source/1024": 0.456209,
+    "source/2048": 0.63222,
+    "source/4096": 1.126379,
+    "source/8192": 2.0948725,
+    "target/256": 0.347318,
+    "target/512": 0.36317299999999997,
+    "target/1024": 0.4382185,
+    "target/2048": 0.620216,
+    "target/4096": 1.1331250000000002,
+    "target/8192": 2.1054779999999997
+  }
+}

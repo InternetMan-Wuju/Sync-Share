@@ -1,0 +1,202 @@
+{
+  "scope": "real-weight synthetic-task expert-chain capacity scan",
+  "records": 240,
+  "warmups_per_shape": 3,
+  "formal_repeats_per_shape": 12,
+  "group_summary": {
+    "source/128": {
+      "count": 12,
+      "min": 0.347463,
+      "max": 0.383713,
+      "mean": 0.3681206666666666
+    },
+    "source/256": {
+      "count": 12,
+      "min": 0.340493,
+      "max": 0.395324,
+      "mean": 0.3637005833333334
+    },
+    "source/384": {
+      "count": 12,
+      "min": 0.373513,
+      "max": 0.503435,
+      "mean": 0.4269153333333333
+    },
+    "source/512": {
+      "count": 12,
+      "min": 0.344573,
+      "max": 0.389974,
+      "mean": 0.3646648333333333
+    },
+    "source/1024": {
+      "count": 12,
+      "min": 0.436844,
+      "max": 0.546975,
+      "mean": 0.4622381666666666
+    },
+    "source/2048": {
+      "count": 12,
+      "min": 0.618715,
+      "max": 0.659905,
+      "mean": 0.6353735833333333
+    },
+    "source/3072": {
+      "count": 12,
+      "min": 0.795607,
+      "max": 0.991288,
+      "mean": 0.8995545000000001
+    },
+    "source/4096": {
+      "count": 12,
+      "min": 1.09993,
+      "max": 1.14033,
+      "mean": 1.1209518333333335
+    },
+    "source/6144": {
+      "count": 12,
+      "min": 1.599933,
+      "max": 1.671564,
+      "mean": 1.6263579999999997
+    },
+    "source/8192": {
+      "count": 12,
+      "min": 2.082948,
+      "max": 2.118048,
+      "mean": 2.098108583333333
+    },
+    "target/128": {
+      "count": 12,
+      "min": 0.333893,
+      "max": 0.531715,
+      "mean": 0.3700830833333333
+    },
+    "target/256": {
+      "count": 12,
+      "min": 0.329562,
+      "max": 0.397914,
+      "mean": 0.3526930000000001
+    },
+    "target/384": {
+      "count": 12,
+      "min": 0.327673,
+      "max": 0.372033,
+      "mean": 0.356808
+    },
+    "target/512": {
+      "count": 12,
+      "min": 0.342513,
+      "max": 0.388573,
+      "mean": 0.36363725
+    },
+    "target/1024": {
+      "count": 12,
+      "min": 0.429124,
+      "max": 0.515964,
+      "mean": 0.44496283333333325
+    },
+    "target/2048": {
+      "count": 12,
+      "min": 0.612215,
+      "max": 0.642645,
+      "mean": 0.6254279166666666
+    },
+    "target/3072": {
+      "count": 12,
+      "min": 0.829258,
+      "max": 0.967758,
+      "mean": 0.8862201666666668
+    },
+    "target/4096": {
+      "count": 12,
+      "min": 1.121059,
+      "max": 1.146489,
+      "mean": 1.1327945833333335
+    },
+    "target/6144": {
+      "count": 12,
+      "min": 1.589873,
+      "max": 1.616093,
+      "mean": 1.6031710833333335
+    },
+    "target/8192": {
+      "count": 12,
+      "min": 2.093438,
+      "max": 2.141888,
+      "mean": 2.1062179999999997
+    }
+  },
+  "selection": {
+    "capacity_sizes": [
+      256,
+      512,
+      1024,
+      2048,
+      4096,
+      8192
+    ],
+    "middle_candidates": [
+      {
+        "n": 1024,
+        "source_full_ms": 0.456209,
+        "source_half_ms": 0.35791799999999996,
+        "target_half_ms": 0.36317299999999997,
+        "optimistic_half_saving_ms": 0.09303600000000001
+      },
+      {
+        "n": 2048,
+        "source_full_ms": 0.63222,
+        "source_half_ms": 0.456209,
+        "target_half_ms": 0.4382185,
+        "optimistic_half_saving_ms": 0.17601100000000003
+      },
+      {
+        "n": 4096,
+        "source_full_ms": 1.126379,
+        "source_half_ms": 0.63222,
+        "target_half_ms": 0.620216,
+        "optimistic_half_saving_ms": 0.494159
+      }
+    ],
+    "selected_middle_n": 4096,
+    "selection_rule": "n=512 and n=8192 always; middle maximizes source_full(n)-max(source(n/2),target(n/2)); ties choose smaller n",
+    "selected_n": [
+      512,
+      4096,
+      8192
+    ],
+    "selected_quotas": {
+      "512": [
+        128,
+        256,
+        384
+      ],
+      "4096": [
+        1024,
+        2048,
+        3072
+      ],
+      "8192": [
+        2048,
+        4096,
+        6144
+      ]
+    },
+    "curve_medians_ms": {
+      "source/256": 0.359338,
+      "source/512": 0.35791799999999996,
+      "source/1024": 0.456209,
+      "source/2048": 0.63222,
+      "source/4096": 1.126379,
+      "source/8192": 2.0948725,
+      "target/256": 0.347318,
+      "target/512": 0.36317299999999997,
+      "target/1024": 0.4382185,
+      "target/2048": 0.620216,
+      "target/4096": 1.1331250000000002,
+      "target/8192": 2.1054779999999997
+    }
+  },
+  "errors": [],
+  "checksum_mismatches": [],
+  "note": "Times are local full-chain measurements; no communication is included."
+}

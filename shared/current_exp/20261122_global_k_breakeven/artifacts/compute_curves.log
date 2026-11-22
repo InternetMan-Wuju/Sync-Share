@@ -1,0 +1,7 @@
+W1122 09:38:57.720000 1 site-packages/torch/distributed/run.py:852]
+W1122 09:38:57.720000 1 site-packages/torch/distributed/run.py:852] *****************************************
+W1122 09:38:57.720000 1 site-packages/torch/distributed/run.py:852] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+W1122 09:38:57.720000 1 site-packages/torch/distributed/run.py:852] *****************************************
+[rank0]:[W1122 09:39:08.977798687 TensorFactories.cpp:340] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)

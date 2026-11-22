@@ -1,0 +1,2071 @@
+{
+  "rank": 1,
+  "role": "target",
+  "layer_id": 49,
+  "expert_id": 43,
+  "scope": "synthetic-task capacity scan on real W8A8 weights",
+  "warmups": 3,
+  "repeats": 12,
+  "records": [
+    {
+      "card": "target",
+      "size": 256,
+      "repeat": 0,
+      "input_seed": 600256,
+      "input_fingerprint": "faee835381fc5e16cb184a21755c3cf3958211c642b0b2c54e94ec1d35d202b3",
+      "time_ms": 0.329562,
+      "memory": {
+        "allocated": 44103680,
+        "reserved": 94371840,
+        "max_allocated": 79175168,
+        "max_reserved": 94371840,
+        "device_free": 64946839552,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 256,
+      "repeat": 1,
+      "input_seed": 600256,
+      "input_fingerprint": "faee835381fc5e16cb184a21755c3cf3958211c642b0b2c54e94ec1d35d202b3",
+      "time_ms": 0.397914,
+      "memory": {
+        "allocated": 44103680,
+        "reserved": 94371840,
+        "max_allocated": 82321408,
+        "max_reserved": 94371840,
+        "device_free": 64946839552,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 256,
+      "repeat": 2,
+      "input_seed": 600256,
+      "input_fingerprint": "faee835381fc5e16cb184a21755c3cf3958211c642b0b2c54e94ec1d35d202b3",
+      "time_ms": 0.355783,
+      "memory": {
+        "allocated": 44103680,
+        "reserved": 94371840,
+        "max_allocated": 82321408,
+        "max_reserved": 94371840,
+        "device_free": 64946839552,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 256,
+      "repeat": 3,
+      "input_seed": 600256,
+      "input_fingerprint": "faee835381fc5e16cb184a21755c3cf3958211c642b0b2c54e94ec1d35d202b3",
+      "time_ms": 0.351213,
+      "memory": {
+        "allocated": 44103680,
+        "reserved": 94371840,
+        "max_allocated": 82321408,
+        "max_reserved": 94371840,
+        "device_free": 64946839552,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 256,
+      "repeat": 4,
+      "input_seed": 600256,
+      "input_fingerprint": "faee835381fc5e16cb184a21755c3cf3958211c642b0b2c54e94ec1d35d202b3",
+      "time_ms": 0.367653,
+      "memory": {
+        "allocated": 44103680,
+        "reserved": 94371840,
+        "max_allocated": 82321408,
+        "max_reserved": 94371840,
+        "device_free": 64946839552,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 256,
+      "repeat": 5,
+      "input_seed": 600256,
+      "input_fingerprint": "faee835381fc5e16cb184a21755c3cf3958211c642b0b2c54e94ec1d35d202b3",
+      "time_ms": 0.346843,
+      "memory": {
+        "allocated": 44103680,
+        "reserved": 94371840,
+        "max_allocated": 82321408,
+        "max_reserved": 94371840,
+        "device_free": 64946839552,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 256,
+      "repeat": 6,
+      "input_seed": 600256,
+      "input_fingerprint": "faee835381fc5e16cb184a21755c3cf3958211c642b0b2c54e94ec1d35d202b3",
+      "time_ms": 0.357273,
+      "memory": {
+        "allocated": 44103680,
+        "reserved": 94371840,
+        "max_allocated": 82321408,
+        "max_reserved": 94371840,
+        "device_free": 64946839552,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 256,
+      "repeat": 7,
+      "input_seed": 600256,
+      "input_fingerprint": "faee835381fc5e16cb184a21755c3cf3958211c642b0b2c54e94ec1d35d202b3",
+      "time_ms": 0.346153,
+      "memory": {
+        "allocated": 44103680,
+        "reserved": 94371840,
+        "max_allocated": 82321408,
+        "max_reserved": 94371840,
+        "device_free": 64946839552,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 256,
+      "repeat": 8,
+      "input_seed": 600256,
+      "input_fingerprint": "faee835381fc5e16cb184a21755c3cf3958211c642b0b2c54e94ec1d35d202b3",
+      "time_ms": 0.340213,
+      "memory": {
+        "allocated": 44103680,
+        "reserved": 94371840,
+        "max_allocated": 82321408,
+        "max_reserved": 94371840,
+        "device_free": 64946839552,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 256,
+      "repeat": 9,
+      "input_seed": 600256,
+      "input_fingerprint": "faee835381fc5e16cb184a21755c3cf3958211c642b0b2c54e94ec1d35d202b3",
+      "time_ms": 0.347163,
+      "memory": {
+        "allocated": 44103680,
+        "reserved": 94371840,
+        "max_allocated": 82321408,
+        "max_reserved": 94371840,
+        "device_free": 64946839552,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 256,
+      "repeat": 10,
+      "input_seed": 600256,
+      "input_fingerprint": "faee835381fc5e16cb184a21755c3cf3958211c642b0b2c54e94ec1d35d202b3",
+      "time_ms": 0.345073,
+      "memory": {
+        "allocated": 44103680,
+        "reserved": 94371840,
+        "max_allocated": 82321408,
+        "max_reserved": 94371840,
+        "device_free": 64946839552,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 256,
+      "repeat": 11,
+      "input_seed": 600256,
+      "input_fingerprint": "faee835381fc5e16cb184a21755c3cf3958211c642b0b2c54e94ec1d35d202b3",
+      "time_ms": 0.347473,
+      "memory": {
+        "allocated": 44103680,
+        "reserved": 94371840,
+        "max_allocated": 82321408,
+        "max_reserved": 94371840,
+        "device_free": 64946839552,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 512,
+      "repeat": 0,
+      "input_seed": 600512,
+      "input_fingerprint": "28e3bb3bf6b8ba7206551289e24ba5e3af74206d7a6de4a6f2a049747338319b",
+      "time_ms": 0.342513,
+      "memory": {
+        "allocated": 50395136,
+        "reserved": 125829120,
+        "max_allocated": 91235840,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 512,
+      "repeat": 1,
+      "input_seed": 600512,
+      "input_fingerprint": "28e3bb3bf6b8ba7206551289e24ba5e3af74206d7a6de4a6f2a049747338319b",
+      "time_ms": 0.376724,
+      "memory": {
+        "allocated": 50395136,
+        "reserved": 125829120,
+        "max_allocated": 97527808,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 512,
+      "repeat": 2,
+      "input_seed": 600512,
+      "input_fingerprint": "28e3bb3bf6b8ba7206551289e24ba5e3af74206d7a6de4a6f2a049747338319b",
+      "time_ms": 0.363713,
+      "memory": {
+        "allocated": 50395136,
+        "reserved": 125829120,
+        "max_allocated": 97527808,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 512,
+      "repeat": 3,
+      "input_seed": 600512,
+      "input_fingerprint": "28e3bb3bf6b8ba7206551289e24ba5e3af74206d7a6de4a6f2a049747338319b",
+      "time_ms": 0.350723,
+      "memory": {
+        "allocated": 50395136,
+        "reserved": 125829120,
+        "max_allocated": 97527808,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 512,
+      "repeat": 4,
+      "input_seed": 600512,
+      "input_fingerprint": "28e3bb3bf6b8ba7206551289e24ba5e3af74206d7a6de4a6f2a049747338319b",
+      "time_ms": 0.361133,
+      "memory": {
+        "allocated": 50395136,
+        "reserved": 125829120,
+        "max_allocated": 97527808,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 512,
+      "repeat": 5,
+      "input_seed": 600512,
+      "input_fingerprint": "28e3bb3bf6b8ba7206551289e24ba5e3af74206d7a6de4a6f2a049747338319b",
+      "time_ms": 0.361483,
+      "memory": {
+        "allocated": 50395136,
+        "reserved": 125829120,
+        "max_allocated": 97527808,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 512,
+      "repeat": 6,
+      "input_seed": 600512,
+      "input_fingerprint": "28e3bb3bf6b8ba7206551289e24ba5e3af74206d7a6de4a6f2a049747338319b",
+      "time_ms": 0.388573,
+      "memory": {
+        "allocated": 50395136,
+        "reserved": 125829120,
+        "max_allocated": 97527808,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 512,
+      "repeat": 7,
+      "input_seed": 600512,
+      "input_fingerprint": "28e3bb3bf6b8ba7206551289e24ba5e3af74206d7a6de4a6f2a049747338319b",
+      "time_ms": 0.355513,
+      "memory": {
+        "allocated": 50395136,
+        "reserved": 125829120,
+        "max_allocated": 97527808,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 512,
+      "repeat": 8,
+      "input_seed": 600512,
+      "input_fingerprint": "28e3bb3bf6b8ba7206551289e24ba5e3af74206d7a6de4a6f2a049747338319b",
+      "time_ms": 0.369663,
+      "memory": {
+        "allocated": 50395136,
+        "reserved": 125829120,
+        "max_allocated": 97527808,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 512,
+      "repeat": 9,
+      "input_seed": 600512,
+      "input_fingerprint": "28e3bb3bf6b8ba7206551289e24ba5e3af74206d7a6de4a6f2a049747338319b",
+      "time_ms": 0.362633,
+      "memory": {
+        "allocated": 50395136,
+        "reserved": 125829120,
+        "max_allocated": 97527808,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 512,
+      "repeat": 10,
+      "input_seed": 600512,
+      "input_fingerprint": "28e3bb3bf6b8ba7206551289e24ba5e3af74206d7a6de4a6f2a049747338319b",
+      "time_ms": 0.364473,
+      "memory": {
+        "allocated": 50395136,
+        "reserved": 125829120,
+        "max_allocated": 97527808,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 512,
+      "repeat": 11,
+      "input_seed": 600512,
+      "input_fingerprint": "28e3bb3bf6b8ba7206551289e24ba5e3af74206d7a6de4a6f2a049747338319b",
+      "time_ms": 0.366503,
+      "memory": {
+        "allocated": 50395136,
+        "reserved": 125829120,
+        "max_allocated": 97527808,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 1024,
+      "repeat": 0,
+      "input_seed": 601024,
+      "input_fingerprint": "7b95b755d4108222f63efa1df8779ff2387b2a75211a811221326e861d9add7b",
+      "time_ms": 0.430444,
+      "memory": {
+        "allocated": 62978048,
+        "reserved": 125829120,
+        "max_allocated": 113322496,
+        "max_reserved": 125829120,
+        "device_free": 64910315520,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 1024,
+      "repeat": 1,
+      "input_seed": 601024,
+      "input_fingerprint": "7b95b755d4108222f63efa1df8779ff2387b2a75211a811221326e861d9add7b",
+      "time_ms": 0.515964,
+      "memory": {
+        "allocated": 62978048,
+        "reserved": 157286400,
+        "max_allocated": 125905920,
+        "max_reserved": 157286400,
+        "device_free": 64878858240,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 1024,
+      "repeat": 2,
+      "input_seed": 601024,
+      "input_fingerprint": "7b95b755d4108222f63efa1df8779ff2387b2a75211a811221326e861d9add7b",
+      "time_ms": 0.440444,
+      "memory": {
+        "allocated": 62978048,
+        "reserved": 157286400,
+        "max_allocated": 125905920,
+        "max_reserved": 157286400,
+        "device_free": 64878858240,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 1024,
+      "repeat": 3,
+      "input_seed": 601024,
+      "input_fingerprint": "7b95b755d4108222f63efa1df8779ff2387b2a75211a811221326e861d9add7b",
+      "time_ms": 0.429124,
+      "memory": {
+        "allocated": 62978048,
+        "reserved": 157286400,
+        "max_allocated": 125905920,
+        "max_reserved": 157286400,
+        "device_free": 64878858240,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 1024,
+      "repeat": 4,
+      "input_seed": 601024,
+      "input_fingerprint": "7b95b755d4108222f63efa1df8779ff2387b2a75211a811221326e861d9add7b",
+      "time_ms": 0.441854,
+      "memory": {
+        "allocated": 62978048,
+        "reserved": 157286400,
+        "max_allocated": 125905920,
+        "max_reserved": 157286400,
+        "device_free": 64878858240,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 1024,
+      "repeat": 5,
+      "input_seed": 601024,
+      "input_fingerprint": "7b95b755d4108222f63efa1df8779ff2387b2a75211a811221326e861d9add7b",
+      "time_ms": 0.438373,
+      "memory": {
+        "allocated": 62978048,
+        "reserved": 157286400,
+        "max_allocated": 125905920,
+        "max_reserved": 157286400,
+        "device_free": 64878858240,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 1024,
+      "repeat": 6,
+      "input_seed": 601024,
+      "input_fingerprint": "7b95b755d4108222f63efa1df8779ff2387b2a75211a811221326e861d9add7b",
+      "time_ms": 0.438064,
+      "memory": {
+        "allocated": 62978048,
+        "reserved": 157286400,
+        "max_allocated": 125905920,
+        "max_reserved": 157286400,
+        "device_free": 64878858240,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 1024,
+      "repeat": 7,
+      "input_seed": 601024,
+      "input_fingerprint": "7b95b755d4108222f63efa1df8779ff2387b2a75211a811221326e861d9add7b",
+      "time_ms": 0.431154,
+      "memory": {
+        "allocated": 62978048,
+        "reserved": 157286400,
+        "max_allocated": 125905920,
+        "max_reserved": 157286400,
+        "device_free": 64878858240,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 1024,
+      "repeat": 8,
+      "input_seed": 601024,
+      "input_fingerprint": "7b95b755d4108222f63efa1df8779ff2387b2a75211a811221326e861d9add7b",
+      "time_ms": 0.436643,
+      "memory": {
+        "allocated": 62978048,
+        "reserved": 157286400,
+        "max_allocated": 125905920,
+        "max_reserved": 157286400,
+        "device_free": 64878858240,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 1024,
+      "repeat": 9,
+      "input_seed": 601024,
+      "input_fingerprint": "7b95b755d4108222f63efa1df8779ff2387b2a75211a811221326e861d9add7b",
+      "time_ms": 0.435623,
+      "memory": {
+        "allocated": 62978048,
+        "reserved": 157286400,
+        "max_allocated": 125905920,
+        "max_reserved": 157286400,
+        "device_free": 64878858240,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 1024,
+      "repeat": 10,
+      "input_seed": 601024,
+      "input_fingerprint": "7b95b755d4108222f63efa1df8779ff2387b2a75211a811221326e861d9add7b",
+      "time_ms": 0.447333,
+      "memory": {
+        "allocated": 62978048,
+        "reserved": 157286400,
+        "max_allocated": 125905920,
+        "max_reserved": 157286400,
+        "device_free": 64878858240,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 1024,
+      "repeat": 11,
+      "input_seed": 601024,
+      "input_fingerprint": "7b95b755d4108222f63efa1df8779ff2387b2a75211a811221326e861d9add7b",
+      "time_ms": 0.454534,
+      "memory": {
+        "allocated": 62978048,
+        "reserved": 157286400,
+        "max_allocated": 125905920,
+        "max_reserved": 157286400,
+        "device_free": 64878858240,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 2048,
+      "repeat": 0,
+      "input_seed": 602048,
+      "input_fingerprint": "88d662aa219829f55010226c131ba2fcb9848ed246bf3be0751aaad3c7327754",
+      "time_ms": 0.617995,
+      "memory": {
+        "allocated": 88143872,
+        "reserved": 188743680,
+        "max_allocated": 159468032,
+        "max_reserved": 188743680,
+        "device_free": 64847400960,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 2048,
+      "repeat": 1,
+      "input_seed": 602048,
+      "input_fingerprint": "88d662aa219829f55010226c131ba2fcb9848ed246bf3be0751aaad3c7327754",
+      "time_ms": 0.641775,
+      "memory": {
+        "allocated": 88143872,
+        "reserved": 220200960,
+        "max_allocated": 184634368,
+        "max_reserved": 220200960,
+        "device_free": 64815943680,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 2048,
+      "repeat": 2,
+      "input_seed": 602048,
+      "input_fingerprint": "88d662aa219829f55010226c131ba2fcb9848ed246bf3be0751aaad3c7327754",
+      "time_ms": 0.640086,
+      "memory": {
+        "allocated": 88143872,
+        "reserved": 220200960,
+        "max_allocated": 184634368,
+        "max_reserved": 220200960,
+        "device_free": 64815943680,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 2048,
+      "repeat": 3,
+      "input_seed": 602048,
+      "input_fingerprint": "88d662aa219829f55010226c131ba2fcb9848ed246bf3be0751aaad3c7327754",
+      "time_ms": 0.619416,
+      "memory": {
+        "allocated": 88143872,
+        "reserved": 220200960,
+        "max_allocated": 184634368,
+        "max_reserved": 220200960,
+        "device_free": 64815943680,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 2048,
+      "repeat": 4,
+      "input_seed": 602048,
+      "input_fingerprint": "88d662aa219829f55010226c131ba2fcb9848ed246bf3be0751aaad3c7327754",
+      "time_ms": 0.642645,
+      "memory": {
+        "allocated": 88143872,
+        "reserved": 220200960,
+        "max_allocated": 184634368,
+        "max_reserved": 220200960,
+        "device_free": 64815943680,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 2048,
+      "repeat": 5,
+      "input_seed": 602048,
+      "input_fingerprint": "88d662aa219829f55010226c131ba2fcb9848ed246bf3be0751aaad3c7327754",
+      "time_ms": 0.612215,
+      "memory": {
+        "allocated": 88143872,
+        "reserved": 220200960,
+        "max_allocated": 184634368,
+        "max_reserved": 220200960,
+        "device_free": 64815943680,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 2048,
+      "repeat": 6,
+      "input_seed": 602048,
+      "input_fingerprint": "88d662aa219829f55010226c131ba2fcb9848ed246bf3be0751aaad3c7327754",
+      "time_ms": 0.615985,
+      "memory": {
+        "allocated": 88143872,
+        "reserved": 220200960,
+        "max_allocated": 184634368,
+        "max_reserved": 220200960,
+        "device_free": 64815943680,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 2048,
+      "repeat": 7,
+      "input_seed": 602048,
+      "input_fingerprint": "88d662aa219829f55010226c131ba2fcb9848ed246bf3be0751aaad3c7327754",
+      "time_ms": 0.620196,
+      "memory": {
+        "allocated": 88143872,
+        "reserved": 220200960,
+        "max_allocated": 184634368,
+        "max_reserved": 220200960,
+        "device_free": 64815943680,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 2048,
+      "repeat": 8,
+      "input_seed": 602048,
+      "input_fingerprint": "88d662aa219829f55010226c131ba2fcb9848ed246bf3be0751aaad3c7327754",
+      "time_ms": 0.622755,
+      "memory": {
+        "allocated": 88143872,
+        "reserved": 220200960,
+        "max_allocated": 184634368,
+        "max_reserved": 220200960,
+        "device_free": 64815943680,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 2048,
+      "repeat": 9,
+      "input_seed": 602048,
+      "input_fingerprint": "88d662aa219829f55010226c131ba2fcb9848ed246bf3be0751aaad3c7327754",
+      "time_ms": 0.620236,
+      "memory": {
+        "allocated": 88143872,
+        "reserved": 220200960,
+        "max_allocated": 184634368,
+        "max_reserved": 220200960,
+        "device_free": 64815943680,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 2048,
+      "repeat": 10,
+      "input_seed": 602048,
+      "input_fingerprint": "88d662aa219829f55010226c131ba2fcb9848ed246bf3be0751aaad3c7327754",
+      "time_ms": 0.637085,
+      "memory": {
+        "allocated": 88143872,
+        "reserved": 220200960,
+        "max_allocated": 184634368,
+        "max_reserved": 220200960,
+        "device_free": 64815943680,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 2048,
+      "repeat": 11,
+      "input_seed": 602048,
+      "input_fingerprint": "88d662aa219829f55010226c131ba2fcb9848ed246bf3be0751aaad3c7327754",
+      "time_ms": 0.614746,
+      "memory": {
+        "allocated": 88143872,
+        "reserved": 220200960,
+        "max_allocated": 184634368,
+        "max_reserved": 220200960,
+        "device_free": 64815943680,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 4096,
+      "repeat": 0,
+      "input_seed": 604096,
+      "input_fingerprint": "d7e4ba6c9c127a985b2e60a43be00b3718a1b08717c723f925149c11cbb6260c",
+      "time_ms": 1.12899,
+      "memory": {
+        "allocated": 138475520,
+        "reserved": 360710144,
+        "max_allocated": 251759104,
+        "max_reserved": 360710144,
+        "device_free": 64675434496,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 4096,
+      "repeat": 1,
+      "input_seed": 604096,
+      "input_fingerprint": "d7e4ba6c9c127a985b2e60a43be00b3718a1b08717c723f925149c11cbb6260c",
+      "time_ms": 1.134979,
+      "memory": {
+        "allocated": 138475520,
+        "reserved": 413138944,
+        "max_allocated": 302091264,
+        "max_reserved": 413138944,
+        "device_free": 64623005696,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 4096,
+      "repeat": 2,
+      "input_seed": 604096,
+      "input_fingerprint": "d7e4ba6c9c127a985b2e60a43be00b3718a1b08717c723f925149c11cbb6260c",
+      "time_ms": 1.13239,
+      "memory": {
+        "allocated": 138475520,
+        "reserved": 413138944,
+        "max_allocated": 302091264,
+        "max_reserved": 413138944,
+        "device_free": 64623005696,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 4096,
+      "repeat": 3,
+      "input_seed": 604096,
+      "input_fingerprint": "d7e4ba6c9c127a985b2e60a43be00b3718a1b08717c723f925149c11cbb6260c",
+      "time_ms": 1.146489,
+      "memory": {
+        "allocated": 138475520,
+        "reserved": 413138944,
+        "max_allocated": 302091264,
+        "max_reserved": 413138944,
+        "device_free": 64623005696,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 4096,
+      "repeat": 4,
+      "input_seed": 604096,
+      "input_fingerprint": "d7e4ba6c9c127a985b2e60a43be00b3718a1b08717c723f925149c11cbb6260c",
+      "time_ms": 1.13729,
+      "memory": {
+        "allocated": 138475520,
+        "reserved": 413138944,
+        "max_allocated": 302091264,
+        "max_reserved": 413138944,
+        "device_free": 64623005696,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 4096,
+      "repeat": 5,
+      "input_seed": 604096,
+      "input_fingerprint": "d7e4ba6c9c127a985b2e60a43be00b3718a1b08717c723f925149c11cbb6260c",
+      "time_ms": 1.14313,
+      "memory": {
+        "allocated": 138475520,
+        "reserved": 413138944,
+        "max_allocated": 302091264,
+        "max_reserved": 413138944,
+        "device_free": 64623005696,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 4096,
+      "repeat": 6,
+      "input_seed": 604096,
+      "input_fingerprint": "d7e4ba6c9c127a985b2e60a43be00b3718a1b08717c723f925149c11cbb6260c",
+      "time_ms": 1.128519,
+      "memory": {
+        "allocated": 138475520,
+        "reserved": 413138944,
+        "max_allocated": 302091264,
+        "max_reserved": 413138944,
+        "device_free": 64623005696,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 4096,
+      "repeat": 7,
+      "input_seed": 604096,
+      "input_fingerprint": "d7e4ba6c9c127a985b2e60a43be00b3718a1b08717c723f925149c11cbb6260c",
+      "time_ms": 1.127219,
+      "memory": {
+        "allocated": 138475520,
+        "reserved": 413138944,
+        "max_allocated": 302091264,
+        "max_reserved": 413138944,
+        "device_free": 64623005696,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 4096,
+      "repeat": 8,
+      "input_seed": 604096,
+      "input_fingerprint": "d7e4ba6c9c127a985b2e60a43be00b3718a1b08717c723f925149c11cbb6260c",
+      "time_ms": 1.12542,
+      "memory": {
+        "allocated": 138475520,
+        "reserved": 413138944,
+        "max_allocated": 302091264,
+        "max_reserved": 413138944,
+        "device_free": 64623005696,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 4096,
+      "repeat": 9,
+      "input_seed": 604096,
+      "input_fingerprint": "d7e4ba6c9c127a985b2e60a43be00b3718a1b08717c723f925149c11cbb6260c",
+      "time_ms": 1.13419,
+      "memory": {
+        "allocated": 138475520,
+        "reserved": 413138944,
+        "max_allocated": 302091264,
+        "max_reserved": 413138944,
+        "device_free": 64623005696,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 4096,
+      "repeat": 10,
+      "input_seed": 604096,
+      "input_fingerprint": "d7e4ba6c9c127a985b2e60a43be00b3718a1b08717c723f925149c11cbb6260c",
+      "time_ms": 1.13386,
+      "memory": {
+        "allocated": 138475520,
+        "reserved": 413138944,
+        "max_allocated": 302091264,
+        "max_reserved": 413138944,
+        "device_free": 64623005696,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 4096,
+      "repeat": 11,
+      "input_seed": 604096,
+      "input_fingerprint": "d7e4ba6c9c127a985b2e60a43be00b3718a1b08717c723f925149c11cbb6260c",
+      "time_ms": 1.121059,
+      "memory": {
+        "allocated": 138475520,
+        "reserved": 413138944,
+        "max_allocated": 302091264,
+        "max_reserved": 413138944,
+        "device_free": 64623005696,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 8192,
+      "repeat": 0,
+      "input_seed": 608192,
+      "input_fingerprint": "f11e2c892a85b9c864535d83379633ea7786254eccbd7545bac83fbd2b20357e",
+      "time_ms": 2.094758,
+      "memory": {
+        "allocated": 239138816,
+        "reserved": 687865856,
+        "max_allocated": 436341248,
+        "max_reserved": 687865856,
+        "device_free": 64348053504,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 8192,
+      "repeat": 1,
+      "input_seed": 608192,
+      "input_fingerprint": "f11e2c892a85b9c864535d83379633ea7786254eccbd7545bac83fbd2b20357e",
+      "time_ms": 2.100978,
+      "memory": {
+        "allocated": 239138816,
+        "reserved": 790626304,
+        "max_allocated": 537005056,
+        "max_reserved": 790626304,
+        "device_free": 64245293056,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 8192,
+      "repeat": 2,
+      "input_seed": 608192,
+      "input_fingerprint": "f11e2c892a85b9c864535d83379633ea7786254eccbd7545bac83fbd2b20357e",
+      "time_ms": 2.141888,
+      "memory": {
+        "allocated": 239138816,
+        "reserved": 790626304,
+        "max_allocated": 537005056,
+        "max_reserved": 790626304,
+        "device_free": 64245293056,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 8192,
+      "repeat": 3,
+      "input_seed": 608192,
+      "input_fingerprint": "f11e2c892a85b9c864535d83379633ea7786254eccbd7545bac83fbd2b20357e",
+      "time_ms": 2.104808,
+      "memory": {
+        "allocated": 239138816,
+        "reserved": 790626304,
+        "max_allocated": 537005056,
+        "max_reserved": 790626304,
+        "device_free": 64245293056,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 8192,
+      "repeat": 4,
+      "input_seed": 608192,
+      "input_fingerprint": "f11e2c892a85b9c864535d83379633ea7786254eccbd7545bac83fbd2b20357e",
+      "time_ms": 2.109378,
+      "memory": {
+        "allocated": 239138816,
+        "reserved": 790626304,
+        "max_allocated": 537005056,
+        "max_reserved": 790626304,
+        "device_free": 64245293056,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 8192,
+      "repeat": 5,
+      "input_seed": 608192,
+      "input_fingerprint": "f11e2c892a85b9c864535d83379633ea7786254eccbd7545bac83fbd2b20357e",
+      "time_ms": 2.093438,
+      "memory": {
+        "allocated": 239138816,
+        "reserved": 790626304,
+        "max_allocated": 537005056,
+        "max_reserved": 790626304,
+        "device_free": 64245293056,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 8192,
+      "repeat": 6,
+      "input_seed": 608192,
+      "input_fingerprint": "f11e2c892a85b9c864535d83379633ea7786254eccbd7545bac83fbd2b20357e",
+      "time_ms": 2.096258,
+      "memory": {
+        "allocated": 239138816,
+        "reserved": 790626304,
+        "max_allocated": 537005056,
+        "max_reserved": 790626304,
+        "device_free": 64245293056,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 8192,
+      "repeat": 7,
+      "input_seed": 608192,
+      "input_fingerprint": "f11e2c892a85b9c864535d83379633ea7786254eccbd7545bac83fbd2b20357e",
+      "time_ms": 2.107938,
+      "memory": {
+        "allocated": 239138816,
+        "reserved": 790626304,
+        "max_allocated": 537005056,
+        "max_reserved": 790626304,
+        "device_free": 64245293056,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 8192,
+      "repeat": 8,
+      "input_seed": 608192,
+      "input_fingerprint": "f11e2c892a85b9c864535d83379633ea7786254eccbd7545bac83fbd2b20357e",
+      "time_ms": 2.108068,
+      "memory": {
+        "allocated": 239138816,
+        "reserved": 790626304,
+        "max_allocated": 537005056,
+        "max_reserved": 790626304,
+        "device_free": 64245293056,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 8192,
+      "repeat": 9,
+      "input_seed": 608192,
+      "input_fingerprint": "f11e2c892a85b9c864535d83379633ea7786254eccbd7545bac83fbd2b20357e",
+      "time_ms": 2.099488,
+      "memory": {
+        "allocated": 239138816,
+        "reserved": 790626304,
+        "max_allocated": 537005056,
+        "max_reserved": 790626304,
+        "device_free": 64245293056,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 8192,
+      "repeat": 10,
+      "input_seed": 608192,
+      "input_fingerprint": "f11e2c892a85b9c864535d83379633ea7786254eccbd7545bac83fbd2b20357e",
+      "time_ms": 2.111468,
+      "memory": {
+        "allocated": 239138816,
+        "reserved": 790626304,
+        "max_allocated": 537005056,
+        "max_reserved": 790626304,
+        "device_free": 64245293056,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 8192,
+      "repeat": 11,
+      "input_seed": 608192,
+      "input_fingerprint": "f11e2c892a85b9c864535d83379633ea7786254eccbd7545bac83fbd2b20357e",
+      "time_ms": 2.106148,
+      "memory": {
+        "allocated": 239138816,
+        "reserved": 790626304,
+        "max_allocated": 537005056,
+        "max_reserved": 790626304,
+        "device_free": 64245293056,
+        "device_total": 65796046848
+      }
+    }
+  ],
+  "memory_initial": {
+    "allocated": 37811200,
+    "reserved": 41943040,
+    "max_allocated": 37811200,
+    "max_reserved": 41943040,
+    "device_free": 65084510208,
+    "device_total": 65796046848
+  },
+  "capacity_checksums": {
+    "target/256": -0.6560592651367188,
+    "target/512": 220.34632873535156,
+    "target/1024": 176.48468017578125,
+    "target/2048": 306.5912780761719,
+    "target/4096": 651.208984375,
+    "target/8192": 1564.7576904296875
+  },
+  "subscale_records": [
+    {
+      "card": "target",
+      "size": 128,
+      "repeat": 0,
+      "input_seed": 700128,
+      "input_fingerprint": "bfad0f81cac93d958ba85da8e20fa5e938c6adcfa8c6763c4bf3604fb4e2aa50",
+      "time_ms": 0.362293,
+      "memory": {
+        "allocated": 41419776,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 128,
+      "repeat": 1,
+      "input_seed": 700128,
+      "input_fingerprint": "bfad0f81cac93d958ba85da8e20fa5e938c6adcfa8c6763c4bf3604fb4e2aa50",
+      "time_ms": 0.382593,
+      "memory": {
+        "allocated": 41419776,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 128,
+      "repeat": 2,
+      "input_seed": 700128,
+      "input_fingerprint": "bfad0f81cac93d958ba85da8e20fa5e938c6adcfa8c6763c4bf3604fb4e2aa50",
+      "time_ms": 0.347973,
+      "memory": {
+        "allocated": 41419776,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 128,
+      "repeat": 3,
+      "input_seed": 700128,
+      "input_fingerprint": "bfad0f81cac93d958ba85da8e20fa5e938c6adcfa8c6763c4bf3604fb4e2aa50",
+      "time_ms": 0.362273,
+      "memory": {
+        "allocated": 41419776,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 128,
+      "repeat": 4,
+      "input_seed": 700128,
+      "input_fingerprint": "bfad0f81cac93d958ba85da8e20fa5e938c6adcfa8c6763c4bf3604fb4e2aa50",
+      "time_ms": 0.346943,
+      "memory": {
+        "allocated": 41419776,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 128,
+      "repeat": 5,
+      "input_seed": 700128,
+      "input_fingerprint": "bfad0f81cac93d958ba85da8e20fa5e938c6adcfa8c6763c4bf3604fb4e2aa50",
+      "time_ms": 0.531715,
+      "memory": {
+        "allocated": 41419776,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 128,
+      "repeat": 6,
+      "input_seed": 700128,
+      "input_fingerprint": "bfad0f81cac93d958ba85da8e20fa5e938c6adcfa8c6763c4bf3604fb4e2aa50",
+      "time_ms": 0.366263,
+      "memory": {
+        "allocated": 41419776,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 128,
+      "repeat": 7,
+      "input_seed": 700128,
+      "input_fingerprint": "bfad0f81cac93d958ba85da8e20fa5e938c6adcfa8c6763c4bf3604fb4e2aa50",
+      "time_ms": 0.347743,
+      "memory": {
+        "allocated": 41419776,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 128,
+      "repeat": 8,
+      "input_seed": 700128,
+      "input_fingerprint": "bfad0f81cac93d958ba85da8e20fa5e938c6adcfa8c6763c4bf3604fb4e2aa50",
+      "time_ms": 0.344582,
+      "memory": {
+        "allocated": 41419776,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 128,
+      "repeat": 9,
+      "input_seed": 700128,
+      "input_fingerprint": "bfad0f81cac93d958ba85da8e20fa5e938c6adcfa8c6763c4bf3604fb4e2aa50",
+      "time_ms": 0.346353,
+      "memory": {
+        "allocated": 41419776,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 128,
+      "repeat": 10,
+      "input_seed": 700128,
+      "input_fingerprint": "bfad0f81cac93d958ba85da8e20fa5e938c6adcfa8c6763c4bf3604fb4e2aa50",
+      "time_ms": 0.368373,
+      "memory": {
+        "allocated": 41419776,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 128,
+      "repeat": 11,
+      "input_seed": 700128,
+      "input_fingerprint": "bfad0f81cac93d958ba85da8e20fa5e938c6adcfa8c6763c4bf3604fb4e2aa50",
+      "time_ms": 0.333893,
+      "memory": {
+        "allocated": 41419776,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 384,
+      "repeat": 0,
+      "input_seed": 700384,
+      "input_fingerprint": "302ae51009a0f318f65bd85b3c5fbd32ad79ff7e0502a25e7b50f1eca5a0fe8b",
+      "time_ms": 0.327673,
+      "memory": {
+        "allocated": 47249408,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 384,
+      "repeat": 1,
+      "input_seed": 700384,
+      "input_fingerprint": "302ae51009a0f318f65bd85b3c5fbd32ad79ff7e0502a25e7b50f1eca5a0fe8b",
+      "time_ms": 0.361783,
+      "memory": {
+        "allocated": 47249408,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 384,
+      "repeat": 2,
+      "input_seed": 700384,
+      "input_fingerprint": "302ae51009a0f318f65bd85b3c5fbd32ad79ff7e0502a25e7b50f1eca5a0fe8b",
+      "time_ms": 0.372033,
+      "memory": {
+        "allocated": 47249408,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 384,
+      "repeat": 3,
+      "input_seed": 700384,
+      "input_fingerprint": "302ae51009a0f318f65bd85b3c5fbd32ad79ff7e0502a25e7b50f1eca5a0fe8b",
+      "time_ms": 0.361713,
+      "memory": {
+        "allocated": 47249408,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 384,
+      "repeat": 4,
+      "input_seed": 700384,
+      "input_fingerprint": "302ae51009a0f318f65bd85b3c5fbd32ad79ff7e0502a25e7b50f1eca5a0fe8b",
+      "time_ms": 0.359363,
+      "memory": {
+        "allocated": 47249408,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 384,
+      "repeat": 5,
+      "input_seed": 700384,
+      "input_fingerprint": "302ae51009a0f318f65bd85b3c5fbd32ad79ff7e0502a25e7b50f1eca5a0fe8b",
+      "time_ms": 0.365553,
+      "memory": {
+        "allocated": 47249408,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 384,
+      "repeat": 6,
+      "input_seed": 700384,
+      "input_fingerprint": "302ae51009a0f318f65bd85b3c5fbd32ad79ff7e0502a25e7b50f1eca5a0fe8b",
+      "time_ms": 0.370093,
+      "memory": {
+        "allocated": 47249408,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 384,
+      "repeat": 7,
+      "input_seed": 700384,
+      "input_fingerprint": "302ae51009a0f318f65bd85b3c5fbd32ad79ff7e0502a25e7b50f1eca5a0fe8b",
+      "time_ms": 0.345563,
+      "memory": {
+        "allocated": 47249408,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 384,
+      "repeat": 8,
+      "input_seed": 700384,
+      "input_fingerprint": "302ae51009a0f318f65bd85b3c5fbd32ad79ff7e0502a25e7b50f1eca5a0fe8b",
+      "time_ms": 0.356343,
+      "memory": {
+        "allocated": 47249408,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 384,
+      "repeat": 9,
+      "input_seed": 700384,
+      "input_fingerprint": "302ae51009a0f318f65bd85b3c5fbd32ad79ff7e0502a25e7b50f1eca5a0fe8b",
+      "time_ms": 0.346633,
+      "memory": {
+        "allocated": 47249408,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 384,
+      "repeat": 10,
+      "input_seed": 700384,
+      "input_fingerprint": "302ae51009a0f318f65bd85b3c5fbd32ad79ff7e0502a25e7b50f1eca5a0fe8b",
+      "time_ms": 0.349103,
+      "memory": {
+        "allocated": 47249408,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 384,
+      "repeat": 11,
+      "input_seed": 700384,
+      "input_fingerprint": "302ae51009a0f318f65bd85b3c5fbd32ad79ff7e0502a25e7b50f1eca5a0fe8b",
+      "time_ms": 0.365843,
+      "memory": {
+        "allocated": 47249408,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 3072,
+      "repeat": 0,
+      "input_seed": 703072,
+      "input_fingerprint": "6df9b6c0b0d3f5df7b26f9b86606c106728d7ea6ad4edef6a9fb9c41d1a56cfc",
+      "time_ms": 0.876808,
+      "memory": {
+        "allocated": 113309696,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 3072,
+      "repeat": 1,
+      "input_seed": 703072,
+      "input_fingerprint": "6df9b6c0b0d3f5df7b26f9b86606c106728d7ea6ad4edef6a9fb9c41d1a56cfc",
+      "time_ms": 0.897387,
+      "memory": {
+        "allocated": 113309696,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 3072,
+      "repeat": 2,
+      "input_seed": 703072,
+      "input_fingerprint": "6df9b6c0b0d3f5df7b26f9b86606c106728d7ea6ad4edef6a9fb9c41d1a56cfc",
+      "time_ms": 0.967758,
+      "memory": {
+        "allocated": 113309696,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 3072,
+      "repeat": 3,
+      "input_seed": 703072,
+      "input_fingerprint": "6df9b6c0b0d3f5df7b26f9b86606c106728d7ea6ad4edef6a9fb9c41d1a56cfc",
+      "time_ms": 0.829258,
+      "memory": {
+        "allocated": 113309696,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 3072,
+      "repeat": 4,
+      "input_seed": 703072,
+      "input_fingerprint": "6df9b6c0b0d3f5df7b26f9b86606c106728d7ea6ad4edef6a9fb9c41d1a56cfc",
+      "time_ms": 0.939198,
+      "memory": {
+        "allocated": 113309696,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 3072,
+      "repeat": 5,
+      "input_seed": 703072,
+      "input_fingerprint": "6df9b6c0b0d3f5df7b26f9b86606c106728d7ea6ad4edef6a9fb9c41d1a56cfc",
+      "time_ms": 0.836617,
+      "memory": {
+        "allocated": 113309696,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 3072,
+      "repeat": 6,
+      "input_seed": 703072,
+      "input_fingerprint": "6df9b6c0b0d3f5df7b26f9b86606c106728d7ea6ad4edef6a9fb9c41d1a56cfc",
+      "time_ms": 0.919108,
+      "memory": {
+        "allocated": 113309696,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 3072,
+      "repeat": 7,
+      "input_seed": 703072,
+      "input_fingerprint": "6df9b6c0b0d3f5df7b26f9b86606c106728d7ea6ad4edef6a9fb9c41d1a56cfc",
+      "time_ms": 0.832717,
+      "memory": {
+        "allocated": 113309696,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 3072,
+      "repeat": 8,
+      "input_seed": 703072,
+      "input_fingerprint": "6df9b6c0b0d3f5df7b26f9b86606c106728d7ea6ad4edef6a9fb9c41d1a56cfc",
+      "time_ms": 0.924398,
+      "memory": {
+        "allocated": 113309696,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 3072,
+      "repeat": 9,
+      "input_seed": 703072,
+      "input_fingerprint": "6df9b6c0b0d3f5df7b26f9b86606c106728d7ea6ad4edef6a9fb9c41d1a56cfc",
+      "time_ms": 0.845447,
+      "memory": {
+        "allocated": 113309696,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 3072,
+      "repeat": 10,
+      "input_seed": 703072,
+      "input_fingerprint": "6df9b6c0b0d3f5df7b26f9b86606c106728d7ea6ad4edef6a9fb9c41d1a56cfc",
+      "time_ms": 0.932778,
+      "memory": {
+        "allocated": 113309696,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 3072,
+      "repeat": 11,
+      "input_seed": 703072,
+      "input_fingerprint": "6df9b6c0b0d3f5df7b26f9b86606c106728d7ea6ad4edef6a9fb9c41d1a56cfc",
+      "time_ms": 0.833168,
+      "memory": {
+        "allocated": 113309696,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 6144,
+      "repeat": 0,
+      "input_seed": 706144,
+      "input_fingerprint": "e21fcca3e23230f88c5a59217e98c3c83df4bc060aa3336ea3265d3ae4e930c8",
+      "time_ms": 1.593764,
+      "memory": {
+        "allocated": 188807168,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 6144,
+      "repeat": 1,
+      "input_seed": 706144,
+      "input_fingerprint": "e21fcca3e23230f88c5a59217e98c3c83df4bc060aa3336ea3265d3ae4e930c8",
+      "time_ms": 1.610613,
+      "memory": {
+        "allocated": 188807168,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 6144,
+      "repeat": 2,
+      "input_seed": 706144,
+      "input_fingerprint": "e21fcca3e23230f88c5a59217e98c3c83df4bc060aa3336ea3265d3ae4e930c8",
+      "time_ms": 1.594544,
+      "memory": {
+        "allocated": 188807168,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 6144,
+      "repeat": 3,
+      "input_seed": 706144,
+      "input_fingerprint": "e21fcca3e23230f88c5a59217e98c3c83df4bc060aa3336ea3265d3ae4e930c8",
+      "time_ms": 1.611994,
+      "memory": {
+        "allocated": 188807168,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 6144,
+      "repeat": 4,
+      "input_seed": 706144,
+      "input_fingerprint": "e21fcca3e23230f88c5a59217e98c3c83df4bc060aa3336ea3265d3ae4e930c8",
+      "time_ms": 1.604574,
+      "memory": {
+        "allocated": 188807168,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 6144,
+      "repeat": 5,
+      "input_seed": 706144,
+      "input_fingerprint": "e21fcca3e23230f88c5a59217e98c3c83df4bc060aa3336ea3265d3ae4e930c8",
+      "time_ms": 1.598044,
+      "memory": {
+        "allocated": 188807168,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 6144,
+      "repeat": 6,
+      "input_seed": 706144,
+      "input_fingerprint": "e21fcca3e23230f88c5a59217e98c3c83df4bc060aa3336ea3265d3ae4e930c8",
+      "time_ms": 1.609984,
+      "memory": {
+        "allocated": 188807168,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 6144,
+      "repeat": 7,
+      "input_seed": 706144,
+      "input_fingerprint": "e21fcca3e23230f88c5a59217e98c3c83df4bc060aa3336ea3265d3ae4e930c8",
+      "time_ms": 1.589873,
+      "memory": {
+        "allocated": 188807168,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 6144,
+      "repeat": 8,
+      "input_seed": 706144,
+      "input_fingerprint": "e21fcca3e23230f88c5a59217e98c3c83df4bc060aa3336ea3265d3ae4e930c8",
+      "time_ms": 1.613443,
+      "memory": {
+        "allocated": 188807168,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 6144,
+      "repeat": 9,
+      "input_seed": 706144,
+      "input_fingerprint": "e21fcca3e23230f88c5a59217e98c3c83df4bc060aa3336ea3265d3ae4e930c8",
+      "time_ms": 1.616093,
+      "memory": {
+        "allocated": 188807168,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 6144,
+      "repeat": 10,
+      "input_seed": 706144,
+      "input_fingerprint": "e21fcca3e23230f88c5a59217e98c3c83df4bc060aa3336ea3265d3ae4e930c8",
+      "time_ms": 1.598413,
+      "memory": {
+        "allocated": 188807168,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "card": "target",
+      "size": 6144,
+      "repeat": 11,
+      "input_seed": 706144,
+      "input_fingerprint": "e21fcca3e23230f88c5a59217e98c3c83df4bc060aa3336ea3265d3ae4e930c8",
+      "time_ms": 1.596714,
+      "memory": {
+        "allocated": 188807168,
+        "reserved": 994050048,
+        "max_allocated": 537005056,
+        "max_reserved": 994050048,
+        "device_free": 64041869312,
+        "device_total": 65796046848
+      }
+    }
+  ],
+  "selection": {
+    "capacity_sizes": [
+      256,
+      512,
+      1024,
+      2048,
+      4096,
+      8192
+    ],
+    "middle_candidates": [
+      {
+        "n": 1024,
+        "source_full_ms": 0.456209,
+        "source_half_ms": 0.35791799999999996,
+        "target_half_ms": 0.36317299999999997,
+        "optimistic_half_saving_ms": 0.09303600000000001
+      },
+      {
+        "n": 2048,
+        "source_full_ms": 0.63222,
+        "source_half_ms": 0.456209,
+        "target_half_ms": 0.4382185,
+        "optimistic_half_saving_ms": 0.17601100000000003
+      },
+      {
+        "n": 4096,
+        "source_full_ms": 1.126379,
+        "source_half_ms": 0.63222,
+        "target_half_ms": 0.620216,
+        "optimistic_half_saving_ms": 0.494159
+      }
+    ],
+    "selected_middle_n": 4096,
+    "selection_rule": "n=512 and n=8192 always; middle maximizes source_full(n)-max(source(n/2),target(n/2)); ties choose smaller n",
+    "selected_n": [
+      512,
+      4096,
+      8192
+    ],
+    "selected_quotas": {
+      "512": [
+        128,
+        256,
+        384
+      ],
+      "4096": [
+        1024,
+        2048,
+        3072
+      ],
+      "8192": [
+        2048,
+        4096,
+        6144
+      ]
+    },
+    "curve_medians_ms": {
+      "source/256": 0.359338,
+      "source/512": 0.35791799999999996,
+      "source/1024": 0.456209,
+      "source/2048": 0.63222,
+      "source/4096": 1.126379,
+      "source/8192": 2.0948725,
+      "target/256": 0.347318,
+      "target/512": 0.36317299999999997,
+      "target/1024": 0.4382185,
+      "target/2048": 0.620216,
+      "target/4096": 1.1331250000000002,
+      "target/8192": 2.1054779999999997
+    }
+  },
+  "memory_final_before_release": {
+    "allocated": 113309184,
+    "reserved": 994050048,
+    "max_allocated": 537005056,
+    "max_reserved": 994050048,
+    "device_free": 64041869312,
+    "device_total": 65796046848
+  },
+  "final_pool_stats": {
+    "K": 1,
+    "slot_bytes": 37810176,
+    "committed_bytes": 37810176,
+    "per_rank_capacity": {
+      "1": 1
+    },
+    "per_rank_allocated_bytes": {
+      "1": 37810176
+    },
+    "active_bytes": 0,
+    "cached_free_bytes": 37810176,
+    "local": {
+      "1": {
+        "pool_id": "curve-target-slot-rank1:f90ad774a6e0",
+        "capacity": 1,
+        "slot_bytes": 37810176,
+        "allocated_bytes": 37810176,
+        "free": 1,
+        "reserved": 0,
+        "ready": 0,
+        "in_use": 0,
+        "releasing": 0,
+        "acquisitions": 1,
+        "releases": 1,
+        "reuses": 0,
+        "max_concurrent_leases": 1,
+        "max_concurrent_uses": 1,
+        "distinct_layers_seen": 1,
+        "distinct_experts_seen": 1,
+        "backing_reallocations": 0,
+        "invariant_violations": 0
+      }
+    }
+  },
+  "memory_final": {
+    "allocated": 113309184,
+    "reserved": 994050048,
+    "max_allocated": 537005056,
+    "max_reserved": 994050048,
+    "device_free": 64041869312,
+    "device_total": 65796046848
+  }
+}

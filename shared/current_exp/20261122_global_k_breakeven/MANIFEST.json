@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-11-22T17:47:01+08:00",
+  "plan_commit": "091f01e5d6769f96b12d187828ba4006c245016e",
+  "previous_baseline": "b8320e5a842211132768c85d534f3ab28f91a153",
+  "branch": "main",
+  "host": "npu1-23",
+  "devices": ["davinci0", "davinci1"],
+  "image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "image_id": "sha256:618e95de519b050855cbc2ed469f608fae43f9fbecb74b6c237fc15d9d3f4e0d",
+  "image_digest": "sha256:0756b534a0379863c435ec8b7896ba17a18fccda2c8889326fb1dc9453de9be4",
+  "model": "/data_lib/data/models/glm-q",
+  "quantization": "ModelSlim W8A8 int8",
+  "layer": 49,
+  "logical_expert": 43,
+  "slot_bytes": 37810176,
+  "selected_n": [512, 4096, 8192],
+  "selected_q": {
+    "512": [128, 256, 384],
+    "4096": [1024, 2048, 3072],
+    "8192": [2048, 4096, 6144]
+  },
+  "formal_samples": 324,
+  "compute_curve_samples": 240,
+  "status": {
+    "compute_curves": "PASS_NPU",
+    "diagnostic_timing": "PASS_NPU",
+    "overlap_timeline": "PASS_NPU_DIAGNOSTIC",
+    "formal_pairing": "PASS_CORRECTNESS_NEGATIVE_PERFORMANCE",
+    "cpu_search_fixes": "PASS_CPU",
+    "slot_release_race": "PASS_CPU",
+    "confirmation": "NOT_RUN_NO_12_OF_12_POSITIVE_POINT"
+  },
+  "conclusion": "No Prefill break-even point in this round.",
+  "full_model_loaded": false,
+  "full_ttft_measured": false,
+  "containers_left_running": [],
+  "reproduce": "./reproduce.sh all"
+}

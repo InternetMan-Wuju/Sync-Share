@@ -1,0 +1,92 @@
+{
+  "scope": "diagnostic timeline with stage-level synchronization",
+  "samples": 18,
+  "stage_medians_ms": {
+    "6/cold": {
+      "source/ack_recv": 0.212342041015625,
+      "source/activation_send": 0.2842030029296875,
+      "source/control_send": 0.2589119873046875,
+      "source/convert_pack": 0.3760330810546875,
+      "source/diagnostic_unified": 2.6899420166015626,
+      "source/main_compute": 0.361623046875,
+      "source/refill": 0.0931409912109375,
+      "source/result_recv": 0.401782958984375,
+      "source/weight_send": 0.47160400390625,
+      "target/ack_send": 0.23908203125,
+      "target/activation_recv": 0.204260986328125,
+      "target/control_recv": 0.268092041015625,
+      "target/external_compute": 0.35481298828125,
+      "target/mark_ready": 0.068820068359375,
+      "target/release": 0.0697210693359375,
+      "target/result_send": 0.249552001953125,
+      "target/slot_acquire": 0.0274609375,
+      "target/weight_recv": 0.83901708984375
+    },
+    "6/existing": {
+      "source/ack_recv": 0.2410220947265625,
+      "source/activation_send": 0.2417119140625,
+      "source/control_send": 0.2272020263671875,
+      "source/diagnostic_unified": 1.8136650390625,
+      "source/main_compute": 0.3829039306640625,
+      "source/refill": 0.101551025390625,
+      "source/result_recv": 0.4289329833984375,
+      "target/ack_send": 0.2432120361328125,
+      "target/activation_recv": 0.2466119384765625,
+      "target/control_recv": 0.2371619873046875,
+      "target/external_compute": 0.385133056640625,
+      "target/release": 0.07527001953125,
+      "target/result_send": 0.276552978515625
+    },
+    "6/original": {
+      "source/ack_recv": 0.2586319580078125,
+      "source/control_send": 0.2278819580078125,
+      "source/diagnostic_unified": 1.0002779541015625,
+      "source/main_compute": 0.359593017578125,
+      "target/ack_send": 0.6585860595703125,
+      "target/control_recv": 0.2561519775390625
+    },
+    "512/cold": {
+      "source/ack_recv": 0.2209620361328125,
+      "source/activation_send": 0.3057430419921875,
+      "source/control_send": 0.2385419921875,
+      "source/convert_pack": 0.3907041015625,
+      "source/diagnostic_unified": 2.790923095703125,
+      "source/main_compute": 0.37189306640625,
+      "source/refill": 0.083010986328125,
+      "source/result_recv": 0.3956929931640625,
+      "source/weight_send": 0.4699739990234375,
+      "target/ack_send": 0.2392919921875,
+      "target/activation_recv": 0.2233819580078125,
+      "target/control_recv": 0.2304119873046875,
+      "target/external_compute": 0.3634329833984375,
+      "target/mark_ready": 0.0671510009765625,
+      "target/release": 0.06669091796875,
+      "target/result_send": 0.265761962890625,
+      "target/slot_acquire": 0.022469970703125,
+      "target/weight_recv": 0.8187169189453125
+    },
+    "512/existing": {
+      "source/ack_recv": 0.2371920166015625,
+      "source/activation_send": 0.239531982421875,
+      "source/control_send": 0.20623095703125,
+      "source/diagnostic_unified": 1.759544921875,
+      "source/main_compute": 0.377032958984375,
+      "source/refill": 0.098010986328125,
+      "source/result_recv": 0.3969139404296875,
+      "target/ack_send": 0.26681298828125,
+      "target/activation_recv": 0.2443619384765625,
+      "target/control_recv": 0.21848193359375,
+      "target/external_compute": 0.380302978515625,
+      "target/release": 0.06777001953125,
+      "target/result_send": 0.2429619140625
+    },
+    "512/original": {
+      "source/ack_recv": 0.241031982421875,
+      "source/control_send": 0.228260986328125,
+      "source/diagnostic_unified": 1.024968994140625,
+      "source/main_compute": 0.4147330322265625,
+      "target/ack_send": 0.729906005859375,
+      "target/control_recv": 0.2201610107421875
+    }
+  }
+}

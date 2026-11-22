@@ -1,0 +1,2241 @@
+{
+  "summary": {
+    "cases": 11,
+    "invalid_states": 0,
+    "candidate_omissions_fixed": 0,
+    "pruning_omissions_fixed": 1,
+    "legacy_misses": 8,
+    "max_fixed_gap_vs_oracle": 15.0,
+    "cost_per_copy_toy_units": 2.0,
+    "note": "Toy integer scores only. Search time is reported per case below; no cross-case production-latency p95 is claimed."
+  },
+  "cases": [
+    {
+      "name": "q4_candidate_fix",
+      "layer": 49,
+      "counts": [
+        [
+          12
+        ],
+        [
+          4
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        }
+      ],
+      "active_expert_cost": 0.25,
+      "baseline": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.163271,
+            0.148102
+          ],
+          "median_ms": 0.1556865
+        }
+      },
+      "complete_candidate_space": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.345874,
+            0.338213
+          ],
+          "median_ms": 0.3420435
+        }
+      },
+      "fixed_exhaustive": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.408784,
+            0.407864,
+            0.407714
+          ],
+          "median_ms": 0.407864
+        }
+      },
+      "fixed_bounded": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.590186,
+            0.609206,
+            0.550985,
+            0.547275,
+            0.539905,
+            0.541386,
+            0.540075,
+            0.543525,
+            0.549675,
+            0.536215,
+            0.532075,
+            0.521565
+          ],
+          "median_ms": 0.5424555
+        },
+        "stats": {
+          "quota_mode": "intersection",
+          "exhaustive": false,
+          "beam_width": 64,
+          "generated": 6,
+          "deduplicated": 0,
+          "expanded": 2,
+          "max_frontier": 7,
+          "baseline_total": 12.25,
+          "safety_margin": 0.0,
+          "strict_threshold": 12.25,
+          "selected_total": 10.5,
+          "strictly_profitable": true,
+          "final_state_signatures": 7
+        }
+      },
+      "legacy_bounded": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.169521,
+            0.165852,
+            0.190312
+          ],
+          "median_ms": 0.169521
+        }
+      },
+      "missed_profit_vs_oracle": 0.0,
+      "candidate_omission": false,
+      "pruning_omission": false,
+      "legacy_omission": true,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "multi_action_hot_pair",
+      "layer": 50,
+      "counts": [
+        [
+          40
+        ],
+        [
+          39
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 2,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        },
+        {
+          "owner": 3,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        }
+      ],
+      "active_expert_cost": 0.25,
+      "baseline": {
+        "score": 40.25,
+        "rank_loads": [
+          40,
+          39,
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          20,
+          20,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            121.904587,
+            121.442043
+          ],
+          "median_ms": 121.673315
+        }
+      },
+      "complete_candidate_space": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          21,
+          20,
+          19
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 18,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            788.089245,
+            790.81414
+          ],
+          "median_ms": 789.4516925
+        }
+      },
+      "fixed_exhaustive": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          21,
+          20,
+          19
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 18,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            79.559981,
+            79.31316,
+            79.156307
+          ],
+          "median_ms": 79.31316
+        }
+      },
+      "fixed_bounded": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          21,
+          20,
+          19
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 18,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            25.386113,
+            25.310422,
+            25.345733,
+            25.317012,
+            25.233612,
+            25.264372,
+            25.249831,
+            25.346673,
+            25.381483,
+            25.257142,
+            25.314402,
+            25.329293
+          ],
+          "median_ms": 25.315707
+        },
+        "stats": {
+          "quota_mode": "intersection",
+          "exhaustive": false,
+          "beam_width": 4,
+          "generated": 84,
+          "deduplicated": 3,
+          "expanded": 6,
+          "max_frontier": 4,
+          "baseline_total": 40.25,
+          "safety_margin": 0.0,
+          "strict_threshold": 40.25,
+          "selected_total": 25.25,
+          "strictly_profitable": true,
+          "final_state_signatures": 4
+        }
+      },
+      "legacy_bounded": {
+        "score": 25.5,
+        "rank_loads": [
+          20,
+          20,
+          21,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 20,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            3.967348,
+            3.922677,
+            3.917768
+          ],
+          "median_ms": 3.922677
+        }
+      },
+      "missed_profit_vs_oracle": 0.0,
+      "candidate_omission": false,
+      "pruning_omission": false,
+      "legacy_omission": true,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "beam_pruning_pair",
+      "layer": 50,
+      "counts": [
+        [
+          40
+        ],
+        [
+          39
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 2,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        },
+        {
+          "owner": 3,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        }
+      ],
+      "active_expert_cost": 0.25,
+      "baseline": {
+        "score": 40.25,
+        "rank_loads": [
+          40,
+          39,
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          20,
+          20,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            121.11437,
+            121.123129
+          ],
+          "median_ms": 121.1187495
+        }
+      },
+      "complete_candidate_space": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          21,
+          20,
+          19
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 18,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            789.509508,
+            783.726683
+          ],
+          "median_ms": 786.6180955
+        }
+      },
+      "fixed_exhaustive": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          21,
+          20,
+          19
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 18,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            79.39457,
+            79.498371,
+            79.48396
+          ],
+          "median_ms": 79.48396
+        }
+      },
+      "fixed_bounded": {
+        "score": 40.25,
+        "rank_loads": [
+          40,
+          39,
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            14.727301,
+            14.760121,
+            14.745561,
+            14.778722,
+            14.71205,
+            14.748302,
+            14.71578,
+            14.714211,
+            14.692101,
+            14.718721,
+            14.716791,
+            14.69934
+          ],
+          "median_ms": 14.717756000000001
+        },
+        "stats": {
+          "quota_mode": "intersection",
+          "exhaustive": false,
+          "beam_width": 1,
+          "generated": 48,
+          "deduplicated": 0,
+          "expanded": 3,
+          "max_frontier": 1,
+          "baseline_total": 40.25,
+          "safety_margin": 0.0,
+          "strict_threshold": 40.25,
+          "selected_total": 40.25,
+          "strictly_profitable": false,
+          "final_state_signatures": 1
+        }
+      },
+      "legacy_bounded": {
+        "score": 40.25,
+        "rank_loads": [
+          40,
+          39,
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            2.16805,
+            2.135541,
+            2.12214
+          ],
+          "median_ms": 2.135541
+        }
+      },
+      "missed_profit_vs_oracle": 15.0,
+      "candidate_omission": false,
+      "pruning_omission": true,
+      "legacy_omission": true,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "wrong_expert",
+      "layer": 49,
+      "counts": [
+        [
+          12
+        ],
+        [
+          4
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": 9,
+          "layer": 49,
+          "ready": true,
+          "busy": false
+        }
+      ],
+      "active_expert_cost": 0.25,
+      "baseline": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.146352,
+            0.139681
+          ],
+          "median_ms": 0.1430165
+        }
+      },
+      "complete_candidate_space": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.330144,
+            0.330313
+          ],
+          "median_ms": 0.33022850000000004
+        }
+      },
+      "fixed_exhaustive": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.397364,
+            0.395584,
+            0.395583
+          ],
+          "median_ms": 0.395584
+        }
+      },
+      "fixed_bounded": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.525975,
+            0.513335,
+            0.510985,
+            0.518585,
+            0.507385,
+            0.508325,
+            0.507415,
+            0.508594,
+            0.507505,
+            0.506495,
+            0.507725,
+            0.519035
+          ],
+          "median_ms": 0.5084595000000001
+        },
+        "stats": {
+          "quota_mode": "intersection",
+          "exhaustive": false,
+          "beam_width": 64,
+          "generated": 6,
+          "deduplicated": 0,
+          "expanded": 2,
+          "max_frontier": 7,
+          "baseline_total": 12.25,
+          "safety_margin": 0.0,
+          "strict_threshold": 12.25,
+          "selected_total": 10.5,
+          "strictly_profitable": true,
+          "final_state_signatures": 7
+        }
+      },
+      "legacy_bounded": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.162811,
+            0.161862,
+            0.160581
+          ],
+          "median_ms": 0.161862
+        }
+      },
+      "missed_profit_vs_oracle": 0.0,
+      "candidate_omission": false,
+      "pruning_omission": false,
+      "legacy_omission": true,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "busy_slot",
+      "layer": 49,
+      "counts": [
+        [
+          9
+        ],
+        [
+          8
+        ],
+        [
+          1
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 2,
+          "expert": 0,
+          "layer": 49,
+          "ready": true,
+          "busy": true
+        }
+      ],
+      "active_expert_cost": 0.25,
+      "baseline": {
+        "score": 9.25,
+        "rank_loads": [
+          9,
+          8,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 9.25,
+        "rank_loads": [
+          9,
+          8,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.0202,
+            0.01891
+          ],
+          "median_ms": 0.019555
+        }
+      },
+      "complete_candidate_space": {
+        "score": 9.25,
+        "rank_loads": [
+          9,
+          8,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.04899,
+            0.055971
+          ],
+          "median_ms": 0.0524805
+        }
+      },
+      "fixed_exhaustive": {
+        "score": 9.25,
+        "rank_loads": [
+          9,
+          8,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.050111,
+            0.04958,
+            0.04929
+          ],
+          "median_ms": 0.04958
+        }
+      },
+      "fixed_bounded": {
+        "score": 9.25,
+        "rank_loads": [
+          9,
+          8,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.078651,
+            0.076411,
+            0.076201,
+            0.07524,
+            0.075251,
+            0.074571,
+            0.07424,
+            0.075031,
+            0.074571,
+            0.074801,
+            0.07467,
+            0.074271
+          ],
+          "median_ms": 0.07491600000000001
+        },
+        "stats": {
+          "quota_mode": "intersection",
+          "exhaustive": false,
+          "beam_width": 64,
+          "generated": 0,
+          "deduplicated": 0,
+          "expanded": 2,
+          "max_frontier": 1,
+          "baseline_total": 9.25,
+          "safety_margin": 0.0,
+          "strict_threshold": 9.25,
+          "selected_total": 9.25,
+          "strictly_profitable": false,
+          "final_state_signatures": 1
+        }
+      },
+      "legacy_bounded": {
+        "score": 9.25,
+        "rank_loads": [
+          9,
+          8,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.07438,
+            0.073921,
+            0.073381
+          ],
+          "median_ms": 0.073921
+        }
+      },
+      "missed_profit_vs_oracle": 0.0,
+      "candidate_omission": false,
+      "pruning_omission": false,
+      "legacy_omission": false,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "partial_rank_owners",
+      "layer": 49,
+      "counts": [
+        [
+          40
+        ],
+        [
+          39
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 2,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        },
+        {
+          "owner": 3,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        }
+      ],
+      "active_expert_cost": 0.25,
+      "baseline": {
+        "score": 40.25,
+        "rank_loads": [
+          40,
+          39,
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          20,
+          20,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            120.892788,
+            121.099259
+          ],
+          "median_ms": 120.9960235
+        }
+      },
+      "complete_candidate_space": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          21,
+          20,
+          19
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 18,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            783.879354,
+            784.167286
+          ],
+          "median_ms": 784.02332
+        }
+      },
+      "fixed_exhaustive": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          21,
+          20,
+          19
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 18,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            78.746054,
+            78.796244,
+            78.898726
+          ],
+          "median_ms": 78.796244
+        }
+      },
+      "fixed_bounded": {
+        "score": 25.25,
+        "rank_loads": [
+          21,
+          21,
+          20,
+          19
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 18,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            86.167415,
+            85.952983,
+            85.823522,
+            85.817811,
+            85.886462,
+            85.705111,
+            85.801921,
+            85.60525,
+            85.74707,
+            85.669541,
+            85.481208,
+            85.397547
+          ],
+          "median_ms": 85.7744955
+        },
+        "stats": {
+          "quota_mode": "intersection",
+          "exhaustive": false,
+          "beam_width": 32,
+          "generated": 294,
+          "deduplicated": 110,
+          "expanded": 25,
+          "max_frontier": 32,
+          "baseline_total": 40.25,
+          "safety_margin": 0.0,
+          "strict_threshold": 40.25,
+          "selected_total": 25.25,
+          "strictly_profitable": true,
+          "final_state_signatures": 32
+        }
+      },
+      "legacy_bounded": {
+        "score": 25.5,
+        "rank_loads": [
+          20,
+          20,
+          21,
+          20
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 20,
+            "copy": true
+          },
+          {
+            "src_rank": 1,
+            "expert": 0,
+            "dst_slot": 1,
+            "q": 19,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            10.37818,
+            10.330909,
+            10.297448
+          ],
+          "median_ms": 10.330909
+        }
+      },
+      "missed_profit_vs_oracle": 0.0,
+      "candidate_omission": false,
+      "pruning_omission": false,
+      "legacy_omission": true,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "zero_profit",
+      "layer": 49,
+      "counts": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        }
+      ],
+      "active_expert_cost": 0.25,
+      "baseline": {
+        "score": 1.25,
+        "rank_loads": [
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 1.25,
+        "rank_loads": [
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.03207,
+            0.0299
+          ],
+          "median_ms": 0.030985
+        }
+      },
+      "complete_candidate_space": {
+        "score": 1.25,
+        "rank_loads": [
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.058081,
+            0.05765
+          ],
+          "median_ms": 0.0578655
+        }
+      },
+      "fixed_exhaustive": {
+        "score": 1.25,
+        "rank_loads": [
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.062701,
+            0.06166,
+            0.062051
+          ],
+          "median_ms": 0.062051
+        }
+      },
+      "fixed_bounded": {
+        "score": 1.25,
+        "rank_loads": [
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.107181,
+            0.099561,
+            0.098321,
+            0.096221,
+            0.096401,
+            0.095981,
+            0.09483,
+            0.102611,
+            0.095661,
+            0.095951,
+            0.095251,
+            0.094691
+          ],
+          "median_ms": 0.09610099999999999
+        },
+        "stats": {
+          "quota_mode": "intersection",
+          "exhaustive": false,
+          "beam_width": 64,
+          "generated": 2,
+          "deduplicated": 0,
+          "expanded": 2,
+          "max_frontier": 2,
+          "baseline_total": 1.25,
+          "safety_margin": 0.0,
+          "strict_threshold": 1.25,
+          "selected_total": 1.25,
+          "strictly_profitable": false,
+          "final_state_signatures": 2
+        }
+      },
+      "legacy_bounded": {
+        "score": 1.25,
+        "rank_loads": [
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.092261,
+            0.091951,
+            0.092461
+          ],
+          "median_ms": 0.092261
+        }
+      },
+      "missed_profit_vs_oracle": 0.0,
+      "candidate_omission": false,
+      "pruning_omission": false,
+      "legacy_omission": false,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "zero_net_saving_tie",
+      "layer": 49,
+      "counts": [
+        [
+          4
+        ],
+        [
+          0
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": null,
+          "layer": null,
+          "ready": false,
+          "busy": false
+        }
+      ],
+      "active_expert_cost": 0.0,
+      "baseline": {
+        "score": 4.0,
+        "rank_loads": [
+          4,
+          0
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 4.0,
+        "rank_loads": [
+          4,
+          0
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.0645,
+            0.057701
+          ],
+          "median_ms": 0.0611005
+        }
+      },
+      "complete_candidate_space": {
+        "score": 4.0,
+        "rank_loads": [
+          4,
+          0
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.114701,
+            0.115321
+          ],
+          "median_ms": 0.115011
+        }
+      },
+      "fixed_exhaustive": {
+        "score": 4.0,
+        "rank_loads": [
+          4,
+          0
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.178702,
+            0.178162,
+            0.176672
+          ],
+          "median_ms": 0.178162
+        }
+      },
+      "fixed_bounded": {
+        "score": 4.0,
+        "rank_loads": [
+          4,
+          0
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.270643,
+            0.263053,
+            0.261252,
+            0.259793,
+            0.259532,
+            0.257553,
+            0.258102,
+            0.257862,
+            0.258243,
+            0.258642,
+            0.267443,
+            0.258262
+          ],
+          "median_ms": 0.25908699999999996
+        },
+        "stats": {
+          "quota_mode": "intersection",
+          "exhaustive": false,
+          "beam_width": 64,
+          "generated": 4,
+          "deduplicated": 0,
+          "expanded": 2,
+          "max_frontier": 5,
+          "baseline_total": 4.0,
+          "safety_margin": 0.0,
+          "strict_threshold": 4.0,
+          "selected_total": 4.0,
+          "strictly_profitable": false,
+          "final_state_signatures": 5
+        }
+      },
+      "legacy_bounded": {
+        "score": 4.0,
+        "rank_loads": [
+          4,
+          0
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.163361,
+            0.162552,
+            0.161372
+          ],
+          "median_ms": 0.162552
+        }
+      },
+      "missed_profit_vs_oracle": 0.0,
+      "candidate_omission": false,
+      "pruning_omission": false,
+      "legacy_omission": false,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "existing_replica",
+      "layer": 49,
+      "counts": [
+        [
+          40
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": 0,
+          "layer": 49,
+          "ready": true,
+          "busy": false
+        }
+      ],
+      "active_expert_cost": 0.25,
+      "baseline": {
+        "score": 40.25,
+        "rank_loads": [
+          40,
+          1,
+          1
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 21.25,
+        "rank_loads": [
+          21,
+          20,
+          1
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": false
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.493135,
+            0.479345
+          ],
+          "median_ms": 0.48624
+        }
+      },
+      "complete_candidate_space": {
+        "score": 21.25,
+        "rank_loads": [
+          21,
+          20,
+          1
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": false
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            2.911068,
+            2.903538
+          ],
+          "median_ms": 2.907303
+        }
+      },
+      "fixed_exhaustive": {
+        "score": 21.25,
+        "rank_loads": [
+          21,
+          20,
+          1
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": false
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            1.310312,
+            1.298873,
+            1.296272
+          ],
+          "median_ms": 1.298873
+        }
+      },
+      "fixed_bounded": {
+        "score": 21.25,
+        "rank_loads": [
+          21,
+          20,
+          1
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 19,
+            "copy": false
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            1.469194,
+            1.478114,
+            1.465444,
+            1.466204,
+            1.512045,
+            1.477054,
+            1.485904,
+            1.476284,
+            1.474254,
+            1.481574,
+            1.481725,
+            1.474304
+          ],
+          "median_ms": 1.476669
+        },
+        "stats": {
+          "quota_mode": "intersection",
+          "exhaustive": false,
+          "beam_width": 64,
+          "generated": 7,
+          "deduplicated": 0,
+          "expanded": 2,
+          "max_frontier": 7,
+          "baseline_total": 40.25,
+          "safety_margin": 0.0,
+          "strict_threshold": 40.25,
+          "selected_total": 21.25,
+          "strictly_profitable": true,
+          "final_state_signatures": 7
+        }
+      },
+      "legacy_bounded": {
+        "score": 21.5,
+        "rank_loads": [
+          20,
+          21,
+          1
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 20,
+            "copy": false
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.334833,
+            0.331753,
+            0.328563
+          ],
+          "median_ms": 0.331753
+        }
+      },
+      "missed_profit_vs_oracle": 0.0,
+      "candidate_omission": false,
+      "pruning_omission": false,
+      "legacy_omission": true,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "same_expert_different_layer_49",
+      "layer": 49,
+      "counts": [
+        [
+          12
+        ],
+        [
+          4
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": 0,
+          "layer": 48,
+          "ready": true,
+          "busy": false
+        }
+      ],
+      "active_expert_cost": 0.25,
+      "baseline": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.163752,
+            0.140621
+          ],
+          "median_ms": 0.1521865
+        }
+      },
+      "complete_candidate_space": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.333053,
+            0.330893
+          ],
+          "median_ms": 0.33197299999999996
+        }
+      },
+      "fixed_exhaustive": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.394894,
+            0.394173,
+            0.394144
+          ],
+          "median_ms": 0.394173
+        }
+      },
+      "fixed_bounded": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.516535,
+            0.518985,
+            0.507675,
+            0.511465,
+            0.508675,
+            0.508075,
+            0.507074,
+            0.506045,
+            0.515485,
+            0.505815,
+            0.506375,
+            0.505125
+          ],
+          "median_ms": 0.5078750000000001
+        },
+        "stats": {
+          "quota_mode": "intersection",
+          "exhaustive": false,
+          "beam_width": 64,
+          "generated": 6,
+          "deduplicated": 0,
+          "expanded": 2,
+          "max_frontier": 7,
+          "baseline_total": 12.25,
+          "safety_margin": 0.0,
+          "strict_threshold": 12.25,
+          "selected_total": 10.5,
+          "strictly_profitable": true,
+          "final_state_signatures": 7
+        }
+      },
+      "legacy_bounded": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.163542,
+            0.163122,
+            0.162391
+          ],
+          "median_ms": 0.163122
+        }
+      },
+      "missed_profit_vs_oracle": 0.0,
+      "candidate_omission": false,
+      "pruning_omission": false,
+      "legacy_omission": true,
+      "oracle_matches_complete_score": true
+    },
+    {
+      "name": "same_expert_different_layer_50",
+      "layer": 50,
+      "counts": [
+        [
+          12
+        ],
+        [
+          4
+        ]
+      ],
+      "slots": [
+        {
+          "owner": 1,
+          "expert": 0,
+          "layer": 49,
+          "ready": true,
+          "busy": false
+        }
+      ],
+      "active_expert_cost": 0.25,
+      "baseline": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        }
+      },
+      "oracle": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.147562,
+            0.139591
+          ],
+          "median_ms": 0.1435765
+        }
+      },
+      "complete_candidate_space": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.332973,
+            0.340784
+          ],
+          "median_ms": 0.33687849999999997
+        }
+      },
+      "fixed_exhaustive": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.395744,
+            0.397973,
+            0.397174
+          ],
+          "median_ms": 0.397174
+        }
+      },
+      "fixed_bounded": {
+        "score": 10.5,
+        "rank_loads": [
+          8,
+          8
+        ],
+        "actions": [
+          {
+            "src_rank": 0,
+            "expert": 0,
+            "dst_slot": 0,
+            "q": 4,
+            "copy": true
+          }
+        ],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.513685,
+            0.510065,
+            0.509755,
+            0.510325,
+            0.507725,
+            0.508464,
+            0.507935,
+            0.512105,
+            0.508675,
+            0.507155,
+            0.508415,
+            0.508265
+          ],
+          "median_ms": 0.5085695
+        },
+        "stats": {
+          "quota_mode": "intersection",
+          "exhaustive": false,
+          "beam_width": 64,
+          "generated": 6,
+          "deduplicated": 0,
+          "expanded": 2,
+          "max_frontier": 7,
+          "baseline_total": 12.25,
+          "safety_margin": 0.0,
+          "strict_threshold": 12.25,
+          "selected_total": 10.5,
+          "strictly_profitable": true,
+          "final_state_signatures": 7
+        }
+      },
+      "legacy_bounded": {
+        "score": 12.25,
+        "rank_loads": [
+          12,
+          4
+        ],
+        "actions": [],
+        "legal": {
+          "legal": true,
+          "errors": []
+        },
+        "time": {
+          "raw_ms": [
+            0.164031,
+            0.163592,
+            0.162391
+          ],
+          "median_ms": 0.163592
+        }
+      },
+      "missed_profit_vs_oracle": 0.0,
+      "candidate_omission": false,
+      "pruning_omission": false,
+      "legacy_omission": true,
+      "oracle_matches_complete_score": true
+    }
+  ]
+}

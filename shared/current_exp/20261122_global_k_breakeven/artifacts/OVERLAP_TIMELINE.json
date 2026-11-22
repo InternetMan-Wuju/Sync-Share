@@ -1,0 +1,61 @@
+{
+  "scope": "same-host diagnostic timeline, existing replica, one sample per n",
+  "records": [
+    {
+      "n": 512,
+      "q": 256,
+      "source_compute_ms": 1.108395,
+      "target_compute_ms": 1.586321,
+      "overlap_ms": 1.108395,
+      "source_relative_start_ms": 0.233323,
+      "source_relative_end_ms": 1.341718,
+      "target_compute_start_ns": 935285528314692,
+      "target_compute_end_ns": 935285529901013,
+      "whole_existing_ms": 7.185597,
+      "source_memory": {
+        "allocated": 88209920,
+        "reserved": 169869312,
+        "max_allocated": 125376000,
+        "max_reserved": 169869312,
+        "device_free": 64596586496,
+        "device_total": 65787658240
+      },
+      "target_memory": {
+        "allocated": 50396672,
+        "reserved": 113246208,
+        "max_allocated": 85468160,
+        "max_reserved": 113246208,
+        "device_free": 64926855168,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "n": 8192,
+      "q": 4096,
+      "source_compute_ms": 1.45964,
+      "target_compute_ms": 1.676533,
+      "overlap_ms": 1.45964,
+      "source_relative_start_ms": 0.134991,
+      "source_relative_end_ms": 1.594631,
+      "target_compute_start_ns": 935285545648415,
+      "target_compute_end_ns": 935285547324948,
+      "whole_existing_ms": 2.379002,
+      "source_memory": {
+        "allocated": 276953600,
+        "reserved": 476053504,
+        "max_allocated": 399675392,
+        "max_reserved": 476053504,
+        "device_free": 64290402304,
+        "device_total": 65787658240
+      },
+      "target_memory": {
+        "allocated": 239140352,
+        "reserved": 387973120,
+        "max_allocated": 355570176,
+        "max_reserved": 387973120,
+        "device_free": 64652128256,
+        "device_total": 65796046848
+      }
+    }
+  ]
+}

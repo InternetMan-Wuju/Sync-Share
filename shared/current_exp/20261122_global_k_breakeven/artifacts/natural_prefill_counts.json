@@ -1,0 +1,22 @@
+{
+  "evidence_class": "old NPU route aggregate from 2026-11-02; reused only for frequency context",
+  "layer": 49,
+  "expert": 43,
+  "prefill_steps_per_window": 4,
+  "windows": [
+    {
+      "kind": "calibration",
+      "file": "shared/current_exp/20261102_load_balance_e0/evidence/route_analysis_calibration.json",
+      "sha256": "fa287b0f7ab10685c9431f13d4bb862f41e566114c59df6cff3f6eb154fbd5a5",
+      "tasks_in_4_steps": 4062,
+      "average_per_step": 1015.5
+    },
+    {
+      "kind": "holdout",
+      "file": "shared/current_exp/20261102_load_balance_e0/evidence/route_analysis_holdout.json",
+      "sha256": "b825deb63f1fae32a5ae5c5f1c42afb8ff1ba4a28d21c250a09040130d2cb4f6",
+      "tasks_in_4_steps": 4066,
+      "average_per_step": 1016.5
+    }
+  ]
+}

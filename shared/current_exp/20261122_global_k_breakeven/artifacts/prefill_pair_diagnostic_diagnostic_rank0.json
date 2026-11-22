@@ -1,0 +1,945 @@
+{
+  "rank": 0,
+  "role": "source",
+  "timing_mode": "diagnostic",
+  "tag": "diagnostic",
+  "points": [
+    [
+      6,
+      3
+    ],
+    [
+      512,
+      256
+    ]
+  ],
+  "groups_per_point": 3,
+  "input_seeds": [
+    810000,
+    810001
+  ],
+  "scope": "two-rank manual expert-subchain Prefill replay; not full MoE layer or service TTFT",
+  "samples": [
+    {
+      "sample_id": "diagnostic-6-3-g00-original",
+      "group": 0,
+      "seed_id": 0,
+      "input_seed": 810060,
+      "input_fingerprint": "645f5f3902e493d399e9c5803799985ea01caca5d0fc56a753d52da2005dfd12",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "mode": "original",
+      "n": 6,
+      "q": 3,
+      "main_n": 3,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.493114013671875,
+        "main_compute": 0.463884033203125,
+        "ack_recv": 0.2586319580078125,
+        "diagnostic_unified": 1.3997919921875
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 75959808,
+        "reserved": 174063616,
+        "max_allocated": 109552640,
+        "max_reserved": 174063616,
+        "device_free": 64589004800,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-6-3-g00-cold",
+      "group": 0,
+      "seed_id": 0,
+      "input_seed": 810060,
+      "input_fingerprint": "645f5f3902e493d399e9c5803799985ea01caca5d0fc56a753d52da2005dfd12",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "mode": "cold",
+      "n": 6,
+      "q": 3,
+      "main_n": 3,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.28577197265625,
+        "convert_pack": 0.4641439208984375,
+        "weight_send": 0.494384033203125,
+        "activation_send": 0.3022030029296875,
+        "main_compute": 0.3971329345703125,
+        "result_recv": 0.477833984375,
+        "refill": 0.231842041015625,
+        "ack_recv": 0.247281982421875,
+        "diagnostic_unified": 3.223056884765625
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 75997184,
+        "reserved": 174063616,
+        "max_allocated": 109590016,
+        "max_reserved": 174063616,
+        "device_free": 64589004800,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-6-3-g00-existing",
+      "group": 0,
+      "seed_id": 0,
+      "input_seed": 810060,
+      "input_fingerprint": "645f5f3902e493d399e9c5803799985ea01caca5d0fc56a753d52da2005dfd12",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "mode": "existing",
+      "n": 6,
+      "q": 3,
+      "main_n": 3,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.2272020263671875,
+        "activation_send": 0.2491729736328125,
+        "main_compute": 0.35989306640625,
+        "result_recv": 0.4289329833984375,
+        "refill": 0.1118809814453125,
+        "ack_recv": 0.225862060546875,
+        "diagnostic_unified": 1.8067550048828125
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": {
+        "source_convert_pack_send_ms": 0.470343994140625
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 75997184,
+        "reserved": 174063616,
+        "max_allocated": 109590016,
+        "max_reserved": 174063616,
+        "device_free": 64589004800,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-6-3-g01-original",
+      "group": 1,
+      "seed_id": 1,
+      "input_seed": 810062,
+      "input_fingerprint": "455a0d5e9a886b463a1d51b0f90b7e5009b9a436549d6eb1a892de431cf3f53e",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "mode": "original",
+      "n": 6,
+      "q": 3,
+      "main_n": 3,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.2278819580078125,
+        "main_compute": 0.3509930419921875,
+        "ack_recv": 0.286762939453125,
+        "diagnostic_unified": 1.0002779541015625
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 76034048,
+        "reserved": 174063616,
+        "max_allocated": 109626880,
+        "max_reserved": 174063616,
+        "device_free": 64589004800,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-6-3-g01-existing",
+      "group": 1,
+      "seed_id": 1,
+      "input_seed": 810062,
+      "input_fingerprint": "455a0d5e9a886b463a1d51b0f90b7e5009b9a436549d6eb1a892de431cf3f53e",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "mode": "existing",
+      "n": 6,
+      "q": 3,
+      "main_n": 3,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.218362060546875,
+        "activation_send": 0.2417119140625,
+        "main_compute": 0.5664840087890625,
+        "result_recv": 0.2752720947265625,
+        "refill": 0.101551025390625,
+        "ack_recv": 0.2410220947265625,
+        "diagnostic_unified": 1.898445068359375
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": {
+        "source_convert_pack_send_ms": 0.438873046875
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 75997184,
+        "reserved": 174063616,
+        "max_allocated": 109626880,
+        "max_reserved": 174063616,
+        "device_free": 64589004800,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-6-3-g01-cold",
+      "group": 1,
+      "seed_id": 1,
+      "input_seed": 810062,
+      "input_fingerprint": "455a0d5e9a886b463a1d51b0f90b7e5009b9a436549d6eb1a892de431cf3f53e",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "mode": "cold",
+      "n": 6,
+      "q": 3,
+      "main_n": 3,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.2589119873046875,
+        "convert_pack": 0.3692139892578125,
+        "weight_send": 0.47160400390625,
+        "activation_send": 0.2422020263671875,
+        "main_compute": 0.3611729736328125,
+        "result_recv": 0.401782958984375,
+        "refill": 0.0879210205078125,
+        "ack_recv": 0.20927197265625,
+        "diagnostic_unified": 2.6899420166015626
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 75997184,
+        "reserved": 174063616,
+        "max_allocated": 109626880,
+        "max_reserved": 174063616,
+        "device_free": 64589004800,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-6-3-g02-cold",
+      "group": 2,
+      "seed_id": 0,
+      "input_seed": 810060,
+      "input_fingerprint": "645f5f3902e493d399e9c5803799985ea01caca5d0fc56a753d52da2005dfd12",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "mode": "cold",
+      "n": 6,
+      "q": 3,
+      "main_n": 3,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.2454820556640625,
+        "convert_pack": 0.3760330810546875,
+        "weight_send": 0.4569339599609375,
+        "activation_send": 0.2842030029296875,
+        "main_compute": 0.361623046875,
+        "result_recv": 0.353623046875,
+        "refill": 0.0931409912109375,
+        "ack_recv": 0.212342041015625,
+        "diagnostic_unified": 2.6461519775390623
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 75997184,
+        "reserved": 174063616,
+        "max_allocated": 109626880,
+        "max_reserved": 174063616,
+        "device_free": 64589004800,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-6-3-g02-original",
+      "group": 2,
+      "seed_id": 0,
+      "input_seed": 810060,
+      "input_fingerprint": "645f5f3902e493d399e9c5803799985ea01caca5d0fc56a753d52da2005dfd12",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "mode": "original",
+      "n": 6,
+      "q": 3,
+      "main_n": 3,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.208220947265625,
+        "main_compute": 0.359593017578125,
+        "ack_recv": 0.224302001953125,
+        "diagnostic_unified": 0.8973580322265625
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 75959808,
+        "reserved": 174063616,
+        "max_allocated": 109626880,
+        "max_reserved": 174063616,
+        "device_free": 64589004800,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-6-3-g02-existing",
+      "group": 2,
+      "seed_id": 0,
+      "input_seed": 810060,
+      "input_fingerprint": "645f5f3902e493d399e9c5803799985ea01caca5d0fc56a753d52da2005dfd12",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "mode": "existing",
+      "n": 6,
+      "q": 3,
+      "main_n": 3,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.2346119384765625,
+        "activation_send": 0.2244820556640625,
+        "main_compute": 0.3829039306640625,
+        "result_recv": 0.430262939453125,
+        "refill": 0.0857099609375,
+        "ack_recv": 0.256011962890625,
+        "diagnostic_unified": 1.8136650390625
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": {
+        "source_convert_pack_send_ms": 0.4491929931640625
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 36864,
+      "result_payload_bytes": 36864,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 75997184,
+        "reserved": 174063616,
+        "max_allocated": 109626880,
+        "max_reserved": 174063616,
+        "device_free": 64589004800,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-512-256-g00-original",
+      "group": 0,
+      "seed_id": 0,
+      "input_seed": 815120,
+      "input_fingerprint": "a08ba31ba91ee54c5bf5b38658afb7524fbcc0a3118255bfa4ace327a8339203",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "mode": "original",
+      "n": 512,
+      "q": 256,
+      "main_n": 256,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.382722900390625,
+        "main_compute": 0.399822998046875,
+        "ack_recv": 0.276972900390625,
+        "diagnostic_unified": 1.1971900634765624
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 104013824,
+        "reserved": 188743680,
+        "max_allocated": 145976320,
+        "max_reserved": 188743680,
+        "device_free": 64574324736,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-512-256-g00-cold",
+      "group": 0,
+      "seed_id": 0,
+      "input_seed": 815120,
+      "input_fingerprint": "a08ba31ba91ee54c5bf5b38658afb7524fbcc0a3118255bfa4ace327a8339203",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "mode": "cold",
+      "n": 512,
+      "q": 256,
+      "main_n": 256,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.362532958984375,
+        "convert_pack": 0.3907041015625,
+        "weight_send": 0.468053955078125,
+        "activation_send": 0.2920130615234375,
+        "main_compute": 0.37189306640625,
+        "result_recv": 0.3956929931640625,
+        "refill": 0.0826700439453125,
+        "ack_recv": 0.2298719482421875,
+        "diagnostic_unified": 2.8672440185546875
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 107085824,
+        "reserved": 188743680,
+        "max_allocated": 145976320,
+        "max_reserved": 188743680,
+        "device_free": 64574324736,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-512-256-g00-existing",
+      "group": 0,
+      "seed_id": 0,
+      "input_seed": 815120,
+      "input_fingerprint": "a08ba31ba91ee54c5bf5b38658afb7524fbcc0a3118255bfa4ace327a8339203",
+      "order": [
+        "original",
+        "cold",
+        "existing"
+      ],
+      "mode": "existing",
+      "n": 512,
+      "q": 256,
+      "main_n": 256,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.201322021484375,
+        "activation_send": 0.23102099609375,
+        "main_compute": 0.4012529296875,
+        "result_recv": 0.3411429443359375,
+        "refill": 0.0789310302734375,
+        "ack_recv": 0.206471923828125,
+        "diagnostic_unified": 1.66868408203125
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": {
+        "source_convert_pack_send_ms": 0.4353740234375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 107085824,
+        "reserved": 188743680,
+        "max_allocated": 145976320,
+        "max_reserved": 188743680,
+        "device_free": 64574324736,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-512-256-g01-original",
+      "group": 1,
+      "seed_id": 1,
+      "input_seed": 815122,
+      "input_fingerprint": "c220612688378c187ea173d9f62d68325d006484010907018353a58c9d263eb4",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "mode": "original",
+      "n": 512,
+      "q": 256,
+      "main_n": 256,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.228260986328125,
+        "main_compute": 0.4147330322265625,
+        "ack_recv": 0.241031982421875,
+        "diagnostic_unified": 1.024968994140625
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 110231552,
+        "reserved": 188743680,
+        "max_allocated": 162604032,
+        "max_reserved": 188743680,
+        "device_free": 64574324736,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-512-256-g01-existing",
+      "group": 1,
+      "seed_id": 1,
+      "input_seed": 815122,
+      "input_fingerprint": "c220612688378c187ea173d9f62d68325d006484010907018353a58c9d263eb4",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "mode": "existing",
+      "n": 512,
+      "q": 256,
+      "main_n": 256,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.2377020263671875,
+        "activation_send": 0.2779820556640625,
+        "main_compute": 0.377032958984375,
+        "result_recv": 0.4805130615234375,
+        "refill": 0.10164111328125,
+        "ack_recv": 0.2371920166015625,
+        "diagnostic_unified": 1.927446044921875
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": {
+        "source_convert_pack_send_ms": 0.4415240478515625
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 108131840,
+        "reserved": 188743680,
+        "max_allocated": 162604032,
+        "max_reserved": 188743680,
+        "device_free": 64574324736,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-512-256-g01-cold",
+      "group": 1,
+      "seed_id": 1,
+      "input_seed": 815122,
+      "input_fingerprint": "c220612688378c187ea173d9f62d68325d006484010907018353a58c9d263eb4",
+      "order": [
+        "original",
+        "existing",
+        "cold"
+      ],
+      "mode": "cold",
+      "n": 512,
+      "q": 256,
+      "main_n": 256,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.2385419921875,
+        "convert_pack": 0.39981396484375,
+        "weight_send": 0.5312239990234375,
+        "activation_send": 0.30758203125,
+        "main_compute": 0.489824951171875,
+        "result_recv": 0.2717919921875,
+        "refill": 0.083010986328125,
+        "ack_recv": 0.2127120361328125,
+        "diagnostic_unified": 2.790923095703125
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 108131840,
+        "reserved": 188743680,
+        "max_allocated": 162604032,
+        "max_reserved": 188743680,
+        "device_free": 64574324736,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-512-256-g02-cold",
+      "group": 2,
+      "seed_id": 0,
+      "input_seed": 815120,
+      "input_fingerprint": "a08ba31ba91ee54c5bf5b38658afb7524fbcc0a3118255bfa4ace327a8339203",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "mode": "cold",
+      "n": 512,
+      "q": 256,
+      "main_n": 256,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.23158203125,
+        "convert_pack": 0.369593017578125,
+        "weight_send": 0.4699739990234375,
+        "activation_send": 0.3057430419921875,
+        "main_compute": 0.3630030517578125,
+        "result_recv": 0.4403140869140625,
+        "refill": 0.084510986328125,
+        "ack_recv": 0.2209620361328125,
+        "diagnostic_unified": 2.74729296875
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 107085824,
+        "reserved": 188743680,
+        "max_allocated": 163651072,
+        "max_reserved": 188743680,
+        "device_free": 64574324736,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-512-256-g02-original",
+      "group": 2,
+      "seed_id": 0,
+      "input_seed": 815120,
+      "input_fingerprint": "a08ba31ba91ee54c5bf5b38658afb7524fbcc0a3118255bfa4ace327a8339203",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "mode": "original",
+      "n": 512,
+      "q": 256,
+      "main_n": 256,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.216180908203125,
+        "main_compute": 0.4149229736328125,
+        "ack_recv": 0.2187420654296875,
+        "diagnostic_unified": 0.9558079833984375
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": null,
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 103939584,
+        "reserved": 188743680,
+        "max_allocated": 163651072,
+        "max_reserved": 188743680,
+        "device_free": 64574324736,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "sample_id": "diagnostic-512-256-g02-existing",
+      "group": 2,
+      "seed_id": 0,
+      "input_seed": 815120,
+      "input_fingerprint": "a08ba31ba91ee54c5bf5b38658afb7524fbcc0a3118255bfa4ace327a8339203",
+      "order": [
+        "cold",
+        "original",
+        "existing"
+      ],
+      "mode": "existing",
+      "n": 512,
+      "q": 256,
+      "main_n": 256,
+      "unified_ms": null,
+      "segments_ms": {
+        "control_send": 0.20623095703125,
+        "activation_send": 0.239531982421875,
+        "main_compute": 0.375633056640625,
+        "result_recv": 0.3969139404296875,
+        "refill": 0.098010986328125,
+        "ack_recv": 0.241112060546875,
+        "diagnostic_unified": 1.759544921875
+      },
+      "correctness_max_abs": 0.0,
+      "relative_error": 0.0,
+      "nonfinite_count": 0,
+      "task_count_conserved": true,
+      "preinstall": {
+        "source_convert_pack_send_ms": 0.4406630859375
+      },
+      "state_payload_bytes": 37810176,
+      "activation_payload_bytes": 3145728,
+      "result_payload_bytes": 3145728,
+      "slot_generation": null,
+      "slot_state": null,
+      "memory": {
+        "allocated": 107085824,
+        "reserved": 188743680,
+        "max_allocated": 163651072,
+        "max_reserved": 188743680,
+        "device_free": 64574324736,
+        "device_total": 65787658240
+      }
+    }
+  ],
+  "actual_state": {
+    "state_bytes": 37810176,
+    "layout": [
+      {
+        "name": "w13",
+        "offset": 0,
+        "bytes": 25165824,
+        "dtype": "torch.int8",
+        "shape": [
+          1,
+          6144,
+          4096
+        ]
+      },
+      {
+        "name": "w2",
+        "offset": 25165824,
+        "bytes": 12582912,
+        "dtype": "torch.int8",
+        "shape": [
+          1,
+          2048,
+          6144
+        ]
+      },
+      {
+        "name": "s13",
+        "offset": 37748736,
+        "bytes": 8192,
+        "dtype": "torch.bfloat16",
+        "shape": [
+          1,
+          4096
+        ]
+      },
+      {
+        "name": "s2",
+        "offset": 37756928,
+        "bytes": 12288,
+        "dtype": "torch.bfloat16",
+        "shape": [
+          1,
+          6144
+        ]
+      },
+      {
+        "name": "o13",
+        "offset": 37769216,
+        "bytes": 16384,
+        "dtype": "torch.float32",
+        "shape": [
+          1,
+          4096
+        ]
+      },
+      {
+        "name": "o2",
+        "offset": 37785600,
+        "bytes": 24576,
+        "dtype": "torch.float32",
+        "shape": [
+          1,
+          6144
+        ]
+      }
+    ],
+    "offsets": {
+      "o13": {
+        "all_zero": true,
+        "min": 0.0,
+        "max": 0.0,
+        "shape": [
+          1,
+          4096,
+          1
+        ],
+        "dtype": "torch.float32"
+      },
+      "o2": {
+        "all_zero": true,
+        "min": 0.0,
+        "max": 0.0,
+        "shape": [
+          1,
+          6144,
+          1
+        ],
+        "dtype": "torch.float32"
+      }
+    },
+    "bank_state_sha256": {
+      "w13": "63d4b413fa17df88d82b90d9619712dda1f6502eeaab2e415d747801a1c03178",
+      "w2": "a567c2897e89e7163768c003f45e35cbd05cb7ac4c739f720d5003a30bbbb054",
+      "s13": "7f29f15092fe636221d944b6672269291229c02a82fccbc6f228337c91622823",
+      "s2": "a8c05d872c8a2fb0cfbc60fd2601d4c3a858cdecc221cff33ec86de58a4691d4",
+      "o13": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "o2": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3"
+    },
+    "slot_state_sha256": {
+      "w13": "910b08d3aecad0b82d6f55c61dfbcb59c8cbfe5ca912bf35cbff27b89c326b8f",
+      "w2": "862eecea31571a91b14dc175861e98b7510867de32a3249ac71155435132090e",
+      "s13": "bec1e0ee9161034eaf01b2354d99ace78cfa5ff6a1a219fc86980464f089e77b",
+      "s2": "74063193c572bbfd1f5dee3b29bbeaebf1697e3523811ac7d0a351ec5ba0da58",
+      "o13": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "o2": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3"
+    }
+  },
+  "memory_initial": {
+    "allocated": 75623936,
+    "reserved": 138412032,
+    "max_allocated": 88175104,
+    "max_reserved": 138412032,
+    "device_free": 65223348224,
+    "device_total": 65787658240
+  },
+  "memory_final": {
+    "allocated": 107085824,
+    "reserved": 188743680,
+    "max_allocated": 163651072,
+    "max_reserved": 188743680,
+    "device_free": 64574324736,
+    "device_total": 65787658240
+  }
+}

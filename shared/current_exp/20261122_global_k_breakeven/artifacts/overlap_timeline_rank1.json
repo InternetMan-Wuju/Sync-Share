@@ -1,0 +1,53 @@
+{
+  "rank": 1,
+  "sizes": [
+    512,
+    8192
+  ],
+  "records": [
+    {
+      "n": 512,
+      "q": 256,
+      "compute_start_ns": 935285528314692,
+      "compute_end_ns": 935285529901013,
+      "memory": {
+        "allocated": 50396672,
+        "reserved": 113246208,
+        "max_allocated": 85468160,
+        "max_reserved": 113246208,
+        "device_free": 64926855168,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "n": 8192,
+      "q": 4096,
+      "compute_start_ns": 935285545648415,
+      "compute_end_ns": 935285547324948,
+      "memory": {
+        "allocated": 239140352,
+        "reserved": 387973120,
+        "max_allocated": 355570176,
+        "max_reserved": 387973120,
+        "device_free": 64652128256,
+        "device_total": 65796046848
+      }
+    }
+  ],
+  "memory_initial": {
+    "allocated": 37811200,
+    "reserved": 41943040,
+    "max_allocated": 37811200,
+    "max_reserved": 41943040,
+    "device_free": 65084801024,
+    "device_total": 65796046848
+  },
+  "memory_final": {
+    "allocated": 239140352,
+    "reserved": 387973120,
+    "max_allocated": 355570176,
+    "max_reserved": 387973120,
+    "device_free": 64652128256,
+    "device_total": 65796046848
+  }
+}
