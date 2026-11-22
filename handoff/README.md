@@ -4,7 +4,8 @@
 
 ## 当前执行入口
 
-- [Prefill K=1原型修正：输入、真实槽与显存基线（2026-11-23）](2026-11-23_global_k_adapter_repair.md)：当前执行入口；基于3efa0a6，修复输入改写与owner校验、清理内存基线、补强验收；3小时，只做正确性与资源验证。
+- [Prefill 三组对照（2026-11-23）](2026-11-23_prefill_eplb_three_way_comparison.md)是当前执行入口。比较原版、原始 EPLB 加冗余和全组 K=1，按 8K、16K、32K 验证，区分 EP2 接线、EP16 首轮与 EP32 跨节点复测。
+- [Prefill K=1 原型修正（2026-11-23）](2026-11-23_global_k_adapter_repair.md)记录上一轮的输入保真、owner 状态和显存验收。
 - [Prefill K=1：统一执行路径、格式与显存验收（2026-11-22）](2026-11-22_global_k_unified_adapter.md)：上一轮方案；3efa0a6完成小样本测试，复核发现输入保真、实际槽身份与内存基线待修；性能未测。
 - [Prefill K=1：空编号路线的最小可行性证明（2026-11-22）](2026-11-22_global_k_placeholder_feasibility.md)：上一轮方案；607121e已证明有限主库下的原生alltoall、真实W8A8和唯一槽复用，统一边界处理与格式审计待补。
 - [Prefill K=1：原生分发可行性与已有副本路径诊断（2026-11-22）](2026-11-22_global_k_native_dispatch_diagnosis.md)：历史方案；595428c发现默认均匀分片限制，驻留副本未稳定回本。
