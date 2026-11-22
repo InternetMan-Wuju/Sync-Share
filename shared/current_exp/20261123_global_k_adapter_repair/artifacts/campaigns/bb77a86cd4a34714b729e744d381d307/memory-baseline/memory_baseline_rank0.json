@@ -1,0 +1,3715 @@
+{
+  "campaign_id": "bb77a86cd4a34714b729e744d381d307",
+  "subrun_id": "feda27c8da664eb4bdc0bbe06cb727cd",
+  "code_hash": "8a7c079901af96ed27dffbb5ac63893ac88f31850b87820e6d8247d503dbfde1",
+  "scenario": "baseline",
+  "tag": "mem_baseline",
+  "rank": 0,
+  "production_format_config": "UNKNOWN_NO_ACTIVE_SERVICE",
+  "performance_status": "NOT_RUN",
+  "state_bytes": 37810176,
+  "memory_before": {
+    "allocated": 4096,
+    "reserved": 2097152,
+    "max_allocated": 4608,
+    "max_reserved": 2097152,
+    "device_free": 65358852096,
+    "device_total": 65787658240
+  },
+  "memory_after_bank": {
+    "allocated": 605016064,
+    "reserved": 725614592,
+    "max_allocated": 655377920,
+    "max_reserved": 725614592,
+    "device_free": 64635588608,
+    "device_total": 65787658240
+  },
+  "memory_final": {
+    "allocated": 605021184,
+    "reserved": 761266176,
+    "max_allocated": 605021184,
+    "max_reserved": 761266176,
+    "device_free": 64079454208,
+    "device_total": 65787658240
+  },
+  "stage_records": [
+    {
+      "stage": "resources_created",
+      "started_ns": 961641887117819,
+      "duration_ms": 0.904057,
+      "before": {
+        "allocated": 605016064,
+        "reserved": 725614592,
+        "max_allocated": 655377920,
+        "max_reserved": 725614592,
+        "device_free": 64635588608,
+        "device_total": 65787658240
+      },
+      "after": {
+        "allocated": 605016064,
+        "reserved": 725614592,
+        "max_allocated": 605016064,
+        "max_reserved": 725614592,
+        "device_free": 64635588608,
+        "device_total": 65787658240
+      },
+      "peak_allocated": 605016064,
+      "peak_reserved": 725614592
+    },
+    {
+      "stage": "common_init",
+      "started_ns": 961641889974663,
+      "duration_ms": 1.075619,
+      "before": {
+        "allocated": 605016064,
+        "reserved": 725614592,
+        "max_allocated": 605016064,
+        "max_reserved": 725614592,
+        "device_free": 64635588608,
+        "device_total": 65787658240
+      },
+      "after": {
+        "allocated": 605016064,
+        "reserved": 725614592,
+        "max_allocated": 605016064,
+        "max_reserved": 725614592,
+        "device_free": 64635588608,
+        "device_total": 65787658240
+      },
+      "peak_allocated": 605016064,
+      "peak_reserved": 725614592
+    },
+    {
+      "stage": "q0",
+      "started_ns": 961641892613435,
+      "duration_ms": 3225.760628,
+      "before": {
+        "allocated": 605016064,
+        "reserved": 725614592,
+        "max_allocated": 605016064,
+        "max_reserved": 725614592,
+        "device_free": 64635588608,
+        "device_total": 65787658240
+      },
+      "after": {
+        "allocated": 605021184,
+        "reserved": 761266176,
+        "max_allocated": 638714880,
+        "max_reserved": 761266176,
+        "device_free": 64079454208,
+        "device_total": 65787658240
+      },
+      "peak_allocated": 638714880,
+      "peak_reserved": 761266176
+    },
+    {
+      "stage": "release",
+      "started_ns": 961645119243661,
+      "duration_ms": 0.867927,
+      "before": {
+        "allocated": 605021184,
+        "reserved": 761266176,
+        "max_allocated": 638714880,
+        "max_reserved": 761266176,
+        "device_free": 64079454208,
+        "device_total": 65787658240
+      },
+      "after": {
+        "allocated": 605021184,
+        "reserved": 761266176,
+        "max_allocated": 605021184,
+        "max_reserved": 761266176,
+        "device_free": 64079454208,
+        "device_total": 65787658240
+      },
+      "peak_allocated": 605021184,
+      "peak_reserved": 761266176
+    }
+  ],
+  "whole_process_peak": {
+    "peak_allocated": 655377920,
+    "peak_reserved": 761266176
+  },
+  "flat_buffer": null,
+  "resource_objects": {
+    "rank0_flat": null,
+    "rank1_pool": null
+  },
+  "install": null,
+  "q0": {
+    "case_id": "memory_q0",
+    "rank": 0,
+    "status": "PASS",
+    "reasons": [],
+    "dispatch_called": true,
+    "dispatch_delta": 1,
+    "global_tokens": 4,
+    "replica_required": false,
+    "output_shape": [
+      2,
+      6144
+    ],
+    "padding_tokens_sent": 0,
+    "padding_tasks_sent": 0,
+    "padding_tasks_received": 0,
+    "padding_expert_calls": 0,
+    "padding_rows_skipped": 0,
+    "replica_tasks": 0,
+    "empty_legal_tasks": 0,
+    "actual_tasks": [
+      {
+        "sender": 0,
+        "token": 0,
+        "slot": 2,
+        "logical": 0,
+        "comm": 0,
+        "padding": false,
+        "layer": 49,
+        "task_id": "0:0:2:0:0"
+      },
+      {
+        "sender": 0,
+        "token": 1,
+        "slot": 5,
+        "logical": 0,
+        "comm": 0,
+        "padding": false,
+        "layer": 49,
+        "task_id": "0:1:5:0:0"
+      },
+      {
+        "sender": 1,
+        "token": 0,
+        "slot": 1,
+        "logical": 0,
+        "comm": 0,
+        "padding": false,
+        "layer": 49,
+        "task_id": "1:0:1:0:0"
+      },
+      {
+        "sender": 1,
+        "token": 1,
+        "slot": 4,
+        "logical": 0,
+        "comm": 0,
+        "padding": false,
+        "layer": 49,
+        "task_id": "1:1:4:0:0"
+      },
+      {
+        "sender": 0,
+        "token": 0,
+        "slot": 7,
+        "logical": 5,
+        "comm": 5,
+        "padding": false,
+        "layer": 49,
+        "task_id": "0:0:7:5:5"
+      },
+      {
+        "sender": 0,
+        "token": 1,
+        "slot": 7,
+        "logical": 5,
+        "comm": 5,
+        "padding": false,
+        "layer": 49,
+        "task_id": "0:1:7:5:5"
+      },
+      {
+        "sender": 1,
+        "token": 0,
+        "slot": 6,
+        "logical": 5,
+        "comm": 5,
+        "padding": false,
+        "layer": 49,
+        "task_id": "1:0:6:5:5"
+      },
+      {
+        "sender": 1,
+        "token": 1,
+        "slot": 0,
+        "logical": 5,
+        "comm": 5,
+        "padding": false,
+        "layer": 49,
+        "task_id": "1:1:0:5:5"
+      },
+      {
+        "sender": 0,
+        "token": 0,
+        "slot": 0,
+        "logical": 43,
+        "comm": 43,
+        "padding": false,
+        "layer": 49,
+        "task_id": "0:0:0:43:43"
+      },
+      {
+        "sender": 0,
+        "token": 1,
+        "slot": 4,
+        "logical": 43,
+        "comm": 43,
+        "padding": false,
+        "layer": 49,
+        "task_id": "0:1:4:43:43"
+      },
+      {
+        "sender": 1,
+        "token": 0,
+        "slot": 0,
+        "logical": 43,
+        "comm": 43,
+        "padding": false,
+        "layer": 49,
+        "task_id": "1:0:0:43:43"
+      },
+      {
+        "sender": 1,
+        "token": 1,
+        "slot": 3,
+        "logical": 43,
+        "comm": 43,
+        "padding": false,
+        "layer": 49,
+        "task_id": "1:1:3:43:43"
+      },
+      {
+        "sender": 0,
+        "token": 0,
+        "slot": 1,
+        "logical": 127,
+        "comm": 127,
+        "padding": false,
+        "layer": 49,
+        "task_id": "0:0:1:127:127"
+      },
+      {
+        "sender": 0,
+        "token": 1,
+        "slot": 6,
+        "logical": 127,
+        "comm": 127,
+        "padding": false,
+        "layer": 49,
+        "task_id": "0:1:6:127:127"
+      },
+      {
+        "sender": 1,
+        "token": 0,
+        "slot": 7,
+        "logical": 127,
+        "comm": 127,
+        "padding": false,
+        "layer": 49,
+        "task_id": "1:0:7:127:127"
+      },
+      {
+        "sender": 1,
+        "token": 1,
+        "slot": 2,
+        "logical": 127,
+        "comm": 127,
+        "padding": false,
+        "layer": 49,
+        "task_id": "1:1:2:127:127"
+      }
+    ],
+    "input_unchanged": true,
+    "actual_expert_inputs_equal": true,
+    "actual_input_rows": [
+      {
+        "row": 0,
+        "sender": 0,
+        "token": 0,
+        "slot": 2,
+        "comm": 0,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 1,
+        "sender": 0,
+        "token": 1,
+        "slot": 5,
+        "comm": 0,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 2,
+        "sender": 1,
+        "token": 0,
+        "slot": 1,
+        "comm": 0,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 3,
+        "sender": 1,
+        "token": 1,
+        "slot": 4,
+        "comm": 0,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 4,
+        "sender": 0,
+        "token": 0,
+        "slot": 7,
+        "comm": 5,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 5,
+        "sender": 0,
+        "token": 1,
+        "slot": 7,
+        "comm": 5,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 6,
+        "sender": 1,
+        "token": 0,
+        "slot": 6,
+        "comm": 5,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 7,
+        "sender": 1,
+        "token": 1,
+        "slot": 0,
+        "comm": 5,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 8,
+        "sender": 0,
+        "token": 0,
+        "slot": 0,
+        "comm": 43,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 9,
+        "sender": 0,
+        "token": 1,
+        "slot": 4,
+        "comm": 43,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 10,
+        "sender": 1,
+        "token": 0,
+        "slot": 0,
+        "comm": 43,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 11,
+        "sender": 1,
+        "token": 1,
+        "slot": 3,
+        "comm": 43,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 12,
+        "sender": 0,
+        "token": 0,
+        "slot": 1,
+        "comm": 127,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 13,
+        "sender": 0,
+        "token": 1,
+        "slot": 6,
+        "comm": 127,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 14,
+        "sender": 1,
+        "token": 0,
+        "slot": 7,
+        "comm": 127,
+        "padding": false,
+        "equal": true
+      },
+      {
+        "row": 15,
+        "sender": 1,
+        "token": 1,
+        "slot": 2,
+        "comm": 127,
+        "padding": false,
+        "equal": true
+      }
+    ],
+    "actual_input_mismatches": [],
+    "owner_slot_snapshot": null,
+    "owner_records_after": [],
+    "lease_overwrite_guard": {
+      "called": false,
+      "errors": []
+    },
+    "dispatch_layout_handle": {},
+    "memory": {
+      "allocated": 605541888,
+      "reserved": 725614592,
+      "max_allocated": 624004096,
+      "max_reserved": 725614592,
+      "device_free": 64117202944,
+      "device_total": 65787658240
+    },
+    "campaign_id": "bb77a86cd4a34714b729e744d381d307",
+    "subrun_id": "feda27c8da664eb4bdc0bbe06cb727cd",
+    "code_hash": "8a7c079901af96ed27dffbb5ac63893ac88f31850b87820e6d8247d503dbfde1",
+    "scenario": "baseline",
+    "tag": "mem_baseline",
+    "input_sha256_before": "91fd040778b45a1a25326481e2d6bf3a5196fb8883156ba031c2fc1cc2788243",
+    "input_sha256_after": "91fd040778b45a1a25326481e2d6bf3a5196fb8883156ba031c2fc1cc2788243",
+    "selected_input_rows": [
+      {
+        "row": 0,
+        "value0": 0.0,
+        "value1": 258.0,
+        "row_sha256": "cbb41b6d569c3ef04e2f3a154cef0f41341fd717be7c6cc0b8ace5ce183b7b55"
+      },
+      {
+        "row": 1,
+        "value0": 0.0,
+        "value1": 258.0,
+        "row_sha256": "cbb41b6d569c3ef04e2f3a154cef0f41341fd717be7c6cc0b8ace5ce183b7b55"
+      }
+    ],
+    "local_expected_task_count": 16,
+    "global_expected_task_count": 32,
+    "reference_max_abs": null,
+    "reference_relative_error": null,
+    "within_tolerance": null,
+    "expected_task_count": 16,
+    "actual_task_count": 16,
+    "task_multiset_equal": true,
+    "reference_finite": null,
+    "candidate_finite": true
+  },
+  "split": null,
+  "slot_before_release": null,
+  "final_slot": {
+    "records": [],
+    "pool": null
+  },
+  "main_storage_bytes": 604962816,
+  "main_unique_storage_count": 96,
+  "bank_formats": [
+    {
+      "layer": 49,
+      "expert": 0,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618080681984,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618080681984
+    },
+    {
+      "layer": 49,
+      "expert": 0,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618024059392,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618024059392
+    },
+    {
+      "layer": 49,
+      "expert": 0,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009466880,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009466880
+    },
+    {
+      "layer": 49,
+      "expert": 0,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009382912,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009382912
+    },
+    {
+      "layer": 49,
+      "expert": 0,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009424896,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009424896
+    },
+    {
+      "layer": 49,
+      "expert": 0,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009441792,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009441792
+    },
+    {
+      "layer": 49,
+      "expert": 1,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618135207936,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618135207936
+    },
+    {
+      "layer": 49,
+      "expert": 1,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618053419008,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618053419008
+    },
+    {
+      "layer": 49,
+      "expert": 1,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009412608,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009412608
+    },
+    {
+      "layer": 49,
+      "expert": 1,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009395712,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009395712
+    },
+    {
+      "layer": 49,
+      "expert": 1,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009500672,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009500672
+    },
+    {
+      "layer": 49,
+      "expert": 1,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009517568,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009517568
+    },
+    {
+      "layer": 49,
+      "expert": 2,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618189733888,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618189733888
+    },
+    {
+      "layer": 49,
+      "expert": 2,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618038738944,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618038738944
+    },
+    {
+      "layer": 49,
+      "expert": 2,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009609728,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009609728
+    },
+    {
+      "layer": 49,
+      "expert": 2,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009475584,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009475584
+    },
+    {
+      "layer": 49,
+      "expert": 2,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009567744,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009567744
+    },
+    {
+      "layer": 49,
+      "expert": 2,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009584640,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009584640
+    },
+    {
+      "layer": 49,
+      "expert": 3,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618216996864,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618216996864
+    },
+    {
+      "layer": 49,
+      "expert": 3,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618107944960,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618107944960
+    },
+    {
+      "layer": 49,
+      "expert": 3,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009488384,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009488384
+    },
+    {
+      "layer": 49,
+      "expert": 3,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009542656,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009542656
+    },
+    {
+      "layer": 49,
+      "expert": 3,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009643520,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009643520
+    },
+    {
+      "layer": 49,
+      "expert": 3,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009660416,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009660416
+    },
+    {
+      "layer": 49,
+      "expert": 4,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618271522816,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618271522816
+    },
+    {
+      "layer": 49,
+      "expert": 4,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618120528384,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618120528384
+    },
+    {
+      "layer": 49,
+      "expert": 4,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009555456,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009555456
+    },
+    {
+      "layer": 49,
+      "expert": 4,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009618432,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009618432
+    },
+    {
+      "layer": 49,
+      "expert": 4,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009710592,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009710592
+    },
+    {
+      "layer": 49,
+      "expert": 4,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009727488,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009727488
+    },
+    {
+      "layer": 49,
+      "expert": 5,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618298785792,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618298785792
+    },
+    {
+      "layer": 49,
+      "expert": 5,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618162470912,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618162470912
+    },
+    {
+      "layer": 49,
+      "expert": 5,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009631232,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009631232
+    },
+    {
+      "layer": 49,
+      "expert": 5,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009685504,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009685504
+    },
+    {
+      "layer": 49,
+      "expert": 5,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009777664,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009777664
+    },
+    {
+      "layer": 49,
+      "expert": 5,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009794560,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009794560
+    },
+    {
+      "layer": 49,
+      "expert": 43,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618353311744,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618353311744
+    },
+    {
+      "layer": 49,
+      "expert": 43,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618175054336,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618175054336
+    },
+    {
+      "layer": 49,
+      "expert": 43,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009698304,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009698304
+    },
+    {
+      "layer": 49,
+      "expert": 43,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009752576,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009752576
+    },
+    {
+      "layer": 49,
+      "expert": 43,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009844736,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009844736
+    },
+    {
+      "layer": 49,
+      "expert": 43,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009861632,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009861632
+    },
+    {
+      "layer": 49,
+      "expert": 127,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618380574720,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618380574720
+    },
+    {
+      "layer": 49,
+      "expert": 127,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618244259840,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618244259840
+    },
+    {
+      "layer": 49,
+      "expert": 127,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009765376,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009765376
+    },
+    {
+      "layer": 49,
+      "expert": 127,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009819648,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009819648
+    },
+    {
+      "layer": 49,
+      "expert": 127,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009911808,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009911808
+    },
+    {
+      "layer": 49,
+      "expert": 127,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009928704,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009928704
+    },
+    {
+      "layer": 50,
+      "expert": 0,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618435100672,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618435100672
+    },
+    {
+      "layer": 50,
+      "expert": 0,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618256843264,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618256843264
+    },
+    {
+      "layer": 50,
+      "expert": 0,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009832448,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009832448
+    },
+    {
+      "layer": 50,
+      "expert": 0,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009886720,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009886720
+    },
+    {
+      "layer": 50,
+      "expert": 0,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009978880,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009978880
+    },
+    {
+      "layer": 50,
+      "expert": 0,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009995776,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009995776
+    },
+    {
+      "layer": 50,
+      "expert": 1,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618462363648,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618462363648
+    },
+    {
+      "layer": 50,
+      "expert": 1,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618326048768,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618326048768
+    },
+    {
+      "layer": 50,
+      "expert": 1,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009899520,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009899520
+    },
+    {
+      "layer": 50,
+      "expert": 1,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009953792,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009953792
+    },
+    {
+      "layer": 50,
+      "expert": 1,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010045952,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010045952
+    },
+    {
+      "layer": 50,
+      "expert": 1,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010062848,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010062848
+    },
+    {
+      "layer": 50,
+      "expert": 2,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618516889600,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618516889600
+    },
+    {
+      "layer": 50,
+      "expert": 2,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618338632192,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618338632192
+    },
+    {
+      "layer": 50,
+      "expert": 2,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009966592,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009966592
+    },
+    {
+      "layer": 50,
+      "expert": 2,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010020864,
+      "storage_bytes": 12288,
+      "data_ptr": 20618010020864
+    },
+    {
+      "layer": 50,
+      "expert": 2,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010113024,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010113024
+    },
+    {
+      "layer": 50,
+      "expert": 2,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010129920,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010129920
+    },
+    {
+      "layer": 50,
+      "expert": 3,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618544152576,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618544152576
+    },
+    {
+      "layer": 50,
+      "expert": 3,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618407837696,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618407837696
+    },
+    {
+      "layer": 50,
+      "expert": 3,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010033664,
+      "storage_bytes": 8192,
+      "data_ptr": 20618010033664
+    },
+    {
+      "layer": 50,
+      "expert": 3,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010087936,
+      "storage_bytes": 12288,
+      "data_ptr": 20618010087936
+    },
+    {
+      "layer": 50,
+      "expert": 3,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010180096,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010180096
+    },
+    {
+      "layer": 50,
+      "expert": 3,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010196992,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010196992
+    },
+    {
+      "layer": 50,
+      "expert": 4,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618598678528,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618598678528
+    },
+    {
+      "layer": 50,
+      "expert": 4,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618420421120,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618420421120
+    },
+    {
+      "layer": 50,
+      "expert": 4,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010100736,
+      "storage_bytes": 8192,
+      "data_ptr": 20618010100736
+    },
+    {
+      "layer": 50,
+      "expert": 4,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010155008,
+      "storage_bytes": 12288,
+      "data_ptr": 20618010155008
+    },
+    {
+      "layer": 50,
+      "expert": 4,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010247168,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010247168
+    },
+    {
+      "layer": 50,
+      "expert": 4,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010264064,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010264064
+    },
+    {
+      "layer": 50,
+      "expert": 5,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618625941504,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618625941504
+    },
+    {
+      "layer": 50,
+      "expert": 5,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618489626624,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618489626624
+    },
+    {
+      "layer": 50,
+      "expert": 5,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010167808,
+      "storage_bytes": 8192,
+      "data_ptr": 20618010167808
+    },
+    {
+      "layer": 50,
+      "expert": 5,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010222080,
+      "storage_bytes": 12288,
+      "data_ptr": 20618010222080
+    },
+    {
+      "layer": 50,
+      "expert": 5,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010314240,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010314240
+    },
+    {
+      "layer": 50,
+      "expert": 5,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010331136,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010331136
+    },
+    {
+      "layer": 50,
+      "expert": 43,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618680467456,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618680467456
+    },
+    {
+      "layer": 50,
+      "expert": 43,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618502210048,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618502210048
+    },
+    {
+      "layer": 50,
+      "expert": 43,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010234880,
+      "storage_bytes": 8192,
+      "data_ptr": 20618010234880
+    },
+    {
+      "layer": 50,
+      "expert": 43,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010289152,
+      "storage_bytes": 12288,
+      "data_ptr": 20618010289152
+    },
+    {
+      "layer": 50,
+      "expert": 43,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010381312,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010381312
+    },
+    {
+      "layer": 50,
+      "expert": 43,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010398208,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010398208
+    },
+    {
+      "layer": 50,
+      "expert": 127,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618707730432,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618707730432
+    },
+    {
+      "layer": 50,
+      "expert": 127,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618571415552,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618571415552
+    },
+    {
+      "layer": 50,
+      "expert": 127,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010301952,
+      "storage_bytes": 8192,
+      "data_ptr": 20618010301952
+    },
+    {
+      "layer": 50,
+      "expert": 127,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010356224,
+      "storage_bytes": 12288,
+      "data_ptr": 20618010356224
+    },
+    {
+      "layer": 50,
+      "expert": 127,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010448384,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010448384
+    },
+    {
+      "layer": 50,
+      "expert": 127,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010465280,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010465280
+    }
+  ],
+  "main_storage_entries": [
+    {
+      "layer": 49,
+      "expert": 0,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618080681984,
+      "storage_ptr": 20618080681984,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 0,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618024059392,
+      "storage_ptr": 20618024059392,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 0,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009466880,
+      "storage_ptr": 20618009466880,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 0,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009382912,
+      "storage_ptr": 20618009382912,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 0,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009424896,
+      "storage_ptr": 20618009424896,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 0,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009441792,
+      "storage_ptr": 20618009441792,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 1,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618135207936,
+      "storage_ptr": 20618135207936,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 1,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618053419008,
+      "storage_ptr": 20618053419008,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 1,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009412608,
+      "storage_ptr": 20618009412608,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 1,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009395712,
+      "storage_ptr": 20618009395712,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 1,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009500672,
+      "storage_ptr": 20618009500672,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 1,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009517568,
+      "storage_ptr": 20618009517568,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 2,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618189733888,
+      "storage_ptr": 20618189733888,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 2,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618038738944,
+      "storage_ptr": 20618038738944,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 2,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009609728,
+      "storage_ptr": 20618009609728,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 2,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009475584,
+      "storage_ptr": 20618009475584,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 2,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009567744,
+      "storage_ptr": 20618009567744,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 2,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009584640,
+      "storage_ptr": 20618009584640,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 3,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618216996864,
+      "storage_ptr": 20618216996864,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 3,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618107944960,
+      "storage_ptr": 20618107944960,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 3,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009488384,
+      "storage_ptr": 20618009488384,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 3,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009542656,
+      "storage_ptr": 20618009542656,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 3,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009643520,
+      "storage_ptr": 20618009643520,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 3,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009660416,
+      "storage_ptr": 20618009660416,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 4,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618271522816,
+      "storage_ptr": 20618271522816,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 4,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618120528384,
+      "storage_ptr": 20618120528384,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 4,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009555456,
+      "storage_ptr": 20618009555456,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 4,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009618432,
+      "storage_ptr": 20618009618432,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 4,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009710592,
+      "storage_ptr": 20618009710592,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 4,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009727488,
+      "storage_ptr": 20618009727488,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 5,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618298785792,
+      "storage_ptr": 20618298785792,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 5,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618162470912,
+      "storage_ptr": 20618162470912,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 5,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009631232,
+      "storage_ptr": 20618009631232,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 5,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009685504,
+      "storage_ptr": 20618009685504,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 5,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009777664,
+      "storage_ptr": 20618009777664,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 5,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009794560,
+      "storage_ptr": 20618009794560,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 43,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618353311744,
+      "storage_ptr": 20618353311744,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 43,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618175054336,
+      "storage_ptr": 20618175054336,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 43,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009698304,
+      "storage_ptr": 20618009698304,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 43,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009752576,
+      "storage_ptr": 20618009752576,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 43,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009844736,
+      "storage_ptr": 20618009844736,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 43,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009861632,
+      "storage_ptr": 20618009861632,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 127,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618380574720,
+      "storage_ptr": 20618380574720,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 127,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618244259840,
+      "storage_ptr": 20618244259840,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 127,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009765376,
+      "storage_ptr": 20618009765376,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 127,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009819648,
+      "storage_ptr": 20618009819648,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 127,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009911808,
+      "storage_ptr": 20618009911808,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 49,
+      "expert": 127,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009928704,
+      "storage_ptr": 20618009928704,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 0,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618435100672,
+      "storage_ptr": 20618435100672,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 0,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618256843264,
+      "storage_ptr": 20618256843264,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 0,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009832448,
+      "storage_ptr": 20618009832448,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 0,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009886720,
+      "storage_ptr": 20618009886720,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 0,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009978880,
+      "storage_ptr": 20618009978880,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 0,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618009995776,
+      "storage_ptr": 20618009995776,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 1,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618462363648,
+      "storage_ptr": 20618462363648,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 1,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618326048768,
+      "storage_ptr": 20618326048768,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 1,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009899520,
+      "storage_ptr": 20618009899520,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 1,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009953792,
+      "storage_ptr": 20618009953792,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 1,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010045952,
+      "storage_ptr": 20618010045952,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 1,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010062848,
+      "storage_ptr": 20618010062848,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 2,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618516889600,
+      "storage_ptr": 20618516889600,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 2,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618338632192,
+      "storage_ptr": 20618338632192,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 2,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618009966592,
+      "storage_ptr": 20618009966592,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 2,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618010020864,
+      "storage_ptr": 20618010020864,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 2,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010113024,
+      "storage_ptr": 20618010113024,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 2,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010129920,
+      "storage_ptr": 20618010129920,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 3,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618544152576,
+      "storage_ptr": 20618544152576,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 3,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618407837696,
+      "storage_ptr": 20618407837696,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 3,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618010033664,
+      "storage_ptr": 20618010033664,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 3,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618010087936,
+      "storage_ptr": 20618010087936,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 3,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010180096,
+      "storage_ptr": 20618010180096,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 3,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010196992,
+      "storage_ptr": 20618010196992,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 4,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618598678528,
+      "storage_ptr": 20618598678528,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 4,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618420421120,
+      "storage_ptr": 20618420421120,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 4,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618010100736,
+      "storage_ptr": 20618010100736,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 4,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618010155008,
+      "storage_ptr": 20618010155008,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 4,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010247168,
+      "storage_ptr": 20618010247168,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 4,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010264064,
+      "storage_ptr": 20618010264064,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 5,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618625941504,
+      "storage_ptr": 20618625941504,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 5,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618489626624,
+      "storage_ptr": 20618489626624,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 5,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618010167808,
+      "storage_ptr": 20618010167808,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 5,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618010222080,
+      "storage_ptr": 20618010222080,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 5,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010314240,
+      "storage_ptr": 20618010314240,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 5,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010331136,
+      "storage_ptr": 20618010331136,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 43,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618680467456,
+      "storage_ptr": 20618680467456,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 43,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618502210048,
+      "storage_ptr": 20618502210048,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 43,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618010234880,
+      "storage_ptr": 20618010234880,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 43,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618010289152,
+      "storage_ptr": 20618010289152,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 43,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010381312,
+      "storage_ptr": 20618010381312,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 43,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010398208,
+      "storage_ptr": 20618010398208,
+      "storage_bytes": 24576,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 127,
+      "attr": "w13_weight",
+      "shape": [
+        1,
+        6144,
+        4096
+      ],
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618707730432,
+      "storage_ptr": 20618707730432,
+      "storage_bytes": 25165824,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 127,
+      "attr": "w2_weight",
+      "shape": [
+        1,
+        2048,
+        6144
+      ],
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "dtype": "torch.int8",
+      "data_ptr": 20618571415552,
+      "storage_ptr": 20618571415552,
+      "storage_bytes": 12582912,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 127,
+      "attr": "w13_weight_scale",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618010301952,
+      "storage_ptr": 20618010301952,
+      "storage_bytes": 8192,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 127,
+      "attr": "w2_weight_scale",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "data_ptr": 20618010356224,
+      "storage_ptr": 20618010356224,
+      "storage_bytes": 12288,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 127,
+      "attr": "w13_weight_offset",
+      "shape": [
+        1,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010448384,
+      "storage_ptr": 20618010448384,
+      "storage_bytes": 16384,
+      "offset": 0
+    },
+    {
+      "layer": 50,
+      "expert": 127,
+      "attr": "w2_weight_offset",
+      "shape": [
+        1,
+        6144
+      ],
+      "stride": [
+        6144,
+        1
+      ],
+      "dtype": "torch.float32",
+      "data_ptr": 20618010465280,
+      "storage_ptr": 20618010465280,
+      "storage_bytes": 24576,
+      "offset": 0
+    }
+  ],
+  "bank_slot_hashes": {
+    "49": {
+      "w13": "910b08d3aecad0b82d6f55c61dfbcb59c8cbfe5ca912bf35cbff27b89c326b8f",
+      "w2": "862eecea31571a91b14dc175861e98b7510867de32a3249ac71155435132090e",
+      "s13": "bec1e0ee9161034eaf01b2354d99ace78cfa5ff6a1a219fc86980464f089e77b",
+      "s2": "74063193c572bbfd1f5dee3b29bbeaebf1697e3523811ac7d0a351ec5ba0da58",
+      "o13": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "o2": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3"
+    },
+    "50": {
+      "w13": "3fb6c113470b13d3551970ac3247b60f4f025ccf90ef6ff0dc1f795857e19547",
+      "w2": "641abf953ff20a18b1b80884f9db085dc4e634ee951efa490b7129dbe839b792",
+      "s13": "533fc36120cc4973e2a01618486fc1e3f176992bdd5adbac2a8f01c64637e450",
+      "s2": "96ddc2718f25989e48010e6fd1f659ea16d6c9737bc7d45f594117f7e39c2d8a",
+      "o13": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "o2": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3"
+    }
+  }
+}

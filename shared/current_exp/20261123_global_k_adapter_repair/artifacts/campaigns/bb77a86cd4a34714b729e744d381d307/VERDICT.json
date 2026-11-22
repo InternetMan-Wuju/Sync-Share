@@ -1,0 +1,107 @@
+{
+  "verdict": "GO_REPAIRED_HARNESS_LIMITED",
+  "stages": {
+    "INPUT_FIDELITY": "PASS",
+    "OWNER_STATE": "PASS",
+    "MEMORY_ACCOUNTING": "PASS",
+    "VALIDATOR": "PASS"
+  },
+  "validation_errors": [],
+  "area_errors": {
+    "CAMPAIGN": [],
+    "INPUT_FIDELITY": [],
+    "OWNER_STATE": [],
+    "MEMORY_ACCOUNTING": []
+  },
+  "regressions": [
+    {
+      "mutation": "stale_campaign_or_run_id",
+      "rejected": true,
+      "errors": [
+        "CAMPAIGN:functional_campaign_rank0"
+      ]
+    },
+    {
+      "mutation": "changed_input",
+      "rejected": true,
+      "errors": [
+        "INPUT_FIDELITY:hidden_file_changed:partial_slot:rank0"
+      ]
+    },
+    {
+      "mutation": "wrong_owner_slot_state",
+      "rejected": true,
+      "errors": [
+        "OWNER_STATE:reserved_negative_not_real_reserved"
+      ]
+    },
+    {
+      "mutation": "excess_error",
+      "rejected": true,
+      "errors": [
+        "INPUT_FIDELITY:error_over_tolerance:all_slot:rank0:99.0/0.00241903969144059"
+      ]
+    },
+    {
+      "mutation": "format_ERROR",
+      "rejected": true,
+      "errors": [
+        "MEMORY_ACCOUNTING:format_error:repaired_reinstall49:w13"
+      ]
+    },
+    {
+      "mutation": "task_not_conserved",
+      "rejected": true,
+      "errors": [
+        "INPUT_FIDELITY:task_identity_mismatch:partial_slot:rank0:14!=13",
+        "INPUT_FIDELITY:input_row_task_order:partial_slot:rank0"
+      ]
+    },
+    {
+      "mutation": "baseline_contains_flat",
+      "rejected": true,
+      "errors": [
+        "MEMORY_ACCOUNTING:baseline_rank0_has_flat"
+      ]
+    },
+    {
+      "mutation": "missing_rank",
+      "rejected": true,
+      "errors": [
+        "CAMPAIGN:functional_campaign_rank1",
+        "CAMPAIGN:functional_subrun_rank1",
+        "CAMPAIGN:functional_code_hash_rank1",
+        "CAMPAIGN:functional_rank_identity_1",
+        "CAMPAIGN:dispatch_capacity_rank1",
+        "INPUT_FIDELITY:case_order_or_missing_rank1:[]",
+        "OWNER_STATE:final_slot_not_released",
+        "MEMORY_ACCOUNTING:reuse_count"
+      ]
+    },
+    {
+      "mutation": "missing_install",
+      "rejected": true,
+      "errors": [
+        "MEMORY_ACCOUNTING:install_count:8",
+        "MEMORY_ACCOUNTING:install_layer_sequence:[49, 50, 49, 50, 49, 50, 49, 50]"
+      ]
+    },
+    {
+      "mutation": "bad_generation",
+      "rejected": true,
+      "errors": [
+        "MEMORY_ACCOUNTING:install_generations:[2, 3, 4, 5, 99, 7, 8, 9, 10]"
+      ]
+    },
+    {
+      "mutation": "unready_final",
+      "rejected": true,
+      "errors": [
+        "OWNER_STATE:final_slot_not_released"
+      ]
+    }
+  ],
+  "production_format_config": "UNKNOWN_NO_ACTIVE_SERVICE",
+  "performance_status": "NOT_RUN",
+  "scope": "synthetic hidden/top8, finite main bank, layer49/50, expert43, two Ascend 910C, native DeepEP alltoall, real W8A8"
+}

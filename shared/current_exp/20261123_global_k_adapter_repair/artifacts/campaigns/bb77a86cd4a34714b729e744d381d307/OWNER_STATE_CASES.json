@@ -1,0 +1,2292 @@
+{
+  "status": "PASS",
+  "installs": [
+    {
+      "tag": "repaired_install49",
+      "layer": 49,
+      "generation": 2,
+      "ready": true,
+      "pool_id": "unified-adapter-slot:fffe4ef59450",
+      "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "hash_equal": true,
+      "slot_storage_ptr": 20618734993408,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618734993408,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618760159232,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772742144,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772750336,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772762624,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772779008,
+          "aliases_slot_storage": true
+        }
+      ]
+    },
+    {
+      "tag": "repaired_transition50",
+      "layer": 50,
+      "generation": 3,
+      "ready": true,
+      "pool_id": "unified-adapter-slot:fffe4ef59450",
+      "source_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "hash_equal": true,
+      "slot_storage_ptr": 20618734993408,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618734993408,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618760159232,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772742144,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772750336,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772762624,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772779008,
+          "aliases_slot_storage": true
+        }
+      ]
+    },
+    {
+      "tag": "repaired_reinstall49",
+      "layer": 49,
+      "generation": 4,
+      "ready": true,
+      "pool_id": "unified-adapter-slot:fffe4ef59450",
+      "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "hash_equal": true,
+      "slot_storage_ptr": 20618734993408,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618734993408,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618760159232,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772742144,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772750336,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772762624,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772779008,
+          "aliases_slot_storage": true
+        }
+      ]
+    },
+    {
+      "tag": "repaired_reuse0_l50",
+      "layer": 50,
+      "generation": 5,
+      "ready": true,
+      "pool_id": "unified-adapter-slot:fffe4ef59450",
+      "source_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "hash_equal": true,
+      "slot_storage_ptr": 20618734993408,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618734993408,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618760159232,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772742144,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772750336,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772762624,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772779008,
+          "aliases_slot_storage": true
+        }
+      ]
+    },
+    {
+      "tag": "repaired_reuse0_l49",
+      "layer": 49,
+      "generation": 6,
+      "ready": true,
+      "pool_id": "unified-adapter-slot:fffe4ef59450",
+      "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "hash_equal": true,
+      "slot_storage_ptr": 20618734993408,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618734993408,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618760159232,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772742144,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772750336,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772762624,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772779008,
+          "aliases_slot_storage": true
+        }
+      ]
+    },
+    {
+      "tag": "repaired_reuse1_l50",
+      "layer": 50,
+      "generation": 7,
+      "ready": true,
+      "pool_id": "unified-adapter-slot:fffe4ef59450",
+      "source_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "hash_equal": true,
+      "slot_storage_ptr": 20618734993408,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618734993408,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618760159232,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772742144,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772750336,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772762624,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772779008,
+          "aliases_slot_storage": true
+        }
+      ]
+    },
+    {
+      "tag": "repaired_reuse1_l49",
+      "layer": 49,
+      "generation": 8,
+      "ready": true,
+      "pool_id": "unified-adapter-slot:fffe4ef59450",
+      "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "hash_equal": true,
+      "slot_storage_ptr": 20618734993408,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618734993408,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618760159232,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772742144,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772750336,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772762624,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772779008,
+          "aliases_slot_storage": true
+        }
+      ]
+    },
+    {
+      "tag": "repaired_reuse2_l50",
+      "layer": 50,
+      "generation": 9,
+      "ready": true,
+      "pool_id": "unified-adapter-slot:fffe4ef59450",
+      "source_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "hash_equal": true,
+      "slot_storage_ptr": 20618734993408,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618734993408,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618760159232,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772742144,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772750336,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772762624,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772779008,
+          "aliases_slot_storage": true
+        }
+      ]
+    },
+    {
+      "tag": "repaired_reuse2_l49",
+      "layer": 49,
+      "generation": 10,
+      "ready": true,
+      "pool_id": "unified-adapter-slot:fffe4ef59450",
+      "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "hash_equal": true,
+      "slot_storage_ptr": 20618734993408,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618734993408,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618760159232,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772742144,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772750336,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772762624,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20618734993408,
+          "storage_bytes": 37810176,
+          "data_ptr": 20618772779008,
+          "aliases_slot_storage": true
+        }
+      ]
+    }
+  ],
+  "negatives": {
+    "invalid_rank0": {
+      "0": {
+        "status": "REJECTED",
+        "dispatch_delta": 0,
+        "reasons": [
+          "empty_comm_nonpadding_task"
+        ],
+        "owner_slot_snapshot": null,
+        "lease_overwrite_guard": {
+          "called": false,
+          "errors": []
+        }
+      },
+      "1": {
+        "status": "REJECTED",
+        "dispatch_delta": 0,
+        "reasons": [],
+        "owner_slot_snapshot": null,
+        "lease_overwrite_guard": {
+          "called": false,
+          "errors": []
+        }
+      }
+    },
+    "invalid_rank1": {
+      "0": {
+        "status": "REJECTED",
+        "dispatch_delta": 0,
+        "reasons": [],
+        "owner_slot_snapshot": null,
+        "lease_overwrite_guard": {
+          "called": false,
+          "errors": []
+        }
+      },
+      "1": {
+        "status": "REJECTED",
+        "dispatch_delta": 0,
+        "reasons": [
+          "empty_comm_nonpadding_task"
+        ],
+        "owner_slot_snapshot": null,
+        "lease_overwrite_guard": {
+          "called": false,
+          "errors": []
+        }
+      }
+    },
+    "one_rank_bad_slot": {
+      "0": {
+        "status": "REJECTED",
+        "dispatch_delta": 0,
+        "reasons": [],
+        "owner_slot_snapshot": null,
+        "lease_overwrite_guard": {
+          "called": false,
+          "errors": []
+        }
+      },
+      "1": {
+        "status": "REJECTED",
+        "dispatch_delta": 0,
+        "reasons": [
+          "rank0_generation_mismatch:3!=2"
+        ],
+        "owner_slot_snapshot": {
+          "pool_id": "unified-adapter-slot:fffe4ef59450",
+          "actual_ready": true,
+          "actual_reserved": 0,
+          "actual_ready_count": 1,
+          "actual_in_use": 0,
+          "records": [
+            {
+              "pool_id": "unified-adapter-slot-rank1:3e96d406b843",
+              "slot_id": 0,
+              "state": "ready",
+              "generation": 2,
+              "layer": 49,
+              "expert": 43,
+              "request_id": "repaired_install49",
+              "users": 0,
+              "global_pool_id": "unified-adapter-slot:fffe4ef59450",
+              "owner_rank": 1
+            }
+          ],
+          "lease_layer": 49,
+          "lease_expert": 43,
+          "lease_generation": 2,
+          "lease_owner": 1,
+          "lease_local_slot": 0,
+          "requests": [
+            {
+              "rank": 1,
+              "layer": 49,
+              "tag": "repaired_install49",
+              "campaign_id": "bb77a86cd4a34714b729e744d381d307",
+              "subrun_id": "1eac534120c645a99c905d7468a04460",
+              "code_hash": "8a7c079901af96ed27dffbb5ac63893ac88f31850b87820e6d8247d503dbfde1",
+              "scenario": "matrix",
+              "pool_id": "unified-adapter-slot:fffe4ef59450",
+              "generation": 3,
+              "ready": true,
+              "owner": 1,
+              "local_slot": 0,
+              "expert": 43,
+              "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+              "slot_storage_ptr": 20618734993408,
+              "slot_storage_bytes": 37810176,
+              "slot_formats": [
+                {
+                  "name": "w13",
+                  "shape": [
+                    1,
+                    6144,
+                    4096
+                  ],
+                  "stride": [
+                    25165824,
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.int8",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618734993408,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "w2",
+                  "shape": [
+                    1,
+                    2048,
+                    6144
+                  ],
+                  "stride": [
+                    12582912,
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.int8",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618760159232,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "s13",
+                  "shape": [
+                    1,
+                    4096
+                  ],
+                  "stride": [
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.bfloat16",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772742144,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "s2",
+                  "shape": [
+                    1,
+                    6144
+                  ],
+                  "stride": [
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.bfloat16",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772750336,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "o13",
+                  "shape": [
+                    1,
+                    4096
+                  ],
+                  "stride": [
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.float32",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772762624,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "o2",
+                  "shape": [
+                    1,
+                    6144
+                  ],
+                  "stride": [
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.float32",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772779008,
+                  "aliases_slot_storage": true
+                }
+              ],
+              "hash_equal": true,
+              "install_ms": 442.71491
+            },
+            {
+              "rank": 1,
+              "layer": 49,
+              "tag": "repaired_install49",
+              "campaign_id": "bb77a86cd4a34714b729e744d381d307",
+              "subrun_id": "1eac534120c645a99c905d7468a04460",
+              "code_hash": "8a7c079901af96ed27dffbb5ac63893ac88f31850b87820e6d8247d503dbfde1",
+              "scenario": "matrix",
+              "pool_id": "unified-adapter-slot:fffe4ef59450",
+              "generation": 2,
+              "ready": true,
+              "owner": 1,
+              "local_slot": 0,
+              "expert": 43,
+              "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+              "slot_storage_ptr": 20618734993408,
+              "slot_storage_bytes": 37810176,
+              "slot_formats": [
+                {
+                  "name": "w13",
+                  "shape": [
+                    1,
+                    6144,
+                    4096
+                  ],
+                  "stride": [
+                    25165824,
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.int8",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618734993408,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "w2",
+                  "shape": [
+                    1,
+                    2048,
+                    6144
+                  ],
+                  "stride": [
+                    12582912,
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.int8",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618760159232,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "s13",
+                  "shape": [
+                    1,
+                    4096
+                  ],
+                  "stride": [
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.bfloat16",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772742144,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "s2",
+                  "shape": [
+                    1,
+                    6144
+                  ],
+                  "stride": [
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.bfloat16",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772750336,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "o13",
+                  "shape": [
+                    1,
+                    4096
+                  ],
+                  "stride": [
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.float32",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772762624,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "o2",
+                  "shape": [
+                    1,
+                    6144
+                  ],
+                  "stride": [
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.float32",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772779008,
+                  "aliases_slot_storage": true
+                }
+              ],
+              "hash_equal": true,
+              "install_ms": 442.71491
+            }
+          ]
+        },
+        "lease_overwrite_guard": {
+          "called": false,
+          "errors": []
+        }
+      }
+    },
+    "replay_old_49_after_install50": {
+      "0": {
+        "status": "REJECTED",
+        "dispatch_delta": 0,
+        "reasons": [],
+        "owner_slot_snapshot": null,
+        "lease_overwrite_guard": {
+          "called": false,
+          "errors": []
+        }
+      },
+      "1": {
+        "status": "REJECTED",
+        "dispatch_delta": 0,
+        "reasons": [
+          "rank0_generation_mismatch:2!=3",
+          "rank0_layer_mismatch:49!=50",
+          "rank1_generation_mismatch:2!=3",
+          "rank1_layer_mismatch:49!=50"
+        ],
+        "owner_slot_snapshot": {
+          "pool_id": "unified-adapter-slot:fffe4ef59450",
+          "actual_ready": true,
+          "actual_reserved": 0,
+          "actual_ready_count": 1,
+          "actual_in_use": 0,
+          "records": [
+            {
+              "pool_id": "unified-adapter-slot-rank1:3e96d406b843",
+              "slot_id": 0,
+              "state": "ready",
+              "generation": 3,
+              "layer": 50,
+              "expert": 43,
+              "request_id": "repaired_transition50",
+              "users": 0,
+              "global_pool_id": "unified-adapter-slot:fffe4ef59450",
+              "owner_rank": 1
+            }
+          ],
+          "lease_layer": 50,
+          "lease_expert": 43,
+          "lease_generation": 3,
+          "lease_owner": 1,
+          "lease_local_slot": 0,
+          "requests": [
+            {
+              "rank": 1,
+              "layer": 49,
+              "tag": "repaired_install49",
+              "campaign_id": "bb77a86cd4a34714b729e744d381d307",
+              "subrun_id": "1eac534120c645a99c905d7468a04460",
+              "code_hash": "8a7c079901af96ed27dffbb5ac63893ac88f31850b87820e6d8247d503dbfde1",
+              "scenario": "matrix",
+              "pool_id": "unified-adapter-slot:fffe4ef59450",
+              "generation": 2,
+              "ready": true,
+              "owner": 1,
+              "local_slot": 0,
+              "expert": 43,
+              "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+              "slot_storage_ptr": 20618734993408,
+              "slot_storage_bytes": 37810176,
+              "slot_formats": [
+                {
+                  "name": "w13",
+                  "shape": [
+                    1,
+                    6144,
+                    4096
+                  ],
+                  "stride": [
+                    25165824,
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.int8",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618734993408,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "w2",
+                  "shape": [
+                    1,
+                    2048,
+                    6144
+                  ],
+                  "stride": [
+                    12582912,
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.int8",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618760159232,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "s13",
+                  "shape": [
+                    1,
+                    4096
+                  ],
+                  "stride": [
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.bfloat16",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772742144,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "s2",
+                  "shape": [
+                    1,
+                    6144
+                  ],
+                  "stride": [
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.bfloat16",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772750336,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "o13",
+                  "shape": [
+                    1,
+                    4096
+                  ],
+                  "stride": [
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.float32",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772762624,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "o2",
+                  "shape": [
+                    1,
+                    6144
+                  ],
+                  "stride": [
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.float32",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772779008,
+                  "aliases_slot_storage": true
+                }
+              ],
+              "hash_equal": true,
+              "install_ms": 442.71491
+            },
+            {
+              "rank": 1,
+              "layer": 49,
+              "tag": "repaired_install49",
+              "campaign_id": "bb77a86cd4a34714b729e744d381d307",
+              "subrun_id": "1eac534120c645a99c905d7468a04460",
+              "code_hash": "8a7c079901af96ed27dffbb5ac63893ac88f31850b87820e6d8247d503dbfde1",
+              "scenario": "matrix",
+              "pool_id": "unified-adapter-slot:fffe4ef59450",
+              "generation": 2,
+              "ready": true,
+              "owner": 1,
+              "local_slot": 0,
+              "expert": 43,
+              "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+              "slot_storage_ptr": 20618734993408,
+              "slot_storage_bytes": 37810176,
+              "slot_formats": [
+                {
+                  "name": "w13",
+                  "shape": [
+                    1,
+                    6144,
+                    4096
+                  ],
+                  "stride": [
+                    25165824,
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.int8",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618734993408,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "w2",
+                  "shape": [
+                    1,
+                    2048,
+                    6144
+                  ],
+                  "stride": [
+                    12582912,
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.int8",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618760159232,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "s13",
+                  "shape": [
+                    1,
+                    4096
+                  ],
+                  "stride": [
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.bfloat16",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772742144,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "s2",
+                  "shape": [
+                    1,
+                    6144
+                  ],
+                  "stride": [
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.bfloat16",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772750336,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "o13",
+                  "shape": [
+                    1,
+                    4096
+                  ],
+                  "stride": [
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.float32",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772762624,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "o2",
+                  "shape": [
+                    1,
+                    6144
+                  ],
+                  "stride": [
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.float32",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772779008,
+                  "aliases_slot_storage": true
+                }
+              ],
+              "hash_equal": true,
+              "install_ms": 442.71491
+            }
+          ]
+        },
+        "lease_overwrite_guard": {
+          "called": false,
+          "errors": []
+        }
+      }
+    },
+    "replay_old_generation_49": {
+      "0": {
+        "status": "REJECTED",
+        "dispatch_delta": 0,
+        "reasons": [],
+        "owner_slot_snapshot": null,
+        "lease_overwrite_guard": {
+          "called": false,
+          "errors": []
+        }
+      },
+      "1": {
+        "status": "REJECTED",
+        "dispatch_delta": 0,
+        "reasons": [
+          "rank0_generation_mismatch:2!=4",
+          "rank1_generation_mismatch:2!=4"
+        ],
+        "owner_slot_snapshot": {
+          "pool_id": "unified-adapter-slot:fffe4ef59450",
+          "actual_ready": true,
+          "actual_reserved": 0,
+          "actual_ready_count": 1,
+          "actual_in_use": 0,
+          "records": [
+            {
+              "pool_id": "unified-adapter-slot-rank1:3e96d406b843",
+              "slot_id": 0,
+              "state": "ready",
+              "generation": 4,
+              "layer": 49,
+              "expert": 43,
+              "request_id": "repaired_reinstall49",
+              "users": 0,
+              "global_pool_id": "unified-adapter-slot:fffe4ef59450",
+              "owner_rank": 1
+            }
+          ],
+          "lease_layer": 49,
+          "lease_expert": 43,
+          "lease_generation": 4,
+          "lease_owner": 1,
+          "lease_local_slot": 0,
+          "requests": [
+            {
+              "rank": 1,
+              "layer": 49,
+              "tag": "repaired_install49",
+              "campaign_id": "bb77a86cd4a34714b729e744d381d307",
+              "subrun_id": "1eac534120c645a99c905d7468a04460",
+              "code_hash": "8a7c079901af96ed27dffbb5ac63893ac88f31850b87820e6d8247d503dbfde1",
+              "scenario": "matrix",
+              "pool_id": "unified-adapter-slot:fffe4ef59450",
+              "generation": 2,
+              "ready": true,
+              "owner": 1,
+              "local_slot": 0,
+              "expert": 43,
+              "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+              "slot_storage_ptr": 20618734993408,
+              "slot_storage_bytes": 37810176,
+              "slot_formats": [
+                {
+                  "name": "w13",
+                  "shape": [
+                    1,
+                    6144,
+                    4096
+                  ],
+                  "stride": [
+                    25165824,
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.int8",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618734993408,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "w2",
+                  "shape": [
+                    1,
+                    2048,
+                    6144
+                  ],
+                  "stride": [
+                    12582912,
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.int8",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618760159232,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "s13",
+                  "shape": [
+                    1,
+                    4096
+                  ],
+                  "stride": [
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.bfloat16",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772742144,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "s2",
+                  "shape": [
+                    1,
+                    6144
+                  ],
+                  "stride": [
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.bfloat16",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772750336,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "o13",
+                  "shape": [
+                    1,
+                    4096
+                  ],
+                  "stride": [
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.float32",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772762624,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "o2",
+                  "shape": [
+                    1,
+                    6144
+                  ],
+                  "stride": [
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.float32",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772779008,
+                  "aliases_slot_storage": true
+                }
+              ],
+              "hash_equal": true,
+              "install_ms": 442.71491
+            },
+            {
+              "rank": 1,
+              "layer": 49,
+              "tag": "repaired_install49",
+              "campaign_id": "bb77a86cd4a34714b729e744d381d307",
+              "subrun_id": "1eac534120c645a99c905d7468a04460",
+              "code_hash": "8a7c079901af96ed27dffbb5ac63893ac88f31850b87820e6d8247d503dbfde1",
+              "scenario": "matrix",
+              "pool_id": "unified-adapter-slot:fffe4ef59450",
+              "generation": 2,
+              "ready": true,
+              "owner": 1,
+              "local_slot": 0,
+              "expert": 43,
+              "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+              "slot_storage_ptr": 20618734993408,
+              "slot_storage_bytes": 37810176,
+              "slot_formats": [
+                {
+                  "name": "w13",
+                  "shape": [
+                    1,
+                    6144,
+                    4096
+                  ],
+                  "stride": [
+                    25165824,
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.int8",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618734993408,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "w2",
+                  "shape": [
+                    1,
+                    2048,
+                    6144
+                  ],
+                  "stride": [
+                    12582912,
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.int8",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618760159232,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "s13",
+                  "shape": [
+                    1,
+                    4096
+                  ],
+                  "stride": [
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.bfloat16",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772742144,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "s2",
+                  "shape": [
+                    1,
+                    6144
+                  ],
+                  "stride": [
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.bfloat16",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772750336,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "o13",
+                  "shape": [
+                    1,
+                    4096
+                  ],
+                  "stride": [
+                    4096,
+                    1
+                  ],
+                  "dtype": "torch.float32",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772762624,
+                  "aliases_slot_storage": true
+                },
+                {
+                  "name": "o2",
+                  "shape": [
+                    1,
+                    6144
+                  ],
+                  "stride": [
+                    6144,
+                    1
+                  ],
+                  "dtype": "torch.float32",
+                  "format_string": 2,
+                  "format_code": 2,
+                  "storage_ptr": 20618734993408,
+                  "storage_bytes": 37810176,
+                  "data_ptr": 20618772779008,
+                  "aliases_slot_storage": true
+                }
+              ],
+              "hash_equal": true,
+              "install_ms": 442.71491
+            }
+          ]
+        },
+        "lease_overwrite_guard": {
+          "called": false,
+          "errors": []
+        }
+      }
+    },
+    "reserved_but_claims_ready": {
+      "0": {
+        "status": "REJECTED",
+        "dispatch_delta": 0,
+        "reasons": [],
+        "owner_slot_snapshot": null,
+        "lease_overwrite_guard": {
+          "called": false,
+          "errors": []
+        }
+      },
+      "1": {
+        "status": "REJECTED",
+        "dispatch_delta": 0,
+        "reasons": [
+          "owner_has_no_live_lease",
+          "rank0_actual_slot_not_ready:reserved",
+          "rank1_actual_slot_not_ready:reserved"
+        ],
+        "owner_slot_snapshot": {
+          "pool_id": "unified-adapter-slot:fffe4ef59450",
+          "actual_ready": false,
+          "actual_reserved": 1,
+          "actual_ready_count": 0,
+          "actual_in_use": 0,
+          "records": [
+            {
+              "pool_id": "unified-adapter-slot-rank1:3e96d406b843",
+              "slot_id": 0,
+              "state": "reserved",
+              "generation": 1,
+              "layer": 49,
+              "expert": 43,
+              "request_id": "repaired-reserved",
+              "users": 0,
+              "global_pool_id": "unified-adapter-slot:fffe4ef59450",
+              "owner_rank": 1
+            }
+          ],
+          "lease_layer": null,
+          "lease_expert": null,
+          "lease_generation": null,
+          "lease_owner": null,
+          "lease_local_slot": null,
+          "requests": [
+            {
+              "pool_id": "unified-adapter-slot:fffe4ef59450",
+              "ready": true,
+              "layer": 49,
+              "expert": 43,
+              "generation": 1,
+              "owner": 1,
+              "local_slot": 0
+            },
+            {
+              "pool_id": "unified-adapter-slot:fffe4ef59450",
+              "ready": true,
+              "layer": 49,
+              "expert": 43,
+              "generation": 1,
+              "owner": 1,
+              "local_slot": 0
+            }
+          ]
+        },
+        "lease_overwrite_guard": {
+          "called": false,
+          "errors": []
+        }
+      }
+    }
+  },
+  "guard": {
+    "called": true,
+    "errors": [],
+    "actual_records_during_use": [
+      {
+        "pool_id": "unified-adapter-slot-rank1:3e96d406b843",
+        "slot_id": 0,
+        "state": "in_use",
+        "generation": 4,
+        "layer": 49,
+        "expert": 43,
+        "request_id": "repaired_reinstall49",
+        "users": 1,
+        "global_pool_id": "unified-adapter-slot:fffe4ef59450",
+        "owner_rank": 1
+      }
+    ]
+  },
+  "final_slot": {
+    "rank": 1,
+    "lease": null,
+    "records": [
+      {
+        "pool_id": "unified-adapter-slot-rank1:3e96d406b843",
+        "slot_id": 0,
+        "state": "free",
+        "generation": 10,
+        "layer": null,
+        "expert": null,
+        "request_id": null,
+        "users": 0,
+        "global_pool_id": "unified-adapter-slot:fffe4ef59450",
+        "owner_rank": 1
+      }
+    ],
+    "pool": {
+      "K": 1,
+      "slot_bytes": 37810176,
+      "committed_bytes": 37810176,
+      "per_rank_capacity": {
+        "1": 1
+      },
+      "per_rank_allocated_bytes": {
+        "1": 37810176
+      },
+      "active_bytes": 0,
+      "cached_free_bytes": 37810176,
+      "local": {
+        "1": {
+          "pool_id": "unified-adapter-slot-rank1:3e96d406b843",
+          "capacity": 1,
+          "slot_bytes": 37810176,
+          "allocated_bytes": 37810176,
+          "free": 1,
+          "reserved": 0,
+          "ready": 0,
+          "in_use": 0,
+          "releasing": 0,
+          "acquisitions": 10,
+          "releases": 9,
+          "reuses": 9,
+          "max_concurrent_leases": 1,
+          "max_concurrent_uses": 1,
+          "distinct_layers_seen": 2,
+          "distinct_experts_seen": 2,
+          "backing_reallocations": 0,
+          "invariant_violations": 0
+        }
+      }
+    }
+  }
+}

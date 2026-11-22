@@ -1,0 +1,12 @@
+{
+  "rank": 0,
+  "layer": 49,
+  "tag": "repaired_install49",
+  "campaign_id": "bb77a86cd4a34714b729e744d381d307",
+  "subrun_id": "1eac534120c645a99c905d7468a04460",
+  "code_hash": "8a7c079901af96ed27dffbb5ac63893ac88f31850b87820e6d8247d503dbfde1",
+  "scenario": "matrix",
+  "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+  "hash_equal": true,
+  "install_ms": 442.77573
+}

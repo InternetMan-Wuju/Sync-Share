@@ -1,0 +1,88 @@
+{
+  "campaign_id": "bb77a86cd4a34714b729e744d381d307",
+  "subrun_id": "feda27c8da664eb4bdc0bbe06cb727cd",
+  "code_hash": "8a7c079901af96ed27dffbb5ac63893ac88f31850b87820e6d8247d503dbfde1",
+  "state_bytes": 37810176,
+  "layout": [
+    {
+      "name": "w13",
+      "offset": 0,
+      "bytes": 25165824,
+      "dtype": "torch.int8",
+      "shape": [
+        1,
+        6144,
+        4096
+      ]
+    },
+    {
+      "name": "w2",
+      "offset": 25165824,
+      "bytes": 12582912,
+      "dtype": "torch.int8",
+      "shape": [
+        1,
+        2048,
+        6144
+      ]
+    },
+    {
+      "name": "s13",
+      "offset": 37748736,
+      "bytes": 8192,
+      "dtype": "torch.bfloat16",
+      "shape": [
+        1,
+        4096
+      ]
+    },
+    {
+      "name": "s2",
+      "offset": 37756928,
+      "bytes": 12288,
+      "dtype": "torch.bfloat16",
+      "shape": [
+        1,
+        6144
+      ]
+    },
+    {
+      "name": "o13",
+      "offset": 37769216,
+      "bytes": 16384,
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        4096
+      ]
+    },
+    {
+      "name": "o2",
+      "offset": 37785600,
+      "bytes": 24576,
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        6144
+      ]
+    }
+  ],
+  "slot_hashes": {
+    "49": {
+      "w13": "910b08d3aecad0b82d6f55c61dfbcb59c8cbfe5ca912bf35cbff27b89c326b8f",
+      "w2": "862eecea31571a91b14dc175861e98b7510867de32a3249ac71155435132090e",
+      "s13": "bec1e0ee9161034eaf01b2354d99ace78cfa5ff6a1a219fc86980464f089e77b",
+      "s2": "74063193c572bbfd1f5dee3b29bbeaebf1697e3523811ac7d0a351ec5ba0da58",
+      "o13": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "o2": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3"
+    },
+    "50": {
+      "w13": "3fb6c113470b13d3551970ac3247b60f4f025ccf90ef6ff0dc1f795857e19547",
+      "w2": "641abf953ff20a18b1b80884f9db085dc4e634ee951efa490b7129dbe839b792",
+      "s13": "533fc36120cc4973e2a01618486fc1e3f176992bdd5adbac2a8f01c64637e450",
+      "s2": "96ddc2718f25989e48010e6fd1f659ea16d6c9737bc7d45f594117f7e39c2d8a",
+      "o13": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "o2": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3"
+    }
+  }
+}

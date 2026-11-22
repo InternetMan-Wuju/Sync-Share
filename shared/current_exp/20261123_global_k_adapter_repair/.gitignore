@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/
+results/
+two_rank_meta.json
+profiler_raw/
+*.pt
+*.log
+artifacts/campaigns/*/logs/
+artifacts/failed_attempts/

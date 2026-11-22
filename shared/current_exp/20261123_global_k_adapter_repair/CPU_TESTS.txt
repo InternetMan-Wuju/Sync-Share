@@ -1,0 +1,35 @@
+test_abort_sync_failure_quarantines_until_safe_retry (__main__.SlotIdentityTests) ... ok
+test_abort_waits_for_delayed_write_completion (__main__.SlotIdentityTests) ... ok
+test_failed_mark_ready_cleanup_syncs_and_frees (__main__.SlotIdentityTests) ... ok
+test_foreign_reserved_and_ready_lease_rejected_by_every_entry (__main__.SlotIdentityTests) ... ok
+test_forged_request_layer_and_expert_rejected (__main__.SlotIdentityTests) ... ok
+test_identity_validation_mutation_is_detected_if_bypassed (__main__.SlotIdentityTests)
+Mutation control: the old implementation shape must fail this test. ... ok
+test_release_gate_blocks_new_use_and_acquire_during_sync (__main__.SlotIdentityTests) ... ok
+test_release_sync_failure_keeps_slot_gated_for_safe_retry (__main__.SlotIdentityTests) ... ok
+test_release_waits_for_other_thread_use_without_new_entry (__main__.SlotIdentityTests) ... ok
+test_release_while_in_use_rejected_and_no_overwrite (__main__.SlotIdentityTests) ... ok
+test_stale_generation_rejected_after_reuse (__main__.SlotIdentityTests) ... ok
+test_unready_read_rejected (__main__.SlotIdentityTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.154s
+
+OK
+test_beam_width_can_prune_multi_action_pair (__main__.ExpertSearchTests) ... ok
+test_busy_slot_cannot_be_used (__main__.ExpertSearchTests) ... ok
+test_equivalent_states_are_deduplicated (__main__.ExpertSearchTests) ... ok
+test_existing_replica_avoids_copy (__main__.ExpertSearchTests) ... ok
+test_intersection_candidates_fix_q4_while_legacy_misses (__main__.ExpertSearchTests) ... ok
+test_multi_action_pair_and_oracle_agree_on_score (__main__.ExpertSearchTests) ... ok
+test_over_allocation_and_zero_q_rejected (__main__.ExpertSearchTests) ... ok
+test_partial_owner_set_has_no_dummy_slot (__main__.ExpertSearchTests) ... ok
+test_same_expert_different_layer_is_not_reused (__main__.ExpertSearchTests) ... ok
+test_wrong_expert_requires_copy (__main__.ExpertSearchTests) ... ok
+test_zero_net_saving_tie_does_not_copy (__main__.ExpertSearchTests) ... ok
+test_zero_profit_action_is_bypassed (__main__.ExpertSearchTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.734s
+
+OK

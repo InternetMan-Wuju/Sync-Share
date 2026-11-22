@@ -1,0 +1,56 @@
+{
+  "campaign_id": "bb77a86cd4a34714b729e744d381d307",
+  "code_hash": "8a7c079901af96ed27dffbb5ac63893ac88f31850b87820e6d8247d503dbfde1",
+  "subruns": {
+    "functional": "1eac534120c645a99c905d7468a04460",
+    "memory-baseline": "feda27c8da664eb4bdc0bbe06cb727cd",
+    "memory-candidate": "fc8582213ed84d839aa48b78bfea9389"
+  },
+  "expected_cases": [
+    "both_mixed_q0_noslot",
+    "no_input_receives_tasks",
+    "input_but_zero_expert_tasks",
+    "both_empty",
+    "invalid_rank0",
+    "valid_after_invalid_rank0",
+    "invalid_rank1",
+    "valid_after_invalid_rank1",
+    "reserved_but_claims_ready",
+    "valid_after_reserved",
+    "partial_slot",
+    "all_slot",
+    "large_259_partial",
+    "one_rank_bad_slot",
+    "valid_after_one_rank_bad",
+    "replay_old_49_after_install50",
+    "current_50_after_reinstall",
+    "replay_old_generation_49",
+    "current_generation_49",
+    "fixed_lease_overwrite_blocked"
+  ],
+  "expected_install_tags": [
+    "repaired_install49",
+    "repaired_transition50",
+    "repaired_reinstall49",
+    "repaired_reuse0_l50",
+    "repaired_reuse0_l49",
+    "repaired_reuse1_l50",
+    "repaired_reuse1_l49",
+    "repaired_reuse2_l50",
+    "repaired_reuse2_l49"
+  ],
+  "image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "devices": [
+    "davinci0",
+    "davinci1"
+  ],
+  "host": "npu1-23",
+  "model_mount": "/models/glm-q",
+  "dispatch_capacity": 512,
+  "deep_ep_mode": "alltoall",
+  "started_at": "2026-11-23T01:02:11.571855+08:00",
+  "production_format_config": "UNKNOWN_NO_ACTIVE_SERVICE",
+  "performance_status": "NOT_RUN",
+  "model_config_json_sha256": "817f5fb39ca5d4c4b5648de89ca00deaea7537d8c2f130172a459252a05c1073",
+  "model_quant_model_weights_safetensors_index_json_sha256": "dfa97fa50b5e675ff6cea6ddeae3110795b6b7e971e6dc9cf565a4005fcb079c"
+}
