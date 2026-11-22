@@ -1,0 +1,130 @@
+{
+  "scope": "EP16 service layer49+50, 8192-token prompt, fixed owner-local quota 1/2, output limit 2",
+  "k0": {
+    "status": "PASS",
+    "output_sha256": "c977dbe785221d34114d345fdf8ff4e18bb4af66750751dbea29407f9738735f",
+    "output_text": "1.",
+    "source": "q0 diagnostic startup path"
+  },
+  "k1": {
+    "status": "PASS",
+    "slot": {
+      "slot_count": 1,
+      "storage_ptrs": [
+        20847780364288
+      ],
+      "generations": [
+        1,
+        2
+      ],
+      "layers": [
+        49,
+        50
+      ],
+      "moved": [
+        {
+          "layer": 49,
+          "tasks": 18,
+          "verify": {
+            "max_abs": 0.0029296875,
+            "nrmse": 0.0008932320051826537,
+            "finite": true
+          }
+        },
+        {
+          "layer": 50,
+          "tasks": 15,
+          "verify": {
+            "max_abs": 0.001953125,
+            "nrmse": 0.0006525280186906457,
+            "finite": true
+          }
+        }
+      ]
+    },
+    "output_sha256": "c977dbe785221d34114d345fdf8ff4e18bb4af66750751dbea29407f9738735f",
+    "ttft_s": 5.333145957090892,
+    "token_exact_vs_k0": true
+  },
+  "k2": {
+    "status": "PASS_NUMERIC_TOLERANCE_TOKEN_DIFF",
+    "slot0": {
+      "slot_count": 1,
+      "storage_ptrs": [
+        20847780364288
+      ],
+      "generations": [
+        1,
+        2
+      ],
+      "layers": [
+        49,
+        50
+      ],
+      "moved": [
+        {
+          "layer": 49,
+          "tasks": 18,
+          "verify": {
+            "max_abs": 0.0029296875,
+            "nrmse": 0.0008932320051826537,
+            "finite": true
+          }
+        },
+        {
+          "layer": 50,
+          "tasks": 15,
+          "verify": {
+            "max_abs": 0.001953125,
+            "nrmse": 0.0006525280186906457,
+            "finite": true
+          }
+        }
+      ]
+    },
+    "slot1": {
+      "slot_count": 1,
+      "storage_ptrs": [
+        20847780364288
+      ],
+      "generations": [
+        1,
+        2
+      ],
+      "layers": [
+        49,
+        50
+      ],
+      "moved": [
+        {
+          "layer": 49,
+          "tasks": 29,
+          "verify": {
+            "max_abs": 0.001953125,
+            "nrmse": 0.0009197687031701207,
+            "finite": true
+          }
+        },
+        {
+          "layer": 50,
+          "tasks": 5,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.00045453847269527614,
+            "finite": true
+          }
+        }
+      ]
+    },
+    "output_sha256": "10c5fe5939d4a0ab2e351dabb1b8ca6dd1e38e96d4a4b0e0f4d07b83df32586f",
+    "ttft_s": 5.7863520360551775,
+    "token_exact_vs_k0": false,
+    "both_slots_same_layer": true,
+    "cross_layer_reuse": true
+  },
+  "q0_diagnostic": {
+    "status": "PASS",
+    "install_count": 0,
+    "output_sha256": "c977dbe785221d34114d345fdf8ff4e18bb4af66750751dbea29407f9738735f"
+  }
+}

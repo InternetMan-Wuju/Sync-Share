@@ -1,0 +1,504 @@
+{
+  "isolated_32768": {
+    "per_owner": {
+      "0": [
+        {
+          "seq": 4,
+          "layer": 49,
+          "tasks": 7,
+          "verify": {
+            "max_abs": 0.001953125,
+            "nrmse": 0.0005805892287753522,
+            "finite": true
+          }
+        },
+        {
+          "seq": 4,
+          "layer": 50,
+          "tasks": 2,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0004113763861823827,
+            "finite": true
+          }
+        },
+        {
+          "seq": 5,
+          "layer": 49,
+          "tasks": 4,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0003996590676251799,
+            "finite": true
+          }
+        },
+        {
+          "seq": 5,
+          "layer": 50,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 6,
+          "layer": 49,
+          "tasks": 9,
+          "verify": {
+            "max_abs": 0.001953125,
+            "nrmse": 0.0006301537505351007,
+            "finite": true
+          }
+        },
+        {
+          "seq": 6,
+          "layer": 50,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 7,
+          "layer": 49,
+          "tasks": 11,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0006720247329212725,
+            "finite": true
+          }
+        },
+        {
+          "seq": 7,
+          "layer": 50,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        }
+      ],
+      "1": [
+        {
+          "seq": 4,
+          "layer": 49,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 4,
+          "layer": 50,
+          "tasks": 8,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0005766217946074903,
+            "finite": true
+          }
+        },
+        {
+          "seq": 5,
+          "layer": 49,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 5,
+          "layer": 50,
+          "tasks": 17,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.000983922858722508,
+            "finite": true
+          }
+        },
+        {
+          "seq": 6,
+          "layer": 49,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 6,
+          "layer": 50,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 7,
+          "layer": 49,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 7,
+          "layer": 50,
+          "tasks": 3,
+          "verify": {
+            "max_abs": 0.000732421875,
+            "nrmse": 0.0008998468401841819,
+            "finite": true
+          }
+        }
+      ]
+    },
+    "total_tasks": 61,
+    "max_abs": 0.001953125,
+    "max_nrmse": 0.000983922858722508
+  },
+  "sequence_8192": {
+    "per_owner": {
+      "0": [
+        {
+          "seq": 8,
+          "layer": 49,
+          "tasks": 7,
+          "verify": {
+            "max_abs": 0.001953125,
+            "nrmse": 0.0005805892287753522,
+            "finite": true
+          }
+        },
+        {
+          "seq": 8,
+          "layer": 50,
+          "tasks": 2,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0004113763861823827,
+            "finite": true
+          }
+        }
+      ],
+      "1": [
+        {
+          "seq": 8,
+          "layer": 49,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 8,
+          "layer": 50,
+          "tasks": 8,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0005766217946074903,
+            "finite": true
+          }
+        }
+      ]
+    },
+    "total_tasks": 17,
+    "max_abs": 0.001953125,
+    "max_nrmse": 0.0005805892287753522
+  },
+  "sequence_16384": {
+    "per_owner": {
+      "0": [
+        {
+          "seq": 9,
+          "layer": 49,
+          "tasks": 7,
+          "verify": {
+            "max_abs": 0.001953125,
+            "nrmse": 0.0005805892287753522,
+            "finite": true
+          }
+        },
+        {
+          "seq": 9,
+          "layer": 50,
+          "tasks": 2,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0004113763861823827,
+            "finite": true
+          }
+        },
+        {
+          "seq": 10,
+          "layer": 49,
+          "tasks": 4,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0003996590676251799,
+            "finite": true
+          }
+        },
+        {
+          "seq": 10,
+          "layer": 50,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        }
+      ],
+      "1": [
+        {
+          "seq": 9,
+          "layer": 49,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 9,
+          "layer": 50,
+          "tasks": 8,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0005766217946074903,
+            "finite": true
+          }
+        },
+        {
+          "seq": 10,
+          "layer": 49,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 10,
+          "layer": 50,
+          "tasks": 17,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.000983922858722508,
+            "finite": true
+          }
+        }
+      ]
+    },
+    "total_tasks": 38,
+    "max_abs": 0.001953125,
+    "max_nrmse": 0.000983922858722508
+  },
+  "sequence_32768": {
+    "per_owner": {
+      "0": [
+        {
+          "seq": 11,
+          "layer": 49,
+          "tasks": 7,
+          "verify": {
+            "max_abs": 0.001953125,
+            "nrmse": 0.0005805892287753522,
+            "finite": true
+          }
+        },
+        {
+          "seq": 11,
+          "layer": 50,
+          "tasks": 2,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0004113763861823827,
+            "finite": true
+          }
+        },
+        {
+          "seq": 12,
+          "layer": 49,
+          "tasks": 4,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0003996590676251799,
+            "finite": true
+          }
+        },
+        {
+          "seq": 12,
+          "layer": 50,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 13,
+          "layer": 49,
+          "tasks": 9,
+          "verify": {
+            "max_abs": 0.001953125,
+            "nrmse": 0.0006301537505351007,
+            "finite": true
+          }
+        },
+        {
+          "seq": 13,
+          "layer": 50,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 14,
+          "layer": 49,
+          "tasks": 11,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0006720247329212725,
+            "finite": true
+          }
+        },
+        {
+          "seq": 14,
+          "layer": 50,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        }
+      ],
+      "1": [
+        {
+          "seq": 11,
+          "layer": 49,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 11,
+          "layer": 50,
+          "tasks": 8,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.0005766217946074903,
+            "finite": true
+          }
+        },
+        {
+          "seq": 12,
+          "layer": 49,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 12,
+          "layer": 50,
+          "tasks": 17,
+          "verify": {
+            "max_abs": 0.0009765625,
+            "nrmse": 0.000983922858722508,
+            "finite": true
+          }
+        },
+        {
+          "seq": 13,
+          "layer": 49,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 13,
+          "layer": 50,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 14,
+          "layer": 49,
+          "tasks": 0,
+          "verify": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "finite": true
+          }
+        },
+        {
+          "seq": 14,
+          "layer": 50,
+          "tasks": 3,
+          "verify": {
+            "max_abs": 0.000732421875,
+            "nrmse": 0.0008998468401841819,
+            "finite": true
+          }
+        }
+      ]
+    },
+    "total_tasks": 61,
+    "max_abs": 0.001953125,
+    "max_nrmse": 0.000983922858722508
+  },
+  "K": 2,
+  "mode": "local fallback because native replica dispatch combine returned aclnnCamMoeCombineNormal attr=601",
+  "owners": [
+    0,
+    1
+  ],
+  "cross_node_weight_sources": [
+    {
+      "owner": 0,
+      "source_rank": 20,
+      "source_node": 25
+    },
+    {
+      "owner": 1,
+      "source_rank": 16,
+      "source_node": 25
+    }
+  ]
+}

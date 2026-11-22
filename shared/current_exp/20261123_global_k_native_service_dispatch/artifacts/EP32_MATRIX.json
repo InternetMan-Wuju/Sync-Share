@@ -1,0 +1,84 @@
+{
+  "device_topology": "single EP32 group, ranks 0-15 node23 local dies0-15; ranks16-31 node25 local dies0-15",
+  "matrix": {
+    "8192": {
+      "off": {
+        "status": "PASS",
+        "ttft_s": 4.946090726996772,
+        "total_s": 5.5145999731030315,
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+      },
+      "eplb_static": {
+        "status": "PASS",
+        "ttft_s": 5.005494385026395,
+        "total_s": 5.607159413048066,
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+      },
+      "k2": {
+        "status": "PASS",
+        "ttft_s": 2.956897927913815,
+        "total_s": 3.5133638529805467,
+        "output_ids_sha256": "5afe2c8613e2a23039d6668887412977bcdff9a016510b967d36ccee312401b6"
+      }
+    },
+    "16384": {
+      "off": {
+        "status": "PASS",
+        "ttft_s": 5.748868118971586,
+        "total_s": 6.30411540903151,
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+      },
+      "eplb_static": {
+        "status": "PASS",
+        "ttft_s": 5.8717178360093385,
+        "total_s": 6.401315096998587,
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+      },
+      "k2": {
+        "status": "PASS",
+        "ttft_s": 6.0152063890127465,
+        "total_s": 6.590564755024388,
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+      }
+    },
+    "32768": {
+      "off": {
+        "status": "PASS",
+        "ttft_s": 11.850907000014558,
+        "total_s": 12.416233564028516,
+        "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c"
+      },
+      "eplb_static": {
+        "status": "PASS",
+        "ttft_s": 12.083918021991849,
+        "total_s": 12.674740229966119,
+        "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c"
+      },
+      "k2": {
+        "status": "PASS",
+        "ttft_s": 12.412848195061088,
+        "total_s": 12.948973778053187,
+        "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c",
+        "isolated_32k": {
+          "status": "PASS",
+          "ttft_s": 16.149544861982577,
+          "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c"
+        }
+      }
+    }
+  },
+  "eplb_static": {
+    "physical_experts": 288,
+    "local_slots_per_rank": 9,
+    "redundant": 32,
+    "layout_active": true,
+    "replica_tasks_8192": 5098,
+    "total_tasks_8192": 65536,
+    "provenance": "fixed layout/input observer evidence inherited from previous run; service matrix rerun this round"
+  },
+  "online_rebalance": {
+    "status": "FAIL",
+    "error": "For a tensor of internal format, its storage_offset must be 0",
+    "rebalance_end": false
+  }
+}

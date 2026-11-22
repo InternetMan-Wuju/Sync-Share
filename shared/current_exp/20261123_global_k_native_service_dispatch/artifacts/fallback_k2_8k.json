@@ -1,0 +1,12 @@
+{
+  "prompt": "prompts/prompt_8k.txt",
+  "prompt_sha256": "85370921bcd6ce6c7cf146802ceb5bfe9dffde971ef3f4098eade85df6e49425",
+  "prompt_tokens_hint": null,
+  "ttft_s": 5.7863520360551775,
+  "total_s": 6.296806630096398,
+  "output_text": "用户希望",
+  "output_sha256": "10c5fe5939d4a0ab2e351dabb1b8ca6dd1e38e96d4a4b0e0f4d07b83df32586f",
+  "output_chars": 4,
+  "finish_reason": "length",
+  "meta_info": null
+}

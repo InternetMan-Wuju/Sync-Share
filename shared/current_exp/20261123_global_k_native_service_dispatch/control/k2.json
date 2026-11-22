@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "K": 2,
+  "ep": 16,
+  "main_per_rank": 16,
+  "owners": [
+    0,
+    1
+  ],
+  "hot_experts": [
+    163,
+    133
+  ],
+  "layers": [
+    49,
+    50
+  ],
+  "split_num": 1,
+  "split_den": 2,
+  "log_dir": "/exp-logs/k_service",
+  "native_dispatch": false
+}

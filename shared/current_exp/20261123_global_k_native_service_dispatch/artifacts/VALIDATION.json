@@ -1,0 +1,18 @@
+{
+  "status": "PASS_WITH_RECORDED_BLOCKERS",
+  "checks": {
+    "SLOT_DECISION_FIX": "PASS",
+    "32K_ISOLATED": "PASS",
+    "32K_SEQUENCE": "PASS",
+    "EP16_K0": "PASS",
+    "EP16_K1": "PASS",
+    "EP16_K2": "PASS_NUMERIC_TOLERANCE_TOKEN_DIFF",
+    "EP32_ALL_32_DIE": "PASS",
+    "EP32_OFF_3": "PASS",
+    "EP32_EPLB_STATIC_3": "PASS",
+    "EP32_K2_3": "PASS",
+    "EPLB_ONLINE_REBALANCE": "FAIL_NO_END",
+    "NATIVE_REPLICA_DISPATCH": "FAIL_COMBINE_ATTR601"
+  },
+  "errors": []
+}

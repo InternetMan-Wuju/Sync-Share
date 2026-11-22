@@ -1,0 +1,343 @@
+{
+  "status": "FAIL",
+  "config": {
+    "K": 1,
+    "ep": 16,
+    "native_dispatch": true,
+    "layers": [
+      49,
+      50
+    ],
+    "owners": [
+      0
+    ],
+    "hot_experts": [
+      163
+    ]
+  },
+  "observed": "native replica DeepEP dispatch reached combine; aclnnCamMoeCombineNormal rejected the request",
+  "error": "Invalid_Argument EE1001, Invalid attr=601",
+  "rebalance_end": "N/A",
+  "selected_log": [
+    {
+      "line": 1211,
+      "text": "[2026-11-22 22:25:52] INFO:     127.0.0.1:51296 - \"GET /health HTTP/1.1\" 200 OK"
+    },
+    {
+      "line": 1212,
+      "text": "[2026-11-22 22:25:58 TP0 EP0] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 1213,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 1306,
+      "text": "        Check whether the input parameters of the interface are correct."
+    },
+    {
+      "line": 1307,
+      "text": "[PID: 589] 2026-11-22-22:23:13.214.312 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 1308,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 1315,
+      "text": ""
+    },
+    {
+      "line": 1316,
+      "text": "[2026-11-22 22:25:58 TP6 EP6] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 1317,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 1421,
+      "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "line": 1422,
+      "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 595] 2026-11-22-22:23:13.220.991 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 1423,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 1436,
+      "text": ""
+    },
+    {
+      "line": 1437,
+      "text": "[2026-11-22 22:25:58 TP14 EP14] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 1438,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 1542,
+      "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "line": 1543,
+      "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 1107] 2026-11-22-22:23:13.251.148 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 1544,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 1558,
+      "text": "[2026-11-22 22:25:58] SIGQUIT received. signum=None, frame=None. It usually means one child failed."
+    },
+    {
+      "line": 1559,
+      "text": "[2026-11-22 22:25:58 TP15 EP15] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 1560,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 1664,
+      "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "line": 1665,
+      "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 1108] 2026-11-22-22:23:13.287.836 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 1666,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 1679,
+      "text": ""
+    },
+    {
+      "line": 1680,
+      "text": "[2026-11-22 22:25:58 TP1 EP1] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 1681,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 1785,
+      "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "line": 1786,
+      "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 590] 2026-11-22-22:23:13.214.312 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 1787,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 1800,
+      "text": ""
+    },
+    {
+      "line": 1801,
+      "text": "[2026-11-22 22:25:58 TP11 EP11] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 1802,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 1906,
+      "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "line": 1907,
+      "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 1104] 2026-11-22-22:23:13.235.329 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 1908,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 1921,
+      "text": ""
+    },
+    {
+      "line": 1922,
+      "text": "[2026-11-22 22:25:58 TP8 EP8] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 1923,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 2027,
+      "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "line": 2028,
+      "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 1101] 2026-11-22-22:23:13.217.587 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 2029,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 2043,
+      "text": "[2026-11-22 22:25:58] Sleeping 5 seconds before crash diagnostics to let GPU activity settle."
+    },
+    {
+      "line": 2044,
+      "text": "[2026-11-22 22:25:58 TP3 EP3] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 2045,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 2149,
+      "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "line": 2150,
+      "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 592] 2026-11-22-22:23:13.232.307 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 2151,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 2164,
+      "text": ""
+    },
+    {
+      "line": 2165,
+      "text": "[2026-11-22 22:25:58 TP2 EP2] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 2166,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 2270,
+      "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "line": 2271,
+      "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 591] 2026-11-22-22:23:13.220.202 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 2272,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 2285,
+      "text": ""
+    },
+    {
+      "line": 2286,
+      "text": "[2026-11-22 22:25:58 TP7 EP7] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 2287,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 2391,
+      "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "line": 2392,
+      "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 596] 2026-11-22-22:23:13.265.143 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 2393,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 2406,
+      "text": ""
+    },
+    {
+      "line": 2407,
+      "text": "[2026-11-22 22:25:58 TP10 EP10] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 2408,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 2512,
+      "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "line": 2513,
+      "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 1103] 2026-11-22-22:23:13.280.924 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 2514,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 2527,
+      "text": ""
+    },
+    {
+      "line": 2528,
+      "text": "[2026-11-22 22:25:58 TP9 EP9] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 2529,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 2633,
+      "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "line": 2634,
+      "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 1102] 2026-11-22-22:23:13.237.685 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 2635,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 2648,
+      "text": ""
+    },
+    {
+      "line": 2649,
+      "text": "[2026-11-22 22:25:58 TP4 EP4] Scheduler hit an exception: Traceback (most recent call last):"
+    },
+    {
+      "line": 2650,
+      "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+    },
+    {
+      "line": 2754,
+      "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    },
+    {
+      "line": 2755,
+      "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 593] 2026-11-22-22:23:13.226.713 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+    },
+    {
+      "line": 2756,
+      "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+    },
+    {
+      "line": 2769,
+      "text": ""
+    },
+    {
+      "line": 2770,
+      "text": "[2026-11-22 22:25:58 TP12 EP12] Scheduler hit an exception: Traceback (most recent call last):"
+    }
+  ]
+}

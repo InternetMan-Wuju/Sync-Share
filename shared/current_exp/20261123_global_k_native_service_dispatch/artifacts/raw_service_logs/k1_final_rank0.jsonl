@@ -1,0 +1,12 @@
+{"kind":"init","K":1,"owners":[0],"hots":[163],"num_comm":272,"local_comm":17,"placeholder_rank":1,"placeholder_comm":33,"state_bytes":37810176,"mode":"native_deepep_topk1_reroute","rank":0,"layer":49,"seq":0}
+{"kind":"call_noop","rows":1,"tasks":8,"replica_tasks":0,"rank":0,"layer":49,"seq":1}
+{"kind":"init","K":1,"owners":[0],"hots":[163],"num_comm":272,"local_comm":17,"placeholder_rank":1,"placeholder_comm":33,"state_bytes":37810176,"mode":"native_deepep_topk1_reroute","rank":0,"layer":50,"seq":0}
+{"kind":"call_noop","rows":1,"tasks":8,"replica_tasks":0,"rank":0,"layer":50,"seq":1}
+{"kind":"call_noop","rows":1,"tasks":8,"replica_tasks":0,"rank":0,"layer":49,"seq":2}
+{"kind":"call_noop","rows":1,"tasks":8,"replica_tasks":0,"rank":0,"layer":50,"seq":2}
+{"kind":"call_noop","rows":1,"tasks":8,"replica_tasks":0,"rank":0,"layer":49,"seq":3}
+{"kind":"call_noop","rows":1,"tasks":8,"replica_tasks":0,"rank":0,"layer":50,"seq":3}
+{"kind":"install","slot_owner":0,"local_slot":0,"expert":163,"source_rank":10,"elapsed_ms":466.235958,"owner_meta":{"owner":0,"local_slot":0,"layer":49,"expert":163,"generation":1,"ready":true,"storage_ptr":20847780364288,"bytes":37810176},"rank":0,"layer":49,"seq":4}
+{"kind":"call_local_fallback","rows":512,"tasks":4096,"replica_tasks":18,"per_owner":{"0":18},"verify":{"max_abs":0.0029296875,"nrmse":0.0008932320051826537,"finite":true},"wall_ms":100.06587,"output_sha":"90055a8a867bf672f4d827f88981b85c148e500ddc432e5378b573992dfb472d","rank":0,"layer":49,"seq":4}
+{"kind":"install","slot_owner":0,"local_slot":0,"expert":163,"source_rank":10,"elapsed_ms":8.418433,"owner_meta":{"owner":0,"local_slot":0,"layer":50,"expert":163,"generation":2,"ready":true,"storage_ptr":20847780364288,"bytes":37810176},"rank":0,"layer":50,"seq":4}
+{"kind":"call_local_fallback","rows":512,"tasks":4096,"replica_tasks":15,"per_owner":{"0":15},"verify":{"max_abs":0.001953125,"nrmse":0.0006525280186906457,"finite":true},"wall_ms":15.592564,"output_sha":"e922e7b0080ec108ca3075c8d0808e737185c0618479d2d0d49b5c7b7282a741","rank":0,"layer":50,"seq":4}

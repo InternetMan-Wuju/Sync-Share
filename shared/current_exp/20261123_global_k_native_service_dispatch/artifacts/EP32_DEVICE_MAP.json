@@ -1,0 +1,250 @@
+{
+  "topology": "one EP32 group across two 16-die nodes",
+  "all_32_init_seen": true,
+  "ranks": [
+    {
+      "rank": 0,
+      "node": 23,
+      "local_die": 0,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 1,
+      "node": 23,
+      "local_die": 1,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 2,
+      "node": 23,
+      "local_die": 2,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 3,
+      "node": 23,
+      "local_die": 3,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 4,
+      "node": 23,
+      "local_die": 4,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 5,
+      "node": 23,
+      "local_die": 5,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 6,
+      "node": 23,
+      "local_die": 6,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 7,
+      "node": 23,
+      "local_die": 7,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 8,
+      "node": 23,
+      "local_die": 8,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 9,
+      "node": 23,
+      "local_die": 9,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 10,
+      "node": 23,
+      "local_die": 10,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 11,
+      "node": 23,
+      "local_die": 11,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 12,
+      "node": 23,
+      "local_die": 12,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 13,
+      "node": 23,
+      "local_die": 13,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 14,
+      "node": 23,
+      "local_die": 14,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 15,
+      "node": 23,
+      "local_die": 15,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 16,
+      "node": 25,
+      "local_die": 0,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 17,
+      "node": 25,
+      "local_die": 1,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 18,
+      "node": 25,
+      "local_die": 2,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 19,
+      "node": 25,
+      "local_die": 3,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 20,
+      "node": 25,
+      "local_die": 4,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 21,
+      "node": 25,
+      "local_die": 5,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 22,
+      "node": 25,
+      "local_die": 6,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 23,
+      "node": 25,
+      "local_die": 7,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 24,
+      "node": 25,
+      "local_die": 8,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 25,
+      "node": 25,
+      "local_die": 9,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 26,
+      "node": 25,
+      "local_die": 10,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 27,
+      "node": 25,
+      "local_die": 11,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 28,
+      "node": 25,
+      "local_die": 12,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 29,
+      "node": 25,
+      "local_die": 13,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 30,
+      "node": 25,
+      "local_die": 14,
+      "distributed_init_seen": true
+    },
+    {
+      "rank": 31,
+      "node": 25,
+      "local_die": 15,
+      "distributed_init_seen": true
+    }
+  ],
+  "prefill_batch_lines": [
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 6, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.11"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 1, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.06"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 1, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.10"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.12, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 1064.72"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.12, #running-req: 0, #queue-req: 0, #pending-token: 8192, npu graph: False, input throughput (token/s): 2380.04"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.25, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 2782.11"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.12, #running-req: 0, #queue-req: 0, #pending-token: 24576, npu graph: False, input throughput (token/s): 2386.15"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.25, #running-req: 0, #queue-req: 0, #pending-token: 16384, npu graph: False, input throughput (token/s): 2816.08"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.38, #running-req: 0, #queue-req: 0, #pending-token: 8192, npu graph: False, input throughput (token/s): 2724.32"
+    },
+    {
+      "node": 23,
+      "rank": 0,
+      "msg": "Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.50, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 2620.76"
+    }
+  ]
+}

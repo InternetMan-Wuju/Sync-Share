@@ -1,0 +1,6 @@
+prompts/*.txt binary
+artifacts/*.csv text eol=lf
+reproduce.sh text eol=lf
+scripts/*.sh text eol=lf
+artifacts/**/*.log -whitespace
+artifacts/**/*.jsonl -whitespace

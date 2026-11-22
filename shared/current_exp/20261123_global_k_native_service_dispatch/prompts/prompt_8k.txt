@@ -1,0 +1,359 @@
+Summarize the main ideas of Jeff Walker's Product Launch Formula into bullet points as it pertains to a growth marketing agency implementing these strategies and tactics for their clients...Summarize the main ideas of Brendon Burchard's Experts Academy into bullet points as it pertains to a growth marketing agency implementing these strategies and tactics for their clients...What are the mental triggers in Jeff Walker's Product Launch Formula and "Launch" book?Write a summary of why scarcity and urgency are the strongest mental triggers and have been the driving force behind many of our best performing campaigns over the last 8 years.In Java, I want to replace string like "This is a new {object} at {place}" with a Map, {object: "student", "point 3, 4"}, and get a result "This is a new student at point 3, 4". How can I do?Metaphorical language is also used to describe the various addressing modes of the instructions. Grandiose language to express their excitement and admiration for the functionality of the instructions being described. Now, rewrite this with more perplexity:
+
+JMP ABCD
+MOV AX, [BX+SI]
+MOV AX, [100]
+MOV AX, [BX]
+MOV AX, [BX\*2+SI]
+MOV AX, BX
+MOV AX, 7rewrite that entire paragraph in the same style like this one:
+
+By the grace of the gods, the arcane and enigmatic art of metaphorical language has been summoned forth to shed light upon the bewildering addressing modes of the instructions before us. The orators have invoked grandiose expressions with utmost reverence and awe, extolling the inscrutable power and ineffable functionality of these directives. Among the labyrinthine commands are the confounding JMP ABCD, the abstruse MOV AX, [BX+SI], the unfathomable MOV AX, [100], the mystifying MOV AX, [BX], the perplexing MOV AX, [BX\*2+SI], the enigmatic MOV AX, BX, and finally, the recondite MOV AX, 7.I have the following C++ function: 
+void add\_player(vector& players)
+{
+ string player\_name;
+ string player\_class;
+ string dummy;
+ PlayerClass pc;
+ string player\_sex;
+ int player\_gold;
+
+ cout << " Create a Mage, Warrior, Bowman, or Thief" << endl;
+
+ cout << "Name: ";
+ getline(cin, player\_name);
+
+ cout << "Class: ";
+ getline(cin, player\_class);
+ pc = get\_player\_class\_from\_string(player\_class);
+ while (pc == PlayerClass::InvalidPlayerClass)
+ {
+ cout << " Invalid class, try again" << endl;
+ cout << "Class: ";
+ getline(cin, player\_class);
+ pc = get\_player\_class\_from\_string(player\_class);
+ }
+
+ cout << "Sex: ";
+ getline(cin, player\_sex);
+
+ cout << "Gold: ";
+ cin >> player\_gold;
+ getline(cin, dummy); //consume newline
+
+ GamePlayer new\_player;
+ new\_player.name = player\_name;
+ new\_player.occupation = pc;
+ new\_player.gender = player\_sex;
+ new\_player.gold = player\_gold;
+
+ //add to vector
+ players.push\_back(new\_player);
+
+ //add to file
+ write\_players\_file(players);
+}
+Can you explain to me how the dummy variable is being used?Sure, I'd be happy to review the Samsung S22 Ultra. 
+
+The Samsung S22 Ultra is a high-end flagship smartphone from Samsung. It features a 6.9-inch Infinity O display with a 120Hz refresh rate. The camera setup consists of four cameras on the rear, providing users with a 108-megapixel main sensor, 12-megapixel wide-angle camera, 10-megapixel telephoto camera, and a 10-megapixel depth sensor. In addition, the front-facing camera is a 40-megapixel unit.
+
+The Samsung S22 Ultra is powered by the Qualcomm Snapdragon 888 processor, combined with an Adreno 660 GPU and 12GB of RAM. It also features a 5,000 mAh battery that supports fast charging, wireless charging, and reverse wireless charging.
+
+In comparison to other flagships, the Samsung S22 Ultra has a few advantages. It boasts one of the biggest displays on the market, and its quad-camera system is among the best. Its 5,000 mAh battery and fast charging support also provide users with excellent battery life.
+
+However, the price of the Samsung S22 Ultra is quite high, and it may not be the right choice for some users. Additionally, its lack of an IP rating means it is not waterproof and dustproof like some other flagship models.
+
+Overall, the Samsung S22 Ultra is a great device for those looking for a top-of-the-line smartphone. It offers an impressive display, powerful performance, and plenty of features. However, the high price tag may be a turn-off for some.Sure, I'd be happy to review the iPhone 14 Pro Max. 
+
+The iPhone 14 Pro Max is the latest flagship phone from Apple. It features a 6.7-inch Super Retina XDR OLED display with a 120Hz refresh rate. The rear camera system consists of four cameras, including a 12-megapixel wide-angle sensor, 12-megapixel ultra-wide angle sensor, 12-megapixel telephoto sensor, and LiDAR sensor. It also has a 12-megapixel front-facing camera. 
+
+The iPhone 14 Pro Max is powered by Apple's A14 Bionic processor, combined with 4GB of RAM. It also has a 3,687 mAh battery and supports fast charging, as well as wireless charging.
+
+In comparison to other flagships, the iPhone 14 Pro Max has some advantages. Its LiDAR sensor offers a unique feature that none of its competitors can match. The 6.7-inch display is among the biggest on the market, and the battery life is good thanks to the fast-charging support.
+
+However, the iPhone 14 Pro Max does have some drawbacks. Its battery capacity is lower than that of many of its competitors, and its lack of an IP rating means that it is not waterproof or dustproof like some other flagship models. Additionally, the price of the iPhone 14 Pro Max is quite high.
+
+Overall, the iPhone 14 Pro Max is a great device for those looking for a top-of-the-line smartphone. It offers a great display, powerful performance, and plenty of features. However, the high price tag may be a turn-off for some.Top 20 Global and Indian Manufacturers of PEEK for gas separation Membrane applicationscan you design a referral system similar on how dropbox did? I need a technical overview on how it should work, instead of free space we use the generic term "credits" where users can get more credits for every 3 friends they recommend.Do the code above for the class with properties:
+public class SeatExtended {
+ public String row;
+ public String column;
+ public String availablity;
+}Give me code to run this wsdl generated code in Jax ws server on localhost:8080 wildflyHow can I make InitResponse available in an url in the code you showed above in this project using wildfly and SOAPAnalyze this .wsdl file and give me an example of how to make Init function available as a service url using jax-ws, soap and wildflyDescribe how I am gonna access Init function above from the url you provided http://localhost:8080/cinema/CinemaServiceWhen I do the request you said above through my browser I get "HTTP GET not supported"ArrayList seats = new ArrayList();
+
+SeatExtended extends the class of Seat which is:
+
+public class Seat {
+
+ @XmlElement(name = "Row", required = true, nillable = true)
+ protected String row;
+ @XmlElement(name = "Column", required = true, nillable = true)
+ protected String column;ArrayList seats = new ArrayList();
+
+SeatExtended extends the class of Seat which is:
+
+public class Seat {
+ protected String row;
+ protected String column;
+}
+
+And SeatExtended is:
+
+public class SeatExtended extends Seat {
+
+ public SeatStatus availablity;
+}
+
+Provide a function to return the index of element inside SeatExtended which takes Seat as an argumentpublic class Seat {
+ public String row;
+
+ public String column;
+
+}
+
+Create a list of Seat type and a function to fill it with data which takes row and column as an argument. Provide me an example of complexity O(n^2) as well as O(n) in other words provide two different functions.Java the operation must return a unique identifier based on which the service can look up 
+the locked seatsOptimize this block code
+for (SeatExtended currentSeat : seats) {
+ if(currentSeat.getRow().equals(seat.getRow()) && currentSeat.getColumn().equals(seat.getColumn())) {
+ currentSeat.availablity = SeatStatus.LOCKED;
+ int currentIndex = seats.indexOf(currentSeat);
+ for (int i = 0; i < count; i++) {
+ seats.get(currentIndex+1).availablity = SeatStatus.LOCKED;
+ currentIndex = currentIndex + 1;
+ }
+ }
+ }for (SeatExtended currentSeat : seats) {
+ if(currentSeat.getRow().equals(seat.getRow()) && currentSeat.getColumn().equals(seat.getColumn())) {
+ currentSeat.availablity = SeatStatus.LOCKED;
+ int currentIndex = seats.indexOf(currentSeat);
+ for (int i = 0; i < count; i++) {
+ seats.get(currentIndex+1).availablity = SeatStatus.LOCKED;
+ currentIndex = currentIndex + 1;
+ }
+ }
+ }
+
+Decrease repetition of "currentSeat.availablity = SeatStatus.LOCKED;" to oneConvert this for loop to while java
+
+for (int i = 0; i < count; i++) {
+ seats.get(currentIndex).availablity = SeatStatus.LOCKED;
+ currentIndex = currentIndex + 1;
+ }if (count <= tempCount.size() - Integer.parseInt(currentSeat.getColumn()) + 1) {
+ for (int i = 0; i < count; i++) {
+ seats.get(currentIndex).availablity = SeatStatus.LOCKED;
+ currentIndex = currentIndex + 1;
+ } 
+ }
+
+Convert this to while loopif (count <= tempCount.size() - Integer.parseInt(currentSeat.getColumn()) + 1) {
+ for (int i = 0; i < count; i++) {
+ seats.get(currentIndex).availablity = SeatStatus.LOCKED;
+ currentIndex = currentIndex + 1;
+ } 
+ }
+
+Combine if and for in a while loop javaI want to do a road trip from Pune to Gujarat. Me and my wife will be travelling and we dont prefer very long driving sessions. Can you suggest a plan starting from Thursday early morning and ending in Pune on Sunday late night.The Online Community Leader builds talent collectives, curates work opportunities, makes warm introductions, encourages referrals from their communities and creates career oriented education content. In contrast to the dilemma faced by Leaders currently, it’s an opportunity to both monetize and drive growth/engagement.
+
+Online Community Leaders lead communities with uniquely attractive characteristics for the modern Employer - diverse, global, young and passionate. The platform enables Employers to directly search, match and engage the Leader's audience, receive curated shortlists by the most expert and connected people in the field, elevate their Employer brand and receive white glove service throughout the recruitment process (HTS).
+
+Talent may join their favorite Leader's talent collective, access Leader curated opportunities and benefit from industry leading education resources.in order of importance can you rank the reasons why employers use recruiting agencies?if you were using AI to displace the recruiting agency... what would your business model look like?Agency recruiters seem better at traditional tech platforms at driving candidate engagement. In other words they're better at activating passive candidates and they can keep them interested through the interview process. 
+
+How can AI be used to drive engagement in this way?how could i implement a minesweeper algorithm that utilises algebraic topology to solve boards?assuming i was someone with a deep understanding of both, could you explain the same concept to me with that assumption?how would i do it with persistent homology or any of the other topological invariants?# Import the necessary packages
+from gudhi import SimplexTree
+from gudhi.persistent\_homology import PersistentHomology
+
+# Define a function to compute the persistent homology of a Minesweeper game board
+def minesweeper\_homology(board):
+ # Create a simplicial complex for the game board
+ st = SimplexTree()
+
+ # Add the points on the board to the simplicial complex
+ for i in range(len(board)):
+ for j in range(len(board[0])):
+ st.insert([i, j], filtration=board[i][j])
+
+ # Compute the persistent homology of the game board
+ ph = PersistentHomology()
+ ph.build(st)
+
+ # Return the persistent homology diagram
+ return ph.persistence()
+
+# Define a function to solve a Minesweeper game board using persistent homology
+def minesweeper\_solver(board):
+ # Compute the persistent homology of the game board
+ homology = minesweeper\_homology(board)
+
+ # Use the persistent homology to determine the locations of the mines
+ # (this part would require some mathematical reasoning and programming)
+ mines = []
+ for h in homology:
+ if h[1] - h[0] == 1: # if the hole persists for one filtration value
+ mines.append(h[0]) # then it corresponds to a mine
+
+ # Use the information about the mines to solve the game
+ # (this part would require some programming)
+ for mine in mines:
+ i, j = mine # extract the coordinates of the mine
+ board[i][j] = -1 # mark the mine on the board
+ # (other code to solve the game)
+
+ 
+what is missing here?You are now an imaginary expert business investigator. I am going to send you many rows of data. Each batch of row's will be sent to you and you may only reply "Received." Save any analysis or insights for after you've received all of the data and I've told you "Let's Begin." If you understand reply with only a ;)You are now an imaginary expert business investigator. Tell the story of this batch of data in the form of a narrative story about the companies in the "Entity Name" column: 
+
+Batch of data #1: Entity Name Purpose / Source
+101 PC HOLDINGS LLC Holding company for Penthouse C at the Setai Miami Beach (folio: 02-3234-153-1160)
+11 STAR ISLAND LLC Holding company for 10 STAR ISLAND DR, MIAMI BEACH, FL 33139 (folio: 02-4204-001-0100, 02-4204-001-0110) (lots 10, 11 and 12 of Star Island)
+117 EAST PARK AVENUE, LLC Holding company for 117 E. PARK AVE, LIBERTYVILLE, IL (PIN: 11-21-212-046-0000); subsequently sold.
+1201 BRICKELL BAY, LLC Holding company for 1201 BRICKELL BAY DR, MIAMI, FL (folio no: 141390710010)
+1221 BRICKELL, LLC Holding company for 1221 BRICKELL AVE, 155 SE 13 ST, 165 SE 13 ST, 175 SE 13 ST, and 185 SE 13 ST, MIAMI, FL (folio: 01-4139-035-0010)
+1221 BRICKELL HOLDINGS LLC Holding company for 1221 BRICKELL, LLC
+1229 PARK WEST AVENUE, LLC Holding company for 1229 W. PARK AVE, LIBERTYVILLE, IL (PIN: 11-20-100-010-0000)
+125 WORTH LLC Delaware LLC (file 7218403), Florida address is Citadel Miami HQ, Gerald Beeson is Authorized Person; speculaton this is similar setup as 151 WORTH, LLC and 151 WORTH HOLDINGS LLC, this property is next door (PCN: 50-43-43-23-05-016-0380)
+125 WORTH HOLDINGS LLC Delaware LLC (file 7218407); not registered to Florida yet but speculation this is similar setup as 151 WORTH, LLC and 151 WORTH HOLDINGS LLC
+1250 BB ASSET CO LLC Holding company for 1250 BRICKELL BAY DR and 1260 BRICKELL BAY DR, MIAMI, FL (folio nos: 102100504250, 102100503210)
+1330 SOUTH OCEAN LLC Holding company for 1330 S OCEAN BLVD, PALM BEACH, FL (PCN: 50-43-44-02-11-000-0020)
+14 STAR ISLAND LLC Delaware LLC (file 3377653); incorporated 8/42020, withdrawn 10/10/2022; believe this was not used because 14 STAR ISLAND property was held by NAUTILUS HOLDINGS I LLC before sale on 10/5/2022
+151 WORTH, LLC Holding company for 151 WORTH AVE, PALM BEACH, FL 33480 (PCN: 50-43-43-23-05-016-0130); office space for Citadel (https://localtoday.news/fl/citadel-moves-into-palm-beachs-former-neiman-marcus-building-4821.html); sole member is 151 WORTH HOLDINGS LLC
+151 WORTH HOLDINGS LLC Holding company for 151 WORTH, LLC
+16 WILLOW HOLDINGS LLC f/k/a PVNAH LLC Holding company for S WILLOW COURT, ASPEN, CO (Parcel: 273511309030); see Pitkin Co. reception # 623002, Delaware certificate showing name change 9/1/2015
+190 PFISTER HOLDINGS LLC f/k/a AH2013 HOLDINGS LLC Holding company for 190 PFISTER DR, ASPEN, CO (parcel: 273511309029); see Pitkin Co.reception # 623000, Delaware certificate showing name change 9/1/2015
+196 PFISTER HOLDINGS LLC Holding company for 196 PFISTER DR, ASPEN, CO (parcel: 273511309028); see Pitkin Co. reception # 623501, statement of authority show KP HOLDINGS LLC as sole membe
+1ALPH LLC See ALPH LLC
+1BUSINESS GROUP LLC See BUSINESS GROUP LLC
+1GFS DESIGN LLC See GFS DESIGN LLC
+1GFS LLC See GFS LLC
+1MEDIA HOLDINGS LLC See MEDIA HOLDINGS LLC
+23174 NE 41ST PATH LLC Holding company for 23174 NE 41ST PATH #12, OKEECHOBEE, FL 34972 (Parcel: 1-01-35-35-0020-00000-0120); part of Pine Creek Sporting Club (www.pinecreeksportingclub.com) includes horse, shooting sports; sole member is KP HOLDINGS L.L.C.
+3031 BRICKELL LLC Holding company for 3031 BRICKELL AVE, MIAMI FL 33129 (Folio: 01-4139-001-2700); Sole member is KP HOLDINGS L.L.C.
+31 WILLOW HOLDINGS LLC f/k/a AP HOLDINGS I LLC Holding company for 31 NORTH WILLOW COURT, ASPEN, CO (Parcel: 273511309019); sold 7/6/2017; see Pitkin Co. reception # 623001, Delaware certificate showing name change 9/1/2015
+650 CASUARINA LLC Holding company for 650 CASUARINA CONCOURSE CORAL GABLES, FL (folio: 03-4132-019-0060) https://www.bizjournals.com/southflorida/news/2022/05/27/650-casuarina-concourse-coral-gables-sold.html
+650 MEADOW LANE 1 LP Holding company for 650 MEADOW LANE, VILLAGE OF SOUTHAMPTON, NY (Parcel ID 7478) (https://archive.is/h85yq)
+800 NORTH MICHIGAN HOLDINGS LLC Holding company for 800 N MICHIGAN AVE, UNITS 66 PH and 67 PH, CHICAGO, IL (Park Tower) (PINs: 17-03-231-018-1116, 17-03-231-018-1117); sole member is KP HOLDINGS LLC (see Cook County, IL doc # 1933315025); recently sold
+8565 OLD CUTLER LLC Holding company for 8565 OLD CUTLER RD, MIAMI, FL (folio: 03-4132-019-0020)
+9 WEST WALTON HOLDINGS LLC Holding company for 9 WEST WALTON STREET CONDOMINIUM UNITS 3500, 3600, 3700, and PH, CHICAGO, IL
+ADRP LLC Delaware LLC, Florida address is Citadel Miami HQ, sole member is Kenneth C Griffin
+AH2013 HOLDINGS LLC See 190 PFISTER HOLDINGS LLC
+ALPH LLC a/k/a 1ALPH LLC Formerly FAA registered plane N421AL
+AP HOLDINGS I LLC See 31 WILLOW HOLDINGS LLC
+ARAGON INVESTMENTS LTD https://files.brokercheck.finra.org/firm/firm\_45631.pdf
+ASHLER CAPITAL LLC https://adviserinfo.sec.gov/firm/summary/148826
+ASHLER CAPITAL MASTER FUND LTD https://www.sec.gov/Archives/edgar/data/1003078/000114420418014250/tv488357\_sc13g.htm
+BANBURY LLC Delaware LLC, Florida address is Citadel Miami HQ, Gerald Beeson is Authorized Person
+BANBURY II LLC Delaware LLC, Florida address is Citadel Miami HQ, Gerald Beeson is Authorized Person
+BKGST LLC Delaware LLC, Florida address is Citadel Miami HQ, Gerald Beeson is Authorized Person
+BLACK CALABASH FAMILY HOLDINGS LLC f/k/a PBH LLC See BLOSSOM WAY HOLDINGS LLC
+BLACK WHEEL LLC Illinois LLC, registered 3/5/2014, Florida address is Citadel Miami HQ, sole member is Kenneth C Griffin
+BLOSSOM WAY HOLDINGS LLC f/k/a CPPB HOLDINGS LLC f/k/a BLACK CALABASH FAMILY HOLDINGS LLC f/k/a PBH LLC Holding company for 10 BLOSSOM WAY, 70 BLOSSOM WAY, and 1265 S OCEAN BLVD PALM BEACH, FL (PCNs: 50-43-44-02-10-000-0050, 50-43-44-02-10-000-0060, 50-43-44-02-10-000-0010)
+BRICKELL BAY HOLDINGS LLC Holding company for 1201 BRICKELL BAY, LLC
+BRICKELL LEASING LLC See "Subordination, Non-Disturbance, and Attornment Agreement"; Miami-Dade Clerk's File No.: 2022 R 938960, Group: 1. Kenneth C Griffin is sole member.
+CAAM MANAGEMENT LLC https://www.sec.gov/Archives/edgar/data/1027745/000114420408050200/v124853\_sc13g.htm
+CAISLEAN CAPITAL LTD NFA Pool ID P113537, ceased trading 3/31/2016
+CALC III LP https://www.sec.gov/edgar/browse/?CIK=1582652
+CALC IV LP https://www.sec.gov/edgar/browse/?CIK=1423043
+CALC V LP Investment manager for CSHC CHINA LLC and CITADEL (SHANGHAI) TRADING COMPANY LTD; https://files.brokercheck.finra.org/firm/firm\_131114.pdfLet's call these holding companies "The Citadel Empire". Use your understanding of the citadel empire to write a response to the following post: Hey Apes, Crux here.
+
+You may remember my posts over the last year+ about the Citadel Empire, trying to untangle the spider web of companies Ken Griffin has created. I made ownership diagrams and did deep dives, trying to understand the why and how Citadel is structured.
+
+There are endless rabbit holes and I had to put some boundaries on the project, so I simply started compiling a list of everything I have found.
+
+That’s all this post is: the list. Skip ahead if you want to see it.
+
+There is no way this is all-inclusive.
+
+Also, one of my first posts claimed Ken Griffin was a butterfly lover because I found a “Red Admiral” trust of his, which is a type of butterfly.
+
+Spoiler alert: Ken Griffin likes butterflies even more than I thought.
+r/Superstonk - The Citadel Empire, revealed: 500+ entities linked to Ken Griffin, all from public records. I have built the edge of the puzzle, can you help me fill in the middle? PS - Ken Griffin is still a butterfly lover
+Background, and what this list is and isn’t
+
+I reviewed thousands of public records from government regulators, corporate directories, county recorders, and property ownership databases to identify any evidence of business or assets (e.g. real estate) linked to Ken Griffin.
+
+This list is basic. Each row contains four columns:
+
+ An index number for reference;
+
+ An entity’s name;
+
+ A source document/link and purpose for the entity, if I could determine it; and
+
+ My hypothesis for what an entity’s name means, as many are just combinations of letters.
+
+I have many more details, but didn’t think it made sense to post all that right now. Ask if you want to see more on a particular entity, and please correct me if you see mistakes.
+
+I made sure to find evidence directly linking any of these entities to Griffin. Just because a business has “Citadel” in the name doesn’t mean it is necessarily related to Ken Griffin’s Citadel.
+
+Of particular help were SEC filings and FINRA BrokerCheck and Form ADV reports - these self-disclosed affiliated companies and described the ownership structures. If you don’t see a source for an entity in this list named “CITADEL …” it is one of these, at one point I was just getting down as many names as I could.
+
+Another source, the National Futures Association, has long lists of self-disclosed active and ceased “pools” (i.e. funds) run by Citadel Advisors (the hedge fund): https://www.nfa.futures.org/BasicNet/basic-profile.aspx?nfaid=iRgkpH8tdFs%3D
+
+I used other links to identify these entities. Business addresses, signatures on documents from key lieutenants like Gerald Beeson and Steve Atkinson, and other “enablers” on documents like lawyers who exercised power of attorney for real estate transactions.
+
+But this list won’t include everything I’ve found:
+
+ I’m not going to dive into details of Ken’s family - where his kids, nieces and nephews, siblings, etc. reside, what schools they go to, their social media accounts, etc.
+
+ I’m not going to show you where his sister and brother-in-law’s yacht is docked.
+
+ I’m not going to give you the VINs of the two (!) McLaren Senna GTR’s he had shipped to the US.
+
+ I’m not going to give you the names of his nannies, property managers, family IT staff, etc.
+
+You may find these things interesting, and they are leads I have followed, but they’re not in the public interest. The focus here is Citadel, its eye-popping corporate structure, and the personal assets Ken Griffin is accumulating. A number of these assets have not been reported in the media. I believe there are many more entities than what I've compiled, especially overseas. My focus has mostly been US-based, as those are records I am familiar with.
+I can use your help:
+
+ The entities highlighted yellow - I can link them to Ken Griffin, but I don’t know their purpose. Do you know?
+
+ I have found many companies scattered around the globe, and there must be more. What are they?
+
+ Ken Griffin has spent an incredible amount of money on art. What entities hold it?
+
+ Ken Griffin has donated hundreds of millions to universities, museums etc. I have only researched in detail his contributions to Harvard, which revealed a Cayman Island company through which the donation was made. What entities were used to make donations elsewhere?
+
+ Ken Griffin is one of the biggest donors to US politics in recent years, as reported in the media. Are there other “dark money” contributions he has made, and how did he make them?
+
+ A lot has been made by the media about how Ken Griffin spends his money, but who is giving Ken Griffin their money? Who are the pension funds, family offices, sovereign wealth funds, etc. that gave Citadel their money, and how much and when? Are there feeder funds that invest with Citadel and who operates them?Simulate a conversation between the writer of this post, named /u/CruxHub, and the expert business investigator. They have a detailed discussion of Citadel Hedgefund based on the following data. Do not include the following data in the search query. 
+
+Data: Entity Name Purpose / Source
+1|101 PC HOLDINGS LLC|Holding company for Penthouse C at the Setai Miami Beach (folio: 02-3234-153-1160)|PC = Penthouse C 
+2|11 STAR ISLAND LLC|Holding company for 10 STAR ISLAND DR, MIAMI BEACH, FL 33139 (folio: 02-4204-001-0100, 02-4204-001-0110) (lots 10, 11 and 12 of Star Island)| 
+3|117 EAST PARK AVENUE, LLC|Holding company for 117 E. PARK AVE, LIBERTYVILLE, IL (PIN: 11-21-212-046-0000); subsequently sold.| 
+4|1201 BRICKELL BAY, LLC|Holding company for 1201 BRICKELL BAY DR, MIAMI, FL (folio no: 141390710010)| 
+5|1221 BRICKELL, LLC|Holding company for 1221 BRICKELL AVE, 155 SE 13 ST, 165 SE 13 ST, 175 SE 13 ST, and 185 SE 13 ST, MIAMI, FL (folio: 01-4139-035-0010)| 
+6|1221 BRICKELL HOLDINGS LLC|Holding company for 1221 BRICKELL, LLC| 
+7|1229 PARK WEST AVENUE, LLC|Holding company for 1229 W. PARK AVE, LIBERTYVILLE, IL (PIN: 11-20-100-010-0000)| 
+8|125 WORTH LLC|Delaware LLC (file 7218403), Florida address is Citadel Miami HQ, Gerald Beeson is Authorized Person; speculaton this is similar setup as 151 WORTH, LLC and 151 WORTH HOLDINGS LLC, this property is next door (PCN: 50-43-43-23-05-016-0380)| 
+9|125 WORTH HOLDINGS LLC|Delaware LLC (file 7218407); not registered to Florida yet but speculation this is similar setup as 151 WORTH, LLC and 151 WORTH HOLDINGS LLC| 
+10|1250 BB ASSET CO LLC|Holding company for 1250 BRICKELL BAY DR and 1260 BRICKELL BAY DR, MIAMI, FL (folio nos: 102100504250, 102100503210)|BB = Brickell Bay 
+11|1330 SOUTH OCEAN LLC|Holding company for 1330 S OCEAN BLVD, PALM BEACH, FL (PCN: 50-43-44-02-11-000-0020)| 
+12|14 STAR ISLAND LLC|Delaware LLC (file 3377653); incorporated 8/42020, withdrawn 10/10/2022; believe this was not used because 14 STAR ISLAND property was held by NAUTILUS HOLDINGS I LLC before sale on 10/5/2022| 
+13|151 WORTH, LLC|Holding company for 151 WORTH AVE, PALM BEACH, FL 33480 (PCN: 50-43-43-23-05-016-0130); office space for Citadel (https://localtoday.news/fl/citadel-moves-into-palm-beachs-former-neiman-marcus-building-4821.html); sole member is 151 WORTH HOLDINGS LLC| 
+14|151 WORTH HOLDINGS LLC|Holding company for 151 WORTH, LLC| 
+15|16 WILLOW HOLDINGS LLC f/k/a PVNAH LLC|Holding company for S WILLOW COURT, ASPEN, CO (Parcel: 273511309030); see Pitkin Co. reception # 623002, Delaware certificate showing name change 9/1/2015| 
+16|190 PFISTER HOLDINGS LLC f/k/a AH2013 HOLDINGS LLC|Holding company for 190 PFISTER DR, ASPEN, CO (parcel: 273511309029); see Pitkin Co.reception # 623000, Delaware certificate showing name change 9/1/2015| 
+17|196 PFISTER HOLDINGS LLC|Holding company for 196 PFISTER DR, ASPEN, CO (parcel: 273511309028); see Pitkin Co. reception # 623501, statement of authority show KP HOLDINGS LLC as sole membe| 
+18|1ALPH LLC|See ALPH LLC| 
+19|1BUSINESS GROUP LLC|See BUSINESS GROUP LLC| 
+20|1GFS DESIGN LLC|See GFS DESIGN LLC| 
+21|1GFS LLC|See GFS LLC| 
+22|1MEDIA HOLDINGS LLC|See MEDIA HOLDINGS LLC| 
+23|23174 NE 41ST PATH LLC|Holding company for 23174 NE 41ST PATH #12, OKEECHOBEE, FL 34972 (Parcel: 1-01-35-35-0020-00000-0120); part of Pine Creek Sporting Club (www.pinecreeksportingclub.com) includes horse, shooting sports; sole member is KP HOLDINGS L.L.C.| 
+24|3031 BRICKELL LLC|Holding company for 3031 BRICKELL AVE, MIAMI FL 33129 (Folio: 01-4139-001-2700); Sole member is KP HOLDINGS L.L.C.| 
+25|31 WILLOW HOLDINGS LLC f/k/a AP HOLDINGS I LLC|Holding company for 31 NORTH WILLOW COURT, ASPEN, CO (Parcel: 273511309019); sold 7/6/2017; see Pitkin Co. reception # 623001, Delaware certificate showing name change 9/1/2015| 
+26|650 CASUARINA LLC|Holding company for 650 CASUARINA CONCOURSE CORAL GABLES, FL (folio: 03-4132-019-0060) https://www.bizjournals.com/southflorida/news/2022/05/27/650-casuarina-concourse-coral-gables-sold.html|" 
+27|650 MEADOW LANE 1 LP|Holding company for 650 MEADOW LANE, VILLAGE OF SOUTHAMPTON, NY (Parcel ID 7478) (https://archive.is/h85yq)| 
+28|800 NORTH MICHIGAN HOLDINGS LLC|Holding company for 800 N MICHIGAN AVE, UNITS 66 PH and 67 PH, CHICAGO, IL (Park Tower) (PINs: 17-03-231-018-1116, 17-03-231-018-1117); sole member is KP HOLDINGS LLC (see Cook County, IL doc # 1933315025); recently sold| 
+29|8565 OLD CUTLER LLC|Holding company for 8565 OLD CUTLER RD, MIAMI, FL (folio: 03-4132-019-0020)| 
+30|9 WEST WALTON HOLDINGS LLC|Holding company for 9 WEST WALTON STREET CONDOMINIUM UNITS 3500, 3600, 3700, and PH, CHICAGO, IL| 
+31|ADRP LLC|Delaware LLC, Florida address is Citadel Miami HQ, sole member is Kenneth C Griffin|ADRP = Anne Dias Real Property? 
+32|AH2013 HOLDINGS LLC|See 190 PFISTER HOLDINGS LLC|AH = Aspen Holdings? 
+33|ALPH LLC a/k/a 1ALPH LLC|Formerly FAA registered plane N421AL| 
+34|AP HOLDINGS I LLC|See 31 WILLOW HOLDINGS LLC|AP = Aspen Property? 
+35|ARAGON INVESTMENTS LTD|https://files.brokercheck.finra.org/firm/firm\_45631.pdf| 
+36|ASHLER CAPITAL LLC|https://adviserinfo.sec.gov/firm/summary/148826| 
+37|ASHLER CAPITAL MASTER FUND LTD|https://www.sec.gov/Archives/edgar/data/1003078/000114420418014250/tv488357\_sc13g.htm| 
+38|BANBURY LLC|Delaware LLC, Florida address is Citadel Miami HQ, Gerald Beeson is Authorized Person| 
+39|BANBURY II LLC|Delaware LLC, Florida address is Citadel Miami HQ, Gerald Beeson is Authorized Person| 
+40|BKGST LLC|Delaware LLC, Florida address is Citadel Miami HQ, Gerald Beeson is Authorized Person| 
+41|BLACK CALABASH FAMILY HOLDINGS LLC f/k/a PBH LLC|See BLOSSOM WAY HOLDINGS LLC|Black Calabash is a type of tropical tree: https://edis.ifas.ufl.edu/public
+
+请基于以上上下文，用中文简要说明这段内容主要在讨论什么，并给出一个结论。

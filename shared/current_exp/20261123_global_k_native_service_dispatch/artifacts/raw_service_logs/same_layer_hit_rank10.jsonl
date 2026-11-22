@@ -1,0 +1,10 @@
+{"kind":"init","K":2,"owners":[0,1],"hots":[163,133],"num_comm":272,"local_comm":17,"placeholder_rank":2,"placeholder_comm":50,"state_bytes":37810176,"mode":"native_deepep_topk1_reroute","rank":10,"layer":49,"seq":0}
+{"kind":"call_noop","rows":1,"tasks":8,"replica_tasks":0,"rank":10,"layer":49,"seq":1}
+{"kind":"call_noop","rows":1,"tasks":8,"replica_tasks":0,"rank":10,"layer":49,"seq":2}
+{"kind":"call_noop","rows":1,"tasks":8,"replica_tasks":0,"rank":10,"layer":49,"seq":3}
+{"kind":"install","slot_owner":0,"local_slot":0,"expert":163,"source_rank":10,"elapsed_ms":417.861353,"owner_meta":{"owner":0,"local_slot":0,"layer":49,"expert":163,"generation":1,"ready":true,"storage_ptr":20847780364288,"bytes":37810176},"rank":10,"layer":49,"seq":4}
+{"kind":"install","slot_owner":1,"local_slot":0,"expert":133,"source_rank":8,"elapsed_ms":451.662309,"owner_meta":{"owner":1,"local_slot":0,"layer":49,"expert":133,"generation":1,"ready":true,"storage_ptr":20847780364288,"bytes":37810176},"rank":10,"layer":49,"seq":4}
+{"kind":"call_local_fallback","rows":512,"tasks":4096,"replica_tasks":0,"per_owner":{},"verify":{"max_abs":0.0,"nrmse":0.0,"finite":true},"wall_ms":91.338965,"output_sha":"971b5929fbb28ac52bdd186f4dc54ab4ed544b3f0e58bb4b03abd4d862c20dc1","rank":10,"layer":49,"seq":4}
+{"kind":"reuse","slot_owner":0,"local_slot":0,"expert":163,"owner_meta":{"owner":0,"local_slot":0,"layer":49,"expert":163,"generation":1,"ready":true,"storage_ptr":20847780364288,"bytes":37810176},"rank":10,"layer":49,"seq":5}
+{"kind":"reuse","slot_owner":1,"local_slot":0,"expert":133,"owner_meta":{"owner":1,"local_slot":0,"layer":49,"expert":133,"generation":1,"ready":true,"storage_ptr":20847780364288,"bytes":37810176},"rank":10,"layer":49,"seq":5}
+{"kind":"call_local_fallback","rows":256,"tasks":2048,"replica_tasks":0,"per_owner":{},"verify":{"max_abs":0.0,"nrmse":0.0,"finite":true},"wall_ms":17.637059,"output_sha":"28f227960ff6e6f45407ec6eceb547fdc5a646d0b984bd73928e30f86e95713b","rank":10,"layer":49,"seq":5}

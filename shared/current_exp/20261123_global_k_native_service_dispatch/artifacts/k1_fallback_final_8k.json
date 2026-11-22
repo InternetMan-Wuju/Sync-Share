@@ -1,0 +1,12 @@
+{
+  "prompt": "prompts/prompt_8k.txt",
+  "prompt_sha256": "85370921bcd6ce6c7cf146802ceb5bfe9dffde971ef3f4098eade85df6e49425",
+  "prompt_tokens_hint": null,
+  "ttft_s": 5.333145957090892,
+  "total_s": 5.849467165069655,
+  "output_text": "1.",
+  "output_sha256": "c977dbe785221d34114d345fdf8ff4e18bb4af66750751dbea29407f9738735f",
+  "output_chars": 2,
+  "finish_reason": "length",
+  "meta_info": null
+}

@@ -1,0 +1,109 @@
+{
+  "created_at": "2026-11-23T07:05:00+08:00",
+  "base_commit": "22d65f2203dbf16d8928128152fba767a94a717b",
+  "hosts": [
+    "npu1-23",
+    "npu1-25"
+  ],
+  "topology": "single EP32 group; ranks 0-15 on npu1-23 local dies 0-15; ranks 16-31 on npu1-25 local dies 0-15",
+  "devices": "32 total Ascend 910 dies; 16 per host",
+  "image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "model": "/data_lib/data/models/glm-q",
+  "quantization": "ModelSlim W8A8",
+  "production_format": "UNKNOWN_NO_ACTIVE_SERVICE",
+  "status": "K_SLOT_FUNCTIONAL_MATRIX_PASS_NATIVE_REPLICA_DISPATCH_BLOCKED",
+  "slot_reuse_decision": {
+    "status": "PASS",
+    "method": "owner reports real slot identity/state; all ranks all-gather and MIN-reduce reuse decision before device send/recv",
+    "same_layer_reuse_ranks": [
+      0,
+      1,
+      10
+    ],
+    "q0_install_count": 0,
+    "isolated_32k": "PASS",
+    "sequence_8k_16k_32k": "PASS",
+    "evidence": "artifacts/SLOT_CONSISTENCY.json"
+  },
+  "ep16": {
+    "K0": "PASS",
+    "K1": "PASS_TOKEN_EXACT_VS_K0",
+    "K2": "PASS_NUMERIC_TOLERANCE_TOKEN_DIFF",
+    "both_slots_same_layer": "PASS",
+    "cross_layer_slot_reuse": "PASS",
+    "execution": "local-backfill fallback with real owner slots and real W8A8 chains",
+    "evidence": "artifacts/EP16_SERVICE_ACCEPTANCE.json"
+  },
+  "ep32": {
+    "all_32_dies_single_ep_group": "PASS",
+    "original_8192_16384_32768": "PASS",
+    "eplb_static_8192_16384_32768": "PASS_STATIC_LAYOUT_ONLY",
+    "eplb_online_rebalance": "FAIL_NO_REBALANCE_END_STORAGE_OFFSET",
+    "k2_8192": "PASS_OUTPUT_IDS_DIFFER_FROM_ORIGINAL",
+    "k2_16384": "PASS_OUTPUT_IDS_MATCH_ORIGINAL",
+    "k2_32768": "PASS_OUTPUT_IDS_MATCH_ORIGINAL",
+    "k2_32k_isolated_and_sequence": "PASS",
+    "native_replica_communication_ids": "FAIL_COMBINE_ATTR601",
+    "evidence": [
+      "artifacts/EP32_MATRIX.json",
+      "artifacts/EP32_DEVICE_MAP.json",
+      "artifacts/EP32_K2_ACCEPTANCE.json",
+      "artifacts/EP32_SERVICE_EVIDENCE.json",
+      "artifacts/EP32_EPLB_REPLICA_TASKS.json"
+    ]
+  },
+  "blockers": [
+    "Native DeepEP replica dispatch entered dispatch but failed in aclnnCamMoeCombineNormal with Invalid_Argument EE1001, Invalid attr=601; service K matrix therefore uses explicitly labeled local-backfill fallback, not native replica communication IDs.",
+    "Original SGLang EPLB online updater fails before rebalance completion with 'For a tensor of internal format, its storage_offset must be 0'. Static EPLB layout is reported separately.",
+    "AgentX source has block hashes but no original text or token IDs; 8192/12288/16384/32768 inputs are deterministic AgentX-derived token materialization, not original human text."
+  ],
+  "input_identity": {
+    "materialization": "deterministic token IDs derived from 64-token AgentX block hashes",
+    "inputs": {
+      "8192": "86240a227b4f194e7f0e3ab5661942b09c0aa5a44cdcc610f503f54d9e3f3d84",
+      "12288_test": "d496e85dff7d63228f4b2e678d33389dee5e58e9e72756d122d055c8c7b76bc9",
+      "16384": "ef1b6259ebc4a272df50b9e905887909e9acab82924231e72cff73c981b217c9",
+      "32768": "cd222160c6815f5ce8db984894f40d40880333dfed62139a23b4ffa0464fafe1"
+    },
+    "source_sha256": "8b1fc2a11506d1642de5cb851c92c402d4f1e0569a88d90197fd728913bb2ae7"
+  },
+  "reproduction": {
+    "entry": "reproduce.sh",
+    "individual_stages": [
+      "inputs",
+      "ep16-k0",
+      "ep16-k1",
+      "ep16-k2",
+      "same-layer",
+      "q0",
+      "ep32-off",
+      "ep32-eplb-static",
+      "ep32-k2",
+      "ep32-eplb-online",
+      "validate"
+    ],
+    "note": "The service stages need the two-node Ascend environment and may be long-running. Generated logs and large AgentX JSON files are ignored by Git."
+  },
+  "cleanup": {
+    "status": "PASS_ALL_EXPERIMENT_CONTAINERS_AND_NPU_PROCESSES_CLEAN",
+    "checked_at": "2026-11-23T07:04:14+08:00",
+    "nodes": [
+      "npu1-23",
+      "npu1-25"
+    ]
+  },
+  "key_artifacts": [
+    "REPORT_FOR_REVIEW.md",
+    "SHA256SUMS",
+    "artifacts/RESULTS_SUMMARY.json",
+    "artifacts/VALIDATION.json",
+    "artifacts/SLOT_CONSISTENCY.json",
+    "artifacts/EP16_SERVICE_ACCEPTANCE.json",
+    "artifacts/EP32_MATRIX.json",
+    "artifacts/EP32_DEVICE_MAP.json",
+    "artifacts/EP32_K2_ACCEPTANCE.json",
+    "artifacts/EP32_SERVICE_EVIDENCE.json",
+    "artifacts/EP32_EPLB_REPLICA_TASKS.json",
+    "artifacts/NATIVE_DISPATCH_FAILURE.json"
+  ]
+}

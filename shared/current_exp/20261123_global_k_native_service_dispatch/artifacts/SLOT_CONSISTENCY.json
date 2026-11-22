@@ -1,0 +1,434 @@
+{
+  "same_layer_hit": {
+    "0": [
+      {
+        "kind": "install",
+        "slot_owner": 0,
+        "local_slot": 0,
+        "expert": 163,
+        "source_rank": 10,
+        "elapsed_ms": 418.018025,
+        "owner_meta": {
+          "owner": 0,
+          "local_slot": 0,
+          "layer": 49,
+          "expert": 163,
+          "generation": 1,
+          "ready": true,
+          "storage_ptr": 20847780364288,
+          "bytes": 37810176
+        },
+        "rank": 0,
+        "layer": 49,
+        "seq": 4
+      },
+      {
+        "kind": "install",
+        "slot_owner": 1,
+        "local_slot": 0,
+        "expert": 133,
+        "source_rank": 8,
+        "elapsed_ms": 451.524697,
+        "owner_meta": {
+          "owner": 1,
+          "local_slot": 0,
+          "layer": 49,
+          "expert": 133,
+          "generation": 1,
+          "ready": true,
+          "storage_ptr": 20847780364288,
+          "bytes": 37810176
+        },
+        "rank": 0,
+        "layer": 49,
+        "seq": 4
+      },
+      {
+        "kind": "call_local_fallback",
+        "rows": 512,
+        "tasks": 4096,
+        "replica_tasks": 14,
+        "per_owner": {
+          "0": 14
+        },
+        "verify": {
+          "max_abs": 0.001953125,
+          "nrmse": 0.0005769840208813548,
+          "finite": true
+        },
+        "wall_ms": 86.988035,
+        "output_sha": "608a3810cf97f9ea33bcce7e3daf10ee7a3a3a67160d30ebdbfcb0967454ba41",
+        "rank": 0,
+        "layer": 49,
+        "seq": 4
+      },
+      {
+        "kind": "reuse",
+        "slot_owner": 0,
+        "local_slot": 0,
+        "expert": 163,
+        "owner_meta": {
+          "owner": 0,
+          "local_slot": 0,
+          "layer": 49,
+          "expert": 163,
+          "generation": 1,
+          "ready": true,
+          "storage_ptr": 20847780364288,
+          "bytes": 37810176
+        },
+        "rank": 0,
+        "layer": 49,
+        "seq": 5
+      },
+      {
+        "kind": "reuse",
+        "slot_owner": 1,
+        "local_slot": 0,
+        "expert": 133,
+        "owner_meta": {
+          "owner": 1,
+          "local_slot": 0,
+          "layer": 49,
+          "expert": 133,
+          "generation": 1,
+          "ready": true,
+          "storage_ptr": 20847780364288,
+          "bytes": 37810176
+        },
+        "rank": 0,
+        "layer": 49,
+        "seq": 5
+      },
+      {
+        "kind": "call_local_fallback",
+        "rows": 256,
+        "tasks": 2048,
+        "replica_tasks": 5,
+        "per_owner": {
+          "0": 5
+        },
+        "verify": {
+          "max_abs": 0.0009765625,
+          "nrmse": 0.00042068082257173955,
+          "finite": true
+        },
+        "wall_ms": 17.845511,
+        "output_sha": "34eda99ac4d17d989fbd04735e7682f4cb375001050d540804b47f7a46b64204",
+        "rank": 0,
+        "layer": 49,
+        "seq": 5
+      }
+    ],
+    "1": [
+      {
+        "kind": "install",
+        "slot_owner": 0,
+        "local_slot": 0,
+        "expert": 163,
+        "source_rank": 10,
+        "elapsed_ms": 417.345048,
+        "owner_meta": {
+          "owner": 0,
+          "local_slot": 0,
+          "layer": 49,
+          "expert": 163,
+          "generation": 1,
+          "ready": true,
+          "storage_ptr": 20847780364288,
+          "bytes": 37810176
+        },
+        "rank": 1,
+        "layer": 49,
+        "seq": 4
+      },
+      {
+        "kind": "install",
+        "slot_owner": 1,
+        "local_slot": 0,
+        "expert": 133,
+        "source_rank": 8,
+        "elapsed_ms": 450.989252,
+        "owner_meta": {
+          "owner": 1,
+          "local_slot": 0,
+          "layer": 49,
+          "expert": 133,
+          "generation": 1,
+          "ready": true,
+          "storage_ptr": 20847780364288,
+          "bytes": 37810176
+        },
+        "rank": 1,
+        "layer": 49,
+        "seq": 4
+      },
+      {
+        "kind": "call_local_fallback",
+        "rows": 512,
+        "tasks": 4096,
+        "replica_tasks": 0,
+        "per_owner": {},
+        "verify": {
+          "max_abs": 0.0,
+          "nrmse": 0.0,
+          "finite": true
+        },
+        "wall_ms": 92.551715,
+        "output_sha": "5d6a20d3de8697de1d464a44415b4923d4e10320fb498e3b9881f670e7f47d08",
+        "rank": 1,
+        "layer": 49,
+        "seq": 4
+      },
+      {
+        "kind": "reuse",
+        "slot_owner": 0,
+        "local_slot": 0,
+        "expert": 163,
+        "owner_meta": {
+          "owner": 0,
+          "local_slot": 0,
+          "layer": 49,
+          "expert": 163,
+          "generation": 1,
+          "ready": true,
+          "storage_ptr": 20847780364288,
+          "bytes": 37810176
+        },
+        "rank": 1,
+        "layer": 49,
+        "seq": 5
+      },
+      {
+        "kind": "reuse",
+        "slot_owner": 1,
+        "local_slot": 0,
+        "expert": 133,
+        "owner_meta": {
+          "owner": 1,
+          "local_slot": 0,
+          "layer": 49,
+          "expert": 133,
+          "generation": 1,
+          "ready": true,
+          "storage_ptr": 20847780364288,
+          "bytes": 37810176
+        },
+        "rank": 1,
+        "layer": 49,
+        "seq": 5
+      },
+      {
+        "kind": "call_local_fallback",
+        "rows": 256,
+        "tasks": 2048,
+        "replica_tasks": 0,
+        "per_owner": {},
+        "verify": {
+          "max_abs": 0.0,
+          "nrmse": 0.0,
+          "finite": true
+        },
+        "wall_ms": 17.217266,
+        "output_sha": "8910c64959b7be21ed04f59aab0c3df7c0f2ee864482d67ee7d858faa1a932a0",
+        "rank": 1,
+        "layer": 49,
+        "seq": 5
+      }
+    ],
+    "10": [
+      {
+        "kind": "install",
+        "slot_owner": 0,
+        "local_slot": 0,
+        "expert": 163,
+        "source_rank": 10,
+        "elapsed_ms": 417.861353,
+        "owner_meta": {
+          "owner": 0,
+          "local_slot": 0,
+          "layer": 49,
+          "expert": 163,
+          "generation": 1,
+          "ready": true,
+          "storage_ptr": 20847780364288,
+          "bytes": 37810176
+        },
+        "rank": 10,
+        "layer": 49,
+        "seq": 4
+      },
+      {
+        "kind": "install",
+        "slot_owner": 1,
+        "local_slot": 0,
+        "expert": 133,
+        "source_rank": 8,
+        "elapsed_ms": 451.662309,
+        "owner_meta": {
+          "owner": 1,
+          "local_slot": 0,
+          "layer": 49,
+          "expert": 133,
+          "generation": 1,
+          "ready": true,
+          "storage_ptr": 20847780364288,
+          "bytes": 37810176
+        },
+        "rank": 10,
+        "layer": 49,
+        "seq": 4
+      },
+      {
+        "kind": "call_local_fallback",
+        "rows": 512,
+        "tasks": 4096,
+        "replica_tasks": 0,
+        "per_owner": {},
+        "verify": {
+          "max_abs": 0.0,
+          "nrmse": 0.0,
+          "finite": true
+        },
+        "wall_ms": 91.338965,
+        "output_sha": "971b5929fbb28ac52bdd186f4dc54ab4ed544b3f0e58bb4b03abd4d862c20dc1",
+        "rank": 10,
+        "layer": 49,
+        "seq": 4
+      },
+      {
+        "kind": "reuse",
+        "slot_owner": 0,
+        "local_slot": 0,
+        "expert": 163,
+        "owner_meta": {
+          "owner": 0,
+          "local_slot": 0,
+          "layer": 49,
+          "expert": 163,
+          "generation": 1,
+          "ready": true,
+          "storage_ptr": 20847780364288,
+          "bytes": 37810176
+        },
+        "rank": 10,
+        "layer": 49,
+        "seq": 5
+      },
+      {
+        "kind": "reuse",
+        "slot_owner": 1,
+        "local_slot": 0,
+        "expert": 133,
+        "owner_meta": {
+          "owner": 1,
+          "local_slot": 0,
+          "layer": 49,
+          "expert": 133,
+          "generation": 1,
+          "ready": true,
+          "storage_ptr": 20847780364288,
+          "bytes": 37810176
+        },
+        "rank": 10,
+        "layer": 49,
+        "seq": 5
+      },
+      {
+        "kind": "call_local_fallback",
+        "rows": 256,
+        "tasks": 2048,
+        "replica_tasks": 0,
+        "per_owner": {},
+        "verify": {
+          "max_abs": 0.0,
+          "nrmse": 0.0,
+          "finite": true
+        },
+        "wall_ms": 17.637059,
+        "output_sha": "28f227960ff6e6f45407ec6eceb547fdc5a646d0b984bd73928e30f86e95713b",
+        "rank": 10,
+        "layer": 49,
+        "seq": 5
+      }
+    ]
+  },
+  "q0": {
+    "rank0": [
+      {
+        "kind": "call_noop",
+        "rows": 1,
+        "tasks": 8,
+        "replica_tasks": 0,
+        "rank": 0,
+        "layer": 49,
+        "seq": 1
+      },
+      {
+        "kind": "call_noop",
+        "rows": 1,
+        "tasks": 8,
+        "replica_tasks": 0,
+        "rank": 0,
+        "layer": 50,
+        "seq": 1
+      },
+      {
+        "kind": "call_noop",
+        "rows": 1,
+        "tasks": 8,
+        "replica_tasks": 0,
+        "rank": 0,
+        "layer": 49,
+        "seq": 2
+      },
+      {
+        "kind": "call_noop",
+        "rows": 1,
+        "tasks": 8,
+        "replica_tasks": 0,
+        "rank": 0,
+        "layer": 50,
+        "seq": 2
+      },
+      {
+        "kind": "call_noop",
+        "rows": 1,
+        "tasks": 8,
+        "replica_tasks": 0,
+        "rank": 0,
+        "layer": 49,
+        "seq": 3
+      },
+      {
+        "kind": "call_noop",
+        "rows": 1,
+        "tasks": 8,
+        "replica_tasks": 0,
+        "rank": 0,
+        "layer": 50,
+        "seq": 3
+      },
+      {
+        "kind": "call_noop",
+        "rows": 512,
+        "tasks": 4096,
+        "replica_tasks": 0,
+        "rank": 0,
+        "layer": 49,
+        "seq": 4
+      },
+      {
+        "kind": "call_noop",
+        "rows": 512,
+        "tasks": 4096,
+        "replica_tasks": 0,
+        "rank": 0,
+        "layer": 50,
+        "seq": 4
+      }
+    ],
+    "install_count": 0
+  },
+  "decision": "all ranks gather owner meta, MIN-reduce reuse decision before any device send/recv"
+}

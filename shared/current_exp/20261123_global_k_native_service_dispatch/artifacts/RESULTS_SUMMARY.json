@@ -1,0 +1,646 @@
+{
+  "status": "K_SLOT_FUNCTIONAL_MATRIX_PASS_NATIVE_REPLICA_DISPATCH_BLOCKED",
+  "slot_fix": {
+    "same_layer_reuse_all_ranks": true,
+    "q0_install_count": 0,
+    "isolated_32k": "PASS",
+    "sequence_32k": "PASS"
+  },
+  "ep16": {
+    "scope": "EP16 service layer49+50, 8192-token prompt, fixed owner-local quota 1/2, output limit 2",
+    "k0": {
+      "status": "PASS",
+      "output_sha256": "c977dbe785221d34114d345fdf8ff4e18bb4af66750751dbea29407f9738735f",
+      "output_text": "1.",
+      "source": "q0 diagnostic startup path"
+    },
+    "k1": {
+      "status": "PASS",
+      "slot": {
+        "slot_count": 1,
+        "storage_ptrs": [
+          20847780364288
+        ],
+        "generations": [
+          1,
+          2
+        ],
+        "layers": [
+          49,
+          50
+        ],
+        "moved": [
+          {
+            "layer": 49,
+            "tasks": 18,
+            "verify": {
+              "max_abs": 0.0029296875,
+              "nrmse": 0.0008932320051826537,
+              "finite": true
+            }
+          },
+          {
+            "layer": 50,
+            "tasks": 15,
+            "verify": {
+              "max_abs": 0.001953125,
+              "nrmse": 0.0006525280186906457,
+              "finite": true
+            }
+          }
+        ]
+      },
+      "output_sha256": "c977dbe785221d34114d345fdf8ff4e18bb4af66750751dbea29407f9738735f",
+      "ttft_s": 5.333145957090892,
+      "token_exact_vs_k0": true
+    },
+    "k2": {
+      "status": "PASS_NUMERIC_TOLERANCE_TOKEN_DIFF",
+      "slot0": {
+        "slot_count": 1,
+        "storage_ptrs": [
+          20847780364288
+        ],
+        "generations": [
+          1,
+          2
+        ],
+        "layers": [
+          49,
+          50
+        ],
+        "moved": [
+          {
+            "layer": 49,
+            "tasks": 18,
+            "verify": {
+              "max_abs": 0.0029296875,
+              "nrmse": 0.0008932320051826537,
+              "finite": true
+            }
+          },
+          {
+            "layer": 50,
+            "tasks": 15,
+            "verify": {
+              "max_abs": 0.001953125,
+              "nrmse": 0.0006525280186906457,
+              "finite": true
+            }
+          }
+        ]
+      },
+      "slot1": {
+        "slot_count": 1,
+        "storage_ptrs": [
+          20847780364288
+        ],
+        "generations": [
+          1,
+          2
+        ],
+        "layers": [
+          49,
+          50
+        ],
+        "moved": [
+          {
+            "layer": 49,
+            "tasks": 29,
+            "verify": {
+              "max_abs": 0.001953125,
+              "nrmse": 0.0009197687031701207,
+              "finite": true
+            }
+          },
+          {
+            "layer": 50,
+            "tasks": 5,
+            "verify": {
+              "max_abs": 0.0009765625,
+              "nrmse": 0.00045453847269527614,
+              "finite": true
+            }
+          }
+        ]
+      },
+      "output_sha256": "10c5fe5939d4a0ab2e351dabb1b8ca6dd1e38e96d4a4b0e0f4d07b83df32586f",
+      "ttft_s": 5.7863520360551775,
+      "token_exact_vs_k0": false,
+      "both_slots_same_layer": true,
+      "cross_layer_reuse": true
+    },
+    "q0_diagnostic": {
+      "status": "PASS",
+      "install_count": 0,
+      "output_sha256": "c977dbe785221d34114d345fdf8ff4e18bb4af66750751dbea29407f9738735f"
+    }
+  },
+  "ep32": {
+    "device_topology": "single EP32 group, ranks 0-15 node23 local dies0-15; ranks16-31 node25 local dies0-15",
+    "matrix": {
+      "8192": {
+        "off": {
+          "status": "PASS",
+          "ttft_s": 4.946090726996772,
+          "total_s": 5.5145999731030315,
+          "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+        },
+        "eplb_static": {
+          "status": "PASS",
+          "ttft_s": 5.005494385026395,
+          "total_s": 5.607159413048066,
+          "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+        },
+        "k2": {
+          "status": "PASS",
+          "ttft_s": 2.956897927913815,
+          "total_s": 3.5133638529805467,
+          "output_ids_sha256": "5afe2c8613e2a23039d6668887412977bcdff9a016510b967d36ccee312401b6"
+        }
+      },
+      "16384": {
+        "off": {
+          "status": "PASS",
+          "ttft_s": 5.748868118971586,
+          "total_s": 6.30411540903151,
+          "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+        },
+        "eplb_static": {
+          "status": "PASS",
+          "ttft_s": 5.8717178360093385,
+          "total_s": 6.401315096998587,
+          "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+        },
+        "k2": {
+          "status": "PASS",
+          "ttft_s": 6.0152063890127465,
+          "total_s": 6.590564755024388,
+          "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a"
+        }
+      },
+      "32768": {
+        "off": {
+          "status": "PASS",
+          "ttft_s": 11.850907000014558,
+          "total_s": 12.416233564028516,
+          "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c"
+        },
+        "eplb_static": {
+          "status": "PASS",
+          "ttft_s": 12.083918021991849,
+          "total_s": 12.674740229966119,
+          "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c"
+        },
+        "k2": {
+          "status": "PASS",
+          "ttft_s": 12.412848195061088,
+          "total_s": 12.948973778053187,
+          "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c",
+          "isolated_32k": {
+            "status": "PASS",
+            "ttft_s": 16.149544861982577,
+            "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c"
+          }
+        }
+      }
+    },
+    "eplb_static": {
+      "physical_experts": 288,
+      "local_slots_per_rank": 9,
+      "redundant": 32,
+      "layout_active": true,
+      "replica_tasks_8192": 5098,
+      "total_tasks_8192": 65536,
+      "provenance": "fixed layout/input observer evidence inherited from previous run; service matrix rerun this round"
+    },
+    "online_rebalance": {
+      "status": "FAIL",
+      "error": "For a tensor of internal format, its storage_offset must be 0",
+      "rebalance_end": false
+    }
+  },
+  "k2_slots": {
+    "0": {
+      "slot_count": 1,
+      "owner": 0,
+      "local_slot": 0,
+      "hot_expert": 163,
+      "source_rank": 20,
+      "storage_ptrs": [
+        20847780495360
+      ],
+      "generations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "layers": [
+        49,
+        50
+      ],
+      "bytes": 37810176
+    },
+    "1": {
+      "slot_count": 1,
+      "owner": 1,
+      "local_slot": 0,
+      "hot_expert": 133,
+      "source_rank": 16,
+      "storage_ptrs": [
+        20847780495360
+      ],
+      "generations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "layers": [
+        49,
+        50
+      ],
+      "bytes": 37810176
+    }
+  },
+  "native_replica_dispatch": {
+    "status": "FAIL",
+    "config": {
+      "K": 1,
+      "ep": 16,
+      "native_dispatch": true,
+      "layers": [
+        49,
+        50
+      ],
+      "owners": [
+        0
+      ],
+      "hot_experts": [
+        163
+      ]
+    },
+    "observed": "native replica DeepEP dispatch reached combine; aclnnCamMoeCombineNormal rejected the request",
+    "error": "Invalid_Argument EE1001, Invalid attr=601",
+    "rebalance_end": "N/A",
+    "selected_log": [
+      {
+        "line": 1211,
+        "text": "[2026-11-22 22:25:52] INFO:     127.0.0.1:51296 - \"GET /health HTTP/1.1\" 200 OK"
+      },
+      {
+        "line": 1212,
+        "text": "[2026-11-22 22:25:58 TP0 EP0] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1213,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 1306,
+        "text": "        Check whether the input parameters of the interface are correct."
+      },
+      {
+        "line": 1307,
+        "text": "[PID: 589] 2026-11-22-22:23:13.214.312 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 1308,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 1315,
+        "text": ""
+      },
+      {
+        "line": 1316,
+        "text": "[2026-11-22 22:25:58 TP6 EP6] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1317,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 1421,
+        "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1422,
+        "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 595] 2026-11-22-22:23:13.220.991 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 1423,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 1436,
+        "text": ""
+      },
+      {
+        "line": 1437,
+        "text": "[2026-11-22 22:25:58 TP14 EP14] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1438,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 1542,
+        "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1543,
+        "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 1107] 2026-11-22-22:23:13.251.148 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 1544,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 1558,
+        "text": "[2026-11-22 22:25:58] SIGQUIT received. signum=None, frame=None. It usually means one child failed."
+      },
+      {
+        "line": 1559,
+        "text": "[2026-11-22 22:25:58 TP15 EP15] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1560,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 1664,
+        "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1665,
+        "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 1108] 2026-11-22-22:23:13.287.836 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 1666,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 1679,
+        "text": ""
+      },
+      {
+        "line": 1680,
+        "text": "[2026-11-22 22:25:58 TP1 EP1] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1681,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 1785,
+        "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1786,
+        "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 590] 2026-11-22-22:23:13.214.312 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 1787,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 1800,
+        "text": ""
+      },
+      {
+        "line": 1801,
+        "text": "[2026-11-22 22:25:58 TP11 EP11] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1802,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 1906,
+        "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1907,
+        "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 1104] 2026-11-22-22:23:13.235.329 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 1908,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 1921,
+        "text": ""
+      },
+      {
+        "line": 1922,
+        "text": "[2026-11-22 22:25:58 TP8 EP8] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1923,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 2027,
+        "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 2028,
+        "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 1101] 2026-11-22-22:23:13.217.587 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 2029,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 2043,
+        "text": "[2026-11-22 22:25:58] Sleeping 5 seconds before crash diagnostics to let GPU activity settle."
+      },
+      {
+        "line": 2044,
+        "text": "[2026-11-22 22:25:58 TP3 EP3] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 2045,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 2149,
+        "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 2150,
+        "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 592] 2026-11-22-22:23:13.232.307 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 2151,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 2164,
+        "text": ""
+      },
+      {
+        "line": 2165,
+        "text": "[2026-11-22 22:25:58 TP2 EP2] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 2166,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 2270,
+        "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 2271,
+        "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 591] 2026-11-22-22:23:13.220.202 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 2272,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 2285,
+        "text": ""
+      },
+      {
+        "line": 2286,
+        "text": "[2026-11-22 22:25:58 TP7 EP7] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 2287,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 2391,
+        "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 2392,
+        "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 596] 2026-11-22-22:23:13.265.143 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 2393,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 2406,
+        "text": ""
+      },
+      {
+        "line": 2407,
+        "text": "[2026-11-22 22:25:58 TP10 EP10] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 2408,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 2512,
+        "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 2513,
+        "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 1103] 2026-11-22-22:23:13.280.924 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 2514,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 2527,
+        "text": ""
+      },
+      {
+        "line": 2528,
+        "text": "[2026-11-22 22:25:58 TP9 EP9] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 2529,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 2633,
+        "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 2634,
+        "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 1102] 2026-11-22-22:23:13.237.685 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 2635,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 2648,
+        "text": ""
+      },
+      {
+        "line": 2649,
+        "text": "[2026-11-22 22:25:58 TP4 EP4] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 2650,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5857, in run_scheduler_process"
+      },
+      {
+        "line": 2754,
+        "text": "                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 2755,
+        "text": "RuntimeError: call aclnnCamMoeCombineNormal failed, detail:[PID: 593] 2026-11-22-22:23:13.226.713 Invalid_Argument(EE1001): The argument is invalid.Reason: Invalid attr=601."
+      },
+      {
+        "line": 2756,
+        "text": "        Solution: 1.Check the input parameter range of the function. 2.Check the function invocation relationship."
+      },
+      {
+        "line": 2769,
+        "text": ""
+      },
+      {
+        "line": 2770,
+        "text": "[2026-11-22 22:25:58 TP12 EP12] Scheduler hit an exception: Traceback (most recent call last):"
+      }
+    ]
+  }
+}

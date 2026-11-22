@@ -1,0 +1,474 @@
+{
+  "EP32_OFF": {
+    "log": "/data_lib/cyt/global_k_ep32/logs/ep32_ep32_off_new/node23/server.log",
+    "status": "PASS",
+    "selected": [
+      {
+        "line": 1176,
+        "text": "[2026-11-22 22:47:28] INFO:     127.0.0.1:22674 - \"GET /health HTTP/1.1\" 503 Service Unavailable"
+      },
+      {
+        "line": 1177,
+        "text": "[2026-11-22 22:47:35 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 6, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.11"
+      },
+      {
+        "line": 1178,
+        "text": "[2026-11-22 22:47:38] INFO:     127.0.0.1:56074 - \"GET /health HTTP/1.1\" 503 Service Unavailable"
+      },
+      {
+        "line": 1180,
+        "text": "[2026-11-22 22:47:39] INFO:     127.0.0.1:56084 - \"POST /freeze_gc HTTP/1.1\" 200 OK"
+      },
+      {
+        "line": 1181,
+        "text": "[2026-11-22 22:47:39] The server is fired up and ready to roll!"
+      },
+      {
+        "line": 1182,
+        "text": "[2026-11-22 22:47:51 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 1, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.06"
+      },
+      {
+        "line": 1183,
+        "text": "[2026-11-22 22:48:01 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 1, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.10"
+      },
+      {
+        "line": 1184,
+        "text": "[2026-11-22 22:48:01] INFO:     127.0.0.1:19894 - \"GET /health HTTP/1.1\" 200 OK"
+      },
+      {
+        "line": 1185,
+        "text": "[2026-11-22 22:48:04] INFO:     127.0.0.1:19904 - \"POST /generate HTTP/1.1\" 200 OK"
+      },
+      {
+        "line": 1186,
+        "text": "[2026-11-22 22:48:09 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.12, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 1064.72"
+      },
+      {
+        "line": 1187,
+        "text": "[2026-11-22 22:48:09] INFO:     127.0.0.1:9038 - \"POST /generate HTTP/1.1\" 200 OK"
+      },
+      {
+        "line": 1188,
+        "text": "[2026-11-22 22:48:12 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.12, #running-req: 0, #queue-req: 0, #pending-token: 8192, npu graph: False, input throughput (token/s): 2380.04"
+      },
+      {
+        "line": 1189,
+        "text": "[2026-11-22 22:48:15 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.25, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 2782.11"
+      },
+      {
+        "line": 1190,
+        "text": "[2026-11-22 22:48:16] INFO:     127.0.0.1:9054 - \"POST /generate HTTP/1.1\" 200 OK"
+      },
+      {
+        "line": 1191,
+        "text": "[2026-11-22 22:48:19 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.12, #running-req: 0, #queue-req: 0, #pending-token: 24576, npu graph: False, input throughput (token/s): 2386.15"
+      },
+      {
+        "line": 1192,
+        "text": "[2026-11-22 22:48:21 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.25, #running-req: 0, #queue-req: 0, #pending-token: 16384, npu graph: False, input throughput (token/s): 2816.08"
+      },
+      {
+        "line": 1193,
+        "text": "[2026-11-22 22:48:24 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.38, #running-req: 0, #queue-req: 0, #pending-token: 8192, npu graph: False, input throughput (token/s): 2724.32"
+      },
+      {
+        "line": 1194,
+        "text": "[2026-11-22 22:48:28 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 8192, #cached-token: 0, token usage: 0.50, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 2620.76"
+      }
+    ]
+  },
+  "EP32_EPLB_STATIC": {
+    "log": "/data_lib/cyt/global_k_ep32/logs/ep32_ep32_eplb_new/node23/server.log",
+    "status": "PASS_STATIC_LAYOUT",
+    "selected": [
+      {
+        "line": 484,
+        "text": "[2026-11-22 22:49:40 TP13 EP13] Init torch distributed ends. elapsed=4.90 s, mem usage=0.01 GB"
+      },
+      {
+        "line": 485,
+        "text": "[2026-11-22 22:49:40 TP10 EP10] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 486,
+        "text": "[2026-11-22 22:49:40 TP9 EP9] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 487,
+        "text": "[2026-11-22 22:49:40 TP8 EP8] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 488,
+        "text": "[2026-11-22 22:49:40 TP7 EP7] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 489,
+        "text": "[2026-11-22 22:49:40 TP0 EP0] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 490,
+        "text": "[2026-11-22 22:49:40 TP15 EP15] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 491,
+        "text": "[2026-11-22 22:49:40 TP3 EP3] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 492,
+        "text": "[2026-11-22 22:49:40 TP2 EP2] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 493,
+        "text": "[2026-11-22 22:49:40 TP4 EP4] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 494,
+        "text": "[2026-11-22 22:49:40 TP11 EP11] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 495,
+        "text": "[2026-11-22 22:49:40 TP5 EP5] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 496,
+        "text": "[2026-11-22 22:49:40 TP1 EP1] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 497,
+        "text": "[2026-11-22 22:49:40 TP14 EP14] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 498,
+        "text": "[2026-11-22 22:49:40 TP6 EP6] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 499,
+        "text": "[2026-11-22 22:49:40 TP12 EP12] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 500,
+        "text": "[2026-11-22 22:49:40 TP13 EP13] init_expert_location from init_by_mapping using ServerArgs.init_expert_location"
+      },
+      {
+        "line": 501,
+        "text": "<frozen abc>:106: DeprecationWarning: MultiPlatformOp is deprecated; subclass sglang.kernels.fused_op.BaseFusedOp instead (RFC #29630)."
+      },
+      {
+        "line": 1109,
+        "text": "[2026-11-22 22:51:02 TP8 EP8] Tokenizer for /models/glm-q is still TokenizersBackend after retries with --trust-remote-code. Model-specific tokenizer attributes may be missing."
+      },
+      {
+        "line": 1110,
+        "text": "[2026-11-22 22:51:06 TP4 EP4] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+      },
+      {
+        "line": 1111,
+        "text": "[2026-11-22 22:51:06 TP3 EP3] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+      },
+      {
+        "line": 1112,
+        "text": "[2026-11-22 22:51:06 TP4 EP4] Memory pool end. avail mem=25.20 GB"
+      },
+      {
+        "line": 1113,
+        "text": "[2026-11-22 22:51:06 TP3 EP3] Memory pool end. avail mem=25.43 GB"
+      },
+      {
+        "line": 1114,
+        "text": "[2026-11-22 22:51:06 TP15 EP15] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+      },
+      {
+        "line": 1115,
+        "text": "[2026-11-22 22:51:06 TP15 EP15] Memory pool end. avail mem=25.43 GB"
+      },
+      {
+        "line": 1116,
+        "text": "[2026-11-22 22:51:06 TP0 EP0] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+      },
+      {
+        "line": 1117,
+        "text": "[2026-11-22 22:51:06 TP0 EP0] Memory pool end. avail mem=25.13 GB"
+      },
+      {
+        "line": 1118,
+        "text": "[2026-11-22 22:51:06 TP7 EP7] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+      },
+      {
+        "line": 1119,
+        "text": "[2026-11-22 22:51:06 TP10 EP10] KV Cache is allocated. dtype: torch.bfloat16, #tokens: 65536, KV size: 6.72 GB"
+      },
+      {
+        "line": 1120,
+        "text": "[2026-11-22 22:51:06 TP7 EP7] Memory pool end. avail mem=25.43 GB"
+      }
+    ]
+  },
+  "EP32_EPLB_ONLINE": {
+    "log": "/data_lib/cyt/global_k_ep32/logs/ep32_native_ep32_online_1/node23/server.log",
+    "status": "FAIL",
+    "selected": [
+      {
+        "line": 1210,
+        "text": "[2026-11-22 23:00:52] INFO:     127.0.0.1:48592 - \"GET /health HTTP/1.1\" 503 Service Unavailable"
+      },
+      {
+        "line": 1211,
+        "text": "[2026-11-22 23:00:56 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 6, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.12"
+      },
+      {
+        "line": 1212,
+        "text": "[2026-11-22 23:00:57 TP13 EP13] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1213,
+        "text": "[2026-11-22 23:00:57 TP1 EP1] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1214,
+        "text": "[2026-11-22 23:00:57 TP14 EP14] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1215,
+        "text": "[2026-11-22 23:00:57 TP0 EP0] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1216,
+        "text": "[2026-11-22 23:00:57 TP3 EP3] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1217,
+        "text": "[2026-11-22 23:00:57 TP9 EP9] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1218,
+        "text": "[2026-11-22 23:00:57 TP8 EP8] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1219,
+        "text": "[2026-11-22 23:00:57 TP6 EP6] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1220,
+        "text": "[2026-11-22 23:00:57 TP4 EP4] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1221,
+        "text": "[2026-11-22 23:00:57 TP7 EP7] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1222,
+        "text": "[2026-11-22 23:00:57 TP15 EP15] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1223,
+        "text": "[2026-11-22 23:00:57 TP5 EP5] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1224,
+        "text": "[2026-11-22 23:00:57 TP11 EP11] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1225,
+        "text": "[2026-11-22 23:00:57 TP12 EP12] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1226,
+        "text": "[2026-11-22 23:00:57 TP10 EP10] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1227,
+        "text": "[2026-11-22 23:00:57 TP2 EP2] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1228,
+        "text": "[2026-11-22 23:00:57 TP0 EP0] Resetting ExpertDistributionRecorder..."
+      },
+      {
+        "line": 1229,
+        "text": "[2026-11-22 23:00:57 TP1 EP1] Resetting ExpertDistributionRecorder..."
+      },
+      {
+        "line": 1298,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1299,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1300,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1301,
+        "text": "[ERROR] 2026-11-22-23:00:59 (PID:603, Device:14, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1302,
+        "text": ""
+      },
+      {
+        "line": 1359,
+        "text": "    return group.send([tensor], group_dst, tag)"
+      },
+      {
+        "line": 1360,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1361,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1362,
+        "text": "[ERROR] 2026-11-22-23:00:59 (PID:590, Device:1, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1363,
+        "text": ""
+      },
+      {
+        "line": 1418,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1419,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1420,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1421,
+        "text": "[ERROR] 2026-11-22-23:00:59 (PID:598, Device:9, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1422,
+        "text": ""
+      },
+      {
+        "line": 1477,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1478,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1479,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1480,
+        "text": "[ERROR] 2026-11-22-23:00:59 (PID:602, Device:13, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1481,
+        "text": ""
+      },
+      {
+        "line": 1536,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1537,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1538,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1539,
+        "text": "[ERROR] 2026-11-22-23:00:59 (PID:604, Device:15, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1540,
+        "text": ""
+      },
+      {
+        "line": 1595,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1596,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1597,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1598,
+        "text": "[ERROR] 2026-11-22-23:00:59 (PID:597, Device:8, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1599,
+        "text": ""
+      },
+      {
+        "line": 1654,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1655,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1656,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1657,
+        "text": "[ERROR] 2026-11-22-23:00:59 (PID:601, Device:12, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1658,
+        "text": ""
+      },
+      {
+        "line": 1713,
+        "text": "    return group.send([tensor], group_dst, tag)"
+      },
+      {
+        "line": 1714,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1715,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1716,
+        "text": "[ERROR] 2026-11-22-23:00:59 (PID:592, Device:3, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1717,
+        "text": ""
+      }
+    ]
+  },
+  "EP32_K2_32K_ISOLATED": {
+    "status": "PASS",
+    "artifact": "artifacts/native_ep32_k2_32768_isolated.json",
+    "note": "same four 8192-token chunks completed after slot decision fix"
+  },
+  "EP32_K2_SEQUENCE": {
+    "status": "PASS",
+    "artifacts": [
+      "artifacts/native_ep32_k2_seq_8192.json",
+      "artifacts/native_ep32_k2_seq_16384.json",
+      "artifacts/native_ep32_k2_seq_32768.json"
+    ]
+  },
+  "NATIVE_REPLICA_DISPATCH": {
+    "status": "FAIL",
+    "artifact": "artifacts/NATIVE_DISPATCH_FAILURE.json",
+    "error": "aclnnCamMoeCombineNormal Invalid attr=601"
+  },
+  "SERVICE_K_MODE": {
+    "status": "FUNCTIONAL",
+    "mode": "local fallback for replica execution; extra DeepEP communication id path failed combine and is not counted as completed"
+  }
+}
