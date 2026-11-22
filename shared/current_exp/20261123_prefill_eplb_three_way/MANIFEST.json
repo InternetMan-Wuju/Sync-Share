@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-11-23T03:16:21.657435+08:00",
+  "base_commit": "738e2be4711e8de132c242a3f30b7c6d4931d8b1",
+  "status": "INCONCLUSIVE_THREE_WAY_BLOCKED_UNIFORM_LAYOUT",
+  "completed": [
+    "EP16 layer49 three-arm replay 8K/16K/32K",
+    "native layout service 8K/16K",
+    "off service 8K/16K/32K",
+    "K1 service blocker reproduced",
+    "native online rebalance failure reproduced"
+  ],
+  "not_completed": [
+    "formal three-group EP16 service TTFT",
+    "EPLB static 32K service due capacity",
+    "EP32 three-arm service",
+    "second natural normal input per size"
+  ],
+  "artifacts": [
+    "REPORT_FOR_REVIEW.md",
+    "artifacts/RESULTS_SUMMARY.json",
+    "artifacts/LAYOUT_EFFECTIVE.json",
+    "artifacts/K1_IDENTITY.json",
+    "artifacts/FAILURE_EVIDENCE.json",
+    "artifacts/ENVIRONMENT.json",
+    "artifacts/INPUTS.json",
+    "artifacts/REPLAY_RANK_DETAILS.json",
+    "artifacts/REPLAY_TIMINGS.csv",
+    "artifacts/SERVICE_TTFT.csv",
+    "artifacts/VALIDATION.json"
+  ],
+  "production_format": "UNKNOWN_NO_ACTIVE_SERVICE",
+  "performance_status": "PARTIAL_REPLAY_AND_DIAGNOSTIC_NOT_FORMAL_THREE_WAY"
+}

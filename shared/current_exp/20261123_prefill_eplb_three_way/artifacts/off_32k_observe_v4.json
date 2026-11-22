@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:18023",
+  "prompt": "prompts/prompt_32k.txt",
+  "prompt_tokens_hint": 32729,
+  "rows": [
+    {
+      "ttft_s": 11.174160665017553,
+      "ttfb_s": 11.174088014988229,
+      "total_s": 26.17436480196193,
+      "prompt_sha256": "ddfffc791ce5a35d4d0b3ca627c455ffab3ece15a8a59ffbbafb7141847a0561",
+      "input_chars": 154490,
+      "output_chars": 61,
+      "output_tail": "用户希望我总结所提供的文本，用中文简要说明这段内容主要在讨论什么，并给出一个结论。\n\n这段文本是关于UT Austin（德",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 0
+    }
+  ]
+}

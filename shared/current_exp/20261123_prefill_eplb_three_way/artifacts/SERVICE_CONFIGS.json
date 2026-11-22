@@ -1,0 +1,31 @@
+{
+  "image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "parallel": "TP16/EP16/DP1",
+  "host": "npu1-23",
+  "mem_fraction_static": 0.88,
+  "context_length": 65536,
+  "chunked_prefill_size": 8192,
+  "max_prefill_tokens": 32768,
+  "max_running_requests": 1,
+  "deepep_mode": "normal",
+  "radix_cache": false,
+  "off": {
+    "redundant": 0
+  },
+  "eplb_static": {
+    "redundant": 16,
+    "dispatch_algorithm": "static",
+    "layout": "layouts/eplb16_static.json"
+  },
+  "eplb_online": {
+    "redundant": 16,
+    "algorithm": "deepseek_hierarchical",
+    "rebalance_iterations": 2,
+    "recorder_mode": "stat",
+    "recorder_buffer": 1
+  },
+  "ours_service": {
+    "requested_redundant": 1,
+    "result": "ASSERTION_257_NOT_DIVISIBLE_BY_16"
+  }
+}

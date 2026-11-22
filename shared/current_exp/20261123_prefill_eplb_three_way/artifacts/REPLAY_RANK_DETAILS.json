@@ -1,0 +1,9130 @@
+{
+  "8k": {
+    "original": [
+      {
+        "rank": 0,
+        "rank_median_ms": 9.538993000000001,
+        "rank_max_ms": 13.924521,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3318,
+            "local_counts": [
+              50,
+              439,
+              166,
+              124,
+              79,
+              83,
+              323,
+              44,
+              331,
+              193,
+              378,
+              51,
+              296,
+              558,
+              60,
+              143
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "rank_median_ms": 9.4370075,
+        "rank_max_ms": 13.82441,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3310,
+            "local_counts": [
+              93,
+              236,
+              84,
+              302,
+              185,
+              157,
+              250,
+              214,
+              89,
+              95,
+              670,
+              289,
+              157,
+              254,
+              96,
+              139
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "rank_median_ms": 9.334105999999998,
+        "rank_max_ms": 13.410187,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5394,
+            "local_counts": [
+              184,
+              324,
+              54,
+              1671,
+              102,
+              229,
+              220,
+              494,
+              58,
+              262,
+              43,
+              518,
+              386,
+              181,
+              380,
+              288
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "rank_median_ms": 9.510087500000001,
+        "rank_max_ms": 13.893541,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4023,
+            "local_counts": [
+              73,
+              124,
+              167,
+              474,
+              599,
+              255,
+              152,
+              180,
+              242,
+              544,
+              233,
+              292,
+              270,
+              83,
+              150,
+              185
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "rank_median_ms": 9.561878,
+        "rank_max_ms": 13.933461,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4194,
+            "local_counts": [
+              71,
+              12,
+              367,
+              192,
+              149,
+              182,
+              304,
+              258,
+              1234,
+              222,
+              332,
+              154,
+              362,
+              60,
+              171,
+              124
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "rank_median_ms": 9.520908,
+        "rank_max_ms": 14.083113,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3509,
+            "local_counts": [
+              97,
+              642,
+              220,
+              611,
+              295,
+              197,
+              196,
+              185,
+              179,
+              202,
+              75,
+              84,
+              115,
+              201,
+              172,
+              38
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 14,
+        "rank_median_ms": 9.623744,
+        "rank_max_ms": 13.957512,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4384,
+            "local_counts": [
+              201,
+              286,
+              320,
+              222,
+              340,
+              104,
+              328,
+              628,
+              285,
+              554,
+              21,
+              116,
+              326,
+              89,
+              176,
+              388
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 15,
+        "rank_median_ms": 9.5797785,
+        "rank_max_ms": 13.905111,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4349,
+            "local_counts": [
+              264,
+              197,
+              586,
+              86,
+              664,
+              80,
+              14,
+              195,
+              155,
+              113,
+              268,
+              204,
+              190,
+              253,
+              490,
+              590
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "rank_median_ms": 9.5824635,
+        "rank_max_ms": 14.035402,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4479,
+            "local_counts": [
+              98,
+              77,
+              235,
+              197,
+              187,
+              339,
+              226,
+              611,
+              322,
+              682,
+              336,
+              314,
+              206,
+              270,
+              234,
+              145
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "rank_median_ms": 9.5570175,
+        "rank_max_ms": 13.947472,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3092,
+            "local_counts": [
+              98,
+              101,
+              234,
+              48,
+              192,
+              125,
+              294,
+              290,
+              158,
+              375,
+              57,
+              380,
+              177,
+              166,
+              273,
+              124
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "rank_median_ms": 9.490102,
+        "rank_max_ms": 13.819081,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3820,
+            "local_counts": [
+              130,
+              438,
+              366,
+              90,
+              337,
+              233,
+              87,
+              253,
+              110,
+              85,
+              157,
+              230,
+              59,
+              858,
+              241,
+              146
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "rank_median_ms": 9.3986965,
+        "rank_max_ms": 13.702779,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3418,
+            "local_counts": [
+              213,
+              77,
+              144,
+              28,
+              159,
+              271,
+              212,
+              160,
+              645,
+              240,
+              100,
+              239,
+              154,
+              198,
+              430,
+              148
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "rank_median_ms": 9.3225815,
+        "rank_max_ms": 13.665219,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4268,
+            "local_counts": [
+              279,
+              384,
+              252,
+              193,
+              78,
+              279,
+              116,
+              638,
+              236,
+              409,
+              272,
+              188,
+              145,
+              343,
+              313,
+              143
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "rank_median_ms": 9.313391,
+        "rank_max_ms": 13.595898,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5428,
+            "local_counts": [
+              287,
+              391,
+              438,
+              681,
+              53,
+              295,
+              586,
+              300,
+              176,
+              269,
+              259,
+              934,
+              241,
+              186,
+              135,
+              197
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "rank_median_ms": 9.2694955,
+        "rank_max_ms": 13.573848,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4559,
+            "local_counts": [
+              198,
+              119,
+              205,
+              223,
+              177,
+              1285,
+              309,
+              108,
+              125,
+              317,
+              191,
+              269,
+              219,
+              191,
+              319,
+              304
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "rank_median_ms": 9.21519,
+        "rank_max_ms": 13.533998,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3991,
+            "local_counts": [
+              171,
+              205,
+              283,
+              285,
+              19,
+              458,
+              103,
+              248,
+              44,
+              142,
+              199,
+              359,
+              212,
+              385,
+              39,
+              839
+            ]
+          }
+        ]
+      }
+    ],
+    "eplb": [
+      {
+        "rank": 0,
+        "rank_median_ms": 9.7516545,
+        "rank_max_ms": 66.767532,
+        "replica_tasks": 1169,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4223,
+            "local_counts": [
+              644,
+              525,
+              362,
+              324,
+              320,
+              294,
+              269,
+              236,
+              233,
+              195,
+              181,
+              177,
+              144,
+              104,
+              103,
+              84,
+              28
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "rank_median_ms": 9.6714445,
+        "rank_max_ms": 60.700039,
+        "replica_tasks": 1238,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3963,
+            "local_counts": [
+              590,
+              314,
+              359,
+              326,
+              334,
+              285,
+              279,
+              235,
+              229,
+              197,
+              184,
+              172,
+              145,
+              124,
+              89,
+              80,
+              21
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "rank_median_ms": 9.5593885,
+        "rank_max_ms": 62.623425,
+        "replica_tasks": 698,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3900,
+            "local_counts": [
+              335,
+              439,
+              385,
+              363,
+              322,
+              286,
+              279,
+              234,
+              230,
+              196,
+              185,
+              171,
+              145,
+              124,
+              93,
+              60,
+              53
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "rank_median_ms": 9.634988499999999,
+        "rank_max_ms": 59.472648,
+        "replica_tasks": 1015,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4239,
+            "local_counts": [
+              608,
+              438,
+              388,
+              339,
+              407,
+              290,
+              270,
+              248,
+              219,
+              197,
+              187,
+              167,
+              149,
+              119,
+              96,
+              60,
+              57
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "rank_median_ms": 9.6829845,
+        "rank_max_ms": 65.256248,
+        "replica_tasks": 254,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3866,
+            "local_counts": [
+              554,
+              254,
+              367,
+              336,
+              319,
+              289,
+              271,
+              242,
+              220,
+              204,
+              182,
+              177,
+              143,
+              110,
+              101,
+              83,
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "rank_median_ms": 9.79077,
+        "rank_max_ms": 60.469977,
+        "replica_tasks": 997,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4316,
+            "local_counts": [
+              544,
+              680,
+              384,
+              328,
+              317,
+              295,
+              268,
+              239,
+              226,
+              197,
+              186,
+              171,
+              146,
+              116,
+              98,
+              73,
+              48
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 14,
+        "rank_median_ms": 9.825275999999999,
+        "rank_max_ms": 67.471467,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4077,
+            "local_counts": [
+              518,
+              474,
+              391,
+              337,
+              323,
+              288,
+              272,
+              241,
+              223,
+              197,
+              193,
+              157,
+              155,
+              125,
+              87,
+              84,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 15,
+        "rank_median_ms": 9.74946,
+        "rank_max_ms": 66.456649,
+        "replica_tasks": 420,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4168,
+            "local_counts": [
+              494,
+              490,
+              409,
+              420,
+              313,
+              296,
+              264,
+              252,
+              212,
+              202,
+              185,
+              176,
+              143,
+              108,
+              102,
+              83,
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "rank_median_ms": 9.913427,
+        "rank_max_ms": 61.026761,
+        "replica_tasks": 544,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3900,
+            "local_counts": [
+              611,
+              309,
+              343,
+              340,
+              235,
+              287,
+              273,
+              241,
+              222,
+              199,
+              191,
+              160,
+              152,
+              130,
+              86,
+              71,
+              50
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "rank_median_ms": 9.7832905,
+        "rank_max_ms": 61.253483,
+        "replica_tasks": 1477,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4149,
+            "local_counts": [
+              611,
+              484,
+              482,
+              200,
+              311,
+              285,
+              283,
+              234,
+              220,
+              201,
+              190,
+              158,
+              154,
+              125,
+              90,
+              77,
+              44
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "rank_median_ms": 9.744035,
+        "rank_max_ms": 64.755814,
+        "replica_tasks": 742,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4079,
+            "local_counts": [
+              599,
+              492,
+              366,
+              250,
+              309,
+              304,
+              259,
+              253,
+              206,
+              205,
+              192,
+              159,
+              154,
+              124,
+              95,
+              58,
+              54
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "rank_median_ms": 9.6596645,
+        "rank_max_ms": 64.437491,
+        "replica_tasks": 679,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4022,
+            "local_counts": [
+              590,
+              369,
+              375,
+              310,
+              317,
+              292,
+              270,
+              240,
+              222,
+              198,
+              192,
+              157,
+              157,
+              115,
+              98,
+              77,
+              43
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "rank_median_ms": 9.606829000000001,
+        "rank_max_ms": 58.135536,
+        "replica_tasks": 306,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4092,
+            "local_counts": [
+              586,
+              430,
+              378,
+              332,
+              306,
+              304,
+              255,
+              254,
+              214,
+              198,
+              191,
+              166,
+              148,
+              124,
+              89,
+              79,
+              38
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "rank_median_ms": 9.4836075,
+        "rank_max_ms": 59.172085,
+        "replica_tasks": 843,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4185,
+            "local_counts": [
+              586,
+              489,
+              380,
+              354,
+              314,
+              300,
+              262,
+              250,
+              213,
+              201,
+              188,
+              166,
+              150,
+              113,
+              100,
+              75,
+              44
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "rank_median_ms": 9.4729975,
+        "rank_max_ms": 63.418962,
+        "replica_tasks": 639,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4080,
+            "local_counts": [
+              558,
+              438,
+              386,
+              318,
+              321,
+              295,
+              269,
+              236,
+              233,
+              193,
+              185,
+              176,
+              142,
+              116,
+              97,
+              78,
+              39
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "rank_median_ms": 9.489488,
+        "rank_max_ms": 59.837861,
+        "replica_tasks": 1050,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4277,
+            "local_counts": [
+              728,
+              458,
+              380,
+              331,
+              322,
+              302,
+              258,
+              253,
+              212,
+              205,
+              180,
+              179,
+              139,
+              135,
+              85,
+              59,
+              51
+            ]
+          }
+        ]
+      }
+    ],
+    "ours": [
+      {
+        "rank": 0,
+        "rank_median_ms": 9.617793,
+        "rank_max_ms": 68.307035,
+        "replica_tasks": 831,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4149,
+            "local_counts": [
+              50,
+              439,
+              166,
+              124,
+              79,
+              83,
+              323,
+              44,
+              331,
+              193,
+              378,
+              51,
+              296,
+              558,
+              60,
+              143,
+              831
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "rank_median_ms": 9.389327,
+        "rank_max_ms": 67.70623,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3310,
+            "local_counts": [
+              93,
+              236,
+              84,
+              302,
+              185,
+              157,
+              250,
+              214,
+              89,
+              95,
+              670,
+              289,
+              157,
+              254,
+              96,
+              139,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "rank_median_ms": 9.443076999999999,
+        "rank_max_ms": 67.820061,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4563,
+            "local_counts": [
+              184,
+              324,
+              54,
+              840,
+              102,
+              229,
+              220,
+              494,
+              58,
+              262,
+              43,
+              518,
+              386,
+              181,
+              380,
+              288,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "rank_median_ms": 9.542918,
+        "rank_max_ms": 68.046993,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4023,
+            "local_counts": [
+              73,
+              124,
+              167,
+              474,
+              599,
+              255,
+              152,
+              180,
+              242,
+              544,
+              233,
+              292,
+              270,
+              83,
+              150,
+              185,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "rank_median_ms": 9.695029,
+        "rank_max_ms": 68.200764,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4194,
+            "local_counts": [
+              71,
+              12,
+              367,
+              192,
+              149,
+              182,
+              304,
+              258,
+              1234,
+              222,
+              332,
+              154,
+              362,
+              60,
+              171,
+              124,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "rank_median_ms": 9.624704,
+        "rank_max_ms": 68.216604,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3509,
+            "local_counts": [
+              97,
+              642,
+              220,
+              611,
+              295,
+              197,
+              196,
+              185,
+              179,
+              202,
+              75,
+              84,
+              115,
+              201,
+              172,
+              38,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 14,
+        "rank_median_ms": 9.7173695,
+        "rank_max_ms": 68.305495,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4384,
+            "local_counts": [
+              201,
+              286,
+              320,
+              222,
+              340,
+              104,
+              328,
+              628,
+              285,
+              554,
+              21,
+              116,
+              326,
+              89,
+              176,
+              388,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 15,
+        "rank_median_ms": 9.6370185,
+        "rank_max_ms": 68.229944,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4349,
+            "local_counts": [
+              264,
+              197,
+              586,
+              86,
+              664,
+              80,
+              14,
+              195,
+              155,
+              113,
+              268,
+              204,
+              190,
+              253,
+              490,
+              590,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "rank_median_ms": 9.650763999999999,
+        "rank_max_ms": 68.119283,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4479,
+            "local_counts": [
+              98,
+              77,
+              235,
+              197,
+              187,
+              339,
+              226,
+              611,
+              322,
+              682,
+              336,
+              314,
+              206,
+              270,
+              234,
+              145,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "rank_median_ms": 9.484988000000001,
+        "rank_max_ms": 68.010762,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3092,
+            "local_counts": [
+              98,
+              101,
+              234,
+              48,
+              192,
+              125,
+              294,
+              290,
+              158,
+              375,
+              57,
+              380,
+              177,
+              166,
+              273,
+              124,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "rank_median_ms": 9.422906999999999,
+        "rank_max_ms": 67.963582,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3820,
+            "local_counts": [
+              130,
+              438,
+              366,
+              90,
+              337,
+              233,
+              87,
+              253,
+              110,
+              85,
+              157,
+              230,
+              59,
+              858,
+              241,
+              146,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "rank_median_ms": 9.296766000000002,
+        "rank_max_ms": 67.847121,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3418,
+            "local_counts": [
+              213,
+              77,
+              144,
+              28,
+              159,
+              271,
+              212,
+              160,
+              645,
+              240,
+              100,
+              239,
+              154,
+              198,
+              430,
+              148,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "rank_median_ms": 9.268535,
+        "rank_max_ms": 67.71151,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4268,
+            "local_counts": [
+              279,
+              384,
+              252,
+              193,
+              78,
+              279,
+              116,
+              638,
+              236,
+              409,
+              272,
+              188,
+              145,
+              343,
+              313,
+              143,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "rank_median_ms": 9.433642,
+        "rank_max_ms": 67.75664,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5428,
+            "local_counts": [
+              287,
+              391,
+              438,
+              681,
+              53,
+              295,
+              586,
+              300,
+              176,
+              269,
+              259,
+              934,
+              241,
+              186,
+              135,
+              197,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "rank_median_ms": 9.402117,
+        "rank_max_ms": 67.77519,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4559,
+            "local_counts": [
+              198,
+              119,
+              205,
+              223,
+              177,
+              1285,
+              309,
+              108,
+              125,
+              317,
+              191,
+              269,
+              219,
+              191,
+              319,
+              304,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "rank_median_ms": 9.349001,
+        "rank_max_ms": 67.678259,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3991,
+            "local_counts": [
+              171,
+              205,
+              283,
+              285,
+              19,
+              458,
+              103,
+              248,
+              44,
+              142,
+              199,
+              359,
+              212,
+              385,
+              39,
+              839,
+              0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "16k": {
+    "original": [
+      {
+        "rank": 0,
+        "rank_median_ms": 20.258319,
+        "rank_max_ms": 21.52937,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3900,
+            "local_counts": [
+              111,
+              607,
+              240,
+              145,
+              24,
+              129,
+              244,
+              57,
+              382,
+              281,
+              421,
+              62,
+              436,
+              566,
+              44,
+              151
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3964,
+            "local_counts": [
+              367,
+              385,
+              53,
+              366,
+              108,
+              104,
+              307,
+              47,
+              295,
+              474,
+              210,
+              104,
+              253,
+              582,
+              117,
+              192
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "rank_median_ms": 20.1391625,
+        "rank_max_ms": 21.41606,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4353,
+            "local_counts": [
+              73,
+              161,
+              253,
+              256,
+              262,
+              97,
+              272,
+              436,
+              254,
+              32,
+              1295,
+              183,
+              290,
+              219,
+              117,
+              153
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4113,
+            "local_counts": [
+              89,
+              313,
+              142,
+              410,
+              264,
+              258,
+              513,
+              387,
+              265,
+              18,
+              528,
+              211,
+              111,
+              203,
+              241,
+              160
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "rank_median_ms": 19.676559,
+        "rank_max_ms": 21.537061,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4818,
+            "local_counts": [
+              119,
+              348,
+              25,
+              1396,
+              57,
+              274,
+              128,
+              348,
+              148,
+              300,
+              38,
+              305,
+              431,
+              310,
+              330,
+              261
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3538,
+            "local_counts": [
+              153,
+              325,
+              4,
+              558,
+              143,
+              249,
+              115,
+              191,
+              138,
+              278,
+              25,
+              103,
+              476,
+              280,
+              297,
+              203
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "rank_median_ms": 19.906741,
+        "rank_max_ms": 21.538531,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3516,
+            "local_counts": [
+              53,
+              179,
+              129,
+              178,
+              697,
+              183,
+              139,
+              119,
+              220,
+              381,
+              239,
+              187,
+              264,
+              90,
+              408,
+              50
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4632,
+            "local_counts": [
+              214,
+              209,
+              149,
+              273,
+              264,
+              535,
+              245,
+              253,
+              245,
+              365,
+              306,
+              242,
+              270,
+              133,
+              874,
+              55
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "rank_median_ms": 20.206259,
+        "rank_max_ms": 21.563651,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4428,
+            "local_counts": [
+              51,
+              18,
+              245,
+              115,
+              70,
+              143,
+              296,
+              221,
+              1779,
+              248,
+              365,
+              149,
+              391,
+              40,
+              173,
+              124
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4164,
+            "local_counts": [
+              41,
+              1,
+              488,
+              252,
+              120,
+              206,
+              401,
+              330,
+              849,
+              143,
+              258,
+              133,
+              487,
+              44,
+              216,
+              195
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "rank_median_ms": 20.314245,
+        "rank_max_ms": 21.391039,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3660,
+            "local_counts": [
+              74,
+              936,
+              377,
+              538,
+              247,
+              219,
+              318,
+              142,
+              129,
+              138,
+              36,
+              117,
+              122,
+              103,
+              128,
+              36
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3650,
+            "local_counts": [
+              510,
+              483,
+              421,
+              542,
+              227,
+              199,
+              147,
+              226,
+              264,
+              92,
+              13,
+              158,
+              29,
+              173,
+              142,
+              24
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 14,
+        "rank_median_ms": 20.5332365,
+        "rank_max_ms": 21.45094,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4167,
+            "local_counts": [
+              562,
+              259,
+              251,
+              140,
+              228,
+              53,
+              180,
+              401,
+              257,
+              479,
+              43,
+              82,
+              445,
+              173,
+              126,
+              488
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4407,
+            "local_counts": [
+              478,
+              218,
+              425,
+              80,
+              297,
+              135,
+              404,
+              419,
+              204,
+              468,
+              44,
+              129,
+              207,
+              179,
+              285,
+              435
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 15,
+        "rank_median_ms": 20.4667965,
+        "rank_max_ms": 21.284368999999998,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5514,
+            "local_counts": [
+              399,
+              289,
+              1394,
+              140,
+              528,
+              62,
+              22,
+              109,
+              264,
+              78,
+              400,
+              203,
+              141,
+              244,
+              647,
+              594
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3708,
+            "local_counts": [
+              284,
+              94,
+              680,
+              30,
+              115,
+              20,
+              22,
+              158,
+              158,
+              88,
+              245,
+              325,
+              362,
+              223,
+              441,
+              463
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "rank_median_ms": 20.093322999999998,
+        "rank_max_ms": 20.979546,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4181,
+            "local_counts": [
+              111,
+              57,
+              195,
+              137,
+              226,
+              581,
+              102,
+              574,
+              155,
+              689,
+              396,
+              302,
+              195,
+              192,
+              175,
+              94
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4514,
+            "local_counts": [
+              110,
+              48,
+              352,
+              104,
+              196,
+              233,
+              92,
+              976,
+              116,
+              338,
+              345,
+              110,
+              195,
+              769,
+              128,
+              402
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "rank_median_ms": 20.018773499999998,
+        "rank_max_ms": 21.123646,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 2790,
+            "local_counts": [
+              81,
+              183,
+              374,
+              66,
+              223,
+              212,
+              304,
+              201,
+              134,
+              147,
+              111,
+              57,
+              153,
+              182,
+              237,
+              125
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3773,
+            "local_counts": [
+              146,
+              242,
+              188,
+              217,
+              108,
+              233,
+              179,
+              298,
+              146,
+              195,
+              158,
+              267,
+              110,
+              530,
+              501,
+              255
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "rank_median_ms": 20.062937499999997,
+        "rank_max_ms": 20.825574,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3950,
+            "local_counts": [
+              88,
+              511,
+              388,
+              108,
+              276,
+              163,
+              132,
+              143,
+              111,
+              83,
+              286,
+              153,
+              101,
+              1036,
+              193,
+              178
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4172,
+            "local_counts": [
+              112,
+              327,
+              253,
+              143,
+              325,
+              235,
+              559,
+              186,
+              243,
+              221,
+              116,
+              65,
+              227,
+              434,
+              201,
+              525
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "rank_median_ms": 19.909751,
+        "rank_max_ms": 20.671481999999997,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3645,
+            "local_counts": [
+              198,
+              116,
+              153,
+              19,
+              48,
+              360,
+              294,
+              204,
+              683,
+              362,
+              80,
+              321,
+              98,
+              35,
+              273,
+              401
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4086,
+            "local_counts": [
+              112,
+              53,
+              115,
+              6,
+              342,
+              136,
+              529,
+              273,
+              388,
+              325,
+              150,
+              388,
+              356,
+              20,
+              515,
+              378
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "rank_median_ms": 19.971552000000003,
+        "rank_max_ms": 20.952415000000002,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4837,
+            "local_counts": [
+              288,
+              461,
+              243,
+              109,
+              103,
+              306,
+              230,
+              703,
+              288,
+              714,
+              227,
+              176,
+              104,
+              249,
+              583,
+              53
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3653,
+            "local_counts": [
+              124,
+              306,
+              159,
+              69,
+              236,
+              294,
+              114,
+              383,
+              191,
+              669,
+              216,
+              219,
+              232,
+              95,
+              305,
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "rank_median_ms": 19.9098405,
+        "rank_max_ms": 21.211838999999998,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4842,
+            "local_counts": [
+              479,
+              257,
+              495,
+              315,
+              24,
+              285,
+              319,
+              234,
+              154,
+              310,
+              378,
+              821,
+              242,
+              284,
+              62,
+              183
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3969,
+            "local_counts": [
+              231,
+              107,
+              501,
+              179,
+              75,
+              267,
+              312,
+              236,
+              411,
+              618,
+              168,
+              373,
+              168,
+              148,
+              100,
+              75
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "rank_median_ms": 19.75038,
+        "rank_max_ms": 21.350729,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3392,
+            "local_counts": [
+              156,
+              117,
+              154,
+              166,
+              83,
+              576,
+              352,
+              116,
+              68,
+              66,
+              136,
+              338,
+              159,
+              149,
+              269,
+              487
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 5093,
+            "local_counts": [
+              262,
+              138,
+              927,
+              304,
+              236,
+              862,
+              247,
+              139,
+              172,
+              278,
+              336,
+              176,
+              141,
+              428,
+              113,
+              334
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "rank_median_ms": 19.633459000000002,
+        "rank_max_ms": 21.41,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3543,
+            "local_counts": [
+              149,
+              168,
+              363,
+              311,
+              14,
+              201,
+              54,
+              269,
+              212,
+              137,
+              104,
+              394,
+              110,
+              344,
+              1,
+              712
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4100,
+            "local_counts": [
+              216,
+              198,
+              175,
+              204,
+              20,
+              180,
+              71,
+              398,
+              457,
+              199,
+              653,
+              391,
+              230,
+              370,
+              6,
+              332
+            ]
+          }
+        ]
+      }
+    ],
+    "eplb": [
+      {
+        "rank": 0,
+        "rank_median_ms": 21.1396875,
+        "rank_max_ms": 212.450711,
+        "replica_tasks": 1783,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4436,
+            "local_counts": [
+              845,
+              426,
+              391,
+              348,
+              251,
+              304,
+              310,
+              288,
+              239,
+              109,
+              310,
+              83,
+              153,
+              53,
+              54,
+              253,
+              19
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4186,
+            "local_counts": [
+              386,
+              126,
+              487,
+              325,
+              425,
+              179,
+              618,
+              191,
+              306,
+              158,
+              280,
+              236,
+              115,
+              135,
+              71,
+              142,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "rank_median_ms": 21.343159,
+        "rank_max_ms": 205.02682600000003,
+        "replica_tasks": 2517,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4604,
+            "local_counts": [
+              934,
+              286,
+              394,
+              445,
+              467,
+              311,
+              306,
+              195,
+              274,
+              137,
+              119,
+              128,
+              104,
+              145,
+              254,
+              62,
+              43
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3853,
+            "local_counts": [
+              463,
+              206,
+              391,
+              207,
+              161,
+              204,
+              294,
+              352,
+              249,
+              104,
+              153,
+              142,
+              232,
+              366,
+              265,
+              20,
+              44
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "rank_median_ms": 20.820404500000002,
+        "rank_max_ms": 203.98351699999998,
+        "replica_tasks": 989,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3784,
+            "local_counts": [
+              508,
+              607,
+              344,
+              152,
+              155,
+              259,
+              288,
+              175,
+              153,
+              318,
+              262,
+              149,
+              94,
+              179,
+              73,
+              44,
+              24
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3254,
+            "local_counts": [
+              248,
+              385,
+              370,
+              81,
+              116,
+              218,
+              124,
+              128,
+              65,
+              147,
+              264,
+              216,
+              402,
+              209,
+              89,
+              117,
+              75
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "rank_median_ms": 20.966645500000002,
+        "rank_max_ms": 204.385559,
+        "replica_tasks": 1450,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4543,
+            "local_counts": [
+              416,
+              495,
+              488,
+              581,
+              571,
+              201,
+              264,
+              269,
+              159,
+              289,
+              226,
+              129,
+              70,
+              117,
+              117,
+              40,
+              111
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3879,
+            "local_counts": [
+              175,
+              501,
+              435,
+              233,
+              288,
+              298,
+              270,
+              398,
+              141,
+              94,
+              196,
+              149,
+              120,
+              138,
+              241,
+              44,
+              158
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "rank_median_ms": 20.744459,
+        "rank_max_ms": 204.124817,
+        "replica_tasks": 543,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3583,
+            "local_counts": [
+              479,
+              345,
+              245,
+              396,
+              269,
+              183,
+              360,
+              220,
+              128,
+              203,
+              143,
+              153,
+              53,
+              111,
+              183,
+              90,
+              22
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3641,
+            "local_counts": [
+              468,
+              198,
+              488,
+              345,
+              113,
+              211,
+              136,
+              245,
+              115,
+              325,
+              206,
+              110,
+              41,
+              243,
+              242,
+              133,
+              22
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "rank_median_ms": 20.975441500000002,
+        "rank_max_ms": 208.78846800000002,
+        "replica_tasks": 1204,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4101,
+            "local_counts": [
+              381,
+              476,
+              461,
+              180,
+              397,
+              247,
+              400,
+              321,
+              102,
+              219,
+              284,
+              173,
+              178,
+              82,
+              81,
+              53,
+              66
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4152,
+            "local_counts": [
+              365,
+              175,
+              306,
+              404,
+              156,
+              227,
+              245,
+              388,
+              92,
+              199,
+              148,
+              216,
+              525,
+              129,
+              146,
+              214,
+              217
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 14,
+        "rank_median_ms": 21.037176000000002,
+        "rank_max_ms": 208.00014199999998,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3653,
+            "local_counts": [
+              305,
+              178,
+              257,
+              276,
+              244,
+              261,
+              227,
+              242,
+              166,
+              183,
+              281,
+              290,
+              264,
+              212,
+              132,
+              117,
+              18
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3775,
+            "local_counts": [
+              103,
+              273,
+              107,
+              325,
+              307,
+              203,
+              216,
+              168,
+              304,
+              75,
+              474,
+              111,
+              158,
+              233,
+              559,
+              158,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 15,
+        "rank_median_ms": 21.138947,
+        "rank_max_ms": 211.210331,
+        "replica_tasks": 850,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5268,
+            "local_counts": [
+              348,
+              647,
+              714,
+              703,
+              583,
+              436,
+              399,
+              243,
+              294,
+              138,
+              142,
+              154,
+              151,
+              116,
+              57,
+              129,
+              14
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4305,
+            "local_counts": [
+              191,
+              441,
+              669,
+              147,
+              305,
+              253,
+              284,
+              159,
+              529,
+              92,
+              226,
+              411,
+              192,
+              139,
+              143,
+              104,
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "rank_median_ms": 21.015110999999997,
+        "rank_max_ms": 204.961635,
+        "replica_tasks": 1049,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3701,
+            "local_counts": [
+              538,
+              191,
+              249,
+              228,
+              365,
+              479,
+              237,
+              193,
+              248,
+              104,
+              136,
+              204,
+              139,
+              88,
+              140,
+              51,
+              111
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4560,
+            "local_counts": [
+              542,
+              298,
+              95,
+              297,
+              195,
+              231,
+              501,
+              201,
+              143,
+              653,
+              336,
+              273,
+              245,
+              112,
+              30,
+              41,
+              367
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "rank_median_ms": 20.9320605,
+        "rank_max_ms": 205.10092600000002,
+        "replica_tasks": 2008,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3869,
+            "local_counts": [
+              574,
+              202,
+              422,
+              267,
+              216,
+              257,
+              363,
+              374,
+              377,
+              103,
+              141,
+              134,
+              149,
+              68,
+              108,
+              57,
+              57
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4089,
+            "local_counts": [
+              976,
+              336,
+              263,
+              75,
+              227,
+              204,
+              175,
+              188,
+              421,
+              173,
+              362,
+              146,
+              133,
+              172,
+              143,
+              48,
+              47
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "rank_median_ms": 20.763939,
+        "rank_max_ms": 207.40087699999998,
+        "replica_tasks": 1384,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4191,
+            "local_counts": [
+              697,
+              183,
+              388,
+              592,
+              352,
+              296,
+              378,
+              244,
+              195,
+              168,
+              223,
+              48,
+              98,
+              124,
+              32,
+              148,
+              25
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3719,
+            "local_counts": [
+              264,
+              228,
+              253,
+              381,
+              247,
+              401,
+              168,
+              223,
+              195,
+              198,
+              108,
+              342,
+              356,
+              195,
+              18,
+              138,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "rank_median_ms": 20.7973845,
+        "rank_max_ms": 205.656992,
+        "replica_tasks": 986,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3451,
+            "local_counts": [
+              594,
+              480,
+              147,
+              242,
+              66,
+              187,
+              192,
+              362,
+              140,
+              156,
+              115,
+              286,
+              97,
+              122,
+              111,
+              116,
+              38
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3721,
+            "local_counts": [
+              463,
+              213,
+              195,
+              51,
+              278,
+              242,
+              769,
+              325,
+              80,
+              262,
+              252,
+              116,
+              258,
+              29,
+              110,
+              53,
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "rank_median_ms": 20.785444000000002,
+        "rank_max_ms": 204.41009100000002,
+        "replica_tasks": 425,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5198,
+            "local_counts": [
+              1394,
+              273,
+              421,
+              365,
+              237,
+              487,
+              183,
+              219,
+              436,
+              35,
+              149,
+              240,
+              401,
+              125,
+              173,
+              24,
+              36
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4755,
+            "local_counts": [
+              680,
+              515,
+              210,
+              258,
+              188,
+              334,
+              535,
+              203,
+              387,
+              20,
+              428,
+              53,
+              378,
+              255,
+              179,
+              108,
+              24
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "rank_median_ms": 20.9909555,
+        "rank_max_ms": 209.29691400000002,
+        "replica_tasks": 1127,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4258,
+            "local_counts": [
+              319,
+              556,
+              57,
+              286,
+              302,
+              234,
+              300,
+              272,
+              198,
+              562,
+              176,
+              182,
+              408,
+              78,
+              80,
+              36,
+              212
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4922,
+            "local_counts": [
+              312,
+              221,
+              267,
+              64,
+              110,
+              236,
+              278,
+              513,
+              112,
+              478,
+              219,
+              530,
+              874,
+              88,
+              150,
+              13,
+              457
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "rank_median_ms": 20.8895955,
+        "rank_max_ms": 206.17364700000002,
+        "replica_tasks": 794,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3754,
+            "local_counts": [
+              566,
+              511,
+              431,
+              163,
+              306,
+              285,
+              338,
+              161,
+              163,
+              109,
+              50,
+              126,
+              137,
+              230,
+              74,
+              103,
+              1
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4175,
+            "local_counts": [
+              582,
+              327,
+              476,
+              98,
+              227,
+              267,
+              176,
+              313,
+              235,
+              69,
+              55,
+              285,
+              199,
+              114,
+              510,
+              236,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "rank_median_ms": 20.8103895,
+        "rank_max_ms": 204.046698,
+        "replica_tasks": 1002,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3142,
+            "local_counts": [
+              472,
+              201,
+              330,
+              382,
+              164,
+              256,
+              221,
+              143,
+              110,
+              154,
+              119,
+              129,
+              153,
+              62,
+              83,
+              101,
+              62
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4550,
+            "local_counts": [
+              135,
+              180,
+              297,
+              295,
+              231,
+              410,
+              330,
+              186,
+              230,
+              927,
+              253,
+              264,
+              160,
+              100,
+              221,
+              227,
+              104
+            ]
+          }
+        ]
+      }
+    ],
+    "ours": [
+      {
+        "rank": 0,
+        "rank_median_ms": 20.388800500000002,
+        "rank_max_ms": 71.09553,
+        "replica_tasks": 968,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4593,
+            "local_counts": [
+              111,
+              607,
+              240,
+              145,
+              24,
+              129,
+              244,
+              57,
+              382,
+              281,
+              421,
+              62,
+              436,
+              566,
+              44,
+              151,
+              693
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4239,
+            "local_counts": [
+              367,
+              385,
+              53,
+              366,
+              108,
+              104,
+              307,
+              47,
+              295,
+              474,
+              210,
+              104,
+              253,
+              582,
+              117,
+              192,
+              275
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "rank_median_ms": 20.443531,
+        "rank_max_ms": 71.019139,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4353,
+            "local_counts": [
+              73,
+              161,
+              253,
+              256,
+              262,
+              97,
+              272,
+              436,
+              254,
+              32,
+              1295,
+              183,
+              290,
+              219,
+              117,
+              153,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4113,
+            "local_counts": [
+              89,
+              313,
+              142,
+              410,
+              264,
+              258,
+              513,
+              387,
+              265,
+              18,
+              528,
+              211,
+              111,
+              203,
+              241,
+              160,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "rank_median_ms": 20.785179,
+        "rank_max_ms": 70.211942,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4125,
+            "local_counts": [
+              119,
+              348,
+              25,
+              703,
+              57,
+              274,
+              128,
+              348,
+              148,
+              300,
+              38,
+              305,
+              431,
+              310,
+              330,
+              261,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3263,
+            "local_counts": [
+              153,
+              325,
+              4,
+              283,
+              143,
+              249,
+              115,
+              191,
+              138,
+              278,
+              25,
+              103,
+              476,
+              280,
+              297,
+              203,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "rank_median_ms": 20.987831,
+        "rank_max_ms": 70.568345,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3516,
+            "local_counts": [
+              53,
+              179,
+              129,
+              178,
+              697,
+              183,
+              139,
+              119,
+              220,
+              381,
+              239,
+              187,
+              264,
+              90,
+              408,
+              50,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4632,
+            "local_counts": [
+              214,
+              209,
+              149,
+              273,
+              264,
+              535,
+              245,
+              253,
+              245,
+              365,
+              306,
+              242,
+              270,
+              133,
+              874,
+              55,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "rank_median_ms": 20.5252565,
+        "rank_max_ms": 70.93849800000001,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4428,
+            "local_counts": [
+              51,
+              18,
+              245,
+              115,
+              70,
+              143,
+              296,
+              221,
+              1779,
+              248,
+              365,
+              149,
+              391,
+              40,
+              173,
+              124,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4164,
+            "local_counts": [
+              41,
+              1,
+              488,
+              252,
+              120,
+              206,
+              401,
+              330,
+              849,
+              143,
+              258,
+              133,
+              487,
+              44,
+              216,
+              195,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "rank_median_ms": 20.4219665,
+        "rank_max_ms": 71.048399,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3660,
+            "local_counts": [
+              74,
+              936,
+              377,
+              538,
+              247,
+              219,
+              318,
+              142,
+              129,
+              138,
+              36,
+              117,
+              122,
+              103,
+              128,
+              36,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3650,
+            "local_counts": [
+              510,
+              483,
+              421,
+              542,
+              227,
+              199,
+              147,
+              226,
+              264,
+              92,
+              13,
+              158,
+              29,
+              173,
+              142,
+              24,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 14,
+        "rank_median_ms": 20.5837175,
+        "rank_max_ms": 71.22121,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4167,
+            "local_counts": [
+              562,
+              259,
+              251,
+              140,
+              228,
+              53,
+              180,
+              401,
+              257,
+              479,
+              43,
+              82,
+              445,
+              173,
+              126,
+              488,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4407,
+            "local_counts": [
+              478,
+              218,
+              425,
+              80,
+              297,
+              135,
+              404,
+              419,
+              204,
+              468,
+              44,
+              129,
+              207,
+              179,
+              285,
+              435,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 15,
+        "rank_median_ms": 20.546808,
+        "rank_max_ms": 70.814806,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5514,
+            "local_counts": [
+              399,
+              289,
+              1394,
+              140,
+              528,
+              62,
+              22,
+              109,
+              264,
+              78,
+              400,
+              203,
+              141,
+              244,
+              647,
+              594,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3708,
+            "local_counts": [
+              284,
+              94,
+              680,
+              30,
+              115,
+              20,
+              22,
+              158,
+              158,
+              88,
+              245,
+              325,
+              362,
+              223,
+              441,
+              463,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "rank_median_ms": 20.115307,
+        "rank_max_ms": 70.706736,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4181,
+            "local_counts": [
+              111,
+              57,
+              195,
+              137,
+              226,
+              581,
+              102,
+              574,
+              155,
+              689,
+              396,
+              302,
+              195,
+              192,
+              175,
+              94,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4514,
+            "local_counts": [
+              110,
+              48,
+              352,
+              104,
+              196,
+              233,
+              92,
+              976,
+              116,
+              338,
+              345,
+              110,
+              195,
+              769,
+              128,
+              402,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "rank_median_ms": 20.169054,
+        "rank_max_ms": 71.12873,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 2790,
+            "local_counts": [
+              81,
+              183,
+              374,
+              66,
+              223,
+              212,
+              304,
+              201,
+              134,
+              147,
+              111,
+              57,
+              153,
+              182,
+              237,
+              125,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3773,
+            "local_counts": [
+              146,
+              242,
+              188,
+              217,
+              108,
+              233,
+              179,
+              298,
+              146,
+              195,
+              158,
+              267,
+              110,
+              530,
+              501,
+              255,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "rank_median_ms": 20.152498,
+        "rank_max_ms": 70.965689,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3950,
+            "local_counts": [
+              88,
+              511,
+              388,
+              108,
+              276,
+              163,
+              132,
+              143,
+              111,
+              83,
+              286,
+              153,
+              101,
+              1036,
+              193,
+              178,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4172,
+            "local_counts": [
+              112,
+              327,
+              253,
+              143,
+              325,
+              235,
+              559,
+              186,
+              243,
+              221,
+              116,
+              65,
+              227,
+              434,
+              201,
+              525,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "rank_median_ms": 20.238489,
+        "rank_max_ms": 70.715796,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3645,
+            "local_counts": [
+              198,
+              116,
+              153,
+              19,
+              48,
+              360,
+              294,
+              204,
+              683,
+              362,
+              80,
+              321,
+              98,
+              35,
+              273,
+              401,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4086,
+            "local_counts": [
+              112,
+              53,
+              115,
+              6,
+              342,
+              136,
+              529,
+              273,
+              388,
+              325,
+              150,
+              388,
+              356,
+              20,
+              515,
+              378,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "rank_median_ms": 20.2650595,
+        "rank_max_ms": 70.816096,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4837,
+            "local_counts": [
+              288,
+              461,
+              243,
+              109,
+              103,
+              306,
+              230,
+              703,
+              288,
+              714,
+              227,
+              176,
+              104,
+              249,
+              583,
+              53,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3653,
+            "local_counts": [
+              124,
+              306,
+              159,
+              69,
+              236,
+              294,
+              114,
+              383,
+              191,
+              669,
+              216,
+              219,
+              232,
+              95,
+              305,
+              41,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "rank_median_ms": 20.547202000000002,
+        "rank_max_ms": 70.694046,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4842,
+            "local_counts": [
+              479,
+              257,
+              495,
+              315,
+              24,
+              285,
+              319,
+              234,
+              154,
+              310,
+              378,
+              821,
+              242,
+              284,
+              62,
+              183,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3969,
+            "local_counts": [
+              231,
+              107,
+              501,
+              179,
+              75,
+              267,
+              312,
+              236,
+              411,
+              618,
+              168,
+              373,
+              168,
+              148,
+              100,
+              75,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "rank_median_ms": 20.619573000000003,
+        "rank_max_ms": 70.539435,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3392,
+            "local_counts": [
+              156,
+              117,
+              154,
+              166,
+              83,
+              576,
+              352,
+              116,
+              68,
+              66,
+              136,
+              338,
+              159,
+              149,
+              269,
+              487,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 5093,
+            "local_counts": [
+              262,
+              138,
+              927,
+              304,
+              236,
+              862,
+              247,
+              139,
+              172,
+              278,
+              336,
+              176,
+              141,
+              428,
+              113,
+              334,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "rank_median_ms": 20.3862055,
+        "rank_max_ms": 69.908209,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3543,
+            "local_counts": [
+              149,
+              168,
+              363,
+              311,
+              14,
+              201,
+              54,
+              269,
+              212,
+              137,
+              104,
+              394,
+              110,
+              344,
+              1,
+              712,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4100,
+            "local_counts": [
+              216,
+              198,
+              175,
+              204,
+              20,
+              180,
+              71,
+              398,
+              457,
+              199,
+              653,
+              391,
+              230,
+              370,
+              6,
+              332,
+              0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "32k": {
+    "original": [
+      {
+        "rank": 0,
+        "rank_median_ms": 38.95116,
+        "rank_max_ms": 46.683083,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3245,
+            "local_counts": [
+              471,
+              260,
+              38,
+              186,
+              97,
+              99,
+              515,
+              25,
+              107,
+              212,
+              176,
+              53,
+              110,
+              397,
+              161,
+              338
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3495,
+            "local_counts": [
+              370,
+              533,
+              34,
+              413,
+              100,
+              82,
+              296,
+              11,
+              320,
+              267,
+              99,
+              35,
+              223,
+              181,
+              218,
+              313
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3532,
+            "local_counts": [
+              395,
+              499,
+              23,
+              581,
+              146,
+              71,
+              241,
+              21,
+              323,
+              273,
+              205,
+              77,
+              177,
+              244,
+              118,
+              138
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3896,
+            "local_counts": [
+              241,
+              418,
+              8,
+              796,
+              156,
+              81,
+              220,
+              11,
+              531,
+              412,
+              224,
+              123,
+              52,
+              305,
+              196,
+              122
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "rank_median_ms": 38.826758999999996,
+        "rank_max_ms": 46.362862,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3668,
+            "local_counts": [
+              39,
+              346,
+              149,
+              429,
+              131,
+              235,
+              476,
+              601,
+              171,
+              15,
+              23,
+              184,
+              133,
+              337,
+              189,
+              210
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4229,
+            "local_counts": [
+              79,
+              290,
+              193,
+              437,
+              267,
+              233,
+              432,
+              543,
+              185,
+              40,
+              332,
+              205,
+              97,
+              316,
+              330,
+              250
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3975,
+            "local_counts": [
+              84,
+              222,
+              240,
+              270,
+              291,
+              136,
+              355,
+              842,
+              174,
+              28,
+              242,
+              299,
+              177,
+              265,
+              197,
+              153
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4298,
+            "local_counts": [
+              66,
+              318,
+              191,
+              345,
+              262,
+              166,
+              397,
+              1014,
+              271,
+              1,
+              260,
+              265,
+              180,
+              269,
+              222,
+              71
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "rank_median_ms": 38.995851,
+        "rank_max_ms": 49.05472399999999,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3233,
+            "local_counts": [
+              134,
+              235,
+              35,
+              325,
+              268,
+              293,
+              130,
+              266,
+              188,
+              246,
+              40,
+              82,
+              499,
+              159,
+              208,
+              125
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3366,
+            "local_counts": [
+              273,
+              229,
+              32,
+              291,
+              82,
+              297,
+              135,
+              275,
+              174,
+              320,
+              20,
+              389,
+              269,
+              149,
+              293,
+              138
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3882,
+            "local_counts": [
+              685,
+              306,
+              27,
+              315,
+              92,
+              271,
+              182,
+              189,
+              131,
+              449,
+              22,
+              255,
+              169,
+              195,
+              309,
+              285
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4457,
+            "local_counts": [
+              1173,
+              521,
+              3,
+              271,
+              99,
+              332,
+              95,
+              127,
+              93,
+              451,
+              6,
+              229,
+              180,
+              117,
+              340,
+              420
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "rank_median_ms": 39.407284000000004,
+        "rank_max_ms": 49.084445,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5168,
+            "local_counts": [
+              79,
+              266,
+              193,
+              831,
+              245,
+              621,
+              272,
+              314,
+              279,
+              252,
+              155,
+              729,
+              361,
+              112,
+              402,
+              57
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4738,
+            "local_counts": [
+              143,
+              173,
+              106,
+              562,
+              256,
+              412,
+              228,
+              251,
+              259,
+              334,
+              309,
+              572,
+              225,
+              90,
+              748,
+              70
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4864,
+            "local_counts": [
+              109,
+              184,
+              43,
+              260,
+              302,
+              308,
+              141,
+              227,
+              204,
+              315,
+              717,
+              542,
+              164,
+              140,
+              1068,
+              140
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4900,
+            "local_counts": [
+              62,
+              196,
+              18,
+              343,
+              175,
+              301,
+              140,
+              297,
+              237,
+              535,
+              667,
+              516,
+              170,
+              92,
+              1051,
+              100
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "rank_median_ms": 39.1834875,
+        "rank_max_ms": 48.310637,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 2627,
+            "local_counts": [
+              148,
+              6,
+              262,
+              125,
+              225,
+              320,
+              298,
+              74,
+              109,
+              52,
+              370,
+              143,
+              159,
+              66,
+              152,
+              118
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3219,
+            "local_counts": [
+              107,
+              2,
+              556,
+              290,
+              125,
+              113,
+              388,
+              176,
+              95,
+              120,
+              258,
+              141,
+              174,
+              53,
+              415,
+              206
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3735,
+            "local_counts": [
+              42,
+              2,
+              727,
+              310,
+              148,
+              76,
+              389,
+              430,
+              168,
+              46,
+              149,
+              191,
+              531,
+              64,
+              228,
+              234
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4116,
+            "local_counts": [
+              18,
+              0,
+              939,
+              592,
+              135,
+              69,
+              420,
+              617,
+              303,
+              36,
+              72,
+              169,
+              268,
+              43,
+              101,
+              334
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "rank_median_ms": 39.320099,
+        "rank_max_ms": 47.694773999999995,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3385,
+            "local_counts": [
+              111,
+              413,
+              451,
+              341,
+              311,
+              304,
+              86,
+              184,
+              304,
+              203,
+              9,
+              147,
+              72,
+              200,
+              194,
+              55
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3170,
+            "local_counts": [
+              100,
+              438,
+              304,
+              382,
+              272,
+              318,
+              70,
+              248,
+              197,
+              174,
+              15,
+              94,
+              173,
+              208,
+              148,
+              29
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3781,
+            "local_counts": [
+              238,
+              483,
+              318,
+              539,
+              368,
+              338,
+              62,
+              201,
+              252,
+              153,
+              23,
+              209,
+              170,
+              263,
+              143,
+              21
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3779,
+            "local_counts": [
+              317,
+              220,
+              300,
+              380,
+              435,
+              343,
+              36,
+              348,
+              412,
+              189,
+              1,
+              248,
+              108,
+              302,
+              132,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 14,
+        "rank_median_ms": 39.387568,
+        "rank_max_ms": 47.463440999999996,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4315,
+            "local_counts": [
+              242,
+              340,
+              509,
+              170,
+              318,
+              261,
+              432,
+              581,
+              328,
+              156,
+              28,
+              262,
+              202,
+              144,
+              96,
+              246
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4110,
+            "local_counts": [
+              330,
+              222,
+              536,
+              106,
+              232,
+              180,
+              391,
+              791,
+              205,
+              144,
+              40,
+              107,
+              78,
+              58,
+              332,
+              358
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4182,
+            "local_counts": [
+              313,
+              298,
+              446,
+              100,
+              244,
+              263,
+              338,
+              725,
+              318,
+              227,
+              55,
+              81,
+              101,
+              211,
+              215,
+              247
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4474,
+            "local_counts": [
+              293,
+              252,
+              510,
+              138,
+              263,
+              189,
+              406,
+              701,
+              273,
+              382,
+              129,
+              46,
+              118,
+              104,
+              233,
+              437
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 15,
+        "rank_median_ms": 39.26007250000001,
+        "rank_max_ms": 47.258347,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3892,
+            "local_counts": [
+              261,
+              85,
+              268,
+              155,
+              106,
+              232,
+              1,
+              357,
+              143,
+              104,
+              100,
+              318,
+              424,
+              174,
+              159,
+              1005
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3671,
+            "local_counts": [
+              399,
+              155,
+              136,
+              119,
+              151,
+              109,
+              9,
+              222,
+              415,
+              136,
+              106,
+              259,
+              347,
+              362,
+              320,
+              426
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3343,
+            "local_counts": [
+              398,
+              84,
+              259,
+              56,
+              106,
+              43,
+              4,
+              215,
+              138,
+              115,
+              281,
+              339,
+              263,
+              594,
+              169,
+              279
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3567,
+            "local_counts": [
+              425,
+              222,
+              386,
+              30,
+              72,
+              74,
+              0,
+              234,
+              208,
+              210,
+              188,
+              488,
+              415,
+              346,
+              155,
+              114
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "rank_median_ms": 38.774143,
+        "rank_max_ms": 46.203838,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4278,
+            "local_counts": [
+              75,
+              154,
+              258,
+              97,
+              188,
+              106,
+              98,
+              831,
+              145,
+              1033,
+              258,
+              187,
+              137,
+              189,
+              87,
+              435
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 5269,
+            "local_counts": [
+              255,
+              77,
+              318,
+              168,
+              199,
+              122,
+              37,
+              1283,
+              221,
+              745,
+              261,
+              214,
+              251,
+              415,
+              339,
+              364
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4434,
+            "local_counts": [
+              379,
+              113,
+              312,
+              142,
+              210,
+              225,
+              53,
+              655,
+              100,
+              341,
+              292,
+              106,
+              323,
+              507,
+              419,
+              257
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4442,
+            "local_counts": [
+              241,
+              65,
+              169,
+              66,
+              164,
+              215,
+              43,
+              787,
+              39,
+              84,
+              378,
+              69,
+              196,
+              908,
+              547,
+              471
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "rank_median_ms": 37.567308499999996,
+        "rank_max_ms": 45.766805,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3572,
+            "local_counts": [
+              317,
+              110,
+              112,
+              156,
+              96,
+              496,
+              153,
+              108,
+              224,
+              379,
+              213,
+              185,
+              160,
+              333,
+              326,
+              204
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3638,
+            "local_counts": [
+              307,
+              167,
+              12,
+              134,
+              270,
+              133,
+              134,
+              209,
+              274,
+              248,
+              185,
+              335,
+              208,
+              265,
+              533,
+              224
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 5183,
+            "local_counts": [
+              804,
+              269,
+              29,
+              156,
+              303,
+              226,
+              202,
+              675,
+              258,
+              292,
+              167,
+              329,
+              194,
+              447,
+              632,
+              200
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 5305,
+            "local_counts": [
+              1259,
+              444,
+              16,
+              240,
+              248,
+              132,
+              82,
+              674,
+              181,
+              94,
+              119,
+              369,
+              133,
+              504,
+              597,
+              213
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "rank_median_ms": 37.826185,
+        "rank_max_ms": 47.049807,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5265,
+            "local_counts": [
+              128,
+              484,
+              639,
+              166,
+              229,
+              287,
+              606,
+              277,
+              181,
+              189,
+              198,
+              341,
+              136,
+              263,
+              552,
+              589
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4115,
+            "local_counts": [
+              68,
+              276,
+              614,
+              78,
+              217,
+              274,
+              238,
+              247,
+              122,
+              114,
+              392,
+              153,
+              211,
+              331,
+              465,
+              315
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3345,
+            "local_counts": [
+              31,
+              203,
+              512,
+              73,
+              271,
+              120,
+              192,
+              262,
+              156,
+              78,
+              156,
+              133,
+              126,
+              340,
+              313,
+              379
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 2985,
+            "local_counts": [
+              41,
+              58,
+              248,
+              124,
+              337,
+              117,
+              318,
+              166,
+              382,
+              66,
+              30,
+              93,
+              162,
+              170,
+              238,
+              435
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "rank_median_ms": 37.6273635,
+        "rank_max_ms": 46.140077999999995,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4386,
+            "local_counts": [
+              125,
+              75,
+              157,
+              15,
+              881,
+              130,
+              334,
+              98,
+              488,
+              352,
+              201,
+              158,
+              228,
+              46,
+              890,
+              208
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3588,
+            "local_counts": [
+              145,
+              41,
+              103,
+              7,
+              371,
+              238,
+              310,
+              240,
+              584,
+              323,
+              99,
+              318,
+              243,
+              135,
+              319,
+              112
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4189,
+            "local_counts": [
+              118,
+              31,
+              108,
+              7,
+              218,
+              166,
+              354,
+              280,
+              531,
+              346,
+              103,
+              468,
+              574,
+              136,
+              345,
+              404
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3742,
+            "local_counts": [
+              44,
+              18,
+              38,
+              1,
+              112,
+              72,
+              297,
+              133,
+              206,
+              406,
+              138,
+              955,
+              562,
+              36,
+              294,
+              430
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "rank_median_ms": 38.218449500000006,
+        "rank_max_ms": 47.604712,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4247,
+            "local_counts": [
+              187,
+              214,
+              303,
+              130,
+              355,
+              337,
+              58,
+              461,
+              206,
+              453,
+              370,
+              357,
+              172,
+              129,
+              297,
+              218
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 5279,
+            "local_counts": [
+              1122,
+              348,
+              330,
+              132,
+              216,
+              400,
+              128,
+              466,
+              250,
+              706,
+              233,
+              357,
+              204,
+              112,
+              178,
+              97
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4517,
+            "local_counts": [
+              314,
+              288,
+              331,
+              112,
+              111,
+              306,
+              88,
+              717,
+              248,
+              708,
+              553,
+              236,
+              193,
+              121,
+              140,
+              51
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3663,
+            "local_counts": [
+              23,
+              298,
+              301,
+              50,
+              131,
+              319,
+              158,
+              465,
+              216,
+              853,
+              89,
+              278,
+              224,
+              52,
+              163,
+              43
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "rank_median_ms": 38.278065,
+        "rank_max_ms": 47.98568399999999,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3531,
+            "local_counts": [
+              126,
+              543,
+              260,
+              398,
+              131,
+              332,
+              343,
+              280,
+              257,
+              107,
+              161,
+              132,
+              185,
+              107,
+              141,
+              28
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3709,
+            "local_counts": [
+              148,
+              95,
+              492,
+              357,
+              134,
+              286,
+              310,
+              443,
+              203,
+              280,
+              150,
+              101,
+              231,
+              285,
+              95,
+              99
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3834,
+            "local_counts": [
+              174,
+              196,
+              555,
+              241,
+              86,
+              232,
+              145,
+              331,
+              446,
+              384,
+              322,
+              282,
+              75,
+              253,
+              74,
+              38
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4427,
+            "local_counts": [
+              35,
+              87,
+              672,
+              377,
+              176,
+              307,
+              169,
+              485,
+              693,
+              552,
+              193,
+              361,
+              57,
+              140,
+              99,
+              24
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "rank_median_ms": 39.0628265,
+        "rank_max_ms": 48.670771,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5504,
+            "local_counts": [
+              195,
+              132,
+              966,
+              345,
+              428,
+              1430,
+              188,
+              150,
+              140,
+              211,
+              412,
+              241,
+              54,
+              246,
+              211,
+              155
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 5888,
+            "local_counts": [
+              290,
+              179,
+              455,
+              477,
+              212,
+              2055,
+              321,
+              121,
+              198,
+              329,
+              327,
+              153,
+              79,
+              296,
+              178,
+              218
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4744,
+            "local_counts": [
+              240,
+              145,
+              189,
+              372,
+              144,
+              1223,
+              381,
+              87,
+              144,
+              563,
+              288,
+              182,
+              83,
+              359,
+              180,
+              164
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3972,
+            "local_counts": [
+              266,
+              273,
+              162,
+              490,
+              140,
+              315,
+              279,
+              33,
+              116,
+              712,
+              318,
+              54,
+              18,
+              521,
+              90,
+              185
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "rank_median_ms": 38.589202,
+        "rank_max_ms": 49.022793,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5220,
+            "local_counts": [
+              347,
+              228,
+              157,
+              371,
+              77,
+              203,
+              100,
+              221,
+              240,
+              247,
+              1213,
+              312,
+              525,
+              376,
+              71,
+              532
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4052,
+            "local_counts": [
+              254,
+              375,
+              218,
+              135,
+              21,
+              311,
+              278,
+              177,
+              254,
+              241,
+              156,
+              316,
+              306,
+              308,
+              21,
+              681
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3996,
+            "local_counts": [
+              183,
+              248,
+              139,
+              185,
+              63,
+              357,
+              196,
+              546,
+              203,
+              211,
+              246,
+              631,
+              132,
+              416,
+              7,
+              233
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3385,
+            "local_counts": [
+              214,
+              275,
+              115,
+              130,
+              0,
+              196,
+              53,
+              450,
+              196,
+              325,
+              83,
+              506,
+              150,
+              590,
+              0,
+              102
+            ]
+          }
+        ]
+      }
+    ],
+    "eplb": [
+      {
+        "rank": 0,
+        "rank_median_ms": 39.763337,
+        "rank_max_ms": 206.57847900000002,
+        "replica_tasks": 1052,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3482,
+            "local_counts": [
+              57,
+              275,
+              159,
+              235,
+              509,
+              153,
+              107,
+              206,
+              155,
+              357,
+              159,
+              428,
+              157,
+              261,
+              100,
+              149,
+              15
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3661,
+            "local_counts": [
+              45,
+              360,
+              174,
+              229,
+              536,
+              134,
+              280,
+              250,
+              309,
+              222,
+              149,
+              212,
+              103,
+              180,
+              278,
+              193,
+              7
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4408,
+            "local_counts": [
+              104,
+              102,
+              531,
+              306,
+              446,
+              202,
+              384,
+              248,
+              717,
+              215,
+              195,
+              144,
+              108,
+              263,
+              196,
+              240,
+              7
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3888,
+            "local_counts": [
+              83,
+              26,
+              268,
+              521,
+              510,
+              82,
+              552,
+              216,
+              667,
+              234,
+              117,
+              140,
+              38,
+              189,
+              53,
+              191,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "rank_median_ms": 39.48435,
+        "rank_max_ms": 206.637879,
+        "replica_tasks": 2129,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3539,
+            "local_counts": [
+              52,
+              257,
+              312,
+              202,
+              243,
+              371,
+              337,
+              258,
+              293,
+              97,
+              134,
+              194,
+              172,
+              186,
+              171,
+              232,
+              28
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3784,
+            "local_counts": [
+              50,
+              321,
+              316,
+              78,
+              329,
+              135,
+              400,
+              318,
+              297,
+              168,
+              273,
+              148,
+              204,
+              413,
+              185,
+              109,
+              40
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4320,
+            "local_counts": [
+              64,
+              131,
+              631,
+              101,
+              303,
+              185,
+              306,
+              312,
+              271,
+              142,
+              685,
+              143,
+              193,
+              581,
+              174,
+              43,
+              55
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4818,
+            "local_counts": [
+              220,
+              76,
+              506,
+              118,
+              83,
+              130,
+              319,
+              169,
+              332,
+              66,
+              1173,
+              132,
+              224,
+              796,
+              271,
+              74,
+              129
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "rank_median_ms": 41.132473000000005,
+        "rank_max_ms": 208.142352,
+        "replica_tasks": 1119,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3686,
+            "local_counts": [
+              116,
+              260,
+              376,
+              238,
+              145,
+              340,
+              187,
+              87,
+              341,
+              86,
+              131,
+              347,
+              435,
+              266,
+              39,
+              161,
+              131
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4727,
+            "local_counts": [
+              81,
+              533,
+              308,
+              189,
+              221,
+              222,
+              1122,
+              339,
+              153,
+              70,
+              267,
+              254,
+              364,
+              173,
+              79,
+              218,
+              134
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3647,
+            "local_counts": [
+              109,
+              499,
+              416,
+              94,
+              100,
+              298,
+              314,
+              419,
+              133,
+              62,
+              291,
+              183,
+              257,
+              184,
+              84,
+              118,
+              86
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3871,
+            "local_counts": [
+              85,
+              418,
+              590,
+              207,
+              39,
+              252,
+              23,
+              547,
+              93,
+              36,
+              262,
+              214,
+              471,
+              196,
+              66,
+              196,
+              176
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "rank_median_ms": 41.79966949999999,
+        "rank_max_ms": 208.97497199999998,
+        "replica_tasks": 1238,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 2967,
+            "local_counts": [
+              131,
+              260,
+              246,
+              106,
+              189,
+              108,
+              361,
+              221,
+              54,
+              85,
+              188,
+              193,
+              225,
+              132,
+              189,
+              66,
+              213
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3340,
+            "local_counts": [
+              102,
+              492,
+              358,
+              122,
+              244,
+              209,
+              225,
+              177,
+              79,
+              155,
+              199,
+              106,
+              125,
+              179,
+              330,
+              53,
+              185
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3916,
+            "local_counts": [
+              121,
+              555,
+              247,
+              225,
+              242,
+              675,
+              164,
+              546,
+              83,
+              84,
+              210,
+              43,
+              148,
+              145,
+              197,
+              64,
+              167
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4041,
+            "local_counts": [
+              85,
+              672,
+              437,
+              215,
+              124,
+              674,
+              170,
+              450,
+              18,
+              222,
+              164,
+              18,
+              135,
+              273,
+              222,
+              43,
+              119
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "rank_median_ms": 40.752916,
+        "rank_max_ms": 208.704409,
+        "replica_tasks": 381,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3085,
+            "local_counts": [
+              156,
+              55,
+              262,
+              258,
+              211,
+              184,
+              130,
+              279,
+              130,
+              318,
+              320,
+              160,
+              218,
+              181,
+              110,
+              112,
+              1
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3070,
+            "local_counts": [
+              144,
+              29,
+              556,
+              261,
+              178,
+              205,
+              238,
+              259,
+              135,
+              259,
+              113,
+              208,
+              97,
+              122,
+              167,
+              90,
+              9
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3654,
+            "local_counts": [
+              227,
+              148,
+              727,
+              292,
+              180,
+              299,
+              166,
+              204,
+              182,
+              339,
+              76,
+              194,
+              51,
+              156,
+              269,
+              140,
+              4
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4258,
+            "local_counts": [
+              382,
+              149,
+              939,
+              378,
+              90,
+              265,
+              72,
+              237,
+              95,
+              488,
+              69,
+              133,
+              43,
+              382,
+              444,
+              92,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "rank_median_ms": 40.333346000000006,
+        "rank_max_ms": 208.42595500000002,
+        "replica_tasks": 1563,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3898,
+            "local_counts": [
+              252,
+              77,
+              214,
+              432,
+              290,
+              311,
+              100,
+              158,
+              98,
+              304,
+              107,
+              152,
+              589,
+              262,
+              317,
+              79,
+              156
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4053,
+            "local_counts": [
+              334,
+              72,
+              348,
+              391,
+              151,
+              272,
+              106,
+              318,
+              37,
+              318,
+              285,
+              415,
+              315,
+              107,
+              307,
+              143,
+              134
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4965,
+            "local_counts": [
+              315,
+              134,
+              288,
+              338,
+              372,
+              368,
+              281,
+              468,
+              53,
+              338,
+              253,
+              228,
+              379,
+              81,
+              804,
+              109,
+              156
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 5953,
+            "local_counts": [
+              535,
+              212,
+              298,
+              406,
+              255,
+              435,
+              188,
+              955,
+              43,
+              343,
+              140,
+              101,
+              435,
+              46,
+              1259,
+              62,
+              240
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 14,
+        "rank_median_ms": 39.868643500000005,
+        "rank_max_ms": 207.854501,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4996,
+            "local_counts": [
+              82,
+              831,
+              543,
+              229,
+              515,
+              125,
+              370,
+              185,
+              345,
+              28,
+              212,
+              133,
+              143,
+              496,
+              606,
+              147,
+              6
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3983,
+            "local_counts": [
+              389,
+              562,
+              95,
+              217,
+              296,
+              138,
+              233,
+              231,
+              477,
+              99,
+              267,
+              97,
+              415,
+              133,
+              238,
+              94,
+              2
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3763,
+            "local_counts": [
+              255,
+              260,
+              196,
+              271,
+              241,
+              285,
+              553,
+              75,
+              372,
+              38,
+              273,
+              177,
+              138,
+              226,
+              192,
+              209,
+              2
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3794,
+            "local_counts": [
+              229,
+              343,
+              87,
+              337,
+              220,
+              420,
+              89,
+              57,
+              490,
+              24,
+              412,
+              180,
+              208,
+              132,
+              318,
+              248,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 15,
+        "rank_median_ms": 39.572019999999995,
+        "rank_max_ms": 207.544768,
+        "replica_tasks": 321,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3767,
+            "local_counts": [
+              266,
+              159,
+              453,
+              8,
+              297,
+              110,
+              261,
+              303,
+              334,
+              203,
+              184,
+              257,
+              338,
+              150,
+              268,
+              99,
+              77
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4040,
+            "local_counts": [
+              275,
+              320,
+              706,
+              55,
+              178,
+              223,
+              399,
+              330,
+              310,
+              174,
+              248,
+              203,
+              313,
+              121,
+              82,
+              82,
+              21
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3876,
+            "local_counts": [
+              189,
+              169,
+              708,
+              159,
+              140,
+              177,
+              398,
+              331,
+              354,
+              153,
+              201,
+              446,
+              138,
+              87,
+              92,
+              71,
+              63
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4037,
+            "local_counts": [
+              127,
+              155,
+              853,
+              99,
+              163,
+              52,
+              425,
+              301,
+              297,
+              189,
+              348,
+              693,
+              122,
+              33,
+              99,
+              81,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "rank_median_ms": 39.6052255,
+        "rank_max_ms": 206.600651,
+        "replica_tasks": 2041,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5588,
+            "local_counts": [
+              341,
+              623,
+              129,
+              318,
+              224,
+              126,
+              326,
+              552,
+              52,
+              1213,
+              412,
+              98,
+              272,
+              128,
+              155,
+              148,
+              471
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4105,
+            "local_counts": [
+              382,
+              304,
+              112,
+              232,
+              194,
+              148,
+              533,
+              465,
+              120,
+              156,
+              327,
+              240,
+              228,
+              68,
+              119,
+              107,
+              370
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4067,
+            "local_counts": [
+              539,
+              278,
+              121,
+              244,
+              241,
+              174,
+              632,
+              313,
+              46,
+              246,
+              288,
+              280,
+              141,
+              31,
+              56,
+              42,
+              395
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 2782,
+            "local_counts": [
+              380,
+              81,
+              52,
+              263,
+              96,
+              35,
+              597,
+              238,
+              36,
+              83,
+              318,
+              133,
+              140,
+              41,
+              30,
+              18,
+              241
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "rank_median_ms": 39.651346000000004,
+        "rank_max_ms": 206.464668,
+        "replica_tasks": 4967,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4983,
+            "local_counts": [
+              831,
+              350,
+              714,
+              319,
+              245,
+              328,
+              157,
+              112,
+              451,
+              200,
+              424,
+              224,
+              143,
+              140,
+              166,
+              154,
+              25
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 5174,
+            "local_counts": [
+              1283,
+              818,
+              480,
+              265,
+              255,
+              205,
+              218,
+              12,
+              304,
+              208,
+              347,
+              274,
+              141,
+              198,
+              78,
+              77,
+              11
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3979,
+            "local_counts": [
+              655,
+              625,
+              146,
+              195,
+              228,
+              318,
+              139,
+              29,
+              318,
+              263,
+              263,
+              258,
+              191,
+              144,
+              73,
+              113,
+              21
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3201,
+            "local_counts": [
+              787,
+              120,
+              55,
+              29,
+              123,
+              273,
+              115,
+              16,
+              300,
+              302,
+              415,
+              181,
+              169,
+              116,
+              124,
+              65,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "rank_median_ms": 40.2196305,
+        "rank_max_ms": 206.34940600000002,
+        "replica_tasks": 2360,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4103,
+            "local_counts": [
+              245,
+              457,
+              639,
+              15,
+              188,
+              298,
+              161,
+              174,
+              137,
+              228,
+              96,
+              881,
+              228,
+              118,
+              15,
+              188,
+              35
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 5263,
+            "local_counts": [
+              256,
+              933,
+              614,
+              277,
+              321,
+              388,
+              150,
+              362,
+              251,
+              375,
+              270,
+              371,
+              243,
+              206,
+              40,
+              174,
+              32
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4989,
+            "local_counts": [
+              302,
+              320,
+              512,
+              83,
+              381,
+              389,
+              322,
+              594,
+              323,
+              248,
+              303,
+              218,
+              574,
+              234,
+              28,
+              131,
+              27
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3760,
+            "local_counts": [
+              175,
+              114,
+              248,
+              161,
+              279,
+              420,
+              193,
+              346,
+              196,
+              275,
+              248,
+              112,
+              562,
+              334,
+              1,
+              93,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "rank_median_ms": 40.328942999999995,
+        "rank_max_ms": 205.667073,
+        "replica_tasks": 792,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4266,
+            "local_counts": [
+              1005,
+              140,
+              379,
+              76,
+              211,
+              729,
+              189,
+              352,
+              170,
+              195,
+              125,
+              198,
+              235,
+              72,
+              75,
+              75,
+              40
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4342,
+            "local_counts": [
+              426,
+              160,
+              248,
+              69,
+              329,
+              572,
+              415,
+              323,
+              106,
+              290,
+              290,
+              392,
+              233,
+              173,
+              255,
+              41,
+              20
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4282,
+            "local_counts": [
+              279,
+              146,
+              292,
+              63,
+              563,
+              542,
+              507,
+              346,
+              100,
+              240,
+              310,
+              156,
+              136,
+              170,
+              379,
+              31,
+              22
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4453,
+            "local_counts": [
+              114,
+              95,
+              94,
+              43,
+              712,
+              516,
+              908,
+              406,
+              138,
+              266,
+              592,
+              30,
+              166,
+              108,
+              241,
+              18,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "rank_median_ms": 41.012283499999995,
+        "rank_max_ms": 206.21895600000002,
+        "replica_tasks": 1398,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4777,
+            "local_counts": [
+              268,
+              890,
+              176,
+              370,
+              321,
+              155,
+              621,
+              337,
+              601,
+              46,
+              246,
+              38,
+              208,
+              204,
+              144,
+              97,
+              55
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3673,
+            "local_counts": [
+              136,
+              319,
+              99,
+              258,
+              384,
+              218,
+              412,
+              316,
+              543,
+              135,
+              296,
+              34,
+              112,
+              224,
+              58,
+              100,
+              29
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4364,
+            "local_counts": [
+              259,
+              345,
+              205,
+              149,
+              327,
+              164,
+              308,
+              265,
+              842,
+              136,
+              359,
+              23,
+              404,
+              200,
+              211,
+              146,
+              21
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4587,
+            "local_counts": [
+              386,
+              294,
+              224,
+              72,
+              366,
+              185,
+              301,
+              269,
+              1014,
+              36,
+              521,
+              8,
+              430,
+              213,
+              104,
+              156,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "rank_median_ms": 41.075274500000006,
+        "rank_max_ms": 206.68305,
+        "replica_tasks": 747,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3883,
+            "local_counts": [
+              343,
+              123,
+              185,
+              30,
+              187,
+              280,
+              246,
+              476,
+              125,
+              242,
+              357,
+              333,
+              402,
+              104,
+              201,
+              9,
+              240
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4656,
+            "local_counts": [
+              310,
+              171,
+              335,
+              82,
+              214,
+              443,
+              320,
+              432,
+              145,
+              330,
+              357,
+              265,
+              748,
+              136,
+              99,
+              15,
+              254
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4578,
+            "local_counts": [
+              145,
+              194,
+              329,
+              43,
+              106,
+              331,
+              449,
+              355,
+              118,
+              313,
+              236,
+              447,
+              1068,
+              115,
+              103,
+              23,
+              203
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4759,
+            "local_counts": [
+              169,
+              75,
+              369,
+              29,
+              69,
+              485,
+              451,
+              397,
+              44,
+              293,
+              278,
+              504,
+              1051,
+              210,
+              138,
+              1,
+              196
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "rank_median_ms": 41.1569445,
+        "rank_max_ms": 207.068244,
+        "replica_tasks": 1686,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4042,
+            "local_counts": [
+              397,
+              484,
+              499,
+              160,
+              171,
+              332,
+              241,
+              346,
+              287,
+              130,
+              57,
+              96,
+              247,
+              58,
+              111,
+              355,
+              71
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3452,
+            "local_counts": [
+              181,
+              276,
+              269,
+              168,
+              315,
+              286,
+              153,
+              290,
+              274,
+              132,
+              70,
+              332,
+              241,
+              128,
+              100,
+              216,
+              21
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 2986,
+            "local_counts": [
+              244,
+              203,
+              169,
+              147,
+              345,
+              232,
+              182,
+              222,
+              120,
+              112,
+              140,
+              215,
+              211,
+              88,
+              238,
+              111,
+              7
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3033,
+            "local_counts": [
+              305,
+              58,
+              180,
+              170,
+              210,
+              307,
+              54,
+              318,
+              117,
+              50,
+              100,
+              233,
+              325,
+              158,
+              317,
+              131,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "rank_median_ms": 41.385805500000004,
+        "rank_max_ms": 207.886601,
+        "replica_tasks": 1772,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4474,
+            "local_counts": [
+              78,
+              203,
+              208,
+              107,
+              260,
+              429,
+              74,
+              277,
+              525,
+              966,
+              314,
+              304,
+              210,
+              141,
+              189,
+              136,
+              53
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4213,
+            "local_counts": [
+              108,
+              311,
+              293,
+              320,
+              407,
+              437,
+              176,
+              247,
+              306,
+              455,
+              251,
+              197,
+              250,
+              95,
+              114,
+              211,
+              35
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3742,
+            "local_counts": [
+              85,
+              357,
+              309,
+              323,
+              398,
+              270,
+              430,
+              262,
+              132,
+              189,
+              227,
+              252,
+              153,
+              74,
+              78,
+              126,
+              77
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4173,
+            "local_counts": [
+              101,
+              196,
+              340,
+              531,
+              335,
+              345,
+              617,
+              166,
+              150,
+              162,
+              297,
+              412,
+              71,
+              99,
+              66,
+              162,
+              123
+            ]
+          }
+        ]
+      }
+    ],
+    "ours": [
+      {
+        "rank": 0,
+        "rank_median_ms": 39.072039999999994,
+        "rank_max_ms": 243.82833900000003,
+        "replica_tasks": 583,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3402,
+            "local_counts": [
+              471,
+              260,
+              38,
+              186,
+              97,
+              99,
+              515,
+              25,
+              107,
+              212,
+              176,
+              53,
+              110,
+              397,
+              161,
+              338,
+              157
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3635,
+            "local_counts": [
+              370,
+              533,
+              34,
+              413,
+              100,
+              82,
+              296,
+              11,
+              320,
+              267,
+              99,
+              35,
+              223,
+              181,
+              218,
+              313,
+              140
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3686,
+            "local_counts": [
+              395,
+              499,
+              23,
+              581,
+              146,
+              71,
+              241,
+              21,
+              323,
+              273,
+              205,
+              77,
+              177,
+              244,
+              118,
+              138,
+              154
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4028,
+            "local_counts": [
+              241,
+              418,
+              8,
+              796,
+              156,
+              81,
+              220,
+              11,
+              531,
+              412,
+              224,
+              123,
+              52,
+              305,
+              196,
+              122,
+              132
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "rank_median_ms": 37.456267499999996,
+        "rank_max_ms": 243.173854,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3668,
+            "local_counts": [
+              39,
+              346,
+              149,
+              429,
+              131,
+              235,
+              476,
+              601,
+              171,
+              15,
+              23,
+              184,
+              133,
+              337,
+              189,
+              210,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4229,
+            "local_counts": [
+              79,
+              290,
+              193,
+              437,
+              267,
+              233,
+              432,
+              543,
+              185,
+              40,
+              332,
+              205,
+              97,
+              316,
+              330,
+              250,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3975,
+            "local_counts": [
+              84,
+              222,
+              240,
+              270,
+              291,
+              136,
+              355,
+              842,
+              174,
+              28,
+              242,
+              299,
+              177,
+              265,
+              197,
+              153,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4298,
+            "local_counts": [
+              66,
+              318,
+              191,
+              345,
+              262,
+              166,
+              397,
+              1014,
+              271,
+              1,
+              260,
+              265,
+              180,
+              269,
+              222,
+              71,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "rank_median_ms": 39.385127999999995,
+        "rank_max_ms": 245.448603,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3076,
+            "local_counts": [
+              134,
+              235,
+              35,
+              168,
+              268,
+              293,
+              130,
+              266,
+              188,
+              246,
+              40,
+              82,
+              499,
+              159,
+              208,
+              125,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3226,
+            "local_counts": [
+              273,
+              229,
+              32,
+              151,
+              82,
+              297,
+              135,
+              275,
+              174,
+              320,
+              20,
+              389,
+              269,
+              149,
+              293,
+              138,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3728,
+            "local_counts": [
+              685,
+              306,
+              27,
+              161,
+              92,
+              271,
+              182,
+              189,
+              131,
+              449,
+              22,
+              255,
+              169,
+              195,
+              309,
+              285,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4325,
+            "local_counts": [
+              1173,
+              521,
+              3,
+              139,
+              99,
+              332,
+              95,
+              127,
+              93,
+              451,
+              6,
+              229,
+              180,
+              117,
+              340,
+              420,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "rank_median_ms": 40.168305000000004,
+        "rank_max_ms": 245.972019,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5168,
+            "local_counts": [
+              79,
+              266,
+              193,
+              831,
+              245,
+              621,
+              272,
+              314,
+              279,
+              252,
+              155,
+              729,
+              361,
+              112,
+              402,
+              57,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4738,
+            "local_counts": [
+              143,
+              173,
+              106,
+              562,
+              256,
+              412,
+              228,
+              251,
+              259,
+              334,
+              309,
+              572,
+              225,
+              90,
+              748,
+              70,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4864,
+            "local_counts": [
+              109,
+              184,
+              43,
+              260,
+              302,
+              308,
+              141,
+              227,
+              204,
+              315,
+              717,
+              542,
+              164,
+              140,
+              1068,
+              140,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4900,
+            "local_counts": [
+              62,
+              196,
+              18,
+              343,
+              175,
+              301,
+              140,
+              297,
+              237,
+              535,
+              667,
+              516,
+              170,
+              92,
+              1051,
+              100,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "rank_median_ms": 39.8141775,
+        "rank_max_ms": 245.70382600000002,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 2627,
+            "local_counts": [
+              148,
+              6,
+              262,
+              125,
+              225,
+              320,
+              298,
+              74,
+              109,
+              52,
+              370,
+              143,
+              159,
+              66,
+              152,
+              118,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3219,
+            "local_counts": [
+              107,
+              2,
+              556,
+              290,
+              125,
+              113,
+              388,
+              176,
+              95,
+              120,
+              258,
+              141,
+              174,
+              53,
+              415,
+              206,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3735,
+            "local_counts": [
+              42,
+              2,
+              727,
+              310,
+              148,
+              76,
+              389,
+              430,
+              168,
+              46,
+              149,
+              191,
+              531,
+              64,
+              228,
+              234,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4116,
+            "local_counts": [
+              18,
+              0,
+              939,
+              592,
+              135,
+              69,
+              420,
+              617,
+              303,
+              36,
+              72,
+              169,
+              268,
+              43,
+              101,
+              334,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "rank_median_ms": 39.753046999999995,
+        "rank_max_ms": 245.13598100000002,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3385,
+            "local_counts": [
+              111,
+              413,
+              451,
+              341,
+              311,
+              304,
+              86,
+              184,
+              304,
+              203,
+              9,
+              147,
+              72,
+              200,
+              194,
+              55,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3170,
+            "local_counts": [
+              100,
+              438,
+              304,
+              382,
+              272,
+              318,
+              70,
+              248,
+              197,
+              174,
+              15,
+              94,
+              173,
+              208,
+              148,
+              29,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3781,
+            "local_counts": [
+              238,
+              483,
+              318,
+              539,
+              368,
+              338,
+              62,
+              201,
+              252,
+              153,
+              23,
+              209,
+              170,
+              263,
+              143,
+              21,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3779,
+            "local_counts": [
+              317,
+              220,
+              300,
+              380,
+              435,
+              343,
+              36,
+              348,
+              412,
+              189,
+              1,
+              248,
+              108,
+              302,
+              132,
+              8,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 14,
+        "rank_median_ms": 39.4247595,
+        "rank_max_ms": 244.68696599999998,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4315,
+            "local_counts": [
+              242,
+              340,
+              509,
+              170,
+              318,
+              261,
+              432,
+              581,
+              328,
+              156,
+              28,
+              262,
+              202,
+              144,
+              96,
+              246,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4110,
+            "local_counts": [
+              330,
+              222,
+              536,
+              106,
+              232,
+              180,
+              391,
+              791,
+              205,
+              144,
+              40,
+              107,
+              78,
+              58,
+              332,
+              358,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4182,
+            "local_counts": [
+              313,
+              298,
+              446,
+              100,
+              244,
+              263,
+              338,
+              725,
+              318,
+              227,
+              55,
+              81,
+              101,
+              211,
+              215,
+              247,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4474,
+            "local_counts": [
+              293,
+              252,
+              510,
+              138,
+              263,
+              189,
+              406,
+              701,
+              273,
+              382,
+              129,
+              46,
+              118,
+              104,
+              233,
+              437,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 15,
+        "rank_median_ms": 39.1905925,
+        "rank_max_ms": 244.21784200000002,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3892,
+            "local_counts": [
+              261,
+              85,
+              268,
+              155,
+              106,
+              232,
+              1,
+              357,
+              143,
+              104,
+              100,
+              318,
+              424,
+              174,
+              159,
+              1005,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3671,
+            "local_counts": [
+              399,
+              155,
+              136,
+              119,
+              151,
+              109,
+              9,
+              222,
+              415,
+              136,
+              106,
+              259,
+              347,
+              362,
+              320,
+              426,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3343,
+            "local_counts": [
+              398,
+              84,
+              259,
+              56,
+              106,
+              43,
+              4,
+              215,
+              138,
+              115,
+              281,
+              339,
+              263,
+              594,
+              169,
+              279,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3567,
+            "local_counts": [
+              425,
+              222,
+              386,
+              30,
+              72,
+              74,
+              0,
+              234,
+              208,
+              210,
+              188,
+              488,
+              415,
+              346,
+              155,
+              114,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "rank_median_ms": 38.939530500000004,
+        "rank_max_ms": 243.760359,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4278,
+            "local_counts": [
+              75,
+              154,
+              258,
+              97,
+              188,
+              106,
+              98,
+              831,
+              145,
+              1033,
+              258,
+              187,
+              137,
+              189,
+              87,
+              435,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 5269,
+            "local_counts": [
+              255,
+              77,
+              318,
+              168,
+              199,
+              122,
+              37,
+              1283,
+              221,
+              745,
+              261,
+              214,
+              251,
+              415,
+              339,
+              364,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4434,
+            "local_counts": [
+              379,
+              113,
+              312,
+              142,
+              210,
+              225,
+              53,
+              655,
+              100,
+              341,
+              292,
+              106,
+              323,
+              507,
+              419,
+              257,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4442,
+            "local_counts": [
+              241,
+              65,
+              169,
+              66,
+              164,
+              215,
+              43,
+              787,
+              39,
+              84,
+              378,
+              69,
+              196,
+              908,
+              547,
+              471,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "rank_median_ms": 38.1695335,
+        "rank_max_ms": 243.35817500000002,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3572,
+            "local_counts": [
+              317,
+              110,
+              112,
+              156,
+              96,
+              496,
+              153,
+              108,
+              224,
+              379,
+              213,
+              185,
+              160,
+              333,
+              326,
+              204,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3638,
+            "local_counts": [
+              307,
+              167,
+              12,
+              134,
+              270,
+              133,
+              134,
+              209,
+              274,
+              248,
+              185,
+              335,
+              208,
+              265,
+              533,
+              224,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 5183,
+            "local_counts": [
+              804,
+              269,
+              29,
+              156,
+              303,
+              226,
+              202,
+              675,
+              258,
+              292,
+              167,
+              329,
+              194,
+              447,
+              632,
+              200,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 5305,
+            "local_counts": [
+              1259,
+              444,
+              16,
+              240,
+              248,
+              132,
+              82,
+              674,
+              181,
+              94,
+              119,
+              369,
+              133,
+              504,
+              597,
+              213,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "rank_median_ms": 38.284709,
+        "rank_max_ms": 243.047023,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5265,
+            "local_counts": [
+              128,
+              484,
+              639,
+              166,
+              229,
+              287,
+              606,
+              277,
+              181,
+              189,
+              198,
+              341,
+              136,
+              263,
+              552,
+              589,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4115,
+            "local_counts": [
+              68,
+              276,
+              614,
+              78,
+              217,
+              274,
+              238,
+              247,
+              122,
+              114,
+              392,
+              153,
+              211,
+              331,
+              465,
+              315,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3345,
+            "local_counts": [
+              31,
+              203,
+              512,
+              73,
+              271,
+              120,
+              192,
+              262,
+              156,
+              78,
+              156,
+              133,
+              126,
+              340,
+              313,
+              379,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 2985,
+            "local_counts": [
+              41,
+              58,
+              248,
+              124,
+              337,
+              117,
+              318,
+              166,
+              382,
+              66,
+              30,
+              93,
+              162,
+              170,
+              238,
+              435,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "rank_median_ms": 38.696508,
+        "rank_max_ms": 242.7622,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4386,
+            "local_counts": [
+              125,
+              75,
+              157,
+              15,
+              881,
+              130,
+              334,
+              98,
+              488,
+              352,
+              201,
+              158,
+              228,
+              46,
+              890,
+              208,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3588,
+            "local_counts": [
+              145,
+              41,
+              103,
+              7,
+              371,
+              238,
+              310,
+              240,
+              584,
+              323,
+              99,
+              318,
+              243,
+              135,
+              319,
+              112,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4189,
+            "local_counts": [
+              118,
+              31,
+              108,
+              7,
+              218,
+              166,
+              354,
+              280,
+              531,
+              346,
+              103,
+              468,
+              574,
+              136,
+              345,
+              404,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3742,
+            "local_counts": [
+              44,
+              18,
+              38,
+              1,
+              112,
+              72,
+              297,
+              133,
+              206,
+              406,
+              138,
+              955,
+              562,
+              36,
+              294,
+              430,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "rank_median_ms": 38.4114055,
+        "rank_max_ms": 242.98071199999998,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 4247,
+            "local_counts": [
+              187,
+              214,
+              303,
+              130,
+              355,
+              337,
+              58,
+              461,
+              206,
+              453,
+              370,
+              357,
+              172,
+              129,
+              297,
+              218,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 5279,
+            "local_counts": [
+              1122,
+              348,
+              330,
+              132,
+              216,
+              400,
+              128,
+              466,
+              250,
+              706,
+              233,
+              357,
+              204,
+              112,
+              178,
+              97,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4517,
+            "local_counts": [
+              314,
+              288,
+              331,
+              112,
+              111,
+              306,
+              88,
+              717,
+              248,
+              708,
+              553,
+              236,
+              193,
+              121,
+              140,
+              51,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3663,
+            "local_counts": [
+              23,
+              298,
+              301,
+              50,
+              131,
+              319,
+              158,
+              465,
+              216,
+              853,
+              89,
+              278,
+              224,
+              52,
+              163,
+              43,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "rank_median_ms": 38.587391499999995,
+        "rank_max_ms": 243.993969,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 3531,
+            "local_counts": [
+              126,
+              543,
+              260,
+              398,
+              131,
+              332,
+              343,
+              280,
+              257,
+              107,
+              161,
+              132,
+              185,
+              107,
+              141,
+              28,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 3709,
+            "local_counts": [
+              148,
+              95,
+              492,
+              357,
+              134,
+              286,
+              310,
+              443,
+              203,
+              280,
+              150,
+              101,
+              231,
+              285,
+              95,
+              99,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3834,
+            "local_counts": [
+              174,
+              196,
+              555,
+              241,
+              86,
+              232,
+              145,
+              331,
+              446,
+              384,
+              322,
+              282,
+              75,
+              253,
+              74,
+              38,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 4427,
+            "local_counts": [
+              35,
+              87,
+              672,
+              377,
+              176,
+              307,
+              169,
+              485,
+              693,
+              552,
+              193,
+              361,
+              57,
+              140,
+              99,
+              24,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "rank_median_ms": 39.2985275,
+        "rank_max_ms": 243.133822,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5504,
+            "local_counts": [
+              195,
+              132,
+              966,
+              345,
+              428,
+              1430,
+              188,
+              150,
+              140,
+              211,
+              412,
+              241,
+              54,
+              246,
+              211,
+              155,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 5888,
+            "local_counts": [
+              290,
+              179,
+              455,
+              477,
+              212,
+              2055,
+              321,
+              121,
+              198,
+              329,
+              327,
+              153,
+              79,
+              296,
+              178,
+              218,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 4744,
+            "local_counts": [
+              240,
+              145,
+              189,
+              372,
+              144,
+              1223,
+              381,
+              87,
+              144,
+              563,
+              288,
+              182,
+              83,
+              359,
+              180,
+              164,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3972,
+            "local_counts": [
+              266,
+              273,
+              162,
+              490,
+              140,
+              315,
+              279,
+              33,
+              116,
+              712,
+              318,
+              54,
+              18,
+              521,
+              90,
+              185,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "rank_median_ms": 39.9264875,
+        "rank_max_ms": 244.12343099999998,
+        "replica_tasks": 0,
+        "chunks": [
+          {
+            "chunk": 0,
+            "local_rows": 512,
+            "local_task_count": 5220,
+            "local_counts": [
+              347,
+              228,
+              157,
+              371,
+              77,
+              203,
+              100,
+              221,
+              240,
+              247,
+              1213,
+              312,
+              525,
+              376,
+              71,
+              532,
+              0
+            ]
+          },
+          {
+            "chunk": 1,
+            "local_rows": 512,
+            "local_task_count": 4052,
+            "local_counts": [
+              254,
+              375,
+              218,
+              135,
+              21,
+              311,
+              278,
+              177,
+              254,
+              241,
+              156,
+              316,
+              306,
+              308,
+              21,
+              681,
+              0
+            ]
+          },
+          {
+            "chunk": 2,
+            "local_rows": 512,
+            "local_task_count": 3996,
+            "local_counts": [
+              183,
+              248,
+              139,
+              185,
+              63,
+              357,
+              196,
+              546,
+              203,
+              211,
+              246,
+              631,
+              132,
+              416,
+              7,
+              233,
+              0
+            ]
+          },
+          {
+            "chunk": 3,
+            "local_rows": 511,
+            "local_task_count": 3385,
+            "local_counts": [
+              214,
+              275,
+              115,
+              130,
+              0,
+              196,
+              53,
+              450,
+              196,
+              325,
+              83,
+              506,
+              150,
+              590,
+              0,
+              102,
+              0
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

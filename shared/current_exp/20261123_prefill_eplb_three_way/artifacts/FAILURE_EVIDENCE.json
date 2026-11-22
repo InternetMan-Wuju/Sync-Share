@@ -1,0 +1,697 @@
+{
+  "K1_SERVICE_BLOCKER": {
+    "log": "logs/k1_invalid_k1_invalid_probe/server.log",
+    "matches": [
+      "num_physical_experts % ep_size == 0",
+      "AssertionError",
+      "Scheduler hit an exception"
+    ],
+    "selected": [
+      {
+        "line": 703,
+        "text": "    common = ExpertLocationMetadata._init_common(model_config)"
+      },
+      {
+        "line": 704,
+        "text": "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 705,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/eplb/expert_location.py\", line 256, in _init_common"
+      },
+      {
+        "line": 706,
+        "text": "    assert num_physical_experts % ep_size == 0"
+      },
+      {
+        "line": 707,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 708,
+        "text": "AssertionError"
+      },
+      {
+        "line": 709,
+        "text": ""
+      },
+      {
+        "line": 710,
+        "text": "[2026-11-22 18:03:57 TP14 EP14] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 711,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5841, in run_scheduler_process"
+      },
+      {
+        "line": 736,
+        "text": "    common = ExpertLocationMetadata._init_common(model_config)"
+      },
+      {
+        "line": 737,
+        "text": "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 738,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/eplb/expert_location.py\", line 256, in _init_common"
+      },
+      {
+        "line": 739,
+        "text": "    assert num_physical_experts % ep_size == 0"
+      },
+      {
+        "line": 740,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 741,
+        "text": "AssertionError"
+      },
+      {
+        "line": 742,
+        "text": ""
+      },
+      {
+        "line": 743,
+        "text": "[2026-11-22 18:03:57 TP7 EP7] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 744,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5841, in run_scheduler_process"
+      },
+      {
+        "line": 769,
+        "text": "    common = ExpertLocationMetadata._init_common(model_config)"
+      },
+      {
+        "line": 770,
+        "text": "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 771,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/eplb/expert_location.py\", line 256, in _init_common"
+      },
+      {
+        "line": 772,
+        "text": "    assert num_physical_experts % ep_size == 0"
+      },
+      {
+        "line": 773,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 774,
+        "text": "AssertionError"
+      },
+      {
+        "line": 775,
+        "text": ""
+      },
+      {
+        "line": 776,
+        "text": "[2026-11-22 18:03:57] Received sigquit from a child process. It usually means the child failed."
+      },
+      {
+        "line": 777,
+        "text": "[2026-11-22 18:03:57] kill_process_tree called: parent_pid=443, include_parent=True, pid=443"
+      },
+      {
+        "line": 805,
+        "text": "    common = ExpertLocationMetadata._init_common(model_config)"
+      },
+      {
+        "line": 806,
+        "text": "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 807,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/eplb/expert_location.py\", line 256, in _init_common"
+      },
+      {
+        "line": 808,
+        "text": "    assert num_physical_experts % ep_size == 0"
+      },
+      {
+        "line": 809,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 810,
+        "text": "AssertionError"
+      },
+      {
+        "line": 811,
+        "text": ""
+      },
+      {
+        "line": 812,
+        "text": "[2026-11-22 18:03:57] kill_process_tree called: parent_pid=443, include_parent=True, pid=443"
+      },
+      {
+        "line": 813,
+        "text": "[2026-11-22 18:03:57 TP0 EP0] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 839,
+        "text": "    common = ExpertLocationMetadata._init_common(model_config)"
+      },
+      {
+        "line": 840,
+        "text": "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 841,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/eplb/expert_location.py\", line 256, in _init_common"
+      },
+      {
+        "line": 842,
+        "text": "    assert num_physical_experts % ep_size == 0"
+      },
+      {
+        "line": 843,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 844,
+        "text": "AssertionError"
+      },
+      {
+        "line": 845,
+        "text": ""
+      },
+      {
+        "line": 846,
+        "text": "[2026-11-22 18:03:57 TP10 EP10] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 847,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py\", line 5841, in run_scheduler_process"
+      },
+      {
+        "line": 872,
+        "text": "    common = ExpertLocationMetadata._init_common(model_config)"
+      },
+      {
+        "line": 873,
+        "text": "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 874,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/eplb/expert_location.py\", line 256, in _init_common"
+      },
+      {
+        "line": 875,
+        "text": "    assert num_physical_experts % ep_size == 0"
+      },
+      {
+        "line": 876,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 877,
+        "text": "AssertionError"
+      },
+      {
+        "line": 878,
+        "text": ""
+      },
+      {
+        "line": 879,
+        "text": "/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py:-1: ResourceWarning: Unclosed socket <zmq.Socket(zmq.DEALER) at 0xfffb2443f460>"
+      },
+      {
+        "line": 880,
+        "text": "[2026-11-22 18:03:57 TP5 EP5] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 906,
+        "text": "    common = ExpertLocationMetadata._init_common(model_config)"
+      },
+      {
+        "line": 907,
+        "text": "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 908,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/eplb/expert_location.py\", line 256, in _init_common"
+      },
+      {
+        "line": 909,
+        "text": "    assert num_physical_experts % ep_size == 0"
+      },
+      {
+        "line": 910,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 911,
+        "text": "AssertionError"
+      },
+      {
+        "line": 912,
+        "text": ""
+      },
+      {
+        "line": 913,
+        "text": "/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py:-1: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0xfffb2443f310>"
+      },
+      {
+        "line": 914,
+        "text": "[2026-11-22 18:03:57 TP9 EP9] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 940,
+        "text": "    common = ExpertLocationMetadata._init_common(model_config)"
+      },
+      {
+        "line": 941,
+        "text": "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 942,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/eplb/expert_location.py\", line 256, in _init_common"
+      },
+      {
+        "line": 943,
+        "text": "    assert num_physical_experts % ep_size == 0"
+      },
+      {
+        "line": 944,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 945,
+        "text": "AssertionError"
+      },
+      {
+        "line": 946,
+        "text": ""
+      },
+      {
+        "line": 947,
+        "text": "/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py:-1: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0xfffb2443f380>"
+      },
+      {
+        "line": 948,
+        "text": "[2026-11-22 18:03:57 TP13 EP13] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 974,
+        "text": "    common = ExpertLocationMetadata._init_common(model_config)"
+      },
+      {
+        "line": 975,
+        "text": "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 976,
+        "text": "  File \"/sgl-workspace/sglang/python/sglang/srt/eplb/expert_location.py\", line 256, in _init_common"
+      },
+      {
+        "line": 977,
+        "text": "    assert num_physical_experts % ep_size == 0"
+      },
+      {
+        "line": 978,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 979,
+        "text": "AssertionError"
+      },
+      {
+        "line": 980,
+        "text": ""
+      },
+      {
+        "line": 981,
+        "text": "/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py:-1: ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0xfffb2443f3f0>"
+      }
+    ],
+    "conclusion": "EP16 with one global redundant expert means 257 physical experts, rejected by uniform-layout assertion; service K1 arm NOT_RUN."
+  },
+  "NATIVE_ONLINE_REBALANCE_BLOCKER": {
+    "log": "logs/eplb_online_eplb_online_8k/server.log",
+    "matches": [
+      "rebalance start",
+      "storage_offset must be 0",
+      "NPU out of memory",
+      "rebalance end"
+    ],
+    "selected": [
+      {
+        "line": 1239,
+        "text": "[2026-11-22 18:51:11 TP6 EP6] multimem all-gather disabled (SymmetricMemory does not support device type cuda)"
+      },
+      {
+        "line": 1240,
+        "text": "[2026-11-22 18:51:11 TP5 EP5] multimem all-gather disabled (SymmetricMemory does not support device type cuda)"
+      },
+      {
+        "line": 1241,
+        "text": "[2026-11-22 18:51:12 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 6, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.12"
+      },
+      {
+        "line": 1242,
+        "text": "[2026-11-22 18:51:13 TP0 EP0] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1243,
+        "text": "[2026-11-22 18:51:13 TP4 EP4] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1244,
+        "text": "[2026-11-22 18:51:13 TP10 EP10] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1245,
+        "text": "[2026-11-22 18:51:13 TP7 EP7] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1246,
+        "text": "[2026-11-22 18:51:13 TP1 EP1] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1247,
+        "text": "[2026-11-22 18:51:13 TP11 EP11] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1248,
+        "text": "[2026-11-22 18:51:13 TP5 EP5] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1249,
+        "text": "[2026-11-22 18:51:13 TP13 EP13] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1250,
+        "text": "[2026-11-22 18:51:13 TP8 EP8] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1251,
+        "text": "[2026-11-22 18:51:13 TP6 EP6] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1252,
+        "text": "[2026-11-22 18:51:13 TP14 EP14] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1253,
+        "text": "[2026-11-22 18:51:13 TP12 EP12] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1254,
+        "text": "[2026-11-22 18:51:13 TP3 EP3] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1255,
+        "text": "[2026-11-22 18:51:13 TP9 EP9] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1256,
+        "text": "[2026-11-22 18:51:13 TP2 EP2] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1257,
+        "text": "[2026-11-22 18:51:13 TP15 EP15] [EPLBManager] rebalance start"
+      },
+      {
+        "line": 1258,
+        "text": "[2026-11-22 18:51:13 TP0 EP0] Resetting ExpertDistributionRecorder..."
+      },
+      {
+        "line": 1259,
+        "text": "[2026-11-22 18:51:13 TP10 EP10] Resetting ExpertDistributionRecorder..."
+      },
+      {
+        "line": 1260,
+        "text": "[2026-11-22 18:51:13 TP11 EP11] Resetting ExpertDistributionRecorder..."
+      },
+      {
+        "line": 1327,
+        "text": "  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py\", line 2536, in irecv"
+      },
+      {
+        "line": 1328,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1329,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1330,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1331,
+        "text": "[ERROR] 2026-11-22-18:51:15 (PID:596, Device:7, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1332,
+        "text": ""
+      },
+      {
+        "line": 1333,
+        "text": "[2026-11-22 18:51:15 TP6 EP6] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1386,
+        "text": "  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py\", line 2536, in irecv"
+      },
+      {
+        "line": 1387,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1388,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1389,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1390,
+        "text": "[ERROR] 2026-11-22-18:51:15 (PID:595, Device:6, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1391,
+        "text": ""
+      },
+      {
+        "line": 1392,
+        "text": "[2026-11-22 18:51:15 TP8 EP8] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1445,
+        "text": "  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py\", line 2536, in irecv"
+      },
+      {
+        "line": 1446,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1447,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1448,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1449,
+        "text": "[ERROR] 2026-11-22-18:51:15 (PID:597, Device:8, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1450,
+        "text": ""
+      },
+      {
+        "line": 1451,
+        "text": "[2026-11-22 18:51:15 TP10 EP10] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1504,
+        "text": "  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py\", line 2536, in irecv"
+      },
+      {
+        "line": 1505,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1506,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1507,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1508,
+        "text": "[ERROR] 2026-11-22-18:51:15 (PID:599, Device:10, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1509,
+        "text": ""
+      },
+      {
+        "line": 1510,
+        "text": "[2026-11-22 18:51:15 TP1 EP1] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1563,
+        "text": "  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py\", line 2536, in irecv"
+      },
+      {
+        "line": 1564,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1565,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1566,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1567,
+        "text": "[ERROR] 2026-11-22-18:51:15 (PID:590, Device:1, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1568,
+        "text": ""
+      },
+      {
+        "line": 1569,
+        "text": "[2026-11-22 18:51:15 TP13 EP13] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1622,
+        "text": "  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py\", line 2536, in irecv"
+      },
+      {
+        "line": 1623,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1624,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1625,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1626,
+        "text": "[ERROR] 2026-11-22-18:51:15 (PID:602, Device:13, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1627,
+        "text": ""
+      },
+      {
+        "line": 1628,
+        "text": "[2026-11-22 18:51:15] SIGQUIT received. signum=None, frame=None. It usually means one child failed."
+      },
+      {
+        "line": 1683,
+        "text": "  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py\", line 2536, in irecv"
+      },
+      {
+        "line": 1684,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      },
+      {
+        "line": 1685,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1686,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1687,
+        "text": "[ERROR] 2026-11-22-18:51:15 (PID:601, Device:12, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1688,
+        "text": ""
+      },
+      {
+        "line": 1689,
+        "text": "[2026-11-22 18:51:15 TP15 EP15] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1742,
+        "text": "  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py\", line 2491, in isend"
+      },
+      {
+        "line": 1743,
+        "text": "    return group.send([tensor], group_dst, tag)"
+      },
+      {
+        "line": 1744,
+        "text": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+      },
+      {
+        "line": 1745,
+        "text": "RuntimeError: For a tensor of internal format, it's storage_offset must be 0"
+      },
+      {
+        "line": 1746,
+        "text": "[ERROR] 2026-11-22-18:51:15 (PID:604, Device:15, RankID:-1) ERR02007 DIST feature not supported"
+      },
+      {
+        "line": 1747,
+        "text": ""
+      },
+      {
+        "line": 1748,
+        "text": "[2026-11-22 18:51:15 TP9 EP9] Scheduler hit an exception: Traceback (most recent call last):"
+      },
+      {
+        "line": 1801,
+        "text": "  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py\", line 2536, in irecv"
+      },
+      {
+        "line": 1802,
+        "text": "    return group.recv([tensor], group_src, tag)"
+      }
+    ],
+    "conclusion": "All ranks entered rebalance; no rebalance end. Internal-format storage-offset failure and 206/410 MiB OOM occurred. No completed online reorder-wait number."
+  },
+  "EPLB_32K_CAPACITY_BLOCKER": {
+    "log": "logs/eplb_static_eplb_static_8k/server.log",
+    "matches": [
+      "Input length (32741 tokens) exceeds the maximum allowed length (27386 tokens)"
+    ],
+    "selected": [
+      {
+        "line": 1312,
+        "text": "[2026-11-22 18:47:29] INFO:     127.0.0.1:16946 - \"POST /v1/chat/completions HTTP/1.1\" 200 OK"
+      },
+      {
+        "line": 1313,
+        "text": "[2026-11-22 18:47:39 TP0 EP0] Decode batch, #running-req: 1, #token: 16512, token usage: 0.60, npu graph: False, gen throughput (token/s): 1.60, #queue-req: 0"
+      },
+      {
+        "line": 1314,
+        "text": "[2026-11-22 18:47:46 TP0 EP0] Input length (32741 tokens) exceeds the maximum allowed length (27386 tokens). Use a shorter input or enable --allow-auto-truncate., self.rid='4ac312e529ce4a7eadf0999c6359ef3a'"
+      },
+      {
+        "line": 1315,
+        "text": "[2026-11-22 18:47:46 TP0 EP0] Prefill batch, #new-seq: 1, #new-token: 1, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, #pending-token: 0, npu graph: False, input throughput (token/s): 0.06"
+      },
+      {
+        "line": 1316,
+        "text": "[2026-11-22 18:47:46] INFO:     127.0.0.1:27666 - \"POST /v1/chat/completions HTTP/1.1\" 200 OK"
+      }
+    ],
+    "conclusion": "Static EPLB +16 left max_total_tokens=27392, so the 32K prompt could not be compared."
+  },
+  "EP32_NOT_RUN": {
+    "conclusion": "EP16 already confirms the K1 uniform physical-layout blocker. Without altering that contract, a formal three-arm EP32 service cannot be constructed in this round."
+  }
+}

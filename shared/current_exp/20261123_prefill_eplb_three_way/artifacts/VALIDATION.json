@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": {
+    "8k": {
+      "ranks": 16,
+      "reps": 10,
+      "rows_per_rank": 512,
+      "k1_slot_owner": 0,
+      "status": "PASS"
+    },
+    "16k": {
+      "ranks": 16,
+      "reps": 10,
+      "rows_per_rank": 1024,
+      "k1_slot_owner": 0,
+      "status": "PASS"
+    },
+    "32k": {
+      "ranks": 16,
+      "reps": 10,
+      "rows_per_rank": 2047,
+      "k1_slot_owner": 0,
+      "status": "PASS"
+    }
+  },
+  "errors": [],
+  "scope": "EP16 routed-MoE replay, 3 sizes, 16 ranks, 10 paired repetitions; service and blocker evidence summarized separately"
+}

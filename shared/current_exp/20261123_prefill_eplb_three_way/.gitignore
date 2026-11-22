@@ -1,0 +1,7 @@
+*.pyc
+__pycache__/
+*.pt
+*.log
+logs/
+artifacts/replay16_*/
+artifacts/analysis_stdout.json

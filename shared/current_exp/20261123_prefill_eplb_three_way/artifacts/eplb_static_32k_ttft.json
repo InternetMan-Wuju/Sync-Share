@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:18023",
+  "prompt": "prompts/prompt_32k.txt",
+  "prompt_tokens_hint": 32729,
+  "rows": [
+    {
+      "ttft_s": null,
+      "ttfb_s": 0.6716712490888312,
+      "total_s": 0.6717615900561213,
+      "prompt_sha256": "ddfffc791ce5a35d4d0b3ca627c455ffab3ece15a8a59ffbbafb7141847a0561",
+      "input_chars": 154490,
+      "output_chars": 0,
+      "output_tail": "",
+      "usage": null,
+      "finish_reason": null,
+      "phase": "measured",
+      "rep": 0
+    }
+  ]
+}

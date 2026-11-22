@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:18023",
+  "prompt": "prompts/prompt_16k.txt",
+  "prompt_tokens_hint": 16372,
+  "rows": [
+    {
+      "ttft_s": 5.368361225002445,
+      "ttfb_s": 5.368321994901635,
+      "total_s": 20.28276609198656,
+      "prompt_sha256": "8399167a9995509574b166ee2c58c61548699865595698ad8a60c0e47f334f2c",
+      "input_chars": 63696,
+      "output_chars": 60,
+      "output_tail": "1. **分析请求：**\n    *   **用户：** 要求基于提供的上下文，用中文简要说明这段内容主要在讨论什么，并",
+      "usage": null,
+      "finish_reason": "length",
+      "phase": "measured",
+      "rep": 0
+    }
+  ]
+}

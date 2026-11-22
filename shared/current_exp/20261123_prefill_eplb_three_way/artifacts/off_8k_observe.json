@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:18023",
+  "prompt": "prompts/prompt_8k.txt",
+  "prompt_tokens_hint": 8176,
+  "rows": [
+    {
+      "ttft_s": null,
+      "ttfb_s": 0.5390332998940721,
+      "total_s": 0.5391386109404266,
+      "prompt_sha256": "85370921bcd6ce6c7cf146802ceb5bfe9dffde971ef3f4098eade85df6e49425",
+      "input_chars": 29983,
+      "output_chars": 0,
+      "output_tail": "",
+      "usage": null,
+      "finish_reason": null,
+      "phase": "measured",
+      "rep": 0
+    }
+  ]
+}

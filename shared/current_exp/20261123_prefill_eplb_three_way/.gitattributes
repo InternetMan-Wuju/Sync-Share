@@ -1,0 +1,2 @@
+prompts/*.txt binary
+artifacts/*.csv text eol=lf

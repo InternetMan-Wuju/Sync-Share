@@ -1,0 +1,88 @@
+{
+  "algorithm": "target-image sglang.srt.eplb.eplb_algorithms.deepseek.rebalance_experts",
+  "algorithm_sha256": "7c42cd0cb0f03da5dc68d13d38833f2986625ac96813dae4853521341cc5219c",
+  "ep": 16,
+  "logical_experts": 256,
+  "physical_experts": 272,
+  "local_physical_experts_per_rank": 17,
+  "redundant_experts": 16,
+  "top_hot": [
+    {
+      "logical": 163,
+      "tasks": 1671
+    },
+    {
+      "logical": 133,
+      "tasks": 1285
+    },
+    {
+      "logical": 200,
+      "tasks": 1234
+    },
+    {
+      "logical": 123,
+      "tasks": 934
+    },
+    {
+      "logical": 77,
+      "tasks": 858
+    },
+    {
+      "logical": 159,
+      "tasks": 839
+    },
+    {
+      "logical": 41,
+      "tasks": 682
+    },
+    {
+      "logical": 115,
+      "tasks": 681
+    },
+    {
+      "logical": 26,
+      "tasks": 670
+    },
+    {
+      "logical": 244,
+      "tasks": 664
+    },
+    {
+      "logical": 88,
+      "tasks": 645
+    },
+    {
+      "logical": 209,
+      "tasks": 642
+    },
+    {
+      "logical": 103,
+      "tasks": 638
+    },
+    {
+      "logical": 231,
+      "tasks": 628
+    },
+    {
+      "logical": 39,
+      "tasks": 611
+    },
+    {
+      "logical": 211,
+      "tasks": 611
+    }
+  ],
+  "service_layout_active_evidence": "logs/eplb_static_eplb_static_8k/server.log: init_expert_location from init_by_mapping",
+  "service_actual_8k": {
+    "total_tasks": 65536,
+    "replica_tasks": 12061,
+    "definition": "tasks whose dispatched physical expert is a logical expert with >1 replicas",
+    "rank_details": "artifacts/calibration/eplb_static_service_replica_tasks.json"
+  },
+  "replay_actual": {
+    "8k": 12071,
+    "16k": 18111,
+    "32k": 23566
+  },
+  "status": "PASS_LAYOUT_ACTIVE_ACTUAL_TASKS_NONZERO"
+}

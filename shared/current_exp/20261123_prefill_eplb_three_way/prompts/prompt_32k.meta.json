@@ -1,0 +1,896 @@
+{
+  "target_tokens": 32768,
+  "actual_tokens": 32729,
+  "file": "/home/chengyetai/workspace/Share/shared/current_exp/20261116_compare_eplb/prompts/prompt_32k.txt",
+  "sha256": "ddfffc791ce5a35d4d0b3ca627c455ffab3ece15a8a59ffbbafb7141847a0561",
+  "source": "/data_lib/wzc/data/sharegpt.json",
+  "human_only": true,
+  "references": [
+    {
+      "conversation_id": "UGg8d44_8",
+      "chars": 12586,
+      "tokens_used": 2663
+    },
+    {
+      "conversation_id": "UGg8d44_9",
+      "chars": 211,
+      "tokens_used": 47
+    },
+    {
+      "conversation_id": "UGg8d44_9",
+      "chars": 175,
+      "tokens_used": 40
+    },
+    {
+      "conversation_id": "UGg8d44_9",
+      "chars": 103,
+      "tokens_used": 25
+    },
+    {
+      "conversation_id": "UGg8d44_9",
+      "chars": 94,
+      "tokens_used": 21
+    },
+    {
+      "conversation_id": "UGg8d44_9",
+      "chars": 98,
+      "tokens_used": 24
+    },
+    {
+      "conversation_id": "UGg8d44_9",
+      "chars": 408,
+      "tokens_used": 98
+    },
+    {
+      "conversation_id": "UGg8d44_25",
+      "chars": 133,
+      "tokens_used": 33
+    },
+    {
+      "conversation_id": "UGg8d44_25",
+      "chars": 324,
+      "tokens_used": 71
+    },
+    {
+      "conversation_id": "UGg8d44_25",
+      "chars": 158,
+      "tokens_used": 33
+    },
+    {
+      "conversation_id": "UGg8d44_25",
+      "chars": 531,
+      "tokens_used": 123
+    },
+    {
+      "conversation_id": "UGg8d44_37",
+      "chars": 168,
+      "tokens_used": 37
+    },
+    {
+      "conversation_id": "UGg8d44_37",
+      "chars": 565,
+      "tokens_used": 126
+    },
+    {
+      "conversation_id": "UGg8d44_47",
+      "chars": 136,
+      "tokens_used": 31
+    },
+    {
+      "conversation_id": "UGg8d44_47",
+      "chars": 97,
+      "tokens_used": 25
+    },
+    {
+      "conversation_id": "UGg8d44_47",
+      "chars": 87,
+      "tokens_used": 23
+    },
+    {
+      "conversation_id": "UGg8d44_47",
+      "chars": 145,
+      "tokens_used": 29
+    },
+    {
+      "conversation_id": "UGg8d44_47",
+      "chars": 81,
+      "tokens_used": 19
+    },
+    {
+      "conversation_id": "UGg8d44_47",
+      "chars": 209,
+      "tokens_used": 37
+    },
+    {
+      "conversation_id": "UGg8d44_60",
+      "chars": 1745,
+      "tokens_used": 314
+    },
+    {
+      "conversation_id": "UGg8d44_60",
+      "chars": 179,
+      "tokens_used": 39
+    },
+    {
+      "conversation_id": "otSTSpB_0",
+      "chars": 80,
+      "tokens_used": 14
+    },
+    {
+      "conversation_id": "ncJJfCQ_0",
+      "chars": 1687,
+      "tokens_used": 398
+    },
+    {
+      "conversation_id": "ncJJfCQ_0",
+      "chars": 267,
+      "tokens_used": 58
+    },
+    {
+      "conversation_id": "j0gtTrY_0",
+      "chars": 675,
+      "tokens_used": 134
+    },
+    {
+      "conversation_id": "j0gtTrY_0",
+      "chars": 83,
+      "tokens_used": 19
+    },
+    {
+      "conversation_id": "j0gtTrY_0",
+      "chars": 100,
+      "tokens_used": 20
+    },
+    {
+      "conversation_id": "dcTB2RK_0",
+      "chars": 190,
+      "tokens_used": 43
+    },
+    {
+      "conversation_id": "dcTB2RK_0",
+      "chars": 124,
+      "tokens_used": 29
+    },
+    {
+      "conversation_id": "dcTB2RK_0",
+      "chars": 188,
+      "tokens_used": 41
+    },
+    {
+      "conversation_id": "dcTB2RK_0",
+      "chars": 102,
+      "tokens_used": 20
+    },
+    {
+      "conversation_id": "ZUkSe7V_0",
+      "chars": 11151,
+      "tokens_used": 1989
+    },
+    {
+      "conversation_id": "ZUkSe7V_1",
+      "chars": 138,
+      "tokens_used": 26
+    },
+    {
+      "conversation_id": "ZUkSe7V_1",
+      "chars": 183,
+      "tokens_used": 33
+    },
+    {
+      "conversation_id": "ZUkSe7V_1",
+      "chars": 473,
+      "tokens_used": 80
+    },
+    {
+      "conversation_id": "LINiOhS_0",
+      "chars": 96,
+      "tokens_used": 23
+    },
+    {
+      "conversation_id": "LINiOhS_0",
+      "chars": 3466,
+      "tokens_used": 681
+    },
+    {
+      "conversation_id": "LINiOhS_4",
+      "chars": 7922,
+      "tokens_used": 1616
+    },
+    {
+      "conversation_id": "LINiOhS_8",
+      "chars": 5418,
+      "tokens_used": 1081
+    },
+    {
+      "conversation_id": "zHkTtNj_0",
+      "chars": 1118,
+      "tokens_used": 299
+    },
+    {
+      "conversation_id": "Ys4AKnP_0",
+      "chars": 243,
+      "tokens_used": 49
+    },
+    {
+      "conversation_id": "ACt45V7_0",
+      "chars": 1682,
+      "tokens_used": 340
+    },
+    {
+      "conversation_id": "ACt45V7_0",
+      "chars": 200,
+      "tokens_used": 39
+    },
+    {
+      "conversation_id": "ACt45V7_0",
+      "chars": 316,
+      "tokens_used": 67
+    },
+    {
+      "conversation_id": "ACt45V7_0",
+      "chars": 485,
+      "tokens_used": 112
+    },
+    {
+      "conversation_id": "ACt45V7_0",
+      "chars": 200,
+      "tokens_used": 47
+    },
+    {
+      "conversation_id": "ACt45V7_11",
+      "chars": 103,
+      "tokens_used": 19
+    },
+    {
+      "conversation_id": "ACt45V7_11",
+      "chars": 83,
+      "tokens_used": 16
+    },
+    {
+      "conversation_id": "ACt45V7_11",
+      "chars": 148,
+      "tokens_used": 29
+    },
+    {
+      "conversation_id": "ACt45V7_11",
+      "chars": 510,
+      "tokens_used": 108
+    },
+    {
+      "conversation_id": "ACt45V7_11",
+      "chars": 238,
+      "tokens_used": 53
+    },
+    {
+      "conversation_id": "ACt45V7_11",
+      "chars": 155,
+      "tokens_used": 31
+    },
+    {
+      "conversation_id": "fud9GZG_0",
+      "chars": 2122,
+      "tokens_used": 408
+    },
+    {
+      "conversation_id": "fud9GZG_0",
+      "chars": 97,
+      "tokens_used": 14
+    },
+    {
+      "conversation_id": "IJ4n5em_0",
+      "chars": 346,
+      "tokens_used": 67
+    },
+    {
+      "conversation_id": "aFQ1wf6_0",
+      "chars": 150,
+      "tokens_used": 33
+    },
+    {
+      "conversation_id": "aFQ1wf6_0",
+      "chars": 82,
+      "tokens_used": 17
+    },
+    {
+      "conversation_id": "aFQ1wf6_0",
+      "chars": 90,
+      "tokens_used": 19
+    },
+    {
+      "conversation_id": "NhvViwM_0",
+      "chars": 266,
+      "tokens_used": 72
+    },
+    {
+      "conversation_id": "mxEe31E_0",
+      "chars": 96,
+      "tokens_used": 15
+    },
+    {
+      "conversation_id": "etlVnIy_0",
+      "chars": 106,
+      "tokens_used": 20
+    },
+    {
+      "conversation_id": "o67mG13_0",
+      "chars": 110,
+      "tokens_used": 21
+    },
+    {
+      "conversation_id": "Dk6qZaf_0",
+      "chars": 156,
+      "tokens_used": 31
+    },
+    {
+      "conversation_id": "tgKByb7_0",
+      "chars": 108,
+      "tokens_used": 17
+    },
+    {
+      "conversation_id": "tgKByb7_0",
+      "chars": 124,
+      "tokens_used": 20
+    },
+    {
+      "conversation_id": "lV4R2w4_0",
+      "chars": 111,
+      "tokens_used": 21
+    },
+    {
+      "conversation_id": "SWdKUmo_0",
+      "chars": 125,
+      "tokens_used": 34
+    },
+    {
+      "conversation_id": "SWdKUmo_0",
+      "chars": 100,
+      "tokens_used": 27
+    },
+    {
+      "conversation_id": "SWdKUmo_0",
+      "chars": 101,
+      "tokens_used": 19
+    },
+    {
+      "conversation_id": "SWdKUmo_0",
+      "chars": 141,
+      "tokens_used": 39
+    },
+    {
+      "conversation_id": "SWdKUmo_0",
+      "chars": 80,
+      "tokens_used": 18
+    },
+    {
+      "conversation_id": "SWdKUmo_0",
+      "chars": 347,
+      "tokens_used": 84
+    },
+    {
+      "conversation_id": "SWdKUmo_0",
+      "chars": 104,
+      "tokens_used": 21
+    },
+    {
+      "conversation_id": "SWdKUmo_0",
+      "chars": 154,
+      "tokens_used": 43
+    },
+    {
+      "conversation_id": "SWdKUmo_21",
+      "chars": 84,
+      "tokens_used": 18
+    },
+    {
+      "conversation_id": "tAUIJDD_0",
+      "chars": 82,
+      "tokens_used": 15
+    },
+    {
+      "conversation_id": "tAUIJDD_0",
+      "chars": 140,
+      "tokens_used": 26
+    },
+    {
+      "conversation_id": "tAUIJDD_0",
+      "chars": 353,
+      "tokens_used": 64
+    },
+    {
+      "conversation_id": "SaIKRQ4_0",
+      "chars": 482,
+      "tokens_used": 107
+    },
+    {
+      "conversation_id": "tFAvE80_0",
+      "chars": 86,
+      "tokens_used": 18
+    },
+    {
+      "conversation_id": "tFAvE80_0",
+      "chars": 134,
+      "tokens_used": 26
+    },
+    {
+      "conversation_id": "tFAvE80_13",
+      "chars": 86,
+      "tokens_used": 17
+    },
+    {
+      "conversation_id": "tFAvE80_13",
+      "chars": 100,
+      "tokens_used": 19
+    },
+    {
+      "conversation_id": "tFAvE80_13",
+      "chars": 84,
+      "tokens_used": 17
+    },
+    {
+      "conversation_id": "tFAvE80_21",
+      "chars": 83,
+      "tokens_used": 17
+    },
+    {
+      "conversation_id": "tFAvE80_31",
+      "chars": 88,
+      "tokens_used": 18
+    },
+    {
+      "conversation_id": "tFAvE80_39",
+      "chars": 94,
+      "tokens_used": 17
+    },
+    {
+      "conversation_id": "aureXq6_9",
+      "chars": 102,
+      "tokens_used": 21
+    },
+    {
+      "conversation_id": "aureXq6_9",
+      "chars": 122,
+      "tokens_used": 28
+    },
+    {
+      "conversation_id": "jjwRxUY_0",
+      "chars": 129,
+      "tokens_used": 30
+    },
+    {
+      "conversation_id": "2wtLdZm_0",
+      "chars": 85,
+      "tokens_used": 19
+    },
+    {
+      "conversation_id": "2wtLdZm_0",
+      "chars": 82,
+      "tokens_used": 17
+    },
+    {
+      "conversation_id": "2wtLdZm_0",
+      "chars": 174,
+      "tokens_used": 38
+    },
+    {
+      "conversation_id": "2wtLdZm_0",
+      "chars": 82,
+      "tokens_used": 17
+    },
+    {
+      "conversation_id": "uXyoBKr_0",
+      "chars": 96,
+      "tokens_used": 25
+    },
+    {
+      "conversation_id": "uXyoBKr_0",
+      "chars": 351,
+      "tokens_used": 78
+    },
+    {
+      "conversation_id": "uXyoBKr_5",
+      "chars": 81,
+      "tokens_used": 15
+    },
+    {
+      "conversation_id": "uXyoBKr_5",
+      "chars": 241,
+      "tokens_used": 47
+    },
+    {
+      "conversation_id": "uXyoBKr_5",
+      "chars": 209,
+      "tokens_used": 41
+    },
+    {
+      "conversation_id": "w31Bk3K_0",
+      "chars": 104,
+      "tokens_used": 29
+    },
+    {
+      "conversation_id": "w31Bk3K_15",
+      "chars": 94,
+      "tokens_used": 26
+    },
+    {
+      "conversation_id": "xd92L6L_0",
+      "chars": 1471,
+      "tokens_used": 300
+    },
+    {
+      "conversation_id": "xd92L6L_0",
+      "chars": 343,
+      "tokens_used": 77
+    },
+    {
+      "conversation_id": "xd92L6L_0",
+      "chars": 97,
+      "tokens_used": 23
+    },
+    {
+      "conversation_id": "xd92L6L_0",
+      "chars": 333,
+      "tokens_used": 93
+    },
+    {
+      "conversation_id": "xd92L6L_15",
+      "chars": 82,
+      "tokens_used": 18
+    },
+    {
+      "conversation_id": "xd92L6L_15",
+      "chars": 333,
+      "tokens_used": 95
+    },
+    {
+      "conversation_id": "xd92L6L_15",
+      "chars": 106,
+      "tokens_used": 24
+    },
+    {
+      "conversation_id": "xd92L6L_15",
+      "chars": 841,
+      "tokens_used": 206
+    },
+    {
+      "conversation_id": "xd92L6L_15",
+      "chars": 102,
+      "tokens_used": 20
+    },
+    {
+      "conversation_id": "xd92L6L_15",
+      "chars": 139,
+      "tokens_used": 36
+    },
+    {
+      "conversation_id": "xd92L6L_15",
+      "chars": 100,
+      "tokens_used": 26
+    },
+    {
+      "conversation_id": "xd92L6L_15",
+      "chars": 103,
+      "tokens_used": 22
+    },
+    {
+      "conversation_id": "xd92L6L_15",
+      "chars": 314,
+      "tokens_used": 64
+    },
+    {
+      "conversation_id": "xd92L6L_39",
+      "chars": 1016,
+      "tokens_used": 248
+    },
+    {
+      "conversation_id": "xd92L6L_39",
+      "chars": 292,
+      "tokens_used": 65
+    },
+    {
+      "conversation_id": "xd92L6L_39",
+      "chars": 472,
+      "tokens_used": 122
+    },
+    {
+      "conversation_id": "xd92L6L_48",
+      "chars": 1088,
+      "tokens_used": 266
+    },
+    {
+      "conversation_id": "xd92L6L_48",
+      "chars": 1122,
+      "tokens_used": 273
+    },
+    {
+      "conversation_id": "xd92L6L_48",
+      "chars": 145,
+      "tokens_used": 33
+    },
+    {
+      "conversation_id": "xd92L6L_48",
+      "chars": 376,
+      "tokens_used": 102
+    },
+    {
+      "conversation_id": "xd92L6L_63",
+      "chars": 105,
+      "tokens_used": 22
+    },
+    {
+      "conversation_id": "xd92L6L_63",
+      "chars": 86,
+      "tokens_used": 19
+    },
+    {
+      "conversation_id": "xd92L6L_63",
+      "chars": 1631,
+      "tokens_used": 334
+    },
+    {
+      "conversation_id": "xd92L6L_63",
+      "chars": 282,
+      "tokens_used": 56
+    },
+    {
+      "conversation_id": "xd92L6L_63",
+      "chars": 116,
+      "tokens_used": 28
+    },
+    {
+      "conversation_id": "xd92L6L_80",
+      "chars": 985,
+      "tokens_used": 247
+    },
+    {
+      "conversation_id": "xd92L6L_80",
+      "chars": 888,
+      "tokens_used": 226
+    },
+    {
+      "conversation_id": "xd92L6L_80",
+      "chars": 104,
+      "tokens_used": 23
+    },
+    {
+      "conversation_id": "xd92L6L_80",
+      "chars": 354,
+      "tokens_used": 84
+    },
+    {
+      "conversation_id": "xd92L6L_80",
+      "chars": 324,
+      "tokens_used": 78
+    },
+    {
+      "conversation_id": "xd92L6L_80",
+      "chars": 303,
+      "tokens_used": 68
+    },
+    {
+      "conversation_id": "xd92L6L_80",
+      "chars": 182,
+      "tokens_used": 37
+    },
+    {
+      "conversation_id": "xd92L6L_80",
+      "chars": 122,
+      "tokens_used": 23
+    },
+    {
+      "conversation_id": "xd92L6L_95",
+      "chars": 120,
+      "tokens_used": 25
+    },
+    {
+      "conversation_id": "xd92L6L_95",
+      "chars": 333,
+      "tokens_used": 75
+    },
+    {
+      "conversation_id": "eYj4Nqi_0",
+      "chars": 347,
+      "tokens_used": 75
+    },
+    {
+      "conversation_id": "50SbvAt_0",
+      "chars": 255,
+      "tokens_used": 49
+    },
+    {
+      "conversation_id": "50SbvAt_0",
+      "chars": 85,
+      "tokens_used": 16
+    },
+    {
+      "conversation_id": "zWauOni_0",
+      "chars": 101,
+      "tokens_used": 21
+    },
+    {
+      "conversation_id": "MKrcrHj_0",
+      "chars": 99,
+      "tokens_used": 17
+    },
+    {
+      "conversation_id": "6CWcc2w_0",
+      "chars": 2420,
+      "tokens_used": 438
+    },
+    {
+      "conversation_id": "6CWcc2w_0",
+      "chars": 289,
+      "tokens_used": 61
+    },
+    {
+      "conversation_id": "VZVve87_0",
+      "chars": 817,
+      "tokens_used": 336
+    },
+    {
+      "conversation_id": "jamWAp9_0",
+      "chars": 156,
+      "tokens_used": 50
+    },
+    {
+      "conversation_id": "9UIByXH_0",
+      "chars": 289,
+      "tokens_used": 135
+    },
+    {
+      "conversation_id": "Ot1oxuK_0",
+      "chars": 1541,
+      "tokens_used": 402
+    },
+    {
+      "conversation_id": "gcVkCKD_0",
+      "chars": 585,
+      "tokens_used": 147
+    },
+    {
+      "conversation_id": "gcVkCKD_0",
+      "chars": 93,
+      "tokens_used": 18
+    },
+    {
+      "conversation_id": "gcVkCKD_0",
+      "chars": 81,
+      "tokens_used": 26
+    },
+    {
+      "conversation_id": "ZivWPmv_0",
+      "chars": 2993,
+      "tokens_used": 726
+    },
+    {
+      "conversation_id": "ZivWPmv_4",
+      "chars": 8305,
+      "tokens_used": 1984
+    },
+    {
+      "conversation_id": "WC5I3VQ_0",
+      "chars": 472,
+      "tokens_used": 99
+    },
+    {
+      "conversation_id": "eDt8ex9_0",
+      "chars": 100,
+      "tokens_used": 18
+    },
+    {
+      "conversation_id": "DOpwVfg_0",
+      "chars": 826,
+      "tokens_used": 150
+    },
+    {
+      "conversation_id": "DOpwVfg_0",
+      "chars": 441,
+      "tokens_used": 98
+    },
+    {
+      "conversation_id": "DOpwVfg_0",
+      "chars": 538,
+      "tokens_used": 117
+    },
+    {
+      "conversation_id": "DOpwVfg_0",
+      "chars": 391,
+      "tokens_used": 81
+    },
+    {
+      "conversation_id": "DOpwVfg_0",
+      "chars": 83,
+      "tokens_used": 17
+    },
+    {
+      "conversation_id": "DOpwVfg_11",
+      "chars": 297,
+      "tokens_used": 58
+    },
+    {
+      "conversation_id": "DOpwVfg_11",
+      "chars": 163,
+      "tokens_used": 29
+    },
+    {
+      "conversation_id": "DOpwVfg_11",
+      "chars": 220,
+      "tokens_used": 43
+    },
+    {
+      "conversation_id": "DOpwVfg_11",
+      "chars": 193,
+      "tokens_used": 37
+    },
+    {
+      "conversation_id": "WSGTmPU_0",
+      "chars": 96,
+      "tokens_used": 30
+    },
+    {
+      "conversation_id": "ltqfPQc_0",
+      "chars": 358,
+      "tokens_used": 73
+    },
+    {
+      "conversation_id": "ltqfPQc_9",
+      "chars": 99,
+      "tokens_used": 31
+    },
+    {
+      "conversation_id": "5IjWRg9_0",
+      "chars": 377,
+      "tokens_used": 78
+    },
+    {
+      "conversation_id": "5IjWRg9_0",
+      "chars": 231,
+      "tokens_used": 51
+    },
+    {
+      "conversation_id": "5IjWRg9_0",
+      "chars": 97,
+      "tokens_used": 17
+    },
+    {
+      "conversation_id": "aaTQJBE_0",
+      "chars": 268,
+      "tokens_used": 54
+    },
+    {
+      "conversation_id": "aaTQJBE_2",
+      "chars": 24933,
+      "tokens_used": 5191
+    },
+    {
+      "conversation_id": "aaTQJBE_3",
+      "chars": 152,
+      "tokens_used": 31
+    },
+    {
+      "conversation_id": "aaTQJBE_3",
+      "chars": 4934,
+      "tokens_used": 1045
+    },
+    {
+      "conversation_id": "aaTQJBE_3",
+      "chars": 184,
+      "tokens_used": 38
+    },
+    {
+      "conversation_id": "aaTQJBE_11",
+      "chars": 4140,
+      "tokens_used": 919
+    },
+    {
+      "conversation_id": "aaTQJBE_11",
+      "chars": 303,
+      "tokens_used": 72
+    },
+    {
+      "conversation_id": "aaTQJBE_22",
+      "chars": 29084,
+      "tokens_used": 3159
+    }
+  ],
+  "instruction": "\n\n请基于以上上下文，用中文简要说明这段内容主要在讨论什么，并给出一个结论。"
+}

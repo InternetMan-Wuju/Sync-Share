@@ -1,0 +1,56 @@
+{
+  "bytes": 37810176,
+  "source_rank": 10,
+  "dst_rank": 0,
+  "samples": [
+    {
+      "rep": 0,
+      "source_rank": 10,
+      "dst_rank": 0,
+      "bytes": 37810176,
+      "source_prepare_ms": 0.537735,
+      "transfer_ms": 1.295891,
+      "install_ms": 0.0
+    },
+    {
+      "rep": 1,
+      "source_rank": 10,
+      "dst_rank": 0,
+      "bytes": 37810176,
+      "source_prepare_ms": 0.388053,
+      "transfer_ms": 1.491654,
+      "install_ms": 0.0
+    },
+    {
+      "rep": 2,
+      "source_rank": 10,
+      "dst_rank": 0,
+      "bytes": 37810176,
+      "source_prepare_ms": 0.435434,
+      "transfer_ms": 0.692176,
+      "install_ms": 0.0
+    },
+    {
+      "rep": 3,
+      "source_rank": 10,
+      "dst_rank": 0,
+      "bytes": 37810176,
+      "source_prepare_ms": 0.394014,
+      "transfer_ms": 1.1902,
+      "install_ms": 0.0
+    },
+    {
+      "rep": 4,
+      "source_rank": 10,
+      "dst_rank": 0,
+      "bytes": 37810176,
+      "source_prepare_ms": 0.372743,
+      "transfer_ms": 1.209321,
+      "install_ms": 0.0
+    }
+  ],
+  "source_prepare_ms_median": 0.394014,
+  "transfer_ms_median": 1.209321,
+  "total_ms_median": 1.5842139999999998,
+  "note": "steady repeated copy after first lazy HCCL/format setup; does not include model weight load or dispatch"
+}

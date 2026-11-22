@@ -1,0 +1,32 @@
+[
+  {
+    "file": "prompts/prompt_16k.txt",
+    "sha256": "8399167a9995509574b166ee2c58c61548699865595698ad8a60c0e47f334f2c",
+    "chars": 63696,
+    "actual_tokens": 16372,
+    "target_tokens": 16384,
+    "source": "/data_lib/wzc/data/sharegpt.json",
+    "human_only": true,
+    "hotspot_class": "single natural observed prompt; no separate normal pair"
+  },
+  {
+    "file": "prompts/prompt_32k.txt",
+    "sha256": "ddfffc791ce5a35d4d0b3ca627c455ffab3ece15a8a59ffbbafb7141847a0561",
+    "chars": 154490,
+    "actual_tokens": 32729,
+    "target_tokens": 32768,
+    "source": "/data_lib/wzc/data/sharegpt.json",
+    "human_only": true,
+    "hotspot_class": "single natural observed prompt; no separate normal pair"
+  },
+  {
+    "file": "prompts/prompt_8k.txt",
+    "sha256": "85370921bcd6ce6c7cf146802ceb5bfe9dffde971ef3f4098eade85df6e49425",
+    "chars": 29983,
+    "actual_tokens": 8176,
+    "target_tokens": 8192,
+    "source": "/data_lib/wzc/data/sharegpt.json",
+    "human_only": true,
+    "hotspot_class": "single natural observed prompt; no separate normal pair"
+  }
+]
