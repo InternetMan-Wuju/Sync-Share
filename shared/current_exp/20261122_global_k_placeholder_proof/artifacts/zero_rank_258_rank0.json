@@ -1,0 +1,15 @@
+{
+  "rank": 0,
+  "legal_tokens_sent": 8,
+  "padding_tokens_sent": 0,
+  "empty_padding_comm": 128,
+  "empty_padding_rows_received": 8,
+  "legal_recv_tasks_rank": 64,
+  "combine_shape": [
+    8,
+    64
+  ],
+  "label_error": 0.0,
+  "correct": true,
+  "note": "rank1 is a zero-legal-task participant; one zero-weight padding token uses the empty comm id and is never treated as an expert task."
+}

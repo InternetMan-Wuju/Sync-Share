@@ -1,0 +1,19 @@
+{
+  "profile": "257",
+  "rank": 1,
+  "num_experts": 257,
+  "num_local_experts": 128,
+  "hidden_size": 128,
+  "top_k": 8,
+  "tokens_per_rank": 8,
+  "placeholder_mapping": false,
+  "runtime": {
+    "torch_npu": "2.10.0"
+  },
+  "dispatcher_class": "sglang.srt.layers.moe.token_dispatcher.deepep.DeepEPDispatcher",
+  "backend_mode": "DeepEPMode.NORMAL",
+  "constructor": "PASS",
+  "failure_type": "RuntimeError",
+  "failure_message": "shape '[2, 128]' is invalid for input of size 257",
+  "traceback": "Traceback (most recent call last):\n  File \"/runexp/scripts/native_interface_harness.py\", line 147, in main\n    dispatch_output = dispatcher.dispatch(hidden, topk_output)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py\", line 1019, in dispatch\n    ret = self.dispatch_b()\n          ^^^^^^^^^^^^^^^^^\n  File \"/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py\", line 1038, in dispatch_b\n    return self._get_impl().dispatch_b(*inner_state)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py\", line 571, in dispatch_b\n    ) = self._dispatch_core(hidden_states, topk_ids, topk_weights, previous_event)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py\", line 601, in _dispatch_core\n    ) = buffer.get_dispatch_layout(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/deep_ep/buffer.py\", line 248, in get_dispatch_layout\n    return self.normal_strategy.get_dispatch_layout(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/deep_ep/strategies/normal_strategy.py\", line 503, in get_dispatch_layout\n    num_local_tokens_per_expert.reshape(group_size, num_local_experts)\nRuntimeError: shape '[2, 128]' is invalid for input of size 257\n"
+}

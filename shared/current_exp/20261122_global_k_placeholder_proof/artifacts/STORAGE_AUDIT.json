@@ -1,0 +1,1504 @@
+{
+  "active_logical_experts": [
+    0,
+    1,
+    43,
+    127,
+    128,
+    129,
+    130,
+    255
+  ],
+  "rank_main_experts": {
+    "0": [
+      0,
+      1,
+      43,
+      127
+    ],
+    "1": [
+      128,
+      129,
+      130,
+      255
+    ]
+  },
+  "layers": [
+    49,
+    50
+  ],
+  "full_128_per_rank_main_library": false,
+  "main_storage_by_rank": {
+    "0": {
+      "entries": [
+        {
+          "layer": 49,
+          "expert": 0,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618080681984,
+          "storage_ptr": 20618080681984,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 0,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618024059392,
+          "storage_ptr": 20618024059392,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 0,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009466880,
+          "storage_ptr": 20618009466880,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 0,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009382912,
+          "storage_ptr": 20618009382912,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 0,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009424896,
+          "storage_ptr": 20618009424896,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 0,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009441792,
+          "storage_ptr": 20618009441792,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 1,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618135207936,
+          "storage_ptr": 20618135207936,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 1,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618053419008,
+          "storage_ptr": 20618053419008,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 1,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009412608,
+          "storage_ptr": 20618009412608,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 1,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009395712,
+          "storage_ptr": 20618009395712,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 1,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009500672,
+          "storage_ptr": 20618009500672,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 1,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009517568,
+          "storage_ptr": 20618009517568,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 43,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618189733888,
+          "storage_ptr": 20618189733888,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 43,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618038738944,
+          "storage_ptr": 20618038738944,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 43,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009609728,
+          "storage_ptr": 20618009609728,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 43,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009475584,
+          "storage_ptr": 20618009475584,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 43,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009567744,
+          "storage_ptr": 20618009567744,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 43,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009584640,
+          "storage_ptr": 20618009584640,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 127,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618216996864,
+          "storage_ptr": 20618216996864,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 127,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618107944960,
+          "storage_ptr": 20618107944960,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 127,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009488384,
+          "storage_ptr": 20618009488384,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 127,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009542656,
+          "storage_ptr": 20618009542656,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 127,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009643520,
+          "storage_ptr": 20618009643520,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 127,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009660416,
+          "storage_ptr": 20618009660416,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 0,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618271522816,
+          "storage_ptr": 20618271522816,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 0,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618120528384,
+          "storage_ptr": 20618120528384,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 0,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009555456,
+          "storage_ptr": 20618009555456,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 0,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009618432,
+          "storage_ptr": 20618009618432,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 0,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009710592,
+          "storage_ptr": 20618009710592,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 0,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009727488,
+          "storage_ptr": 20618009727488,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 1,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618298785792,
+          "storage_ptr": 20618298785792,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 1,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618162470912,
+          "storage_ptr": 20618162470912,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 1,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009631232,
+          "storage_ptr": 20618009631232,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 1,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009685504,
+          "storage_ptr": 20618009685504,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 1,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009777664,
+          "storage_ptr": 20618009777664,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 1,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009794560,
+          "storage_ptr": 20618009794560,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 43,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618353311744,
+          "storage_ptr": 20618353311744,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 43,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618175054336,
+          "storage_ptr": 20618175054336,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 43,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009698304,
+          "storage_ptr": 20618009698304,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 43,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009752576,
+          "storage_ptr": 20618009752576,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 43,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009844736,
+          "storage_ptr": 20618009844736,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 43,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009861632,
+          "storage_ptr": 20618009861632,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 127,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618380574720,
+          "storage_ptr": 20618380574720,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 127,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618244259840,
+          "storage_ptr": 20618244259840,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 127,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009765376,
+          "storage_ptr": 20618009765376,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 127,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009819648,
+          "storage_ptr": 20618009819648,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 127,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009911808,
+          "storage_ptr": 20618009911808,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 127,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009928704,
+          "storage_ptr": 20618009928704,
+          "storage_nbytes": 24576,
+          "offset": 0
+        }
+      ],
+      "unique_storage_count": 48,
+      "unique_bytes": 302481408,
+      "full_128_per_rank": false
+    },
+    "1": {
+      "entries": [
+        {
+          "layer": 49,
+          "expert": 128,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618080681984,
+          "storage_ptr": 20618080681984,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 128,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618024059392,
+          "storage_ptr": 20618024059392,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 128,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009467392,
+          "storage_ptr": 20618009467392,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 128,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009383424,
+          "storage_ptr": 20618009383424,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 128,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009425408,
+          "storage_ptr": 20618009425408,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 128,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009442304,
+          "storage_ptr": 20618009442304,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 129,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618135207936,
+          "storage_ptr": 20618135207936,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 129,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618053419008,
+          "storage_ptr": 20618053419008,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 129,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009413120,
+          "storage_ptr": 20618009413120,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 129,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009396224,
+          "storage_ptr": 20618009396224,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 129,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009501184,
+          "storage_ptr": 20618009501184,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 129,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009518080,
+          "storage_ptr": 20618009518080,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 130,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618189733888,
+          "storage_ptr": 20618189733888,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 130,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618038738944,
+          "storage_ptr": 20618038738944,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 130,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009610240,
+          "storage_ptr": 20618009610240,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 130,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009476096,
+          "storage_ptr": 20618009476096,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 130,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009568256,
+          "storage_ptr": 20618009568256,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 130,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009585152,
+          "storage_ptr": 20618009585152,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 255,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618216996864,
+          "storage_ptr": 20618216996864,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 255,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618107944960,
+          "storage_ptr": 20618107944960,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 255,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009488896,
+          "storage_ptr": 20618009488896,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 255,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009543168,
+          "storage_ptr": 20618009543168,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 255,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009644032,
+          "storage_ptr": 20618009644032,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 49,
+          "expert": 255,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009660928,
+          "storage_ptr": 20618009660928,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 128,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618271522816,
+          "storage_ptr": 20618271522816,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 128,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618120528384,
+          "storage_ptr": 20618120528384,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 128,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009555968,
+          "storage_ptr": 20618009555968,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 128,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009618944,
+          "storage_ptr": 20618009618944,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 128,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009711104,
+          "storage_ptr": 20618009711104,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 128,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009728000,
+          "storage_ptr": 20618009728000,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 129,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618298785792,
+          "storage_ptr": 20618298785792,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 129,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618162470912,
+          "storage_ptr": 20618162470912,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 129,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009631744,
+          "storage_ptr": 20618009631744,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 129,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009686016,
+          "storage_ptr": 20618009686016,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 129,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009778176,
+          "storage_ptr": 20618009778176,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 129,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009795072,
+          "storage_ptr": 20618009795072,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 130,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618353311744,
+          "storage_ptr": 20618353311744,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 130,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618175054336,
+          "storage_ptr": 20618175054336,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 130,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009698816,
+          "storage_ptr": 20618009698816,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 130,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009753088,
+          "storage_ptr": 20618009753088,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 130,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009845248,
+          "storage_ptr": 20618009845248,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 130,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009862144,
+          "storage_ptr": 20618009862144,
+          "storage_nbytes": 24576,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 255,
+          "attr": "w13_weight",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618380574720,
+          "storage_ptr": 20618380574720,
+          "storage_nbytes": 25165824,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 255,
+          "attr": "w2_weight",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "dtype": "torch.int8",
+          "data_ptr": 20618244259840,
+          "storage_ptr": 20618244259840,
+          "storage_nbytes": 12582912,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 255,
+          "attr": "w13_weight_scale",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009765888,
+          "storage_ptr": 20618009765888,
+          "storage_nbytes": 8192,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 255,
+          "attr": "w2_weight_scale",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.bfloat16",
+          "data_ptr": 20618009820160,
+          "storage_ptr": 20618009820160,
+          "storage_nbytes": 12288,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 255,
+          "attr": "w13_weight_offset",
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009912320,
+          "storage_ptr": 20618009912320,
+          "storage_nbytes": 16384,
+          "offset": 0
+        },
+        {
+          "layer": 50,
+          "expert": 255,
+          "attr": "w2_weight_offset",
+          "shape": [
+            1,
+            6144
+          ],
+          "dtype": "torch.float32",
+          "data_ptr": 20618009929216,
+          "storage_ptr": 20618009929216,
+          "storage_nbytes": 24576,
+          "offset": 0
+        }
+      ],
+      "unique_storage_count": 48,
+      "unique_bytes": 302481408,
+      "full_128_per_rank": false
+    }
+  },
+  "slot_storage": {
+    "0": {
+      "count": 0,
+      "bytes": 0,
+      "owner": 1,
+      "note": "the single persistent slot exists only on rank1"
+    },
+    "1": {
+      "count": 1,
+      "bytes": 37810176,
+      "storage_ptr": 20618833559552,
+      "generation": 7,
+      "owner": 1,
+      "local_slot": 0
+    }
+  },
+  "empty_comm_state_bytes": 0,
+  "temporary_buffers": {
+    "source_flat_state_bytes_rank0": 37810176,
+    "per_rank_hidden_bytes": 98304,
+    "reference_global_hidden_bytes": 196608,
+    "reference_partial_float32_bytes": 393216,
+    "note": "Dispatch/combine and operator workspaces are reflected in per-rank allocated/reserved peaks; they are not additional persistent expert state."
+  },
+  "all_rank_extra_persistent_slot_count": 1,
+  "all_rank_extra_persistent_slot_bytes": 37810176,
+  "memory_before": {
+    "0": {
+      "allocated": 4096,
+      "reserved": 2097152,
+      "max_allocated": 4608,
+      "max_reserved": 2097152,
+      "device_free": 65359527936,
+      "device_total": 65787658240
+    },
+    "1": {
+      "allocated": 4096,
+      "reserved": 2097152,
+      "max_allocated": 4608,
+      "max_reserved": 2097152,
+      "device_free": 65631793152,
+      "device_total": 65796046848
+    }
+  },
+  "memory_after_bank": {
+    "0": {
+      "allocated": 302510080,
+      "reserved": 398458880,
+      "max_allocated": 352871936,
+      "max_reserved": 398458880,
+      "device_free": 64962514944,
+      "device_total": 65787658240
+    },
+    "1": {
+      "allocated": 302510080,
+      "reserved": 398458880,
+      "max_allocated": 352871936,
+      "max_reserved": 398458880,
+      "device_free": 65235431424,
+      "device_total": 65796046848
+    }
+  },
+  "memory_final": {
+    "0": {
+      "allocated": 341410304,
+      "reserved": 482344960,
+      "max_allocated": 378131968,
+      "max_reserved": 482344960,
+      "device_free": 63815024640,
+      "device_total": 65787658240
+    },
+    "1": {
+      "allocated": 341410304,
+      "reserved": 442499072,
+      "max_allocated": 362258944,
+      "max_reserved": 442499072,
+      "device_free": 64130088960,
+      "device_total": 65796046848
+    }
+  },
+  "scope_note": "Only the finite active main-expert set was allocated: 4 main experts per rank per layer over 2 layers. No full 128/128 main library was instantiated. The empty communication id owns no expert state."
+}

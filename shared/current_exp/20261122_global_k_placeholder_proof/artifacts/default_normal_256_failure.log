@@ -1,0 +1,102 @@
+W1122 14:37:02.895000 1 site-packages/torch/distributed/run.py:852]
+W1122 14:37:02.895000 1 site-packages/torch/distributed/run.py:852] *****************************************
+W1122 14:37:02.895000 1 site-packages/torch/distributed/run.py:852] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+W1122 14:37:02.895000 1 site-packages/torch/distributed/run.py:852] *****************************************
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+Setup Custom allreduce failed with . To silence this warning, specify --disable-custom-all-reduce explicitly.
+Setup Custom allreduce failed with . To silence this warning, specify --disable-custom-all-reduce explicitly.
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank [Gloo] Rank 10 is connected to  is connected to 11 peer ranks.  peer ranks. Expected number of connected peer ranks is : Expected number of connected peer ranks is : 11
+
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+{
+  "profile": "256",
+  "rank": 0,
+  "num_experts": 256,
+  "num_local_experts": 128,
+  "hidden_size": 128,
+  "top_k": 8,
+  "tokens_per_rank": 8,
+  "placeholder_mapping": false,
+  "runtime": {
+    "torch_npu": "2.10.0"
+  },
+  "dispatcher_class": "sglang.srt.layers.moe.token_dispatcher.deepep.DeepEPDispatcher",
+  "backend_mode": "DeepEPMode.NORMAL",
+  "constructor": "PASS",
+  "failure_type": "RuntimeError",
+  "failure_message": "aclnnDispatchLayout or aclnnDispatchLayoutGetWorkspaceSize not in libopapi.so, or libopapi.sonot found.",
+  "traceback": "Traceback (most recent call last):\n  File \"/runexp/scripts/native_interface_harness.py\", line 147, in main\n    dispatch_output = dispatcher.dispatch(hidden, topk_output)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py\", line 1019, in dispatch\n    ret = self.dispatch_b()\n          ^^^^^^^^^^^^^^^^^\n  File \"/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py\", line 1038, in dispatch_b\n    return self._get_impl().dispatch_b(*inner_state)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py\", line 571, in dispatch_b\n    ) = self._dispatch_core(hidden_states, topk_ids, topk_weights, previous_event)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py\", line 601, in _dispatch_core\n    ) = buffer.get_dispatch_layout(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/deep_ep/buffer.py\", line 248, in get_dispatch_layout\n    return self.normal_strategy.get_dispatch_layout(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/deep_ep/strategies/normal_strategy.py\", line 61, in get_dispatch_layout\n    ) = self.runtime.get_dispatch_layout(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: aclnnDispatchLayout or aclnnDispatchLayoutGetWorkspaceSize not in libopapi.so, or libopapi.sonot found.\n"
+}
+/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+{
+  "profile": "256",
+  "rank": 1,
+  "num_experts": 256,
+  "num_local_experts": 128,
+  "hidden_size": 128,
+  "top_k": 8,
+  "tokens_per_rank": 8,
+  "placeholder_mapping": false,
+  "runtime": {
+    "torch_npu": "2.10.0"
+  },
+  "dispatcher_class": "sglang.srt.layers.moe.token_dispatcher.deepep.DeepEPDispatcher",
+  "backend_mode": "DeepEPMode.NORMAL",
+  "constructor": "PASS",
+  "failure_type": "RuntimeError",
+  "failure_message": "aclnnDispatchLayout or aclnnDispatchLayoutGetWorkspaceSize not in libopapi.so, or libopapi.sonot found.",
+  "traceback": "Traceback (most recent call last):\n  File \"/runexp/scripts/native_interface_harness.py\", line 147, in main\n    dispatch_output = dispatcher.dispatch(hidden, topk_output)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py\", line 1019, in dispatch\n    ret = self.dispatch_b()\n          ^^^^^^^^^^^^^^^^^\n  File \"/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py\", line 1038, in dispatch_b\n    return self._get_impl().dispatch_b(*inner_state)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py\", line 571, in dispatch_b\n    ) = self._dispatch_core(hidden_states, topk_ids, topk_weights, previous_event)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/sgl-workspace/sglang/python/sglang/srt/layers/moe/token_dispatcher/deepep.py\", line 601, in _dispatch_core\n    ) = buffer.get_dispatch_layout(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/deep_ep/buffer.py\", line 248, in get_dispatch_layout\n    return self.normal_strategy.get_dispatch_layout(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/python3.11.15/lib/python3.11/site-packages/deep_ep/strategies/normal_strategy.py\", line 61, in get_dispatch_layout\n    ) = self.runtime.get_dispatch_layout(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: aclnnDispatchLayout or aclnnDispatchLayoutGetWorkspaceSize not in libopapi.so, or libopapi.sonot found.\n"
+}
+E1122 14:37:27.280000 1 site-packages/torch/distributed/elastic/multiprocessing/api.py:984] failed (exitcode: 1) local_rank: 0 (pid: 563) of binary: /usr/local/python3.11.15/bin/python3
+Traceback (most recent call last):
+  File "/usr/local/python3.11.15/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/run.py", line 991, in main
+    run(args)
+  File "/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/run.py", line 982, in run
+    elastic_launch(
+  File "/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError:
+============================================================
+/runexp/scripts/native_interface_harness.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-11-22_14:37:27
+  host      : npu1-23
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 564)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-11-22_14:37:27
+  host      : npu1-23
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 563)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[ERROR] 2026-11-22-14:37:27 (PID:1, Device:-1, RankID:-1) ERR99999 UNKNOWN applicaiton exception

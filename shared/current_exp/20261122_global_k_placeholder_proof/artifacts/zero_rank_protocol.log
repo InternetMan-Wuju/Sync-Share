@@ -1,0 +1,30 @@
+W1122 14:34:27.623000 1 site-packages/torch/distributed/run.py:852]
+W1122 14:34:27.623000 1 site-packages/torch/distributed/run.py:852] *****************************************
+W1122 14:34:27.623000 1 site-packages/torch/distributed/run.py:852] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+W1122 14:34:27.623000 1 site-packages/torch/distributed/run.py:852] *****************************************
+[Gloo] Rank [Gloo] Rank 10 is connected to  is connected to 11 peer ranks.  peer ranks. Expected number of connected peer ranks is : Expected number of connected peer ranks is : 11
+
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+Setup Custom allreduce failed with . To silence this warning, specify --disable-custom-all-reduce explicitly.
+Setup Custom allreduce failed with . To silence this warning, specify --disable-custom-all-reduce explicitly.
+[Gloo] Rank 0 is connected to [Gloo] Rank 0 peer ranks. Expected number of connected peer ranks is : 00 is connected to
+0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0[Gloo] Rank  is connected to 00 peer ranks.  is connected to Expected number of connected peer ranks is : 00 peer ranks.
+Expected number of connected peer ranks is : 0
+[Gloo] Rank [Gloo] Rank 0 is connected to 11 is connected to  peer ranks. 1Expected number of connected peer ranks is :  peer ranks. 1Expected number of connected peer ranks is :
+1
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0[Gloo] Rank
+0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+/usr/local/python3.11.15/lib/python3.11/site-packages/deep_ep/strategies/normal_strategy.py:530: UserWarning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:340.)
+  torch.arange(
+/usr/local/python3.11.15/lib/python3.11/site-packages/deep_ep/strategies/normal_strategy.py:530: UserWarning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:340.)
+  torch.arange(
+{"rank": 1, "legal_tokens_sent": 0, "padding_tokens_sent": 1, "empty_padding_comm": 128, "empty_padding_rows_received": 0, "legal_recv_tasks_rank": 0, "combine_shape": [1, 64], "label_error": 0.0, "correct": true, "note": "rank1 is a zero-legal-task participant; one zero-weight padding token uses the empty comm id and is never treated as an expert task."}
+{"rank": 0, "legal_tokens_sent": 8, "padding_tokens_sent": 0, "empty_padding_comm": 128, "empty_padding_rows_received": 8, "legal_recv_tasks_rank": 64, "combine_shape": [8, 64], "label_error": 0.0, "correct": true, "note": "rank1 is a zero-legal-task participant; one zero-weight padding token uses the empty comm id and is never treated as an expert task."}
+/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
