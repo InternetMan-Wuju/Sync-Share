@@ -4,7 +4,8 @@
 
 ## 当前执行入口
 
-- [可配置 K 服务接入与 EP32 三组验收（2026-11-23）](2026-11-23_global_k_service_ep32_execution.md)是当前执行入口。基于 `c8f8961` 完成真实服务接线，再用两台机器共 32 die、AgentX 8K/16K/32K 验收。
+- [全组 K 槽服务修复与 DeepEP 真实改道（2026-11-23）](2026-11-23_global_k_native_service_dispatch.md)是当前执行入口。基于 `db1ce2d` 修复装槽通信分歧，复测 32K 并接入实际任务改道，完成 EP32 三组验收。
+- [可配置 K 服务接入与 EP32 三组验收（2026-11-23）](2026-11-23_global_k_service_ep32_execution.md)记录上一轮服务原型与实验范围。
 - [Prefill 三组对照（2026-11-23）](2026-11-23_prefill_eplb_three_way_comparison.md)记录上一轮方案和三组对照口径。
 - [Prefill K=1 原型修正（2026-11-23）](2026-11-23_global_k_adapter_repair.md)记录上一轮的输入保真、owner 状态和显存验收。
 - [Prefill K=1：统一执行路径、格式与显存验收（2026-11-22）](2026-11-22_global_k_unified_adapter.md)：上一轮方案；3efa0a6完成小样本测试，复核发现输入保真、实际槽身份与内存基线待修；性能未测。
