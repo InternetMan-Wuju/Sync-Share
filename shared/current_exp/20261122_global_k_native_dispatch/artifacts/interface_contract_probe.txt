@@ -1,0 +1,9 @@
+{
+  "logical_experts": 256,
+  "global_extra_slots": 1,
+  "physical_instances": 257,
+  "ep_size": 2,
+  "divisible_by_ep": false,
+  "native_k1_constructible": false,
+  "decisive_blocker": "257 physical experts cannot enter the installed uniform per-rank expert sharding contract."
+}

@@ -1,0 +1,89 @@
+{
+  "runtime_identity": {
+    "host": "npu1-23",
+    "image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+    "sglang": "0.5.20",
+    "torch_npu": "2.10.0",
+    "cann": "9.0.0",
+    "active_service": false,
+    "note": "No service process was running. Audit uses the installed image source and the GLM/ModelSlim path used by this image."
+  },
+  "stack_path": [
+    "glm4_moe.Glm4MoeSparseMoeBlock.forward",
+    "NPU TopK: fused_topk_npu -> topk_ids_logical_to_physical",
+    "DeepEPMoE/FusedMoE.dispatch",
+    "FusedMoE.run_moe_core -> quant_method.apply",
+    "ModelSlimFusedMoEMethod -> AscendRunnerCore -> GroupedMatmul/npu_grouped_matmul",
+    "DeepEP/FusedMoE.combine"
+  ],
+  "S_P_D": {
+    "S": "rank0: original token sender and return destination in this two-card harness",
+    "P": "rank0: original logical expert43 owner in this harness",
+    "D": "rank1: K=1 external slot owner",
+    "consequence": "The current experiment is S=P=rank0, D=rank1; direct-to-replica still needs S->D and D->S and does not demonstrate removal of an S->P->D->P->S path."
+  },
+  "five_contract_checks": {
+    "nonuniform_extra_capacity": {
+      "verdict": "CURRENT_NOT_SUPPORTED",
+      "reason": "FusedMoE requires num_global_routed % storage_ep_size == 0 and assigns the same num_local_experts to every rank. 256 logical + 1 global replica = 257 cannot be represented as 128/129 under the installed EP contract.",
+      "evidence": [
+        "sglang/srt/layers/moe/fused_moe_triton/layer.py:373 assert self._num_global_routed % storage_ep_size == 0",
+        "sglang/srt/layers/moe/fused_moe_triton/layer.py:374-375 num_local_routed and num_local_experts",
+        "sglang/srt/eplb/expert_location.py:84-87 divmod(num_physical_experts, ep_size), assert remainder == 0",
+        "sglang/srt/layers/moe/token_dispatcher/deepep.py:236 low-latency buffer asserts num_experts % group.size() == 0"
+      ]
+    },
+    "logical_route_unchanged": {
+      "verdict": "PARTIAL_SUPPORT_REQUIRES_GLOBAL_PHYSICAL_LAYOUT",
+      "reason": "The framework has logical-to-physical replica maps and can preserve top-k IDs/weights after mapping, but its physical expert count must be uniformly divisible across ranks.",
+      "evidence": [
+        "sglang/srt/eplb/expert_location_dispatch.py: topk_ids_logical_to_physical",
+        "sglang/srt/hardware_backend/npu/moe/topk.py: fused_topk_npu applies the logical-to-physical mapping while retaining topk weights"
+      ]
+    },
+    "external_slot_execution": {
+      "verdict": "NEEDS_SMALL_ADAPTER",
+      "reason": "The real NPU chain can execute from a slot-backed tensor view, but the native entry always reads layer-owned weight attributes; it has no slot handle in the dispatch or GMM contract.",
+      "evidence": [
+        "sglang/srt/layers/quantization/modelslim/modelslim.py:593-604 builds AscendQuantInfo from layer.w13_weight/w2_weight/scales",
+        "sglang/srt/layers/moe/moe_runner/ascend.py: runner passes QuantInfo into w13/w2 kernels",
+        "sglang/srt/hardware_backend/npu/moe/matmul.py:35-43 GroupedMatmul reads layer.{prefix}_weight",
+        "This round's prior real expert-child harness succeeded by exposing the external slot as a temporary layer view."
+      ]
+    },
+    "correct_return": {
+      "verdict": "ARCHITECTURALLY_PRESENT_NOT_PROVEN_FOR_257",
+      "reason": "DeepEP dispatch output carries topk IDs and topk weights into combine, which is the right identity to preserve original positions. No real 257-instance dispatch/combine was run because layout construction fails first.",
+      "evidence": [
+        "sglang/srt/layers/moe/token_dispatcher/deepep.py:112-119 DeepEPNormalDispatchOutput",
+        "sglang/srt/layers/moe/token_dispatcher/deepep.py:145-155 DeepEPNormalCombineInput",
+        "sglang/srt/layers/moe/fused_moe_triton/layer.py:1593-1598 run_moe_core"
+      ]
+    },
+    "all_rank_protocol": {
+      "verdict": "CURRENT_NOT_SUPPORTED_FOR_UNEVEN_LAYOUT",
+      "reason": "The dispatcher, runner and EPLB metadata all assume a uniform physical expert count per rank. A distributed single extra slot would require explicit uneven per-rank expert ranges/buffers and matching zero-task branches.",
+      "evidence": [
+        "FusedMoE uniform modulo assertion",
+        "DeepEP normal/low-latency buffer APIs receive a single global num_experts",
+        "NPU init routing passes expert_num=num_experts and active_expert_range=[0,num_experts]"
+      ]
+    }
+  },
+  "decisive_blocker": {
+    "short": "257 physical experts cannot enter the installed uniform per-rank expert sharding contract.",
+    "minimal_math": "257 % 2 = 1, while FusedMoE and ExpertLocationMetadata require remainder 0.",
+    "required_changes": [
+      "support uneven physical expert counts per rank or a distributed global slot outside the uniform bank",
+      "provide per-rank expert ranges and dispatcher buffer sizing",
+      "teach ModelSlim runner/GMM to consume external slot handles directly",
+      "preserve return/combine metadata for the extra physical instance"
+    ]
+  },
+  "native_attempt": {
+    "attempted": false,
+    "reason": "Source contract fails before a valid 257-instance layer can be constructed; no service was started to avoid violating the no-expansion and no-full-service constraints."
+  },
+  "source_hashes": "artifacts/runtime_sources.sha256",
+  "source_snippets": "artifacts/interface_source_snippets.txt"
+}

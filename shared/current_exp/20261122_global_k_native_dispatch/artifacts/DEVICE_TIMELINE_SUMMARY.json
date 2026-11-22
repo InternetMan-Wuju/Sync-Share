@@ -1,0 +1,4634 @@
+{
+  "scope": "torch_npu profiler diagnostic; profiler overhead means values are not formal timings",
+  "n": 8192,
+  "q": 2048,
+  "clock_alignment": "not calibrated across devices; no cross-device overlap percentage computed",
+  "ranks": {
+    "0": {
+      "original": {
+        "runs": [
+          {
+            "mode": "original",
+            "sample": 0,
+            "trace": {
+              "trace_dir": "/runexp/artifacts/profiler_raw/original_0_rank0/npu1-23_563_20261122104357626_ascend_pt",
+              "files": {
+                "kernel_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/original_0_rank0/npu1-23_563_20261122104357626_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+                  "bytes": 844,
+                  "sha256": "519bfe5acac6c63bd646b05e06db0dd33fdcadf4a24f38e71e0d7b0a4dc08f42"
+                },
+                "operator_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/original_0_rank0/npu1-23_563_20261122104357626_ascend_pt/ASCEND_PROFILER_OUTPUT/operator_details.csv",
+                  "bytes": 2187,
+                  "sha256": "b3045fc1177be72ed2a407eb1a71d2992761e6c773790abd7ad0e2f75e01f05e"
+                },
+                "trace_view.json": {
+                  "path": "/runexp/artifacts/profiler_raw/original_0_rank0/npu1-23_563_20261122104357626_ascend_pt/ASCEND_PROFILER_OUTPUT/trace_view.json",
+                  "bytes": 52044,
+                  "sha256": "f918c03f835962417ae3c0319d5802d81cf64fe138afa5e5ac6f0faf35198760"
+                }
+              },
+              "kernels": [
+                {
+                  "name": "hcom_send__228_0_1",
+                  "start_us": 1795344237700721.5,
+                  "duration_us": 166.264,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344237700755.5,
+                  "duration_us": 207.184,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344237700896.0,
+                  "duration_us": 169.823,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344237701684.5,
+                  "duration_us": 1044.981,
+                  "wait_us": 618.677
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344237702464.5,
+                  "duration_us": 88.662,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344237702730.2,
+                  "duration_us": 58.822,
+                  "wait_us": 177.088
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344237702789.0,
+                  "duration_us": 47.82,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344237702838.0,
+                  "duration_us": 553.392,
+                  "wait_us": 1.18
+                },
+                {
+                  "name": "hcom_receive__228_1_1",
+                  "start_us": 1795344237703393.5,
+                  "duration_us": 5.42,
+                  "wait_us": 2.108
+                }
+              ],
+              "kernel_total_us": 2342.368,
+              "kernel_wait_us": 799.0529999999999,
+              "top_kernels_by_duration": [
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344237701684.5,
+                  "duration_us": 1044.981,
+                  "wait_us": 618.677
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344237702838.0,
+                  "duration_us": 553.392,
+                  "wait_us": 1.18
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344237700755.5,
+                  "duration_us": 207.184,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344237700896.0,
+                  "duration_us": 169.823,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_send__228_0_1",
+                  "start_us": 1795344237700721.5,
+                  "duration_us": 166.264,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344237702464.5,
+                  "duration_us": 88.662,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344237702730.2,
+                  "duration_us": 58.822,
+                  "wait_us": 177.088
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344237702789.0,
+                  "duration_us": 47.82,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_receive__228_1_1",
+                  "start_us": 1795344237703393.5,
+                  "duration_us": 5.42,
+                  "wait_us": 2.108
+                }
+              ],
+              "top_kernels_by_wait": [
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344237701684.5,
+                  "duration_us": 1044.981,
+                  "wait_us": 618.677
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344237702730.2,
+                  "duration_us": 58.822,
+                  "wait_us": 177.088
+                },
+                {
+                  "name": "hcom_receive__228_1_1",
+                  "start_us": 1795344237703393.5,
+                  "duration_us": 5.42,
+                  "wait_us": 2.108
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344237702838.0,
+                  "duration_us": 553.392,
+                  "wait_us": 1.18
+                },
+                {
+                  "name": "hcom_send__228_0_1",
+                  "start_us": 1795344237700721.5,
+                  "duration_us": 166.264,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344237700755.5,
+                  "duration_us": 207.184,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344237700896.0,
+                  "duration_us": 169.823,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344237702464.5,
+                  "duration_us": 88.662,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344237702789.0,
+                  "duration_us": 47.82,
+                  "wait_us": 0.0
+                }
+              ],
+              "operators": [
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 127.54,
+                  "device_total_us": 379.288375
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 19.54,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 5.03,
+                  "device_total_us": 5.780125
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 5.56,
+                  "device_total_us": 373.44825000000003
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 2.51,
+                  "device_total_us": 373.44825000000003
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 4.42,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 8.93,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.58,
+                  "device_total_us": 27.520625
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.59,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 55.37,
+                  "device_total_us": 169.823375
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 15.44,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 4.7,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2",
+                  "host_total_us": 1.87,
+                  "device_total_us": 169.823375
+                },
+                {
+                  "name": "aten::empty",
+                  "host_total_us": 7.38,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::to",
+                  "host_total_us": 266.03,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::_to_copy",
+                  "host_total_us": 261.51,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::empty_strided",
+                  "host_total_us": 10.91,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 2.42,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::copy_",
+                  "host_total_us": 237.04,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::lift_fresh",
+                  "host_total_us": 12.02,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::detach_",
+                  "host_total_us": 7.01,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "detach_",
+                  "host_total_us": 4.59,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 106.85,
+                  "device_total_us": 1044.980875
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 22.09,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 12.59,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 7.68,
+                  "device_total_us": 1044.980875
+                },
+                {
+                  "name": "npu::npu_swiglu",
+                  "host_total_us": 99.84,
+                  "device_total_us": 58.82125
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 5.01,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnSwiGlu",
+                  "host_total_us": 4.78,
+                  "device_total_us": 58.82125
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 30.55,
+                  "device_total_us": 47.820875
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 4.84,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 3.24,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2",
+                  "host_total_us": 3.94,
+                  "device_total_us": 47.820875
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 290.08,
+                  "device_total_us": 553.391125
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 254.44,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 2.35,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 12.36,
+                  "device_total_us": 553.391125
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 89.14,
+                  "device_total_us": 1142.94275
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 6.58,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.81,
+                  "device_total_us": 1048.801
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 4.09,
+                  "device_total_us": 94.08175
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 1.31,
+                  "device_total_us": 94.08175
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.38,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.01,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.98,
+                  "device_total_us": 7.880125
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.74,
+                  "device_total_us": 0.0
+                }
+              ],
+              "top_operators_by_host_total": [
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 290.08,
+                  "device_total_us": 553.391125
+                },
+                {
+                  "name": "aten::to",
+                  "host_total_us": 266.03,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::_to_copy",
+                  "host_total_us": 261.51,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 254.44,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::copy_",
+                  "host_total_us": 237.04,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 127.54,
+                  "device_total_us": 379.288375
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 106.85,
+                  "device_total_us": 1044.980875
+                },
+                {
+                  "name": "npu::npu_swiglu",
+                  "host_total_us": 99.84,
+                  "device_total_us": 58.82125
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 89.14,
+                  "device_total_us": 1142.94275
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 55.37,
+                  "device_total_us": 169.823375
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 30.55,
+                  "device_total_us": 47.820875
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 22.09,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 19.54,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 15.44,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 12.59,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 12.36,
+                  "device_total_us": 553.391125
+                },
+                {
+                  "name": "aten::lift_fresh",
+                  "host_total_us": 12.02,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::empty_strided",
+                  "host_total_us": 10.91,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 8.93,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 7.68,
+                  "device_total_us": 1044.980875
+                }
+              ]
+            }
+          },
+          {
+            "mode": "original",
+            "sample": 1,
+            "trace": {
+              "trace_dir": "/runexp/artifacts/profiler_raw/original_1_rank0/npu1-23_563_20261122104402366_ascend_pt",
+              "files": {
+                "kernel_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/original_1_rank0/npu1-23_563_20261122104402366_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+                  "bytes": 845,
+                  "sha256": "52ca845403fc70afb7b46833e6e24b2e43323a8a142f259cf352147674439a74"
+                },
+                "operator_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/original_1_rank0/npu1-23_563_20261122104402366_ascend_pt/ASCEND_PROFILER_OUTPUT/operator_details.csv",
+                  "bytes": 2148,
+                  "sha256": "8c703f7e59c90210883b68901931ef30851c8635af0919c24da16710348c3a15"
+                },
+                "trace_view.json": {
+                  "path": "/runexp/artifacts/profiler_raw/original_1_rank0/npu1-23_563_20261122104402366_ascend_pt/ASCEND_PROFILER_OUTPUT/trace_view.json",
+                  "bytes": 52043,
+                  "sha256": "6b37595f0298e2f8ade9e67404d6bb176a46370cf9616fb38335f9de490a8763"
+                }
+              },
+              "kernels": [
+                {
+                  "name": "hcom_send__228_0_1",
+                  "start_us": 1795344242422821.8,
+                  "duration_us": 206.584,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344242422898.2,
+                  "duration_us": 163.984,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344242423029.5,
+                  "duration_us": 202.424,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344242423544.2,
+                  "duration_us": 1051.761,
+                  "wait_us": 312.326
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344242424058.0,
+                  "duration_us": 186.743,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344242424597.2,
+                  "duration_us": 57.542,
+                  "wait_us": 352.507
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344242424654.8,
+                  "duration_us": 48.08,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344242424704.0,
+                  "duration_us": 551.651,
+                  "wait_us": 1.17
+                },
+                {
+                  "name": "hcom_receive__228_1_1",
+                  "start_us": 1795344242425257.8,
+                  "duration_us": 5.4,
+                  "wait_us": 2.099
+                }
+              ],
+              "kernel_total_us": 2474.169,
+              "kernel_wait_us": 668.1020000000001,
+              "top_kernels_by_duration": [
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344242423544.2,
+                  "duration_us": 1051.761,
+                  "wait_us": 312.326
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344242424704.0,
+                  "duration_us": 551.651,
+                  "wait_us": 1.17
+                },
+                {
+                  "name": "hcom_send__228_0_1",
+                  "start_us": 1795344242422821.8,
+                  "duration_us": 206.584,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344242423029.5,
+                  "duration_us": 202.424,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344242424058.0,
+                  "duration_us": 186.743,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344242422898.2,
+                  "duration_us": 163.984,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344242424597.2,
+                  "duration_us": 57.542,
+                  "wait_us": 352.507
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344242424654.8,
+                  "duration_us": 48.08,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_receive__228_1_1",
+                  "start_us": 1795344242425257.8,
+                  "duration_us": 5.4,
+                  "wait_us": 2.099
+                }
+              ],
+              "top_kernels_by_wait": [
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344242424597.2,
+                  "duration_us": 57.542,
+                  "wait_us": 352.507
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344242423544.2,
+                  "duration_us": 1051.761,
+                  "wait_us": 312.326
+                },
+                {
+                  "name": "hcom_receive__228_1_1",
+                  "start_us": 1795344242425257.8,
+                  "duration_us": 5.4,
+                  "wait_us": 2.099
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344242424704.0,
+                  "duration_us": 551.651,
+                  "wait_us": 1.17
+                },
+                {
+                  "name": "hcom_send__228_0_1",
+                  "start_us": 1795344242422821.8,
+                  "duration_us": 206.584,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344242422898.2,
+                  "duration_us": 163.984,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344242423029.5,
+                  "duration_us": 202.424,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344242424058.0,
+                  "duration_us": 186.743,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344242424654.8,
+                  "duration_us": 48.08,
+                  "wait_us": 0.0
+                }
+              ],
+              "operators": [
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 199.63,
+                  "device_total_us": 373.60737499999993
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 47.6,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 3.91,
+                  "device_total_us": 2.980125
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 12.45,
+                  "device_total_us": 370.56725
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 2.17,
+                  "device_total_us": 370.56725
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 5.44,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 1.65,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.71,
+                  "device_total_us": 39.12075
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 2.06,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 87.26,
+                  "device_total_us": 202.424
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 17.7,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 13.98,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2",
+                  "host_total_us": 9.66,
+                  "device_total_us": 202.424
+                },
+                {
+                  "name": "aten::empty",
+                  "host_total_us": 12.62,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::to",
+                  "host_total_us": 371.35,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::_to_copy",
+                  "host_total_us": 368.45,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::empty_strided",
+                  "host_total_us": 10.71,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 2.94,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::copy_",
+                  "host_total_us": 346.21,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::lift_fresh",
+                  "host_total_us": 1.95,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::detach_",
+                  "host_total_us": 6.66,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "detach_",
+                  "host_total_us": 5.35,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 70.87,
+                  "device_total_us": 1051.761
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 17.33,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 3.56,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 11.51,
+                  "device_total_us": 1051.761
+                },
+                {
+                  "name": "npu::npu_swiglu",
+                  "host_total_us": 131.04,
+                  "device_total_us": 57.541125
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 11.5,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnSwiGlu",
+                  "host_total_us": 4.04,
+                  "device_total_us": 57.541125
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 36.74,
+                  "device_total_us": 48.080875
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 5.22,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 8.4,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2",
+                  "host_total_us": 3.71,
+                  "device_total_us": 48.080875
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 46.68,
+                  "device_total_us": 551.651
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 12.93,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 1.86,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 9.31,
+                  "device_total_us": 551.651
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 94.7,
+                  "device_total_us": 1538.870625
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 5.28,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 15.26,
+                  "device_total_us": 1346.666875
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 15.6,
+                  "device_total_us": 192.14375
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 13.32,
+                  "device_total_us": 192.14375
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.3,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 8.31,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.96,
+                  "device_total_us": 7.840125
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.16,
+                  "device_total_us": 0.0
+                }
+              ],
+              "top_operators_by_host_total": [
+                {
+                  "name": "aten::to",
+                  "host_total_us": 371.35,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::_to_copy",
+                  "host_total_us": 368.45,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::copy_",
+                  "host_total_us": 346.21,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 199.63,
+                  "device_total_us": 373.60737499999993
+                },
+                {
+                  "name": "npu::npu_swiglu",
+                  "host_total_us": 131.04,
+                  "device_total_us": 57.541125
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 94.7,
+                  "device_total_us": 1538.870625
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 87.26,
+                  "device_total_us": 202.424
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 70.87,
+                  "device_total_us": 1051.761
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 47.6,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 46.68,
+                  "device_total_us": 551.651
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 36.74,
+                  "device_total_us": 48.080875
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 17.7,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 17.33,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 15.6,
+                  "device_total_us": 192.14375
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 15.26,
+                  "device_total_us": 1346.666875
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 13.98,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 13.32,
+                  "device_total_us": 192.14375
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 12.93,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::empty",
+                  "host_total_us": 12.62,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 12.45,
+                  "device_total_us": 370.56725
+                }
+              ]
+            }
+          }
+        ],
+        "category_totals": {
+          "communication": {
+            "duration_us_total": 383.668,
+            "wait_us_total": 4.207000000000001,
+            "kernel_count": 4
+          },
+          "compute": {
+            "duration_us_total": 3786.296,
+            "wait_us_total": 1462.948,
+            "kernel_count": 10
+          },
+          "send_recv_control": {
+            "duration_us_total": 646.5730000000001,
+            "wait_us_total": 0.0,
+            "kernel_count": 4
+          },
+          "other": {
+            "duration_us_total": 0,
+            "wait_us_total": 0,
+            "kernel_count": 0
+          }
+        }
+      },
+      "existing": {
+        "runs": [
+          {
+            "mode": "existing",
+            "sample": 0,
+            "trace": {
+              "trace_dir": "/runexp/artifacts/profiler_raw/existing_0_rank0/npu1-23_563_20261122104407105_ascend_pt",
+              "files": {
+                "kernel_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/existing_0_rank0/npu1-23_563_20261122104407105_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+                  "bytes": 1227,
+                  "sha256": "240e759f13ad0b8311e7eabed78dd2a3f960f8a22f7e06ac74cfda7e5a64506e"
+                },
+                "operator_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/existing_0_rank0/npu1-23_563_20261122104407105_ascend_pt/ASCEND_PROFILER_OUTPUT/operator_details.csv",
+                  "bytes": 3184,
+                  "sha256": "66815a5e8451302031f4aaf2297b9d1da41c9049d53d429ca66244327f3d5995"
+                },
+                "trace_view.json": {
+                  "path": "/runexp/artifacts/profiler_raw/existing_0_rank0/npu1-23_563_20261122104407105_ascend_pt/ASCEND_PROFILER_OUTPUT/trace_view.json",
+                  "bytes": 90582,
+                  "sha256": "38db605e42826174435758222b350dbb35ed8d13786dd78bc5f89f881343ccaa"
+                }
+              },
+              "kernels": [
+                {
+                  "name": "hcom_send__228_0_1",
+                  "start_us": 1795344247177039.0,
+                  "duration_us": 210.784,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344247177118.2,
+                  "duration_us": 156.143,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_send__228_1_1",
+                  "start_us": 1795344247177327.8,
+                  "duration_us": 364.387,
+                  "wait_us": 53.357
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344247177375.0,
+                  "duration_us": 134.443,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344247177450.8,
+                  "duration_us": 275.986,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344247178015.5,
+                  "duration_us": 784.415,
+                  "wait_us": 288.764
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344247178600.8,
+                  "duration_us": 215.145,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344247178801.0,
+                  "duration_us": 48.501,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344247178849.5,
+                  "duration_us": 38.001,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344247178888.5,
+                  "duration_us": 404.168,
+                  "wait_us": 0.999
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344247179053.0,
+                  "duration_us": 112.683,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_receive__228_2_1",
+                  "start_us": 1795344247179294.5,
+                  "duration_us": 2444.589,
+                  "wait_us": 128.817
+                },
+                {
+                  "name": "aclnnCat_ConcatD_ConcatD",
+                  "start_us": 1795344247181740.2,
+                  "duration_us": 100.822,
+                  "wait_us": 1.161
+                },
+                {
+                  "name": "hcom_receive__228_3_1",
+                  "start_us": 1795344247181842.2,
+                  "duration_us": 5.34,
+                  "wait_us": 1.178
+                }
+              ],
+              "kernel_total_us": 5295.407000000001,
+              "kernel_wait_us": 474.276,
+              "top_kernels_by_duration": [
+                {
+                  "name": "hcom_receive__228_2_1",
+                  "start_us": 1795344247179294.5,
+                  "duration_us": 2444.589,
+                  "wait_us": 128.817
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344247178015.5,
+                  "duration_us": 784.415,
+                  "wait_us": 288.764
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344247178888.5,
+                  "duration_us": 404.168,
+                  "wait_us": 0.999
+                },
+                {
+                  "name": "hcom_send__228_1_1",
+                  "start_us": 1795344247177327.8,
+                  "duration_us": 364.387,
+                  "wait_us": 53.357
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344247177450.8,
+                  "duration_us": 275.986,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344247178600.8,
+                  "duration_us": 215.145,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_send__228_0_1",
+                  "start_us": 1795344247177039.0,
+                  "duration_us": 210.784,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344247177118.2,
+                  "duration_us": 156.143,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344247177375.0,
+                  "duration_us": 134.443,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344247179053.0,
+                  "duration_us": 112.683,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnCat_ConcatD_ConcatD",
+                  "start_us": 1795344247181740.2,
+                  "duration_us": 100.822,
+                  "wait_us": 1.161
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344247178801.0,
+                  "duration_us": 48.501,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344247178849.5,
+                  "duration_us": 38.001,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_receive__228_3_1",
+                  "start_us": 1795344247181842.2,
+                  "duration_us": 5.34,
+                  "wait_us": 1.178
+                }
+              ],
+              "top_kernels_by_wait": [
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344247178015.5,
+                  "duration_us": 784.415,
+                  "wait_us": 288.764
+                },
+                {
+                  "name": "hcom_receive__228_2_1",
+                  "start_us": 1795344247179294.5,
+                  "duration_us": 2444.589,
+                  "wait_us": 128.817
+                },
+                {
+                  "name": "hcom_send__228_1_1",
+                  "start_us": 1795344247177327.8,
+                  "duration_us": 364.387,
+                  "wait_us": 53.357
+                },
+                {
+                  "name": "hcom_receive__228_3_1",
+                  "start_us": 1795344247181842.2,
+                  "duration_us": 5.34,
+                  "wait_us": 1.178
+                },
+                {
+                  "name": "aclnnCat_ConcatD_ConcatD",
+                  "start_us": 1795344247181740.2,
+                  "duration_us": 100.822,
+                  "wait_us": 1.161
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344247178888.5,
+                  "duration_us": 404.168,
+                  "wait_us": 0.999
+                },
+                {
+                  "name": "hcom_send__228_0_1",
+                  "start_us": 1795344247177039.0,
+                  "duration_us": 210.784,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344247177118.2,
+                  "duration_us": 156.143,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344247177375.0,
+                  "duration_us": 134.443,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344247177450.8,
+                  "duration_us": 275.986,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344247178600.8,
+                  "duration_us": 215.145,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344247178801.0,
+                  "duration_us": 48.501,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344247178849.5,
+                  "duration_us": 38.001,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344247179053.0,
+                  "duration_us": 112.683,
+                  "wait_us": 0.0
+                }
+              ],
+              "operators": [
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 145.3,
+                  "device_total_us": 367.007125
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 19.17,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.58,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 8.11,
+                  "device_total_us": 366.927125
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 4.24,
+                  "device_total_us": 366.927125
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 3.0,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.2,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.03,
+                  "device_total_us": 30.140625
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.88,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::slice",
+                  "host_total_us": 45.07,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::as_strided",
+                  "host_total_us": 18.77,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 52.17,
+                  "device_total_us": 498.889625
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 11.91,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.81,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 3.31,
+                  "device_total_us": 498.82962499999996
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 1.78,
+                  "device_total_us": 498.82962499999996
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 3.01,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 1.57,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "aten::slice",
+                  "host_total_us": 6.71,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::as_strided",
+                  "host_total_us": 2.25,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 100.37,
+                  "device_total_us": 275.9855
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 22.28,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 22.73,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2",
+                  "host_total_us": 5.69,
+                  "device_total_us": 275.9855
+                },
+                {
+                  "name": "aten::empty",
+                  "host_total_us": 13.08,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::to",
+                  "host_total_us": 462.85,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::_to_copy",
+                  "host_total_us": 459.2,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::empty_strided",
+                  "host_total_us": 21.15,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 11.88,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::copy_",
+                  "host_total_us": 425.64,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::lift_fresh",
+                  "host_total_us": 1.83,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::detach_",
+                  "host_total_us": 3.77,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "detach_",
+                  "host_total_us": 2.52,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 53.75,
+                  "device_total_us": 784.41575
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 5.72,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 3.37,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 5.59,
+                  "device_total_us": 784.41575
+                },
+                {
+                  "name": "npu::npu_swiglu",
+                  "host_total_us": 103.22,
+                  "device_total_us": 48.501
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 3.43,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnSwiGlu",
+                  "host_total_us": 11.93,
+                  "device_total_us": 48.501
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 27.75,
+                  "device_total_us": 38.00075
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 8.13,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 4.91,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2",
+                  "host_total_us": 2.36,
+                  "device_total_us": 38.00075
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 37.05,
+                  "device_total_us": 404.168
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 3.3,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 1.92,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 15.2,
+                  "device_total_us": 404.168
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 60.06,
+                  "device_total_us": 3494.39
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 5.67,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.33,
+                  "device_total_us": 834.59675
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 3.3,
+                  "device_total_us": 2659.7332499999998
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 1.39,
+                  "device_total_us": 2659.7332499999998
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.75,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.29,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 17.56,
+                  "device_total_us": 2446.848875
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.62,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::cat",
+                  "host_total_us": 30.45,
+                  "device_total_us": 100.822
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 7.95,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnCat",
+                  "host_total_us": 1.65,
+                  "device_total_us": 100.822
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.23,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 82.29,
+                  "device_total_us": 220.96437500000002
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.26,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.51,
+                  "device_total_us": 102.882125
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 2.23,
+                  "device_total_us": 118.02225
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 1.02,
+                  "device_total_us": 118.02225
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 12.45,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 11.25,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.67,
+                  "device_total_us": 7.760125
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 0.97,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 14.22,
+                  "device_total_us": 0.0
+                }
+              ],
+              "top_operators_by_host_total": [
+                {
+                  "name": "aten::to",
+                  "host_total_us": 462.85,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::_to_copy",
+                  "host_total_us": 459.2,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::copy_",
+                  "host_total_us": 425.64,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 145.3,
+                  "device_total_us": 367.007125
+                },
+                {
+                  "name": "npu::npu_swiglu",
+                  "host_total_us": 103.22,
+                  "device_total_us": 48.501
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 100.37,
+                  "device_total_us": 275.9855
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 82.29,
+                  "device_total_us": 220.96437500000002
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 60.06,
+                  "device_total_us": 3494.39
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 53.75,
+                  "device_total_us": 784.41575
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 52.17,
+                  "device_total_us": 498.889625
+                },
+                {
+                  "name": "aten::slice",
+                  "host_total_us": 45.07,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 37.05,
+                  "device_total_us": 404.168
+                },
+                {
+                  "name": "aten::cat",
+                  "host_total_us": 30.45,
+                  "device_total_us": 100.822
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 27.75,
+                  "device_total_us": 38.00075
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 22.73,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 22.28,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::empty_strided",
+                  "host_total_us": 21.15,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 19.17,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "aten::as_strided",
+                  "host_total_us": 18.77,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 17.56,
+                  "device_total_us": 2446.848875
+                }
+              ]
+            }
+          },
+          {
+            "mode": "existing",
+            "sample": 1,
+            "trace": {
+              "trace_dir": "/runexp/artifacts/profiler_raw/existing_1_rank0/npu1-23_563_20261122104411903_ascend_pt",
+              "files": {
+                "kernel_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/existing_1_rank0/npu1-23_563_20261122104411903_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+                  "bytes": 1225,
+                  "sha256": "e1a224e5ab1ad62023d0ca45174ab81cb479530cbb2813c3781cecd2f707e8b4"
+                },
+                "operator_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/existing_1_rank0/npu1-23_563_20261122104411903_ascend_pt/ASCEND_PROFILER_OUTPUT/operator_details.csv",
+                  "bytes": 3153,
+                  "sha256": "da09993398cf37384d070afee2e80d89e0bf1702b4e175c997ef3267921e8705"
+                },
+                "trace_view.json": {
+                  "path": "/runexp/artifacts/profiler_raw/existing_1_rank0/npu1-23_563_20261122104411903_ascend_pt/ASCEND_PROFILER_OUTPUT/trace_view.json",
+                  "bytes": 91437,
+                  "sha256": "0337ca7d8c30befd540d86dcec1a5e17a747c7a13ebe1aa72c09e4aa7ec63b89"
+                }
+              },
+              "kernels": [
+                {
+                  "name": "hcom_send__228_0_1",
+                  "start_us": 1795344251958440.2,
+                  "duration_us": 271.725,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344251958592.5,
+                  "duration_us": 137.962,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_send__228_1_1",
+                  "start_us": 1795344251958762.5,
+                  "duration_us": 433.269,
+                  "wait_us": 32.038
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344251958797.5,
+                  "duration_us": 327.746,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344251958886.5,
+                  "duration_us": 127.782,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344251959303.8,
+                  "duration_us": 775.315,
+                  "wait_us": 289.468
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344251959769.8,
+                  "duration_us": 98.402,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344251960004.2,
+                  "duration_us": 120.922,
+                  "wait_us": 136.098
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344251960080.0,
+                  "duration_us": 47.301,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344251960127.5,
+                  "duration_us": 38.581,
+                  "wait_us": 0.199
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344251960167.0,
+                  "duration_us": 402.388,
+                  "wait_us": 0.919
+                },
+                {
+                  "name": "hcom_receive__228_2_1",
+                  "start_us": 1795344251960571.8,
+                  "duration_us": 138.163,
+                  "wait_us": 2.362
+                },
+                {
+                  "name": "aclnnCat_ConcatD_ConcatD",
+                  "start_us": 1795344251960711.2,
+                  "duration_us": 100.702,
+                  "wait_us": 1.337
+                },
+                {
+                  "name": "hcom_receive__228_3_1",
+                  "start_us": 1795344251960813.2,
+                  "duration_us": 5.5,
+                  "wait_us": 1.298
+                }
+              ],
+              "kernel_total_us": 3025.758,
+              "kernel_wait_us": 463.71900000000005,
+              "top_kernels_by_duration": [
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344251959303.8,
+                  "duration_us": 775.315,
+                  "wait_us": 289.468
+                },
+                {
+                  "name": "hcom_send__228_1_1",
+                  "start_us": 1795344251958762.5,
+                  "duration_us": 433.269,
+                  "wait_us": 32.038
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344251960167.0,
+                  "duration_us": 402.388,
+                  "wait_us": 0.919
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344251958797.5,
+                  "duration_us": 327.746,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_send__228_0_1",
+                  "start_us": 1795344251958440.2,
+                  "duration_us": 271.725,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_receive__228_2_1",
+                  "start_us": 1795344251960571.8,
+                  "duration_us": 138.163,
+                  "wait_us": 2.362
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344251958592.5,
+                  "duration_us": 137.962,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344251958886.5,
+                  "duration_us": 127.782,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344251960004.2,
+                  "duration_us": 120.922,
+                  "wait_us": 136.098
+                },
+                {
+                  "name": "aclnnCat_ConcatD_ConcatD",
+                  "start_us": 1795344251960711.2,
+                  "duration_us": 100.702,
+                  "wait_us": 1.337
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344251959769.8,
+                  "duration_us": 98.402,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344251960080.0,
+                  "duration_us": 47.301,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344251960127.5,
+                  "duration_us": 38.581,
+                  "wait_us": 0.199
+                },
+                {
+                  "name": "hcom_receive__228_3_1",
+                  "start_us": 1795344251960813.2,
+                  "duration_us": 5.5,
+                  "wait_us": 1.298
+                }
+              ],
+              "top_kernels_by_wait": [
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344251959303.8,
+                  "duration_us": 775.315,
+                  "wait_us": 289.468
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344251960004.2,
+                  "duration_us": 120.922,
+                  "wait_us": 136.098
+                },
+                {
+                  "name": "hcom_send__228_1_1",
+                  "start_us": 1795344251958762.5,
+                  "duration_us": 433.269,
+                  "wait_us": 32.038
+                },
+                {
+                  "name": "hcom_receive__228_2_1",
+                  "start_us": 1795344251960571.8,
+                  "duration_us": 138.163,
+                  "wait_us": 2.362
+                },
+                {
+                  "name": "aclnnCat_ConcatD_ConcatD",
+                  "start_us": 1795344251960711.2,
+                  "duration_us": 100.702,
+                  "wait_us": 1.337
+                },
+                {
+                  "name": "hcom_receive__228_3_1",
+                  "start_us": 1795344251960813.2,
+                  "duration_us": 5.5,
+                  "wait_us": 1.298
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344251960167.0,
+                  "duration_us": 402.388,
+                  "wait_us": 0.919
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344251960127.5,
+                  "duration_us": 38.581,
+                  "wait_us": 0.199
+                },
+                {
+                  "name": "hcom_send__228_0_1",
+                  "start_us": 1795344251958440.2,
+                  "duration_us": 271.725,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344251958592.5,
+                  "duration_us": 137.962,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344251958797.5,
+                  "duration_us": 327.746,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344251958886.5,
+                  "duration_us": 127.782,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344251959769.8,
+                  "duration_us": 98.402,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344251960080.0,
+                  "duration_us": 47.301,
+                  "wait_us": 0.0
+                }
+              ],
+              "operators": [
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 156.63,
+                  "device_total_us": 417.408
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 17.29,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 6.26,
+                  "device_total_us": 7.66025
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 8.03,
+                  "device_total_us": 409.68775000000005
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 4.12,
+                  "device_total_us": 409.68775000000005
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 3.78,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 1.55,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 10.55,
+                  "device_total_us": 43.700875
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.66,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::slice",
+                  "host_total_us": 41.89,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::as_strided",
+                  "host_total_us": 14.98,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 46.47,
+                  "device_total_us": 763.0955
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.25,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.02,
+                  "device_total_us": 2.02
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 3.23,
+                  "device_total_us": 761.0155
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 1.26,
+                  "device_total_us": 761.0155
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.44,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.37,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "aten::slice",
+                  "host_total_us": 6.42,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::as_strided",
+                  "host_total_us": 2.31,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 112.49,
+                  "device_total_us": 127.7825
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 23.83,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 18.98,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2",
+                  "host_total_us": 10.34,
+                  "device_total_us": 127.7825
+                },
+                {
+                  "name": "aten::empty",
+                  "host_total_us": 19.84,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::to",
+                  "host_total_us": 571.2,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::_to_copy",
+                  "host_total_us": 566.59,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::empty_strided",
+                  "host_total_us": 18.08,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 7.52,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::copy_",
+                  "host_total_us": 533.5,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::lift_fresh",
+                  "host_total_us": 1.6,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::detach_",
+                  "host_total_us": 7.26,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "detach_",
+                  "host_total_us": 5.95,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 59.85,
+                  "device_total_us": 775.3155
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 8.19,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 2.91,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 9.21,
+                  "device_total_us": 775.3155
+                },
+                {
+                  "name": "npu::npu_swiglu",
+                  "host_total_us": 91.44,
+                  "device_total_us": 47.300875
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 3.67,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnSwiGlu",
+                  "host_total_us": 6.72,
+                  "device_total_us": 47.300875
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 31.18,
+                  "device_total_us": 38.580875
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 8.26,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 4.21,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2",
+                  "host_total_us": 4.98,
+                  "device_total_us": 38.580875
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 37.79,
+                  "device_total_us": 402.388
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 6.28,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 6.21,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 6.07,
+                  "device_total_us": 402.388
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 89.46,
+                  "device_total_us": 1183.323875
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 8.83,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.74,
+                  "device_total_us": 946.698875
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 7.56,
+                  "device_total_us": 236.565
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 2.7,
+                  "device_total_us": 236.565
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 16.51,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 3.68,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 4.12,
+                  "device_total_us": 140.422875
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 3.38,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::cat",
+                  "host_total_us": 34.98,
+                  "device_total_us": 100.702
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 7.0,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnCat",
+                  "host_total_us": 5.74,
+                  "device_total_us": 100.702
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.66,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 58.19,
+                  "device_total_us": 229.284375
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 1.93,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 10.04,
+                  "device_total_us": 102.802
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 2.97,
+                  "device_total_us": 126.422375
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 1.15,
+                  "device_total_us": 126.422375
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 5.18,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 1.72,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 31.76,
+                  "device_total_us": 7.940125
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 2.22,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.75,
+                  "device_total_us": 0.0
+                }
+              ],
+              "top_operators_by_host_total": [
+                {
+                  "name": "aten::to",
+                  "host_total_us": 571.2,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::_to_copy",
+                  "host_total_us": 566.59,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::copy_",
+                  "host_total_us": 533.5,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 156.63,
+                  "device_total_us": 417.408
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 112.49,
+                  "device_total_us": 127.7825
+                },
+                {
+                  "name": "npu::npu_swiglu",
+                  "host_total_us": 91.44,
+                  "device_total_us": 47.300875
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 89.46,
+                  "device_total_us": 1183.323875
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 59.85,
+                  "device_total_us": 775.3155
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 58.19,
+                  "device_total_us": 229.284375
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 46.47,
+                  "device_total_us": 763.0955
+                },
+                {
+                  "name": "aten::slice",
+                  "host_total_us": 41.89,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 37.79,
+                  "device_total_us": 402.388
+                },
+                {
+                  "name": "aten::cat",
+                  "host_total_us": 34.98,
+                  "device_total_us": 100.702
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 31.76,
+                  "device_total_us": 7.940125
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 31.18,
+                  "device_total_us": 38.580875
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 23.83,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::empty",
+                  "host_total_us": 19.84,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 18.98,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::empty_strided",
+                  "host_total_us": 18.08,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 17.29,
+                  "device_total_us": 0.02
+                }
+              ]
+            }
+          }
+        ],
+        "category_totals": {
+          "communication": {
+            "duration_us_total": 3873.757,
+            "wait_us_total": 219.04999999999998,
+            "kernel_count": 8
+          },
+          "compute": {
+            "duration_us_total": 2942.4379999999996,
+            "wait_us_total": 580.3489999999999,
+            "kernel_count": 10
+          },
+          "send_recv_control": {
+            "duration_us_total": 1303.446,
+            "wait_us_total": 136.098,
+            "kernel_count": 8
+          },
+          "other": {
+            "duration_us_total": 201.524,
+            "wait_us_total": 2.498,
+            "kernel_count": 2
+          }
+        }
+      }
+    },
+    "1": {
+      "original": {
+        "runs": [
+          {
+            "mode": "original",
+            "sample": 0,
+            "trace": {
+              "trace_dir": "/runexp/artifacts/profiler_raw/original_0_rank1/npu1-23_564_20261122104357624_ascend_pt",
+              "files": {
+                "kernel_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/original_0_rank1/npu1-23_564_20261122104357624_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+                  "bytes": 391,
+                  "sha256": "52873b90ac8d358aaa1d2bdd1a84093a1a59b872ba626a4f04f4ddc4d18d20be"
+                },
+                "operator_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/original_0_rank1/npu1-23_564_20261122104357624_ascend_pt/ASCEND_PROFILER_OUTPUT/operator_details.csv",
+                  "bytes": 982,
+                  "sha256": "943db4cd590a3b57e98172d8679b32d57274afb76112995061b9453b8d47a783"
+                },
+                "trace_view.json": {
+                  "path": "/runexp/artifacts/profiler_raw/original_0_rank1/npu1-23_564_20261122104357624_ascend_pt/ASCEND_PROFILER_OUTPUT/trace_view.json",
+                  "bytes": 38341,
+                  "sha256": "40d95ba86fc4152ec7b587c1c165a432f4d4e95ac0c35466e750ca74c8e2c1e2"
+                }
+              },
+              "kernels": [
+                {
+                  "name": "hcom_receive__228_0_1",
+                  "start_us": 1795344237696430.5,
+                  "duration_us": 4453.569,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344237696543.2,
+                  "duration_us": 189.724,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344237696733.0,
+                  "duration_us": 85.342,
+                  "wait_us": 0.026
+                },
+                {
+                  "name": "hcom_send__228_1_1",
+                  "start_us": 1795344237700886.2,
+                  "duration_us": 2509.75,
+                  "wait_us": 4067.908
+                }
+              ],
+              "kernel_total_us": 7238.385,
+              "kernel_wait_us": 4067.9339999999997,
+              "top_kernels_by_duration": [
+                {
+                  "name": "hcom_receive__228_0_1",
+                  "start_us": 1795344237696430.5,
+                  "duration_us": 4453.569,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_send__228_1_1",
+                  "start_us": 1795344237700886.2,
+                  "duration_us": 2509.75,
+                  "wait_us": 4067.908
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344237696543.2,
+                  "duration_us": 189.724,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344237696733.0,
+                  "duration_us": 85.342,
+                  "wait_us": 0.026
+                }
+              ],
+              "top_kernels_by_wait": [
+                {
+                  "name": "hcom_send__228_1_1",
+                  "start_us": 1795344237700886.2,
+                  "duration_us": 2509.75,
+                  "wait_us": 4067.908
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344237696733.0,
+                  "duration_us": 85.342,
+                  "wait_us": 0.026
+                },
+                {
+                  "name": "hcom_receive__228_0_1",
+                  "start_us": 1795344237696430.5,
+                  "duration_us": 4453.569,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344237696543.2,
+                  "duration_us": 189.724,
+                  "wait_us": 0.0
+                }
+              ],
+              "operators": [
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 274.94,
+                  "device_total_us": 4643.352750000002
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 44.16,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 3.19,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 7.34,
+                  "device_total_us": 4643.2927500000005
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 2.14,
+                  "device_total_us": 4643.2927500000005
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 5.49,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 1.59,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.33,
+                  "device_total_us": 4276.6055
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 2.07,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 43.33,
+                  "device_total_us": 2597.17175
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 3.61,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.71,
+                  "device_total_us": 2.02
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 3.37,
+                  "device_total_us": 2595.09175
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 1.58,
+                  "device_total_us": 2595.09175
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.31,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 3.05,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.15,
+                  "device_total_us": 2511.790125
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.51,
+                  "device_total_us": 0.0
+                }
+              ],
+              "top_operators_by_host_total": [
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 274.94,
+                  "device_total_us": 4643.352750000002
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 44.16,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 43.33,
+                  "device_total_us": 2597.17175
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 7.34,
+                  "device_total_us": 4643.2927500000005
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 5.49,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 3.61,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 3.37,
+                  "device_total_us": 2595.09175
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 3.19,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 3.05,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.33,
+                  "device_total_us": 4276.6055
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.31,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.15,
+                  "device_total_us": 2511.790125
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 2.14,
+                  "device_total_us": 4643.2927500000005
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 2.07,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.71,
+                  "device_total_us": 2.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 1.59,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 1.58,
+                  "device_total_us": 2595.09175
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.51,
+                  "device_total_us": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "mode": "original",
+            "sample": 1,
+            "trace": {
+              "trace_dir": "/runexp/artifacts/profiler_raw/original_1_rank1/npu1-23_564_20261122104402366_ascend_pt",
+              "files": {
+                "kernel_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/original_1_rank1/npu1-23_564_20261122104402366_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+                  "bytes": 392,
+                  "sha256": "18b900bd5b16e6a8d3eb5d52615c3c894703b195b7ad62beef66343825da911f"
+                },
+                "operator_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/original_1_rank1/npu1-23_564_20261122104402366_ascend_pt/ASCEND_PROFILER_OUTPUT/operator_details.csv",
+                  "bytes": 979,
+                  "sha256": "a17369bae840774b4ea2fdc5ea9d1c4b596a8a3ec53a62e912bb09faea94ac1b"
+                },
+                "trace_view.json": {
+                  "path": "/runexp/artifacts/profiler_raw/original_1_rank1/npu1-23_564_20261122104402366_ascend_pt/ASCEND_PROFILER_OUTPUT/trace_view.json",
+                  "bytes": 38402,
+                  "sha256": "9f89ae11521fbec6a641145300798f87cd0d688dbd187a7f5837b367c17080bd"
+                }
+              },
+              "kernels": [
+                {
+                  "name": "hcom_receive__228_0_1",
+                  "start_us": 1795344242420936.8,
+                  "duration_us": 2094.662,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344242421028.0,
+                  "duration_us": 238.205,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344242421266.2,
+                  "duration_us": 148.823,
+                  "wait_us": 0.045
+                },
+                {
+                  "name": "hcom_send__228_1_1",
+                  "start_us": 1795344242423033.2,
+                  "duration_us": 2233.445,
+                  "wait_us": 1618.177
+                }
+              ],
+              "kernel_total_us": 4715.135,
+              "kernel_wait_us": 1618.222,
+              "top_kernels_by_duration": [
+                {
+                  "name": "hcom_send__228_1_1",
+                  "start_us": 1795344242423033.2,
+                  "duration_us": 2233.445,
+                  "wait_us": 1618.177
+                },
+                {
+                  "name": "hcom_receive__228_0_1",
+                  "start_us": 1795344242420936.8,
+                  "duration_us": 2094.662,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344242421028.0,
+                  "duration_us": 238.205,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344242421266.2,
+                  "duration_us": 148.823,
+                  "wait_us": 0.045
+                }
+              ],
+              "top_kernels_by_wait": [
+                {
+                  "name": "hcom_send__228_1_1",
+                  "start_us": 1795344242423033.2,
+                  "duration_us": 2233.445,
+                  "wait_us": 1618.177
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344242421266.2,
+                  "duration_us": 148.823,
+                  "wait_us": 0.045
+                },
+                {
+                  "name": "hcom_receive__228_0_1",
+                  "start_us": 1795344242420936.8,
+                  "duration_us": 2094.662,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344242421028.0,
+                  "duration_us": 238.205,
+                  "wait_us": 0.0
+                }
+              ],
+              "operators": [
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 266.26,
+                  "device_total_us": 2332.9467499999996
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 27.64,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 7.41,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 14.42,
+                  "device_total_us": 2332.8667499999997
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 6.73,
+                  "device_total_us": 2332.8667499999997
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 43.47,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 4.81,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 3.1,
+                  "device_total_us": 1965.51925
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.8,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 75.44,
+                  "device_total_us": 2384.148
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 10.02,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.91,
+                  "device_total_us": 1.84
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 3.34,
+                  "device_total_us": 2382.268
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 1.52,
+                  "device_total_us": 2382.268
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 4.31,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 16.11,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 3.66,
+                  "device_total_us": 2235.54475
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 3.05,
+                  "device_total_us": 0.0
+                }
+              ],
+              "top_operators_by_host_total": [
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 266.26,
+                  "device_total_us": 2332.9467499999996
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 75.44,
+                  "device_total_us": 2384.148
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 43.47,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 27.64,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 16.11,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 14.42,
+                  "device_total_us": 2332.8667499999997
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 10.02,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 7.41,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 6.73,
+                  "device_total_us": 2332.8667499999997
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 4.81,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 4.31,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 3.66,
+                  "device_total_us": 2235.54475
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 3.34,
+                  "device_total_us": 2382.268
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 3.1,
+                  "device_total_us": 1965.51925
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 3.05,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.91,
+                  "device_total_us": 1.84
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.8,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 1.52,
+                  "device_total_us": 2382.268
+                }
+              ]
+            }
+          }
+        ],
+        "category_totals": {
+          "communication": {
+            "duration_us_total": 11291.426,
+            "wait_us_total": 5686.085,
+            "kernel_count": 4
+          },
+          "compute": {
+            "duration_us_total": 0,
+            "wait_us_total": 0,
+            "kernel_count": 0
+          },
+          "send_recv_control": {
+            "duration_us_total": 662.0939999999999,
+            "wait_us_total": 0.071,
+            "kernel_count": 4
+          },
+          "other": {
+            "duration_us_total": 0,
+            "wait_us_total": 0,
+            "kernel_count": 0
+          }
+        }
+      },
+      "existing": {
+        "runs": [
+          {
+            "mode": "existing",
+            "sample": 0,
+            "trace": {
+              "trace_dir": "/runexp/artifacts/profiler_raw/existing_0_rank1/npu1-23_564_20261122104407106_ascend_pt",
+              "files": {
+                "kernel_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/existing_0_rank1/npu1-23_564_20261122104407106_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+                  "bytes": 1156,
+                  "sha256": "59e373194278397d65376b478938b99e2dbedd4fe00cf0eb5ee568136db43650"
+                },
+                "operator_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/existing_0_rank1/npu1-23_564_20261122104407106_ascend_pt/ASCEND_PROFILER_OUTPUT/operator_details.csv",
+                  "bytes": 3001,
+                  "sha256": "f43309dd39caa26b5996a930287ba44184ae9513229b91c210427b738cd15747"
+                },
+                "trace_view.json": {
+                  "path": "/runexp/artifacts/profiler_raw/existing_0_rank1/npu1-23_564_20261122104407106_ascend_pt/ASCEND_PROFILER_OUTPUT/trace_view.json",
+                  "bytes": 88830,
+                  "sha256": "fd0cacb542cc44da8d4120017c4dc44b0696e819ec06e034708c3c63ff5c96b0"
+                }
+              },
+              "kernels": [
+                {
+                  "name": "hcom_receive__228_0_1",
+                  "start_us": 1795344247168881.2,
+                  "duration_us": 8372.547,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344247168974.2,
+                  "duration_us": 231.664,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344247169205.8,
+                  "duration_us": 107.242,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_receive__228_1_1",
+                  "start_us": 1795344247177256.2,
+                  "duration_us": 437.109,
+                  "wait_us": 7943.258
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344247177694.8,
+                  "duration_us": 37.981,
+                  "wait_us": 1.391
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344247178173.2,
+                  "duration_us": 219.664,
+                  "wait_us": 440.519
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344247181131.5,
+                  "duration_us": 23.98,
+                  "wait_us": 2738.586
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344247181170.0,
+                  "duration_us": 18.601,
+                  "wait_us": 14.52
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344247181189.5,
+                  "duration_us": 120.062,
+                  "wait_us": 0.899
+                },
+                {
+                  "name": "hcom_send__228_2_1",
+                  "start_us": 1795344247181373.2,
+                  "duration_us": 370.568,
+                  "wait_us": 63.688
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344247181424.8,
+                  "duration_us": 237.565,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344247181662.2,
+                  "duration_us": 131.643,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_send__228_3_1",
+                  "start_us": 1795344247181746.2,
+                  "duration_us": 106.282,
+                  "wait_us": 0.0
+                }
+              ],
+              "kernel_total_us": 10414.908000000001,
+              "kernel_wait_us": 11202.860999999999,
+              "top_kernels_by_duration": [
+                {
+                  "name": "hcom_receive__228_0_1",
+                  "start_us": 1795344247168881.2,
+                  "duration_us": 8372.547,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_receive__228_1_1",
+                  "start_us": 1795344247177256.2,
+                  "duration_us": 437.109,
+                  "wait_us": 7943.258
+                },
+                {
+                  "name": "hcom_send__228_2_1",
+                  "start_us": 1795344247181373.2,
+                  "duration_us": 370.568,
+                  "wait_us": 63.688
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344247181424.8,
+                  "duration_us": 237.565,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344247168974.2,
+                  "duration_us": 231.664,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344247178173.2,
+                  "duration_us": 219.664,
+                  "wait_us": 440.519
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344247181662.2,
+                  "duration_us": 131.643,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344247181189.5,
+                  "duration_us": 120.062,
+                  "wait_us": 0.899
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344247169205.8,
+                  "duration_us": 107.242,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_send__228_3_1",
+                  "start_us": 1795344247181746.2,
+                  "duration_us": 106.282,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344247177694.8,
+                  "duration_us": 37.981,
+                  "wait_us": 1.391
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344247181131.5,
+                  "duration_us": 23.98,
+                  "wait_us": 2738.586
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344247181170.0,
+                  "duration_us": 18.601,
+                  "wait_us": 14.52
+                }
+              ],
+              "top_kernels_by_wait": [
+                {
+                  "name": "hcom_receive__228_1_1",
+                  "start_us": 1795344247177256.2,
+                  "duration_us": 437.109,
+                  "wait_us": 7943.258
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344247181131.5,
+                  "duration_us": 23.98,
+                  "wait_us": 2738.586
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344247178173.2,
+                  "duration_us": 219.664,
+                  "wait_us": 440.519
+                },
+                {
+                  "name": "hcom_send__228_2_1",
+                  "start_us": 1795344247181373.2,
+                  "duration_us": 370.568,
+                  "wait_us": 63.688
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344247181170.0,
+                  "duration_us": 18.601,
+                  "wait_us": 14.52
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344247177694.8,
+                  "duration_us": 37.981,
+                  "wait_us": 1.391
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344247181189.5,
+                  "duration_us": 120.062,
+                  "wait_us": 0.899
+                },
+                {
+                  "name": "hcom_receive__228_0_1",
+                  "start_us": 1795344247168881.2,
+                  "duration_us": 8372.547,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344247168974.2,
+                  "duration_us": 231.664,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344247169205.8,
+                  "duration_us": 107.242,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344247181424.8,
+                  "duration_us": 237.565,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344247181662.2,
+                  "duration_us": 131.643,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_send__228_3_1",
+                  "start_us": 1795344247181746.2,
+                  "duration_us": 106.282,
+                  "wait_us": 0.0
+                }
+              ],
+              "operators": [
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 197.19,
+                  "device_total_us": 8604.271625000001
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 21.41,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 4.42,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 16.46,
+                  "device_total_us": 8604.211625
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 10.2,
+                  "device_total_us": 8604.211625
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 33.26,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 1.6,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.17,
+                  "device_total_us": 8205.104
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.57,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 113.83,
+                  "device_total_us": 546.551125
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 13.91,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.78,
+                  "device_total_us": 2.16
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 5.45,
+                  "device_total_us": 544.351125
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 3.12,
+                  "device_total_us": 544.351125
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 8.37,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 7.5,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 3.77,
+                  "device_total_us": 439.46875
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.12,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::select",
+                  "host_total_us": 46.39,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::as_strided",
+                  "host_total_us": 16.94,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 87.18,
+                  "device_total_us": 37.98075
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 23.46,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 7.52,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2",
+                  "host_total_us": 2.44,
+                  "device_total_us": 37.98075
+                },
+                {
+                  "name": "aten::empty",
+                  "host_total_us": 15.88,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::to",
+                  "host_total_us": 8658.97,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::_to_copy",
+                  "host_total_us": 8651.16,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::empty_strided",
+                  "host_total_us": 13.55,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 3.47,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::copy_",
+                  "host_total_us": 8623.79,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::lift_fresh",
+                  "host_total_us": 5.86,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::detach_",
+                  "host_total_us": 13.66,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "detach_",
+                  "host_total_us": 11.58,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 120.12,
+                  "device_total_us": 219.664375
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 17.34,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 4.76,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 21.21,
+                  "device_total_us": 219.664375
+                },
+                {
+                  "name": "npu::npu_swiglu",
+                  "host_total_us": 138.46,
+                  "device_total_us": 23.9805
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 3.43,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnSwiGlu",
+                  "host_total_us": 3.57,
+                  "device_total_us": 23.9805
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 64.54,
+                  "device_total_us": 18.600375
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 4.74,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 28.55,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2",
+                  "host_total_us": 2.92,
+                  "device_total_us": 18.600375
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 276.08,
+                  "device_total_us": 120.062375
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 5.46,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 1.89,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 2.87,
+                  "device_total_us": 120.062375
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 85.14,
+                  "device_total_us": 714.994875
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 4.01,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.16,
+                  "device_total_us": 106.822125
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 8.35,
+                  "device_total_us": 608.13275
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 5.32,
+                  "device_total_us": 608.13275
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.0,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 1.88,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 4.59,
+                  "device_total_us": 270.485375
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 14.08,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 50.53,
+                  "device_total_us": 240.00475000000003
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 3.82,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.86,
+                  "device_total_us": 2.020125
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 2.77,
+                  "device_total_us": 237.924625
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 1.06,
+                  "device_total_us": 237.924625
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 8.91,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 1.45,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 6.72,
+                  "device_total_us": 108.54225
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 5.8,
+                  "device_total_us": 0.0
+                }
+              ],
+              "top_operators_by_host_total": [
+                {
+                  "name": "aten::to",
+                  "host_total_us": 8658.97,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::_to_copy",
+                  "host_total_us": 8651.16,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::copy_",
+                  "host_total_us": 8623.79,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 276.08,
+                  "device_total_us": 120.062375
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 197.19,
+                  "device_total_us": 8604.271625000001
+                },
+                {
+                  "name": "npu::npu_swiglu",
+                  "host_total_us": 138.46,
+                  "device_total_us": 23.9805
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 120.12,
+                  "device_total_us": 219.664375
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 113.83,
+                  "device_total_us": 546.551125
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 87.18,
+                  "device_total_us": 37.98075
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 85.14,
+                  "device_total_us": 714.994875
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 64.54,
+                  "device_total_us": 18.600375
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 50.53,
+                  "device_total_us": 240.00475000000003
+                },
+                {
+                  "name": "aten::select",
+                  "host_total_us": 46.39,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 33.26,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 28.55,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 23.46,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 21.41,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 21.21,
+                  "device_total_us": 219.664375
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 17.34,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::as_strided",
+                  "host_total_us": 16.94,
+                  "device_total_us": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "mode": "existing",
+            "sample": 1,
+            "trace": {
+              "trace_dir": "/runexp/artifacts/profiler_raw/existing_1_rank1/npu1-23_564_20261122104411903_ascend_pt",
+              "files": {
+                "kernel_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/existing_1_rank1/npu1-23_564_20261122104411903_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+                  "bytes": 1158,
+                  "sha256": "5dcec84e726b351907044455772f019575b495ae555ad0c5f2ef73fdcbfe6467"
+                },
+                "operator_details.csv": {
+                  "path": "/runexp/artifacts/profiler_raw/existing_1_rank1/npu1-23_564_20261122104411903_ascend_pt/ASCEND_PROFILER_OUTPUT/operator_details.csv",
+                  "bytes": 3081,
+                  "sha256": "d31acdb2813ab72777d3c51fd3f05226b4e0eb5c3d3518a371d366092f1efc16"
+                },
+                "trace_view.json": {
+                  "path": "/runexp/artifacts/profiler_raw/existing_1_rank1/npu1-23_564_20261122104411903_ascend_pt/ASCEND_PROFILER_OUTPUT/trace_view.json",
+                  "bytes": 88850,
+                  "sha256": "4b2e4c03937e8fa57ad1ba7f61ba47a9e04f2f4621008d25ca44d39f56582c9f"
+                }
+              },
+              "kernels": [
+                {
+                  "name": "hcom_receive__228_0_1",
+                  "start_us": 1795344251953944.0,
+                  "duration_us": 4766.675,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344251954015.2,
+                  "duration_us": 186.604,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344251954345.8,
+                  "duration_us": 172.803,
+                  "wait_us": 143.896
+                },
+                {
+                  "name": "hcom_receive__228_1_1",
+                  "start_us": 1795344251958713.0,
+                  "duration_us": 481.69,
+                  "wait_us": 4194.447
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344251959195.8,
+                  "duration_us": 39.08,
+                  "wait_us": 1.06
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344251959787.8,
+                  "duration_us": 232.665,
+                  "wait_us": 552.92
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344251960021.5,
+                  "duration_us": 24.201,
+                  "wait_us": 1.085
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344251960045.8,
+                  "duration_us": 19.02,
+                  "wait_us": 0.049
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344251960100.0,
+                  "duration_us": 119.362,
+                  "wait_us": 35.23
+                },
+                {
+                  "name": "hcom_send__228_2_1",
+                  "start_us": 1795344251960343.2,
+                  "duration_us": 366.148,
+                  "wait_us": 123.888
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344251960390.0,
+                  "duration_us": 105.943,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344251960542.0,
+                  "duration_us": 138.423,
+                  "wait_us": 46.057
+                },
+                {
+                  "name": "hcom_send__228_3_1",
+                  "start_us": 1795344251960711.5,
+                  "duration_us": 106.562,
+                  "wait_us": 31.077
+                }
+              ],
+              "kernel_total_us": 6759.176,
+              "kernel_wait_us": 5129.709,
+              "top_kernels_by_duration": [
+                {
+                  "name": "hcom_receive__228_0_1",
+                  "start_us": 1795344251953944.0,
+                  "duration_us": 4766.675,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "hcom_receive__228_1_1",
+                  "start_us": 1795344251958713.0,
+                  "duration_us": 481.69,
+                  "wait_us": 4194.447
+                },
+                {
+                  "name": "hcom_send__228_2_1",
+                  "start_us": 1795344251960343.2,
+                  "duration_us": 366.148,
+                  "wait_us": 123.888
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344251959787.8,
+                  "duration_us": 232.665,
+                  "wait_us": 552.92
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344251954015.2,
+                  "duration_us": 186.604,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344251954345.8,
+                  "duration_us": 172.803,
+                  "wait_us": 143.896
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344251960542.0,
+                  "duration_us": 138.423,
+                  "wait_us": 46.057
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344251960100.0,
+                  "duration_us": 119.362,
+                  "wait_us": 35.23
+                },
+                {
+                  "name": "hcom_send__228_3_1",
+                  "start_us": 1795344251960711.5,
+                  "duration_us": 106.562,
+                  "wait_us": 31.077
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344251960390.0,
+                  "duration_us": 105.943,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344251959195.8,
+                  "duration_us": 39.08,
+                  "wait_us": 1.06
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344251960021.5,
+                  "duration_us": 24.201,
+                  "wait_us": 1.085
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344251960045.8,
+                  "duration_us": 19.02,
+                  "wait_us": 0.049
+                }
+              ],
+              "top_kernels_by_wait": [
+                {
+                  "name": "hcom_receive__228_1_1",
+                  "start_us": 1795344251958713.0,
+                  "duration_us": 481.69,
+                  "wait_us": 4194.447
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344251959787.8,
+                  "duration_us": 232.665,
+                  "wait_us": 552.92
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344251954345.8,
+                  "duration_us": 172.803,
+                  "wait_us": 143.896
+                },
+                {
+                  "name": "hcom_send__228_2_1",
+                  "start_us": 1795344251960343.2,
+                  "duration_us": 366.148,
+                  "wait_us": 123.888
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344251960542.0,
+                  "duration_us": 138.423,
+                  "wait_us": 46.057
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5_GroupedMatmul_GroupedMatmul",
+                  "start_us": 1795344251960100.0,
+                  "duration_us": 119.362,
+                  "wait_us": 35.23
+                },
+                {
+                  "name": "hcom_send__228_3_1",
+                  "start_us": 1795344251960711.5,
+                  "duration_us": 106.562,
+                  "wait_us": 31.077
+                },
+                {
+                  "name": "SwiGlu",
+                  "start_us": 1795344251960021.5,
+                  "duration_us": 24.201,
+                  "wait_us": 1.085
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344251959195.8,
+                  "duration_us": 39.08,
+                  "wait_us": 1.06
+                },
+                {
+                  "name": "aclnnDynamicQuantV2_DynamicQuant_DynamicQuant",
+                  "start_us": 1795344251960045.8,
+                  "duration_us": 19.02,
+                  "wait_us": 0.049
+                },
+                {
+                  "name": "hcom_receive__228_0_1",
+                  "start_us": 1795344251953944.0,
+                  "duration_us": 4766.675,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "receiveAicpuKernel",
+                  "start_us": 1795344251954015.2,
+                  "duration_us": 186.604,
+                  "wait_us": 0.0
+                },
+                {
+                  "name": "sendAicpuKernel",
+                  "start_us": 1795344251960390.0,
+                  "duration_us": 105.943,
+                  "wait_us": 0.0
+                }
+              ],
+              "operators": [
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 278.84,
+                  "device_total_us": 4953.338750000001
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 40.37,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 21.38,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 16.29,
+                  "device_total_us": 4953.27875
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 9.29,
+                  "device_total_us": 4953.27875
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 42.87,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 1.54,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.96,
+                  "device_total_us": 4586.471625
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 1.53,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 150.55,
+                  "device_total_us": 656.6334999999999
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 43.57,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 11.17,
+                  "device_total_us": 2.080125
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 3.29,
+                  "device_total_us": 654.493375
+                },
+                {
+                  "name": "HcclRecv",
+                  "host_total_us": 1.25,
+                  "device_total_us": 654.493375
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 7.01,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 45.75,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 5.73,
+                  "device_total_us": 483.769625
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 2.71,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::select",
+                  "host_total_us": 75.35,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::as_strided",
+                  "host_total_us": 14.21,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 130.88,
+                  "device_total_us": 39.08075
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 32.76,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 11.2,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2",
+                  "host_total_us": 10.44,
+                  "device_total_us": 39.08075
+                },
+                {
+                  "name": "aten::empty",
+                  "host_total_us": 232.44,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::to",
+                  "host_total_us": 3956.44,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::_to_copy",
+                  "host_total_us": 3934.44,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::empty_strided",
+                  "host_total_us": 20.7,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 6.52,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::copy_",
+                  "host_total_us": 3893.89,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::lift_fresh",
+                  "host_total_us": 51.81,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::detach_",
+                  "host_total_us": 18.56,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "detach_",
+                  "host_total_us": 10.82,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 143.28,
+                  "device_total_us": 232.664625
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 28.66,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 6.29,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 19.51,
+                  "device_total_us": 232.664625
+                },
+                {
+                  "name": "npu::npu_swiglu",
+                  "host_total_us": 141.95,
+                  "device_total_us": 24.2005
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 7.38,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnSwiGlu",
+                  "host_total_us": 6.34,
+                  "device_total_us": 24.2005
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 73.97,
+                  "device_total_us": 19.020375
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 6.31,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 41.47,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnDynamicQuantV2",
+                  "host_total_us": 3.55,
+                  "device_total_us": 19.020375
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 39.57,
+                  "device_total_us": 119.3625
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 4.92,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::get_npu_format",
+                  "host_total_us": 1.4,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aclnnGroupedMatmulV5",
+                  "host_total_us": 4.75,
+                  "device_total_us": 119.3625
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 121.82,
+                  "device_total_us": 481.89037500000006
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 7.36,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.79,
+                  "device_total_us": 9.76025
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 18.93,
+                  "device_total_us": 472.09012500000006
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 15.37,
+                  "device_total_us": 472.09012500000006
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.51,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 3.69,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 2.15,
+                  "device_total_us": 265.58525
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 13.71,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 63.59,
+                  "device_total_us": 246.98475000000002
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 2.92,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 1.93,
+                  "device_total_us": 1.94
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 4.48,
+                  "device_total_us": 244.98475000000002
+                },
+                {
+                  "name": "HcclSend",
+                  "host_total_us": 2.56,
+                  "device_total_us": 244.98475000000002
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 18.19,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 3.27,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "wait_event",
+                  "host_total_us": 5.63,
+                  "device_total_us": 108.562125
+                },
+                {
+                  "name": "destroy_event",
+                  "host_total_us": 3.33,
+                  "device_total_us": 0.0
+                }
+              ],
+              "top_operators_by_host_total": [
+                {
+                  "name": "aten::to",
+                  "host_total_us": 3956.44,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::_to_copy",
+                  "host_total_us": 3934.44,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "aten::copy_",
+                  "host_total_us": 3893.89,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 278.84,
+                  "device_total_us": 4953.338750000001
+                },
+                {
+                  "name": "aten::empty",
+                  "host_total_us": 232.44,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "c10d::recv_",
+                  "host_total_us": 150.55,
+                  "device_total_us": 656.6334999999999
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 143.28,
+                  "device_total_us": 232.664625
+                },
+                {
+                  "name": "npu::npu_swiglu",
+                  "host_total_us": 141.95,
+                  "device_total_us": 24.2005
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 130.88,
+                  "device_total_us": 39.08075
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 121.82,
+                  "device_total_us": 481.89037500000006
+                },
+                {
+                  "name": "aten::select",
+                  "host_total_us": 75.35,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "npu::npu_dynamic_quant",
+                  "host_total_us": 73.97,
+                  "device_total_us": 19.020375
+                },
+                {
+                  "name": "c10d::send",
+                  "host_total_us": 63.59,
+                  "device_total_us": 246.98475000000002
+                },
+                {
+                  "name": "aten::lift_fresh",
+                  "host_total_us": 51.81,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 45.75,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 43.57,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 42.87,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "empty_tensor",
+                  "host_total_us": 41.47,
+                  "device_total_us": 0.0
+                },
+                {
+                  "name": "record_event",
+                  "host_total_us": 40.37,
+                  "device_total_us": 0.02
+                },
+                {
+                  "name": "npu::npu_grouped_matmul",
+                  "host_total_us": 39.57,
+                  "device_total_us": 119.3625
+                }
+              ]
+            }
+          }
+        ],
+        "category_totals": {
+          "communication": {
+            "duration_us_total": 15007.581,
+            "wait_us_total": 12356.358,
+            "kernel_count": 8
+          },
+          "compute": {
+            "duration_us_total": 854.616,
+            "wait_us_total": 3786.2589999999996,
+            "kernel_count": 10
+          },
+          "send_recv_control": {
+            "duration_us_total": 1311.8870000000002,
+            "wait_us_total": 189.95299999999997,
+            "kernel_count": 8
+          },
+          "other": {
+            "duration_us_total": 0,
+            "wait_us_total": 0,
+            "kernel_count": 0
+          }
+        }
+      }
+    }
+  }
+}

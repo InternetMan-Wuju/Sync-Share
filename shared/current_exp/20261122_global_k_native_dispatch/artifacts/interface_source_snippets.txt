@@ -1,0 +1,286 @@
+=== fused_moe init uniform sharding ===
+   350	        self.moe_ep_rank = get_parallel().moe_ep_rank
+   351	        self.moe_tp_size = get_parallel().moe_tp_size
+   352	        self.moe_tp_rank = get_parallel().moe_tp_rank
+   353
+   354	        # For fused shared experts, DeepEP-class and MegaMOE backends use
+   355	        # per-rank physical shared slots, while other backends keep fused
+   356	        # shared experts as global shared slots. When fusion is disabled,
+   357	        # num_fused_shared_experts is 0 and no shared slots are added here.
+   358	        if has_per_rank_fused_shared_slots(num_fused_shared_experts):
+   359	            num_shared_slots = num_fused_shared_experts * self.moe_ep_size
+   360	        else:
+   361	            num_shared_slots = num_fused_shared_experts
+   362
+   363	        self._num_global_routed = num_experts - num_shared_slots
+   364	        if get_exec().moe.ep_join_mode == "scale":
+   365	            storage_ep_size = get_parallel().elastic_ep_initial_size
+   366	            assert storage_ep_size is not None
+   367	            self._expert_storage_rank = (
+   368	                get_parallel().ep_join_rank_offset + self.moe_ep_rank
+   369	            )
+   370	        else:
+   371	            storage_ep_size = self.moe_ep_size
+   372	            self._expert_storage_rank = self.moe_ep_rank
+   373	        assert self._num_global_routed % storage_ep_size == 0
+   374	        self._num_local_routed = self._num_global_routed // storage_ep_size
+   375	        self.num_local_experts = self._num_local_routed + num_fused_shared_experts
+   376	        self._has_fused_shared = num_fused_shared_experts > 0
+   377	        self._pending_fp8_shared_weights: dict[tuple[int, str], torch.Tensor] = {}
+   378	        self._pending_fp8_shared_scales: dict[tuple[int, str], torch.Tensor] = {}
+   379
+   380	        assert intermediate_size % self.moe_tp_size == 0
+   381	        self.intermediate_size_per_partition = intermediate_size // self.moe_tp_size
+   382	        self.reduce_results = reduce_results
+   383	        self.use_presharded_weights = use_presharded_weights
+   384
+   385	        self.use_triton_kernels = get_moe_runner_backend().is_triton_kernels()
+   400	                self.intermediate_size_per_partition, 128
+   401	            )
+   402
+   403	        self.quant_config = quant_config
+   404	        self.use_flashinfer_mxfp4_moe = get_moe_runner_backend().is_flashinfer_mxfp4()
+   405	        # TODO maybe we should remove this `if`, since `Mxfp4MoEMethod` does another round-up logic
+   406	        # Keep the pre-round value: the mxfp4 SM90 CUTLASS post-load processor
+   407	        # needs to know which trailing K columns are padding, because the
+   408	        # loader never writes them and their scale entries keep the buffer's
+   409	        # _UE8M0_ONE fill.
+   410	        self.hidden_size_unpadded = hidden_size
+   411	        if (
+   412	            self.quant_config is not None
+   413	            and self.quant_config.get_name() == "mxfp4"
+   414	            and self.use_flashinfer_mxfp4_moe
+   415	        ):
+   416	            hidden_size = round_up(hidden_size, 256)
+   417	        self.hidden_size = hidden_size
+   418
+   419	        self.moe_runner_config = MoeRunnerConfig(
+   420	            num_experts=num_experts,
+   421	            num_local_experts=self.num_local_experts,
+   422	            hidden_size=hidden_size,
+   423	            intermediate_size_per_partition=self.intermediate_size_per_partition,
+   424	            layer_id=layer_id,
+   425	            top_k=top_k,
+   426	            num_fused_shared_experts=num_fused_shared_experts,
+   427	            params_dtype=params_dtype,
+   428	            activation=activation,
+   429	            apply_router_weight_on_input=apply_router_weight_on_input,
+   430	            inplace=inplace,
+  1588	        with flashinfer_trtllm_deferred_finalize_context():
+  1589	            combine_input = self.run_moe_core(dispatch_output=dispatch_output)
+  1590
+  1591	        return self.dispatcher.combine(combine_input=combine_input)
+  1592
+  1593	    def run_moe_core(self, dispatch_output: DispatchOutput) -> CombineInput:
+  1594	        # TODO: consider using symmetric memory
+  1595	        return self.quant_method.apply(
+  1596	            layer=self,
+  1597	            dispatch_output=dispatch_output,
+  1598	        )
+  1599
+  1600	    @classmethod
+  1601	    def make_expert_params_mapping(
+  1602	        cls,
+=== deepep low-latency uniform ===
+   112	class DeepEPNormalDispatchOutput(NamedTuple):
+   113	    """DeepEP normal dispatch output."""
+   114
+   115	    hidden_states: torch.Tensor
+   116	    hidden_states_scale: Optional[torch.Tensor]
+   117	    topk_ids: torch.Tensor
+   118	    topk_weights: torch.Tensor
+   119	    num_recv_tokens_per_expert: List[int]
+   120
+   121	    @property
+   122	    def format(self) -> DispatchOutputFormat:
+   123	        return DispatchOutputFormat.DEEPEP_NORMAL
+   124
+   125
+   126	class DeepEPLLDispatchOutput(NamedTuple):
+   127	    """DeepEP low latency dispatch output."""
+   128
+   129	    hidden_states: torch.Tensor
+   130	    hidden_states_scale: Optional[torch.Tensor]
+   131	    topk_ids: torch.Tensor
+   132	    topk_weights: torch.Tensor
+   133	    masked_m: torch.Tensor
+   134	    expected_m: int
+   135
+   136	    @property
+   137	    def format(self) -> DispatchOutputFormat:
+   138	        return DispatchOutputFormat.DEEPEP_LL
+   139
+   140
+   141	assert isinstance(DeepEPNormalDispatchOutput, DispatchOutput)
+   142	assert isinstance(DeepEPLLDispatchOutput, DispatchOutput)
+   143
+   144
+   145	class DeepEPNormalCombineInput(NamedTuple):
+   146	    """DeepEP normal combine input."""
+   147
+   148	    hidden_states: torch.Tensor
+   149	    topk_ids: torch.Tensor
+   150	    topk_weights: torch.Tensor
+   151
+   152	    @property
+   153	    def format(self) -> CombineInputFormat:
+   154	        return CombineInputFormat.DEEPEP_NORMAL
+   155
+   156
+   157	class DeepEPLLCombineInput(NamedTuple):
+   158	    """DeepEP low latency combine input."""
+   159
+   160	    hidden_states: torch.Tensor
+   161	    topk_ids: torch.Tensor
+   162	    topk_weights: torch.Tensor
+   163
+   164	    @property
+   165	    def format(self) -> CombineInputFormat:
+   166	        return CombineInputFormat.DEEPEP_LL
+   167
+   168
+   169	assert isinstance(DeepEPNormalCombineInput, CombineInput)
+   170	assert isinstance(DeepEPLLCombineInput, CombineInput)
+   228	                    num_nvl_bytes,
+   229	                )
+   230	                num_rdma_bytes = max(
+   231	                    config.get_rdma_buffer_size_hint(hidden_bytes, group.size()),
+   232	                    num_rdma_bytes,
+   233	                )
+   234	        if deepep_mode.enable_low_latency():
+   235	            assert num_max_dispatch_tokens_per_rank != -1
+   236	            assert num_experts != -1 and num_experts % group.size() == 0
+   237	            if not _is_npu:
+   238	                _set_nvshmem_qp_depth(num_max_dispatch_tokens_per_rank)
+   239	            num_rdma_bytes = max(
+   240	                Buffer.get_low_latency_rdma_size_hint(
+   241	                    num_max_dispatch_tokens_per_rank,
+   242	                    hidden_size,
+=== expert location uniform ===
+    78
+    79	    @property
+    80	    def num_physical_experts(self) -> int:
+    81	        return self.physical_to_logical_map.shape[1]
+    82
+    83	    @property
+    84	    def num_local_physical_experts(self) -> int:
+    85	        ans, remainder = divmod(self.num_physical_experts, self.ep_size)
+    86	        assert remainder == 0
+    87	        return ans
+    88
+    89	    @property
+    90	    def num_logical_experts(self) -> int:
+   115	        num_physical_experts = common["num_physical_experts"]
+   116	        model_config_for_expert_location = common["model_config_for_expert_location"]
+   117	        num_layers = model_config_for_expert_location.num_layers
+   118	        num_logical_experts = model_config_for_expert_location.num_logical_experts
+   119
+   120	        base_num_physical_experts = common["base_num_physical_experts"]
+   121	        physical_to_logical_map = (
+   122	            torch.arange(0, base_num_physical_experts).repeat(num_layers, 1)
+   123	            % num_logical_experts
+   124	        )
+   125	        physical_to_logical_map = append_trivial_expert_slots(
+   126	            physical_to_logical_map,
+   127	            num_physical_experts - base_num_physical_experts,
+   128	            num_logical_experts,
+   129	        )
+   130
+   131	        return ExpertLocationMetadata.init_by_mapping(
+   132	            model_config,
+   133	            physical_to_logical_map=physical_to_logical_map,
+   134	            moe_ep_rank=moe_ep_rank,
+   135	        )
+   136
+   137	    @staticmethod
+   138	    def init_by_mapping(
+   139	        model_config: ModelConfig,
+   140	        physical_to_logical_map,
+=== glm expert count ===
+   520	                config.n_routed_experts + get_exec().moe.ep_num_redundant_experts
+   521	            )
+   522	            self.renormalize = config.norm_topk_prob
+   523	            self.topk_group = config.topk_group
+   524	            self.num_expert_group = config.n_group
+   525	            self.correction_bias = (
+   526	                self.gate.e_score_correction_bias.data
+   527	                if self.gate.e_score_correction_bias is not None
+   528	                else None
+   529	            )
+   530
+   531	        self._enable_a2a_moe = (
+   532	            get_moe_a2a_backend().is_deepep()
+   533	            or get_moe_a2a_backend().is_mooncake()
+   534	            or get_moe_a2a_backend().is_nixl()
+   535	            or get_moe_a2a_backend().is_mori()
+   536	            or get_moe_a2a_backend().is_ascend_fuseep()
+   537	            or get_moe_a2a_backend().is_flashinfer()
+   538	        )
+   539	        self._fuse_shared_experts_inside_sbo = SboFlags.fuse_shared_experts_inside_sbo()
+   540
+   541	    def get_moe_weights(self):
+   542	        return [
+   543	            x.data
+   544	            for name, x in self.experts.named_parameters()
+   545	            if name not in ["correction_bias"]
+   546	            and filter_moe_weight_param_global_expert(
+   547	                name, x, self.experts.num_local_experts
+   548	            )
+   549	        ]
+   550
+=== modelslim runner weight ownership ===
+   580	            backend = MoeRunnerBackend.ASCEND
+   581	        self.runner = MoeRunner(backend, moe_runner_config)
+   582
+   583	    # ------------------------------------------------------------------
+   584	    # Main apply()
+   585	    # ------------------------------------------------------------------
+   586	    def apply(
+   587	        self,
+   588	        layer,
+   589	        dispatch_output: StandardDispatchOutput,
+   590	    ) -> CombineInput:
+   591	        from sglang.srt.layers.moe.moe_runner.ascend import AscendQuantInfo
+   592
+   593	        quant_info = AscendQuantInfo(
+   594	            w13_weight=layer.w13_weight,
+   595	            w2_weight=layer.w2_weight,
+   596	            w13_weight_scale=layer.w13_weight_scale,
+   597	            w2_weight_scale=layer.w2_weight_scale,
+   598	            w13_weight_offset=getattr(layer, "w13_weight_offset", None),
+   599	            w2_weight_offset=getattr(layer, "w2_weight_offset", None),
+   600	            w13_scale_bias=getattr(layer, "w13_scale_bias", None),
+   601	            w2_scale_bias=getattr(layer, "w2_scale_bias", None),
+   602	            w13_weight_bias=getattr(layer, "w13_weight_bias", None),
+   603	            w2_weight_bias=getattr(layer, "w2_weight_bias", None),
+   604	        )
+   605	        return self.runner.run(dispatch_output, quant_info)
+=== GMM weight ownership ===
+    23	class GroupedMatmul(BaseMatmul):
+    24	    def forward(
+    25	        self,
+    26	        layer: torch.nn.Module,
+    27	        weight_prefix: str,
+    28	        hidden_states: torch.Tensor,
+    29	        expert_tokens: torch.Tensor,
+    30	        output_dtype: torch.dtype,
+    31	        group_list_type: int,
+    32	        transposed: bool,
+    33	        **scale_args,
+    34	    ) -> torch.Tensor:
+    35	        # Access the weight attribute directly from the layer
+    36	        weight = getattr(layer, f"{weight_prefix}_weight", None)
+    37	        if weight is None:
+    38	            raise AttributeError(
+    39	                f"Weight attribute '{weight_prefix}_weight' not found in layer"
+    40	            )
+    41	        return torch.ops.npu.npu_grouped_matmul(
+    42	            x=[hidden_states],
+    43	            weight=[weight] if transposed else [weight.transpose(1, 2)],
+    44	            **scale_args,
+    45	            split_item=2,
+    46	            group_list_type=group_list_type,
+    47	            group_type=0,
+    48	            group_list=expert_tokens,
+    49	            output_dtype=output_dtype,
+    50	        )[0]

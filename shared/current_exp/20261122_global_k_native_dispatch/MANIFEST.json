@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-11-22T18:47:01+08:00",
+  "plan_commit": "6ac4875",
+  "previous_baseline": "d0c4a3f482bd96471b01daf76b104e4b21c3b5ac",
+  "branch": "main",
+  "host": "npu1-23",
+  "devices": ["davinci0", "davinci1"],
+  "image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "model": "/data_lib/data/models/glm-q",
+  "layer": 49,
+  "logical_expert": 43,
+  "slot_bytes": 37810176,
+  "native_k1_supported": false,
+  "resident_stable_break_even": false,
+  "max_certain_blocker": "257 physical experts cannot enter the uniform per-rank expert sharding contract",
+  "old_formal_executions": 24,
+  "resident_formal_executions": 96,
+  "status": {
+    "interface_audit": "PASS_WITH_NATIVE_BLOCKER",
+    "old_semantics_pairing": "PASS_CORRECTNESS_NEGATIVE_PERFORMANCE",
+    "resident_pairing": "PASS_CORRECTNESS_UNSTABLE_PERFORMANCE",
+    "device_profiler": "PASS_DIAGNOSTIC",
+    "native_dispatch_protocol": "NOT_RUN_BLOCKED",
+    "real_expert43_native_attach": "NOT_RUN_BLOCKED",
+    "cpu_regression": "PASS_24"
+  },
+  "full_model_loaded": false,
+  "full_ttft_measured": false,
+  "containers_left_running": [],
+  "reproduce": "./reproduce.sh all"
+}
