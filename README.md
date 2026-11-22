@@ -10,7 +10,7 @@
 
 ## 当前内容
 
-- [Prefill 三组对照（2026-11-23）](handoff/2026-11-23_prefill_eplb_three_way_comparison.md)是当前执行入口。比较原版、原始 EPLB 加冗余和全组 K=1，从 EP2 验证推进到 EP16 与 EP32 长输入对照。
+- [Prefill 三组对照（2026-11-23）](handoff/2026-11-23_prefill_eplb_three_way_comparison.md)是当前执行入口。先实现可配置的全组 K 槽，再用两台机器共 32 die 和 AgentX 8K/16K/32K 验证三组执行。
 - [K=1 原型修正报告](shared/current_exp/20261123_global_k_adapter_repair/REPORT_FOR_REVIEW.md)记录 `7bfa44b` 的输入保真、owner 状态和显存验证。
 - [统一adapter实验报告](shared/current_exp/20261122_global_k_unified_adapter/REPORT_FOR_REVIEW.md)：3efa0a6；小样本真实计算/槽复用通过，复核发现输入改写、槽说明未绑定真实状态及显存基线问题，后续以当前修正计划为准。
 - [Prefill K=1：统一执行路径、格式与显存验收（2026-11-22）](handoff/2026-11-22_global_k_unified_adapter.md)：上一轮方案及验收背景。
@@ -102,7 +102,7 @@ Prefill 当前路由复制与精确配额 M0：
 
 本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。
 
-- [Prefill 三组对照（2026-11-23）](handoff/2026-11-23_prefill_eplb_three_way_comparison.md)是当前性能验证入口。
+- [Prefill 三组对照（2026-11-23）](handoff/2026-11-23_prefill_eplb_three_way_comparison.md)是当前实现和全量验证入口。
 - [Prefill K=1 原型修正（2026-11-23）](handoff/2026-11-23_global_k_adapter_repair.md)是上一轮正确性与资源验证方案。
 - [Prefill K=1：统一执行路径、格式与显存验收（2026-11-22）](handoff/2026-11-22_global_k_unified_adapter.md)：上一轮方案及验收背景。
 - [Prefill K=1：空编号路线的最小可行性证明（2026-11-22）](handoff/2026-11-22_global_k_placeholder_feasibility.md)：上一轮方案及验收背景。
