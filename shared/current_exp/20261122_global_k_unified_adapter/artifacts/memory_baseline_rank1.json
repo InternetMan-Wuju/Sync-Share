@@ -1,0 +1,304 @@
+{
+  "scenario": "baseline",
+  "rank": 1,
+  "memory_before": {
+    "allocated": 4096,
+    "reserved": 2097152,
+    "max_allocated": 4608,
+    "max_reserved": 2097152,
+    "device_free": 65631719424,
+    "device_total": 65796046848
+  },
+  "memory_after_bank": {
+    "allocated": 605021696,
+    "reserved": 761266176,
+    "max_allocated": 655377920,
+    "max_reserved": 761266176,
+    "device_free": 63889367040,
+    "device_total": 65796046848
+  },
+  "memory_final": {
+    "allocated": 605021696,
+    "reserved": 761266176,
+    "max_allocated": 655377920,
+    "max_reserved": 761266176,
+    "device_free": 63889367040,
+    "device_total": 65796046848
+  },
+  "result": {
+    "case_id": "memory_baseline",
+    "rank": 1,
+    "status": "PASS",
+    "reasons": [],
+    "dispatch_called": true,
+    "dispatch_delta": 1,
+    "global_tokens": 4,
+    "replica_required": false,
+    "output_shape": [
+      2,
+      6144
+    ],
+    "padding_sent": 0,
+    "padding_received": 0,
+    "padding_expert_calls": 0,
+    "padding_rows_skipped": 0,
+    "replica_tasks": 0,
+    "empty_legal_tasks": 0,
+    "task_count": 16,
+    "actual_task_vector": [
+      [
+        0,
+        0,
+        129
+      ],
+      [
+        0,
+        1,
+        129
+      ],
+      [
+        1,
+        0,
+        129
+      ],
+      [
+        1,
+        1,
+        129
+      ],
+      [
+        0,
+        0,
+        130
+      ],
+      [
+        0,
+        1,
+        130
+      ],
+      [
+        1,
+        0,
+        130
+      ],
+      [
+        1,
+        1,
+        130
+      ],
+      [
+        0,
+        0,
+        131
+      ],
+      [
+        0,
+        1,
+        131
+      ],
+      [
+        1,
+        0,
+        131
+      ],
+      [
+        1,
+        1,
+        131
+      ],
+      [
+        0,
+        0,
+        256
+      ],
+      [
+        0,
+        1,
+        256
+      ],
+      [
+        1,
+        0,
+        256
+      ],
+      [
+        1,
+        1,
+        256
+      ]
+    ],
+    "counts": [
+      4,
+      4,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0
+    ],
+    "memory": {
+      "allocated": 605592064,
+      "reserved": 725614592,
+      "max_allocated": 655377920,
+      "max_reserved": 725614592,
+      "device_free": 63927115776,
+      "device_total": 65796046848
+    },
+    "reference_max_abs": 0.000469893217086792,
+    "within_tolerance": true,
+    "expected_tasks": 16,
+    "actual_tasks": 16,
+    "task_multiset_equal": true,
+    "reference_finite": true
+  },
+  "adapter_memory_events": [
+    {
+      "stage": "adapter_init",
+      "rank": 1,
+      "memory": {
+        "allocated": 605016576,
+        "reserved": 725614592,
+        "max_allocated": 655377920,
+        "max_reserved": 725614592,
+        "device_free": 64400502784,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "memory_baseline_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 605592064,
+        "reserved": 725614592,
+        "max_allocated": 655377920,
+        "max_reserved": 725614592,
+        "device_free": 63927115776,
+        "device_total": 65796046848
+      }
+    }
+  ],
+  "main_storage_bytes": 604962816,
+  "slot_storage": null
+}

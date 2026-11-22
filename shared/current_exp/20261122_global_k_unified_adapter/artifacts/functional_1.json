@@ -1,0 +1,8617 @@
+{
+  "run_id": "unified",
+  "rank": 1,
+  "production_format_config": "UNKNOWN_NO_ACTIVE_SERVICE",
+  "flat_buffer": null,
+  "matrix": [
+    {
+      "case_id": "both_mixed_q0_noslot",
+      "rank": 1,
+      "status": "PASS",
+      "reasons": [],
+      "dispatch_called": true,
+      "dispatch_delta": 1,
+      "global_tokens": 4,
+      "replica_required": false,
+      "output_shape": [
+        2,
+        6144
+      ],
+      "padding_sent": 0,
+      "padding_received": 0,
+      "padding_expert_calls": 0,
+      "padding_rows_skipped": 0,
+      "replica_tasks": 0,
+      "empty_legal_tasks": 0,
+      "task_count": 16,
+      "actual_task_vector": [
+        [
+          0,
+          0,
+          129
+        ],
+        [
+          0,
+          1,
+          129
+        ],
+        [
+          1,
+          0,
+          129
+        ],
+        [
+          1,
+          1,
+          129
+        ],
+        [
+          0,
+          0,
+          130
+        ],
+        [
+          0,
+          1,
+          130
+        ],
+        [
+          1,
+          0,
+          130
+        ],
+        [
+          1,
+          1,
+          130
+        ],
+        [
+          0,
+          0,
+          131
+        ],
+        [
+          0,
+          1,
+          131
+        ],
+        [
+          1,
+          0,
+          131
+        ],
+        [
+          1,
+          1,
+          131
+        ],
+        [
+          0,
+          0,
+          256
+        ],
+        [
+          0,
+          1,
+          256
+        ],
+        [
+          1,
+          0,
+          256
+        ],
+        [
+          1,
+          1,
+          256
+        ]
+      ],
+      "counts": [
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 765460480,
+        "max_allocated": 661864960,
+        "max_reserved": 765460480,
+        "device_free": 63807459328,
+        "device_total": 65796046848
+      },
+      "reference_max_abs": 0.000469893217086792,
+      "within_tolerance": true,
+      "expected_tasks": 16,
+      "actual_tasks": 16,
+      "task_multiset_equal": true,
+      "reference_finite": true,
+      "expected_status": "PASS",
+      "case_pass": true
+    },
+    {
+      "case_id": "rank0_only",
+      "rank": 1,
+      "status": "PASS",
+      "reasons": [],
+      "dispatch_called": true,
+      "dispatch_delta": 1,
+      "global_tokens": 4,
+      "replica_required": false,
+      "output_shape": [
+        0,
+        6144
+      ],
+      "padding_sent": 1,
+      "padding_received": 0,
+      "padding_expert_calls": 0,
+      "padding_rows_skipped": 0,
+      "replica_tasks": 0,
+      "empty_legal_tasks": 0,
+      "task_count": 0,
+      "actual_task_vector": [],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "memory": {
+        "allocated": 642958336,
+        "reserved": 801112064,
+        "max_allocated": 676549632,
+        "max_reserved": 801112064,
+        "device_free": 63769710592,
+        "device_total": 65796046848
+      },
+      "reference_max_abs": 0.0,
+      "within_tolerance": true,
+      "expected_tasks": 0,
+      "actual_tasks": 0,
+      "task_multiset_equal": true,
+      "reference_finite": true,
+      "expected_status": "PASS",
+      "case_pass": true
+    },
+    {
+      "case_id": "rank1_only",
+      "rank": 1,
+      "status": "PASS",
+      "reasons": [],
+      "dispatch_called": true,
+      "dispatch_delta": 1,
+      "global_tokens": 4,
+      "replica_required": false,
+      "output_shape": [
+        4,
+        6144
+      ],
+      "padding_sent": 0,
+      "padding_received": 0,
+      "padding_expert_calls": 0,
+      "padding_rows_skipped": 0,
+      "replica_tasks": 0,
+      "empty_legal_tasks": 0,
+      "task_count": 32,
+      "actual_task_vector": [
+        [
+          1,
+          0,
+          129
+        ],
+        [
+          1,
+          1,
+          129
+        ],
+        [
+          1,
+          2,
+          129
+        ],
+        [
+          1,
+          3,
+          129
+        ],
+        [
+          1,
+          0,
+          130
+        ],
+        [
+          1,
+          1,
+          130
+        ],
+        [
+          1,
+          2,
+          130
+        ],
+        [
+          1,
+          3,
+          130
+        ],
+        [
+          1,
+          0,
+          131
+        ],
+        [
+          1,
+          1,
+          131
+        ],
+        [
+          1,
+          2,
+          131
+        ],
+        [
+          1,
+          3,
+          131
+        ],
+        [
+          1,
+          0,
+          132
+        ],
+        [
+          1,
+          1,
+          132
+        ],
+        [
+          1,
+          2,
+          132
+        ],
+        [
+          1,
+          3,
+          132
+        ],
+        [
+          1,
+          0,
+          133
+        ],
+        [
+          1,
+          1,
+          133
+        ],
+        [
+          1,
+          2,
+          133
+        ],
+        [
+          1,
+          3,
+          133
+        ],
+        [
+          1,
+          0,
+          134
+        ],
+        [
+          1,
+          1,
+          134
+        ],
+        [
+          1,
+          2,
+          134
+        ],
+        [
+          1,
+          3,
+          134
+        ],
+        [
+          1,
+          0,
+          135
+        ],
+        [
+          1,
+          1,
+          135
+        ],
+        [
+          1,
+          2,
+          135
+        ],
+        [
+          1,
+          3,
+          135
+        ],
+        [
+          1,
+          0,
+          256
+        ],
+        [
+          1,
+          1,
+          256
+        ],
+        [
+          1,
+          2,
+          256
+        ],
+        [
+          1,
+          3,
+          256
+        ]
+      ],
+      "counts": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "memory": {
+        "allocated": 643869696,
+        "reserved": 803209216,
+        "max_allocated": 676549632,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      },
+      "reference_max_abs": 0.00046691298484802246,
+      "within_tolerance": true,
+      "expected_tasks": 32,
+      "actual_tasks": 32,
+      "task_multiset_equal": true,
+      "reference_finite": true,
+      "expected_status": "PASS",
+      "case_pass": true
+    },
+    {
+      "case_id": "both_empty",
+      "rank": 1,
+      "status": "PASS_EMPTY",
+      "reasons": [],
+      "dispatch_called": false,
+      "dispatch_delta": 0,
+      "global_tokens": 0,
+      "output_shape": [
+        0,
+        6144
+      ],
+      "padding_sent": 0,
+      "replica_tasks": 0,
+      "empty_legal_tasks": 0,
+      "expected_status": "PASS",
+      "case_pass": true
+    },
+    {
+      "case_id": "invalid_rank0",
+      "rank": 1,
+      "status": "REJECTED",
+      "reasons": [],
+      "dispatch_called": false,
+      "dispatch_delta": 0,
+      "global_tokens": 4,
+      "replica_required": false,
+      "expected_status": "REJECT",
+      "case_pass": true
+    },
+    {
+      "case_id": "valid_after_invalid_rank0",
+      "rank": 1,
+      "status": "PASS",
+      "reasons": [],
+      "dispatch_called": true,
+      "dispatch_delta": 1,
+      "global_tokens": 4,
+      "replica_required": false,
+      "output_shape": [
+        2,
+        6144
+      ],
+      "padding_sent": 0,
+      "padding_received": 0,
+      "padding_expert_calls": 0,
+      "padding_rows_skipped": 0,
+      "replica_tasks": 0,
+      "empty_legal_tasks": 0,
+      "task_count": 16,
+      "actual_task_vector": [
+        [
+          0,
+          0,
+          129
+        ],
+        [
+          0,
+          1,
+          129
+        ],
+        [
+          1,
+          0,
+          129
+        ],
+        [
+          1,
+          1,
+          129
+        ],
+        [
+          0,
+          0,
+          130
+        ],
+        [
+          0,
+          1,
+          130
+        ],
+        [
+          1,
+          0,
+          130
+        ],
+        [
+          1,
+          1,
+          130
+        ],
+        [
+          0,
+          0,
+          131
+        ],
+        [
+          0,
+          1,
+          131
+        ],
+        [
+          1,
+          0,
+          131
+        ],
+        [
+          1,
+          1,
+          131
+        ],
+        [
+          0,
+          0,
+          256
+        ],
+        [
+          0,
+          1,
+          256
+        ],
+        [
+          1,
+          0,
+          256
+        ],
+        [
+          1,
+          1,
+          256
+        ]
+      ],
+      "counts": [
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      },
+      "reference_max_abs": 0.000469893217086792,
+      "within_tolerance": true,
+      "expected_tasks": 16,
+      "actual_tasks": 16,
+      "task_multiset_equal": true,
+      "reference_finite": true,
+      "expected_status": "PASS",
+      "case_pass": true
+    },
+    {
+      "case_id": "invalid_rank1",
+      "rank": 1,
+      "status": "REJECTED",
+      "reasons": [
+        "empty_comm_without_padding"
+      ],
+      "dispatch_called": false,
+      "dispatch_delta": 0,
+      "global_tokens": 4,
+      "replica_required": false,
+      "expected_status": "REJECT",
+      "case_pass": true
+    },
+    {
+      "case_id": "valid_after_invalid_rank1",
+      "rank": 1,
+      "status": "PASS",
+      "reasons": [],
+      "dispatch_called": true,
+      "dispatch_delta": 1,
+      "global_tokens": 4,
+      "replica_required": false,
+      "output_shape": [
+        2,
+        6144
+      ],
+      "padding_sent": 0,
+      "padding_received": 0,
+      "padding_expert_calls": 0,
+      "padding_rows_skipped": 0,
+      "replica_tasks": 0,
+      "empty_legal_tasks": 0,
+      "task_count": 16,
+      "actual_task_vector": [
+        [
+          0,
+          0,
+          129
+        ],
+        [
+          0,
+          1,
+          129
+        ],
+        [
+          1,
+          0,
+          129
+        ],
+        [
+          1,
+          1,
+          129
+        ],
+        [
+          0,
+          0,
+          130
+        ],
+        [
+          0,
+          1,
+          130
+        ],
+        [
+          1,
+          0,
+          130
+        ],
+        [
+          1,
+          1,
+          130
+        ],
+        [
+          0,
+          0,
+          131
+        ],
+        [
+          0,
+          1,
+          131
+        ],
+        [
+          1,
+          0,
+          131
+        ],
+        [
+          1,
+          1,
+          131
+        ],
+        [
+          0,
+          0,
+          256
+        ],
+        [
+          0,
+          1,
+          256
+        ],
+        [
+          1,
+          0,
+          256
+        ],
+        [
+          1,
+          1,
+          256
+        ]
+      ],
+      "counts": [
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      },
+      "reference_max_abs": 0.000469893217086792,
+      "within_tolerance": true,
+      "expected_tasks": 16,
+      "actual_tasks": 16,
+      "task_multiset_equal": true,
+      "reference_finite": true,
+      "expected_status": "PASS",
+      "case_pass": true
+    },
+    {
+      "case_id": "unready_slot",
+      "rank": 1,
+      "status": "REJECTED",
+      "reasons": [
+        "replica_not_ready"
+      ],
+      "dispatch_called": false,
+      "dispatch_delta": 0,
+      "global_tokens": 4,
+      "replica_required": true,
+      "expected_status": "REJECT",
+      "case_pass": true
+    },
+    {
+      "case_id": "valid_after_unready",
+      "rank": 1,
+      "status": "PASS",
+      "reasons": [],
+      "dispatch_called": true,
+      "dispatch_delta": 1,
+      "global_tokens": 4,
+      "replica_required": false,
+      "output_shape": [
+        2,
+        6144
+      ],
+      "padding_sent": 0,
+      "padding_received": 0,
+      "padding_expert_calls": 0,
+      "padding_rows_skipped": 0,
+      "replica_tasks": 0,
+      "empty_legal_tasks": 0,
+      "task_count": 16,
+      "actual_task_vector": [
+        [
+          0,
+          0,
+          129
+        ],
+        [
+          0,
+          1,
+          129
+        ],
+        [
+          1,
+          0,
+          129
+        ],
+        [
+          1,
+          1,
+          129
+        ],
+        [
+          0,
+          0,
+          130
+        ],
+        [
+          0,
+          1,
+          130
+        ],
+        [
+          1,
+          0,
+          130
+        ],
+        [
+          1,
+          1,
+          130
+        ],
+        [
+          0,
+          0,
+          131
+        ],
+        [
+          0,
+          1,
+          131
+        ],
+        [
+          1,
+          0,
+          131
+        ],
+        [
+          1,
+          1,
+          131
+        ],
+        [
+          0,
+          0,
+          256
+        ],
+        [
+          0,
+          1,
+          256
+        ],
+        [
+          1,
+          0,
+          256
+        ],
+        [
+          1,
+          1,
+          256
+        ]
+      ],
+      "counts": [
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      },
+      "reference_max_abs": 0.000469893217086792,
+      "within_tolerance": true,
+      "expected_tasks": 16,
+      "actual_tasks": 16,
+      "task_multiset_equal": true,
+      "reference_finite": true,
+      "expected_status": "PASS",
+      "case_pass": true
+    },
+    {
+      "case_id": "partial_slot",
+      "rank": 1,
+      "status": "PASS",
+      "reasons": [],
+      "dispatch_called": true,
+      "dispatch_delta": 1,
+      "global_tokens": 4,
+      "replica_required": true,
+      "output_shape": [
+        2,
+        6144
+      ],
+      "padding_sent": 0,
+      "padding_received": 0,
+      "padding_expert_calls": 0,
+      "padding_rows_skipped": 0,
+      "replica_tasks": 2,
+      "empty_legal_tasks": 0,
+      "task_count": 18,
+      "actual_task_vector": [
+        [
+          0,
+          0,
+          129
+        ],
+        [
+          0,
+          1,
+          129
+        ],
+        [
+          1,
+          0,
+          129
+        ],
+        [
+          1,
+          1,
+          129
+        ],
+        [
+          0,
+          0,
+          130
+        ],
+        [
+          0,
+          1,
+          130
+        ],
+        [
+          1,
+          0,
+          130
+        ],
+        [
+          1,
+          1,
+          130
+        ],
+        [
+          0,
+          0,
+          131
+        ],
+        [
+          0,
+          1,
+          131
+        ],
+        [
+          1,
+          0,
+          131
+        ],
+        [
+          1,
+          1,
+          131
+        ],
+        [
+          0,
+          0,
+          256
+        ],
+        [
+          0,
+          1,
+          256
+        ],
+        [
+          1,
+          0,
+          256
+        ],
+        [
+          1,
+          1,
+          256
+        ],
+        [
+          0,
+          0,
+          257
+        ],
+        [
+          1,
+          0,
+          257
+        ]
+      ],
+      "counts": [
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        2
+      ],
+      "memory": {
+        "allocated": 643451904,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      },
+      "reference_max_abs": 0.000469893217086792,
+      "within_tolerance": true,
+      "expected_tasks": 18,
+      "actual_tasks": 18,
+      "task_multiset_equal": true,
+      "reference_finite": true,
+      "expected_status": "PASS",
+      "case_pass": true
+    },
+    {
+      "case_id": "all_slot",
+      "rank": 1,
+      "status": "PASS",
+      "reasons": [],
+      "dispatch_called": true,
+      "dispatch_delta": 1,
+      "global_tokens": 4,
+      "replica_required": true,
+      "output_shape": [
+        2,
+        6144
+      ],
+      "padding_sent": 0,
+      "padding_received": 0,
+      "padding_expert_calls": 0,
+      "padding_rows_skipped": 0,
+      "replica_tasks": 4,
+      "empty_legal_tasks": 0,
+      "task_count": 20,
+      "actual_task_vector": [
+        [
+          0,
+          0,
+          129
+        ],
+        [
+          0,
+          1,
+          129
+        ],
+        [
+          1,
+          0,
+          129
+        ],
+        [
+          1,
+          1,
+          129
+        ],
+        [
+          0,
+          0,
+          130
+        ],
+        [
+          0,
+          1,
+          130
+        ],
+        [
+          1,
+          0,
+          130
+        ],
+        [
+          1,
+          1,
+          130
+        ],
+        [
+          0,
+          0,
+          131
+        ],
+        [
+          0,
+          1,
+          131
+        ],
+        [
+          1,
+          0,
+          131
+        ],
+        [
+          1,
+          1,
+          131
+        ],
+        [
+          0,
+          0,
+          256
+        ],
+        [
+          0,
+          1,
+          256
+        ],
+        [
+          1,
+          0,
+          256
+        ],
+        [
+          1,
+          1,
+          256
+        ],
+        [
+          0,
+          0,
+          257
+        ],
+        [
+          0,
+          1,
+          257
+        ],
+        [
+          1,
+          0,
+          257
+        ],
+        [
+          1,
+          1,
+          257
+        ]
+      ],
+      "counts": [
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4
+      ],
+      "memory": {
+        "allocated": 643501056,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      },
+      "reference_max_abs": 0.000469893217086792,
+      "within_tolerance": true,
+      "expected_tasks": 20,
+      "actual_tasks": 20,
+      "task_multiset_equal": true,
+      "reference_finite": true,
+      "expected_status": "PASS",
+      "case_pass": true
+    },
+    {
+      "case_id": "wrong_layer",
+      "rank": 1,
+      "status": "REJECTED",
+      "reasons": [
+        "replica_wrong_layer"
+      ],
+      "dispatch_called": false,
+      "dispatch_delta": 0,
+      "global_tokens": 4,
+      "replica_required": true,
+      "expected_status": "REJECT",
+      "case_pass": true
+    },
+    {
+      "case_id": "valid_after_wrong_layer",
+      "rank": 1,
+      "status": "PASS",
+      "reasons": [],
+      "dispatch_called": true,
+      "dispatch_delta": 1,
+      "global_tokens": 4,
+      "replica_required": false,
+      "output_shape": [
+        2,
+        6144
+      ],
+      "padding_sent": 0,
+      "padding_received": 0,
+      "padding_expert_calls": 0,
+      "padding_rows_skipped": 0,
+      "replica_tasks": 0,
+      "empty_legal_tasks": 0,
+      "task_count": 16,
+      "actual_task_vector": [
+        [
+          0,
+          0,
+          129
+        ],
+        [
+          0,
+          1,
+          129
+        ],
+        [
+          1,
+          0,
+          129
+        ],
+        [
+          1,
+          1,
+          129
+        ],
+        [
+          0,
+          0,
+          130
+        ],
+        [
+          0,
+          1,
+          130
+        ],
+        [
+          1,
+          0,
+          130
+        ],
+        [
+          1,
+          1,
+          130
+        ],
+        [
+          0,
+          0,
+          131
+        ],
+        [
+          0,
+          1,
+          131
+        ],
+        [
+          1,
+          0,
+          131
+        ],
+        [
+          1,
+          1,
+          131
+        ],
+        [
+          0,
+          0,
+          256
+        ],
+        [
+          0,
+          1,
+          256
+        ],
+        [
+          1,
+          0,
+          256
+        ],
+        [
+          1,
+          1,
+          256
+        ]
+      ],
+      "counts": [
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      },
+      "reference_max_abs": 0.0003538280725479126,
+      "within_tolerance": true,
+      "expected_tasks": 16,
+      "actual_tasks": 16,
+      "task_multiset_equal": true,
+      "reference_finite": true,
+      "expected_status": "PASS",
+      "case_pass": true
+    },
+    {
+      "case_id": "stale_generation",
+      "rank": 1,
+      "status": "REJECTED",
+      "reasons": [
+        "replica_stale_generation"
+      ],
+      "dispatch_called": false,
+      "dispatch_delta": 0,
+      "global_tokens": 4,
+      "replica_required": true,
+      "expected_status": "REJECT",
+      "case_pass": true
+    },
+    {
+      "case_id": "valid_after_stale",
+      "rank": 1,
+      "status": "PASS",
+      "reasons": [],
+      "dispatch_called": true,
+      "dispatch_delta": 1,
+      "global_tokens": 4,
+      "replica_required": false,
+      "output_shape": [
+        2,
+        6144
+      ],
+      "padding_sent": 0,
+      "padding_received": 0,
+      "padding_expert_calls": 0,
+      "padding_rows_skipped": 0,
+      "replica_tasks": 0,
+      "empty_legal_tasks": 0,
+      "task_count": 16,
+      "actual_task_vector": [
+        [
+          0,
+          0,
+          129
+        ],
+        [
+          0,
+          1,
+          129
+        ],
+        [
+          1,
+          0,
+          129
+        ],
+        [
+          1,
+          1,
+          129
+        ],
+        [
+          0,
+          0,
+          130
+        ],
+        [
+          0,
+          1,
+          130
+        ],
+        [
+          1,
+          0,
+          130
+        ],
+        [
+          1,
+          1,
+          130
+        ],
+        [
+          0,
+          0,
+          131
+        ],
+        [
+          0,
+          1,
+          131
+        ],
+        [
+          1,
+          0,
+          131
+        ],
+        [
+          1,
+          1,
+          131
+        ],
+        [
+          0,
+          0,
+          256
+        ],
+        [
+          0,
+          1,
+          256
+        ],
+        [
+          1,
+          0,
+          256
+        ],
+        [
+          1,
+          1,
+          256
+        ]
+      ],
+      "counts": [
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      },
+      "reference_max_abs": 0.000469893217086792,
+      "within_tolerance": true,
+      "expected_tasks": 16,
+      "actual_tasks": 16,
+      "task_multiset_equal": true,
+      "reference_finite": true,
+      "expected_status": "PASS",
+      "case_pass": true
+    }
+  ],
+  "reuse": [
+    {
+      "cycle": 0,
+      "layer": 50,
+      "install": {
+        "rank": 1,
+        "layer": 50,
+        "tag": "unified_reuse0_l50",
+        "generation": 2,
+        "ready": true,
+        "owner": 1,
+        "local_slot": 0,
+        "expert": 43,
+        "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "slot_storage_ptr": 20622706999296,
+        "slot_storage_bytes": 37810176,
+        "slot_formats": [
+          {
+            "name": "w13",
+            "shape": [
+              1,
+              6144,
+              4096
+            ],
+            "stride": [
+              25165824,
+              4096,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622706999296,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "w2",
+            "shape": [
+              1,
+              2048,
+              6144
+            ],
+            "stride": [
+              12582912,
+              6144,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622732165120,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744748032,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744756224,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744768512,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744784896,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          }
+        ],
+        "source_rank_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "hash_equal": true,
+        "install_ms": 29.339347
+      },
+      "result": {
+        "case_id": "reuse_0_50",
+        "rank": 1,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 4,
+        "empty_legal_tasks": 0,
+        "task_count": 20,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            129
+          ],
+          [
+            0,
+            1,
+            129
+          ],
+          [
+            1,
+            0,
+            129
+          ],
+          [
+            1,
+            1,
+            129
+          ],
+          [
+            0,
+            0,
+            130
+          ],
+          [
+            0,
+            1,
+            130
+          ],
+          [
+            1,
+            0,
+            130
+          ],
+          [
+            1,
+            1,
+            130
+          ],
+          [
+            0,
+            0,
+            131
+          ],
+          [
+            0,
+            1,
+            131
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            1,
+            1,
+            131
+          ],
+          [
+            0,
+            0,
+            256
+          ],
+          [
+            0,
+            1,
+            256
+          ],
+          [
+            1,
+            0,
+            256
+          ],
+          [
+            1,
+            1,
+            256
+          ],
+          [
+            0,
+            0,
+            257
+          ],
+          [
+            0,
+            1,
+            257
+          ],
+          [
+            1,
+            0,
+            257
+          ],
+          [
+            1,
+            1,
+            257
+          ]
+        ],
+        "counts": [
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4
+        ],
+        "memory": {
+          "allocated": 643501056,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63767613440,
+          "device_total": 65796046848
+        },
+        "reference_max_abs": 0.0003538280725479126,
+        "within_tolerance": true,
+        "expected_tasks": 20,
+        "actual_tasks": 20,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 0,
+      "layer": 49,
+      "install": {
+        "rank": 1,
+        "layer": 49,
+        "tag": "unified_reuse0_l49",
+        "generation": 3,
+        "ready": true,
+        "owner": 1,
+        "local_slot": 0,
+        "expert": 43,
+        "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "slot_storage_ptr": 20622706999296,
+        "slot_storage_bytes": 37810176,
+        "slot_formats": [
+          {
+            "name": "w13",
+            "shape": [
+              1,
+              6144,
+              4096
+            ],
+            "stride": [
+              25165824,
+              4096,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622706999296,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "w2",
+            "shape": [
+              1,
+              2048,
+              6144
+            ],
+            "stride": [
+              12582912,
+              6144,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622732165120,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744748032,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744756224,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744768512,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744784896,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          }
+        ],
+        "source_rank_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "hash_equal": true,
+        "install_ms": 29.127056
+      },
+      "result": {
+        "case_id": "reuse_0_49",
+        "rank": 1,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 4,
+        "empty_legal_tasks": 0,
+        "task_count": 20,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            129
+          ],
+          [
+            0,
+            1,
+            129
+          ],
+          [
+            1,
+            0,
+            129
+          ],
+          [
+            1,
+            1,
+            129
+          ],
+          [
+            0,
+            0,
+            130
+          ],
+          [
+            0,
+            1,
+            130
+          ],
+          [
+            1,
+            0,
+            130
+          ],
+          [
+            1,
+            1,
+            130
+          ],
+          [
+            0,
+            0,
+            131
+          ],
+          [
+            0,
+            1,
+            131
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            1,
+            1,
+            131
+          ],
+          [
+            0,
+            0,
+            256
+          ],
+          [
+            0,
+            1,
+            256
+          ],
+          [
+            1,
+            0,
+            256
+          ],
+          [
+            1,
+            1,
+            256
+          ],
+          [
+            0,
+            0,
+            257
+          ],
+          [
+            0,
+            1,
+            257
+          ],
+          [
+            1,
+            0,
+            257
+          ],
+          [
+            1,
+            1,
+            257
+          ]
+        ],
+        "counts": [
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4
+        ],
+        "memory": {
+          "allocated": 643501056,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63767613440,
+          "device_total": 65796046848
+        },
+        "reference_max_abs": 0.000469893217086792,
+        "within_tolerance": true,
+        "expected_tasks": 20,
+        "actual_tasks": 20,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 1,
+      "layer": 50,
+      "install": {
+        "rank": 1,
+        "layer": 50,
+        "tag": "unified_reuse1_l50",
+        "generation": 4,
+        "ready": true,
+        "owner": 1,
+        "local_slot": 0,
+        "expert": 43,
+        "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "slot_storage_ptr": 20622706999296,
+        "slot_storage_bytes": 37810176,
+        "slot_formats": [
+          {
+            "name": "w13",
+            "shape": [
+              1,
+              6144,
+              4096
+            ],
+            "stride": [
+              25165824,
+              4096,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622706999296,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "w2",
+            "shape": [
+              1,
+              2048,
+              6144
+            ],
+            "stride": [
+              12582912,
+              6144,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622732165120,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744748032,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744756224,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744768512,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744784896,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          }
+        ],
+        "source_rank_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "hash_equal": true,
+        "install_ms": 29.307388
+      },
+      "result": {
+        "case_id": "reuse_1_50",
+        "rank": 1,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 4,
+        "empty_legal_tasks": 0,
+        "task_count": 20,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            129
+          ],
+          [
+            0,
+            1,
+            129
+          ],
+          [
+            1,
+            0,
+            129
+          ],
+          [
+            1,
+            1,
+            129
+          ],
+          [
+            0,
+            0,
+            130
+          ],
+          [
+            0,
+            1,
+            130
+          ],
+          [
+            1,
+            0,
+            130
+          ],
+          [
+            1,
+            1,
+            130
+          ],
+          [
+            0,
+            0,
+            131
+          ],
+          [
+            0,
+            1,
+            131
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            1,
+            1,
+            131
+          ],
+          [
+            0,
+            0,
+            256
+          ],
+          [
+            0,
+            1,
+            256
+          ],
+          [
+            1,
+            0,
+            256
+          ],
+          [
+            1,
+            1,
+            256
+          ],
+          [
+            0,
+            0,
+            257
+          ],
+          [
+            0,
+            1,
+            257
+          ],
+          [
+            1,
+            0,
+            257
+          ],
+          [
+            1,
+            1,
+            257
+          ]
+        ],
+        "counts": [
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4
+        ],
+        "memory": {
+          "allocated": 643501056,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63767613440,
+          "device_total": 65796046848
+        },
+        "reference_max_abs": 0.0003538280725479126,
+        "within_tolerance": true,
+        "expected_tasks": 20,
+        "actual_tasks": 20,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 1,
+      "layer": 49,
+      "install": {
+        "rank": 1,
+        "layer": 49,
+        "tag": "unified_reuse1_l49",
+        "generation": 5,
+        "ready": true,
+        "owner": 1,
+        "local_slot": 0,
+        "expert": 43,
+        "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "slot_storage_ptr": 20622706999296,
+        "slot_storage_bytes": 37810176,
+        "slot_formats": [
+          {
+            "name": "w13",
+            "shape": [
+              1,
+              6144,
+              4096
+            ],
+            "stride": [
+              25165824,
+              4096,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622706999296,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "w2",
+            "shape": [
+              1,
+              2048,
+              6144
+            ],
+            "stride": [
+              12582912,
+              6144,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622732165120,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744748032,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744756224,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744768512,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744784896,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          }
+        ],
+        "source_rank_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "hash_equal": true,
+        "install_ms": 31.399634
+      },
+      "result": {
+        "case_id": "reuse_1_49",
+        "rank": 1,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 4,
+        "empty_legal_tasks": 0,
+        "task_count": 20,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            129
+          ],
+          [
+            0,
+            1,
+            129
+          ],
+          [
+            1,
+            0,
+            129
+          ],
+          [
+            1,
+            1,
+            129
+          ],
+          [
+            0,
+            0,
+            130
+          ],
+          [
+            0,
+            1,
+            130
+          ],
+          [
+            1,
+            0,
+            130
+          ],
+          [
+            1,
+            1,
+            130
+          ],
+          [
+            0,
+            0,
+            131
+          ],
+          [
+            0,
+            1,
+            131
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            1,
+            1,
+            131
+          ],
+          [
+            0,
+            0,
+            256
+          ],
+          [
+            0,
+            1,
+            256
+          ],
+          [
+            1,
+            0,
+            256
+          ],
+          [
+            1,
+            1,
+            256
+          ],
+          [
+            0,
+            0,
+            257
+          ],
+          [
+            0,
+            1,
+            257
+          ],
+          [
+            1,
+            0,
+            257
+          ],
+          [
+            1,
+            1,
+            257
+          ]
+        ],
+        "counts": [
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4
+        ],
+        "memory": {
+          "allocated": 643501056,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63767613440,
+          "device_total": 65796046848
+        },
+        "reference_max_abs": 0.000469893217086792,
+        "within_tolerance": true,
+        "expected_tasks": 20,
+        "actual_tasks": 20,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 2,
+      "layer": 50,
+      "install": {
+        "rank": 1,
+        "layer": 50,
+        "tag": "unified_reuse2_l50",
+        "generation": 6,
+        "ready": true,
+        "owner": 1,
+        "local_slot": 0,
+        "expert": 43,
+        "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "slot_storage_ptr": 20622706999296,
+        "slot_storage_bytes": 37810176,
+        "slot_formats": [
+          {
+            "name": "w13",
+            "shape": [
+              1,
+              6144,
+              4096
+            ],
+            "stride": [
+              25165824,
+              4096,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622706999296,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "w2",
+            "shape": [
+              1,
+              2048,
+              6144
+            ],
+            "stride": [
+              12582912,
+              6144,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622732165120,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744748032,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744756224,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744768512,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744784896,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          }
+        ],
+        "source_rank_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "hash_equal": true,
+        "install_ms": 28.495561
+      },
+      "result": {
+        "case_id": "reuse_2_50",
+        "rank": 1,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 4,
+        "empty_legal_tasks": 0,
+        "task_count": 20,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            129
+          ],
+          [
+            0,
+            1,
+            129
+          ],
+          [
+            1,
+            0,
+            129
+          ],
+          [
+            1,
+            1,
+            129
+          ],
+          [
+            0,
+            0,
+            130
+          ],
+          [
+            0,
+            1,
+            130
+          ],
+          [
+            1,
+            0,
+            130
+          ],
+          [
+            1,
+            1,
+            130
+          ],
+          [
+            0,
+            0,
+            131
+          ],
+          [
+            0,
+            1,
+            131
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            1,
+            1,
+            131
+          ],
+          [
+            0,
+            0,
+            256
+          ],
+          [
+            0,
+            1,
+            256
+          ],
+          [
+            1,
+            0,
+            256
+          ],
+          [
+            1,
+            1,
+            256
+          ],
+          [
+            0,
+            0,
+            257
+          ],
+          [
+            0,
+            1,
+            257
+          ],
+          [
+            1,
+            0,
+            257
+          ],
+          [
+            1,
+            1,
+            257
+          ]
+        ],
+        "counts": [
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4
+        ],
+        "memory": {
+          "allocated": 643501056,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63767613440,
+          "device_total": 65796046848
+        },
+        "reference_max_abs": 0.0003538280725479126,
+        "within_tolerance": true,
+        "expected_tasks": 20,
+        "actual_tasks": 20,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 2,
+      "layer": 49,
+      "install": {
+        "rank": 1,
+        "layer": 49,
+        "tag": "unified_reuse2_l49",
+        "generation": 7,
+        "ready": true,
+        "owner": 1,
+        "local_slot": 0,
+        "expert": 43,
+        "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "slot_storage_ptr": 20622706999296,
+        "slot_storage_bytes": 37810176,
+        "slot_formats": [
+          {
+            "name": "w13",
+            "shape": [
+              1,
+              6144,
+              4096
+            ],
+            "stride": [
+              25165824,
+              4096,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622706999296,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "w2",
+            "shape": [
+              1,
+              2048,
+              6144
+            ],
+            "stride": [
+              12582912,
+              6144,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622732165120,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744748032,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744756224,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744768512,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744784896,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          }
+        ],
+        "source_rank_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "hash_equal": true,
+        "install_ms": 29.393098
+      },
+      "result": {
+        "case_id": "reuse_2_49",
+        "rank": 1,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 4,
+        "empty_legal_tasks": 0,
+        "task_count": 20,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            129
+          ],
+          [
+            0,
+            1,
+            129
+          ],
+          [
+            1,
+            0,
+            129
+          ],
+          [
+            1,
+            1,
+            129
+          ],
+          [
+            0,
+            0,
+            130
+          ],
+          [
+            0,
+            1,
+            130
+          ],
+          [
+            1,
+            0,
+            130
+          ],
+          [
+            1,
+            1,
+            130
+          ],
+          [
+            0,
+            0,
+            131
+          ],
+          [
+            0,
+            1,
+            131
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            1,
+            1,
+            131
+          ],
+          [
+            0,
+            0,
+            256
+          ],
+          [
+            0,
+            1,
+            256
+          ],
+          [
+            1,
+            0,
+            256
+          ],
+          [
+            1,
+            1,
+            256
+          ],
+          [
+            0,
+            0,
+            257
+          ],
+          [
+            0,
+            1,
+            257
+          ],
+          [
+            1,
+            0,
+            257
+          ],
+          [
+            1,
+            1,
+            257
+          ]
+        ],
+        "counts": [
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4
+        ],
+        "memory": {
+          "allocated": 643501056,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63767613440,
+          "device_total": 65796046848
+        },
+        "reference_max_abs": 0.000469893217086792,
+        "within_tolerance": true,
+        "expected_tasks": 20,
+        "actual_tasks": 20,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    }
+  ],
+  "main_storage": {
+    "entries": [
+      {
+        "layer": 49,
+        "expert": 128,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618080681984,
+        "storage_ptr": 20618080681984,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 128,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618024059392,
+        "storage_ptr": 20618024059392,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 128,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009467392,
+        "storage_ptr": 20618009467392,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 128,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009383424,
+        "storage_ptr": 20618009383424,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 128,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009425408,
+        "storage_ptr": 20618009425408,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 128,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009442304,
+        "storage_ptr": 20618009442304,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 129,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618135207936,
+        "storage_ptr": 20618135207936,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 129,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618053419008,
+        "storage_ptr": 20618053419008,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 129,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009413120,
+        "storage_ptr": 20618009413120,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 129,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009396224,
+        "storage_ptr": 20618009396224,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 129,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009501184,
+        "storage_ptr": 20618009501184,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 129,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009518080,
+        "storage_ptr": 20618009518080,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 130,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618189733888,
+        "storage_ptr": 20618189733888,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 130,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618038738944,
+        "storage_ptr": 20618038738944,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 130,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009610240,
+        "storage_ptr": 20618009610240,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 130,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009476096,
+        "storage_ptr": 20618009476096,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 130,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009568256,
+        "storage_ptr": 20618009568256,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 130,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009585152,
+        "storage_ptr": 20618009585152,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 131,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618216996864,
+        "storage_ptr": 20618216996864,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 131,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618107944960,
+        "storage_ptr": 20618107944960,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 131,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009488896,
+        "storage_ptr": 20618009488896,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 131,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009543168,
+        "storage_ptr": 20618009543168,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 131,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009644032,
+        "storage_ptr": 20618009644032,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 131,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009660928,
+        "storage_ptr": 20618009660928,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 132,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618271522816,
+        "storage_ptr": 20618271522816,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 132,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618120528384,
+        "storage_ptr": 20618120528384,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 132,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009555968,
+        "storage_ptr": 20618009555968,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 132,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009618944,
+        "storage_ptr": 20618009618944,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 132,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009711104,
+        "storage_ptr": 20618009711104,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 132,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009728000,
+        "storage_ptr": 20618009728000,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 133,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618298785792,
+        "storage_ptr": 20618298785792,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 133,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618162470912,
+        "storage_ptr": 20618162470912,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 133,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009631744,
+        "storage_ptr": 20618009631744,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 133,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009686016,
+        "storage_ptr": 20618009686016,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 133,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009778176,
+        "storage_ptr": 20618009778176,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 133,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009795072,
+        "storage_ptr": 20618009795072,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 134,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618353311744,
+        "storage_ptr": 20618353311744,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 134,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618175054336,
+        "storage_ptr": 20618175054336,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 134,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009698816,
+        "storage_ptr": 20618009698816,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 134,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009753088,
+        "storage_ptr": 20618009753088,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 134,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009845248,
+        "storage_ptr": 20618009845248,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 134,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009862144,
+        "storage_ptr": 20618009862144,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 255,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618380574720,
+        "storage_ptr": 20618380574720,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 255,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618244259840,
+        "storage_ptr": 20618244259840,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 255,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009765888,
+        "storage_ptr": 20618009765888,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 255,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009820160,
+        "storage_ptr": 20618009820160,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 255,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009912320,
+        "storage_ptr": 20618009912320,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 49,
+        "expert": 255,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009929216,
+        "storage_ptr": 20618009929216,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 128,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618435100672,
+        "storage_ptr": 20618435100672,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 128,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618256843264,
+        "storage_ptr": 20618256843264,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 128,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009832960,
+        "storage_ptr": 20618009832960,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 128,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009887232,
+        "storage_ptr": 20618009887232,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 128,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009979392,
+        "storage_ptr": 20618009979392,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 128,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618009996288,
+        "storage_ptr": 20618009996288,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 129,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618462363648,
+        "storage_ptr": 20618462363648,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 129,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618326048768,
+        "storage_ptr": 20618326048768,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 129,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009900032,
+        "storage_ptr": 20618009900032,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 129,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009954304,
+        "storage_ptr": 20618009954304,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 129,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010046464,
+        "storage_ptr": 20618010046464,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 129,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010063360,
+        "storage_ptr": 20618010063360,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 130,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618516889600,
+        "storage_ptr": 20618516889600,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 130,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618338632192,
+        "storage_ptr": 20618338632192,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 130,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618009967104,
+        "storage_ptr": 20618009967104,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 130,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618010021376,
+        "storage_ptr": 20618010021376,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 130,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010113536,
+        "storage_ptr": 20618010113536,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 130,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010130432,
+        "storage_ptr": 20618010130432,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 131,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618544152576,
+        "storage_ptr": 20618544152576,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 131,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618407837696,
+        "storage_ptr": 20618407837696,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 131,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618010034176,
+        "storage_ptr": 20618010034176,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 131,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618010088448,
+        "storage_ptr": 20618010088448,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 131,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010180608,
+        "storage_ptr": 20618010180608,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 131,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010197504,
+        "storage_ptr": 20618010197504,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 132,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618598678528,
+        "storage_ptr": 20618598678528,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 132,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618420421120,
+        "storage_ptr": 20618420421120,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 132,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618010101248,
+        "storage_ptr": 20618010101248,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 132,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618010155520,
+        "storage_ptr": 20618010155520,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 132,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010247680,
+        "storage_ptr": 20618010247680,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 132,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010264576,
+        "storage_ptr": 20618010264576,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 133,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618625941504,
+        "storage_ptr": 20618625941504,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 133,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618489626624,
+        "storage_ptr": 20618489626624,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 133,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618010168320,
+        "storage_ptr": 20618010168320,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 133,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618010222592,
+        "storage_ptr": 20618010222592,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 133,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010314752,
+        "storage_ptr": 20618010314752,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 133,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010331648,
+        "storage_ptr": 20618010331648,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 134,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618680467456,
+        "storage_ptr": 20618680467456,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 134,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618502210048,
+        "storage_ptr": 20618502210048,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 134,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618010235392,
+        "storage_ptr": 20618010235392,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 134,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618010289664,
+        "storage_ptr": 20618010289664,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 134,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010381824,
+        "storage_ptr": 20618010381824,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 134,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010398720,
+        "storage_ptr": 20618010398720,
+        "storage_bytes": 24576,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 255,
+        "attr": "w13_weight",
+        "shape": [
+          1,
+          6144,
+          4096
+        ],
+        "stride": [
+          25165824,
+          4096,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618707730432,
+        "storage_ptr": 20618707730432,
+        "storage_bytes": 25165824,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 255,
+        "attr": "w2_weight",
+        "shape": [
+          1,
+          2048,
+          6144
+        ],
+        "stride": [
+          12582912,
+          6144,
+          1
+        ],
+        "dtype": "torch.int8",
+        "data_ptr": 20618571415552,
+        "storage_ptr": 20618571415552,
+        "storage_bytes": 12582912,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 255,
+        "attr": "w13_weight_scale",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618010302464,
+        "storage_ptr": 20618010302464,
+        "storage_bytes": 8192,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 255,
+        "attr": "w2_weight_scale",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "data_ptr": 20618010356736,
+        "storage_ptr": 20618010356736,
+        "storage_bytes": 12288,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 255,
+        "attr": "w13_weight_offset",
+        "shape": [
+          1,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010448896,
+        "storage_ptr": 20618010448896,
+        "storage_bytes": 16384,
+        "offset": 0
+      },
+      {
+        "layer": 50,
+        "expert": 255,
+        "attr": "w2_weight_offset",
+        "shape": [
+          1,
+          6144
+        ],
+        "stride": [
+          6144,
+          1
+        ],
+        "dtype": "torch.float32",
+        "data_ptr": 20618010465792,
+        "storage_ptr": 20618010465792,
+        "storage_bytes": 24576,
+        "offset": 0
+      }
+    ],
+    "unique_bytes": 604962816,
+    "unique_storage_count": 96
+  },
+  "bank_formats": [
+    {
+      "layer": 49,
+      "expert": 128,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618080681984,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618080681984
+    },
+    {
+      "layer": 49,
+      "expert": 128,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618024059392,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618024059392
+    },
+    {
+      "layer": 49,
+      "expert": 128,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009467392,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009467392
+    },
+    {
+      "layer": 49,
+      "expert": 128,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009383424,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009383424
+    },
+    {
+      "layer": 49,
+      "expert": 128,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009425408,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009425408
+    },
+    {
+      "layer": 49,
+      "expert": 128,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009442304,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009442304
+    },
+    {
+      "layer": 49,
+      "expert": 129,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618135207936,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618135207936
+    },
+    {
+      "layer": 49,
+      "expert": 129,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618053419008,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618053419008
+    },
+    {
+      "layer": 49,
+      "expert": 129,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009413120,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009413120
+    },
+    {
+      "layer": 49,
+      "expert": 129,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009396224,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009396224
+    },
+    {
+      "layer": 49,
+      "expert": 129,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009501184,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009501184
+    },
+    {
+      "layer": 49,
+      "expert": 129,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009518080,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009518080
+    },
+    {
+      "layer": 49,
+      "expert": 130,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618189733888,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618189733888
+    },
+    {
+      "layer": 49,
+      "expert": 130,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618038738944,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618038738944
+    },
+    {
+      "layer": 49,
+      "expert": 130,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009610240,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009610240
+    },
+    {
+      "layer": 49,
+      "expert": 130,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009476096,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009476096
+    },
+    {
+      "layer": 49,
+      "expert": 130,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009568256,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009568256
+    },
+    {
+      "layer": 49,
+      "expert": 130,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009585152,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009585152
+    },
+    {
+      "layer": 49,
+      "expert": 131,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618216996864,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618216996864
+    },
+    {
+      "layer": 49,
+      "expert": 131,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618107944960,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618107944960
+    },
+    {
+      "layer": 49,
+      "expert": 131,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009488896,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009488896
+    },
+    {
+      "layer": 49,
+      "expert": 131,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009543168,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009543168
+    },
+    {
+      "layer": 49,
+      "expert": 131,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009644032,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009644032
+    },
+    {
+      "layer": 49,
+      "expert": 131,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009660928,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009660928
+    },
+    {
+      "layer": 49,
+      "expert": 132,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618271522816,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618271522816
+    },
+    {
+      "layer": 49,
+      "expert": 132,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618120528384,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618120528384
+    },
+    {
+      "layer": 49,
+      "expert": 132,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009555968,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009555968
+    },
+    {
+      "layer": 49,
+      "expert": 132,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009618944,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009618944
+    },
+    {
+      "layer": 49,
+      "expert": 132,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009711104,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009711104
+    },
+    {
+      "layer": 49,
+      "expert": 132,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009728000,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009728000
+    },
+    {
+      "layer": 49,
+      "expert": 133,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618298785792,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618298785792
+    },
+    {
+      "layer": 49,
+      "expert": 133,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618162470912,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618162470912
+    },
+    {
+      "layer": 49,
+      "expert": 133,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009631744,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009631744
+    },
+    {
+      "layer": 49,
+      "expert": 133,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009686016,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009686016
+    },
+    {
+      "layer": 49,
+      "expert": 133,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009778176,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009778176
+    },
+    {
+      "layer": 49,
+      "expert": 133,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009795072,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009795072
+    },
+    {
+      "layer": 49,
+      "expert": 134,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618353311744,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618353311744
+    },
+    {
+      "layer": 49,
+      "expert": 134,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618175054336,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618175054336
+    },
+    {
+      "layer": 49,
+      "expert": 134,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009698816,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009698816
+    },
+    {
+      "layer": 49,
+      "expert": 134,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009753088,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009753088
+    },
+    {
+      "layer": 49,
+      "expert": 134,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009845248,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009845248
+    },
+    {
+      "layer": 49,
+      "expert": 134,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009862144,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009862144
+    },
+    {
+      "layer": 49,
+      "expert": 255,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618380574720,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618380574720
+    },
+    {
+      "layer": 49,
+      "expert": 255,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618244259840,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618244259840
+    },
+    {
+      "layer": 49,
+      "expert": 255,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009765888,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009765888
+    },
+    {
+      "layer": 49,
+      "expert": 255,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009820160,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009820160
+    },
+    {
+      "layer": 49,
+      "expert": 255,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009912320,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009912320
+    },
+    {
+      "layer": 49,
+      "expert": 255,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009929216,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009929216
+    },
+    {
+      "layer": 50,
+      "expert": 128,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618435100672,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618435100672
+    },
+    {
+      "layer": 50,
+      "expert": 128,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618256843264,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618256843264
+    },
+    {
+      "layer": 50,
+      "expert": 128,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009832960,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009832960
+    },
+    {
+      "layer": 50,
+      "expert": 128,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009887232,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009887232
+    },
+    {
+      "layer": 50,
+      "expert": 128,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009979392,
+      "storage_bytes": 16384,
+      "data_ptr": 20618009979392
+    },
+    {
+      "layer": 50,
+      "expert": 128,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009996288,
+      "storage_bytes": 24576,
+      "data_ptr": 20618009996288
+    },
+    {
+      "layer": 50,
+      "expert": 129,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618462363648,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618462363648
+    },
+    {
+      "layer": 50,
+      "expert": 129,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618326048768,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618326048768
+    },
+    {
+      "layer": 50,
+      "expert": 129,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009900032,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009900032
+    },
+    {
+      "layer": 50,
+      "expert": 129,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618009954304,
+      "storage_bytes": 12288,
+      "data_ptr": 20618009954304
+    },
+    {
+      "layer": 50,
+      "expert": 129,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010046464,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010046464
+    },
+    {
+      "layer": 50,
+      "expert": 129,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010063360,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010063360
+    },
+    {
+      "layer": 50,
+      "expert": 130,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618516889600,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618516889600
+    },
+    {
+      "layer": 50,
+      "expert": 130,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618338632192,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618338632192
+    },
+    {
+      "layer": 50,
+      "expert": 130,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618009967104,
+      "storage_bytes": 8192,
+      "data_ptr": 20618009967104
+    },
+    {
+      "layer": 50,
+      "expert": 130,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010021376,
+      "storage_bytes": 12288,
+      "data_ptr": 20618010021376
+    },
+    {
+      "layer": 50,
+      "expert": 130,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010113536,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010113536
+    },
+    {
+      "layer": 50,
+      "expert": 130,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010130432,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010130432
+    },
+    {
+      "layer": 50,
+      "expert": 131,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618544152576,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618544152576
+    },
+    {
+      "layer": 50,
+      "expert": 131,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618407837696,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618407837696
+    },
+    {
+      "layer": 50,
+      "expert": 131,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010034176,
+      "storage_bytes": 8192,
+      "data_ptr": 20618010034176
+    },
+    {
+      "layer": 50,
+      "expert": 131,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010088448,
+      "storage_bytes": 12288,
+      "data_ptr": 20618010088448
+    },
+    {
+      "layer": 50,
+      "expert": 131,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010180608,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010180608
+    },
+    {
+      "layer": 50,
+      "expert": 131,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010197504,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010197504
+    },
+    {
+      "layer": 50,
+      "expert": 132,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618598678528,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618598678528
+    },
+    {
+      "layer": 50,
+      "expert": 132,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618420421120,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618420421120
+    },
+    {
+      "layer": 50,
+      "expert": 132,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010101248,
+      "storage_bytes": 8192,
+      "data_ptr": 20618010101248
+    },
+    {
+      "layer": 50,
+      "expert": 132,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010155520,
+      "storage_bytes": 12288,
+      "data_ptr": 20618010155520
+    },
+    {
+      "layer": 50,
+      "expert": 132,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010247680,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010247680
+    },
+    {
+      "layer": 50,
+      "expert": 132,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010264576,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010264576
+    },
+    {
+      "layer": 50,
+      "expert": 133,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618625941504,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618625941504
+    },
+    {
+      "layer": 50,
+      "expert": 133,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618489626624,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618489626624
+    },
+    {
+      "layer": 50,
+      "expert": 133,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010168320,
+      "storage_bytes": 8192,
+      "data_ptr": 20618010168320
+    },
+    {
+      "layer": 50,
+      "expert": 133,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010222592,
+      "storage_bytes": 12288,
+      "data_ptr": 20618010222592
+    },
+    {
+      "layer": 50,
+      "expert": 133,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010314752,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010314752
+    },
+    {
+      "layer": 50,
+      "expert": 133,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010331648,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010331648
+    },
+    {
+      "layer": 50,
+      "expert": 134,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618680467456,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618680467456
+    },
+    {
+      "layer": 50,
+      "expert": 134,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618502210048,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618502210048
+    },
+    {
+      "layer": 50,
+      "expert": 134,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010235392,
+      "storage_bytes": 8192,
+      "data_ptr": 20618010235392
+    },
+    {
+      "layer": 50,
+      "expert": 134,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010289664,
+      "storage_bytes": 12288,
+      "data_ptr": 20618010289664
+    },
+    {
+      "layer": 50,
+      "expert": 134,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010381824,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010381824
+    },
+    {
+      "layer": 50,
+      "expert": 134,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010398720,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010398720
+    },
+    {
+      "layer": 50,
+      "expert": 255,
+      "attr": "w13_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        25165824,
+        4096,
+        1
+      ],
+      "storage_ptr": 20618707730432,
+      "storage_bytes": 25165824,
+      "data_ptr": 20618707730432
+    },
+    {
+      "layer": 50,
+      "expert": 255,
+      "attr": "w2_weight",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        12582912,
+        6144,
+        1
+      ],
+      "storage_ptr": 20618571415552,
+      "storage_bytes": 12582912,
+      "data_ptr": 20618571415552
+    },
+    {
+      "layer": 50,
+      "expert": 255,
+      "attr": "w13_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010302464,
+      "storage_bytes": 8192,
+      "data_ptr": 20618010302464
+    },
+    {
+      "layer": 50,
+      "expert": 255,
+      "attr": "w2_weight_scale",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010356736,
+      "storage_bytes": 12288,
+      "data_ptr": 20618010356736
+    },
+    {
+      "layer": 50,
+      "expert": 255,
+      "attr": "w13_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        4096,
+        1
+      ],
+      "storage_ptr": 20618010448896,
+      "storage_bytes": 16384,
+      "data_ptr": 20618010448896
+    },
+    {
+      "layer": 50,
+      "expert": 255,
+      "attr": "w2_weight_offset",
+      "format_string": 2,
+      "format_code": 2,
+      "stride": [
+        6144,
+        1
+      ],
+      "storage_ptr": 20618010465792,
+      "storage_bytes": 24576,
+      "data_ptr": 20618010465792
+    }
+  ],
+  "conversion_alias": [],
+  "memory_before": {
+    "allocated": 4096,
+    "reserved": 2097152,
+    "max_allocated": 4608,
+    "max_reserved": 2097152,
+    "device_free": 65631674368,
+    "device_total": 65796046848
+  },
+  "memory_after_bank": {
+    "allocated": 642832384,
+    "reserved": 803209216,
+    "max_allocated": 676611072,
+    "max_reserved": 803209216,
+    "device_free": 63767613440,
+    "device_total": 65796046848
+  },
+  "memory_final": {
+    "allocated": 642832384,
+    "reserved": 803209216,
+    "max_allocated": 676611072,
+    "max_reserved": 803209216,
+    "device_free": 63767613440,
+    "device_total": 65796046848
+  },
+  "adapter_memory_events": [
+    {
+      "stage": "adapter_init",
+      "rank": 1,
+      "memory": {
+        "allocated": 642827264,
+        "reserved": 765460480,
+        "max_allocated": 655377920,
+        "max_reserved": 765460480,
+        "device_free": 64361725952,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "installed_l49",
+      "rank": 1,
+      "memory": {
+        "allocated": 642827264,
+        "reserved": 765460480,
+        "max_allocated": 655377920,
+        "max_reserved": 765460480,
+        "device_free": 64278900736,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "both_mixed_q0_noslot_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 765460480,
+        "max_allocated": 661864960,
+        "max_reserved": 765460480,
+        "device_free": 63807459328,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "rank0_only_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 642958336,
+        "reserved": 801112064,
+        "max_allocated": 676549632,
+        "max_reserved": 801112064,
+        "device_free": 63769710592,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "rank1_only_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643869696,
+        "reserved": 803209216,
+        "max_allocated": 676549632,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "both_empty_early_exit",
+      "rank": 1,
+      "memory": {
+        "allocated": 642833408,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "valid_after_invalid_rank0_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "valid_after_invalid_rank1_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "valid_after_unready_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "partial_slot_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643451904,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "all_slot_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643501056,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "valid_after_wrong_layer_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "valid_after_stale_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "installed_l50",
+      "rank": 1,
+      "memory": {
+        "allocated": 642832384,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "reuse_0_50_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643501056,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "installed_l49",
+      "rank": 1,
+      "memory": {
+        "allocated": 642832384,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "reuse_0_49_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643501056,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "installed_l50",
+      "rank": 1,
+      "memory": {
+        "allocated": 642832384,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "reuse_1_50_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643501056,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "installed_l49",
+      "rank": 1,
+      "memory": {
+        "allocated": 642832384,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "reuse_1_49_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643501056,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "installed_l50",
+      "rank": 1,
+      "memory": {
+        "allocated": 642832384,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "reuse_2_50_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643501056,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "installed_l49",
+      "rank": 1,
+      "memory": {
+        "allocated": 642832384,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "reuse_2_49_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 643501056,
+        "reserved": 803209216,
+        "max_allocated": 676611072,
+        "max_reserved": 803209216,
+        "device_free": 63767613440,
+        "device_total": 65796046848
+      }
+    }
+  ],
+  "slot_storage": null,
+  "final_slot": {
+    "rank": 1,
+    "lease": null,
+    "pool": {
+      "K": 1,
+      "slot_bytes": 37810176,
+      "committed_bytes": 37810176,
+      "per_rank_capacity": {
+        "1": 1
+      },
+      "per_rank_allocated_bytes": {
+        "1": 37810176
+      },
+      "active_bytes": 0,
+      "cached_free_bytes": 37810176,
+      "local": {
+        "1": {
+          "pool_id": "unified-adapter-slot-rank1:9f91d9025ae3",
+          "capacity": 1,
+          "slot_bytes": 37810176,
+          "allocated_bytes": 37810176,
+          "free": 1,
+          "reserved": 0,
+          "ready": 0,
+          "in_use": 0,
+          "releasing": 0,
+          "acquisitions": 7,
+          "releases": 7,
+          "reuses": 6,
+          "max_concurrent_leases": 1,
+          "max_concurrent_uses": 1,
+          "distinct_layers_seen": 2,
+          "distinct_experts_seen": 2,
+          "backing_reallocations": 0,
+          "invariant_violations": 0
+        }
+      }
+    }
+  },
+  "dispatch_calls": 16
+}

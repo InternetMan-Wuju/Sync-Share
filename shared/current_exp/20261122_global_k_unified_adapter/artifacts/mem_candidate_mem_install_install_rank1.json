@@ -1,0 +1,13 @@
+{
+  "rank": 1,
+  "layer": 49,
+  "tag": "mem_candidate_mem_install",
+  "generation": 1,
+  "ready": true,
+  "owner": 1,
+  "local_slot": 0,
+  "expert": 43,
+  "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+  "slot_storage_ptr": 20622706999296,
+  "slot_storage_bytes": 37810176
+}

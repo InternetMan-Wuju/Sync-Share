@@ -1,0 +1,634 @@
+W1122 15:43:19.057000 1 site-packages/torch/distributed/run.py:852]
+W1122 15:43:19.057000 1 site-packages/torch/distributed/run.py:852] *****************************************
+W1122 15:43:19.057000 1 site-packages/torch/distributed/run.py:852] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+W1122 15:43:19.057000 1 site-packages/torch/distributed/run.py:852] *****************************************
+[Gloo] Rank [Gloo] Rank 01 is connected to  is connected to 11 peer ranks.  peer ranks. Expected number of connected peer ranks is : Expected number of connected peer ranks is : 11
+
+[Gloo] Rank [Gloo] Rank 01 is connected to  is connected to 11 peer ranks.  peer ranks. Expected number of connected peer ranks is : Expected number of connected peer ranks is : 11
+
+Setup Custom allreduce failed with . To silence this warning, specify --disable-custom-all-reduce explicitly.
+Setup Custom allreduce failed with . To silence this warning, specify --disable-custom-all-reduce explicitly.
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[rank1]:[W1122 15:43:31.238125039 TensorFactories.cpp:340] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank0]:[W1122 15:43:31.261263782 TensorFactories.cpp:340] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+/usr/local/python3.11.15/lib/python3.11/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+{
+  "scenario": "baseline",
+  "rank": 0,
+  "memory_before": {
+    "allocated": 4096,
+    "reserved": 2097152,
+    "max_allocated": 4608,
+    "max_reserved": 2097152,
+    "device_free": 65359523840,
+    "device_total": 65787658240
+  },
+  "memory_after_bank": {
+    "allocated": 642832384,
+    "reserved": 801112064,
+    "max_allocated": 676549632,
+    "max_reserved": 801112064,
+    "device_free": 63578017792,
+    "device_total": 65787658240
+  },
+  "memory_final": {
+    "allocated": 642832384,
+    "reserved": 801112064,
+    "max_allocated": 676549632,
+    "max_reserved": 801112064,
+    "device_free": 63578017792,
+    "device_total": 65787658240
+  },
+  "result": {
+    "case_id": "memory_baseline",
+    "rank": 0,
+    "status": "PASS",
+    "reasons": [],
+    "dispatch_called": true,
+    "dispatch_delta": 1,
+    "global_tokens": 4,
+    "replica_required": false,
+    "output_shape": [
+      2,
+      6144
+    ],
+    "padding_sent": 0,
+    "padding_received": 0,
+    "padding_expert_calls": 0,
+    "padding_rows_skipped": 0,
+    "replica_tasks": 0,
+    "empty_legal_tasks": 0,
+    "task_count": 16,
+    "actual_task_vector": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        1,
+        5
+      ],
+      [
+        1,
+        0,
+        5
+      ],
+      [
+        1,
+        1,
+        5
+      ],
+      [
+        0,
+        0,
+        43
+      ],
+      [
+        0,
+        1,
+        43
+      ],
+      [
+        1,
+        0,
+        43
+      ],
+      [
+        1,
+        1,
+        43
+      ],
+      [
+        0,
+        0,
+        127
+      ],
+      [
+        0,
+        1,
+        127
+      ],
+      [
+        1,
+        0,
+        127
+      ],
+      [
+        1,
+        1,
+        127
+      ]
+    ],
+    "counts": [
+      4,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0
+    ],
+    "memory": {
+      "allocated": 643402752,
+      "reserved": 765460480,
+      "max_allocated": 661864960,
+      "max_reserved": 765460480,
+      "device_free": 63615766528,
+      "device_total": 65787658240
+    },
+    "reference_max_abs": 0.0004768073558807373,
+    "within_tolerance": true,
+    "expected_tasks": 16,
+    "actual_tasks": 16,
+    "task_multiset_equal": true,
+    "reference_finite": true
+  },
+  "adapter_memory_events": [
+    {
+      "stage": "adapter_init",
+      "rank": 0,
+      "memory": {
+        "allocated": 642827264,
+        "reserved": 765460480,
+        "max_allocated": 655377920,
+        "max_reserved": 765460480,
+        "device_free": 64087805952,
+        "device_total": 65787658240
+      }
+    },
+    {
+      "stage": "memory_baseline_complete",
+      "rank": 0,
+      "memory": {
+        "allocated": 643402752,
+        "reserved": 765460480,
+        "max_allocated": 661864960,
+        "max_reserved": 765460480,
+        "device_free": 63615766528,
+        "device_total": 65787658240
+      }
+    }
+  ],
+  "main_storage_bytes": 604962816,
+  "slot_storage": null
+}
+{
+  "scenario": "baseline",
+  "rank": 1,
+  "memory_before": {
+    "allocated": 4096,
+    "reserved": 2097152,
+    "max_allocated": 4608,
+    "max_reserved": 2097152,
+    "device_free": 65631719424,
+    "device_total": 65796046848
+  },
+  "memory_after_bank": {
+    "allocated": 605021696,
+    "reserved": 761266176,
+    "max_allocated": 655377920,
+    "max_reserved": 761266176,
+    "device_free": 63889367040,
+    "device_total": 65796046848
+  },
+  "memory_final": {
+    "allocated": 605021696,
+    "reserved": 761266176,
+    "max_allocated": 655377920,
+    "max_reserved": 761266176,
+    "device_free": 63889367040,
+    "device_total": 65796046848
+  },
+  "result": {
+    "case_id": "memory_baseline",
+    "rank": 1,
+    "status": "PASS",
+    "reasons": [],
+    "dispatch_called": true,
+    "dispatch_delta": 1,
+    "global_tokens": 4,
+    "replica_required": false,
+    "output_shape": [
+      2,
+      6144
+    ],
+    "padding_sent": 0,
+    "padding_received": 0,
+    "padding_expert_calls": 0,
+    "padding_rows_skipped": 0,
+    "replica_tasks": 0,
+    "empty_legal_tasks": 0,
+    "task_count": 16,
+    "actual_task_vector": [
+      [
+        0,
+        0,
+        129
+      ],
+      [
+        0,
+        1,
+        129
+      ],
+      [
+        1,
+        0,
+        129
+      ],
+      [
+        1,
+        1,
+        129
+      ],
+      [
+        0,
+        0,
+        130
+      ],
+      [
+        0,
+        1,
+        130
+      ],
+      [
+        1,
+        0,
+        130
+      ],
+      [
+        1,
+        1,
+        130
+      ],
+      [
+        0,
+        0,
+        131
+      ],
+      [
+        0,
+        1,
+        131
+      ],
+      [
+        1,
+        0,
+        131
+      ],
+      [
+        1,
+        1,
+        131
+      ],
+      [
+        0,
+        0,
+        256
+      ],
+      [
+        0,
+        1,
+        256
+      ],
+      [
+        1,
+        0,
+        256
+      ],
+      [
+        1,
+        1,
+        256
+      ]
+    ],
+    "counts": [
+      4,
+      4,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0
+    ],
+    "memory": {
+      "allocated": 605592064,
+      "reserved": 725614592,
+      "max_allocated": 655377920,
+      "max_reserved": 725614592,
+      "device_free": 63927115776,
+      "device_total": 65796046848
+    },
+    "reference_max_abs": 0.000469893217086792,
+    "within_tolerance": true,
+    "expected_tasks": 16,
+    "actual_tasks": 16,
+    "task_multiset_equal": true,
+    "reference_finite": true
+  },
+  "adapter_memory_events": [
+    {
+      "stage": "adapter_init",
+      "rank": 1,
+      "memory": {
+        "allocated": 605016576,
+        "reserved": 725614592,
+        "max_allocated": 655377920,
+        "max_reserved": 725614592,
+        "device_free": 64400502784,
+        "device_total": 65796046848
+      }
+    },
+    {
+      "stage": "memory_baseline_complete",
+      "rank": 1,
+      "memory": {
+        "allocated": 605592064,
+        "reserved": 725614592,
+        "max_allocated": 655377920,
+        "max_reserved": 725614592,
+        "device_free": 63927115776,
+        "device_total": 65796046848
+      }
+    }
+  ],
+  "main_storage_bytes": 604962816,
+  "slot_storage": null
+}

@@ -1,0 +1,17 @@
+{
+  "started_at": "2026-11-22T23:35:26+08:00",
+  "host": "npu1-23",
+  "npu": "16 x Ascend 910C; davinci0 and davinci1 used",
+  "image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "sglang": "0.5.20",
+  "torch_npu": "2.10.0",
+  "cann": "9.0.0",
+  "deep_ep_strategy": "normal/alltoall",
+  "model": "/data_lib/data/models/glm-q",
+  "layers": [49, 50],
+  "communication_slots": 258,
+  "empty_comm": 128,
+  "replica_comm": 257,
+  "replica_logical_expert": 43,
+  "production_format_config": "UNKNOWN_NO_ACTIVE_SERVICE"
+}

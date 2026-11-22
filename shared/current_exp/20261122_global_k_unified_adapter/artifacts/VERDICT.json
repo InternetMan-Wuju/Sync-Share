@@ -1,0 +1,30 @@
+{
+  "verdict": "GO_FUNCTIONAL_LIMITED",
+  "stages": {
+    "functional": "PASS",
+    "format_resource": "PASS_HARNESS_BASE_FORMAT_PRODUCTION_UNKNOWN",
+    "reuse": "PASS",
+    "performance": "NOT_RUN"
+  },
+  "validation_errors": [],
+  "validator_regressions": {
+    "missing_rank": [
+      "missing_rank_functional"
+    ],
+    "missing_install": [
+      "install_count:6",
+      "install_layer_sequence",
+      "install_generations"
+    ],
+    "bad_generation": [
+      "install_generations"
+    ],
+    "unready_final": [
+      "final_slot_not_released"
+    ]
+  },
+  "functional_scope": "finite 8+8 main experts per layer, synthetic hidden/top8, 258 native all-to-all, real ModelSlim W8A8",
+  "format_scope": "actual harness base/ND; production unknown",
+  "performance_status": "NOT_RUN",
+  "next_blocker": "production-format/config confirmation and full grouped/complete-layer integration"
+}

@@ -1,0 +1,4873 @@
+{
+  "installs": [
+    {
+      "tag": "unified_install49",
+      "layer": 49,
+      "generation": 1,
+      "ready": true,
+      "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "hash_equal": true,
+      "slot_storage_ptr": 20622706999296,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622706999296,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622732165120,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744748032,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744756224,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744768512,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744784896,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        }
+      ],
+      "install_ms_source": null,
+      "install_ms_target": null
+    },
+    {
+      "tag": "unified_reuse0_l50",
+      "layer": 50,
+      "generation": 2,
+      "ready": true,
+      "source_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "hash_equal": true,
+      "slot_storage_ptr": 20622706999296,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622706999296,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622732165120,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744748032,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744756224,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744768512,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744784896,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        }
+      ],
+      "install_ms_source": null,
+      "install_ms_target": null
+    },
+    {
+      "tag": "unified_reuse0_l49",
+      "layer": 49,
+      "generation": 3,
+      "ready": true,
+      "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "hash_equal": true,
+      "slot_storage_ptr": 20622706999296,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622706999296,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622732165120,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744748032,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744756224,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744768512,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744784896,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        }
+      ],
+      "install_ms_source": null,
+      "install_ms_target": null
+    },
+    {
+      "tag": "unified_reuse1_l50",
+      "layer": 50,
+      "generation": 4,
+      "ready": true,
+      "source_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "hash_equal": true,
+      "slot_storage_ptr": 20622706999296,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622706999296,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622732165120,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744748032,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744756224,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744768512,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744784896,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        }
+      ],
+      "install_ms_source": null,
+      "install_ms_target": null
+    },
+    {
+      "tag": "unified_reuse1_l49",
+      "layer": 49,
+      "generation": 5,
+      "ready": true,
+      "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "hash_equal": true,
+      "slot_storage_ptr": 20622706999296,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622706999296,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622732165120,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744748032,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744756224,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744768512,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744784896,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        }
+      ],
+      "install_ms_source": null,
+      "install_ms_target": null
+    },
+    {
+      "tag": "unified_reuse2_l50",
+      "layer": 50,
+      "generation": 6,
+      "ready": true,
+      "source_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+      "hash_equal": true,
+      "slot_storage_ptr": 20622706999296,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622706999296,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622732165120,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744748032,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744756224,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744768512,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744784896,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        }
+      ],
+      "install_ms_source": null,
+      "install_ms_target": null
+    },
+    {
+      "tag": "unified_reuse2_l49",
+      "layer": 49,
+      "generation": 7,
+      "ready": true,
+      "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+      "hash_equal": true,
+      "slot_storage_ptr": 20622706999296,
+      "slot_storage_bytes": 37810176,
+      "slot_formats": [
+        {
+          "name": "w13",
+          "shape": [
+            1,
+            6144,
+            4096
+          ],
+          "stride": [
+            25165824,
+            4096,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622706999296,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "w2",
+          "shape": [
+            1,
+            2048,
+            6144
+          ],
+          "stride": [
+            12582912,
+            6144,
+            1
+          ],
+          "dtype": "torch.int8",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622732165120,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744748032,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "s2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.bfloat16",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744756224,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o13",
+          "shape": [
+            1,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744768512,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        },
+        {
+          "name": "o2",
+          "shape": [
+            1,
+            6144
+          ],
+          "stride": [
+            6144,
+            1
+          ],
+          "dtype": "torch.float32",
+          "format_string": 2,
+          "format_code": 2,
+          "storage_ptr": 20622706999296,
+          "storage_bytes": 37810176,
+          "data_ptr": 20622744784896,
+          "slot_storage_ptr": 20622706999296,
+          "aliases_slot_storage": true
+        }
+      ],
+      "install_ms_source": null,
+      "install_ms_target": null
+    }
+  ],
+  "rank0_runs": [
+    {
+      "cycle": 0,
+      "layer": 50,
+      "install": {
+        "rank": 0,
+        "layer": 50,
+        "tag": "unified_reuse0_l50",
+        "source_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "peer_target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "hash_equal": true,
+        "install_ms": 29.401728
+      },
+      "result": {
+        "case_id": "reuse_0_50",
+        "rank": 0,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 0,
+        "empty_legal_tasks": 0,
+        "task_count": 12,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            1,
+            1,
+            5
+          ],
+          [
+            0,
+            0,
+            127
+          ],
+          [
+            0,
+            1,
+            127
+          ],
+          [
+            1,
+            0,
+            127
+          ],
+          [
+            1,
+            1,
+            127
+          ]
+        ],
+        "counts": [
+          4,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        "memory": {
+          "allocated": 643304448,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63490961408,
+          "device_total": 65787658240
+        },
+        "reference_max_abs": 0.00031179189682006836,
+        "within_tolerance": true,
+        "expected_tasks": 12,
+        "actual_tasks": 12,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 0,
+      "layer": 49,
+      "install": {
+        "rank": 0,
+        "layer": 49,
+        "tag": "unified_reuse0_l49",
+        "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "peer_target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "hash_equal": true,
+        "install_ms": 29.117616
+      },
+      "result": {
+        "case_id": "reuse_0_49",
+        "rank": 0,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 0,
+        "empty_legal_tasks": 0,
+        "task_count": 12,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            1,
+            1,
+            5
+          ],
+          [
+            0,
+            0,
+            127
+          ],
+          [
+            0,
+            1,
+            127
+          ],
+          [
+            1,
+            0,
+            127
+          ],
+          [
+            1,
+            1,
+            127
+          ]
+        ],
+        "counts": [
+          4,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        "memory": {
+          "allocated": 643304448,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63490961408,
+          "device_total": 65787658240
+        },
+        "reference_max_abs": 0.0004768073558807373,
+        "within_tolerance": true,
+        "expected_tasks": 12,
+        "actual_tasks": 12,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 1,
+      "layer": 50,
+      "install": {
+        "rank": 0,
+        "layer": 50,
+        "tag": "unified_reuse1_l50",
+        "source_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "peer_target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "hash_equal": true,
+        "install_ms": 29.771381
+      },
+      "result": {
+        "case_id": "reuse_1_50",
+        "rank": 0,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 0,
+        "empty_legal_tasks": 0,
+        "task_count": 12,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            1,
+            1,
+            5
+          ],
+          [
+            0,
+            0,
+            127
+          ],
+          [
+            0,
+            1,
+            127
+          ],
+          [
+            1,
+            0,
+            127
+          ],
+          [
+            1,
+            1,
+            127
+          ]
+        ],
+        "counts": [
+          4,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        "memory": {
+          "allocated": 643304448,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63490961408,
+          "device_total": 65787658240
+        },
+        "reference_max_abs": 0.00031179189682006836,
+        "within_tolerance": true,
+        "expected_tasks": 12,
+        "actual_tasks": 12,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 1,
+      "layer": 49,
+      "install": {
+        "rank": 0,
+        "layer": 49,
+        "tag": "unified_reuse1_l49",
+        "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "peer_target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "hash_equal": true,
+        "install_ms": 29.240927
+      },
+      "result": {
+        "case_id": "reuse_1_49",
+        "rank": 0,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 0,
+        "empty_legal_tasks": 0,
+        "task_count": 12,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            1,
+            1,
+            5
+          ],
+          [
+            0,
+            0,
+            127
+          ],
+          [
+            0,
+            1,
+            127
+          ],
+          [
+            1,
+            0,
+            127
+          ],
+          [
+            1,
+            1,
+            127
+          ]
+        ],
+        "counts": [
+          4,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        "memory": {
+          "allocated": 643304448,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63490961408,
+          "device_total": 65787658240
+        },
+        "reference_max_abs": 0.0004768073558807373,
+        "within_tolerance": true,
+        "expected_tasks": 12,
+        "actual_tasks": 12,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 2,
+      "layer": 50,
+      "install": {
+        "rank": 0,
+        "layer": 50,
+        "tag": "unified_reuse2_l50",
+        "source_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "peer_target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "hash_equal": true,
+        "install_ms": 29.837611
+      },
+      "result": {
+        "case_id": "reuse_2_50",
+        "rank": 0,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 0,
+        "empty_legal_tasks": 0,
+        "task_count": 12,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            1,
+            1,
+            5
+          ],
+          [
+            0,
+            0,
+            127
+          ],
+          [
+            0,
+            1,
+            127
+          ],
+          [
+            1,
+            0,
+            127
+          ],
+          [
+            1,
+            1,
+            127
+          ]
+        ],
+        "counts": [
+          4,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        "memory": {
+          "allocated": 643304448,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63490961408,
+          "device_total": 65787658240
+        },
+        "reference_max_abs": 0.00031179189682006836,
+        "within_tolerance": true,
+        "expected_tasks": 12,
+        "actual_tasks": 12,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 2,
+      "layer": 49,
+      "install": {
+        "rank": 0,
+        "layer": 49,
+        "tag": "unified_reuse2_l49",
+        "source_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "peer_target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "hash_equal": true,
+        "install_ms": 29.138686
+      },
+      "result": {
+        "case_id": "reuse_2_49",
+        "rank": 0,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 0,
+        "empty_legal_tasks": 0,
+        "task_count": 12,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            1,
+            1,
+            5
+          ],
+          [
+            0,
+            0,
+            127
+          ],
+          [
+            0,
+            1,
+            127
+          ],
+          [
+            1,
+            0,
+            127
+          ],
+          [
+            1,
+            1,
+            127
+          ]
+        ],
+        "counts": [
+          4,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        "memory": {
+          "allocated": 643304448,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63490961408,
+          "device_total": 65787658240
+        },
+        "reference_max_abs": 0.0004768073558807373,
+        "within_tolerance": true,
+        "expected_tasks": 12,
+        "actual_tasks": 12,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    }
+  ],
+  "rank1_runs": [
+    {
+      "cycle": 0,
+      "layer": 50,
+      "install": {
+        "rank": 1,
+        "layer": 50,
+        "tag": "unified_reuse0_l50",
+        "generation": 2,
+        "ready": true,
+        "owner": 1,
+        "local_slot": 0,
+        "expert": 43,
+        "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "slot_storage_ptr": 20622706999296,
+        "slot_storage_bytes": 37810176,
+        "slot_formats": [
+          {
+            "name": "w13",
+            "shape": [
+              1,
+              6144,
+              4096
+            ],
+            "stride": [
+              25165824,
+              4096,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622706999296,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "w2",
+            "shape": [
+              1,
+              2048,
+              6144
+            ],
+            "stride": [
+              12582912,
+              6144,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622732165120,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744748032,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744756224,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744768512,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744784896,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          }
+        ],
+        "source_rank_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "hash_equal": true,
+        "install_ms": 29.339347
+      },
+      "result": {
+        "case_id": "reuse_0_50",
+        "rank": 1,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 4,
+        "empty_legal_tasks": 0,
+        "task_count": 20,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            129
+          ],
+          [
+            0,
+            1,
+            129
+          ],
+          [
+            1,
+            0,
+            129
+          ],
+          [
+            1,
+            1,
+            129
+          ],
+          [
+            0,
+            0,
+            130
+          ],
+          [
+            0,
+            1,
+            130
+          ],
+          [
+            1,
+            0,
+            130
+          ],
+          [
+            1,
+            1,
+            130
+          ],
+          [
+            0,
+            0,
+            131
+          ],
+          [
+            0,
+            1,
+            131
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            1,
+            1,
+            131
+          ],
+          [
+            0,
+            0,
+            256
+          ],
+          [
+            0,
+            1,
+            256
+          ],
+          [
+            1,
+            0,
+            256
+          ],
+          [
+            1,
+            1,
+            256
+          ],
+          [
+            0,
+            0,
+            257
+          ],
+          [
+            0,
+            1,
+            257
+          ],
+          [
+            1,
+            0,
+            257
+          ],
+          [
+            1,
+            1,
+            257
+          ]
+        ],
+        "counts": [
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4
+        ],
+        "memory": {
+          "allocated": 643501056,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63767613440,
+          "device_total": 65796046848
+        },
+        "reference_max_abs": 0.0003538280725479126,
+        "within_tolerance": true,
+        "expected_tasks": 20,
+        "actual_tasks": 20,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 0,
+      "layer": 49,
+      "install": {
+        "rank": 1,
+        "layer": 49,
+        "tag": "unified_reuse0_l49",
+        "generation": 3,
+        "ready": true,
+        "owner": 1,
+        "local_slot": 0,
+        "expert": 43,
+        "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "slot_storage_ptr": 20622706999296,
+        "slot_storage_bytes": 37810176,
+        "slot_formats": [
+          {
+            "name": "w13",
+            "shape": [
+              1,
+              6144,
+              4096
+            ],
+            "stride": [
+              25165824,
+              4096,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622706999296,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "w2",
+            "shape": [
+              1,
+              2048,
+              6144
+            ],
+            "stride": [
+              12582912,
+              6144,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622732165120,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744748032,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744756224,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744768512,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744784896,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          }
+        ],
+        "source_rank_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "hash_equal": true,
+        "install_ms": 29.127056
+      },
+      "result": {
+        "case_id": "reuse_0_49",
+        "rank": 1,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 4,
+        "empty_legal_tasks": 0,
+        "task_count": 20,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            129
+          ],
+          [
+            0,
+            1,
+            129
+          ],
+          [
+            1,
+            0,
+            129
+          ],
+          [
+            1,
+            1,
+            129
+          ],
+          [
+            0,
+            0,
+            130
+          ],
+          [
+            0,
+            1,
+            130
+          ],
+          [
+            1,
+            0,
+            130
+          ],
+          [
+            1,
+            1,
+            130
+          ],
+          [
+            0,
+            0,
+            131
+          ],
+          [
+            0,
+            1,
+            131
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            1,
+            1,
+            131
+          ],
+          [
+            0,
+            0,
+            256
+          ],
+          [
+            0,
+            1,
+            256
+          ],
+          [
+            1,
+            0,
+            256
+          ],
+          [
+            1,
+            1,
+            256
+          ],
+          [
+            0,
+            0,
+            257
+          ],
+          [
+            0,
+            1,
+            257
+          ],
+          [
+            1,
+            0,
+            257
+          ],
+          [
+            1,
+            1,
+            257
+          ]
+        ],
+        "counts": [
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4
+        ],
+        "memory": {
+          "allocated": 643501056,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63767613440,
+          "device_total": 65796046848
+        },
+        "reference_max_abs": 0.000469893217086792,
+        "within_tolerance": true,
+        "expected_tasks": 20,
+        "actual_tasks": 20,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 1,
+      "layer": 50,
+      "install": {
+        "rank": 1,
+        "layer": 50,
+        "tag": "unified_reuse1_l50",
+        "generation": 4,
+        "ready": true,
+        "owner": 1,
+        "local_slot": 0,
+        "expert": 43,
+        "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "slot_storage_ptr": 20622706999296,
+        "slot_storage_bytes": 37810176,
+        "slot_formats": [
+          {
+            "name": "w13",
+            "shape": [
+              1,
+              6144,
+              4096
+            ],
+            "stride": [
+              25165824,
+              4096,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622706999296,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "w2",
+            "shape": [
+              1,
+              2048,
+              6144
+            ],
+            "stride": [
+              12582912,
+              6144,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622732165120,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744748032,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744756224,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744768512,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744784896,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          }
+        ],
+        "source_rank_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "hash_equal": true,
+        "install_ms": 29.307388
+      },
+      "result": {
+        "case_id": "reuse_1_50",
+        "rank": 1,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 4,
+        "empty_legal_tasks": 0,
+        "task_count": 20,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            129
+          ],
+          [
+            0,
+            1,
+            129
+          ],
+          [
+            1,
+            0,
+            129
+          ],
+          [
+            1,
+            1,
+            129
+          ],
+          [
+            0,
+            0,
+            130
+          ],
+          [
+            0,
+            1,
+            130
+          ],
+          [
+            1,
+            0,
+            130
+          ],
+          [
+            1,
+            1,
+            130
+          ],
+          [
+            0,
+            0,
+            131
+          ],
+          [
+            0,
+            1,
+            131
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            1,
+            1,
+            131
+          ],
+          [
+            0,
+            0,
+            256
+          ],
+          [
+            0,
+            1,
+            256
+          ],
+          [
+            1,
+            0,
+            256
+          ],
+          [
+            1,
+            1,
+            256
+          ],
+          [
+            0,
+            0,
+            257
+          ],
+          [
+            0,
+            1,
+            257
+          ],
+          [
+            1,
+            0,
+            257
+          ],
+          [
+            1,
+            1,
+            257
+          ]
+        ],
+        "counts": [
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4
+        ],
+        "memory": {
+          "allocated": 643501056,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63767613440,
+          "device_total": 65796046848
+        },
+        "reference_max_abs": 0.0003538280725479126,
+        "within_tolerance": true,
+        "expected_tasks": 20,
+        "actual_tasks": 20,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 1,
+      "layer": 49,
+      "install": {
+        "rank": 1,
+        "layer": 49,
+        "tag": "unified_reuse1_l49",
+        "generation": 5,
+        "ready": true,
+        "owner": 1,
+        "local_slot": 0,
+        "expert": 43,
+        "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "slot_storage_ptr": 20622706999296,
+        "slot_storage_bytes": 37810176,
+        "slot_formats": [
+          {
+            "name": "w13",
+            "shape": [
+              1,
+              6144,
+              4096
+            ],
+            "stride": [
+              25165824,
+              4096,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622706999296,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "w2",
+            "shape": [
+              1,
+              2048,
+              6144
+            ],
+            "stride": [
+              12582912,
+              6144,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622732165120,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744748032,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744756224,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744768512,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744784896,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          }
+        ],
+        "source_rank_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "hash_equal": true,
+        "install_ms": 31.399634
+      },
+      "result": {
+        "case_id": "reuse_1_49",
+        "rank": 1,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 4,
+        "empty_legal_tasks": 0,
+        "task_count": 20,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            129
+          ],
+          [
+            0,
+            1,
+            129
+          ],
+          [
+            1,
+            0,
+            129
+          ],
+          [
+            1,
+            1,
+            129
+          ],
+          [
+            0,
+            0,
+            130
+          ],
+          [
+            0,
+            1,
+            130
+          ],
+          [
+            1,
+            0,
+            130
+          ],
+          [
+            1,
+            1,
+            130
+          ],
+          [
+            0,
+            0,
+            131
+          ],
+          [
+            0,
+            1,
+            131
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            1,
+            1,
+            131
+          ],
+          [
+            0,
+            0,
+            256
+          ],
+          [
+            0,
+            1,
+            256
+          ],
+          [
+            1,
+            0,
+            256
+          ],
+          [
+            1,
+            1,
+            256
+          ],
+          [
+            0,
+            0,
+            257
+          ],
+          [
+            0,
+            1,
+            257
+          ],
+          [
+            1,
+            0,
+            257
+          ],
+          [
+            1,
+            1,
+            257
+          ]
+        ],
+        "counts": [
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4
+        ],
+        "memory": {
+          "allocated": 643501056,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63767613440,
+          "device_total": 65796046848
+        },
+        "reference_max_abs": 0.000469893217086792,
+        "within_tolerance": true,
+        "expected_tasks": 20,
+        "actual_tasks": 20,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 2,
+      "layer": 50,
+      "install": {
+        "rank": 1,
+        "layer": 50,
+        "tag": "unified_reuse2_l50",
+        "generation": 6,
+        "ready": true,
+        "owner": 1,
+        "local_slot": 0,
+        "expert": 43,
+        "target_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "slot_storage_ptr": 20622706999296,
+        "slot_storage_bytes": 37810176,
+        "slot_formats": [
+          {
+            "name": "w13",
+            "shape": [
+              1,
+              6144,
+              4096
+            ],
+            "stride": [
+              25165824,
+              4096,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622706999296,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "w2",
+            "shape": [
+              1,
+              2048,
+              6144
+            ],
+            "stride": [
+              12582912,
+              6144,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622732165120,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744748032,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744756224,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744768512,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744784896,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          }
+        ],
+        "source_rank_hash": "9926f215022d045bc238014142246c964bae5f505e76ac0c64a916fa40129b8f",
+        "hash_equal": true,
+        "install_ms": 28.495561
+      },
+      "result": {
+        "case_id": "reuse_2_50",
+        "rank": 1,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 4,
+        "empty_legal_tasks": 0,
+        "task_count": 20,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            129
+          ],
+          [
+            0,
+            1,
+            129
+          ],
+          [
+            1,
+            0,
+            129
+          ],
+          [
+            1,
+            1,
+            129
+          ],
+          [
+            0,
+            0,
+            130
+          ],
+          [
+            0,
+            1,
+            130
+          ],
+          [
+            1,
+            0,
+            130
+          ],
+          [
+            1,
+            1,
+            130
+          ],
+          [
+            0,
+            0,
+            131
+          ],
+          [
+            0,
+            1,
+            131
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            1,
+            1,
+            131
+          ],
+          [
+            0,
+            0,
+            256
+          ],
+          [
+            0,
+            1,
+            256
+          ],
+          [
+            1,
+            0,
+            256
+          ],
+          [
+            1,
+            1,
+            256
+          ],
+          [
+            0,
+            0,
+            257
+          ],
+          [
+            0,
+            1,
+            257
+          ],
+          [
+            1,
+            0,
+            257
+          ],
+          [
+            1,
+            1,
+            257
+          ]
+        ],
+        "counts": [
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4
+        ],
+        "memory": {
+          "allocated": 643501056,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63767613440,
+          "device_total": 65796046848
+        },
+        "reference_max_abs": 0.0003538280725479126,
+        "within_tolerance": true,
+        "expected_tasks": 20,
+        "actual_tasks": 20,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    },
+    {
+      "cycle": 2,
+      "layer": 49,
+      "install": {
+        "rank": 1,
+        "layer": 49,
+        "tag": "unified_reuse2_l49",
+        "generation": 7,
+        "ready": true,
+        "owner": 1,
+        "local_slot": 0,
+        "expert": 43,
+        "target_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "slot_storage_ptr": 20622706999296,
+        "slot_storage_bytes": 37810176,
+        "slot_formats": [
+          {
+            "name": "w13",
+            "shape": [
+              1,
+              6144,
+              4096
+            ],
+            "stride": [
+              25165824,
+              4096,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622706999296,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "w2",
+            "shape": [
+              1,
+              2048,
+              6144
+            ],
+            "stride": [
+              12582912,
+              6144,
+              1
+            ],
+            "dtype": "torch.int8",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622732165120,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744748032,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "s2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.bfloat16",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744756224,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o13",
+            "shape": [
+              1,
+              4096
+            ],
+            "stride": [
+              4096,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744768512,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          },
+          {
+            "name": "o2",
+            "shape": [
+              1,
+              6144
+            ],
+            "stride": [
+              6144,
+              1
+            ],
+            "dtype": "torch.float32",
+            "format_string": 2,
+            "format_code": 2,
+            "storage_ptr": 20622706999296,
+            "storage_bytes": 37810176,
+            "data_ptr": 20622744784896,
+            "slot_storage_ptr": 20622706999296,
+            "aliases_slot_storage": true
+          }
+        ],
+        "source_rank_hash": "4ff89f8d8f8aa645ac56fad6694642a0dae00971631e7b996ee60ba137ec8821",
+        "hash_equal": true,
+        "install_ms": 29.393098
+      },
+      "result": {
+        "case_id": "reuse_2_49",
+        "rank": 1,
+        "status": "PASS",
+        "reasons": [],
+        "dispatch_called": true,
+        "dispatch_delta": 1,
+        "global_tokens": 4,
+        "replica_required": true,
+        "output_shape": [
+          2,
+          6144
+        ],
+        "padding_sent": 0,
+        "padding_received": 0,
+        "padding_expert_calls": 0,
+        "padding_rows_skipped": 0,
+        "replica_tasks": 4,
+        "empty_legal_tasks": 0,
+        "task_count": 20,
+        "actual_task_vector": [
+          [
+            0,
+            0,
+            129
+          ],
+          [
+            0,
+            1,
+            129
+          ],
+          [
+            1,
+            0,
+            129
+          ],
+          [
+            1,
+            1,
+            129
+          ],
+          [
+            0,
+            0,
+            130
+          ],
+          [
+            0,
+            1,
+            130
+          ],
+          [
+            1,
+            0,
+            130
+          ],
+          [
+            1,
+            1,
+            130
+          ],
+          [
+            0,
+            0,
+            131
+          ],
+          [
+            0,
+            1,
+            131
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            1,
+            1,
+            131
+          ],
+          [
+            0,
+            0,
+            256
+          ],
+          [
+            0,
+            1,
+            256
+          ],
+          [
+            1,
+            0,
+            256
+          ],
+          [
+            1,
+            1,
+            256
+          ],
+          [
+            0,
+            0,
+            257
+          ],
+          [
+            0,
+            1,
+            257
+          ],
+          [
+            1,
+            0,
+            257
+          ],
+          [
+            1,
+            1,
+            257
+          ]
+        ],
+        "counts": [
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4
+        ],
+        "memory": {
+          "allocated": 643501056,
+          "reserved": 803209216,
+          "max_allocated": 676611072,
+          "max_reserved": 803209216,
+          "device_free": 63767613440,
+          "device_total": 65796046848
+        },
+        "reference_max_abs": 0.000469893217086792,
+        "within_tolerance": true,
+        "expected_tasks": 20,
+        "actual_tasks": 20,
+        "task_multiset_equal": true,
+        "reference_finite": true
+      }
+    }
+  ],
+  "final_slot": {
+    "rank": 1,
+    "lease": null,
+    "pool": {
+      "K": 1,
+      "slot_bytes": 37810176,
+      "committed_bytes": 37810176,
+      "per_rank_capacity": {
+        "1": 1
+      },
+      "per_rank_allocated_bytes": {
+        "1": 37810176
+      },
+      "active_bytes": 0,
+      "cached_free_bytes": 37810176,
+      "local": {
+        "1": {
+          "pool_id": "unified-adapter-slot-rank1:9f91d9025ae3",
+          "capacity": 1,
+          "slot_bytes": 37810176,
+          "allocated_bytes": 37810176,
+          "free": 1,
+          "reserved": 0,
+          "ready": 0,
+          "in_use": 0,
+          "releasing": 0,
+          "acquisitions": 7,
+          "releases": 7,
+          "reuses": 6,
+          "max_concurrent_leases": 1,
+          "max_concurrent_uses": 1,
+          "distinct_layers_seen": 2,
+          "distinct_experts_seen": 2,
+          "backing_reallocations": 0,
+          "invariant_violations": 0
+        }
+      }
+    }
+  },
+  "cycles": 3
+}
