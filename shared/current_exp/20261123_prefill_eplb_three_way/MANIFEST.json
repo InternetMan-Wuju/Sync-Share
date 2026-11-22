@@ -29,5 +29,10 @@
     "artifacts/VALIDATION.json"
   ],
   "production_format": "UNKNOWN_NO_ACTIVE_SERVICE",
-  "performance_status": "PARTIAL_REPLAY_AND_DIAGNOSTIC_NOT_FORMAL_THREE_WAY"
+  "performance_status": "PARTIAL_REPLAY_AND_DIAGNOSTIC_NOT_FORMAL_THREE_WAY",
+  "remote_handoff_updates_seen": [
+    "a03ed0a: configurable K and full two-node EP32 AgentX required"
+  ],
+  "ep32_agentx_status": "NOT_RUN_BLOCKED_BY_UNIFORM_PHYSICAL_LAYOUT",
+  "configurable_k_status": "NOT_IMPLEMENTED_IN_SERVICE; replay evidence is fixed K=1"
 }

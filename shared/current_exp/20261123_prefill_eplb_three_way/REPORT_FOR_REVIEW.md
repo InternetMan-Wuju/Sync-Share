@@ -15,6 +15,7 @@
 已经完成的 EP16 layer49 replay 结论是：三组输出逐位一致；8K、16K、32K 上没有稳定、可重复的延迟优势。中位数差为零点几到几毫秒，EPLB 与 K1 的相对符号随档位变化，并存在孤立的大抖动。不能据此宣布任何一组更快。
 
 - 基线：`738e2be4711e8de132c242a3f30b7c6d4931d8b1`
+- 运行期间远端 handoff 更新到 `a03ed0a`，新增“可配置 K”和“两机 EP32 AgentX 三档必测”的更严格要求；本报告据实保留在更新前启动的实验范围，并不把 EP32/全服务标为完成。
 - 主机：`npu1-23`；`npu1-25` 已检查为 16 NPU 空闲，但未建立 EP32 正式三组
 - 镜像：`quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3`
   - digest：`sha256:0756b534a0379863c435ec8b7896ba17a18fccda2c8889326fb1dc9453de9be4`
@@ -305,6 +306,8 @@ NPU out of memory. Tried to allocate 206.00 MiB
 ### C. EP32
 
 `npu1-25` 已检查为 16 个空闲 NPU，但 EP16 已证明 K1 的统一物理布局契约阻塞。没有修改该契约前，EP32 的正式三组服务对照同样无法成立。本轮没有把 EP16 replay 或 EP16 服务数字外推成 EP32。
+
+远端随后提交 `a03ed0a` 将交付要求收紧为“两机同一 EP32、运行时可配置 K、完成三档 AgentX 服务对照”。该要求本轮**未完成**：现有服务入口仍在 `_init_common` 的均匀 physical-layout 断言处拒绝非 EP 倍数容量，且在线原生 EPLB 更新没有跑完。下一步不是继续加测，而是先实现可配置 K 的统一 physical/communication 映射并修复 NPU 内部格式 updater。
 
 ## 7. 三组结论
 
