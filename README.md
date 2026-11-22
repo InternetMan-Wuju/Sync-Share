@@ -10,8 +10,10 @@
 
 ## 当前内容
 
-- [Prefill K=1：原生分发可行性与已有副本路径诊断（2026-11-22）](handoff/2026-11-22_global_k_native_dispatch_diagnosis.md)：当前执行入口；核查 K=1 原生接口、设备等待与顺序效应，单独验证持续驻留；不做 Decode。
-- [Prefill K=1 回本区间实测报告](shared/current_exp/20261122_global_k_breakeven/REPORT_FOR_REVIEW.md)：d0c4a3f；324 次执行、108 个配对组，临时复制全部变慢，已有副本尚未稳定回本；原生接入和驻留条件待本轮核查。
+- [Prefill K=1：空编号路线的最小可行性证明（2026-11-22）](handoff/2026-11-22_global_k_placeholder_feasibility.md)：当前执行入口；真实调用原生接口，验证258编号与唯一真实副本，明确给出路线通否的运行及存储证据。
+- [原生接口与持续驻留实验报告](shared/current_exp/20261122_global_k_native_dispatch/REPORT_FOR_REVIEW.md)：595428c；默认布局要求均匀分片，驻留条件未稳定回本；当前方案进一步验证空编号和真实存储解耦。
+- [Prefill K=1：原生分发可行性与已有副本路径诊断（2026-11-22）](handoff/2026-11-22_global_k_native_dispatch_diagnosis.md)：上一轮方案及验收背景。
+- [Prefill K=1 回本区间实测报告](shared/current_exp/20261122_global_k_breakeven/REPORT_FOR_REVIEW.md)：d0c4a3f；324 次执行、108 个配对组，临时复制全部变慢，已有副本尚未稳定回本；后续接口及驻留核查见595428c报告。
 - [Prefill 全组 K=1：正式计时与回本区间实验（2026-11-22）](handoff/2026-11-22_global_k_prefill_breakeven.md)：上一轮方案及验收背景。
 - [全组 K 重做与两卡配对报告](shared/current_exp/20261122_global_k_rework/REPORT_FOR_REVIEW.md)：b8320e5；真实专家子链和跨层复用正确性已有进展，6/512-token 的现有两卡计时均为负收益，后续执行入口见上。
 - [全组固定 K 槽：安全修正与完整成本补测（2026-11-22）](handoff/2026-11-22_global_k_correctness_cost_rework.md)：上一轮任务及验收背景。
@@ -95,7 +97,8 @@ Prefill 当前路由复制与精确配额 M0：
 
 本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。
 
-- [Prefill K=1：原生分发可行性与已有副本路径诊断（2026-11-22）](handoff/2026-11-22_global_k_native_dispatch_diagnosis.md)：当前执行入口；明确接口限制、驻留生命周期和公平计时边界。
+- [Prefill K=1：空编号路线的最小可行性证明（2026-11-22）](handoff/2026-11-22_global_k_placeholder_feasibility.md)：当前执行入口；原生协议、真实权重、唯一存储和跨层复用四项验收，性能单列。
+- [Prefill K=1：原生分发可行性与已有副本路径诊断（2026-11-22）](handoff/2026-11-22_global_k_native_dispatch_diagnosis.md)：上一轮方案及验收背景。
 - [Prefill 全组 K=1：正式计时与回本区间实验（2026-11-22）](handoff/2026-11-22_global_k_prefill_breakeven.md)：上一轮方案及验收背景。
 - [全组固定 K 槽：安全修正与完整成本补测（2026-11-22）](handoff/2026-11-22_global_k_correctness_cost_rework.md)：上一轮任务背景，执行范围以最新交接为准。
 - [上一轮真实 GLM 单层闭环交接](handoff/2026-11-22_global_k_real_layer_execution.md)：历史任务背景与固定 K 合同，执行顺序以当前交接为准。
