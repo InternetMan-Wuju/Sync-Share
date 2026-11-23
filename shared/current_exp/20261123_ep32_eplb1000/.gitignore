@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/
+logs/
+inputs/agentx_8192.json
+inputs/agentx_12288_test.json
+inputs/agentx_16384.json
+inputs/agentx_32768.json
+inputs/agentx_64_cal.json
+artifacts/raw/calibration/*.json

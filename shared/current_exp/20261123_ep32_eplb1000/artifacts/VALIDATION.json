@@ -1,0 +1,25 @@
+{
+  "status": "PASS_EPLB_1000",
+  "checks": {
+    "formal_10_per_size": true,
+    "calibration_every_round": true,
+    "rebalance_end_every_round": true,
+    "layout_changed_every_round": true,
+    "all_formal_output_matches_prior_original": true,
+    "paired_refs_10_per_size": true,
+    "no_formal_failures": true,
+    "warmup_9": true,
+    "rebalance_1000_per_round_observed": true,
+    "calibration_496_per_round": true,
+    "formal_no_rebalance_overlap": true
+  },
+  "errors": [],
+  "formal_requests": 30,
+  "warmup_requests": 9,
+  "calibration_requests": 1488,
+  "notes": [
+    "Only EPLB +32 was rerun; original and K=2 values are cited from bf94982.",
+    "Calibration used a 64-token AgentX-derived input; 1000 iterations remained enabled during formal timing.",
+    "Formal EPLB samples did not overlap a new rebalance; calibration rebalances are recorded separately."
+  ]
+}

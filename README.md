@@ -13,6 +13,7 @@
 - [EP32 单次 DeepEP 改道与在线 EPLB（2026-11-23）](handoff/2026-11-23_ep32_native_reroute_and_online_eplb.md)是当前执行入口。正式比较原版、带兼容补丁且完成在线重排的 EPLB +32、我方可配置 K 真改道。
 - [EP32 原生单次改道与在线 EPLB 结果](shared/current_exp/20261123_ep32_native_reroute_and_online_eplb/REPORT_FOR_REVIEW.md)：`3512cae` 基线；我方针 K=1/K=2 使用同一轮 DeepEP dispatch，EP32 K=2 三档完成；EPLB +32 在双节点完成在线重排后三档通过。8K K=2 存在有界数值 token 差异，16K/32K 输出 ID 一致。
 - [EP32 三组重复性能对比](shared/current_exp/20261123_ep32_perf_repeat/REPORT_FOR_REVIEW.md)：`bd80f52` 基线；三组 × 三档各 10 个正式请求，三轮启动顺序轮换；EPLB formal 样本全部含在线重排，K=2 使用 quiet 正式路径。
+- [EP32 在线 EPLB +32：1000 迭代复测](shared/current_exp/20261123_ep32_eplb1000/REPORT_FOR_REVIEW.md)：`bf94982` 基线；每轮 496 条独立校准流量后完成重排，正式 30 条样本未再触发重排；原版和 K=2 沿用上一批数据。
 - [Native-dispatch service 修复与 EP32 三组验收报告](shared/current_exp/20261123_global_k_native_service_dispatch/REPORT_FOR_REVIEW.md)：`22d65f2` 基线；32K 槽复用挂起已修复，EP16 K=1/K=2 和 EP32 原版/EPLB 静态/K=2 功能矩阵通过；额外 DeepEP 副本编号在 combine 处失败，服务 K 结果明确标为 local-backfill fallback。
 - [可配置 K 服务原型与 EP32 结果](shared/current_exp/20261123_global_k_service_ep32/REPORT_FOR_REVIEW.md)记录 `db1ce2d` 的槽复用、32K 挂起和静态 EPLB 三档结果。
 - [EP16 回放与服务障碍报告](shared/current_exp/20261123_prefill_eplb_three_way/REPORT_FOR_REVIEW.md)记录 `c8f8961` 的单层回放、静态 EPLB 和原生启动参数的失败证据。

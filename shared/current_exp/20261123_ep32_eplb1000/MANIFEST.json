@@ -1,0 +1,99 @@
+{
+  "created_at": "2026-11-23T16:35:00+08:00",
+  "base_commit": "bf94982d1fcc5cad7aafa4d8b2c9f3f74b02d744",
+  "hosts": [
+    "npu1-23",
+    "npu1-25"
+  ],
+  "topology": "32 Ascend 910 dies; one EP32 group",
+  "image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "sglang": "v0.5.20",
+  "torch_npu": "2.10.0",
+  "model": "/data_lib/data/models/glm-q",
+  "status": "PASS_EPLB_1000",
+  "retest_arm": "online EPLB +32",
+  "rebalance_num_iterations": 1000,
+  "redundant_experts": 32,
+  "observer": "disabled",
+  "prefix_cache": "disabled",
+  "concurrency": 1,
+  "output_tokens": 2,
+  "formal_counts_per_round": [
+    4,
+    3,
+    3
+  ],
+  "formal_requests": 30,
+  "warmup_requests": 9,
+  "calibration_requests": 1488,
+  "calibration_per_round": {
+    "1": 496,
+    "2": 496,
+    "3": 496
+  },
+  "rebalance_events_per_round": {
+    "1": {
+      "events": [
+        {
+          "start": "2026-11-23T08:42:43+00:00",
+          "end": "2026-11-23T08:43:07+00:00",
+          "duration_s": 24.645
+        }
+      ],
+      "layout_before_snapshots": 1,
+      "layout_after_snapshots": 1,
+      "layout_changed": true,
+      "before_layer49_sha256": "d01c4124675b7ee0d036e76cf1896eeff20f6279500ddf5b4f969a62a8d026cc",
+      "last_layer49_sha256": "a383081d9acdf60b3efbe0dbd3605b2b6b99286467b3b84acb9d286eda08c8d6"
+    },
+    "2": {
+      "events": [
+        {
+          "start": "2026-11-23T08:58:30+00:00",
+          "end": "2026-11-23T08:58:54+00:00",
+          "duration_s": 24.39
+        }
+      ],
+      "layout_before_snapshots": 1,
+      "layout_after_snapshots": 1,
+      "layout_changed": true,
+      "before_layer49_sha256": "d01c4124675b7ee0d036e76cf1896eeff20f6279500ddf5b4f969a62a8d026cc",
+      "last_layer49_sha256": "a383081d9acdf60b3efbe0dbd3605b2b6b99286467b3b84acb9d286eda08c8d6"
+    },
+    "3": {
+      "events": [
+        {
+          "start": "2026-11-23T09:13:59+00:00",
+          "end": "2026-11-23T09:14:23+00:00",
+          "duration_s": 24.655
+        }
+      ],
+      "layout_before_snapshots": 1,
+      "layout_after_snapshots": 1,
+      "layout_changed": true,
+      "before_layer49_sha256": "d01c4124675b7ee0d036e76cf1896eeff20f6279500ddf5b4f969a62a8d026cc",
+      "last_layer49_sha256": "a383081d9acdf60b3efbe0dbd3605b2b6b99286467b3b84acb9d286eda08c8d6"
+    }
+  },
+  "patches": {
+    "expert_location_updater_v0520.py": "8e10ac923c2c93fac0ba649384ae6ce16431a012a378668ae292ee12bfce5dc7",
+    "torch_npu_distributed_c10d_v0520.py": "a2003dc906133f52de843426125da344901cfc14c613d8f6b4fe74bed15e2ded"
+  },
+  "input_fingerprints": {
+    "8192": "86240a227b4f194e7f0e3ab5661942b09c0aa5a44cdcc610f503f54d9e3f3d84",
+    "16384": "ef1b6259ebc4a272df50b9e905887909e9acab82924231e72cff73c981b217c9",
+    "32768": "cd222160c6815f5ce8db984894f40d40880333dfed62139a23b4ffa0464fafe1"
+  },
+  "production_format": "UNKNOWN_NO_ACTIVE_SERVICE",
+  "key_artifacts": [
+    "REPORT_FOR_REVIEW.md",
+    "artifacts/EPLB1000_SUMMARY.json",
+    "artifacts/EPLB1000_RAW_REQUESTS.csv",
+    "artifacts/THREE_ARM_TABLE.md",
+    "artifacts/raw/formal/",
+    "artifacts/raw/warmup/",
+    "run_eplb1000.sh",
+    "scripts/analyze_eplb1000.py",
+    "artifacts/raw/calibration/eplb1000_calibration.jsonl"
+  ]
+}
