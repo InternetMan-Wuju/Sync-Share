@@ -1,0 +1,67 @@
+{
+  "created_at": "2026-11-23T14:50:00+08:00",
+  "base_commit": "bd80f52e87b5c7d20ab7cf4869caf542c6933623",
+  "hosts": [
+    "npu1-23",
+    "npu1-25"
+  ],
+  "topology": "32 Ascend 910 dies; one EP32 group; ranks 0-15 node23, ranks 16-31 node25",
+  "image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "sglang": "v0.5.20",
+  "torch_npu": "2.10.0",
+  "model": "/data_lib/data/models/glm-q",
+  "status": "PASS_WITH_KNOWN_K2_8K_TOKEN_DIFF",
+  "schedule": [
+    "round1: original,eplb,k2",
+    "round2: eplb,k2,original",
+    "round3: k2,original,eplb"
+  ],
+  "formal_requests": 90,
+  "warmup_requests": 27,
+  "calibration_requests": 3,
+  "cell_counts": {
+    "original/8192": 10,
+    "original/16384": 10,
+    "original/32768": 10,
+    "eplb/8192": 10,
+    "eplb/16384": 10,
+    "eplb/32768": 10,
+    "k2/8192": 10,
+    "k2/16384": 10,
+    "k2/32768": 10
+  },
+  "eplb_rebalances_per_round": {
+    "1": 30,
+    "2": 25,
+    "3": 25
+  },
+  "eplb_patch_sha256": {
+    "expert_location_updater_v0520.py": "8e10ac923c2c93fac0ba649384ae6ce16431a012a378668ae292ee12bfce5dc7",
+    "torch_npu_distributed_c10d_v0520.py": "a2003dc906133f52de843426125da344901cfc14c613d8f6b4fe74bed15e2ded"
+  },
+  "known_difference": "K2 8K output IDs differ from original; K2 16K/32K match",
+  "production_format": "UNKNOWN_NO_ACTIVE_SERVICE",
+  "key_artifacts": [
+    "REPORT_FOR_REVIEW.md",
+    "artifacts/PERFORMANCE_SUMMARY.json",
+    "artifacts/PERFORMANCE_TABLE.md",
+    "artifacts/PERFORMANCE_RAW_REQUESTS.csv",
+    "artifacts/EPLB_CALIBRATION_EVIDENCE.json",
+    "artifacts/VALIDATION.json",
+    "artifacts/VALIDATION_K2_NATIVE_TASK_ACCOUNTING.json",
+    "artifacts/raw/formal/",
+    "artifacts/raw/warmup/",
+    "artifacts/raw/calibration/",
+    "artifacts/raw/validation/",
+    "run_perf.sh",
+    "scripts/analyze_perf.py",
+    "scripts/analyze_eplb_calibration.py",
+    "scripts/analyze_k2.py"
+  ],
+  "raw_request_counts": {
+    "formal": 90,
+    "warmup": 27,
+    "calibration": 3,
+    "validation": 1
+  }
+}

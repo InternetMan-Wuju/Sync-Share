@@ -1,0 +1,9 @@
+{
+  "input_tokens": 12288,
+  "input_sha256": "d496e85dff7d63228f4b2e678d33389dee5e58e9e72756d122d055c8c7b76bc9",
+  "source": "/data_lib/cyt/workspace/history_exp/05_EPLB\u5197\u4f59\u4e13\u5bb6_1P1D_2026-09-28/data/agentx_16k_512.json",
+  "source_sha256": "8b1fc2a11506d1642de5cb851c92c402d4f1e0569a88d90197fd728913bb2ae7",
+  "materialization": "AgentX-derived deterministic token IDs from 64-token block hashes; not original text",
+  "target_size": 12288,
+  "rows_used": 1
+}

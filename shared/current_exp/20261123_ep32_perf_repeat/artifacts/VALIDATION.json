@@ -1,0 +1,26 @@
+{
+  "status": "PASS_WITH_KNOWN_K2_8K_TOKEN_DIFF",
+  "checks": {
+    "formal_cells_10_each": true,
+    "no_formal_request_errors": true,
+    "eplb_output_matches_original_all_sizes": true,
+    "k2_output_matches_original_16k_32k": true,
+    "k2_8k_known_diff": true,
+    "eplb_all_formal_samples_overlap_rebalance": true,
+    "eplb_each_round_has_rebalance_end": true,
+    "k2_validation_task_conservation": true,
+    "k2_validation_all_finite": true,
+    "warmup_count_27": true,
+    "eplb_layout_changed_all_rounds": true,
+    "eplb_rebalance_end_all_rounds": true
+  },
+  "errors": [],
+  "formal_requests": 90,
+  "warmup_requests": 27,
+  "calibration_requests": 3,
+  "notes": [
+    "All EPLB formal samples overlap at least one logged rebalance; EPLB medians therefore include actual rebalance time.",
+    "K2 8K output IDs differ from original; K2 16K/32K output IDs match.",
+    "Formal K2 uses quiet mode, verify=false, and no per-task/tensor-hash diagnostics; validation is from a separate verbose run."
+  ]
+}

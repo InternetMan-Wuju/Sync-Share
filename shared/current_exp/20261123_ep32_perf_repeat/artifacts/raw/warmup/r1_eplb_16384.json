@@ -1,0 +1,55 @@
+{
+  "run_phase": "warmup",
+  "arm": "eplb",
+  "round": 1,
+  "repeat": 0,
+  "size": "16384",
+  "input_file": "/data_lib/cyt/workspace/Share/shared/current_exp/20261123_ep32_perf_repeat/inputs/agentx_16384.json",
+  "input_tokens": 16384,
+  "input_sha256": "ef1b6259ebc4a272df50b9e905887909e9acab82924231e72cff73c981b217c9",
+  "max_new_tokens": 2,
+  "started_at": "2026-11-23T14:00:49.251+08:00",
+  "finished_at": "2026-11-23T14:01:00.380+08:00",
+  "ttft_s": 5.826904577901587,
+  "total_s": 11.12864561798051,
+  "output_ids": [
+    13,
+    13,
+    154842
+  ],
+  "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a",
+  "text": ".</think>",
+  "events": 2,
+  "meta_info": {
+    "id": "0c71dc52f26347d084c990a6546fdd55",
+    "finish_reason": {
+      "type": "length",
+      "length": 2
+    },
+    "prompt_tokens": 16384,
+    "weight_version": "default",
+    "num_retractions": 0,
+    "forward_entry_time": 1795413649.2603261,
+    "prefill_finished_time": 1795413655.0760474,
+    "queue_time": 0.00019049644470214844,
+    "reasoning_tokens": 0,
+    "completion_tokens": 2,
+    "cached_tokens": 0,
+    "weight_versions": [
+      {
+        "version": "default",
+        "start": 0,
+        "end": 2
+      }
+    ],
+    "cached_tokens_details": null,
+    "dp_rank": null,
+    "e2e_latency": 11.121635610004887,
+    "request_received_ts": 1795413649.2572753,
+    "api_server_dispatch_finish_ts": 1795413649.2589724,
+    "response_sent_to_client_ts": 1795413655.077889,
+    "request_finished_ts": 1795413660.378911,
+    "decode_throughput": 0.1886349518025487
+  },
+  "error": null
+}
