@@ -1,0 +1,6 @@
+prompts/*.txt binary
+artifacts/*.json text eol=lf
+artifacts/**/*.json text eol=lf
+reproduce.sh text eol=lf
+scripts/*.sh text eol=lf
+patches/*.py -whitespace

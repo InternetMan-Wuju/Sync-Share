@@ -1,0 +1,146 @@
+{
+  "status": "PASS_ALL_NINE_FUNCTIONAL_CELLS",
+  "topology": "32 dies, single EP32 group, ranks 0-15 node23, ranks 16-31 node25",
+  "rows": {
+    "8192": {
+      "original": {
+        "input_tokens": 8192,
+        "ttft_s": 4.949755514040589,
+        "total_s": 5.502977393101901,
+        "output_ids": [
+          13,
+          13,
+          154842
+        ],
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a",
+        "text": ".</think>",
+        "events": 2,
+        "status": "PASS"
+      },
+      "eplb_online": {
+        "input_tokens": 8192,
+        "ttft_s": 6.7801003970671445,
+        "total_s": 7.364316552062519,
+        "output_ids": [
+          13,
+          13,
+          154842
+        ],
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a",
+        "text": ".</think>",
+        "events": 2,
+        "status": "PASS",
+        "output_ids_match_original": true
+      },
+      "ours_k2": {
+        "input_tokens": 8192,
+        "ttft_s": 2.9834797319490463,
+        "total_s": 3.508336190949194,
+        "output_ids": [
+          198,
+          198,
+          154842
+        ],
+        "output_ids_sha256": "5afe2c8613e2a23039d6668887412977bcdff9a016510b967d36ccee312401b6",
+        "text": "\n</think>",
+        "events": 2,
+        "status": "PASS_NUMERIC_TOLERANCE_TOKEN_DIFF",
+        "output_ids_match_original": false
+      }
+    },
+    "16384": {
+      "original": {
+        "input_tokens": 16384,
+        "ttft_s": 5.7355761179933324,
+        "total_s": 6.273139403900132,
+        "output_ids": [
+          13,
+          13,
+          154842
+        ],
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a",
+        "text": ".</think>",
+        "events": 2,
+        "status": "PASS"
+      },
+      "eplb_online": {
+        "input_tokens": 16384,
+        "ttft_s": 5.876126145012677,
+        "total_s": 11.153100337018259,
+        "output_ids": [
+          13,
+          13,
+          154842
+        ],
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a",
+        "text": ".</think>",
+        "events": 2,
+        "status": "PASS",
+        "output_ids_match_original": true
+      },
+      "ours_k2": {
+        "input_tokens": 16384,
+        "ttft_s": 6.023113112081774,
+        "total_s": 6.539660400012508,
+        "output_ids": [
+          13,
+          13,
+          154842
+        ],
+        "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a",
+        "text": ".</think>",
+        "events": 2,
+        "status": "PASS",
+        "output_ids_match_original": true
+      }
+    },
+    "32768": {
+      "original": {
+        "input_tokens": 32768,
+        "ttft_s": 11.848620005999692,
+        "total_s": 12.463989084935747,
+        "output_ids": [
+          154827,
+          154827,
+          154842
+        ],
+        "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c",
+        "text": "</think>",
+        "events": 2,
+        "status": "PASS"
+      },
+      "eplb_online": {
+        "input_tokens": 32768,
+        "ttft_s": 22.71370954194572,
+        "total_s": 23.30225830397103,
+        "output_ids": [
+          154827,
+          154827,
+          154842
+        ],
+        "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c",
+        "text": "</think>",
+        "events": 2,
+        "status": "PASS",
+        "output_ids_match_original": true
+      },
+      "ours_k2": {
+        "input_tokens": 32768,
+        "ttft_s": 12.430298842024058,
+        "total_s": 12.955343012930825,
+        "output_ids": [
+          154827,
+          154827,
+          154842
+        ],
+        "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c",
+        "text": "</think>",
+        "events": 2,
+        "status": "PASS",
+        "output_ids_match_original": true
+      }
+    }
+  },
+  "timing_note": "single request per cell; not a repeated p95 measurement",
+  "k2_8k_note": "8K greedy IDs differ from original; layer numerical verification is finite and below 0.01 max abs; 16K/32K IDs match"
+}

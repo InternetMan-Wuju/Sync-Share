@@ -1,0 +1,877 @@
+{
+  "ep": 32,
+  "owners": [
+    0,
+    1
+  ],
+  "hots": [
+    163,
+    133
+  ],
+  "call_rows": 704,
+  "chunks": [
+    {
+      "layer": 49,
+      "seq": 4,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 183,
+      "owner_received_tasks": [
+        181,
+        2
+      ],
+      "replica_tasks_in_logs": 183,
+      "hot_logical_tasks": {
+        "163": 383,
+        "133": 6
+      },
+      "hot_original_after_move": {
+        "163": 202,
+        "133": 4
+      },
+      "hot_main_computed_tasks": {
+        "163": 202,
+        "133": 4
+      },
+      "max_abs": 0.0078125,
+      "max_nrmse": 0.010490043088793755,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 49,
+      "seq": 5,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 183,
+      "owner_received_tasks": [
+        183,
+        0
+      ],
+      "replica_tasks_in_logs": 183,
+      "hot_logical_tasks": {
+        "163": 381,
+        "133": 1
+      },
+      "hot_original_after_move": {
+        "163": 198,
+        "133": 1
+      },
+      "hot_main_computed_tasks": {
+        "163": 198,
+        "133": 1
+      },
+      "max_abs": 0.0068359375,
+      "max_nrmse": 0.01043629925698042,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 49,
+      "seq": 6,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 313,
+      "owner_received_tasks": [
+        313,
+        0
+      ],
+      "replica_tasks_in_logs": 313,
+      "hot_logical_tasks": {
+        "163": 637,
+        "133": 5
+      },
+      "hot_original_after_move": {
+        "163": 324,
+        "133": 5
+      },
+      "hot_main_computed_tasks": {
+        "163": 324,
+        "133": 5
+      },
+      "max_abs": 0.00439453125,
+      "max_nrmse": 0.01044672541320324,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 49,
+      "seq": 7,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 269,
+      "owner_received_tasks": [
+        269,
+        0
+      ],
+      "replica_tasks_in_logs": 269,
+      "hot_logical_tasks": {
+        "163": 550,
+        "133": 6
+      },
+      "hot_original_after_move": {
+        "163": 281,
+        "133": 6
+      },
+      "hot_main_computed_tasks": {
+        "163": 281,
+        "133": 6
+      },
+      "max_abs": 0.00390625,
+      "max_nrmse": 0.010190723463892937,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 49,
+      "seq": 8,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 183,
+      "owner_received_tasks": [
+        181,
+        2
+      ],
+      "replica_tasks_in_logs": 183,
+      "hot_logical_tasks": {
+        "163": 383,
+        "133": 6
+      },
+      "hot_original_after_move": {
+        "163": 202,
+        "133": 4
+      },
+      "hot_main_computed_tasks": {
+        "163": 202,
+        "133": 4
+      },
+      "max_abs": 0.0078125,
+      "max_nrmse": 0.010490043088793755,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 49,
+      "seq": 9,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 183,
+      "owner_received_tasks": [
+        181,
+        2
+      ],
+      "replica_tasks_in_logs": 183,
+      "hot_logical_tasks": {
+        "163": 383,
+        "133": 6
+      },
+      "hot_original_after_move": {
+        "163": 202,
+        "133": 4
+      },
+      "hot_main_computed_tasks": {
+        "163": 202,
+        "133": 4
+      },
+      "max_abs": 0.0078125,
+      "max_nrmse": 0.010490043088793755,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 49,
+      "seq": 10,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 183,
+      "owner_received_tasks": [
+        183,
+        0
+      ],
+      "replica_tasks_in_logs": 183,
+      "hot_logical_tasks": {
+        "163": 381,
+        "133": 1
+      },
+      "hot_original_after_move": {
+        "163": 198,
+        "133": 1
+      },
+      "hot_main_computed_tasks": {
+        "163": 198,
+        "133": 1
+      },
+      "max_abs": 0.0068359375,
+      "max_nrmse": 0.01043629925698042,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 49,
+      "seq": 11,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 183,
+      "owner_received_tasks": [
+        181,
+        2
+      ],
+      "replica_tasks_in_logs": 183,
+      "hot_logical_tasks": {
+        "163": 383,
+        "133": 6
+      },
+      "hot_original_after_move": {
+        "163": 202,
+        "133": 4
+      },
+      "hot_main_computed_tasks": {
+        "163": 202,
+        "133": 4
+      },
+      "max_abs": 0.0078125,
+      "max_nrmse": 0.010490043088793755,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 49,
+      "seq": 12,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 183,
+      "owner_received_tasks": [
+        183,
+        0
+      ],
+      "replica_tasks_in_logs": 183,
+      "hot_logical_tasks": {
+        "163": 381,
+        "133": 1
+      },
+      "hot_original_after_move": {
+        "163": 198,
+        "133": 1
+      },
+      "hot_main_computed_tasks": {
+        "163": 198,
+        "133": 1
+      },
+      "max_abs": 0.0068359375,
+      "max_nrmse": 0.01043629925698042,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 49,
+      "seq": 13,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 313,
+      "owner_received_tasks": [
+        313,
+        0
+      ],
+      "replica_tasks_in_logs": 313,
+      "hot_logical_tasks": {
+        "163": 637,
+        "133": 5
+      },
+      "hot_original_after_move": {
+        "163": 324,
+        "133": 5
+      },
+      "hot_main_computed_tasks": {
+        "163": 324,
+        "133": 5
+      },
+      "max_abs": 0.00439453125,
+      "max_nrmse": 0.01044672541320324,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 49,
+      "seq": 14,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 269,
+      "owner_received_tasks": [
+        269,
+        0
+      ],
+      "replica_tasks_in_logs": 269,
+      "hot_logical_tasks": {
+        "163": 550,
+        "133": 6
+      },
+      "hot_original_after_move": {
+        "163": 281,
+        "133": 6
+      },
+      "hot_main_computed_tasks": {
+        "163": 281,
+        "133": 6
+      },
+      "max_abs": 0.00390625,
+      "max_nrmse": 0.010190723463892937,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 50,
+      "seq": 4,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 534,
+      "owner_received_tasks": [
+        28,
+        506
+      ],
+      "replica_tasks_in_logs": 534,
+      "hot_logical_tasks": {
+        "163": 66,
+        "133": 1030
+      },
+      "hot_original_after_move": {
+        "163": 38,
+        "133": 524
+      },
+      "hot_main_computed_tasks": {
+        "163": 38,
+        "133": 524
+      },
+      "max_abs": 0.0068359375,
+      "max_nrmse": 0.011303993873298168,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 50,
+      "seq": 5,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 621,
+      "owner_received_tasks": [
+        16,
+        605
+      ],
+      "replica_tasks_in_logs": 621,
+      "hot_logical_tasks": {
+        "163": 50,
+        "133": 1226
+      },
+      "hot_original_after_move": {
+        "163": 34,
+        "133": 621
+      },
+      "hot_main_computed_tasks": {
+        "163": 34,
+        "133": 621
+      },
+      "max_abs": 0.0078125,
+      "max_nrmse": 0.01144571416079998,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 50,
+      "seq": 6,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 28,
+      "owner_received_tasks": [
+        0,
+        28
+      ],
+      "replica_tasks_in_logs": 28,
+      "hot_logical_tasks": {
+        "163": 5,
+        "133": 74
+      },
+      "hot_original_after_move": {
+        "163": 5,
+        "133": 46
+      },
+      "hot_main_computed_tasks": {
+        "163": 5,
+        "133": 46
+      },
+      "max_abs": 0.002498626708984375,
+      "max_nrmse": 0.010637803934514523,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 50,
+      "seq": 7,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 23,
+      "owner_received_tasks": [
+        0,
+        23
+      ],
+      "replica_tasks_in_logs": 23,
+      "hot_logical_tasks": {
+        "163": 3,
+        "133": 56
+      },
+      "hot_original_after_move": {
+        "163": 3,
+        "133": 33
+      },
+      "hot_main_computed_tasks": {
+        "163": 3,
+        "133": 33
+      },
+      "max_abs": 0.0029296875,
+      "max_nrmse": 0.010548938997089863,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 50,
+      "seq": 8,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 534,
+      "owner_received_tasks": [
+        28,
+        506
+      ],
+      "replica_tasks_in_logs": 534,
+      "hot_logical_tasks": {
+        "163": 66,
+        "133": 1030
+      },
+      "hot_original_after_move": {
+        "163": 38,
+        "133": 524
+      },
+      "hot_main_computed_tasks": {
+        "163": 38,
+        "133": 524
+      },
+      "max_abs": 0.0068359375,
+      "max_nrmse": 0.011303993873298168,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 50,
+      "seq": 9,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 534,
+      "owner_received_tasks": [
+        28,
+        506
+      ],
+      "replica_tasks_in_logs": 534,
+      "hot_logical_tasks": {
+        "163": 66,
+        "133": 1030
+      },
+      "hot_original_after_move": {
+        "163": 38,
+        "133": 524
+      },
+      "hot_main_computed_tasks": {
+        "163": 38,
+        "133": 524
+      },
+      "max_abs": 0.0068359375,
+      "max_nrmse": 0.011303993873298168,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 50,
+      "seq": 10,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 621,
+      "owner_received_tasks": [
+        16,
+        605
+      ],
+      "replica_tasks_in_logs": 621,
+      "hot_logical_tasks": {
+        "163": 50,
+        "133": 1226
+      },
+      "hot_original_after_move": {
+        "163": 34,
+        "133": 621
+      },
+      "hot_main_computed_tasks": {
+        "163": 34,
+        "133": 621
+      },
+      "max_abs": 0.0078125,
+      "max_nrmse": 0.01144571416079998,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 50,
+      "seq": 11,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 534,
+      "owner_received_tasks": [
+        28,
+        506
+      ],
+      "replica_tasks_in_logs": 534,
+      "hot_logical_tasks": {
+        "163": 66,
+        "133": 1030
+      },
+      "hot_original_after_move": {
+        "163": 38,
+        "133": 524
+      },
+      "hot_main_computed_tasks": {
+        "163": 38,
+        "133": 524
+      },
+      "max_abs": 0.0068359375,
+      "max_nrmse": 0.011303993873298168,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 50,
+      "seq": 12,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 621,
+      "owner_received_tasks": [
+        16,
+        605
+      ],
+      "replica_tasks_in_logs": 621,
+      "hot_logical_tasks": {
+        "163": 50,
+        "133": 1226
+      },
+      "hot_original_after_move": {
+        "163": 34,
+        "133": 621
+      },
+      "hot_main_computed_tasks": {
+        "163": 34,
+        "133": 621
+      },
+      "max_abs": 0.0078125,
+      "max_nrmse": 0.01144571416079998,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 50,
+      "seq": 13,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 28,
+      "owner_received_tasks": [
+        0,
+        28
+      ],
+      "replica_tasks_in_logs": 28,
+      "hot_logical_tasks": {
+        "163": 5,
+        "133": 74
+      },
+      "hot_original_after_move": {
+        "163": 5,
+        "133": 46
+      },
+      "hot_main_computed_tasks": {
+        "163": 5,
+        "133": 46
+      },
+      "max_abs": 0.002498626708984375,
+      "max_nrmse": 0.010637803934514523,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 50,
+      "seq": 14,
+      "active_ranks": 32,
+      "tasks": 65536,
+      "moved_tasks": 23,
+      "owner_received_tasks": [
+        0,
+        23
+      ],
+      "replica_tasks_in_logs": 23,
+      "hot_logical_tasks": {
+        "163": 3,
+        "133": 56
+      },
+      "hot_original_after_move": {
+        "163": 3,
+        "133": 33
+      },
+      "hot_main_computed_tasks": {
+        "163": 3,
+        "133": 33
+      },
+      "max_abs": 0.0029296875,
+      "max_nrmse": 0.010548938997089863,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        288
+      ],
+      "dispatch_num_local_experts": [
+        9
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    }
+  ],
+  "task_conservation": true,
+  "all_finite": true,
+  "provenance": "single-dispatch rank JSONL: logical counts, sender-side moved counts, owner-side receive counts, and per-rank verify errors",
+  "request_artifacts": {
+    "ep32_eplb_online_16384.json": {
+      "input_tokens": 16384,
+      "output_ids": [
+        13,
+        13,
+        154842
+      ],
+      "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a",
+      "ttft_s": 5.876126145012677
+    },
+    "ep32_eplb_online_32768.json": {
+      "input_tokens": 32768,
+      "output_ids": [
+        154827,
+        154827,
+        154842
+      ],
+      "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c",
+      "ttft_s": 22.71370954194572
+    },
+    "ep32_eplb_online_8192.json": {
+      "input_tokens": 8192,
+      "output_ids": [
+        13,
+        13,
+        154842
+      ],
+      "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a",
+      "ttft_s": 6.7801003970671445
+    },
+    "ep32_eplb_online_calibration_12288.json": {
+      "input_tokens": 12288,
+      "output_ids": [
+        13,
+        13,
+        154842
+      ],
+      "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a",
+      "ttft_s": 13.688504833960906
+    },
+    "ep32_k2_single_32768_isolated.json": {
+      "input_tokens": 32768,
+      "output_ids": [
+        154827,
+        154827,
+        154842
+      ],
+      "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c",
+      "ttft_s": 16.0811414179625
+    },
+    "ep32_k2_single_seq_16384.json": {
+      "input_tokens": 16384,
+      "output_ids": [
+        13,
+        13,
+        154842
+      ],
+      "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a",
+      "ttft_s": 6.023113112081774
+    },
+    "ep32_k2_single_seq_32768.json": {
+      "input_tokens": 32768,
+      "output_ids": [
+        154827,
+        154827,
+        154842
+      ],
+      "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c",
+      "ttft_s": 12.430298842024058
+    },
+    "ep32_k2_single_seq_8192.json": {
+      "input_tokens": 8192,
+      "output_ids": [
+        198,
+        198,
+        154842
+      ],
+      "output_ids_sha256": "5afe2c8613e2a23039d6668887412977bcdff9a016510b967d36ccee312401b6",
+      "ttft_s": 2.9834797319490463
+    },
+    "ep32_original_16384.json": {
+      "input_tokens": 16384,
+      "output_ids": [
+        13,
+        13,
+        154842
+      ],
+      "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a",
+      "ttft_s": 5.7355761179933324
+    },
+    "ep32_original_32768.json": {
+      "input_tokens": 32768,
+      "output_ids": [
+        154827,
+        154827,
+        154842
+      ],
+      "output_ids_sha256": "c6c9dd5a573bee55ecc81ad4ad9ae398d74b32c2cfb447ac4ffeca1653be042c",
+      "ttft_s": 11.848620005999692
+    },
+    "ep32_original_8192.json": {
+      "input_tokens": 8192,
+      "output_ids": [
+        13,
+        13,
+        154842
+      ],
+      "output_ids_sha256": "c228eba5273cf46cc204b5f065fdbfc1e41d9fc24bb61ff193fecb198140c06a",
+      "ttft_s": 4.949755514040589
+    }
+  }
+}

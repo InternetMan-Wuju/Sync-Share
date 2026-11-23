@@ -1,0 +1,75 @@
+{
+  "created_at": "2026-11-23T12:45:00+08:00",
+  "base_commit": "3512caeb1776ec051d73cc0e184469392414ab2a",
+  "hosts": ["npu1-23", "npu1-25"],
+  "topology": "one EP32 group; ranks 0-15 on npu1-23 local dies 0-15, ranks 16-31 on npu1-25 local dies 0-15",
+  "devices": "32 Ascend 910 dies total",
+  "image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "image_id": "sha256:618e95de519b050855cbc2ed469f608fae43f9fbecb74b6c237fc15d9d3f4e0d",
+  "sglang": "v0.5.20",
+  "torch_npu": "2.10.0",
+  "model": "/data_lib/data/models/glm-q",
+  "quantization": "ModelSlim W8A8",
+  "status": "NATIVE_SINGLE_DISPATCH_PASS_EPLB_ONLINE_PASS_MATRIX_PASS_8K_TOKEN_DIFF",
+  "result": {
+    "ep16_k1": "PASS_NUMERIC_TOLERANCE",
+    "ep16_k2": "PASS_NUMERIC_TOLERANCE_WITH_SAME_LAYER_AND_CROSS_LAYER_REUSE",
+    "ep16_q0": "PASS_ORIGINAL_PATH_NO_SLOT_INSTALL",
+    "ep32_original": "PASS_8192_16384_32768",
+    "ep32_eplb_online": "PASS_8192_16384_32768_AFTER_10_REBALANCE_EVENTS_PER_RANK",
+    "ep32_ours_k2": "PASS_8192_16384_32768_16K_32K_OUTPUT_IDS_EXACT_8K_NUMERIC_DIFF",
+    "ep32_k2_32k_isolated_and_sequence": "PASS"
+  },
+  "native_single_dispatch": {
+    "communication_experts": 288,
+    "local_communication_experts": 9,
+    "owners": [0, 1],
+    "hot_experts": [163, 133],
+    "task_conservation": true,
+    "execution": "one native DeepEP NORMAL dispatch and one matching combine; main and replica groups use real W8A8 chains"
+  },
+  "eplb_online": {
+    "redundant_experts": 32,
+    "physical_experts": 288,
+    "local_positions_per_rank": 9,
+    "events_per_rank": {"npu1-23": 10.0, "npu1-25": 10.0},
+    "layout_changed": true,
+    "formal_tasks_observed": 458752,
+    "formal_replica_tasks_observed": 162158,
+    "patch_hashes": {
+      "expert_location_updater_v0520.py": "8e10ac923c2c93fac0ba649384ae6ce16431a012a378668ae292ee12bfce5dc7",
+      "torch_npu_distributed_c10d_v0520.py": "a2003dc906133f52de843426125da344901cfc14c613d8f6b4fe74bed15e2ded"
+    },
+    "runtime_patch_hashes_match_on_both_nodes": true
+  },
+  "input_identity": {
+    "source_sha256": "8b1fc2a11506d1642de5cb851c92c402d4f1e0569a88d90197fd728913bb2ae7",
+    "materialization": "AgentX-derived deterministic token IDs from 64-token block hashes; not original human text",
+    "inputs": {
+      "8192": "86240a227b4f194e7f0e3ab5661942b09c0aa5a44cdcc610f503f54d9e3f3d84",
+      "12288_test": "d496e85dff7d63228f4b2e678d33389dee5e58e9e72756d122d055c8c7b76bc9",
+      "16384": "ef1b6259ebc4a272df50b9e905887909e9acab82924231e72cff73c981b217c9",
+      "32768": "cd222160c6815f5ce8db984894f40d40880333dfed62139a23b4ffa0464fafe1"
+    }
+  },
+  "timing_scope": "one request per cell; no repeated p95 or production TTFT claim",
+  "production_format": "UNKNOWN_NO_ACTIVE_SERVICE",
+  "key_artifacts": [
+    "REPORT_FOR_REVIEW.md",
+    "artifacts/RESULTS_SUMMARY.json",
+    "artifacts/VALIDATION.json",
+    "artifacts/EP32_MATRIX.json",
+    "artifacts/EP32_TIMINGS_MEMORY.json",
+    "artifacts/EP16_SLOT_CONSISTENCY.json",
+    "artifacts/EP16_K1_NATIVE_TASK_ACCOUNTING.json",
+    "artifacts/EP16_K2_NATIVE_TASK_ACCOUNTING.json",
+    "artifacts/EP32_K2_NATIVE_TASK_ACCOUNTING.json",
+    "artifacts/EP32_EPLB_ONLINE_EVIDENCE.json",
+    "artifacts/EP32_EPLB_PATCHES.json",
+    "artifacts/failures/EP16_SINGLE_DISPATCH_INCIDENTS.json"
+  ],
+  "cleanup": {
+    "status": "PASS_NO_EXPERIMENT_CONTAINERS_OR_NPU_PROCESSES",
+    "checked_at": "2026-11-23T12:45:05+08:00"
+  }
+}

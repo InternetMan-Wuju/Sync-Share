@@ -1,0 +1,49 @@
+{
+  "hosts": [
+    "npu1-23",
+    "npu1-25"
+  ],
+  "image": "quay.io/ascend/sglang:v0.5.20-cann9.0.0-a3",
+  "sglang": "v0.5.20",
+  "torch_npu": "2.10.0",
+  "mount_probe": "docker inspect on both nodes; read-only bind mounts present",
+  "patches": [
+    {
+      "name": "expert_location_updater_v0520.py",
+      "local_path": "shared/current_exp/20261123_ep32_native_reroute_and_online_eplb/patches/expert_location_updater_v0520.py",
+      "sha256": "8e10ac923c2c93fac0ba649384ae6ce16431a012a378668ae292ee12bfce5dc7",
+      "runtime_path": "/sgl-workspace/sglang/python/sglang/srt/eplb/expert_location_updater.py",
+      "loaded_on": [
+        "npu1-23",
+        "npu1-25"
+      ],
+      "purpose": "ND materialization for send/recv, lazy per-batch conversion, copy-back to NZ"
+    },
+    {
+      "name": "torch_npu_distributed_c10d_v0520.py",
+      "local_path": "shared/current_exp/20261123_ep32_native_reroute_and_online_eplb/patches/torch_npu_distributed_c10d_v0520.py",
+      "sha256": "a2003dc906133f52de843426125da344901cfc14c613d8f6b4fe74bed15e2ded",
+      "runtime_path": "/usr/local/python3.11.15/lib/python3.11/site-packages/torch_npu/distributed/distributed_c10d.py",
+      "loaded_on": [
+        "npu1-23",
+        "npu1-25"
+      ],
+      "purpose": "atomic HCCL batch_isend_irecv for EPLB P2P"
+    }
+  ],
+  "runtime_hashes_observed": {
+    "npu1-23": {
+      "expert_location_updater.py": "8e10ac923c2c93fac0ba649384ae6ce16431a012a378668ae292ee12bfce5dc7",
+      "distributed_c10d.py": "a2003dc906133f52de843426125da344901cfc14c613d8f6b4fe74bed15e2ded"
+    },
+    "npu1-25": {
+      "expert_location_updater.py": "8e10ac923c2c93fac0ba649384ae6ce16431a012a378668ae292ee12bfce5dc7",
+      "distributed_c10d.py": "a2003dc906133f52de843426125da344901cfc14c613d8f6b4fe74bed15e2ded"
+    }
+  },
+  "source_basis": [
+    "shared/history_exp/01_EP64\u7edf\u4e00\u670d\u52a1_2026-09/sglang_npu_eplb_patches/README.md",
+    "current v0.5.20 source files extracted from target image"
+  ],
+  "status": "PASS_BOTH_NODES_IDENTICAL_PATCHES"
+}

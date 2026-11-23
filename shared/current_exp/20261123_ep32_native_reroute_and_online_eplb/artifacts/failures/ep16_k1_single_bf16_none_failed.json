@@ -1,0 +1,13 @@
+{
+  "input_file": "inputs/agentx_8192.json",
+  "input_tokens": 8192,
+  "input_sha256": "86240a227b4f194e7f0e3ab5661942b09c0aa5a44cdcc610f503f54d9e3f3d84",
+  "max_new_tokens": 2,
+  "ttft_s": null,
+  "total_s": 75.05643326893914,
+  "output_ids": [],
+  "output_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "text": "",
+  "meta_info": null,
+  "events": 0
+}

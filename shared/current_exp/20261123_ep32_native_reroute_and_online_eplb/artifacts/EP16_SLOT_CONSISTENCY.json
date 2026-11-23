@@ -1,0 +1,1621 @@
+{
+  "same_layer": {
+    "ranks": {
+      "0": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.811119,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 0,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 457.414669,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 0,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 0,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 0,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "1": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.139533,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 1,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 456.700274,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 1,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 1,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 1,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "10": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.515107,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 10,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 456.893624,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 10,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 10,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 10,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "11": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.600857,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 11,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 456.960756,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 11,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 11,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 11,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "12": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.701429,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 12,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 457.084986,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 12,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 12,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 12,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "13": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.770439,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 13,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 457.190258,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 13,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 13,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 13,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "14": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.862049,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 14,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 457.302708,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 14,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 14,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 14,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "15": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.87634,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 15,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 457.411839,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 15,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 15,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 15,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "2": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.108393,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 2,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 456.594062,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 2,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 2,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 2,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "3": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.176364,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 3,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 456.551732,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 3,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 3,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 3,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "4": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.294265,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 4,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 456.614613,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 4,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 4,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 4,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "5": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.416696,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 5,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 456.738224,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 5,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 5,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 5,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "6": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.592168,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 6,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 456.885755,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 6,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 6,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 6,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "7": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.633698,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 7,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 456.912435,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 7,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 7,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 7,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "8": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.650548,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 8,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 456.965566,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 8,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 8,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 8,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      },
+      "9": {
+        "install": [
+          {
+            "kind": "install",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "source_rank": 10,
+            "elapsed_ms": 473.528187,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 9,
+            "layer": 49,
+            "seq": 4
+          },
+          {
+            "kind": "install",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "source_rank": 8,
+            "elapsed_ms": 456.872154,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 9,
+            "layer": 49,
+            "seq": 4
+          }
+        ],
+        "reuse": [
+          {
+            "kind": "reuse",
+            "slot_owner": 0,
+            "local_slot": 0,
+            "expert": 163,
+            "owner_meta": {
+              "owner": 0,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 163,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 9,
+            "layer": 49,
+            "seq": 5
+          },
+          {
+            "kind": "reuse",
+            "slot_owner": 1,
+            "local_slot": 0,
+            "expert": 133,
+            "owner_meta": {
+              "owner": 1,
+              "local_slot": 0,
+              "layer": 49,
+              "expert": 133,
+              "generation": 1,
+              "ready": true,
+              "storage_ptr": 20847780364288,
+              "bytes": 37810176
+            },
+            "rank": 9,
+            "layer": 49,
+            "seq": 5
+          }
+        ]
+      }
+    },
+    "all_three_ranks_reuse_owner0": true,
+    "all_three_ranks_reuse_owner1": true,
+    "q0_install_count": 0,
+    "q0_noop_calls": 128
+  },
+  "cross_layer": {
+    "installs": {
+      "0": [
+        {
+          "layer": 49,
+          "slot_owner": 0,
+          "expert": 163,
+          "generation": 1,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 49,
+          "slot_owner": 1,
+          "expert": 133,
+          "generation": 1,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 50,
+          "slot_owner": 0,
+          "expert": 163,
+          "generation": 2,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 50,
+          "slot_owner": 1,
+          "expert": 133,
+          "generation": 2,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 49,
+          "slot_owner": 0,
+          "expert": 163,
+          "generation": 3,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 49,
+          "slot_owner": 1,
+          "expert": 133,
+          "generation": 3,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 50,
+          "slot_owner": 0,
+          "expert": 163,
+          "generation": 4,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 50,
+          "slot_owner": 1,
+          "expert": 133,
+          "generation": 4,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 49,
+          "slot_owner": 0,
+          "expert": 163,
+          "generation": 5,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 49,
+          "slot_owner": 1,
+          "expert": 133,
+          "generation": 5,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 50,
+          "slot_owner": 0,
+          "expert": 163,
+          "generation": 6,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 50,
+          "slot_owner": 1,
+          "expert": 133,
+          "generation": 6,
+          "storage_ptr": 20847780364288
+        }
+      ],
+      "1": [
+        {
+          "layer": 49,
+          "slot_owner": 0,
+          "expert": 163,
+          "generation": 1,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 49,
+          "slot_owner": 1,
+          "expert": 133,
+          "generation": 1,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 50,
+          "slot_owner": 0,
+          "expert": 163,
+          "generation": 2,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 50,
+          "slot_owner": 1,
+          "expert": 133,
+          "generation": 2,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 49,
+          "slot_owner": 0,
+          "expert": 163,
+          "generation": 3,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 49,
+          "slot_owner": 1,
+          "expert": 133,
+          "generation": 3,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 50,
+          "slot_owner": 0,
+          "expert": 163,
+          "generation": 4,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 50,
+          "slot_owner": 1,
+          "expert": 133,
+          "generation": 4,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 49,
+          "slot_owner": 0,
+          "expert": 163,
+          "generation": 5,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 49,
+          "slot_owner": 1,
+          "expert": 133,
+          "generation": 5,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 50,
+          "slot_owner": 0,
+          "expert": 163,
+          "generation": 6,
+          "storage_ptr": 20847780364288
+        },
+        {
+          "layer": 50,
+          "slot_owner": 1,
+          "expert": 133,
+          "generation": 6,
+          "storage_ptr": 20847780364288
+        }
+      ]
+    },
+    "owner0_generations": [
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      5,
+      6,
+      6
+    ],
+    "owner0_layers": [
+      49,
+      49,
+      50,
+      50,
+      49,
+      49,
+      50,
+      50,
+      49,
+      49,
+      50,
+      50
+    ],
+    "owner0_stable_storage": true,
+    "owner1_generations": [
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      5,
+      6,
+      6
+    ],
+    "owner1_layers": [
+      49,
+      49,
+      50,
+      50,
+      49,
+      49,
+      50,
+      50,
+      49,
+      49,
+      50,
+      50
+    ],
+    "owner1_stable_storage": true
+  },
+  "decision": "owner state is gathered and reduced before device send/recv; generation and storage identity retained"
+}

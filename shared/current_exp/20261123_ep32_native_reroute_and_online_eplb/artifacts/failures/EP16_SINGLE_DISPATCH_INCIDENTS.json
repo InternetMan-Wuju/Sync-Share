@@ -1,0 +1,17 @@
+{
+  "first_attempt": {
+    "stage": "single-dispatch ABI probe",
+    "symptom": "The harness rejected non-null hidden_states_scale instead of passing the int8 per-token scale into the W8A8 chain.",
+    "fix": "Accept the DeepEP INT8 tuple and pass its per-token scale to each local expert group."
+  },
+  "second_attempt": {
+    "stage": "aclnnCamMoeCombineNormal",
+    "error": "Invalid_Argument EE1001, Invalid attr=601",
+    "cause": "The implementation copied W8A8 expert outputs into an empty_like buffer inherited from INT8 dispatch rows; DeepEP combine requires BF16 output rows.",
+    "fix": "Allocate the combine input as BF16 [received_rows, hidden] and copy each computed main/replica group into it while retaining the original INT8 input scales."
+  },
+  "final_path": {
+    "status": "PASS",
+    "evidence": "artifacts/EP16_K1_NATIVE_TASK_ACCOUNTING.json, artifacts/EP16_K2_NATIVE_TASK_ACCOUNTING.json, artifacts/EP32_K2_NATIVE_TASK_ACCOUNTING.json"
+  }
+}

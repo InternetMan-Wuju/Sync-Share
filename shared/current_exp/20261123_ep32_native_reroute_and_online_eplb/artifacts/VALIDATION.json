@@ -1,0 +1,26 @@
+{
+  "status": "PASS_FUNCTIONAL_WITH_NUMERIC_TOKEN_DIFF_8K",
+  "checks": {
+    "all_nine_ep32_cells_present": true,
+    "ep32_eplb_output_matches_original": true,
+    "ep32_k2_16k_32k_output_matches_original": true,
+    "ep32_k2_task_conservation": true,
+    "ep32_k2_all_finite": true,
+    "ep32_k2_native_single_dispatch": true,
+    "ep16_k1_task_conservation": true,
+    "ep16_k2_task_conservation": true,
+    "ep16_k2_same_layer_reuse": true,
+    "ep16_k2_cross_layer_reuse": true,
+    "q0_original_path": true,
+    "eplb_rebalance_end": true,
+    "eplb_layout_changed": true,
+    "eplb_physical_shape": true,
+    "eplb_patches_both_nodes": true,
+    "eplb_formal_tasks_observed": true
+  },
+  "errors": [],
+  "notes": [
+    "K2 8K output IDs differ from original but layer errors are finite and bounded; 16K/32K outputs match exactly.",
+    "EPLB online had 10 rebalance events per rank on each node; static layout not used for this arm."
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "ep": 16,
+  "owners": [
+    0,
+    1
+  ],
+  "hots": [
+    163,
+    133
+  ],
+  "call_rows": 32,
+  "chunks": [
+    {
+      "layer": 49,
+      "seq": 4,
+      "active_ranks": 16,
+      "tasks": 65536,
+      "moved_tasks": 210,
+      "owner_received_tasks": [
+        205,
+        5
+      ],
+      "replica_tasks_in_logs": 210,
+      "hot_logical_tasks": {
+        "163": 418,
+        "133": 11
+      },
+      "hot_original_after_move": {
+        "163": 213,
+        "133": 6
+      },
+      "hot_main_computed_tasks": {
+        "163": 213,
+        "133": 6
+      },
+      "max_abs": 0.0068359375,
+      "max_nrmse": 0.01056815218180418,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        272
+      ],
+      "dispatch_num_local_experts": [
+        17
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    },
+    {
+      "layer": 49,
+      "seq": 5,
+      "active_ranks": 16,
+      "tasks": 32768,
+      "moved_tasks": 104,
+      "owner_received_tasks": [
+        104,
+        0
+      ],
+      "replica_tasks_in_logs": 104,
+      "hot_logical_tasks": {
+        "163": 216,
+        "133": 1
+      },
+      "hot_original_after_move": {
+        "163": 112,
+        "133": 1
+      },
+      "hot_main_computed_tasks": {
+        "163": 112,
+        "133": 1
+      },
+      "max_abs": 0.0078125,
+      "max_nrmse": 0.010331653989851475,
+      "finite_all": true,
+      "dispatch_num_experts": [
+        272
+      ],
+      "dispatch_num_local_experts": [
+        17
+      ],
+      "execution": "native single DeepEP NORMAL dispatch/combine + W8A8 main/replica chains"
+    }
+  ],
+  "task_conservation": true,
+  "all_finite": true,
+  "provenance": "single-dispatch rank JSONL: logical counts, sender-side moved counts, owner-side receive counts, and per-rank verify errors"
+}
