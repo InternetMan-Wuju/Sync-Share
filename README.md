@@ -10,7 +10,7 @@
 
 ## 当前内容
 
-- [全组 K 槽服务修复与 DeepEP 真实改道（2026-11-23）](handoff/2026-11-23_global_k_native_service_dispatch.md)是当前执行入口。
+- [EP32 单次 DeepEP 改道与在线 EPLB（2026-11-23）](handoff/2026-11-23_ep32_native_reroute_and_online_eplb.md)是当前执行入口。正式比较原版、带兼容补丁且完成在线重排的 EPLB +32、我方可配置 K 真改道。
 - [Native-dispatch service 修复与 EP32 三组验收报告](shared/current_exp/20261123_global_k_native_service_dispatch/REPORT_FOR_REVIEW.md)：`22d65f2` 基线；32K 槽复用挂起已修复，EP16 K=1/K=2 和 EP32 原版/EPLB 静态/K=2 功能矩阵通过；额外 DeepEP 副本编号在 combine 处失败，服务 K 结果明确标为 local-backfill fallback。
 - [可配置 K 服务原型与 EP32 结果](shared/current_exp/20261123_global_k_service_ep32/REPORT_FOR_REVIEW.md)记录 `db1ce2d` 的槽复用、32K 挂起和静态 EPLB 三档结果。
 - [EP16 回放与服务障碍报告](shared/current_exp/20261123_prefill_eplb_three_way/REPORT_FOR_REVIEW.md)记录 `c8f8961` 的单层回放、静态 EPLB 和原生启动参数的失败证据。
@@ -105,7 +105,8 @@ Prefill 当前路由复制与精确配额 M0：
 
 本地代理与远程高级模型之间的阶段交接、待办、问题定位和下一步计划。
 
-- [全组 K 槽服务修复与 DeepEP 真实改道（2026-11-23）](handoff/2026-11-23_global_k_native_service_dispatch.md)是当前实现和全量验证入口。
+- [EP32 单次 DeepEP 改道与在线 EPLB（2026-11-23）](handoff/2026-11-23_ep32_native_reroute_and_online_eplb.md)是当前实现和全量验证入口。
+- [全组 K 槽服务修复与 DeepEP 真实改道（2026-11-23）](handoff/2026-11-23_global_k_native_service_dispatch.md)记录上一轮 32K 修复方案。
 - [可配置 K 服务接入与 EP32 三组验收（2026-11-23）](handoff/2026-11-23_global_k_service_ep32_execution.md)记录上一轮服务原型方案。
 - [Prefill 三组对照（2026-11-23）](handoff/2026-11-23_prefill_eplb_three_way_comparison.md)记录上一轮方案与对照口径。
 - [Prefill K=1 原型修正（2026-11-23）](handoff/2026-11-23_global_k_adapter_repair.md)是上一轮正确性与资源验证方案。

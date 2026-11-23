@@ -4,7 +4,8 @@
 
 ## 当前执行入口
 
-- [全组 K 槽服务修复与 DeepEP 真实改道（2026-11-23）](2026-11-23_global_k_native_service_dispatch.md)是当前执行入口。基于 `db1ce2d` 修复装槽通信分歧，复测 32K 并接入实际任务改道，完成 EP32 三组验收。
+- [EP32 单次 DeepEP 改道与在线 EPLB（2026-11-23）](2026-11-23_ep32_native_reroute_and_online_eplb.md)是当前执行入口。基于 `c7be01b`，接通单轮真实改道，并用已有兼容补丁完成 EPLB +32 的真实在线重排。
+- [全组 K 槽服务修复与 DeepEP 真实改道（2026-11-23）](2026-11-23_global_k_native_service_dispatch.md)记录上一轮 32K 修复与服务实验方案。
 - [可配置 K 服务接入与 EP32 三组验收（2026-11-23）](2026-11-23_global_k_service_ep32_execution.md)记录上一轮服务原型与实验范围。
 - [Prefill 三组对照（2026-11-23）](2026-11-23_prefill_eplb_three_way_comparison.md)记录上一轮方案和三组对照口径。
 - [Prefill K=1 原型修正（2026-11-23）](2026-11-23_global_k_adapter_repair.md)记录上一轮的输入保真、owner 状态和显存验收。
